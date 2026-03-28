@@ -1,0 +1,43 @@
+
+
+
+#--------------------------------------------------
+# recount - regenerer alle artikkelnummerne i basen
+#           slik at de blir sekvensielle
+#
+# EKSEMPLER:
+#           recount 1 - regenerer indeksene til alt i databasen
+#           recount 2.2 - regenererer alt f.o.m. 2.2
+#
+#--------------------------------------------------
+sub recount {
+	local($avd) = @_;
+	local(@tmp,$depth);
+
+	# Indeksene
+	local($first,$second,$third,$forth);
+	# Alle indekser teller fra 1
+	$first=$second=$third=$fourth=1;
+
+	# Hent en liste over alle avdelingene paa dette nivaaet.
+	# Dersom avd = 1, vil man faa regenerert hele basen
+	@levellist = &thislevel($avd);
+
+	# Da kan vi starte omgenereringen av listen. Initierer tellerne
+	@tmp = split('.', $avd);
+	$depth = $@tmp;
+	($first,$second,$third,$fourth) = @tmp;
+	foreach (
+		
+
+
+
+
+
+
+
+
+
+	return;
+}
+
