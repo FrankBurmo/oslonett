@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1163"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="De første bøndene i Rogaland"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Auditoriet, AMS"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Kl. 17.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="80"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Rogalandsforskning"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Stavanger"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Foredrag ved amanuensis Mari Høgestøl` -->
+<!-- replace `<option(.*Rogaland)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?10.10"?)\s*>` with `` checked>` -->

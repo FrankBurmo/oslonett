@@ -1,0 +1,11 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="36"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Høgskolen i Finnmark (HiF)"` -->
+<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Høgskolen i Finnmark ble grunnlagt 1. august 1994. Høgskolen består i dag av de tre tidligere høgskolene: Alta lærerhøgskole, Finnmark distriktshøgskole og Finnmark sykepleierhøgskole. Pr 1. januar 1995 hadde høgskolen ca. 1700 registrerte studenter og ca 200 ansatte. Høgskolen i Finnmark skal utvikle og formidle kunnskap som gjenspeiler og problematiserer regionenes sosiale, kulturelle og økonomiske mangfold, sett i lys av en flerkulturell forståelse. Dette skal gjøres gjennom å tilby profesjons- og kandidatutdanninger, samt andre utdanningstilbud i tråd med nasjonale og regionale utdanningspolitiske mål og behov. Det skal drives forsknings- og utviklingsvirksomhet som dels støtter opp om studietilbudene, dels imøtekommer de generelle kunnskapsbehov i regionen.` -->
+<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``Høgskolen i Finnmark arrangerer seminarer i Alta mandag, tirsdag, onsdag og fredag. Mandag 9.10 Generelle temainnlegg (arrangement nr. 1046) Tirsdag 10.10 Nordnorsk kultur (1049) Onsdag 11.10 Fiskerelaterte problemstillinger i Finnmark (1057) Fredag 13.10 Problemstillinger relatert til kommunal sektor (1060)` -->
+<!-- replace `<option(.*Høgskole)` with `<option selected`` -->

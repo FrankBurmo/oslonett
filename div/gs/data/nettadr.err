@@ -1,0 +1,4 @@
+#@ Row 1089: Attempt to bulk-copy a NULL value into Server column 3, which does not accept NULL values. @#
+170999	T	
+#@ Row 1988: Attempt to bulk-copy a NULL value into Server column 3, which does not accept NULL values. @#
+171413	T	

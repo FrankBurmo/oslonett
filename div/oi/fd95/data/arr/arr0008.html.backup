@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="8"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Forskning og næringsutvikling i Bergensregionen"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Universitetet i Bergen, Realfagsbygget, Allégt. 41"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="13.00 - 17.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value="Informasjonsavdelingen UiB, 5020 Bergen. Tlf: 55 58 90 30 fax: 55 58 90 32"` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value="Næringsliv, industri, offentlig virksomhet, forskere"` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="13"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Universitetet i Bergen"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Bergen"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``I forbindelse med Forskningsdagene ´95 inviterer forskningsinstitusjonene i Bergensområdet næringsliv, industri og offentlig virksomhet til en konferanse om forskning og dens betydning for vår region. Muligheter og utfordringer for et samarbeid vil være hovedtema. Program : * Kl. 14.00 - Åpning v/ Rektor Kari Blom, Høgskolen i Bergen * Kl. 14.15 - Forskning og næringsutvikling - muligheter og utfordringer * Kl. 15.00 - Paneldebatt ` -->
+<!-- replace `<option(.*Hordaland)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?10.10"?)\s*>` with `` checked>` -->

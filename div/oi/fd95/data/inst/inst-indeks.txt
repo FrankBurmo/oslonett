@@ -1,0 +1,64 @@
+72`Norsk institutt for luftforskning (NILU)`Forskningsinstitutt`tarantula.nilu.no
+58`Norges landbrukshøgskole (NLH)`Vitenskapelig høgskole`skogen.oslonett.no
+12`Christian Michelsen Research AS (CMR)`Forskningsinstitutt`eva.cmr.no
+3`Norges forskningsråd`Offentlig institusjon`193.156.94.170
+77`Høgskolen i Stavanger`Høgskole`193.156.94.170
+31`Universitetet i Oslo`Universitet`skogen.oslonett.no
+24`Norges veterinærhøgskole`Vitenskapelig høgskole`skogen.oslonett.no
+36`Høgskolen i Finnmark (HiF)`Høgskole`trubadurix.hifm.no
+29`Høgskolen i Oslo (HiO)`Høgskole`torehoel.W27a.hioslo.no
+43`Høgskolen i Agder`Høgskole`193.156.94.25
+50`KS Telemark/KS Forskning`Offentlig institusjon`pmh.hit.no
+62`Høgskolen i Hedmark`Høgskole`193.156.94.25
+55`MIDTNORDISK VITENSENTER, Vitenskapsmuseet, Universitetet i Trondheim`Museum`129.241.183.98
+81`Norges byggforskningsinstitutt (Byggforsk)`Forskningsinstitutt`158.36.140.61
+74`Rogalandsforskning (RF)`Forskningsinstitutt`193.156.94.170
+14`ALLFORSK`Forskningsinstitutt`smupc4.smu.unit.no
+21`Barnevernets Utviklingssenter (BVU)`Forskningsinstitutt`193.156.94.25
+79`Norges veterinærhøgskole, avdeling Sandnes`Vitenskapelig høgskole`skogen.oslonett.no
+33`LOS-senteret`Forskningsinstitutt`omricon.los.uib.no
+26`Senter for middelalderstudier, Universitetet i Trondheim`Forskningssentere`skogen.oslonett.no
+40`Kreftregisteret`Forskningsinstitutt`knoll.kreftreg.no
+38`Høgskolen i Akershus`Høgskole`193.156.94.25
+45`Senter for miljø og utvikling, Universitetet i Trondheim`Forskningssentere`skogen.oslonett.no
+52`Norges tekniske høgskole, Universitetet i Trondheim`Vitenskapelig høgskole`skogen.oslonett.no
+57`STATOILs Forskningssenter`Offentlig institusjon`129.241.183.98
+71`Østlandsforskning`Forskningsinstitutt`193.156.94.25
+11`Arbeidsforskningsinstituttet`Forskningsinstitutt`128.39.70.227
+69`Høgskolen i Sør - Trøndelag`Høgskole`129.241.183.98
+76`Arkeologisk museum i Stavanger`Museum`193.156.94.170
+23`Norsk voksenpedagogisk forskningsinstitutt (NVI)`Forskningsinstitutt`pc14.nvi.no
+16`Norsk Utenrikspolitisk Institutt (NUPI)`Forskningsinstitutt`jorgenl.nupi.no
+28`Agderforskning`Forskningsinstitutt`afpc3884.krs.hia.no
+61`Institutt for sosialforskning (INAS)`Forskningsinstitutt`bootp-02.isaf.no
+54`Den allmennvitenskapelige høgskolen`Høgskole`129.241.183.98
+80`Rogalandsforskning`Forskningsinstitutt`193.156.94.25
+73`Norges Handelshøyskole (NHH)`Vitenskapelig høgskole`skogen.oslonett.no
+59`Høgskolen i Harstad (HIH)`Høgskole`herbern.telepost.no
+66`BRATTØRA FORSKNINGSSENTER, Universitetet i Trondheim`Forskningsinstitutt`129.241.183.98
+9`Nansen Senteret for Miljoe og Fjernmaaling (NERSC)`Forskningsinstitutt`fram.nrsc.no
+13`Universitetet i Bergen`Universitet`webber.uib.no
+20`Universitetet i Tromsø`Universitet`dibbler.Uit.No
+78`Misjonshøgskolen, Stavanger`Høgskole`193.156.94.170
+25`Det Norske Radiumhospital`Offentlig institusjon`pcdnr05.uio.no
+18`Norsk institutt for by- og regionforskning (NIBR)`Forskningsinstitutt`nilsen.nibr.no
+32`Norsk Tretekninsk Institutt`Forskningsinstitutt`193.156.94.25
+44`NORUT Teknologi AS`Forskningsinstitutt`tekgw.tek.norut.no
+51`SINTEF - gruppen`Forskningsinstitutt`129.241.183.98
+49`NGU - Norges Geologiske Undersøkelse`Offentlig institusjon`129.241.183.98
+56`Det medisinske fakultet, Universitetet i Trondheim.`Fakulteter ved universitetene`skogen.oslonett.no
+63`Institutt for fredsforskning (PRIO)`Forskningsinstitutt`193.156.94.25
+70`Høgskolen på Lillehammer`Høgskole`193.156.94.25
+82`Høgskolen i Bergen`Høgskole`193.156.94.25
+68`Stiftelsen for naturforskning og kulturminneforskning (NINA-NIKU)`Forskningsinstitutt`129.241.183.98
+75`Norconserv`Forskningsinstitutt`193.156.94.170
+8`Høgskolen i Telemark`Høgskole`pmh.hit.no
+15`Universitetet i Trondheim`Universitet`info10.adm.unit.no
+22`Hallingdal Folkemuseum`Museum`193.156.94.25
+34`Institutt for energiteknikk`Forskningsinstitutt`roslin.ife.no
+27`Norsk Regnesentral`Forskningsinstitutt`dolly.nr.no
+41`Høgskolen i Nord-Trøndelag`Høgskole`158.38.105.15
+53`VITENSKAPSMUSEET (VM)`Museum`129.241.183.98
+39`Høgskolen i Narvik`Høgskole`tekgw.tek.norut.no
+46`BI Stiftelsen`Vitenskapelig høgskole`PC22-36.bi.no
+60`Nordlandsforskning`Privat stiftelse`skogen.oslonett.no

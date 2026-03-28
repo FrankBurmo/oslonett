@@ -1,0 +1,11 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="22"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Hallingdal Folkemuseum"` -->
+<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Hallingdal Folkemuseum er et av landets eldste friluftsmuseer, grunnlagt i 1899. Museet skulle representere hele distriktet med samlinger av hus, innbo, klær og kunst fra alle Hallingdalskommunene.Tomten kan, i liten målestokk, gi inntrykk av Hallingdalsnaturen med bakker, lier og brusende elver. Husene ble samlet fra ulike bygder, men tilsammen skal de illudere hallingtun, husmannsplass, seter. Samlingen av gjenstander gjenspeiler hele dalen og alle samfunnsslag. De er delvis plassert i de ulike husene slik at besøkende får inntrykk av miljøet folk bodde og levet under i tidligere tider. ` -->
+<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``Alle foredrag baseres på det faktum at få mennesker i nærmiljøet er kjent med forskning og forskningsmetoder. De fleste bruker stadig forskningsresultater i sitt arbeid uten å reflektere over hvordan kunnskapen er brakt fram. Derfor vil fokus bli lagt på forskningsmetodene og grunnen til at man forsker.` -->
+<!-- replace `<option(.*Museum)` with `<option selected`` -->

@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1173"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Bakterier og virus"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Arkeologisk museum, Auditoriet"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Kl. 12.15"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="80"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Rogalandsforskning"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Stavanger"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Avslutning på Forskningsdagene: 'Slumrende virus og tikkende bomber hos sau. Maedi og Scrapie' v/ dr. med vet Matha J. Ulvund, 'Kampen om matfatet - bakterier på liv og død' v/ seniorforsker dr. scient Jan Thomas Rosness, 'Antibiotika som venn og fiende. Samfunnsmessige konsekvenser av økende multiresistens hos bakterier' v/ professor dr. oecon Jan Erik Karlsen.` -->
+<!-- replace `<option(.*Rogaland)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?14.10"?)\s*>` with `` checked>` -->

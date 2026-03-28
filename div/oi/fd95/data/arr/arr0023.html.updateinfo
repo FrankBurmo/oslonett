@@ -1,0 +1,16 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="23"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Den store kompetansejakten"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Oslo, Rica Sjølyst"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="9.00-16.30 og 9.00-16.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value="Barnevernets Utviklingssenter"` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value="Kr. 900 inklusive lunsj"` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value="Alle som arbeider med barn og unge"` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="21"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Barnevernets Utviklingssenter (BVU)"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Seminaret tar opp kompetansebegrepet i et kritisk og tiltaksrettet perspektiv. Vi spør: Hva er kompentanse? Er det et faglig moteord med uklart innhold og med avgrensingsproblemer eller et nyttig bidrag i den tverrfaglige begrepsutviklingen? Nytter det å satse på kompetansestyrkende tiltak for leg og lærd? Gir kompetansestyrking varige resultater?` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?09.10"?)\s*>` with `` checked>` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?10.10"?)\s*>` with `` checked>` -->

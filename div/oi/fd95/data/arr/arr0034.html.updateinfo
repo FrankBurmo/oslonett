@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="34"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Forskning og utvikling til nytte"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Kristiansand, Gimlemoen, Aulabygningen, Auditoriet"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="10.00 - 17.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value="Agderforskning, tlf. 38 02 50 55"` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value="Kr 700 "` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value="Bedriftsledere, adm.ledere og politikere i offentlig forvaltning"` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="28"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Agderforskning"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Kristiansand"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Fagkonferansen er et møtested mellom næringsliv, offentlig forvaltning og politikere. Den retter oppmerksomheten mot forskning som er til nytte for beslutningstakere ved å formidle bruker-rettet kunnskap. Konferansen har dels et fellesprogram og dels program i parallelle sesjoner. I sesjonen for økonomi og samfunn tas det opp spørsmål som sammenligning av kvalitet, produktivitet, effektivitet og kostnader mellom kommuner, budsjettspillprosesser, medisinbruk og levekår. I sesjonen for offensive bedrifter tas opp spørsmål som morgendagens krav til offensive bedrifter, bruk av kundekunnskap i organisasjoner, Business Process Reengineering og markeds- og ledelsesinformasjonssystemer i bedrifter. I fellesprogrammet settes fokus på forskningens nytte. Innledere på konferansen er blant andre Tormod Hermansen; Adm. dir. Telenor, John G. Bernander; Adm. dir. Gard Assuranceforening, Dag S. Thelle; Professor Universitetet i Oslo og Jon P. Knudsen; politisk redaktør Fædrelandsvennen.` -->
+<!-- replace `<option(.*Vest-Agder)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?09.10"?)\s*>` with `` checked>` -->

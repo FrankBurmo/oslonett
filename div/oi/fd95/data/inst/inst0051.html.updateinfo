@@ -1,0 +1,11 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="51"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="SINTEF - gruppen"` -->
+<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value="http://www.sintef.no/"` -->
+<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with `` SINTEF-gruppen utfører forsknings - og utviklingsoppdrag for næringsliv og forvaltning. Prosjektene er primært innen teknologi, men også naturvitenskap, medisinsk teknikk og samfunnsfag. Ved inngangen til 1995 hadde gruppen 2080 ansatte i Trondheim, Oslo og Mo i Rana. Av disse er 1231 forskere. I tillegg kom 271 ansatte på prosjekt - og tidsbestemte kontrakter, Enhetene som i dag utgjør SINTEF-gruppen hadde samlet en omsetning på drøyt 1,4 milliarder kroner i 1994. Oppdrag for næringsliv og forvaltning utgjorde i 1994 vel 90 prosent av driftsinntektene. ` -->
+<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``SINTEF- gruppen stiller med egen bod under fellesarrangement på Nordre. Se under arrangement i Trondheim for mer info.` -->
+<!-- replace `<option(.*Forskningsinstitutt)` with `<option selected`` -->

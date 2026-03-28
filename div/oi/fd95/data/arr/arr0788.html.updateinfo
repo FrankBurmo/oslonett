@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="788"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Diagnose og behandling av kreft"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Undervisningssenteret E406, Det Norske Radiumhospital"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Kl. 17.00-19.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="31"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Universitetet i Oslo"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Undervisningssenteret E406, Det Norske Radiumhospital"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Kreft i tykktarmen Møteledere: Karl-Erik Giercksky og Kjell Magne Tveit Kl. 17.00-17.25 Risikofaktorer v/Karl-Erik Giercksky Kl. 17.25-17.50 Moderne kirurgi v/Johan Wiig Kl. 17.50-18.10 Pause Kl. 18.10-18.40 Når kirurgi alene ikke er nok v/Kjell Magne Tveit Kl. 18.40-19.00 Å leve med stomi v/Tore Borg Omvisning` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?12.10"?)\s*>` with `` checked>` -->

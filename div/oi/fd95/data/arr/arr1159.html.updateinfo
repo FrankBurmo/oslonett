@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1159"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Foredrag fra Norconserv"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Auditoriet på Arkeologisk Museum"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Kl. 12.15"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value="Alle"` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="75"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Norconserv"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``KAMPEN OM MATFATET - bakterier på liv og død. v/ seniorforsker dr. scient Jan Thomas Rosness (Norconserv). Del av foredragsserie. Se Arkeologisk museum i Stavanger. ` -->
+<!-- replace `<option(.*Rogaland)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?14.10"?)\s*>` with `` checked>` -->

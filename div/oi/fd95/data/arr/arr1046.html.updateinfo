@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1046"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Generelle temainnlegg"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Auditorium 1042, Høgskolen i Finnmark, Alta"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="08.30 - 16.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="36"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Høgskolen i Finnmark (HiF)"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Alta"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Sosialarbeiderutdanningen: 1. Utviklingspsykologi og identitetsforståelse. Niels Gredal, HiF Kristendomskunnskap 1. Nord-Norsk religiøsitet slik Idar Kristiansens utvandrerromaner beskriver den Tore Meistad, HiF Informasjonsteknologi 1. Datamaskinen - distriktenes redning eller siste spiker i likkista? Aril Jansen, HiF Økonomisk/administrative fag 1. Transnasjonale regioner og demoktati - en vurdering av mulighetene for samarbeid om demokratispørsmål i hhv. Barentsregionen og Østersjøregionen. Tor Dahl-Eriksen, HiF ` -->
+<!-- replace `<option(.*Finnmark)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?09.10"?)\s*>` with `` checked>` -->

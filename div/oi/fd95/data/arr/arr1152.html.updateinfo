@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1152"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Et Hafrsfjordslag omkring 500 e.Kr.?"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Auditoriet, Arkeologisk Museum i Stavanger "` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="kl. 1800"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="76"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Arkeologisk museum i Stavanger"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Om naust og leidangsordning i folkevandringstid. Foredrag v/Professor Bjørn Myhre - Omkring Hafrsfjord finnes det en konsentrasjon av store skipsnaust fra folkevandringstid, bygget for krigsskip. Disse naustene kunne huse en hel flåte av skip som må ha vært bemannet av flere hundre menn. I foredraget blir det diskutert om dette er spor etter en tidlig leidangsordning organisert av høvdinger i et smårike med sentrum på Nord-Jæren. ` -->
+<!-- replace `<option(.*Rogaland)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?10.10"?)\s*>` with `` checked>` -->

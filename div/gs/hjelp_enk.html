@@ -1,0 +1,80 @@
+<html>
+<head>
+  <title>EuroCall Gule Sider - hjelp og eksempler for enkelt søk</title>
+</head>
+
+
+<body bgcolor="#ffffff">
+
+<img alt="EuroCall Gule Sider" src="gifs/guleeur2.gif">
+
+<h1>Hjelp om enkelt søk etter firma</h1>
+
+Denne måten å søke i Gule Sider på, baserer seg på at man oppgir deler
+av firmanavnet og evt. avgrenser søket ved å oppgi geografisk
+informasjon i form av postnummer og/eller poststed.
+<p>
+Det kan angis
+lister av postnummer samt intervaller av postnummer. Angir man ett
+eller flere postnummer, er selvsagt posted unødvendig, siden postnumre
+impliserer et poststed. Se eksemplene under.
+<p>
+For alle typer søk, gjelder at man kan bruke spesielle ord og symboler
+for å angi sammensatte søk (store eller små bosktaver spiller ingen rolle):
+<p>
+<table border=1 cellspacing=5>
+<tr><th>ORD</th><th>SYMBOL</th><th>MENING</th></tr>
+<tr><td align=center>OG</td><td align="center">&</td><td>Brukes for å angi logisk "OG". Avgrenser søk.</td></tr>
+<tr align="center"><td>ELLER</td><td>|</td><td>Brukes for å angi logisk "ELLER". Utvider søk.</td></tr>
+<tr align="center"><td>IKKE</td><td>!</td><td>Brukes for å angi logisk "IKKE". Avgrenser søk.</td></tr>
+<tr align="center"> <td></td><td>*</td><td>Brukes for å angi deltekst. Utvider søk.</td></tr>
+</table>
+
+<h2>Eksempel 1: Firmanavn som deltekst og postnummerintervall</h2>
+I nedenstående skjema søkes det etter firmaer med ordet "data" som
+en del av navnet OG som befinner seg innenfor postnummerintervallet
+0100 til 0200, altså stort sett det som før het "Oslo 1".
+<p>
+Søket begrenses til maksimum 50 firmanavn.
+<p>
+NB! Søk med '*' først i feltet tar lang tid.
+
+<pre><form method="POST"  action="db.cgi">
+
+Firmanavn : <input name="firmanavn"   size="50" value="*data*"> 
+Postnummer: <input name="postnr" size="15" value="0010-0200"> Poststed: <input name="poststed" size="25">
+Max treff : <select name="rowcount">
+<option>20
+<option selected>50
+<option>100
+</select>
+
+<input type="submit" value="Start Søk"> <input type="reset" value="Slett skjema"></form></pre>
+
+<h2>Eksempel 2: Søk ved logiske uttrykk</h2>
+Her brukes  "ELLER" for å utvide
+et søk. I firmanavnet skal tekstene "data" eller "tele" forekomme, og
+man leter blandt firmaer registrert i Oslo ELLER Tromsø.
+<p>
+Søket begrenses til maksimum 20 firmanavn.
+<pre><form method="POST"  action="db.cgi">
+
+Firmanavn : <input name="firmanavn"   size="50" value="data | tele">
+Postnummer: <input name="postnr" size="15"> Poststed: <input name="poststed" size="25" value="Oslo ELLER Tromsø">
+Max treff : <select name="rowcount">
+<option selected>20
+<option>50
+<option>100
+</select>
+
+<input type="submit" value="Start Søk"> <input type="reset" value="Slett skjema"></form></pre>
+
+<hr align=left width=20% size=1 noshade>
+</body>
+<address>
+EuroCalls Gule Sider på Internett er et tilbud til deg fra
+<br>
+<pre><a href="/"><img src="/gifs/on/oslonett-i.gif" alt="Schibsted Nett" border=0></a>           <a href="ec.html"><img alt="EuroCall" border="0" src="gifs/guleeuro.gif"></a></pre>
+© 1995, Schibsted Nett AS og EuroCall Norge AS.
+</address>
+</html>

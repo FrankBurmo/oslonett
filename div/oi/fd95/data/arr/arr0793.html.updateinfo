@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="793"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Medisinsk møte på Ullevål sykehus"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Ullevål sykehus"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Kl. 16.00-20.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="31"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Universitetet i Oslo"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Ullevål sykehus"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Møteleder: Professor Harald Arnesen. Auditoriet i midtblokken. Kl. 16.00-17.00 Når hjertet gisper etter luft v/Professor dr. med. Arnfinn Ilebekk Kl. 17.00-18.00 Kikkehullskirurgi v/Avdelingsoverlege dr. med. Trond Buanes Kl. 18.00-19.00 Østrogener og overgangsalder v/Overlege Fridtjof Jerve Kl. 19.00-20.00 Hva skjer når vi elsker? v/Professor dr. med. Berthold Grünfeld og førsteamanuensis dr. med. Åsa Rytter Evensen` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?12.10"?)\s*>` with `` checked>` -->

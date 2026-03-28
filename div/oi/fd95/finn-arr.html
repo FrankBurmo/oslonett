@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Forskningsdagene '95 - Søk</title>
+</head>
+
+<body bgcolor=ffffff text=42315a link=295239 vlink=ff8410>
+
+<img src="gifs/fd95-logo-inv2.gif" alt="Forskningsdagene '95" >
+
+<h1>Søk etter arrangement</h1>
+
+<blockquote>
+<strong>
+<hr noshade size="1">
+
+Skjemaet nedenfor kan brukes til å søke etter vilkårlige kombinasjoner
+av feltene som er registrert for de forskjellige arrangementene.
+Utfylte felter nedenfor kombineres med logisk "og", slik at det er
+mulig å avgrense søket både i emne/arrangør, i tid og geografisk
+
+<hr noshade size="1">
+</blockquote>
+
+<form method="POST" action="finn-arr.cgi">
+<dl>
+<dt>Arrangement eller tema:
+<dd> <input name="Arrangement" size=40>
+
+<dt>Institusjon:
+<dd>  <input name="Institusjon" size=40>
+
+<dt> Georafisk beliggenhet, fylke:
+<dd> <select name="Fylke">
+     <option> Akershus
+     <option> Aust-Agder
+     <option> Buskerud
+     <option> Finnmark
+     <option> Hedmark
+     <option> Hordaland
+     <option> Møre og Romsdal
+     <option> Nord-Trøndelag
+     <option> Nordland
+     <option> Oppland
+     <option> Oslo
+     <option> Rogaland
+     <option> Sogn og Fjordane
+     <option> Sør-Trøndelag
+     <option> Telemark
+     <option> Troms
+     <option> Vest-Agder
+     <option> Vestfold
+     <option> Østfold
+     <option selected value=""> [Arrangementer i alle fylker]
+     </select>
+
+<dt> Fylke og lokal beliggenhet (by, kommune el. annet)
+<dd> <input name="Beliggenhet" size=40>
+
+<dt>Dag/dato: (søker etter vilkårlig dato hvis ingen angis)
+<dd> <pre>
+<input type=checkbox name="Dato" value="06.10"> Fredag   6.10     <input type=checkbox name="Dato" value="11.10"> Onsdag  11.10
+<input type=checkbox name="Dato" value="07.10"> Lørdag   7.10     <input type=checkbox name="Dato" value="12.10"> Torsdag 12.10
+<input type=checkbox name="Dato" value="08.10"> Søndag   8.10     <input type=checkbox name="Dato" value="13.10"> Fredag  13.10
+<input type=checkbox name="Dato" value="09.10"> Mandag   9.10     <input type=checkbox name="Dato" value="14.10"> Lørdag  14.10
+<input type=checkbox name="Dato" value="10.10"> Tirsdag 10.10     <input type=checkbox name="Dato" value="15.10"> Søndag  15.10
+</pre>
+     
+<dt>Maks. antall treff:
+<dd> <select name="Makstreff">
+     <option> 25
+     <option selected> 50
+     <option> 100
+     <option> 200
+     <option value="10000"> Alle
+     </select>
+</dl>
+
+<pre>
+     <input type="submit" value="Start søk">    <input type="reset" value="Nytt skjema">
+</pre>
+<hr>
+</form>
+
+</body>
+</html>

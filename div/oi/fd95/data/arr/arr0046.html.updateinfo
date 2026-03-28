@@ -1,0 +1,23 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="46"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Arv og visjon - utstilling"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Stenersenmuseet, Munkedamsveien 15, inng. Konserthus-terrassen"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="ti, to: 11 - 19, fre, lø, søn: 11-17"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="29"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Høgskolen i Oslo (HiO)"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Oslo sentrum"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Jubileumsutstilling for den eldste nasjonale tekstilutdanning i Norge. Det er 120 år siden Statens Kvinnelige Industriskole, senere Statens lærerskole i forming, Oslo, ble grunnlagt. Utdanningen er nå en del av Høgskolen i Oslo, i Avdeling for estetiske fag. Skolens lærere og studenter (både nåværende og tidligere) stiller ut verker.` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?06.10"?)\s*>` with `` checked>` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?07.10"?)\s*>` with `` checked>` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?08.10"?)\s*>` with `` checked>` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?10.10"?)\s*>` with `` checked>` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?11.10"?)\s*>` with `` checked>` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?12.10"?)\s*>` with `` checked>` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?13.10"?)\s*>` with `` checked>` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?14.10"?)\s*>` with `` checked>` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?15.10"?)\s*>` with `` checked>` -->

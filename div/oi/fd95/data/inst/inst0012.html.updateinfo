@@ -1,0 +1,11 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="12"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Christian Michelsen Research AS (CMR)"` -->
+<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value="http://www.cmr.no/images/icons/cmrlogo.gif"` -->
+<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value="http://www.cmr.no"` -->
+<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Christian Michelsen Research AS (CMR) er et forskningsinstitutt som utfører teknologisk forskning og utvikling på oppdrag fra norske og utenlandske kunder. Selskapet har ca. 150 ansatte, hvorav 60 i datterselskapene Prototech AS og Fluenta AS. Den samlede omsetning for 1994 var på 101,5 mill. kroner. CMRs forskningsområder er industriell instrumentering, prosess og sikkerhet og datateknologi. Gjennom datterselskapene strekker engasjementet seg til bygging av prototyper og kommersialisering av ferdige produkter. [Christian Michelsen Research AS, Postboks 3, 5036 Fantoft-Bergen. Telefon: 55 57 40 40. Telefax: 55 57 40 41. E-mail: Eva.Hille@cmr.no (Informasjonsleder)]` -->
+<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``` -->
+<!-- replace `<option(.*Forskningsinstitutt)` with `<option selected`` -->

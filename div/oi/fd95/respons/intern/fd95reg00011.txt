@@ -1,0 +1,14 @@
+overskrift: Søkeresultat den enkelte dag og sted
+kommentar: Jeg var interessert i en oversikt over arrangementer i Oslo 12. oktober, men søk på det ene eller det andre ga flere enn 50 svar - og web returnerer bare "de 50 første". Greit nok at man begrenser resultatet av et generelt søk, men søk på en bestemt dag bør besvares fullt ut - og søk på kombinasjon av tid og sted bør være mulig. Forøvrig er det imponerende mange arrangementer!!
+svar: Kommentaren over gjelder oversikter over arrangementer som lages fra siden .../forskdag95/arrangement.html. Den øvre grensen for antall arrangementer som vises er nå fjernet, slik at alle treff vil bli vist frem. Forøvrig kan man gjøre søk med vilkårlige kombinasjoner av feltene fra siden "Søk etter arrangementer", http://www.oslonett.no/forskdag95/finn-arr.html
+signatur: kgn@oslonett.no
+publiseres: nei,mail
+besvart: ja
+firma: Norsk Regnesentral
+navn: Håvard Hegna
+epost: havard.hegna@nr.no
+regdato: 27.9.95 15:47:50
+revdato: 27.9.95 18:29:28
+intern: ja
+anonym: nei
+file: /local/www/div/oi/fd95/respons/intern/fd95reg00011.txt

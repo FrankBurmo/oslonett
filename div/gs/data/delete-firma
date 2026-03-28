@@ -1,0 +1,26 @@
+#!/local/bin/perl5 -w
+
+$MAXBATCH = 30;
+
+use POSIX;
+setlocale(LC_CTYPE, "iso_8859_1");
+
+open(F, "./conv firma.tab | cut -f1 |") or die;
+
+$batchsize = 0;
+while (<F>) {
+   chomp;
+   unless (/^\d+$/) {
+      warn "Illegal key $_\n";
+      next;
+   }
+   print "DELETE FROM nettadr WHERE firma = '$_'\n";
+   print "DELETE FROM stikkreg WHERE firma = '$_'\n";
+   print "DELETE FROM firma WHERE nr = '$_'\n";
+   $batchsize += 3;
+   if ($batchsize > $MAXBATCH) {
+       $batchsize = 0;
+       print "go\n";
+   }
+}
+print "go\n" unless $batchsize == 0;

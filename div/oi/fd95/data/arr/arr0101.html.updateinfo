@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="101"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Bruksform - idè og materialitet"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Fylkesgalleriet, Notodden"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="kl. 1100"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="8"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Høgskolen i Telemark"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Fylkesgalleriet, Notodden"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``v/høgskolelektor Ann Mari Arneberg. Del av utstillingen 'Idè og materialitet'. ` -->
+<!-- replace `<option(.*Telemark)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?10.10"?)\s*>` with `` checked>` -->

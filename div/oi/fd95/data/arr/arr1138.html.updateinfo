@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1138"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Flerfaglig forskningsmiljø - presseseminar "` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="BRATTØRA FORSKNINGSSENTER"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="09.30-12.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value="Helen Eliassen, telefon 73 59 53 22"` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value="Journalister presse, fagblad"` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="15"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Universitetet i Trondheim"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Trondheim"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Presseseminar - program: - Velkommen ved Informasjonssjef ved Universitetet i Trondheim, Kåre Kongsnes - Brattøra Forskningssenter: et eksempel på vellykket flerfaglig forskningssamarbeid, ved universitetsrektor Karsten Jakobsen. - Brattøra presenterer seg selv, ved senterets leder 1. amanuensis Elin Kjørsvik - Pause - 3 godbiter fra forskningsprosjekter: tittel og prosjekt er ikke avklart i skrivende stund. ` -->
+<!-- replace `<option(.*Sør-Trøndelag)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?10.10"?)\s*>` with `` checked>` -->

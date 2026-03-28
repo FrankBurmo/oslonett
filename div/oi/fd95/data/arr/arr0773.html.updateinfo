@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="773"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Å være kreftpasient-å være pårørende"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Seminarrom F4, Det Norske Radiumhospital"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Kl. 17.00-19.10"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="31"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Universitetet i Oslo"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Seminarrom F4, Det Norske Radiumhospital"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Møteledere: Sophie D. Fosså og Unni Harvei Kl.17.00-17.20 Immunforsvar og kreft v/Steinar Aamdal Hvordan kan bivirkninger unngås? Kl. 17.25-17.40 Moderne strålebehandling v/Jan E. Evensen Kl. 17.45-18.05 Cellgift  behandling og stamcellestøtte v/Harald Holte Kl. 18.10-18.25 Pause Kl. 18.25-18.50 Psykologiske reaksjoner når kreftdiagnosen stilles v/Karin B. Vatnar, Kristin Hegdal, Lena Iversen og Tor Jacob Moe Omvisning` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?11.10"?)\s*>` with `` checked>` -->

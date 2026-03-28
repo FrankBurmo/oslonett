@@ -1,0 +1,78 @@
+<html>
+<head>
+  <title>EuroCall Gule Sider - hjelp og eksempler for bransjesøk</title>
+</head>
+
+
+<body bgcolor="#ffffff">
+
+<img alt="EuroCall Gule Sider" src="gifs/guleeuro.gif">
+
+<h1>Hjelp om bransjesøk</h1>
+
+Denne måten å søke i Gule Sider på, baserer seg på at man oppgir en
+bransjeangivelse i stikkordfeltet vist under. Firmaene i Gule Sider kan
+registrere et vilkårlig antall stikkord om seg selv for å beskrive
+virksomhet og produkter, og som sådan er det ikke bare bransjenavn
+man kan angi i stikkordfeltet (se eksempler under).
+
+<p>
+For å avgrense søkene geografisk i Norge,  kan det angis
+lister av postnummer samt intervaller av postnummer. Angir man ett
+eller flere postnummer, er selvsagt posted unødvendig, siden postnumre
+impliserer et poststed. Se eksemplene under.
+<p>
+For alle typer søk, gjelder at man kan bruke spesielle ord og symboler
+for å angi sammensatte søk (store eller små bosktaver spiller ingen rolle):
+<p>
+<table border=1 cellspacing=5>
+<tr><th>ORD</th><th>SYMBOL</th><th>MENING</th></tr>
+<tr><td align=center>OG</td><td align="center">&</td><td>Brukes for å angi logisk "OG". Avgrenser søk.</td></tr>
+<tr align="center"><td>ELLER</td><td>|</td><td>Brukes for å angi logisk "ELLER". Utvider søk.</td></tr>
+<tr align="center"><td>IKKE</td><td>!</td><td>Brukes for å angi logisk "IKKE". Avgrenser søk.</td></tr>
+<tr align="center"> <td></td><td>*</td><td>Brukes for å angi deltekst. Utvider søk.</td></tr>
+</table>
+
+<h2>Eksempel 1: Advokatfirmaer i Oslo 2</h2>
+I nedenstående skjema søkes det etter firmaer som har registrert  "advokat" som
+et stikkord OG som befinner seg innenfor postnummerintervallet
+0200 til 0299, altså stort sett det som før het "Oslo 2".
+<p>
+Søket begrenses til maksimum 50 firmanavn.
+<pre><form method="POST"  action="db.cgi">
+Postnummer: <input name="postnr" size="15" value="0200-0299"> Poststed: <input name="poststed" size="25">
+Stikkord:   <input name="stikkord" size="50" value="advokat">
+Max treff : <select name="rowcount">
+<option>20
+<option selected>50
+<option>100
+</select>
+
+<input type="submit" value="Start søk etter advokater i Oslo 2"> <input type="reset" value="Resett skjema"></form></pre>
+
+<h2>Eksempel 2: Søk på produktforhandlere innenfor forskjellige regioner</h2>
+Jeg er her ute etter Nissan (bil) forhandlere i  Oslo ELLER Tromsø. Jeg har selvsagt
+ingen garanti for at det ikke også er Nissan forhandlere i katalogen som ikke har
+registrert "Nissan" som et stikkord.
+<p>
+Søket begrenses til maksimum 20 firmanavn.
+<pre><form method="POST"  action="db.cgi">
+Postnummer: <input name="postnr" size="15"> Poststed: <input name="poststed" size="25" value="Oslo ELLER Tromsø">
+Stikkord:   <input name="stikkord" size="50" value="nissan">
+Max treff : <select name="rowcount">
+<option selected>20
+<option>50
+<option>100
+</select>
+
+<input type="submit" value="Start søk etter Nissan forhandlere i Oslo ELLER Tromsø"> <input type="reset" value="Resett skjema"></form></pre>
+
+<hr align=left width=20% size=1 noshade>
+</body>
+<address>
+EuroCalls Gule Sider på Internett er et tilbud til deg fra
+<br>
+<pre><a href="/"><img src="/gifs/on/oslonett-i.gif" alt="Schibsted Nett" border=0></a>           <a href="ec.html"><img alt="EuroCall" border="0" src="gifs/guleeuro.gif"></a></pre>
+© 1995, Schibsted Nett AS og EuroCall Norge AS.
+</address>
+</html>

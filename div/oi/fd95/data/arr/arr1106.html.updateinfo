@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1106"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Rehabilitering - møtested mellom teori og praksis"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="på høgskolen "` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="10.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value="Kjetil Nilsen, Kurs- og forskningskonsulent"` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="59"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Høgskolen i Harstad (HIH)"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Harstad"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Forelesning ved psykolog Olger Storfjell` -->
+<!-- replace `<option(.*Troms)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?12.10"?)\s*>` with `` checked>` -->

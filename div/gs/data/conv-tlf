@@ -1,0 +1,22 @@
+#!/local/bin/perl5 -w
+
+# KODE:    1 2 3 4 5
+@type = qw(T T F M P);
+
+#  T:  1    1. telefon
+#  T:  2    2. telefon
+#  F:  3    Telefaks
+#  M:  4    Mobiltelefon
+#  P:  5    Personsøker
+
+open(F, "./conv telefon.tab |") or die;
+
+while (<F>) {
+   chomp;
+   @T = split(/\t/, $_);
+   unless ($T[1] =~ /^\d+$/) {
+      warn "Illegal firma nr: $_\n";
+      next;
+   }
+   print join("\t", $T[0], ($type[$T[1]-1] || "?"), $T[2]), "\n";
+}

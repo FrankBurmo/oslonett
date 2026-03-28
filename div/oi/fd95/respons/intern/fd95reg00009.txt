@@ -1,0 +1,7 @@
+overskrift: Hipp hurra !!!
+kommentar: Ha en god dag. Vi sees i kveld stig
+intern: ja
+anonym: ja
+base: fd95
+maskin: 
+regdato: 25.9.95 13:10:11

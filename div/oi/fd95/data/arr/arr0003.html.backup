@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/div/oi/fd95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="3"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Tanker, visjoner, godstransport i pappkasser"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Container 2956363/3, bakerst"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="9:15"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value="Allgrønn"` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value="100 kr"` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value="P. G. Sundt"` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="3"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Norges forskningsråd (Forskningsrådet)"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Fillipstad, containerhavn"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Vil pappkasser båret av hundevalper ta over for containere og derved løsen en vanskelig konflikt i det norske samfunn?` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?12.10"?)\s*>` with `` checked>` -->

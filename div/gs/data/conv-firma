@@ -1,0 +1,50 @@
+#!/local/bin/perl5 -w
+
+use POSIX;
+setlocale(LC_CTYPE, "iso_8859_1");
+
+open(F, "./conv firma.tab |") or die;
+
+%seen = ();
+
+while (<F>) {
+   chomp;
+   @F = split(/\t/, $_);
+   if (@F < 5) {
+      warn "short record: $_\n";
+      next;
+   }
+   unless ($F[0] =~ /^\d+$/) {
+      warn "illegal number: $_\n";
+      next;
+   }
+   if ($seen{$F[0]}++) {
+      warn "duplicate key: $_\n";
+      next;
+   }
+   unless (length $F[1]) {
+      warn "no name: $_\n";
+      next;
+   }
+
+   splice(@F, 2, 0, "");        # Insert navn2 field
+
+   # lowercase navn og adresser
+   for (@F[1..4]) {
+       $_ = lc $_;
+   }
+
+   unless ($F[5] =~ /^\d{1,4}$/) {
+       warn "illegal postnr: $_\n";
+       next;
+   }
+
+   $F[6] = "" unless defined $F[6];
+   $F[7] = "" unless defined $F[7];
+   $F[7] = uc $F[7];
+
+   @F[8..13] = ("") x 6;        # I'll figure these out later
+   print join("\t", @F[0..13]), "\n";
+   #print "($F[4]) $F[1]\n";
+   #last if $count++ > 2;
+}

@@ -1,0 +1,91 @@
+#!/local/bin/perl5 -w
+open(F, "./conv info.tab |") or die;
+
+use Sybase::DBlib;
+$SHOW_SQL = 0;
+
+$db = Sybase::DBlib->dblogin('oslonett', 'oslonett');
+die "Can't log into sybase" unless $db;
+
+dberrhandle(\&error);
+dbmsghandle(\&message);
+
+
+$last = "";
+@text = ();
+
+while (<F>) {
+   ($no, $text) = split("\t", $_);
+   if ($no ne $last) {
+	out();
+	$last = $no;
+   }
+   next unless defined $text;
+   push(@text, $text);
+}
+out();
+
+sub out
+{
+    return unless @text;
+    $value = join('', @text);
+    $field = "info";
+    $field = "infolang" if length $value > 255;
+    $value =~ s/'/''/g; # ' # quote quotes
+    sql("UPDATE firma
+SET $field = '$value'
+WHERE nr = '$last'
+");
+    $rows = $db->DBCOUNT;
+    if ($rows != 1) {
+       print "$last: $rows rows affected\n";
+    }
+    if ((++$count % 50) == 0) {
+       print "$count entries processed.\n";
+    }
+    @text = ();
+}
+
+sub sql
+{
+    my($cmd, $sub) = @_;
+
+    unless ($db) {
+	return undef;
+    }
+    if ($SHOW_SQL) {
+       print $cmd;
+    }
+    $db->dbcmd($cmd);
+    $db->dbsqlexec;
+
+    my @res;
+    my @data;
+    while($db->dbresults != NO_MORE_RESULTS) {
+	while (@data = $db->dbnextrow) {
+	    if (defined $sub) {
+		&$sub(@data);
+	    } else {
+		push(@res, [@data]);
+	    }
+	}
+    }
+    \@res;  # return the result array
+}
+
+sub error
+{
+    my($db, $severity, $dberr, $oserr, $dbmsg, $osmsg) = @_;
+    print "<h3>ERROR-$dberr: $dbmsg</h3>\n";
+    INT_EXIT;
+}
+
+sub message
+{
+    my($db, $no, $state, $severity, $text, $server, $proc, $line) = @_;
+    print "<h3>$text ($no/$state/$severity)</h3>\n";
+    if ($no == 1105) {
+       # logsegment is full
+       die;
+    }
+}

@@ -1,0 +1,28 @@
+#!/local/bin/perl5 -w
+
+# This script makes the lines into tab separated fields.  It also convert
+# DOS charset and newline conventions.
+
+while (<>) {
+    last if /^\032/;  # DOS EOF
+    s/\s*$//;   # trailing space
+    s/\0//g;    # remove any NULs
+
+    # cp850 --> iso8859/1 (generated from pep2perl)
+    tr/€‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞßàáâãäåæçèéêëìíîïğñòóôõö÷øùúûüışÿ/§ÇüéâäàåçêëèïîìÄÅÉæÆôöòûùÿÖÜø£Ø×fáíóúñÑªº¿®¬½¼¡«»###|+ÁÂÀ©+|++¢¥+++++\-+ãÃ+++++\-+¤ğĞÊËÈiÍÎÏ++#\-¦Ì\-ÓßÔÒõÕµşŞÚÛÙıİ¯´\-±=¾¶§÷\-°¨·¹³²· /;
+
+    print join("\t", map { s/^"(.*)"$/$1/; $_ } split(/\t/, $_)), "\n";
+
+#   @F = ();
+#   while (length $_) {
+#	if (s/^\"([^"]*)"//) {   # quoted field
+#	    $val = $1;
+#	} else {
+#	    s/^([^,]*)//;        # unquoted field
+#	    $val = $1;
+#	}
+#	push(@F, $val);
+#	s/^,\s*//;
+#    }
+#    print join("\t", @F), "\n";
+}

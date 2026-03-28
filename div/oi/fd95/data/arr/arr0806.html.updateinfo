@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="806"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Medisinsk møte på Ullevål sykehus"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Auditoriet i midtblokken. Ullevål sykehus"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Kl. 16.00-20.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="31"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Universitetet i Oslo"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Auditoriet i midtblokken. Ullevål sykehus"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Møteleder: Professor Even Lærum.  Kl. 16.00-17.00 Hva slags leger ønsker vi oss? v/Redaktør Per Egil Hegge, Aftenposten Kl. 17.00-18.00 Tar jobben liv og helse? v/Professor dr. med. Tor Norseth Kl. 18.00-19.00 Tar storbyen liv og helse? v/Professor dr. med. Dag Thelle Kl. 19.00-20.00 Virker homøopati? v/Forskningsstipendiat Siri Aabel` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?13.10"?)\s*>` with `` checked>` -->
