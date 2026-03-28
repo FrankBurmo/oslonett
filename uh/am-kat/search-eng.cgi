@@ -1,0 +1,269 @@
+#!/local/bin/perl5
+
+require "intern/lib.pl";
+$| = 1;
+
+open(STDERR, ">/dev/null");	# don't print error messages from eval
+
+print "Content-type: text/html\n\n";
+
+%input = &getinput;
+$input{maxcout} = 50 unless $input{maxcount};
+$input{product} = 'CD' unless length $input{product};
+
+&noinput if $input{artist} !~ /\S/ && $input{title} !~ /\S/;
+
+&dosearch;
+
+exit 0;
+
+
+sub noinput {
+
+    &printheader("No search parameter specified");
+
+    print <<EOT;
+
+You should enter either artist/group and/or title. Return to the <a
+href="form-eng.html">search form</a> and fill inn either or both of
+these fields (or use the  "back" function of your WWW browser).
+
+EOT
+    &printfooter_eng;
+    exit 0;
+}
+
+
+sub dosearch {
+    # Søkevariable manipuleres ved enkelt og avansert søk.
+    # Tar vare på original i tilfelle vi må gjengi søkeparametre i klartekst
+    %originput = %input;
+    $originput{category} = "all categories"
+	unless length $originput{category};
+
+    open(K, $CATFILE) || &error("Failed to open file: $CATFILE");
+    if (length $input{category}) {
+	dbmopen(%cat, $CATINDEX, 0664);
+	$pos = $cat{lc $input{category}};
+	dbmclose %cat;
+	seek(K, $pos, 0);
+    }
+    if ($input{method} =~ /^simple/i) {
+	$input{title} =~ s/([\W ])/\\$1/g;
+	$input{artist} =~ s/([\W ])/\\$1/g;
+    } elsif ($input{method} =~ /^advanced/i) {
+	$input{title} =~ s/([^?*\w ()])/\\$1/g;
+	$input{title} =~ s/\?/\\S/g;
+	$input{title} =~ s/\*/\\S*/g;
+	$input{title} =~ s/\\\\\\S/\\?/g;
+	$input{title} =~ s/\\\\\\S\*/\\*/g;
+	$input{artist} =~ s/([^?*\w ()])/\\$1/g;
+	$input{artist} =~ s/\?/\\S/g;
+	$input{artist} =~ s/\*/\\S*/g;
+	$input{artist} =~ s/\\\\\\S/\\?/g;
+	$input{artist} =~ s/\\\\\\S\*/\\*/g;
+    } else {
+	$input{title} =~ s,(/),\\/,g;
+	$input{artist} =~ s,(/),\\/,g;
+
+	eval("/$input{artist}/");
+	$feil = $@;
+	$feil .= "<br>\n" if length $feil;
+	eval("/$input{title}/");
+	$feil .= $@;
+	$feil =~ s/at \(eval.+\) line 1.//g;
+#	if ($feil) {
+#	    &printheader("Error in regular expression");
+#	    print <<EOT;
+#
+#Du har forsøkt å gjøre et ekspertsøk men har angitt ulovlig regulært
+#uttrykk. Se beskrvielsen av hvordan man gjør <a
+#href="searchinfo.html#expert">ekspertsøk</a> dersom du er usikker
+#på hva som er lovlige søkeuttrykk. Rett opp feilene i <a
+#href="search.html">søkeskjemaet</a> eller velg <a
+#href="searchinfo.html#simple">enkelt søk</a>.<p>
+#
+#Nærmere beskrivelse av feilen:
+#<blockquote><font size="+1">
+#<b>$feil</b>
+#</blockquote>
+#EOT
+#            &printfooter;
+#	    &log(-1);
+#	    exit 0;
+#        }
+    }
+
+    $primary = &selectprimary;
+
+    # Bug i Mosaic m.fl(?): klarer ikke å sende med select/option med 
+    # value="" selv om man eksplisitt har bedt om det. Fix for dette:
+    $input{category} = "" if $input{category} =~ /^alle kategorier/i;
+
+    $cat = (length $input{category}) ? 
+	lc "kategori: $input{category}" : "all categories";
+    $cat = $TRANSLATE_CAT{lc $cat} if length $TRANSLATE_CAT{lc $cat};
+
+    eval($input{artist}) if length $input{artist};
+    $feil .= "Error in artist search expression: $originput{artist}<br>\n"
+	 if length $@;
+    eval($input{title}) if length $input{artist};
+    $feil = "Error in title search expression: $originput{title}<br>\n"
+	 if length $@;
+    &error($feil) if length $feil;
+
+    &printheader("Search result, $cat");
+
+    $catcutoff = "last unless /\Q$input{category}\E/;" if length $input{category};
+    $code = "
+while (<K>) { 
+  push(\@candidate, \$_) if ( $primary );
+  $catcutoff
+}";
+
+
+    eval($code);
+
+    foreach $cand (@candidate) {
+	next unless $input{product} eq $f{product};
+	@f{@FIELDS} = split(/;/, $cand);
+	if ($f{category} eq "DIV. KLASSISK") {
+	    $tmp = $f{title};
+	    $f{title} = $f{recording};
+	    $f{recording} = $f{artist};
+	    $f{artist} = $tmp;
+	}
+
+	$_ = $f{title};
+	next if length $input{title} &&
+	    ! eval( $input{title} );
+
+	$_ = $f{artist} . " " . $f{recording};
+	next if length $input{artist} &&
+	    ! eval( $input{artist} );
+
+	next if length $input{category} &&
+	    $f{category} !~ /^$input{category}$/io;
+	
+	$f{recording} = ", ".$f{recording} if $f{recording} =~/\S/;
+	
+	$counter++;
+	last if $counter > $input{maxcount};
+
+	$f{year} = "" unless $f{year};
+	$f{title} = "[produktinfo]" unless $f{title} =~ /\S/;
+
+	$f{'category'} = uc $TRANSLATE_CAT{lc $f{'category'}}
+	    if length $TRANSLATE_CAT{lc $f{'category'}};
+	$f{artist} = uc $TRANSLATE_ART{lc $f{artist}}
+	    if length $TRANSLATE_ART{lc $f{artist}};
+
+	push(@matches, join(";", @f{@FIELDS}));
+	push(@sortkeys, lc join(" ", @f{'category', 'artist', 'title', 'recording'}));
+    }
+
+    sub myway { $sortkeys[$a] cmp $sortkeys[$b]; }
+    @matches = @matches[sort myway $[ .. $#matches];
+    
+    foreach (@matches) {
+	@f{@FIELDS} = split(/;/);
+	if (!length $input{category} && $lastcat ne $f{category}) {
+	    $lastcat = $f{category};
+	    $list .= qq!<tr>\n<td colspan="3" align="center">!;
+	    $list .= qq!<font size="+1">!;
+	    $list .= qq!<b><em>$lastcat</em></b></font><br></td>\n!;
+	}
+	$f{price} =~ s/,(\d\d)\d+/.$1/;
+	$list .= qq!<tr>\n!;
+	$list .= qq!<td valign="top"> &#160;$f{artist}</td>\n!;
+	$list .= qq!<td valign="top"> &#160;<a href="showitem-eng.cgi?no=$f{no}">!;
+	$list .= qq!$f{title}</a>$f{recording}</td>\n!;
+	$list .= qq!<td valign="top" align="right" width="80">$f{price}&#160;<br></td>\n!;
+    }
+
+    if ($counter > 0) {
+	if ($counter > $input{maxcount}) {
+	    print "<em>The search was <strong>interrupted</strong> after $input{maxcount} hits.</em><p>\n";
+	} else {
+	    print "<em>Total number of hits: $counter.<p></em>\n";
+	}
+	print <<EOT;
+<table border="1" cellpadding="0">
+<tr>
+<td width="250"><font size="+2">&#160;Artist/group</font></td>
+<td width="150"><font size="+2">&#160;Title</font></td>
+<td align="center"><font size="+2">Price</font><br></td>
+
+$list
+</table><p>
+EOT
+    } else {
+	print "<h2>No hits</h2>\n";
+	print "<p>Your search parameters were:\n<ul>";
+	foreach (sort keys %input) {
+	    next unless length $originput{$_};
+	    print "<dt> <b>$_</b>\n<dd> $originput{$_}\n";
+	}
+	print "</dl>\n";
+    }
+    &log($counter);
+print qq!<p>Back to <a href="/uh/am-kat/form-eng.html">search form</a>.\n!;
+print "<!-- DEBUGINFO: \$key=$postinfo -->\n";;
+    &printfooter_eng;
+}
+
+
+sub selectprimary {
+    # default: subtext search
+    $boundary = ($input{subtext} =~ /^no/i) ? '\b' : '';
+
+    foreach $k ( 'title', 'artist' ) {
+	$input{$k} =~ s/\\?[æÆ]/[æÆ]/g;
+	$input{$k} =~ s/\\?[øØ]/[øØ]/g;
+	$input{$k} =~ s/\\?[åÅ]/[åÅ]/g;
+	if ($input{method} =~ /^advanced/i || $input{method} =~ /^expert/i) {
+	    $input{$k} =~ s,\s+eller\s+|\s+or\s+,||,gi;
+	    $input{$k} =~ s,\s+og\s+|\s+and\s+,&&,gi;
+	    $input{$k} =~ s,\s*\bikke\b\s*|\s*\bnot\b\s*,!,gi;
+	}
+	$input{$k} =~ s,([^()&|!]+),/$boundary$1$boundary/i,g
+	    if length $input{$k};
+    }
+
+    if (&score($input{artist}) > &score($input{title})) {
+	$key = $input{artist};
+    } else {
+	$key = $input{title};
+    }
+$postinfo = $key;
+    return $key;
+}
+
+
+sub score {
+# Må forbedre denne. Ønsker score=maks. lengde av segmenter uten '!'. Bør kanskje også
+# trekke fra tiendeler for forekomster av regexp-komponenter som: . [] \s \w * ? + 
+    local($expr) = $_[0];
+    if ($expr !~ /!/) {
+	return length $expr;
+    } else {
+	return 1;
+    }
+}
+
+
+sub log {
+    local($count) = $_[0];
+
+    open(L, ">>$SEARCHLOG") || return;
+    @f = localtime(time);
+    $dato = sprintf("%02d%02d%02d %02d:%02d:%02d",
+		    $f[5], $f[4]+1, $f[3], @f[2,1,0]);
+    $maskin = $ENV{REMOTE_HOST} || $ENV{REMOTE_ADDR};
+
+    print L "$count;$input{maxcount};";
+    print L "$originput{artist};$originput{title};$originput{category};";
+    print L "$originput{method};$originput{subtext};$dato;$maskin\n";
+    close L;
+
+}

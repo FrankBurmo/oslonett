@@ -1,0 +1,329 @@
+#!/local/bin/perl
+# Script for å ta imot registrering av (mulig) ny annonsør fra HTML FORM
+# KGN, 16.6.95. Sist endret: 6.7.95
+#
+# Oppdaterer filen angitt av $datafile med informasjon fra de innleste
+# feltene. Format for datafilen (antar i eksempelet at $fieldsep='"'):
+#
+# kundenr"reg.dato: yymmdd hh:mm:ss"<feltene angitt i @fields, adskilt med ">
+#
+# NB! Dette scriptet definerer feltnavn og feltrekkefølge i datafilen!
+# Andre scripts og FORMS må forholde seg til innholdet i array'en @fields
+#
+# Bruker dessuten filen angitt av $counterfile for å lagre sist
+# brukte kundenummer. Kundenummeret økes med 1 for hver registrering
+#
+# Følgende feilsituasjoner logges (til filen angitt av $errlogfile):
+#
+# - Forekommende felter i FORM som ikke er angitt i @fields. Dette
+#   indikerer skrivefeil i HTML FORM.
+# - Ventetid utover $timeout sekunder for å få tilgang til datafilen.
+#   (En annen prosess blokkerer datafilen ved en feil.)
+
+&init;	   # definerer globale variable
+&getinput; # returnerer data i (den globale) %input (key=feltnavn)
+&assert;   # returnerer HTML-kode og avslutter hvis for få felter er fylt ut
+&register; # foretar selve registreringen i datafilen
+&feedback; # returnerer HTML-kode med tilbakemelding til brukeren
+
+exit 0;
+
+
+sub init {
+# initialiserer globale variable:
+#
+# @fields       definisjon av hvilke felter som skal lagres i datafilen 
+#               NB! Andre script som bruker datafilen, samt HTML FORMS
+#               som sender data til dette script'et må bruke formatet 
+#               angitt i @fields (samme rettskriving)
+# %skip         hvilke felter vi ikke er interessert i å lagre i datafilen.   
+# @required     hvilke felter som _må_ være utfylt
+# $fieldsep     feltseparator i datafilen
+# $sepcode      erstatning for opprinnelig forekomster av $fieldsep
+# $datafile     filnavn til datafil
+# $counterfile  filnavn til tellerfil
+# $timeout      maksimalt # sekunder før vi gir opp å få tilgang til låst fil
+# $mailadr      adressen man henvises til hvis annen prosess har låst datafilen
+# $LOCK_EX      Parameterverdi til flock(): "exclusive lock"
+# $LOCK_UN      Parameterverdi til flock(): "unlock"
+
+    @fields = ("Firma", "Kontakt", "Adresse", "Postnr", "Poststed", "Telefon",
+	       "Telefax", "Email", "Bekreftet", "Annonsetype", "Spesialpris",
+	       "Diverse", "Kontakt1", "Kontakt2");
+    %skip = ("mailto",1, "reply-to",1, "subject",1, "cc",1 );
+    @required = ("Firma", "Adresse", "Postnr", "Poststed", "Telefon",
+		 "Bekreftet");
+    $fieldsep = '"';		# Man mister alle forekomster av ", erstatter
+    $sepcode='\'';		# disse med ' som antas å være likeverdig.
+
+    $endrescript = 'http://www.oslonett.no/on/www/kunder/endrekunde.cgi';
+    $basedir = '/local/www/on/www/kunder';
+    $counterfile = "$basedir/ON-kundeteller.txt";
+    $datafile = "$basedir/ON-kundedata.txt";
+    $errlogfile = "$basedir/ON-kundefeil.txt";
+
+    $timeout = 15;
+    $mailadr = 'kgn@oslonett.no';
+    $LOCK_EX = 2;
+    $LOCK_UN = 8;
+
+# Gjør chmod i fall det ikke var gjort fra før
+    chmod 0664, $datafile, $counterfile, $errlogfile;
+}
+
+
+
+sub getinput {
+# Leser inn data (med method GET eller POST) og plasserer dem i 
+# (den globale) array'en %input, der nøkkel til assosiativ array er feltnavnet
+
+    local($i, $name, $value, $data, @data);
+
+    if ($ENV{'REQUEST_METHOD'} eq "GET") {
+	$data = $ENV{'QUERY_STRING'};
+    } elsif ($ENV{'REQUEST_METHOD'} eq "POST") {
+	read(STDIN, $data, $ENV{'CONTENT_LENGTH'});
+    }
+
+    # Del opp input-data i felter ved alle forekomster av '&'.
+    @data = split(/&/, $data);
+
+    for $i (0 .. $#data) {
+
+	# Pluss oversettes til SPC
+	$data[$i] =~ tr/+/ /;
+
+	# Alt til venstre for første "=" er feltnavn, resten er felt-verdi
+	($name, $value) = split(/=/, $data[$i], 2);
+
+	# Erstatt forekomster av %<hexkode> med tilsvarende tegn
+	$name =~ s/%(..)/pack("c",hex($1))/ge;
+	$value =~ s/%(..)/pack("c",hex($1))/ge;
+
+	# Noen feltnavn er uinteressante å lagre, array'en %skip angir hvilke.
+	next if $skip{&lowcase($name)};
+
+	# En/flere forekomster av SPC, CR og LF i $value oversettes til SPC
+	$value =~ s/[ \r\n]+/ /g;
+
+	# Feltseparatoren er ulovlig i $value, koder denne som $sepcode
+	$value =~ s/$fieldsep/$sepcode/g;
+
+	$input{$name} = $value;
+    }
+}
+
+
+
+sub assert {
+# Sjekker om det finnes felter ut over de som er angitt i @fields og 
+# keys(%skip), skriver i så fall en linje i feil-loggen.
+
+    %inputfields = %input;
+    foreach $f ( @fields, keys %skip ) {
+	undef ($inputfields{$f});
+    }
+
+    while ( ($key, $val) = each %inputfields )  {
+	push(@ukjent, $key) if $val;
+    }
+
+    &logerror("Ukjent(e) felt(er) fra FORM: " . join(", ", @ukjent))
+	if @ukjent;
+	
+# Sjekker at et minimum av felter (de som er angitt i @required) er 
+# utfylt, returnerer feilmelding og avslutter hvis >= 1 felt mangler.
+    local($i, @mangler);
+
+    for $i ( @required ) {
+	push(@mangler, $i) if ( $input{$i} !~ /\S/ );
+    }
+
+    if ( @mangler ) {
+	$" = "\n <li> ";	# La print lage <li>-entries bak kulissene
+	&printheader("for få felter utfylt");
+	print <<EOT;
+Følgende felter mangler og må være utfylt:
+
+<hr noshade size=1>
+<ul>
+<li> @mangler
+</ul>
+<hr noshade size=1>
+Registreringen er ikke utført, gå tilbake og fullfør utfyllingen.
+EOT
+        &printfooter;
+
+        exit 1;
+    }
+}
+
+
+
+sub register {
+# Anvender flock(2) på datafilen, registrerer dataene inneholdt
+# i %input i filen og frigir datafilen igjen. 
+
+    local($record);
+
+# Må ikke blokkere uendelig hvis filen ved en feil er låst permanent
+    $SIG{'ALRM'} = 'handletimeout';
+    alarm($timeout);
+
+    open(FILE, ">>$datafile");
+    flock(FILE, $LOCK_EX);
+    seek(FILE, 0, 2);	# I tilfelle andre har skrevet mens vi har ventet
+
+# Datafilen er nå låst, kan oppdatere trygt
+    $SIG{'ALRM'} = 'IGNORE';
+    open(COUNTER, "+<$counterfile");
+    $counter = <COUNTER> || 0;	# Leser inn sist brukte kundenummer
+    $record = join($fieldsep, ++$counter, &dato, &dato);
+    for $f ( @fields ) {
+	$record .= $fieldsep . $input{$f};
+    }
+    print FILE "$record\n";
+
+    seek(COUNTER, 0, 0);	# Ønsker å skrive over gammelt nummer
+    print COUNTER $counter;	# Skriver tilbake kundenummeret
+    close COUNTER;
+
+    flock(FILE, $LOCK_UN);	# Frigir datafilen igjen
+}
+
+
+
+sub feedback {
+# Returnerer HTML-kode med tilbakemelding om at alt gikk bra
+    local($i);
+
+    &printheader("tilbakemelding");
+
+    print "Vi har registrert følgende informasjon om denne kunden:\n";
+    print "<hr noshade size=1>\n<dl>\n";
+
+# Neste linje lagt inn av Steinar
+
+    print "<dt> <b>Web kundennummer</b>\n  <dd> $counter\n";
+
+    for $f ( @fields ) {
+	printf "  <dt> <b>%s</b>\n  <dd> %s\n",
+	$f, $input{$f}||"[ikke oppgitt]";
+    }
+    print <<EOT;
+</dl>
+
+<p>
+<hr noshade size=1>
+<p>
+
+Dersom dataene ovenfor skulle være feil kan du slette denne
+registreringen og gå tilbake til skjemaet og rette opp og gjøre en ny
+registrering.
+<form method="POST" action="$endrescript">
+<input type="hidden" name="Kundenr" value="$counter">
+<input type="hidden" name="Firma" value="$input{'Firma'}">
+<input type="submit" name="Knapp" value="Slett denne kunden">
+</form>
+
+EOT
+    &printfooter;
+}
+
+
+
+sub handletimeout {
+# Før flock() kalles setter vi opp en alarm som kaller denne prosedyren
+# etter $timeout sekunder. Prosedyren returnerer altså feilmelding hvis
+# forsøket på å flock'e ble gitt opp.
+
+    &printheader("ikke aksess til databasen");
+
+    print <<EOT;
+<h2>Datafilen er låst av en annen prosess.</h2>
+
+Forsøk igjen litt senere. <p>
+
+Om problemet skulle være vedvarende, ta kontakt med 
+<a href="mailto:$mailadr">$mailadr</a>.
+EOT
+    &printfooter;
+    &logerror("Datafil flock'et - gir opp etter $timeout sekunder");
+    exit 2;
+}
+
+
+sub printfooter {
+# Skriver ut en standard footer-tekst
+    print <<EOT;
+
+<p>
+<hr size=1 noshade>
+<a href="/">
+  <img border="0" alt="[Oslonett]" src="/gifs/on/home.gif"></a>
+<a href="/on/www/kunder/">
+  <img border="0" alt="[Webtjenester]" src="/gifs/on/opp.gif"></a>
+<a href="/help.html">
+  <img border="0" alt="[Hjelp]" src="/gifs/on/hjelp.gif"></a>
+<a href="/search.html">
+  <img border="0" alt="[Søk]" src="/gifs/on/sok.gif"></a>
+
+<address>
+ <font size="-1">
+  Copyright &#169; 1995,  Oslonett AS.
+ </font>
+</address>
+
+</body>
+</html>
+EOT
+}
+
+
+sub printheader {
+# Skriver ut en standard header, dokumenttittel hentes fra 1. parameter
+    local($title) = @_;
+
+    print <<EOT;
+Content-type: text/html
+
+<html><head>
+<title>Registrering av ny annonsør: $title</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body background="/gifs/on/onbg.gif">
+<img alt=""  src="/gifs/on/www-i.gif">
+<h1>Registrering av ny annonsør: $title</h1>
+
+EOT
+}
+
+
+
+sub lowcase {
+# Returnerer første parameter oversatt til kun små bokstaver
+    local($txt) = @_;
+    $txt =~ tr/A-ZÆØÅ/a-zæøå/;
+    $txt;
+}
+
+
+
+sub logerror {
+# Logger meldingen(e) angitt i parameter(ene) til $errlogfile.
+# Gjør ingen file-locking, gir opp hvis ikke filen lar seg åpne.
+
+    open(LOG,">>$errlogfile") || return;
+    printf LOG "%s: %s\n", &dato, join(" ", @_);
+    close(LOG);
+}
+    
+
+
+sub dato {
+# Returnerer tekst med dato og tid på formen "yymmdd hh:mm:ss"
+
+    ($s,$m,$h,$mday,$mon,$year,@rest) = localtime($^T);
+    sprintf("%02d%02d%02d %02d:%02d:%02d",
+	    $year,$mon+1,$mday, $h,$m,$s);
+}

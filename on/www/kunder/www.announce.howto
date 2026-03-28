@@ -1,0 +1,165 @@
+From: Moderator <www-announce@boutell.com>
+Newsgroups: comp.infosystems.www.announce
+Followup-To: comp.infosystems.www.misc
+Subject: ** How to Announce in comp.infosystems.www.announce **
+Date: 23 Jul 1995 07:00:49 GMT
+Organization: The Mount Cuba Observatory
+Message-ID: <3howto.3@news.aa.net>
+
+Last Updated: 23 June 1995
+
+This document tells you exactly how to format your announcement
+for comp.infosystems.www.announce.  If you follow these guidelines
+and provide me with a working URL, I'll post it within 24 to 48
+hours of receiving it.
+
+For a more detailed explanation of what the group is about, please
+read the charter FAQ, which is posted weekly.  The guidelines in this
+post were taken verbatim from that document, which is also available
+via the Web at <URL:http://www.halcyon.com/grant/charter.html>.
+
+---
+
+3.  Policy on Subject: lines (modified 11 May 1995):
+
+  In a nutshell:  Subject: lines must be meaningful.  A single word,
+  a string of ID words, and/or your company's name with no description
+  is NOT meaningful.
+
+  Posts with meaningless Subject: lines will be sent back for editing.
+  The moderator will not bother to read the announcement and try to summarize
+  it for the poster.  The moderator will excise the word "Announce" (or any
+  derivative) from the Subject: line -- unless it is the only word in the
+  Subject: line, in which case the moderator will send the post back.
+  The moderator may also excise "WWW," "Online," "Site," and "New."
+
+  Announcers should do their readers a favor and describe their
+  business in the Subject: line.  Unless the company's name is Coca-Cola,
+  this international newsgroup's readers have probably not heard of
+  the company before.  Here are a couple of examples of a bad and
+  good Subject: line:
+
+    New BUSINESS WWW Site: X-Industries International Online
+  
+  What does X-Industries do?  Why should readers bother looking at this
+  post?  Why should the moderator bother to put this announcement
+  through, if the poster hasn't bothered to describe his company?
+  Yes, everyone knows you're on-line.  Yes, everyone knows the site is new.
+  And yes, believe it or not, EVERYONE KNOWS YOU'RE ON THE WEB, because
+  the post is in comp.infosystems.www.announce.  Here's another
+  example:
+
+    X-Industries: Anvils, Dirigibles, and On-line Herpetology Database
+
+  Cool!  Now readers know that the post is announcing a URL to a site
+  where they can find all the latest information on iron-forging tools,
+  obsolete flying machines, and newts!
+
+  Announcements should include one of the following ID words in CAPS
+  in the Subject: line if possible:
+
+  ARCHIVE    ENTERTAINMENT MAGAZINE   SCIENCE 
+  ART        ENVIRONMENT   MISC       SERVER 
+  BOOK       FAQ           MUSIC      SHOPPING
+  BROWSER    GAMES         NEWS       SOFTWARE
+  COLLECTION HEALTH        PERSONAL   SPORTS
+  ECONOMY    HUMANITIES    POLITICS   TRANSPORTATION
+  EDUCATION  INFO          REFERENCE
+  EMPLOYMENT LAW           RELIGION
+
+  Use of a subject ID word is optional.  Since this list is already long,
+  it is not expandable.  Announcers who do not find their topic in the
+  list should feel free to use a word of their own choosing.
+
+3.a.  What should my post contain?  How should I format it?  How long
+can it be?
+
+  All announcements of a new or changed URL are presented in the following
+  format (see the RFC at <URL:ftp://ds.internic.net/rfc/rfc1738.txt>
+  for details):
+
+   <URL:protocol://site[:PORT]/path/to/file/or/directory/>
+
+  Please note that [ and ] around PORT indicate that this part of
+  the URL is optional.
+
+  For example:
+
+   <URL:http://www.halcyon.com/grant/index.html>
+
+  Announcements should be plain-text and contain no HTML.
+
+  The announcement should be short -- less than 75 lines -- and to the
+  point.  The author's signature should be four lines or shorter; the
+  moderator will trim longer signatures.  Announcers should not include
+  surveys, polls, application forms, or the like in their posts; such addenda
+  will be excised.  Likewise, announcers should not quote price lists or
+  extensive catalog-style descriptions.  Instead, a post should provide
+  pointers, in the format described above, to those resources.
+
+4.  What if I don't format it correctly?
+
+  Announcements which contain broken links or do not follow the
+  format specified will be sent back to the originator.
+
+5.  Where do follow-up messages go?  Can I cross-post to another
+newsgroup related to my resource?
+
+  Unless a poster specifies otherwise, follow-ups are automatically
+  set to go to comp.infosystems.www.misc.  Follow-ups directed to other
+  newsgroups or to multiple newsgroups will be honored at the moderator's
+  discretion.  The moderator will not forward or post follow-ups sent
+  accidentally to comp.infosystems.www.announce or which get sent to
+  <announce@aa.net> or <grant@halcyon.com>.
+
+  The same policy holds for cross-posted announcements.  Cross-posting
+  will be honored at the moderator's discretion.  Posts should never
+  be cross-posted to more than one newsgroup in a category, and
+  posts should not go into more than one comp.infosystems.www.* group
+  (please see the charters of the other Web newsgroups at
+  <URL:http://www.halcyon.com/grant/web-groups.html> for details).
+
+6.  How do I post?
+
+  Announcers can post two ways.  First, they can use whatever
+  news software they usually use to post directly to the newsgroup.
+  The message will land in the moderator's mailbox automatically.
+
+  Otherwise, announcers can send their messages via e-mail directly
+  to www-announce@boutell.com.  Questions about announcements should go to
+  the group's moderator, M. L. Grant (www-announce-request@boutell.com).
+
+7.  Hey, I posted my announcement yesterday and I haven't seen my message
+yet!  Where did it go?  Should I resend it?
+
+  When a person posts to a moderated newsgroup like comp.infosystems.-
+  www.announce, the post goes automatically into the moderator's
+  mailbox.  From there, either a living person or a robo-moderating
+  program will approve the post and send it to the newsgroup.
+
+  In the case of comp.infosystems.www.announce, the living moderator
+  has to edit Subject: lines, check URL's, trim excessive signature
+  files, and verify that the post is appropriate for the group.  This
+  process takes real time, and the moderator has other work to do.
+  Furthermore, the moderator has a window of "24 to 48 hours" to post
+  announcements (to allow for weekends and holidays -- see below).
+
+  Once the moderator approves an announcement and posts it, the
+  message is propagated through Usenet, which can take anywhere from
+  three minutes to three days.  This propagation time is beyond the
+  moderator's control, as are any line or network outages.
+
+  Posters should wait a good five days before contacting the moderator
+  about a missing announcement.  They should also watch their newsfeed
+  very carefully, as posts generally go out in batches of twenty or
+  thirty.
+
+---
+
+M. L. Grant
+<www-announce@boutell.com>   <URL:http://www.halcyon.com/grant/>
+Moderator, comp.infosystems.www.announce
+-- 
+ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ Don't see your post yet?  It's probably on the way.  Be patient and read the
+      charter FAQ at <URL:http://www.halcyon.com/grant/charter.html>.

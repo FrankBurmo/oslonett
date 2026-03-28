@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Search the Akers Mic product catalogue</title>
+</head>
+<body background="gifs/bg.gif" link="#0000ff" vlink="#000088">
+
+<h1><a href="/home/akersm/">
+<img alt="AkersMic" src="gifs/logo.gif" border="0"></a></h1>
+<h1>Search the Akers Mic product catalogue</h1>
+
+<blockquote>
+<hr noshade size="2">
+<font size="+1">
+
+Fill in one or both fields below
+
+</font>
+<hr noshade size="2">
+</blockquote>
+
+<form method="POST" action="search-eng.cgi">
+<input type="hidden" name="subtext" value="yes">
+
+<dl>
+  <table border="0" cellpadding="3">
+
+<tr>
+<dt><td><font size="+2">Artist/group:</font></td>
+<dd><td colspan="2"><input name="artist" size="45"><br></td>
+
+<tr>
+<dt><td><font size="+2">Tile:</font></td>
+<dd><td colspan="2"><input name="title" size="45"><br></td>
+
+<tr>
+<dt><td><font size="+2">Category:</font></td>
+<dd><td colspan="2"><select name="category">
+<option value=""> All categories
+<option value="BARNEPLATER"> Children
+<option value="BLUES"> Blues
+<option value="COUNTRY & WESTERN"> Country & Western
+<option value="DIV. KLASSISK"> Misc. classical
+<option value="DIV. POP & ROCK"> Misc. pop & rock
+<option value="ETNISK"> Ethnic
+<option value="FILM- /TV-MUSIKK - MUSICALS"> Film- /TV-music - musicals
+<option value="JAZZ"> Jazz
+<option value="KLASSISK"> Classical
+<option value="NEW-AGE / ELEKTRONISK"> New-age / electronic
+<option value="POP & ROCK"> Pop & rock
+<option value="UNDERHOLDNING"> Entertainment
+</select><br>
+</td>
+
+<tr>
+<dt><td valign="middle"><font size="+2">Method:</font></td>
+<dd><td colspan="2">
+<input type="radio" name="method" value="advanced" checked> <a href="info-eng.html#advanced">Advanced search</a>
+<input type="radio" name="method" value="expert"> <a href="info-eng.html#expert">Expert search</a><br>
+</td>
+
+<tr>
+<dt><td><font size="+2">Max. no of hits:</font></td>
+<dd><td>
+<select name="maxcount">
+<option> 20
+<option selected> 50
+<option> 100
+<option> 200
+<option> 500
+</select>
+<br>
+</td>
+     
+<dt> <td align="right"><input type="submit" value=" Search "></td>
+</table>
+</dl>
+</form>
+
+<p> <img alt="" src="gifs/blueline.gif"><br> Programmed for <a
+href="/home/akersm/">AkersMic</a> by <a
+href="/">Oslonett AS</a>.
+
+</body>

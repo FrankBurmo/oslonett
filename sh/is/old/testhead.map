@@ -1,0 +1,11 @@
+default http://www.sn.no/sh/is/index.html
+
+rect http://www.sn.no/sh/is/soek.html 0,85 100,107
+rect http://www.sn.no/sh/is/komment.html 0,108 100,127
+rect http://www.sn.no/sh/is/hjelp.html 0,128 100,147
+
+rect http://www.sn.no/sh/is/tilbud.html 440,0 585,75
+
+rect http://www.sn.no/sh/is/genpage.cgi?2.1.1 107,125 231,147 
+rect http://www.sn.no/sh/is/genpage.cgi?1.3.1 232,125 360,147
+rect http://www.sn.no/sh/is/genpage.cgi?4.1.1 361,125 593,147

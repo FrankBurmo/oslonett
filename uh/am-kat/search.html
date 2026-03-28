@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Søk i Akers Mic-katalogen</title>
+</head>
+<body background="gifs/bg.gif" link="#0000ff" vlink="#000088">
+
+<h1><a href="http://www.oslonett.no/home/akersm/">
+<img alt="AkersMic" src="gifs/logo.gif" border="0"></a></h1>
+<h1>Søk i AkersMic-katalogen</h1>
+
+<blockquote>
+<hr noshade size="2">
+<font size="+1">
+
+Angi artist/gruppe eller tittel du ønsker å søke etter. Fyll inn
+begge feltene for å avgrense ytterligere. 
+
+</font>
+<hr noshade size="2">
+</blockquote>
+
+<form method="POST" action="search.cgi">
+
+<dl>
+  <table border="0" cellpadding="3">
+
+<tr>
+<dt><td><font size="+2">Artist/gruppe:</font></td>
+<dd><td><input name="artist" size="45"><br></td>
+
+<tr>
+<dt><td><font size="+2">Tittel:</font></td>
+<dd><td><input name="title" size="45"><br></td>
+
+<tr>
+<dt><td><font size="+2">Kategori:</font></td>
+<dd><td><select name="category">
+<option value=""> Alle kategorier
+<option value="BARNEPLATER"> Barneplater
+<option value="BLUES"> Blues
+<option value="COUNTRY & WESTERN"> Country & Western
+<option value="DIV. KLASSISK"> Div. klassisk
+<option value="DIV. POP & ROCK"> Div. pop & rock
+<option value="ETNISK"> Etnisk
+<option value="FILM- /TV-MUSIKK - MUSICALS"> Film- /TV-musikk - musicals
+<option value="JAZZ"> Jazz
+<option value="KLASSISK"> Klassisk
+<option value="NEW-AGE / ELEKTRONISK"> New-age / elektronisk
+<option value="POP & ROCK"> Pop & rock
+<option value="UNDERHOLDNING"> Underholdning
+</select><br>
+</td>
+
+<tr>
+<dt><td><font size="+2">Maks. antall treff:</font></td>
+<dd><td><select name="maxcount">
+<option> 20
+<option selected> 50
+<option> 100
+<option> 200
+<option> 500
+</select><br>
+</td>
+
+<tr>
+<dt><td valign="middle"><font size="+2">Søke etter:</font></td>
+<dd><td>
+<input type="radio" name="subtext" value="no" checked> Hele ord
+<input type="radio" name="subtext" value="yes"> Deler av ord<br>
+</td>
+
+<tr>
+<dt><td valign="middle"><font size="+2">Søke-metode:</font></td>
+<dd><td>
+<input type="radio" name="method" value="simple" checked> <a href="searchinfo.html#simple">Enkelt søk</a>
+<input type="radio" name="method" value="advanced"> <a href="searchinfo.html#advanced">Avansert søk</a>
+<input type="radio" name="method" value="expert"> <a href="searchinfo.html#expert">Ekspert-søk</a><br>
+</td>
+
+<tr>
+<dt>
+<dd><td align="center"><input type="submit" value=" Søk "></td>
+<td align="center"><input type="reset" value=" Nytt skjema "></td>
+</table>
+</dl>
+</form>
+
+<p> <img alt="" src="gifs/blueline.gif"><br> Tilrettelagt for <a
+href="http://www.oslonett.no/home/akersm/">AkersMic</a> av <a
+href="http://www.oslonett.no/">Oslonett AS</a>.
+
+</body>

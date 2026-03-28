@@ -1,0 +1,43 @@
+
+<a href="form-new-cd.html">CD</a>                                          63376
+
+   CD;POP & ROCK                            25336
+   CD;BLUES                                  1674
+   CD;COUNTRY & WESTERN                      2192
+   CD;BARNEPLATER                             103
+   CD;JAZZ                                   9204
+   CD;KLASSISK                              13096
+   CD;UNDERHOLDNING                          2049
+   CD;DIV. POP & ROCK                        2319
+   CD;NEW-AGE / ELEKTRONISK                  1052
+   CD;FILM- /TV-MUSIKK - MUSICALS            2084
+   CD;ETNISK                                 1684
+   CD;DIV. KLASSISK                          2583
+
+<a href="form-new-vhs.html">VHS - VIDEO</a>                                  8909
+
+   VHS - VIDEO;C&W                             16
+   VHS - VIDEO;DIV. SNADDER                  1123
+   VHS - VIDEO;JAZZ                            68
+   VHS - VIDEO;KLASSISK DIVERSE                94
+   VHS - VIDEO;KLASSISK                       265
+   VHS - VIDEO;MUSIKK VIDEO                  1540
+   VHS - VIDEO;SPILLE-/CULTFILM              4975
+   VHS - VIDEO;TEGNEFILM                      828
+
+<a href="form-new-spill.html">SPILL</a>                                        3417
+
+   SPILL;3DO                                   43
+   SPILL;AMIGA-CD32                            20
+   SPILL;APPLE-MACINTOSH-SPILL                 47
+   SPILL;ATARI-JAGUAR                          12
+   SPILL;BOOK                                   1
+   SPILL;IBM-PC CD-ROM                        877
+   SPILL;IBM-PC                               877
+   SPILL;NINTENDO-GAMEBOY                     179
+   SPILL;NINTENDO-SUPERNINTENDO-NTSC          404
+   SPILL;NINTENDO-SUPERNINTENDO-PAL           173
+   SPILL;PHILIPS-CD-I                         145
+   SPILL;SEGA GENESIS                          18
+   SPILL;SEGA MEGADRIVE                       509
+   SPILL;SEGA-GAME GEAR                       112

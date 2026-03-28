@@ -1,0 +1,51 @@
+<html>
+<head>
+ <title>Innlegging av ny Web kunde hos Schibsted Nett AS</title>
+ <link rev=made href="mailto:webmaster@sn.no">
+</head>
+<body bgcolor="#ffffff">
+<img alt=""  src="/gifs/on/www-i.gif">
+<h1>
+ Innlegging av ingress for bekreftet kunde
+</h1>
+
+Dette skjemaet benyttes (foreløpig) for å legge en annonsør inn i søkestrukturene
+under <a href="/innhold/">"Veiviseren"</a>. De som skal ligge i denne strukturen,
+er annonsører som betaler for å ligge i våre Web tjenere. De må ikke nødvendigvis
+være en del av de ytre strukturene i SN Horisont!
+<p>
+Felter som er uthevet MÅ
+fylles ut, de andre er valgfrie og brukes foreløpig ikke til noe, men
+fyll dem allikevel helst ut! F.eks. er det nyttig å skrive inn fysisk
+plassering på disken, siden URLer som kun er mappinger i serveren skjuler
+dette fullstendig.
+<p>
+På sikt skal denne informasjonen integereres tettere i kundebasen.
+<p>
+
+<form METHOD="POST" action="ingress.cgi">
+<pre>
+<font color="ff0000"><b>URL</b></font>        : <input name="URL" size=30> (kort URL uten http://...)
+Ikon URL   : <input name="IKONURL" size=30> (kort URL til lite ikon)
+Fysisk URL : <input name="FURL" size=30> (directory eller fysisk URL)
+<font color="#ff0000"><b>Tittel</b></font>     : <input name="TITTEL" size=30> (annonsørens navn)
+Kundenr    : <input name="KNR" size=5> (kundenr fra databasen)
+<font color="#ff0000"><b>Ingress</b></font>    : <textarea name="INGRESS" cols=30 rows=4></textarea> (noen linjer brødtekst om hva dette er)
+
+<input type="submit" value="Legg inn">
+</pre>
+</form>
+
+<hr size=1 noshade>
+<a href="/">
+  <img border="0" alt="[SN]" src="/gifs/on/home.gif"></a>
+
+<address>
+ <font size="-1">
+  Copyright &#169; 1995-96,  Schibsted Nett AS.
+ </font>
+</address>
+
+</body>
+</html>
+

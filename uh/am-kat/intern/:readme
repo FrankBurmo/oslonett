@@ -1,0 +1,23 @@
+Viktige filer i dette directory:
+katalog.txt selve katalogen. En linje for hvert produkt, felter innen linjen 
+adskilt med semikolon (;). Feltrekkefølgen er:
+product category no artist title recording year price cover1 cover2
+product=cd,spill, etc
+category=pop&rock, klassisk, etc
+no=katalognummer/produktnummer
+recording=felt for ekstra info om spesielle innspillinger
+cover1,2=filnavn til bilder av cover (forside,bakside hhv.)
+
+cat-index.*  dbm-database med filposisjon til starten av hver kategori i katalog.txt
+item-index.* dbm-database med filposisjon til hvert produkt i katalog.txt (key=produktnr.)
+
+searchlog.txt, itemlog.txt  alle søk og produktoppslag logges til disse filene, en linje pr. oppslag
+
+lib.pl       bibliotek-fil for CGI-scripts i området /uh/am-kat/
+
+mkcatindex.pl   perl-script for å generere cat-index.*
+
+mkitemindex.pl  perl-script for å generere item-index.*
+
+makelog         perl-script for å oppsummere searchlog.txt og itemlog.txt
+

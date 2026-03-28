@@ -1,0 +1,6 @@
+title: Velkommen til diskusjonsgruppa!
+passwd: aPGepfb.p0/YA
+from: Steinar Kj&aelig;rnsr&oslash;d (steinar@a.sn.no)
+host: gimle.a.sn.no/194.143.10.20
+date: 12. desember 95 18:20:18
+body: Alle h&aring;ndballinteresserte Internauter - brett opp ermene og fyr l&oslash;s! Her satser vi<br>p&aring; morsom diskusjon og kamp- og spillerkommentarer. Er du en Web jongl&oslash;r, m&aring;<br>du gjerne skrive inn HTML kode her direkte for &aring; f&aring; satt inn bilder<br>og linker. Fyr l&oslash;s!<br><p><br><img src=/hballvm95/img/susann-ikon.gif alt=""><br>
