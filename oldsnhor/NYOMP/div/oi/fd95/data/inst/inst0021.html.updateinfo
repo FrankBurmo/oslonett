@@ -1,0 +1,11 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="21"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Barnevernets Utviklingssenter (BVU)"` -->
+<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Stiftelsen Barnevernets utviklingssententer (BVU) er en privat stiftelse opprettet av Sosialdepartementet og stiftelsen Wøyen. Utviklingssnteret skal i følge vedtektene " utføre og formidle kvalifisert og handlingsrelevant utviklingsarbeid innenfor barnevernets sentrale problemområder og praksisfelt. Senterets utviklingsarbeid skal baseres på helhetssyn og med en tverrfaglig tilnærming.` -->
+<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``BVUs seminar vil ta opp kompetansebegrepet i et kritisk og tiltaksrettet perspektiv. Seminaret vil henvende seg til ansatte i skolen, barnevernet, barne- og ungdomspsykiatrien. og andre som arbeider med barn og unge` -->
+<!-- replace `<option(.*Forskningsinstitutt)` with `<option selected`` -->

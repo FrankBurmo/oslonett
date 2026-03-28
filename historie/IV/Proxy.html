@@ -1,0 +1,32 @@
+<html>
+<head>
+ <title>Bruk av Web-cache server fra Windows Mosaic</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+<h1>Bruk av Web-cache server fra Windows Mosaic</h1>
+Bruk av en cache i forbindelse med henting av Web dokumenter, fører til
+at man kan spare nettet for belastning, samt ikke minst, at alt går raskere
+for den som sitter bak Mosaic!
+<p>
+For å få Mosaic til å snakke med cache-serveren, må du legge inn en ny
+seksjon i filen <i>mosaic.ini</i> (denne ligger under c:\windows vanligvis)
+inneholdende flg. linjer:
+<pre>
+[proxy information]
+http_proxy=http://www.oslonett.no:8080/
+ftp_proxy=ftp://www.oslonett.no:8080/
+gopher_proxy=gopher://www.oslonett.no:8080/
+wais_proxy=wais://www.oslonett.no:8080/
+no_proxy=oslonett.no
+</pre>
+Etter dette, vil Mosaic alltid sjekke om dokumentene ligger i cachen
+før de evt. hentes fra den store verden. Dokumenter innenfor Oslonetts
+eget domene vil ikke hentes fra cachen da det ikke er noe å spare
+på dette.
+<hr>
+<a href=Aksess.html>
+ <img alt="WWW-Aksess" align=middle src=/Aksess/Aksess-icon.gif></a>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="81"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Norges byggforskningsinstitutt (Byggforsk)"` -->
+<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Forsknings- og utviklingssenter for bygge- og anleggsvirksomhet. Etablert under NTNF i 1949, selvstendig privat stiftelse fra 1985. Lokalisering: Oslo og Trondheim. Forskningssenter for bygg og anlegg med arbeidsområdene: funksjonskrav til bygninger og installasjoner, prøving og produktutvikling, godkjenning og sertifisering, analyse av byggskader, byggforvaltning, energieffektivisering og innemiljø, kvalitetsstyring, boforhold/boligbehov og boligmarkedet, boliger/omsorg og bomiljø, informasjons- og forlagsvirksomhet` -->
+<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``Åpning av spesiallaboratorium for luktprøving av byggematerialer i klimakammer, med kjemisk og sensorisk dokumentasjon av emisjonsegenskaper (avgassingsegenskaper).` -->
+<!-- replace `<option(.*Forskningsinstitutt)` with `<option selected`` -->

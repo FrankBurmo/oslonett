@@ -1,0 +1,42 @@
+default: http://www.oslonett.no/rl/in/kart.html
+
+circle http://www.oslonett.no/rl/in/hoteller/arendal.html		88,545,88,536
+circle http://www.oslonett.no/rl/in/hoteller/bergen.html		24,457,24,451
+circle http://www.oslonett.no/rl/in/hoteller/bodo.html		222,180,222,169
+circle http://www.oslonett.no/rl/in/hoteller/boe-i-telemark.html	96,504,96,498
+circle http://www.oslonett.no/rl/in/hoteller/fagernes.html	110,440,110,434
+circle http://www.oslonett.no/rl/in/hoteller/forde.html		40,411,40,404
+circle http://www.oslonett.no/rl/in/hoteller/geilo.html		86,455,86,448
+circle http://www.oslonett.no/rl/in/hoteller/gjovik.html		135,452,135,446
+circle http://www.oslonett.no/rl/in/hoteller/hamar.html		148,450,148,445
+circle http://www.oslonett.no/rl/in/hoteller/harstad.html		250,112,250,106
+circle http://www.oslonett.no/rl/in/hoteller/hovden.html		62,497,62,490
+circle http://www.oslonett.no/rl/in/hoteller/honefoss.html	121,475,121,470
+circle http://www.oslonett.no/rl/in/hoteller/kongsberg.html	115,496,115,491
+circle http://www.oslonett.no/rl/in/hoteller/kristiansand.html	71,555,71,550
+circle http://www.oslonett.no/rl/in/hoteller/kristiansund.html	86,349,86,344
+circle http://www.oslonett.no/rl/in/hoteller/larvik.html		121,519,121,514
+circle http://www.oslonett.no/rl/in/hoteller/lillehammer.html	136,437,136,432
+circle http://www.oslonett.no/rl/in/hoteller/mandal.html		60,557,60,553
+circle http://www.oslonett.no/rl/in/hoteller/langesund.html	108,524,108,520
+circle http://www.oslonett.no/rl/in/hoteller/mo-i-rana.html	211,223,211,209
+circle http://www.oslonett.no/rl/in/hoteller/molde.html		78,361,78,355
+circle http://www.oslonett.no/rl/in/hoteller/moss.html		135,508,135,503
+circle http://www.oslonett.no/rl/in/hoteller/narvik.html		269,132,269,123
+circle http://www.oslonett.no/rl/in/hoteller/oslo.html		131,487,131,483
+circle http://www.oslonett.no/rl/in/hoteller/roros.html		159,375,159,365
+circle http://www.oslonett.no/rl/in/hoteller/sandnes.html		26,523,26,518
+circle http://www.oslonett.no/rl/in/hoteller/sogndal.html		56,423,56,418
+circle http://www.oslonett.no/rl/in/hoteller/stavanger.html	26,513,26,509
+circle http://www.oslonett.no/rl/in/hoteller/steinkjer.html	160,318,160,310
+circle http://www.oslonett.no/rl/in/hoteller/stord.html		23,475,23,460
+circle http://www.oslonett.no/rl/in/hoteller/svolvaer.html	219,140,219,132
+circle http://www.oslonett.no/rl/in/hoteller/trondheim.html	138,341,138,333
+circle http://www.oslonett.no/rl/in/hoteller/tonsberg.html	126,511,126,507
+circle http://www.oslonett.no/rl/in/hoteller/tromso.html		288,77,288,68
+circle http://www.oslonett.no/rl/in/hoteller/ulsteinvik.html	50,381,50,376
+circle http://www.oslonett.no/rl/in/hoteller/ulvik.html		56,453,56,449
+circle http://www.oslonett.no/rl/in/hoteller/voss.html		47,448,47,444
+circle http://www.oslonett.no/rl/in/hoteller/vraadal.html		82,510,82,504
+circle http://www.oslonett.no/rl/in/hoteller/aalesund.html	63,371,63,366
+

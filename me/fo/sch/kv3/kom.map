@@ -1,0 +1,11 @@
+default /schibsted/default.html
+#Resultat
+rect /schibsted/kv3/resultat.html 97,34 212,52 
+#Balanse
+poly /schibsted/kv3/balanse.html 82,64 193,65 193,50 105,52 82,63 
+#Nøkkel
+poly /schibsted/kv3/nokkel.html 57,79 166,80 167,65 79,66 58,78 
+#Org
+poly /schibsted/org.html 31,92 188,93 188,78 56,80 32,93 
+#Home
+poly /schibsted/ 40,87 32,69 29,47 41,28 63,14 79,14 99,19 110,28 116,34 94,34 96,52 101,53 42,88 

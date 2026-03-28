@@ -1,0 +1,5 @@
+default                    http://152.90.1.13:80/fakta/fakta_ho.htm
+rectangle (0,0) (61,16)    http://152.90.1.13:80/hjemme/innhold.htm
+rectangle (62,0) (101,16)  http://152.90.1.13:80/hjemme/sok_def.htm
+rectangle (102,0) (293,16) http://152.90.1.13:80/
+rectangle (294,0) (453,16) http://152.90.1.13:80/fakta/fakta_ho.htm

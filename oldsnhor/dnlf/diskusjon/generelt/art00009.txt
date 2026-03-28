@@ -1,0 +1,7 @@
+title: Re: testoverskrift
+passwd: StDEag706QKOU
+from: kgn (@gyda.ifi.uio.no)
+ref: art00003.txt
+host: gyda.ifi.uio.no/129.240.78.2
+date: 17. oktober 95 11:26:38
+body: xyzzy

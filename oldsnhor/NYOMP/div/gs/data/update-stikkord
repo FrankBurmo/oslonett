@@ -1,0 +1,52 @@
+#!/local/bin/perl5 -w
+
+$| = 1;
+use POSIX;
+setlocale(LC_CTYPE, "iso_8859_1");
+
+open(F, "./conv stikkord.tab |") or die;
+
+use Sybase::DBlib;
+
+$db = Sybase::DBlib->dblogin('oslonett', 'oslonett');
+die "Can't log into sybase" unless $db;
+
+%seen = ();
+$batchsize = 0;
+
+while (<F>) {
+   chomp;
+   ($nr, $ord) = split("\t", $_);
+   unless ($nr =~ /^\d+$/) {
+       warn "Illegal number: $_\n";
+       next;
+   }
+   if ($seen{$nr}++) {
+       warn "Duplicate number: $_\n";
+       next;
+   }
+   $ord = lc $ord;
+
+   $a = $db->sql("select ord from stikkord where nr = $nr");
+   $rows = $db->DBCOUNT;
+   if ($rows == 0) {
+        # New word
+        $ord =~ s/'/''/g;
+        print "insert stikkord (nr, ord) values ($nr, '$ord')\n";
+	$batchsize++;
+   } elsif ($rows == 1) {
+       ($dbord) = @{$a->[0]};
+       if ($dbord eq $ord) {
+	   print STDERR "No change: $ord ($nr)\n";
+       } else {
+           $ord =~ s/'/''/g;
+	   print "update stikkord set ord = '$ord' where nr = $nr /* $dbord */\n";
+	   $batchsize++;
+       }
+   } else {
+       warn "$rows in stikkord where nr = $nr";
+   }
+   print "go\n" if $batchsize and ($batchsize % 100) == 0;
+   #last if $no++ > 100;
+}
+print "go\n" if $batchsize;

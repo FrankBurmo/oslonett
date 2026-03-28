@@ -1,0 +1,105 @@
+<html>
+<head>
+ <title>Sikkert nok ved tilkobling til Internet?</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+
+
+
+<a href=cw950723.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/me/ts/cw/gifs/up.gif></a> <a href=cw950725.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a> <a href=/me/ts/cw/><img align=middle alt="[CW hjemmeside]" src=/me/ts/cw/gifs/cw.gif></a>  
+<hr>
+
+
+
+<h1>Sikkert nok ved tilkobling til Internet?</h1>
+
+<blockquote><h4>
+<hr>
+Rene tekniske løsninger som Firewall kan være kostbare, og tar ikke hensyn til
+den menneskelige faktor.<hr>
+</h4></blockquote>
+I den senere tid har CW presentert en del artikler hvor det har blitt diskutert
+hvorvidt kobling mot <a href=/EXPO94/In/>Internet</a> kan aksepteres sikkerhetsmessig. Utgangspunktet
+har vært et internt nett som inneholder sensitiv informasjon, f.eks.
+sykehusdata, og ønske om tilgang til <a href=/EXPO94/In/>Internet</a> distribuert i det interne
+nettet.<p>
+	Denne typen sensitiv informasjon skal både beskyttes mot uautoriserte
+endringer (integritet/kvalitet) og uautorisert innsyn (konfidensialitet). I den
+papirbaserte verden skal det sørges for at ikke fremmede får tilgang til å lese
+eller endre den sensitive informasjonen. Dette inkluderer å forhindre at
+fremmede får tilgang til data på de kontor hvor informasjonen blir behandlet. I
+tillegg skal de sensitive data ikke bringes ut av kontorene uten at noen har
+ansvaret for å påse at informasjonen ikke kommer uvedkommende i hende.<p>
+	Kravene som er stilt av Datatilsynet i forbindelse med tilkobling av <a href=/EXPO94/In/>Internet</a>
+mot interne nett med sensitiv informasjon, ivaretar begge disse typer krav. Det
+vil si krav til integritet/kvalitet og konfidensialitet. Kravene er gitt for å
+gi hver person som informasjonen gjelder, samme grad av beskyttelse som et rent
+papirbasert system gir. <p>
+Man må med andre ord forsikre seg om at informasjonen til enhver tid er
+korrekt, og at ikke andre enn de som har med informasjonen å gjøre får tilgang
+til den. Dette beskrives i Datatilsynets "Sikkerhetsregulering av delte
+edb-systemer" versjon 2.0 av 5. januar 1995 som påpeker kravene til
+taushetsplikt:<p>
+	"Taushetsplikt pålegges i de tilfeller der lovgiver mener det ville være
+til <i>skade</i> for personen om opplysningen kom uvedkommende til kunnskap.
+Dette er som oftest også situasjoner der man er avhengig av at de registrerte
+har tillit til den eller de som behandler informasjon om ham eller henne.<p>
+	Med <i>skade</i> forstår vi i denne sammenheng de problemer som manglende
+sikkerhet kan medføre for de registrertes <i>personlige integritet, helse,
+omdømme, rettigheter eller økonomi</i>. Dersom <i>kompromittering</i> av
+opplysninger, manglende <i>datakvalitet</i>, eller at informasjonen i en gitt
+situasjon ikke er <i>tilgjengelig</i>, vil kunne medføre slike problemer,
+pålegges registereieren å gjennomføre tiltak for å hindre dette. Graden av
+antatt skade vil gjenspeiles i ulike tiltaksnivå."<p>
+	Det er dermed den personen informasjonen gjelder og vedkommendes interesser
+som er styrende i hvilke krav som må stilles i denne sammenheng. Bruk av EDB og
+tilgang til eksterne forbindelser som <a href=/EXPO94/In/>Internet</a>, øker risikopotensialet for
+misbruk av den sensitive informasjonen.<p>
+	Forslagene til løsning av beskyttelse ved tilkobling til <a href=/EXPO94/In/>Internet</a>, som har
+vært diskutert i CW, har vært bruk av brannmur mellom det interne nettet og
+<a href=/EXPO94/In/>Internet</a>. Dette vil til en viss grad forhindre inntrengere i å nå det interne
+nettet fra <a href=/EXPO94/In/>Internet</a>. De sensitive data vil på denne måten kunne beskyttes mot
+uautoriserte endringer og innsyn av utenforstående ved inntrengning via
+<a href=/EXPO94/In/>Internet</a> mot det interne nettet.<p>
+	Bruken av en brannmur vil derimot ikke kunne forhindre at den sensitive
+informasjonen blir sendt ut på <a href=/EXPO94/In/>Internet</a>. Dette kan skje bevisst, begrunnet i
+praktiske årsaker uten hensyn til sikkerhet, eller ubevisst ved uhell. I begge
+tilfeller er det ikke ond vilje hos brukeren, men resultatet blir likevel at
+den sensitive informasjonen blir gjort tilgjengelig på <a href=/EXPO94/In/>Internet</a>, og kravene om
+å forhindre uautorisert innsyn blir brutt, og brudd på taushetsplikten vil
+skje.<p>
+	I tillegg er en brannmurløsning både kostbar og kompetansekrevende å
+installere og vedlikeholde.<p>
+	Behovet for tilgang til <a href=/EXPO94/In/>Internet</a> kan løses på en alternativ måte ved at
+tilgangen gis på separate maskiner, som ikke er tilkoblet det interne nettet,
+eller et separat internt nett som ikke inneholder sensitiv informasjon. Siste
+alternativ innebærer to interne nett. <p>
+I denne sammenheng bør det vurderes i hvilken grad det er behov for å
+distribuere tilgangen til <a href=/EXPO94/In/>Internet</a> til alle arbeidsplasser eller om det er nok
+å ha en eller et par dedikerte maskiner som kun gir tilgang til <a href=/EXPO94/In/>Internet</a>. <p>
+	Dette gir selvfølgelig ikke fullt ut den samme funksjonalitet som ett internt
+nett med all informasjon og tilkobling mot <a href=/EXPO94/In/>Internet</a>. Men hensynet til den
+potensielle skade for de registrerte må telle sterkere enn maksimal
+funksjonalitet. Det skisserte alternativ med eget nett eller dedikerte PC'er
+gir tross alt tilgang til alle funksjoner, selv om enkelte operasjoner kan bli
+noe mer tungvinte. <p>
+	Vi kan nås på vår dedikerte <a href=/EXPO94/In/>Internet</a>-maskin : <b><p>
+hth@system.sikkerhet.no eller amr@system.sikkerhet.no</b><p>
+
+<i>SYSTEM SIKKERHET A/S, SENIORKONSULENTENE ANNE M. REINSNES OG HEIDI
+THORSTENSEN</i><p>
+<p>
+<a href=cw950723.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/me/ts/cw/gifs/up.gif></a> <a href=cw950725.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a> 
+
+
+<pre><hr><a href=/me/ts/cw/maps/art.map><img alt="[Image map not available]" src=/me/ts/cw/gifs/artmap.gif ismap></A><hr></pre>
+<h5>
+<address>
+Artikkel automatisk generert, 21/02-95, kl. 15.56 <a href=/me/ts/cw/kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

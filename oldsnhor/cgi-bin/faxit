@@ -1,0 +1,133 @@
+#!/local/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<Head><Title>DND's faxservice</Title></Head>";
+print "<Body><hr size=2><center><H1>DND's Faxservice</H1></center><hr size=4>";
+
+
+sub ReadParse {
+  if (@_) {
+    local (*in) = @_;
+  }
+
+  local ($i, $loc, $key, $val);
+
+  # Read in text
+  if ($ENV{'REQUEST_METHOD'} eq "GET") {
+    $in = $ENV{'QUERY_STRING'};
+  } elsif ($ENV{'REQUEST_METHOD'} eq "POST") {
+    for ($i = 0; $i < $ENV{'CONTENT_LENGTH'}; $i++) {
+      $in .= getc;
+    }
+  } 
+
+  @in = split(/&/,$in);
+
+  foreach $i (0 .. $#in) {
+    # Convert plus's to spaces
+    $in[$i] =~ s/\+/ /g;
+
+    # No subshells, please...
+    $in[$i] =~ s/~!/ ~!/g;
+
+
+    # Convert %XX from hex numbers to alphanumeric
+    $in[$i] =~ s/%(..)/pack("c",hex($1))/ge;
+
+    # Split into key and value.
+    $loc = index($in[$i],"=");
+    $key = substr($in[$i],0,$loc);
+    $val = substr($in[$i],$loc+1);
+    $in{$key} .= '\0' if (defined($in{$key})); # \0 is the multiple separator
+    $in{$key} .= $val;
+  }
+
+  return 1; # just for fun
+}
+
+
+
+sub empty_input
+{
+    print "Det ble ikke gitt tilstrekkelig input.";
+    print "Ingen fax ble sendt.";
+    exit;
+}
+
+
+&ReadParse;
+
+
+
+
+
+
+
+if (($in{"Navn"} && ($in{"Firmaadr"} || $in{"Privadr"})) || ($in{"Firma"} && $in{"Firmaadr"}))
+{
+    # First give the user some feedback...
+
+    unless (open (FP, "> /local/www/cgi-bin/faxfile.txt")) {
+	print "Can't open filename";
+	return;
+    }
+
+    print FP "AUTOMATISK GENERERT FAX FRA OSLONETT:\n";
+    print FP "\n\n\nMELDING:\n\n";
+
+    print "<p><h2>Følgende informasjon har nå blitt faxet til Den Norske Dataforening:</H2><p>";
+    print "<pre>";
+    print "<br><strong>Medlemsnummber:</strong>           ", $in{Medlemsnummer};
+    print "<br><strong>Vil bli medlem?</strong>           ", $in{Nytt_medlem};
+    print "<br><strong>Navn:</strong>                     ", $in{Navn};
+    print "<hr><strong>Firma:</strong>                    ",$in{Firma};
+    print "<br><strong>Firma Adresse:</strong>            ",$in{Firmaadr} ;
+    print "<br><strong>Firmatelefon:</strong>             ", $in{Ftlf};
+    print "<br><strong>Firmafax:</strong>                 ", $in{Ffax};
+    print "<br><strong>Antall medlemmer bedrift:</strong> ", $in{Antall_bed_medl};
+    print "<hr>";
+    print "<br><strong>Privat adresse:</strong>           ", $in{Privadr};
+    print "<br><strong>Privat telefon:</strong>           ", $in{Ptlf} ;
+    print "<p><strong>Medlemsskapstype:</strong>         ", $in{Medlemskapsstype};
+    print "<hr><p>";
+    print "</pre><p><h2>Evt. Bestilling:</h2><p>";
+
+    #Update the fax file...
+    print FP "MEDLEMSINFORMASJON:\n";
+    print FP "\nMedlemsnummer:", $in{Medlemsnummer};
+    print FP "\nVil bli medlem?  ", $in{Nytt_medlem};
+    print FP "\nNavn:  ",  $in{Navn};
+    print FP "\nFirma Adresse:  ", $in{Firmaadr} ;
+    print FP "\nFirmatelefon:  ",  $in{Ftlf};
+    print FP "\nFirmafax:  ",  $in{Ffax};
+    print FP "\nAnt. medl. i bedrift:  ",  $in{Antall_bed_medl};
+    print FP "\nPriv. adresse:  ", $in{Privadr};
+    print FP "\nPriv. telefon:  ",  $in{Ptlf} ;
+    print FP "\nMedlemsskapstype:  ", $in{Medlemskapsstype};
+    print FP "\n\nBESTILLINGER: \n\n ";
+
+    @k=('art1', 'art2', 'art3', 'art4', 'art5');
+    print"<pre>";
+    foreach $itm (@k) {
+	if ($in{$itm}) {
+	    print "<br><strong>Artikkel:</strong>", $in{$itm}," -- ",  $in{join ('',$itm, "b")};
+	    print FP "\nArtikkel: ",  $in{$itm}," -- ",  $in{join ('',$itm, "b")};
+
+	}
+    }
+    print"</pre>";
+
+    close FP;
+
+    if ($t = system "/usr/local/bin/fax 22464528 -subject InnmeldingBestilling -attn DND -l1 DND_innmeldingbestilling -firm DenNorskeDataforening -now /local/www/cgi-bin/faxfile.txt") {
+	print "ERROR";
+	print $t;
+    }
+
+} else {
+    # Erroneous entry. Give user feedback!
+    print"<p><h2>Ufullstendige data!</h2>";
+    print"<p><blockquote>Gå tilbake og forsøk på nytt.</blockquote>";
+
+}
+

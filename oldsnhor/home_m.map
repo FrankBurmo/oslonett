@@ -1,0 +1,10 @@
+default http://www.sn.no/indexm.html
+
+rect http://www.sn.no/genm/SisteNy_1_1.html    124,70 172,85
+rect http://www.sn.no/genm/Musikk_2_1.html     175,70 217,85
+rect http://www.sn.no/genm/Diverse_3_1.html    217,70 296,85
+rect http://www.sn.no/genm/Service_4_1.html    299,70 337,85
+rect http://www.sn.no/medlem/index.html        240,70 450,85
+rect http://www.sn.no/innhold/index.html       361,33 451,47
+
+rect http://www.sn.no/sn/index.html            18,11 279,64 

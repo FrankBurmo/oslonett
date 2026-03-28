@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="775"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Prostatakreft"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Undervisningssenteret, E406, Det Norske Radiumhospital"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Kl. 17.00-19.10"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="31"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Universitetet i Oslo"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Undervisningssenteret, E406, Det Norske Radiumhospital"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Møteleder: Håkon Wæhre Kl. 17.00-17.10 Hvilket organ er prostata? v/Harald Trasti Kl. 17.10-17.30 Hva er kreft i prostata og hvem får det? v/Håkon Wæhre Kl. 17.45-18.00 Pause Kl. 18.00-18.40 Behandling av den lokaliserte prostatakreften v/Håkon Wæhre Kl. 18.50-19.10 Behandling av prostatakreft med spredning v/Sophie D. Fosså Omvisning` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?11.10"?)\s*>` with `` checked>` -->

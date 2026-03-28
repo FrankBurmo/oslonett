@@ -1,0 +1,13 @@
+#$MTIMFH
+#$-:Please do not edit lines starting with "#$"
+#$VERSION:1.20
+#$TITLE:Menu
+#$AUTHOR:Schibsted Nett
+#$DATE:Fri Jan 05 12:45:45 1996
+#$PATH:C:\Temp\
+#$GIF:MENU.gif
+#$FORMAT:ncsa
+#$EOH
+default /tjaereborg/kretah.html
+rect /tjaereborg/ 385,76 583,101
+rect /tjaereborg/kreta.html 386,46 583,73

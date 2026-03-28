@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="404"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Åpent institutt"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Norsk Tretekninsk Institutt, Forskningsveien 3b, 0314 Oslo"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="KL. 12.00-15.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="32"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Norsk Tretekninsk Institutt"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Åpent institutt: Servering av kaffe og rundstykker, omvisning i laboratoriene, svartjeneste for publikum: Foredrag kl. 13.00. Legging og overflatebehandling av gulvbord v/ siv.ing. Eirik Raknes og ing. Magnar Müller. Foredrag kl.14.00: Overflatebehandling av tre ute og inne v/ siv.ing. Eirik Raknes.` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?14.10"?)\s*>` with `` checked>` -->

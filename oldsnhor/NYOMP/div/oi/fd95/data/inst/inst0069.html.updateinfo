@@ -1,0 +1,11 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="69"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Høgskolen i Sør - Trøndelag"` -->
+<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Høgskolen i Sør-Trøndelag (HiST) er en sammenslåing av de 8 tidligere høgskoler i Trondheim. Høgskolen gir utdanning for allmenlærer, allmennlærer for døve, sykepleier, sosionom, barnevern, vernepleier, audiograf, fysioterapeut, ergoterapeut, døvetolk, ingeniør, bioingeniør, næringsmiddeltekniker og gir dessuten musikkfaglig utdanning. I tillegg gis det etter - og videreutdanninger på flere områder. Høgskolen har ca. 5000 studenter og 530 ansatte, fordelt på 6 undervisningssteder rundt om i byen. Ta kontakt for nærmere informasjon tlf; 73 93 05 90.` -->
+<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``HiST stiller med egen bod under fellesarrangement på Nordre 12.oktober. Se under arrangement i Trondheim for nærmere info.` -->
+<!-- replace `<option(.*Høgskole)` with `<option selected`` -->

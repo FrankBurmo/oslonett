@@ -1,0 +1,11 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="34"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Institutt for energiteknikk"` -->
+<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Instituttets virksomhet fordeler seg idag på de tre hovedområdene: nukleærteknologi, petroleumsteknologi og annen energiteknologi. De nukleærteknologiske aktivitetene som direkte eller indirekte er knyttet til Instituttets to forskningsreaktorer, utgjorde i 1994 vel halvparten av bruttovirksomheten, mens aktivitetene på petroleumsområdet og annen energiforskning utgjorde henholdsvis ca. 30% og 15%. Petroleums- og energiområdet har vært preget av flere store prosjekter. Dette gjelder blant annet innenfor flerfaseteknologi som har sentral betydning for fremtidige utbygningsprosjekter på kontinental sokkel, og IT-systemer både for petroleumsområdet og elkraftsystemet. ` -->
+<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``` -->
+<!-- replace `<option(.*Forskningsinstitutt)` with `<option selected`` -->

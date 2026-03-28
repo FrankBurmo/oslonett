@@ -1,0 +1,44 @@
+<title>Registrer ny bolig</title>
+<h1>Registrer ny bolig</h1>
+
+<form action="new.cgi" method="POST">
+
+<pre>
+
+Tittellinje: <input name=title size=50>
+Boligtype:   <select name=type>
+<option>Enebolig
+<option>Tomannsbolig
+<option>Rekkehus
+<option>Leilighet
+<option>Hybel
+</select>  Eierform: <select name=eierform>
+<option>Selveier
+<option>Aksjeleilighet
+<option>Andelsleilighet
+<option>Leie
+</select>
+Adresse:     <input name=address size=50>
+Postnr/sted: <input name=zipcode size=4> <input name=place size=30>
+Område:      <input name=area size=50>
+
+Prisantyding:<input name=price value="000"size=7> Takst: <input name=takst size=14 value="000/000">  Leie: <input name=leie size=5> pr/mnd.
+Boligareal:  <input name=size size=6> m²  Antall soverom: <input name=rooms size=4>
+Visning:     <input name=visning size=50>
+
+Tekst:       <textarea name=text cols=50 rows=4></textarea>
+
+Utgår om:    <select name=expires>
+<option value="2">2 dager
+<option value="7">1 uke
+<option value="14">2 uker
+<option value-"0">Aldri
+</select>
+</pre>
+
+<input type=submit value="Registrer...">
+<input type=reset value="Ny">
+
+
+
+</form>

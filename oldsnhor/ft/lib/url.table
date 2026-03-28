@@ -1,0 +1,5 @@
+# Denne tabellen oversetter ord og uttrykk til html
+# Format: ord / uttrykk, kolon, substitutt
+# N|kkel-uttrykket kan v{re generelle regul{re uttrykk, kjekt
+# hvis de kan inneholde linjeskift eller andre ukjente
+O.J. Simpson:<a href=http://www.yahoo.com/headlines/special/oj/>O.J. Simpson</a>

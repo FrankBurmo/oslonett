@@ -1,0 +1,12 @@
+h30;H30.res;std-header.html;std-footer.html
+d15;d15.res;std-header.html;std-footer.html
+sth;hstafin.res;std-header.html;std-footer.html
+std;dstafin.res;std-header.html;std-footer.html
+h10;h10.res;std-header.html;std-footer.html
+d5;d5.res;std-header.html;std-footer.html
+d10;d10.res;std-header.html;std-footer.html
+h15;h15.res;std-header.html;std-footer.html
+klag;klagll.res;std-header.html;std-footer.html
+kl;kombll.res;std-header.html;std-footer.html
+h50;h50.res;std-header.html;std-footer.html
+d30;d30.res;std-header.html;std-footer.html

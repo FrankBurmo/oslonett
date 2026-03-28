@@ -1,0 +1,6 @@
+title: testinnlegg
+passwd: 3wUymYa6KWGUs
+from: K&aring;re Gunnar (kgn@oslonett.no)
+host: stovner.oslonett.no/194.143.10.10
+date: 22. november 95 18:57:31
+body: her kommer selve innlegget<br><br> Ikke   mye   <em>spennende</em> i <b>dette</b> innlegget, nei<br><br><br>              :-)<br><br>

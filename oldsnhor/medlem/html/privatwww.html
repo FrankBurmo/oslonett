@@ -1,0 +1,120 @@
+<HTML>
+<HEAD>
+ <TITLE>Private WWW-hjemmesider hos Schibsted Nett AS</TITLE>
+ <LINK REV=MADE HREF="mailto:webmaster@a.sn.no">
+</HEAD>
+<body bgcolor="#ffffff">
+ 
+<a href="/"><img src=/rndtopp.cgi border=0></a><br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=130>
+<pre> </pre>
+</td>
+<td>
+<a href="/gen/SisteNy_1_1.html"><img src="/img/hovedmeny/nyheter_av.gif" border="0" alt="[nyheter]"></a><a href="/gen/Musikk_2_1.html"><img src="/img/hovedmeny/fritid_av.gif" border="0" alt="[fritid]"></a><a href="/gen/Diverse_3_1.html"><img src="/img/hovedmeny/kjop_av.gif" border="0" alt="[kjop og salg]"></a><a href="/gen/Service_4_1.html"><img src="/img/hovedmeny/proff_av.gif" border="0" alt="[proff]"></a><a href="/medlem/"><img src="/img/hovedmeny/medlem_pa.gif" border="0" alt="[medlemstjenester]"></a><a href="/innhold/"><img src="/img/hovedmeny/veiviser_av.gif" border="0" alt="[veiviseren]"></a>
+</td>
+</tr>
+</table>
+
+<p>
+<H1>Private WWW-hjemmesider hos Schibsted Nett AS</H1>
+
+<HR SIZE=3>
+
+Schibsted Nett AS har nå gjort det mulig for alle sine online-kunder å publisere
+informasjon via World Wide Web. Dette betyr at man gjøre informasjon
+tilgjengelig for hele Internett, dvs. > 50 millioner mennesker over hele
+verden.
+<p>
+<i>I Norge er mer enn 70.000 maskiner tilkoplet nettet pr. 1/10-95!</i>
+<p>
+For å publisere, går man fram på flg. måte:
+<p>
+<ol>
+<li> Lag en underkatalog under hjemmeområdet med navn www_docs. UNIX kommandoene
+   for dette er
+<pre>
+	oslonett.no% cd; mkdir www_docs
+
+</pre>
+
+<li> Alt som skal publiseres må nå legges i dette området, og både området
+   og alle datafilene må settes leselige for omverdenen. Dette kan gjøres
+   med UNIX kommandoene
+<pre>
+	oslonett.no% cd; chmod -R a+rx www_docs
+
+</pre>Hjemmesiden din først begynner å virke dagen etter at "www_docs" området er opprettet.
+<pre>
+
+</pre>     
+<li> Hele Internettet kan nå aksessere dine data vha. en WWW klient, f.eks.
+   Netscape, Mosaic eller lynx. Korrekt WWW-adresse (dette kalles en URL) til en
+   fil (filen musikk.htm) på dette området hos meg er da
+<p>
+<center>	http://www.sn.no/~steinar/musikk.htm</center>
+<p>
+<li> Det må lages en fil med det magiske navn "index.htm" og legges
+   i området. Dette blir din egen personlige World Wide Web hjemmeside
+   og bør fortelle hva slags informasjon du publiserer samt inneholde
+   såkalte linker videre. Denne filen kan aksesseres slik vist over, men
+   også bare gjennom URL
+<p>
+<center>	http://www.sn.no/~steinar/</center>
+<p>
+<li> Denne tjenesten må ikke brukes til å publisere piratkopiert programvare,
+   usømmelig materiale samt ting som generelt ikke er i tråd med SNs
+   kjøreregler for bruk av våre tjenester.
+<p>
+   Det er heller ikke uten videre lovlig for firmakunder å publisere 
+   reklame og firmainformasjon vha. denne muligheten, da dette vil
+   konkurrere med SNs egen <!-- <a href="http://www.sn.no/on/www/annonser.htm"> --> annonsetjeneste <!-- </a> -->.
+   Avtaler kan dog gjøres. Ta kontakt med SN AS for nærmere informasjon.
+</ol>
+<hr>
+<h2>HTML</h2>
+
+For å bruke dette tilbudet, trenger man kjenne litt til World Wide Web og
+HTML (språket som brukes for å kode Web data). Vi kan gi begrenset
+assistanse i dette, og i hvert fall gi
+<A HREF="wwwinfo.html">gode pekere til informasjon om emnet</A>.
+Ved Universitetet i Trondheim finnes det dessuten
+<A HREF=http://www.dsl.unit.no/unit.www/html-doc/>gode bruksanvisninger på norsk</A>.
+<P>
+For å komme raskt i gang, kan du jo ta en kopi av nedenstående kode og
+fylle inn dine egen data:
+<hr>
+<pre>
+  &lt;html&gt;
+  &lt;head&gt;
+     &lt;title&gt;Sett inn en tittel på siden her&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;h1&gt;Bruk gjerne samme tittel her&lt;/h1&gt;
+  Dette er Steinars private WWW hjemmeside. Dette er mine interesser:
+  &lt;ul&gt;
+   &lt;li&gt; Musikk
+   &lt;li&gt; Friluftsliv
+   &lt;li&gt; Idrett (langrenn, telemark, løping)
+  &lt;/ul&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+</pre>
+<hr>
+Ellers så er det en god ide å se hva andre har gjort. Titt på andre
+hjemmesider, og bruk en kommando i Mosaic eller Netscape som heter
+"View Source ..." el. bare "Source ..". Denne viser HTML koden på
+skjermen for den siden du har oppe i øyeblikket.
+<p>
+<i>Listen over alle private hjemmesider ligger <a href="/Aksess/Homes.html">her</a>.</i>
+<hr>
+NB! Hjemmesiden din begynner først å virke dagen etter at "www_docs" 
+området og filen index.htm er opprettet.
+
+<HR SIZE=1 noshade>
+<!--
+<H5>Oppdatert, 23. juni 1995, <A HREF="mailto:webmaster@a.sn.no">webmaster@a.sn.no</A></H5>
+-->
+</BODY>
+</HTML>

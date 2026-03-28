@@ -1,0 +1,1378 @@
+57209;Chapman, Roger;Zipper;;960205 11:36:16;PC425.ngu.no
+23715;Chapman, Roger;He Was, She Was, You Was, We Was;;960205 11:36:58;PC425.ngu.no
+57209;Chapman, Roger;Zipper;;960205 11:37:10;PC425.ngu.no
+32339;Penderecki;Polsk Requiem;Solister/NDR Sinfonieorch/Penderecki;960205 11:39:58;PC425.ngu.no
+18938;Enya;Watermark;;960205 11:44:20;stovner.a.sn.no
+49137;Handel;Watermusic;St Martin/Marriner;960205 11:44:25;stovner.a.sn.no
+18938;Enya;Watermark;;960205 11:45:46;stovner.a.sn.no
+87607;Mondo Grosso;Mondo Grosso Etc.; ;960205 11:51:18;stovner.a.sn.no
+87606;Mondo Grosso;Invisible Man; ;960205 11:51:22;stovner.a.sn.no
+16007;Griffith, Nanci;Poet In My Window;;960205 11:51:55;gorina7.hsr.no
+48437;Eriksen;Two Blue;;960205 11:54:45;gorina7.hsr.no
+68701;U2;Zooropa;;960205 11:55:33;pcro38281.stud.hint.no
+750634;Clint Eastwood, John Vernon;Outlaw Josey Wales, The;NTSC;960205 11:57:48;stovner.a.sn.no
+750669;DISNEY;Celebrate With Mickey;NTSC;960205 11:58:40;stovner.a.sn.no
+88040;DIVERSE ARTISTER;Shaftman; ;960205 11:59:23;pc-50.P52s.hioslo.no
+652027;Bruce Willis, Sarah Jessice Parker;Strtiking Distance;Utekstet orginalinnspilling;960205 12:01:47;stovner.a.sn.no
+26204;Watley, Jody;You Wanna Dance With Me?;;960205 12:01:54;pc36-57.hiof.no
+652028;Spot;Sweet Dreams,Spot!;Utekstet orginalinnspilling;960205 12:02:17;stovner.a.sn.no
+32362;Magnum;The Eleventh Hour;;960205 12:03:03;pc131.imt.hist.no
+7222;Pink Floyd;A Collection Of Great Dance Songs;;960205 12:05:40;gatekeeper.tv2.no
+65924;Pink Floyd;Atom Heart Mother;;960205 12:06:36;gatekeeper.tv2.no
+51588;Pink Floyd;Shine On;;960205 12:08:18;gatekeeper.tv2.no
+805135;SPILL;Wipe out; ;960205 12:12:33;stovner.a.sn.no
+43502;Kane, A.R.;Americana;;960205 12:15:14;fredrikstad110.telepost.no
+43502;Kane, A.R.;Americana;;960205 12:16:03;fredrikstad110.telepost.no
+68421;Campfire Combo;Freestyle Americana;;960205 12:16:21;fredrikstad110.telepost.no
+68421;Campfire Combo;Freestyle Americana;;960205 12:16:25;fredrikstad110.telepost.no
+87984;Ulver;Kveldssanger; ;960205 12:22:09;aun.uninett.no
+79630;Valhall;Moonstoned; ;960205 12:22:44;aun.uninett.no
+87984;Ulver;Kveldssanger; ;960205 12:24:29;aun.uninett.no
+79830;Ulver;Bergtatt - Et Eventyr I 5 Kapitler; ;960205 12:24:36;aun.uninett.no
+45996;Driftwood, Jimmie;Americana;;960205 12:31:52;fredrikstad102.telepost.no
+48650;Seltzer, Dov;HANNA'S WAR & ASSISSI UNDERGROUND, THE;;960205 12:32:34;ubmac108.uio.no
+652174;Audrey Hepburn, Rex Harrison;My Fair Lady;Utekstet orginalinnspilling;960205 12:38:14;stovner.a.sn.no
+652174;Audrey Hepburn, Rex Harrison;My Fair Lady;Utekstet orginalinnspilling;960205 12:39:20;stovner.a.sn.no
+82103;DANCE / SOUL;Mayday Reformation; ;960205 12:41:41;gatekeeper.tv2.no
+49662;Wray, Link & The Raymen;Link Wray & The Raymen;;960205 12:42:51;swami.er.sintef.no
+83266;Wray, Link & The Raymen;Mr. Guitar; ;960205 12:43:09;swami.er.sintef.no
+54865;Wray, Link;Indian Child;;960205 12:43:29;swami.er.sintef.no
+83721;Mono Men, The;"T.S.B."; ;960205 12:44:39;swami.er.sintef.no
+76614;Dead Moon;Stranded In The Mystery Zone;;960205 12:45:41;swami.er.sintef.no
+54518;Brand Nubian;In God We Trust;;960205 12:49:09;gatekeeper.tv2.no
+35050;Brand Nubian;One For All;;960205 12:49:32;gatekeeper.tv2.no
+67017;Fleshtones;Forever Fleshtones;;960205 12:49:51;swami.er.sintef.no
+61856;Oldfield, Mike;Elements;;960205 12:51:03;sam.telenor.no
+14787;Ferguson, Maynard;The Birdland Dreamband;;960205 12:52:50;sam.telenor.no
+47075;Pearl Jam;Alive;;960205 12:53:05;hsn30_69.hibo.no
+47075;Pearl Jam;Alive;;960205 12:53:27;hsn30_69.hibo.no
+48650;Seltzer, Dov;HANNA'S WAR & ASSISSI UNDERGROUND, THE;;960205 12:55:18;ubmac108.uio.no
+15965;Davis, Miles & Coltrane, John;Miles And Coltrane;;960205 12:57:57;ubmac108.uio.no
+63915;Speed Of Sound;Smart Went Crazy;;960205 12:58:14;gatekeeper.tv2.no
+69599;Godspeed;Ride;;960205 12:58:52;gatekeeper.tv2.no
+82343;Ferrell, Rachelle;First Instrument; ;960205 12:59:32;ubmac108.uio.no
+47568;Ferrell, Rachelle;Rachelle Ferrell;;960205 12:59:45;ubmac108.uio.no
+41628;Ferrell, Rachelle;Rachelle Ferrell;;960205 12:59:57;ubmac108.uio.no
+56394;Mendoza, Vince & Mardin, Arif;Jazzpana (Act);;960205 13:11:08;skafid.ifi.uio.no
+86216;Seigmen;Metropolis; ;960205 13:19:41;ppp13.infonet.no
+56414;Seigmen;Ameneon;;960205 13:19:53;ppp13.infonet.no
+46261;Seigmen;Pluto;;960205 13:20:12;ppp13.infonet.no
+39113;Septimus;Septimusikk 4;;960205 13:27:30;os20.ftns.no
+65926;Wobble, Jah;Without Judgement;;960205 13:37:33;hfmac372.uio.no
+42665;Wobble, Jah;Rising Above Bedlam;;960205 13:37:50;hfmac372.uio.no
+83979;Larsen, Morten Gunnar;Charleston Rag; ;960205 14:07:37;rhea.ife.no
+69915;Undertones, The;The Undertones;;960205 14:10:36;macuvs10.uio.no
+69918;Undertones, The;Hypnotised;;960205 14:10:52;macuvs10.uio.no
+69916;Undertones, The;Positive Touch;;960205 14:11:02;macuvs10.uio.no
+61110;Undertones, The;The Best Of - Teenage Kicks;;960205 14:11:10;macuvs10.uio.no
+69917;Undertones, The;The Sin Of Pride;;960205 14:11:20;macuvs10.uio.no
+69915;Undertones, The;The Undertones;;960205 14:11:32;macuvs10.uio.no
+69915;Undertones, The;The Undertones;;960205 14:12:26;macuvs10.uio.no
+86450;Cypress Hill;III Temples OF Boom; ;960205 14:18:57;studserv.osir.hihm.no
+803054;SPILL;We're Back A Dinosaurs Story;;960205 14:21:17;studserv.osir.hihm.no
+804472;SPILL;Samurai Showdown;Slossspill;960205 14:21:55;studserv.osir.hihm.no
+85649;Brood, The;Hitsville; ;960205 14:35:12;swami.er.sintef.no
+36378;Paus & Boine Persen & Bremnes;Salmer På Veien Hjem;;960205 14:54:20;xyplex03.uio.no
+25435;Paus, Ole;Stjerner I Rennesteinen;;960205 14:55:20;xyplex03.uio.no
+64555;Ministry;Singles, Remixes & Rare B-Sides;;960205 14:56:40;fp7-ppp15.oslo.net
+88250;Ministry;Filth Pig; ;960205 14:56:58;fp7-ppp15.oslo.net
+62088;Stakka Bo;Supermarket;Stockholm;960205 15:18:11;IRN163.vatlib.it
+62088;Stakka Bo;Supermarket;Stockholm;960205 15:18:59;IRN163.vatlib.it
+23861;Van Der Graaf Generator;H To He Who Am The Only One;;960205 15:21:19;pc_gs.ivas.no
+59105;Smashing Pumpkins;Siamese Dream;;960205 15:36:03;sild16.grm.hia.no
+76346;DIVERSE ARTISTER;Alladin Records Story, The;;960205 15:36:36;146.192.20.149
+85564;Galaxy Trio, The;In The Harem; ;960205 15:58:20;swami.er.sintef.no
+85356;Schultz, Idde;Idde Schultz; ;960205 16:00:14;rommen.oslonett.no
+81243;Woggles, The;The Zontar Sessions; ;960205 16:00:31;swami.er.sintef.no
+84953;Mono Men, The;Shut Up ! Shut Up ! Shut Up ! Shut Up !; ;960205 16:01:00;swami.er.sintef.no
+44631;McLaughlin, John;Que Alegria (Verve);;960205 16:10:35;kahn.hrp.no
+83721;Mono Men, The;"T.S.B."; ;960205 16:13:24;swami.er.sintef.no
+81899;Fallouts, The;Sleep; ;960205 16:14:30;swami.er.sintef.no
+88273;Karp;Suplex; ;960205 16:21:24;gatekeeper.aftenposten.no
+85327;Prince;The Gold Experience; ;960205 16:23:09;gatekeeper.aftenposten.no
+80231;Arena;Songs From The Lions Cage; ;960205 16:25:42;pc143.nooft.abb.no
+750727;Robert Englund, John Saxon, Heather Langenkamp;Nightmare on Elm Street, A;NTSC;960205 16:41:50;gx03.groo.unit.no
+602573;Austin Stoker,Darwin Joston;ASSAULT ON PRECINCT 13;Utekstet orginalinnspilling;960205 16:44:56;byleist.ifi.uio.no
+79732;Mike & The Mechanics;Beggar On A Beach Of Gold; ;960205 16:48:43;dial-9.oslo.no.powertech.net
+79732;Mike & The Mechanics;Beggar On A Beach Of Gold; ;960205 16:49:27;dial-9.oslo.no.powertech.net
+84801;Charles, Ray;The Very Best Of; ;960205 16:58:09;cache.P52.hioslo.no
+85458;Eno, Brian & Jah Wobble;Spinner; ;960205 16:58:11;pc33-108.hiof.no
+31573;Charles, Ray;Would You Believe?;;960205 16:58:25;cache.P52.hioslo.no
+19382;Charles, Ray;Wish You Were Here Tonight;;960205 16:58:42;cache.P52.hioslo.no
+9306;Charles, Ray;Friendship;;960205 16:59:04;cache.P52.hioslo.no
+16752;Charles, Ray;Greatest Country & Western Hits;;960205 16:59:15;cache.P52.hioslo.no
+60719;Oslo 13;Live;Culing Legs;960205 16:59:57;cache.P52.hioslo.no
+15526;Oslo 13;Off Balance;;960205 17:00:11;cache.P52.hioslo.no
+61819;Young, Paul;The Crossing;;960205 17:01:29;pc-studdb13.hifm.no
+39235;Young, Paul;From Time To Time;;960205 17:01:45;pc-studdb13.hifm.no
+78275;Young, Paul;Best Ballads; ;960205 17:02:00;pc-studdb13.hifm.no
+61819;Young, Paul;The Crossing;;960205 17:02:25;pc-studdb13.hifm.no
+7893;Young, Paul;Between Two Fires;;960205 17:02:44;pc-studdb13.hifm.no
+78275;Young, Paul;Best Ballads; ;960205 17:03:15;pc-studdb13.hifm.no
+78275;Young, Paul;Best Ballads; ;960205 17:03:23;pc-studdb13.hifm.no
+77688;Leftfield;Leftism; ;960205 17:04:31;pc-studdb13.hifm.no
+77688;Leftfield;Leftism; ;960205 17:05:14;pc-studdb13.hifm.no
+43591;Queensryche;Best I Can;;960205 17:07:27;pc-studdb13.hifm.no
+77507;Queensryche;Operation : Live Crime; ;960205 17:07:41;pc-studdb13.hifm.no
+77507;Queensryche;Operation : Live Crime; ;960205 17:07:57;pc-studdb13.hifm.no
+2026;Simple Minds;New Gold Dream;;960205 17:49:34;pccicero02.uio.no
+2026;Simple Minds;New Gold Dream;;960205 17:50:04;pccicero02.uio.no
+24946;Simple Minds;Celebration;;960205 17:50:44;pccicero02.uio.no
+6589;Simple Minds;Real To Real Cacophony;;960205 17:50:56;pccicero02.uio.no
+35777;Simple Minds;Real Life;;960205 17:51:04;pccicero02.uio.no
+24278;Simple Minds;Sons & Fascination;;960205 17:51:08;pccicero02.uio.no
+2027;Simple Minds;Sparkle In The Rain;;960205 17:51:14;pccicero02.uio.no
+22477;Simple Minds;Street Fighting Years;;960205 17:51:20;pccicero02.uio.no
+7744;Simple Minds;Life In A Day;;960205 17:51:24;pccicero02.uio.no
+63944;Simple Minds;In The City Of Light - Live;;960205 17:51:28;pccicero02.uio.no
+77788;Simple Minds;Good News From The Next World; ;960205 17:51:35;pccicero02.uio.no
+50821;Simple Minds;Glittering Price;;960205 17:51:39;pccicero02.uio.no
+5226;Simple Minds;Empires And Dance;;960205 17:51:49;pccicero02.uio.no
+68701;U2;Zooropa;;960205 17:52:09;pccicero02.uio.no
+61157;U2;Zooropa;Island;960205 17:52:21;pccicero02.uio.no
+54841;Big Black;Songs About Fucking;;960205 17:53:05;pccicero02.uio.no
+65591;Nuts, Speddmaster & Barbarian;Fuck A Duck - This Is Our Fucking Megamix;;960205 17:53:21;pccicero02.uio.no
+54320;Astroburger;I Used To Be A Mod;;960205 17:54:31;pccicero02.uio.no
+68745;Astroburger;In Orbit;;960205 17:54:40;pccicero02.uio.no
+67430;Ozric Tentacles;Live Ethereal Cereal;;960205 18:06:55;pc-karstenh.er.sintef.no
+11336;Hillage, Steve;Rainbow Dome Musick;;960205 18:10:04;pc-karstenh.er.sintef.no
+11336;Hillage, Steve;Rainbow Dome Musick;;960205 18:10:21;pc-karstenh.er.sintef.no
+31639;Bacharach, Burt;ARTHUR;;960205 18:12:45;fp7-ppp6.oslo.net
+76369;Queen;Greatest Hits 1 & 2;;960205 18:15:44;fp7-ppp6.oslo.net
+76369;Queen;Greatest Hits 1 & 2;;960205 18:15:55;fp7-ppp6.oslo.net
+702831;ABBA;In concert;NTSC;960205 18:26:41;193.156.57.103
+702831;ABBA;In concert;NTSC;960205 18:27:34;193.156.57.103
+88169;Amos, Tori;Boys For Pele; ;960205 18:30:03;gwa.ericsson.com
+68520;Rufus;Street Player;Featuring Chaka Khan;960205 18:30:42;mac56.mh.luth.se
+59146;Savage Rose;Savage Rose 25;;960205 18:49:04;torgrime.jd.dep.no
+73426;Mendes, Sergio & Brasil `65;Best Of;;960205 19:20:42;webber.uib.no
+59105;Smashing Pumpkins;Siamese Dream;;960205 19:22:15;sei9.grm.hia.no
+3729;Mendes, Sergio;Greatest Hits (A&M);;960205 19:22:31;webber.uib.no
+84997;Osborne, Joan;Relish; ;960205 19:24:53;sei9.grm.hia.no
+43966;Lush;Spooky;;960205 19:26:12;sei9.grm.hia.no
+70744;Lush;Split;(4AD);960205 19:26:21;sei9.grm.hia.no
+39185;Lush;Scar;;960205 19:26:34;sei9.grm.hia.no
+36259;Lush;Gala;;960205 19:26:41;sei9.grm.hia.no
+77289;Lush;Cookie;;960205 19:27:07;sei9.grm.hia.no
+29258;Waits, Tom & Gayle, Crystal;ONE FROM THE HEART;;960205 19:29:19;pc-36-116.ifi.uib.no
+17194;Waits, Tom;Big Time;;960205 19:30:00;pc-36-116.ifi.uib.no
+17194;Waits, Tom;Big Time;;960205 19:30:12;pc-36-116.ifi.uib.no
+80834;Black, Frank;Black Sessions; ;960205 19:30:21;sei9.grm.hia.no
+54988;Black, Frank;Frank Black;;960205 19:30:26;sei9.grm.hia.no
+69895;Black, Frank;Teenager Of The Year;(4AD);960205 19:30:31;sei9.grm.hia.no
+88287;Black, Frank;The Cult Of Ray; ;960205 19:30:35;sei9.grm.hia.no
+39775;Waits, Tom;Heartattack & Vine;;960205 19:30:38;pc-36-116.ifi.uib.no
+39775;Waits, Tom;Heartattack & Vine;;960205 19:30:43;pc-36-116.ifi.uib.no
+41793;Waits, Tom;NIGHT ON EARTH;;960205 19:31:05;pc-36-116.ifi.uib.no
+41793;Waits, Tom;NIGHT ON EARTH;;960205 19:31:11;pc-36-116.ifi.uib.no
+58376;US 3;Hand On The Torch;;960205 19:31:14;webber.uib.no
+28551;Waits, Tom;Foreign Affairs;;960205 19:31:40;pc-36-116.ifi.uib.no
+28551;Waits, Tom;Foreign Affairs;;960205 19:31:44;pc-36-116.ifi.uib.no
+64691;US 3;Cantaloop/Tukka Yoot's Riddim/I Got It Goin' On;;960205 19:32:00;webber.uib.no
+52991;Waits, Tom;The Early Years Vol. 2;;960205 19:33:15;pc-36-116.ifi.uib.no
+52991;Waits, Tom;The Early Years Vol. 2;;960205 19:33:20;pc-36-116.ifi.uib.no
+17194;Waits, Tom;Big Time;;960205 19:33:45;pc-36-116.ifi.uib.no
+17194;Waits, Tom;Big Time;;960205 19:33:50;pc-36-116.ifi.uib.no
+29258;Waits, Tom & Gayle, Crystal;ONE FROM THE HEART;;960205 19:34:00;pc-36-116.ifi.uib.no
+29258;Waits, Tom & Gayle, Crystal;ONE FROM THE HEART;;960205 19:34:06;pc-36-116.ifi.uib.no
+87426;DIVERSE ARTISTER;Hold On - BBC Radio 1 FM Sessions;(U2,Suede,Boo Radleys,Teenage Fanclub m.fl.);960205 19:41:01;sei9.grm.hia.no
+43484;Teenage Fanclub;A Catholic Education;;960205 19:42:32;sei9.grm.hia.no
+79700;Teenage Fanclub;Deep Fried Fanclub; ;960205 19:42:38;sei9.grm.hia.no
+79700;Teenage Fanclub;Deep Fried Fanclub; ;960205 19:42:54;sei9.grm.hia.no
+49579;Teenage Fanclub;What You Do To Me;;960205 19:43:02;sei9.grm.hia.no
+41302;Teenage Fanclub;Bandwagonesque;;960205 19:43:09;sei9.grm.hia.no
+82231;Teenage Fanclub;Grand Prix; ;960205 19:43:22;sei9.grm.hia.no
+61394;Teenage Fanclub;Thirteen;;960205 19:43:31;sei9.grm.hia.no
+46880;TRIBUTE ALBUMS;Surprise Your Pig;A Tribute To R.E.M.;960205 19:45:20;sei9.grm.hia.no
+77733;DJ Krush;Turntablized; ;960205 19:47:36;pcait04.uio.no
+85395;R.E.M.;Murmur; ;960205 19:47:37;sei9.grm.hia.no
+3396;R.E.M.;Murmur;;960205 19:47:49;sei9.grm.hia.no
+86564;R.E.M.;Out Of Time; ;960205 19:47:55;sei9.grm.hia.no
+74174;R.E.M.;Singles Collected;;960205 19:48:02;sei9.grm.hia.no
+85946;R.E.M.;Strange Currencies; ;960205 19:48:09;sei9.grm.hia.no
+64448;R.E.M.;The Automatic Box;;960205 19:48:15;sei9.grm.hia.no
+40063;R.E.M.;The Best Of;;960205 19:49:51;sei9.grm.hia.no
+85620;Nightmares On Wax;Smokers Delight; ;960205 19:50:19;pcait04.uio.no
+37097;N.W.A.;Efil4zaggin;;960205 19:50:26;sei9.grm.hia.no
+33586;N.W.A.;N.W.A. And The Posse;;960205 19:50:30;sei9.grm.hia.no
+25908;N.W.A.;Straight Outta Compton;;960205 19:50:35;sei9.grm.hia.no
+66959;Nightmares On Wax;A Word Of Science;;960205 19:50:40;pcait04.uio.no
+81175;Haden, Charlie & Hank Jones;Steal Away; ;960205 20:09:34;pc24.pm2-1.eunet.no
+88049;Spain.;The Blue Moods Of Spain; ;960205 20:12:31;pc24.pm2-1.eunet.no
+14768;Hayazaka, Fumio;SEVEN SAMURAI & RASHOMON;;960205 20:12:40;oppringt-8.uib.no
+52552;Spencer, John B.;Sunday Best;;960205 20:20:53;sild30.grm.hia.no
+55748;Spencer, John B.;Break & Entry;;960205 20:21:09;sild30.grm.hia.no
+63944;Simple Minds;In The City Of Light - Live;;960205 20:22:20;drammensnett206.telepost.no
+88169;Amos, Tori;Boys For Pele; ;960205 20:23:05;sild30.grm.hia.no
+11665;Motorhead;Ace Of Spades;;960205 20:52:33;144.164.213.67
+11665;Motorhead;Ace Of Spades;;960205 20:53:07;144.164.213.67
+81825;Beat Farmers;Best Of; ;960205 20:53:56;oslo803.telepost.no
+29270;Savatage;Power Of The Night;;960205 20:54:04;144.164.213.67
+29270;Savatage;Power Of The Night;;960205 20:54:09;144.164.213.67
+805215;CD-ROM;Championship Manager 2; ;960205 20:56:06;oslo803.telepost.no
+805032;SPILL;Championship Manager 2;Spillet fotballfrelste har ventet på !;960205 20:56:45;oslo803.telepost.no
+6907;Velvet Underground;The Velvet Underground;;960205 20:56:58;nm3-ppp6.oslo.net
+63931;Eidsvåg, Bjørn;Allemannsland;;960205 20:57:51;ppp21.infonet.no
+805032;SPILL;Championship Manager 2;Spillet fotballfrelste har ventet på !;960205 20:58:37;oslo803.telepost.no
+47463;TRIBUTE ALBUMS;Gabba Gabba Hey - Tribute To The Ramones;;960205 21:06:43;nm3-ppp6.oslo.net
+12480;Gabrieli;"The Glory of Venice";King's College/Philip Jones/Cleobury;960205 21:12:19;mamac01.uio.no
+76925;Praetorius;Julemesse;Gabrieli Consort & Players/McCreesh;960205 21:12:49;mamac01.uio.no
+23418;Monteverdi;Madrigaler 5'te bok;Kirkby/Holden/Consort of Musicke/Rooley;960205 21:13:42;mamac01.uio.no
+45944;Valente, Caterina;The International;;960205 21:33:30;160.68.122.33
+13262;Bremnes, Kari;Mitt Ville Hjerte;;960205 21:37:43;160.68.122.33
+13262;Bremnes, Kari;Mitt Ville Hjerte;;960205 21:38:20;160.68.122.33
+88214;Elle Melle;Ut I År; ;960205 21:47:55;pc6.lillehammer-pm2-1.eunet.no
+33907;Isaak, Chris;Wicked Game;;960206 01:05:33;barum106.telepost.no
+82256;Isaak, Chris;Forever Blue; ;960206 01:05:52;barum106.telepost.no
+31808;Andersen, Arild;Sagn;;960206 01:21:27;gatekeeper.tv2.no
+82921;Kvitnes, Henning;Godt Vann; ;960206 02:07:30;drammensnett308.telepost.no
+51285;Scott-Heron, Gil & Jackson, Brian;Secrets;;960206 07:39:52;asker114.telepost.no
+72572;Scott-Heron, Gil;Tales Of;;960206 07:42:00;asker114.telepost.no
+72572;Scott-Heron, Gil;Tales Of;;960206 07:42:12;asker114.telepost.no
+59114;Scott-Heron, Gil;The Best Of;;960206 07:42:28;asker114.telepost.no
+72357;Grant, Eddy;Killer On The Rampage;;960206 07:50:40;pc100.datametrix.no
+72357;Grant, Eddy;Killer On The Rampage;;960206 07:51:04;pc100.datametrix.no
+33551;Wakeman, Rick;1984;;960206 07:52:56;pc100.datametrix.no
+33551;Wakeman, Rick;1984;;960206 07:53:07;pc100.datametrix.no
+7080;Cave, Nick & The Bad Seeds;Kicking Against The Pricks;;960206 08:43:24;129.241.165.167
+44806;Harvey, P J;Dry;;960206 08:47:47;129.241.165.167
+53621;U2;War;;960206 08:48:55;129.241.165.167
+83209;Vømmøl Spellemannslag;Rock Pack; ;960206 08:50:11;129.241.165.167
+82794;Napolitano; Johnette & Vincent, Holly;Vowel Movement;960206 08:50:15;yngvi.ifi.uio.no
+83209;Vømmøl Spellemannslag;Rock Pack; ;960206 08:50:22;129.241.165.167
+40966;Fleetwood Mac;The Pious Bird Of Good Omen;;960206 09:20:09;maia.uio.no
+47131;TRIBUTE ALBUMS;If 6 Was 9;(Jimi Hendrix);960206 09:20:56;maia.uio.no
+24118;Birthday Party, The;Hee Haw;;960206 09:23:54;signy13.stud.unit.no
+704567;Harvey Keitel, Victor Argo;BAD LIEUTENANT;NTSC;960206 09:35:42;hjohlman.ifm.uib.no
+73870;H-Blockx;Time To Move;;960206 10:07:00;128.39.140.220
+64992;Bowie, David;The Singles Collection 1;;960206 10:10:23;cih08.ahh.uib.no
+64986;Bowie, David;The singles Collection 2;;960206 10:10:31;cih08.ahh.uib.no
+21572;Jarreau, Al;Glow;;960206 10:15:09;cnmac84.uio.no
+64923;Parker, Maceo;Funky Music Machine;;960206 10:22:28;193.212.64.75
+87823;Witch Hazel;Landlocked; ;960206 10:26:42;FY5113.mnfak.unit.no
+1737;Matt Bianco;Whose Side Are You On?;;960206 10:27:28;mac-107.nhh.no
+71697;San Francisco Seals, The;Now Here;;960206 10:28:59;FY5113.mnfak.unit.no
+38224;Pet Shop Boys;The Maxi CD Collection Of;;960206 10:29:29;mac-107.nhh.no
+79229;Lambchop;Jack`s Tulips; ;960206 10:29:32;FY5113.mnfak.unit.no
+88050;Lambchop;How I Quit Smoking; ;960206 10:29:40;FY5113.mnfak.unit.no
+52096;Pet Shop Boys;West End Girls;;960206 10:29:46;mac-107.nhh.no
+61410;Pet Shop Boys;Very;;960206 10:30:14;mac-107.nhh.no
+41793;Waits, Tom;NIGHT ON EARTH;;960206 10:37:25;fal.ifi.uio.no
+41793;Waits, Tom;NIGHT ON EARTH;;960206 10:38:10;fal.ifi.uio.no
+76874;Hildegard av Bingen;Canticles of Ecstasy;Sequentia;960206 10:51:23;129.241.11.181
+76874;Hildegard av Bingen;Canticles of Ecstasy;Sequentia;960206 10:52:51;129.241.11.181
+76874;Hildegard av Bingen;Canticles of Ecstasy;Sequentia;960206 10:53:13;129.241.11.181
+84841;DIVERSE ARTISTER;Help; ;960206 10:54:44;158.38.112.60
+88370;Wolff, Rikard;Pojken På Månen; ;960206 10:56:45;193.43.103.163
+88370;Wolff, Rikard;Pojken På Månen; ;960206 10:58:12;193.43.103.163
+24807;Grand Funk;We're An American Band;;960206 11:12:47;193.75.79.3
+46165;Marino, Frank;Double Live;;960206 11:15:49;193.75.79.3
+68667;Lukather, Steve;Candyman;;960206 11:20:23;www-relay.pa-x.dec.com
+68591;Poulenc;Sakral musikk for kor a capella;Choir of Trinity College/Marlow;960206 11:27:01;pc035.mr.sintef.no
+31980;Poulenc;Messe i g-moll/Motetter;Solister/Robert Shaw Festival Singe/Shaw;960206 11:27:47;pc035.mr.sintef.no
+604409;Div, Stones, Hendrix, Pink Floyd, Cream mmm;Superstars in concert;Utekstet orginalinnspilling;960206 11:36:19;hinux.hin.no
+601069;DIVERSE ARTISTER;Don't Watch That, Watch This! 1;Utekstet orginalinnspilling;960206 11:39:10;hinux.hin.no
+3852;Young, Neil;After The Goldrush;;960206 11:43:49;pc50175.cinet.no
+22633;Reaves, Giles;Letting Go;;960206 11:44:00;pc309_09.hin.no
+55384;Metallica;Wherever I May Roam;;960206 11:44:37;signy7.stud.unit.no
+73883;Future Sound Of London;Lifeforms;;960206 11:46:55;pc309_09.hin.no
+4437;Band, The;Music From Big Pink;;960206 12:04:23;karon.saga.no
+40560;Enya;Shepherd Moons;;960206 12:11:10;pc20_11.tbk.no
+10173;Enya;The Celts;;960206 12:12:28;pc20_11.tbk.no
+29656;Enya;Storms In Africa;;960206 12:13:02;pc20_11.tbk.no
+18938;Enya;Watermark;;960206 12:13:22;pc20_11.tbk.no
+16689;Jobim, Antonio Carlos;Passarim (Verve);;960206 12:16:09;137.133.128.125
+2124;Diverse Artister;DUNE;;960206 12:35:45;128.39.140.248
+2124;Diverse Artister;DUNE;;960206 12:36:49;128.39.140.248
+6326;Ridgway, Stan;The Big Heat;;960206 12:39:22;syslab18.syslab.no
+702386;John Belushi,Dan Aykroyd;BLUES BROTHERS, THE;NTSC;960206 12:51:32;pc33-206.hiof.no
+6887;Velvet Underground;Another View;;960206 12:53:16;pc192-73.iu.hioslo.no
+59687;Velvet Underground;Chronicles;;960206 12:53:43;pc192-73.iu.hioslo.no
+78696;Dao Dezi;World Mix Album; ;960206 12:57:37;fp7-ppp5.oslo.net
+42777;Zappa, Frank;Roxy & Elsewhere;;960206 12:58:06;pc192-73.iu.hioslo.no
+28484;Zappa, Frank;Sheik Yerbouti;;960206 12:58:26;pc192-73.iu.hioslo.no
+64440;Enigma;The Cross Of Changes;;960206 12:59:52;fp7-ppp5.oslo.net
+6887;Velvet Underground;Another View;;960206 13:00:31;pc192-73.iu.hioslo.no
+6887;Velvet Underground;Another View;;960206 13:01:35;pc192-73.iu.hioslo.no
+64440;Enigma;The Cross Of Changes;;960206 13:01:35;fp7-ppp5.oslo.net
+43353;Bel Canto;Shimmering, Warm & Bright;;960206 13:16:54;trondheim-ppp1.oslo.net
+88217;Visit Venus;Music For Space Tourism Vol.1;-Yo Mama Records-;960206 13:28:59;thomas.sybase.no
+63924;Dialog Fra Filmen;FLÅKLYPA GRAND PRIX;;960206 13:33:06;gatekeeper.aftenposten.no
+63924;Dialog Fra Filmen;FLÅKLYPA GRAND PRIX;;960206 13:34:21;gatekeeper.aftenposten.no
+63924;Dialog Fra Filmen;FLÅKLYPA GRAND PRIX;;960206 13:35:12;gatekeeper.aftenposten.no
+84963;Kitaro;Twin 2 Best; ;960206 13:38:39;beyla.ifi.uio.no
+84144;Method Man;Tical; ;960206 13:39:49;tromso111.telepost.no
+74322;Kitaro;Tokusen 2;;960206 13:40:00;beyla.ifi.uio.no
+86238;Jarre, Jean Michel;Equinoxe; ;960206 13:45:23;beyla.ifi.uio.no
+77036;Jarre, Jean Michel;Hong Kong;;960206 13:45:46;beyla.ifi.uio.no
+12830;Jarre, Jean Michel;J.M.J. Komplett;;960206 13:46:11;beyla.ifi.uio.no
+84837;Jarre, Jean Michel;Jarremix;(Remix Av Jarre - Begrenset Opplag);960206 13:46:26;beyla.ifi.uio.no
+4774;Doors, The;The Best Of;;960206 13:59:24;gorina4.hsr.no
+2104;Doors, The;The Doors;;960206 14:00:31;gorina4.hsr.no
+3703;Doors, The;Strange Days;;960206 14:00:50;gorina4.hsr.no
+86310;Dubstar;Disgraceful; ;960206 14:07:50;158.38.61.57
+88267;Tortoise;Millions Now Living Will Never Die; ;960206 14:08:45;158.38.61.57
+78574;Tortoise;Tortoise; ;960206 14:09:19;158.38.61.57
+87794;Movietone;Movietone; ;960206 14:09:51;158.38.61.57
+83934;DANCE / SOUL;Forbidden Paradise; ;960206 14:16:45;skafid.ifi.uio.no
+77990;Flying Saucer Attack;Distance; ;960206 14:19:43;158.38.61.57
+78633;Flying Saucer Attack;Flying Saucer Attack; ;960206 14:20:32;158.38.61.57
+19046;Blondie;Blondie's Hits;;960206 14:20:40;oslo115.telepost.no
+81620;Flying Saucer Attack;Further; ;960206 14:20:46;158.38.61.57
+74761;New Model Army;B-Sides & Abandoned Tracks;;960206 14:22:33;ns0.alcatel.no
+86310;Dubstar;Disgraceful; ;960206 14:23:52;158.38.61.57
+55650;Suede;Suede;;960206 14:26:51;petra3.petra.unit.no
+52386;Suede;The Drowners;;960206 14:26:59;petra3.petra.unit.no
+74819;Suede;Dog Man Star;;960206 14:27:07;petra3.petra.unit.no
+74819;Suede;Dog Man Star;;960206 14:28:25;petra3.petra.unit.no
+33587;Imperiet;Kickar;;960206 14:30:30;192.137.89.127
+79665;Elastica;Elastica; ;960206 14:35:40;sam.telenor.no
+64044;Blood, Sweat & Tears;The Collection;;960206 14:39:27;192.137.89.127
+55615;Lai, Francis & Servain, Philippe;LA BELLE HISTOIRE;;960206 14:39:35;cache.P52.hioslo.no
+87579;Blood, Sweat & Tears;The Best Of : What Goes Up !; ;960206 14:39:56;192.137.89.127
+48502;Eidsvåg, Bjørn;Bjørn's Beste;;960206 14:42:10;192.137.89.127
+9974;Eidsvåg, Bjørn;Dansere I Natten;;960206 14:42:32;192.137.89.127
+48500;Eidsvåg, Bjørn;Live In New York;;960206 14:42:57;192.137.89.127
+62793;Queen;News Of The World;;960206 14:44:14;192.137.89.127
+58039;Belly;Baby Silvertooth;;960206 14:47:40;sam.telenor.no
+78429;Belly;King; ;960206 14:48:10;sam.telenor.no
+81023;Belly;King; ;960206 14:48:19;sam.telenor.no
+62735;Sweet, Matthew;Earth;;960206 14:48:34;192.137.89.127
+601157;Pink Floyd;THE WALL;Utekstet orginalinnspilling;960206 15:04:50;158.38.105.11
+52633;TRIBUTE ALBUMS;Cover Me;(Bruce Springsteen);960206 15:07:43;158.38.105.11
+77403;Wagner;Orkestermusikk fra TannhSuser & Parsifal;Philadelphia/Stokowski;960206 15:19:49;fp5-ppp8.oslo.net
+88365;Baird, Dan;Buffalo Nickel; ;960206 15:20:16;barak.Unis.No
+68855;Wagner;Ringen i orkesterutdrag;Philadelphia/Stokowski;960206 15:21:09;fp5-ppp8.oslo.net
+11392;Coleman, Ornette;The Shape Of Jazz To Come;;960206 15:28:35;pgf.hivolda.no
+54479;M People;Northern Soul;;960206 15:28:36;PC315.ngu.no
+54479;M People;Northern Soul;;960206 15:29:07;PC315.ngu.no
+62085;M People;Elegant Slumming;;960206 15:29:28;PC315.ngu.no
+62085;M People;Elegant Slumming;;960206 15:29:36;PC315.ngu.no
+60930;Beatles;1962-1966;;960206 15:38:27;signy10.stud.unit.no
+49555;Iron Maiden;From Here To Eternity;;960206 15:49:37;dig120.stud.ingok.hitos.no
+32135;Alarm;Standards;;960206 15:50:14;itf-stud-4.nlh.no
+39324;Svendsen, Kari;Kari Går Til Filmen;;960206 15:52:14;oslo106.telepost.no
+20595;Casiopea;World Live;;960206 15:53:10;165.164.201.148
+77303;Casiopea;Asian Dreamer;;960206 15:53:30;165.164.201.148
+58180;Casiopea;Dramatic;;960206 15:54:51;165.164.201.148
+21655;Casiopea;Funky Sound Bombers;;960206 15:55:06;165.164.201.148
+24457;Bach;Goldbergvariasjonene 2cds;Arrau;960206 16:00:17;pc58-197.hiof.no
+32135;Alarm;Standards;;960206 16:00:35;itf-stud-4.nlh.no
+3871;Tangerine Dream;Stratosfear;;960206 16:00:49;test231.iku.sintef.no
+4563;Tangerine Dream;Phaedra;;960206 16:02:17;test231.iku.sintef.no
+32135;Alarm;Standards;;960206 16:03:09;itf-stud-4.nlh.no
+64248;Bach;Goldbergvariasjoner/Invensjoner;Gould;960206 16:03:17;pc58-197.hiof.no
+32135;Alarm;Standards;;960206 16:04:05;itf-stud-4.nlh.no
+18953;Beethoven;Klaversonate op 111 etc;Michelangeli;960206 16:05:41;pc58-197.hiof.no
+32391;Liszt;Klaversonate i h-moll;Arrau;960206 16:07:40;pc58-197.hiof.no
+71260;Lanois, Daniel;Cool Water;;960206 16:08:27;146.172.20.213
+71260;Lanois, Daniel;Cool Water;;960206 16:09:44;146.172.20.213
+42626;Vømmøl Spellemannslag;Vømmøl'n;;960206 16:11:35;itf-stud-4.nlh.no
+42565;Vømmøl Spellemannslag;Vømlingen;;960206 16:13:19;itf-stud-4.nlh.no
+25990;Vømmøl Spellemannslag;Vømmøltoppen;;960206 16:13:33;itf-stud-4.nlh.no
+83209;Vømmøl Spellemannslag;Rock Pack; ;960206 16:13:59;itf-stud-4.nlh.no
+32135;Alarm;Standards;;960206 16:15:05;itf-stud-4.nlh.no
+24457;Bach;Goldbergvariasjonene 2cds;Arrau;960206 16:15:19;pc58-197.hiof.no
+52214;King Crimson;The Great Deceiver;;960206 16:18:01;raptus.avh.unit.no
+82915;Denny, Sandy & Lucas, Trevor;The Attic Tracks 1972 - 1984; ;960206 16:20:25;raptus.avh.unit.no
+82915;Denny, Sandy & Lucas, Trevor;The Attic Tracks 1972 - 1984; ;960206 16:20:33;raptus.avh.unit.no
+32135;Alarm;Standards;;960206 16:21:10;itf-stud-4.nlh.no
+18902;Rolling Stones;12X5;;960206 16:21:31;c1080b.marina.unit.no
+82760;Rolling Stones;More Hot Rocks (Big Hits & Fazed Cookies); ;960206 16:22:12;c1080b.marina.unit.no
+42626;Vømmøl Spellemannslag;Vømmøl'n;;960206 16:22:27;itf-stud-4.nlh.no
+15374;Cave, Nick;The Firstborn Is Dead;;960206 16:23:47;c1080b.marina.unit.no
+27978;CC Cowboys;Blodsbrødre;;960206 16:24:33;c1080b.marina.unit.no
+72104;Bach;Klavertranskripsjoner/suiter;Kempff;960206 16:25:38;pc58-197.hiof.no
+48683;CC Cowboys;Tigergutt;;960206 16:25:47;c1080b.marina.unit.no
+48683;CC Cowboys;Tigergutt;;960206 16:25:59;c1080b.marina.unit.no
+72695;Nordman;Nordman;;960206 16:27:02;signy10.stud.unit.no
+74336;Sepultura;Slave New World;;960206 16:29:28;X31.nhidh.nki.no
+74336;Sepultura;Slave New World;;960206 16:29:51;X31.nhidh.nki.no
+74336;Sepultura;Slave New World;;960206 16:29:59;X31.nhidh.nki.no
+23472;Sepultura;Beneath The Remains;;960206 16:30:09;X31.nhidh.nki.no
+35099;Sepultura;Arise;;960206 16:30:20;X31.nhidh.nki.no
+61806;Sepultura;Chaos A.D.;Roadrunner;960206 16:30:29;X31.nhidh.nki.no
+31277;Sepultura;Schizophrenia;;960206 16:30:40;X31.nhidh.nki.no
+73508;Berge, Bjørn / Flaaten, Jan;Berge/Flaaten;;960206 16:35:02;sam.telenor.no
+25090;Raga Rockers;The Return Of The Raga Rockers;;960206 16:51:34;signy10.stud.unit.no
+25091;Raga Rockers;Maskiner I Nirvana;;960206 16:51:43;signy10.stud.unit.no
+17790;Raga Rockers;Forbudte F lelser;;960206 16:52:01;signy10.stud.unit.no
+24751;Raga Rockers;Blaff;;960206 16:53:12;signy10.stud.unit.no
+31697;Raga Rockers;Rock'n Roll Party;;960206 16:53:29;signy10.stud.unit.no
+25089;Raga Rockers;Varme Dager;;960206 16:53:48;signy10.stud.unit.no
+25091;Raga Rockers;Maskiner I Nirvana;;960206 16:54:11;signy10.stud.unit.no
+17790;Raga Rockers;Forbudte F lelser;;960206 16:54:15;signy10.stud.unit.no
+25089;Raga Rockers;Varme Dager;;960206 16:54:24;signy10.stud.unit.no
+49627;Nine Inch Nails;Broken;;960206 17:02:31;165.164.201.148
+79370;Tricky;Maxinquaye; ;960206 17:17:41;tandgnjost.ifi.uio.no
+57126;Cockburn, Bruce;World Of Wonders;;960206 17:36:20;xyplex30.uio.no
+20923;Clapton, Eric;HOMEBOY;;960206 17:40:42;xyplex30.uio.no
+14576;Lemper, Ute;Life Is A Cabaret;;960206 17:46:20;hfmac94.uio.no
+66532;Lemper, Ute;Escape Indecent;;960206 17:47:17;hfmac94.uio.no
+56999;Lemper, Ute;Sings Kurt Weill;;960206 17:47:26;hfmac94.uio.no
+14576;Lemper, Ute;Life Is A Cabaret;;960206 17:47:49;hfmac94.uio.no
+56999;Lemper, Ute;Sings Kurt Weill;;960206 17:48:01;hfmac94.uio.no
+66532;Lemper, Ute;Escape Indecent;;960206 17:48:09;hfmac94.uio.no
+75325;Penn, Dan;Do Right Man;;960206 17:48:59;hfmac94.uio.no
+81432;Thompson, Richard & Linda;Shoot Out The Lights; ;960206 17:49:52;hfmac94.uio.no
+52561;Dylan, Bob;Blonde On Blonde;;960206 17:50:49;hfmac94.uio.no
+54976;Dylan, Bob;Greatest Hits Vol. 3;;960206 17:51:43;hfmac94.uio.no
+700342;Tangerine Dream;CANYON DREAMS;NTSC;960206 18:06:02;194.18.224.1
+82941;Morissette, Alanis;Jagged Little Pill; ;960206 18:08:24;biokjpc16.uio.no
+703576;Anne Parillaud;LA FEMME NIKITA;NTSC;960206 18:08:53;194.18.224.1
+82941;Morissette, Alanis;Jagged Little Pill; ;960206 18:09:08;biokjpc16.uio.no
+82410;Sting;LIVING SEA, THE; ;960206 18:19:20;Tott.BS.bi.no
+706181;CARREY, JIM;Rubberface.;NTSC;960206 18:23:10;194.18.224.1
+88169;Amos, Tori;Boys For Pele; ;960206 18:26:09;bie.ii.uib.no
+704683;DREAM WINDOW - JAPANESE GARDEN;Diverse;NTSC;960206 18:26:47;194.18.224.1
+88169;Amos, Tori;Boys For Pele; ;960206 18:29:05;bie.ii.uib.no
+33577;Sting;The Soul Cages;;960206 18:31:17;Tott.BS.bi.no
+24362;Christmas with Mario Lanza;Lanza/Div Orkestre og Dirigenter;Juleplater;960206 18:32:20;oslo708.telepost.no
+3901;Simon & Garfunkel;Bookends;;960206 18:43:16;gorina3.hsr.no
+27093;Simon & Garfunkel;Collected Works;;960206 18:43:42;gorina3.hsr.no
+10624;Lennon, John;Imagine;;960206 18:44:17;xanadu.vingmed.no
+10624;Lennon, John;Imagine;;960206 18:45:08;xanadu.vingmed.no
+2243;Lennon, John;Milk & Honey;;960206 18:46:25;xanadu.vingmed.no
+2243;Lennon, John;Milk & Honey;;960206 18:46:44;xanadu.vingmed.no
+10995;Lennon, John;Mind Games;;960206 18:47:28;xanadu.vingmed.no
+10995;Lennon, John;Mind Games;;960206 18:47:35;xanadu.vingmed.no
+15821;Lennon, John;Plastic Ono Band;;960206 18:47:45;xanadu.vingmed.no
+15821;Lennon, John;Plastic Ono Band;;960206 18:47:57;xanadu.vingmed.no
+12339;Lennon, John;Shaved Fish;;960206 18:48:13;xanadu.vingmed.no
+12339;Lennon, John;Shaved Fish;;960206 18:48:19;xanadu.vingmed.no
+11911;Fleetwood Mac;Tusk;;960206 18:49:58;gorina3.hsr.no
+15821;Lennon, John;Plastic Ono Band;;960206 18:51:05;gorina3.hsr.no
+10624;Lennon, John;Imagine;;960206 18:51:35;xanadu.vingmed.no
+1131;Pink Floyd;Wish You Were Here;;960206 18:52:05;gorina3.hsr.no
+1133;Pink Floyd;Meddle;;960206 18:52:59;gorina3.hsr.no
+10624;Lennon, John;Imagine;;960206 18:54:35;xanadu.vingmed.no
+1121;Deep Purple;Deepest Purple;;960206 18:59:34;gorina3.hsr.no
+1134;Queen;Greatest Hits I;;960206 19:01:17;gorina3.hsr.no
+3577;Springsteen, Bruce;Born In The U.S.A.;;960206 19:02:13;gorina3.hsr.no
+15214;Clash;The Story Of The Clash Vol.1;;960206 19:03:47;gorina3.hsr.no
+17610;Dire Straits;Money For Nothing;;960206 19:04:25;gorina3.hsr.no
+9272;Sex Pistols;The Great Rock'n Roll Swindle;;960206 19:06:03;gorina3.hsr.no
+46996;DANCE / SOUL;Dance Collection 2;;960206 19:34:41;d-48.home-ip.as.ucsb.edu
+71970;DANCE / SOUL;Dance Collection 2;High Energy;960206 19:35:01;d-48.home-ip.as.ucsb.edu
+65825;Manring, Michael;Thonk;;960206 19:36:56;wessel.mi.uib.no
+76512;Porch;Porch;;960206 19:37:50;wessel.mi.uib.no
+66210;Wasserman, Rob;Trios;;960206 19:38:46;wessel.mi.uib.no
+12460;Possessed;Seven Churches;;960206 19:39:12;wessel.mi.uib.no
+51594;Frank & Walters, The;Trains, Boats & Planes;;960206 19:45:11;drammensnett310.telepost.no
+74538;Walters, Jamie;Jamie Walters;;960206 19:45:40;drammensnett310.telepost.no
+31776;Prince;BATMAN;;960206 19:58:47;sinsen.sn.no
+31776;Prince;BATMAN;;960206 20:00:18;sinsen.sn.no
+73496;Stockhausen;Aus den sieben Tagen;Ensemble Musique Viviante/Boulez;960206 20:12:58;igor.uio.no
+84646;Harket, Morten;Wild Seed; ;960206 21:31:37;asker2-ppp9.oslo.net
+84646;Harket, Morten;Wild Seed; ;960206 21:32:06;asker2-ppp9.oslo.net
+39288;Bowie, David;Low;;960206 21:38:14;asker2-ppp9.oslo.net
+39288;Bowie, David;Low;;960206 21:38:24;asker2-ppp9.oslo.net
+39288;Bowie, David;Low;;960206 21:39:04;asker2-ppp9.oslo.net
+609150;DIVERSE;BLACK MAGIC M-66;Utekstet orginalinnspilling;960206 22:02:45;mama.link.no
+76267;Queen;The Game;;960206 22:09:51;hamar2-ppp8.oslo.net
+76267;Queen;The Game;;960206 22:10:50;hamar2-ppp8.oslo.net
+66788;Slade;The Collection Vol 2 79-87;;960206 22:12:58;dial2.link2000.net
+59817;Power Of Dreams;Positivity;;960206 22:25:05;bo107.telepost.no
+59817;Power Of Dreams;Positivity;;960206 22:26:20;bo107.telepost.no
+651622;VIDEO VISITS;Irland.;Norsk tekst / tale;960206 22:34:39;bo107.telepost.no
+606395;Galway, James and the Chieftains;In Ireland;Utekstet orginalinnspilling;960206 22:35:21;bo107.telepost.no
+604570;DIVERSE;Home Town Girls - Edition 1;Utekstet orginalinnspilling;960206 22:37:14;bo107.telepost.no
+40015;Du Pre, Jacqueline;Berømte Cellokonserter -Haydn/Dvorak/Elgar m.m.;Cello;960206 22:49:33;os13.ftns.no
+17510;Du Pre, Jacqueline;Elgar/Haydn kons/Beeth sonate/trio 2cds;Cello;960206 22:50:08;os13.ftns.no
+32402;Purcell;DIDO & AENEAS;Baker/Clark/Sinclair/Herincx/ECO/Lewis;960206 22:53:30;os13.ftns.no
+32402;Purcell;DIDO & AENEAS;Baker/Clark/Sinclair/Herincx/ECO/Lewis;960206 22:55:45;os13.ftns.no
+49385;Talking Heads;Popular Favorites 1976-92;;960206 23:05:45;fp7-ppp14.oslo.net
+55615;Lai, Francis & Servain, Philippe;LA BELLE HISTOIRE;;960206 23:06:42;gmmhp1.gmm.insa-tlse.fr
+28470;Belew, Adrian;Young Lions;;960206 23:48:05;pc1.ael.aker.no
+43951;Belew, Adrian;Inner Revolution;;960206 23:48:33;pc1.ael.aker.no
+43675;Catherine Wheel;Ferment;;960207 01:40:47;oslo515.telepost.no
+83836;Catherine Wheel;Happy Days; ;960207 01:42:17;oslo515.telepost.no
+83836;Catherine Wheel;Happy Days; ;960207 01:43:08;oslo515.telepost.no
+83836;Catherine Wheel;Happy Days; ;960207 01:44:37;oslo515.telepost.no
+83836;Catherine Wheel;Happy Days; ;960207 01:50:47;oslo515.telepost.no
+59890;Catherine Wheel;Chrome;;960207 01:51:38;oslo515.telepost.no
+68613;The The;Dis-Infected;;960207 03:25:46;akvamarin.ifjf.uib.no
+76305;The The;Shades Of Blue;;960207 03:26:16;akvamarin.ifjf.uib.no
+69584;The The;Solitude;;960207 03:26:33;akvamarin.ifjf.uib.no
+56916;Kiss;Alive III;;960207 05:43:26;oslo711.telepost.no
+8169;Kiss;Alive;;960207 05:44:07;oslo711.telepost.no
+57651;Kiss;Alive;;960207 05:44:19;oslo711.telepost.no
+49734;Div. Artister;Andes/Argentina: Los Troveros Cuyanos;;960207 08:34:52;ns0.alcatel.no
+49755;Haydee Alba;Argentina: Tango Argentin;;960207 08:38:55;ns0.alcatel.no
+39267;Petty, Tom & The Heartbreakers;Damn The Torpedoes;;960207 09:12:39;nispc31.nis.sintef.no
+41396;Verdi;OTELLO;Vinay/Nelli/Valdengo/NBC/Toscanini;960207 09:25:47;pc5.matstat.unit.no
+79300;Harvey, P J;To Bring You My Love; ;960207 09:30:21;pws46.ffi.no
+56500;Harvey, P J;Rid Of Me;;960207 09:30:45;pws46.ffi.no
+44806;Harvey, P J;Dry;;960207 09:30:55;pws46.ffi.no
+62309;Harvey, P J;4-Track Demos;;960207 09:32:19;pws46.ffi.no
+28317;Fasch;Sonater Quadro & Trio (6);Camerata Køln;960207 09:41:19;pws46.ffi.no
+28317;Fasch;Sonater Quadro & Trio (6);Camerata Køln;960207 09:51:51;pws46.ffi.no
+66402;Pow Wow;Regagner Les Plaines;;960207 09:56:32;pc-208-252.hf-fak.uib.no
+63475;Knopfler, Mark;KOMPONISTER;Screenplaying;960207 10:11:25;pc-sfn6.hifm.no
+41793;Waits, Tom;NIGHT ON EARTH;;960207 10:12:20;pc-sfn6.hifm.no
+60623;Vreeswijk, Cornelis;Grimascher Och Telegram;;960207 10:16:17;pc-sfn6.hifm.no
+40096;Vreeswijk, Cornelis;Turistens Klagan;;960207 10:16:55;pc-sfn6.hifm.no
+69854;Rachmaninov;Symfoni # 2/Klippen;Russian National Orchestra/Pletnev;960207 10:31:46;firewall.statoil.no
+86178;Vorisek/Arriaga;Symfoni i d-dur/Symfoni i d-moll.;Scottish Chamber/Mackerras.;960207 10:32:40;firewall.statoil.no
+40308;U2;Achtung Baby;;960207 10:40:31;fp6-ppp12.oslo.net
+602924;Anthony Hopkins, Derek Jacobi;HUNCHBACK OF NOTRE DAME, THE;Utekstet orginalinnspilling;960207 10:53:36;193.156.57.104
+601923;Lon Chaney, Norman Kerry;HUNCHBACK OF NOTRE DAME, THE;Utekstet orginalinnspilling;960207 10:54:01;193.156.57.104
+73372;Cardigans, The;Emmerdale;;960207 10:58:12;dibbler.Uit.No
+81964;Cardigans, The;Life; ;960207 10:58:16;dibbler.Uit.No
+85516;Oasis;(What`s The Story) Morning Glory ?; ;960207 10:59:33;dibbler.Uit.No
+12218;Mintzer, Bob;Incredible Journey (DMP);;960207 11:13:39;dibbler.Uit.No
+60744;Carter, Benny & Woods, Phil;My Man Benny My Man Phil;;960207 11:16:47;dibbler.Uit.No
+45083;Pastorius, Jaco;Live In New York City Vol.1;;960207 11:17:55;dibbler.Uit.No
+704375;DIV, D.BOWIE, PINK FLOYD, FRANK ZAPPA MMM.;Psychomania;NTSC;960207 11:19:57;aun.uninett.no
+750324;Pink Floyd;Delicate Sound of Thunder.;PAL;960207 11:20:20;aun.uninett.no
+750410;Pink Floyd;Pulse. Konsert, filmet i London 20.04.94.;PAL;960207 11:22:31;aun.uninett.no
+750410;Pink Floyd;Pulse. Konsert, filmet i London 20.04.94.;PAL;960207 11:24:47;aun.uninett.no
+750410;Pink Floyd;Pulse. Konsert, filmet i London 20.04.94.;PAL;960207 11:27:15;aun.uninett.no
+40560;Enya;Shepherd Moons;;960207 11:38:43;aabpc.sds.no
+40560;Enya;Shepherd Moons;;960207 11:38:58;aabpc.sds.no
+40560;Enya;Shepherd Moons;;960207 11:41:11;aabpc.sds.no
+1459;Rossini;Ouverturer;Philharmonia/Muti;960207 11:42:08;129.241.189.228
+5812;Handel;Fireworks Music+Water Music;St. Martin/Marriner;960207 11:44:13;129.241.189.228
+3932;Handel;Fireworks Music+Water Music suite;Chamber Orchestra Of Europe/Galway;960207 11:44:51;129.241.189.228
+29656;Enya;Storms In Africa;;960207 11:46:40;aabpc.sds.no
+40560;Enya;Shepherd Moons;;960207 11:47:09;aabpc.sds.no
+26096;Bach;Orgelverker -Toccata & Fuge i d-moll m.m.;Preston;960207 11:48:43;129.241.189.228
+71269;Reader, Eddi;Eddi Reader;;960207 11:50:21;aabpc.sds.no
+71269;Reader, Eddi;Eddi Reader;;960207 11:53:37;aabpc.sds.no
+71269;Reader, Eddi;Eddi Reader;;960207 11:53:55;aabpc.sds.no
+26816;Bowie, David;The Man Who Sold The World;;960207 11:59:50;biokjpc16.uio.no
+14803;Van Der Graaf Generator;Pawn Hearts;;960207 12:00:47;biokjpc16.uio.no
+804664;SPILL;Sim City 2000;Lag din egen by !!!;960207 12:05:49;morenett103.telepost.no
+804664;SPILL;Sim City 2000;Lag din egen by !!!;960207 12:07:56;morenett103.telepost.no
+88049;Spain.;The Blue Moods Of Spain; ;960207 12:08:48;pc134.lu.hist.no
+803915;SPILL;Sim City;Klassikeren på CDROM;960207 12:08:52;morenett103.telepost.no
+804664;SPILL;Sim City 2000;Lag din egen by !!!;960207 12:11:12;morenett103.telepost.no
+803915;SPILL;Sim City;Klassikeren på CDROM;960207 12:11:52;morenett103.telepost.no
+71260;Lanois, Daniel;Cool Water;;960207 12:13:17;146.172.20.213
+25211;Lanois, Daniel;Acadie;;960207 12:13:28;146.172.20.213
+55313;Lanois, Daniel;For The Beauty Of Wynona;;960207 12:13:41;146.172.20.213
+71260;Lanois, Daniel;Cool Water;;960207 12:13:56;146.172.20.213
+60637;Cave, Nick;Live Seeds;;960207 12:14:27;g04.lhg.hib.no
+26390;American Music Club;United Kingdom;;960207 12:16:12;g04.lhg.hib.no
+57130;American Music Club;California;;960207 12:16:37;g04.lhg.hib.no
+44447;American Music Club;Engine;;960207 12:16:56;g04.lhg.hib.no
+49405;Talking Heads;The Best Of;;960207 12:20:46;bopc22.tdh.no
+49385;Talking Heads;Popular Favorites 1976-92;;960207 12:21:16;bopc22.tdh.no
+39324;Svendsen, Kari;Kari Går Til Filmen;;960207 12:44:59;oslo610.telepost.no
+32133;Renegade Soundwave;In Due;;960207 12:47:00;gatekeeper.kvaerner.no
+27767;Renegade Soundwave;Soundclash;;960207 12:47:08;gatekeeper.kvaerner.no
+38957;Teardrop Explodes, The;Kilimanjaro;;960207 12:47:36;gatekeeper.kvaerner.no
+8462;Throwing Muses;Throwing Muses;;960207 12:48:18;gatekeeper.kvaerner.no
+86324;DIVERSE ARTISTER;Wake Up And Listen!;Boo Radleys,Levellers,Sleeper,Suede,Gene,Oasis,Pulp m.fl.;960207 12:49:13;gatekeeper.kvaerner.no
+62374;Pulp;Intro - The Gift Recordings;;960207 12:49:29;gatekeeper.kvaerner.no
+43528;New Order;BBC Radio 1 Live In Concert;;960207 12:50:49;gatekeeper.kvaerner.no
+75982;Bremnes, Kari;Gåte Ved Gåte;;960207 13:04:49;194.52.255.112
+22265;Sinatra, Nancy & Hazlewood, Lee;Fairytales And Fantasies;;960207 13:08:08;146.59.26.56
+43071;Rosetta Stone;An Eye For The Main Change;;960207 13:32:24;delling.ifi.uio.no
+61166;Rosetta Stone;Foundation Stones;;960207 13:32:43;delling.ifi.uio.no
+78067;Thingnæs, Frode;Nightsounds; ;960207 13:37:10;PPP102.internet.no
+76689;Thingnæs, Frode;Watch What Happens !;;960207 13:37:28;PPP102.internet.no
+81412;Fish Out Of Water;Lucky Scars; ;960207 13:50:39;PPP102.internet.no
+9936;Marillion;Clutching At Straws;;960207 13:53:43;PPP102.internet.no
+37525;Marillion;Hollidays In Eden;;960207 13:53:59;PPP102.internet.no
+1125;Marillion;Fugazi;;960207 13:54:09;PPP102.internet.no
+4567;Marillion;Misplaced Childhood;;960207 13:54:22;PPP102.internet.no
+13916;Marillion;B'Sides Themselves;;960207 13:54:33;PPP102.internet.no
+18919;Marillion;The Theiving Magpie;;960207 13:54:47;PPP102.internet.no
+64925;TRIBUTE ALBUMS;Tribute;(Beatles Tribute);960207 13:58:21;gatekeeper.aftenposten.no
+46452;Everything But The Girl;Acoustic;;960207 13:59:38;a05.lhg.hib.no
+71168;Everything But The Girl;Amplified Heart;;960207 14:00:52;a05.lhg.hib.no
+76890;Parton, Dolly, Linda Ronstadt, Emmylou Harris;Trio;;960207 14:00:54;pc-torvald.hsr.no
+12057;Everything But The Girl;Baby, The Stars Shine Bright;;960207 14:01:09;a05.lhg.hib.no
+705151;DIVERSE;STAR WARS "THE TRILOGY";NTSC;960207 14:01:49;stavanger101.telepost.no
+71168;Everything But The Girl;Amplified Heart;;960207 14:02:30;a05.lhg.hib.no
+71168;Everything But The Girl;Amplified Heart;;960207 14:02:57;a05.lhg.hib.no
+30913;Sting;The Dream Of The Blue Turtles;;960207 14:04:27;stavanger101.telepost.no
+6275;Sting;Bring On The Night;;960207 14:05:09;stavanger101.telepost.no
+87378;Beatles;16 Cd Box Set; ;960207 14:05:33;gatekeeper.aftenposten.no
+76708;Beatles;CD Singles Collection;;960207 14:05:38;gatekeeper.aftenposten.no
+73551;Beatles;Compact Disc EP Collection;;960207 14:06:33;gatekeeper.aftenposten.no
+35586;Beatles;Introspective;;960207 14:07:10;gatekeeper.aftenposten.no
+59220;Gaia;Gaia;;960207 14:08:44;L16-06.hials.no
+40110;Preus, Anne Grete;Og Høsten Kommer Tidsnok;;960207 14:09:11;torkel.scala.no
+25407;Preus, Anne Grete;Lav Sol! Høy Himmel;;960207 14:10:17;torkel.scala.no
+14961;Preus, Anne Grete;Fullmåne;;960207 14:10:32;torkel.scala.no
+17458;Brickell, Edie & New Bohemians;Shooting Rubberbands At The Stars;;960207 14:11:33;studsal-4.nlh.no
+59581;Lemonheads;Creator;;960207 14:11:45;torkel.scala.no
+47967;Lemonheads;Hate Your Friends;;960207 14:11:58;torkel.scala.no
+70085;Idle Cure;Eclipse;;960207 14:12:00;dibbler.Uit.No
+47963;Lemonheads;Lick;;960207 14:12:07;torkel.scala.no
+45010;Cure, The;Wish;;960207 14:12:21;dibbler.Uit.No
+62695;Cure;Paris; ;960207 14:12:32;dibbler.Uit.No
+41652;Depeche Mode;Catching Up With;;960207 14:13:21;dibbler.Uit.No
+60226;Mutter, Anne Sophie;Carmen-Fantasie;Violin;960207 14:13:42;L16-06.hials.no
+63264;Kennedy/Menuhin/Chang/Mutter/Milstein/Ferras mfl.;The Ultimate Violin Collection;Violin;960207 14:14:01;L16-06.hials.no
+1100;Vivaldi;De fire årstider;Mutter/Wien/Karajan;960207 14:14:55;L16-06.hials.no
+33907;Isaak, Chris;Wicked Game;;960207 14:29:40;vtas01.protek.unit.no
+33907;Isaak, Chris;Wicked Game;;960207 14:30:15;vtas01.protek.unit.no
+29269;Midler, Bette;Thighs And Whispers;;960207 14:35:54;ubmac197.uio.no
+58686;Midler, Bette;Experience The Divine - Greatest Hits;;960207 14:36:13;ubmac197.uio.no
+30650;Midler, Bette;Broken Blossom;;960207 14:36:41;ubmac197.uio.no
+14309;Tyler, Bonnie;Greatest Hits;;960207 14:39:22;ubmac197.uio.no
+25767;Lundell, Ulf;Utanfor Murarna;;960207 14:47:05;krs-ppp9.oslo.net
+9792;Lundell, Ulf;Ripp Rapp;;960207 14:47:39;krs-ppp9.oslo.net
+81074;Prodigy, The;Out Of Space; ;960207 14:48:39;krs-ppp9.oslo.net
+82841;Mad Professor;It`s A Mad, Mad, Mad, Mad Professor; ;960207 14:50:19;krs-ppp9.oslo.net
+51383;Rossini;L'ASSEDIO DI CORINTO;Sills/Verrett/Diaz/London SO/Schippers;960207 14:50:41;ubmac197.uio.no
+42651;Handel;JULIUS CAESAR 2cds;Treigle/Sills/New York City Opera/Rudel;960207 14:50:52;ubmac197.uio.no
+18603;Presley, Elvis;Aloha From Hawaii Via Satellite;;960207 14:52:13;vann.alkymi.unit.no
+6247;Presley, Elvis;Always On My Mind;;960207 14:53:16;vann.alkymi.unit.no
+49272;Stereo MC's;Connected;;960207 14:55:04;193.213.110.28
+83270;Bakke, Lars & Lomsk;Song Om Ei Segn; ;960207 14:59:31;terne2.krs.hia.no
+88384;Walkabouts, The;Devil`s Road; ;960207 15:00:14;bodo2-ppp5.oslo.net
+52969;King Missile;Happy Hour;;960207 15:00:37;terne2.krs.hia.no
+87935;Faith No More;We Care A Lot; ;960207 15:00:58;158.37.27.61
+33564;Faith No More;Epic EP;;960207 15:01:20;158.37.27.61
+72298;TRIBUTE ALBUMS;The Black Album Yesterday Part 2;(The Beatles);960207 15:01:43;mamac29.uio.no
+71074;Faith No More;Angel Dust;(Med Bonus Cd);960207 15:01:45;158.37.27.61
+84814;Vennersten, Cecilia;Cecilia Vennersten; ;960207 15:03:59;pckjemi45.uio.no
+22361;Jacobsen, Stanley;Frå Skigard Til Øygard;;960207 15:40:42;193.214.22.183
+22361;Jacobsen, Stanley;Frå Skigard Til Øygard;;960207 15:41:47;193.214.22.183
+1144;Grieg;Peer Gynt scenemusikk;Popp/Ambrosian singers/ASTMF/Marriner;960207 15:42:36;pc-100.P52.hioslo.no
+2226;King Crimson;In The Court Of The Crimson King;;960207 15:43:52;193.214.22.183
+15995;Steely Dan;Stone Piano;;960207 15:44:46;193.214.22.183
+16754;Lightfoot, Gordon;Summertime Dream;;960207 15:45:10;129.241.155.249
+56193;Lightfoot, Gordon;Waiting For You;;960207 15:45:50;129.241.155.249
+2226;King Crimson;In The Court Of The Crimson King;;960207 15:51:13;193.214.22.183
+2226;King Crimson;In The Court Of The Crimson King;;960207 15:51:32;193.214.22.183
+26249;Carey, Tony;The Story So Far;;960207 15:57:34;olspc.sds.no
+44590;Carey, Tony;The Long Road;;960207 15:57:58;olspc.sds.no
+32954;Carey, Tony;Storyville;;960207 15:58:10;olspc.sds.no
+74838;Carey, Tony;Cold War Kids;;960207 15:58:31;olspc.sds.no
+26760;Carey, Tony;For You;;960207 15:58:40;olspc.sds.no
+19619;Carey, Tony;I Won't Be Home Tonight;;960207 15:58:48;olspc.sds.no
+47612;Carey, Tony;Some Tough City;;960207 15:58:54;olspc.sds.no
+47613;Carey, Tony;Blue Highway;;960207 15:59:22;olspc.sds.no
+53621;U2;War;;960207 16:12:38;PPP-04-05.nord.eunet.no
+65537;U2;Lemon;;960207 16:13:19;PPP-04-05.nord.eunet.no
+68701;U2;Zooropa;;960207 16:14:12;PPP-04-05.nord.eunet.no
+22203;Jarrett, Keith;Personal Mountains (ECM);;960207 16:14:48;hfmac390.uio.no
+80834;Black, Frank;Black Sessions; ;960207 16:14:51;bib-db.nhh.no
+17892;Ramirez;Misa criolla/Navidad nuestra;Carreras/Grupo Huancara/Ocejo/Sanchez;960207 16:17:13;pk26.uio.no
+60637;Cave, Nick;Live Seeds;;960207 16:17:54;barak.Unis.No
+73411;Lauper, Cyndi;Twelve Deadly Cyns...And Then Some;;960207 16:38:56;gere.ifi.uio.no
+74763;Primitives, The;Bombshell;;960207 16:39:33;gere.ifi.uio.no
+83610;Kamen, Michael;DIE HARD - WITH A VENGEANCE; ;960207 16:39:59;gere.ifi.uio.no
+703311;Lauper, Cyndi;In Paris;NTSC;960207 16:40:38;gere.ifi.uio.no
+750729;Bruce Willis, Jeremy Irons, Samuel L. Jackson;Die Hard With a Vengeance;NTSC;960207 16:41:38;gere.ifi.uio.no
+79431;Mamas & The Papas;The Collection; ;960207 16:47:46;storm.stud.unit.no
+51757;Zapp Zapp;What Does Fish Is.. ?;;960207 16:59:02;gatekeeper.tv2.no
+84965;Joy Division;Love Will Tear Us Apart; ;960207 17:08:19;algol.sds.no
+30782;Joy Division;Peel Sessions;;960207 17:08:41;algol.sds.no
+36259;Lush;Gala;;960207 17:09:17;algol.sds.no
+63590;Durutti Column;Bread & Circuses;;960207 17:09:51;algol.sds.no
+61197;Durutti Column;Dry;;960207 17:10:00;algol.sds.no
+51705;Durutti Column;Lips That Would Kiss;;960207 17:10:12;algol.sds.no
+77588;Durutti Column;Live At The Bottom Line New York; ;960207 17:10:19;algol.sds.no
+35660;Durutti Column;Obey The Time;;960207 17:10:32;algol.sds.no
+51498;Durutti Column;Red Shoes;;960207 17:10:40;algol.sds.no
+77181;Durutti Column;Sex And Death;;960207 17:10:54;algol.sds.no
+59764;McClinton, Delbert;Delbert McClinton;;960207 17:16:49;pcstud_h63.hsh.no
+27753;Associates, The;Wild And Lonely;;960207 17:20:17;gatekeeper.nodeca.mil.no
+23112;Pink Floyd;Meddle;;960207 17:20:23;pcstud_h63.hsh.no
+9491;Pink Floyd;More;;960207 17:20:39;pcstud_h63.hsh.no
+73857;Associates;The Radio 1 Sessions;;960207 17:20:59;gatekeeper.nodeca.mil.no
+65924;Pink Floyd;Atom Heart Mother;;960207 17:21:25;pcstud_h63.hsh.no
+16459;Pink Floyd;Dark Side Of The Moon;;960207 17:21:33;pcstud_h63.hsh.no
+52381;Springsteen, Bruce;Roll Of The Dice;;960207 17:28:29;pcstud_h63.hsh.no
+52381;Springsteen, Bruce;Roll Of The Dice;;960207 17:28:41;pcstud_h63.hsh.no
+52381;Springsteen, Bruce;Roll Of The Dice;;960207 17:29:03;pcstud_h63.hsh.no
+30668;Bee Gees & Crosby, Stills, Nash & Young;MELODY;;960207 17:43:03;132.150.86.32
+7849;Bush, Kate;The Whole Story;;960207 18:07:16;hpsystem5.informatik.tu-muenchen.de
+30982;Grateful Dead;Without A Net;;960207 18:38:41;MULTIMEDIA.deich.folkebibl.no
+75183;Seigmen;Total;;960207 18:46:13;pc1.horten-pm2-1.eunet.no
+4542;Streisand, Barbra;Memories;;960207 18:50:40;fp5-ppp15.oslo.net
+9983;Beatles;Sgt. Pepper's Lonely Hearts Club Band;;960207 18:52:24;fp5-ppp15.oslo.net
+9983;Beatles;Sgt. Pepper's Lonely Hearts Club Band;;960207 18:53:17;fp5-ppp15.oslo.net
+59628;Rafferty, Gerry;The Best Of;;960207 19:01:48;pc5.krs-pm2-1.eunet.no
+61672;Piaf, Edith;30e Anniversaire;;960207 19:08:30;nsm.foa.kog.no
+62080;Piaf, Edith;30e Anniversaire;;960207 19:09:37;nsm.foa.kog.no
+63952;Piaf, Edith;30e Anniversaire;;960207 19:09:57;nsm.foa.kog.no
+57169;Piaf, Edith;Canciones Inolvidables;;960207 19:10:09;nsm.foa.kog.no
+60930;Beatles;1962-1966;;960207 19:21:30;nm3-ppp15.oslo.net
+45302;Ruff, Michael;Once In A Lifetime;;960207 20:10:51;dialup101-3-16.swipnet.se
+6814;Smiths, The;The Queen Is Dead;;960207 20:43:49;saffron.hensa.ac.uk
+32255;TRIBUTE ALBUMS;Taube;(Evert Taube);960207 21:11:57;160.68.122.33
+61841;Take That;Everything Changes;;960207 22:05:26;lothe.sdata.no
+81104;Ritenour, Lee & Larry Carlton;Larry & Lee; ;960207 22:17:27;ns.icenet.no
+34871;Presley, Elvis;From Elvis In Memphis;;960207 22:32:48;ns.icenet.no
+37893;G.B.H.;TV SERIER;Costello, Elvis & Harvey, Richard;960207 22:33:38;ns.icenet.no
+67462;Level 42;Forever Now;;960207 22:47:22;kampen.oslonett.no
+62294;Monteverdi/Gesualdo;Motetter & Madrigaler;Monteverdi-koret/Gardiner;960207 23:55:38;arendal1-ppp1.oslo.net
+53994;Yiannis Voyadjis & Christos Voyad;Gresk:Then & Now & What Are You Lookin..;;960207 23:58:13;tonsberg2-ppp2.oslo.net
+802781;SPILL;Railroad Tycoon - DeLuxe;Ny versjon av Sid Meiers mesterverk;960208 00:58:06;tromso105.telepost.no
+47123;Pulp;Separations;;960208 01:06:14;tromso105.telepost.no
+86453;Pulp;Different Class; ;960208 01:06:25;tromso105.telepost.no
+805313;CD-ROM;Heretic; ;960208 04:24:58;itlab10.hibo.no
+805313;CD-ROM;Heretic; ;960208 04:25:42;itlab10.hibo.no
+805313;CD-ROM;Heretic; ;960208 04:27:56;itlab10.hibo.no
+63751;Vangelis;LA FETE SAUVAGE;;960208 09:25:20;TCI19.kih.no
+72759;Vangelis;Best Selection;;960208 09:26:36;TCI19.kih.no
+34361;Vangelis;Greatest Hits;;960208 09:27:16;TCI19.kih.no
+72190;Chadwick;Symfoni # 3/utdrag fra VANESSA/Scene from Shelley;Detroit/Järvi;960208 09:35:08;firewall.statoil.no
+52693;D'Albert;TIEFLAND 2cds;Brouwenstijn/Wiener Symphoniker/Moralt;960208 09:37:16;firewall.statoil.no
+87691;Parry/Stanford;Klaverkonserter;Lane/BBC Scottish SO/Brabbins;960208 09:41:00;firewall.statoil.no
+49169;Devo;Live:The Mongoloid Years;;960208 09:41:49;claudius.ifi.unit.no
+80720;Saint-Saens;Klaverkonserter # 1-5.;Roge/Philharmonia m.fl./Dutoit;960208 09:44:09;firewall.statoil.no
+601216;Pink Floyd;Live at Pompeii;Utekstet orginalinnspilling;960208 09:44:28;normv.avh.unit.no
+21629;Nordheim;Stormen ballettsuite;Campbell/Keyte/Suddeut Rundfunk/Darden;960208 09:45:14;firewall.statoil.no
+7790;Bartok;Konsert for 2 klav.,slagv. og ork;Argerich/Freire/Concertgebouw O./Zinman;960208 09:47:08;hadron.fi.uib.no
+73194;Sputnik;Sputnik 9;;960208 09:48:00;ispstud9.uio.no
+651480;Steven Segal, Joanna Pacula.;DØDSMERKET;Norsk tekst / tale;960208 09:55:30;r2.pmddata.no
+651480;Steven Segal, Joanna Pacula.;DØDSMERKET;Norsk tekst / tale;960208 09:56:13;r2.pmddata.no
+58430;Meat Loaf & Tyler, Bonnie;Heaven & Hell;;960208 09:57:23;scintilla.dolphinics.no
+76393;Dead Moon;Crack In The System;;960208 10:06:16;swami.er.sintef.no
+76615;Dead Moon;Live Evil;;960208 10:06:25;swami.er.sintef.no
+76614;Dead Moon;Stranded In The Mystery Zone;;960208 10:06:37;swami.er.sintef.no
+76613;Dead Moon;Strange Pray Tell;;960208 10:06:44;swami.er.sintef.no
+80526;Man Or Astroman ?;Destroy All Astro-Men !!; ;960208 10:07:18;swami.er.sintef.no
+84149;Man Or Astroman ?;Intravenous Television Continuum; ;960208 10:07:27;swami.er.sintef.no
+83933;Man Or Astroman ?;Is It...Man Or Astro-Man ?; ;960208 10:07:34;swami.er.sintef.no
+80093;Man Or Astroman ?;Live Transmissions From Uranus; ;960208 10:07:40;swami.er.sintef.no
+83826;Man Or Astroman ?;Project Infinity; ;960208 10:07:46;swami.er.sintef.no
+73405;Kaspers Orkester, Bo;På Hotell;;960208 10:14:15;L16-06.hials.no
+60080;Monster Magnet;Tab;;960208 10:17:50;opws122.osl.mbs.no
+66211;Nascimento, Milton;Angelus;;960208 10:41:28;gaia.metis.no
+42334;Live;Mental Jewelry;;960208 10:57:11;itlab14.hibo.no
+84813;Bjørnstad, Ketil;The Sea;(Med David Darling, Terje Rypdal, Jon Christensen);960208 11:11:27;L16-03.hials.no
+84813;Bjørnstad, Ketil;The Sea;(Med David Darling, Terje Rypdal, Jon Christensen);960208 11:12:01;L16-03.hials.no
+67148;Kyrkjebø, Sissel;Innerst I Sjelen;;960208 11:16:26;xyplex10.uio.no
+85940;Kyrkjeb, Sissel;Innerst I Sjelen; ;960208 11:16:32;xyplex10.uio.no
+76295;Kyrkjebø, Sissel;Amacing Grace;;960208 11:16:56;xyplex10.uio.no
+51166;Kyrkjebø, Sissel;Gift Of Love;;960208 11:17:20;xyplex10.uio.no
+82900;DIVERSE ARTISTER;Triphoprisy; ;960208 11:17:34;IRN163.vatlib.it
+13128;Kyrkjebø, Sissel;Glade Jul;;960208 11:17:54;xyplex10.uio.no
+82900;DIVERSE ARTISTER;Triphoprisy; ;960208 11:18:17;IRN163.vatlib.it
+67148;Kyrkjebø, Sissel;Innerst I Sjelen;;960208 11:18:23;xyplex10.uio.no
+86707;Matthews, Eric;It`s Heavy In Here; ;960208 11:23:38;IRN163.vatlib.it
+7700;Kyrkjebø, Sissel;Sissel; ;960208 11:25:24;xyplex10.uio.no
+25420;Kyrkjebø, Sissel;Soria Moria; ;960208 11:25:50;xyplex10.uio.no
+76294;Kyrkjebø, Sissel;Vestland, Vestland;;960208 11:31:06;xyplex10.uio.no
+76295;Kyrkjebø, Sissel;Amacing Grace;;960208 11:33:05;xyplex10.uio.no
+51166;Kyrkjebø, Sissel;Gift Of Love;;960208 11:33:33;xyplex10.uio.no
+13128;Kyrkjebø, Sissel;Glade Jul;;960208 11:33:47;xyplex10.uio.no
+67148;Kyrkjebø, Sissel;Innerst I Sjelen;;960208 11:34:00;xyplex10.uio.no
+7700;Kyrkjebø, Sissel;Sissel; ;960208 11:34:15;xyplex10.uio.no
+35586;Beatles;Introspective;;960208 11:36:08;gullfisk.isf.uib.no
+76708;Beatles;CD Singles Collection;;960208 11:36:51;gullfisk.isf.uib.no
+75261;Madonna;Bedtime Stories;;960208 11:38:08;146.172.252.86
+80825;Madonna;Bedtime Story; ;960208 11:38:20;146.172.252.86
+750512;Kurt Russel, James Spader.;Stargate;PAL;960208 11:52:28;sild22.grm.hia.no
+652120;D.A.D.;Good Clean Family Entertainment You Can Trust;Utekstet orginalinnspilling;960208 12:02:55;158.36.27.164
+1144;Grieg;Peer Gynt scenemusikk;Popp/Ambrosian singers/ASTMF/Marriner;960208 12:08:13;pc-100.P52.hioslo.no
+73250;TRIBUTE ALBUMS;Borrowed Tunes;Tribute To Neil Young;960208 12:56:24;kili.ifi.uio.no
+73250;TRIBUTE ALBUMS;Borrowed Tunes;Tribute To Neil Young;960208 12:57:15;kili.ifi.uio.no
+1144;Grieg;Peer Gynt scenemusikk;Popp/Ambrosian singers/ASTMF/Marriner;960208 12:57:52;pc-100.P52.hioslo.no
+51886;TRIBUTE ALBUMS;The Bridge;A Tribute To Neil Young;960208 12:59:33;kili.ifi.uio.no
+74528;Diverse Artister;PULP FICTION;;960208 13:04:56;sam.telenor.no
+802623;SPILL;Day Of The Tentacle;Oppfølger til Maniac Mansion;960208 13:06:06;storm.stud.unit.no
+88048;Napalm Death;Diatribes; ;960208 13:07:34;storm.stud.unit.no
+86216;Seigmen;Metropolis; ;960208 13:20:17;sviar.ifi.uio.no
+67724;Tiamat;The Astral Sleep;;960208 14:04:57;158.36.9.232
+41900;Cult, The;Spiritwalker;;960208 14:11:38;158.36.9.232
+83858;Kyuss;...And The Circus Leaves Town; ;960208 14:15:08;158.36.9.232
+47446;McKnight, Brian;Brian McKnight;;960208 14:15:10;194.19.60.52
+84535;McKnight, Brian;I Remember You; ;960208 14:15:29;194.19.60.52
+84535;McKnight, Brian;I Remember You; ;960208 14:15:57;194.19.60.52
+804392;SPILL;Monty Python's complete waste of time;Utrolig morsomt!!;960208 14:17:44;194.19.60.52
+75549;Prong;Beg To Differ;;960208 14:17:57;158.36.9.232
+52634;Prong;The Peel Sessions;;960208 14:18:15;158.36.9.232
+21658;Casiopea;Casiopea;;960208 14:18:41;194.19.60.52
+40920;Londonbeat;Special Remix;;960208 14:24:41;fp6-ppp6.oslo.net
+601485;Marx Brothers,The;NIGHT AT THE OPERA, A;Utekstet orginalinnspilling;960208 14:25:16;193.69.216.102
+78670;Adams, Greg;Hidden Agenda; ;960208 14:27:28;194.19.60.52
+78670;Adams, Greg;Hidden Agenda; ;960208 14:27:43;194.19.60.52
+68945;Cave, Nick & The Bad Seeds;Let Love In;;960208 14:35:07;rosin.lhg.hib.no
+68588;Telemann;Konsert i d-dur/Suite i g-moll & d-dur;The English Concert/Pinnock;960208 14:49:04;dolphin7.dolphin.no
+10786;Beatles;The Early Tapes;;960208 15:08:48;dolphin7.dolphin.no
+66506;Baka Beyond;;CAMEROON;960208 15:15:29;sarajevo.Rito.No
+66506;Baka Beyond;;CAMEROON;960208 15:15:29;sarajevo.Rito.No
+85795;Baka Beyond;The Meeting Pool; ;960208 15:15:56;sarajevo.Rito.No
+85795;Baka Beyond;The Meeting Pool; ;960208 15:15:59;sarajevo.Rito.No
+805250;CD-ROM;Wing Commander 3; ;960208 15:22:57;user23.link.no
+12348;Lo Duca, Joseph;EVIL DEAD II;;960208 15:24:09;pc33-205.hiof.no
+86232;Ferry, Bryan & Roxy Music;The Best Of Bryan Ferry + Roxy M..; ;960208 15:39:45;193.160.16.166
+78399;The The;Hanky Panky; ;960208 15:45:06;193.160.16.166
+53656;The The;Dusk;;960208 15:45:33;193.160.16.166
+76305;The The;Shades Of Blue;;960208 15:45:52;193.160.16.166
+44063;Vreeswijk, Cornelis;Cornelis' Besta; ;960208 15:46:13;sei101.Nfh.Uit.No
+69584;The The;Solitude;;960208 15:46:14;193.160.16.166
+9934;The The;Soul Mining;;960208 15:46:38;193.160.16.166
+85996;Hartmann, Mette;Swan; ;960208 15:47:51;mac-106.nhh.no
+86338;Paradise Lost;Draconian Times (M/Bonus CD); ;960208 15:50:59;sei101.Nfh.Uit.No
+82845;Paradise Lost;Draconian Times; ;960208 15:51:36;sei101.Nfh.Uit.No
+59275;Paradise Lost;Gothic;;960208 15:51:42;sei101.Nfh.Uit.No
+61267;Paradise Lost;Icon;;960208 15:51:49;sei101.Nfh.Uit.No
+59274;Paradise Lost;Lost Paradise;;960208 15:51:53;sei101.Nfh.Uit.No
+47098;Paradise Lost;Shades Of God;;960208 15:51:58;sei101.Nfh.Uit.No
+66506;Baka Beyond;;CAMEROON;960208 15:53:58;sarajevo.Rito.No
+67614;Modern Jazz Quartet, The;A Celebration;;960208 15:54:07;pc180.rf.no
+85795;Baka Beyond;The Meeting Pool; ;960208 15:54:19;sarajevo.Rito.No
+41112;Modern Jazz Quartet, The;MJQ40;;960208 15:54:32;pc180.rf.no
+7535;Modern Jazz Quartet, The;Topsy (Pablo);;960208 15:54:54;pc180.rf.no
+88041;DANCE / SOUL;Harthouse Compliation Chapter 7; ;960208 15:54:56;skien101.telepost.no
+4663;Modern Jazz Quartet, The;Together Again! (Pablo);;960208 15:55:05;pc180.rf.no
+45653;Almeida, Laurindo & Shank, Bud;Brazilliance Vol.1;;960208 15:56:04;pc180.rf.no
+66324;DANCE / SOUL;Harthouse;Dedicated To The Omen;960208 15:56:09;skien101.telepost.no
+58409;DANCE / SOUL;Harthouse - The Point Of No Return;;960208 15:57:15;skien101.telepost.no
+76195;DANCE / SOUL;Harthouse Compilation Chapter 4;Global Virus;960208 15:58:05;skien101.telepost.no
+81233;DANCE / SOUL;Harthouse Compilation Chapter 5; ;960208 15:58:54;skien101.telepost.no
+85754;DANCE / SOUL;Harthouse Compilation Chapter 6; ;960208 15:59:39;skien101.telepost.no
+74093;DANCE / SOUL;Harthouse Compilation Chapter 3;;960208 16:00:39;skien101.telepost.no
+88041;DANCE / SOUL;Harthouse Compliation Chapter 7; ;960208 16:01:29;skien101.telepost.no
+82502;Bottle Rockets;The Brooklyn Side; ;960208 16:05:55;fp5-ppp3.oslo.net
+86222;Mojave 3;Ask Me Tomorrow;(4 AD);960208 16:10:30;drott.ifi.uio.no
+53936;Innocent Mission, The;Umbrella;;960208 16:12:15;drott.ifi.uio.no
+62534;Fluke;Six Wheels On My Wagon;;960208 16:16:40;PCLab054.bi.no
+77073;Fluke;The Peel Sessions;;960208 16:16:57;PCLab054.bi.no
+84037;Fluke;Oto; ;960208 16:17:08;PCLab054.bi.no
+19501;Clapton, Eric;Crossroads;;960208 16:17:43;sei110.Nfh.Uit.No
+84931;Pantera;Pantera; ;960208 16:19:54;nm6-ppp9.oslo.net
+45170;Misunderstood, The;Before The Dream Faded;;960208 16:25:55;yeti.termo.unit.no
+88041;DANCE / SOUL;Harthouse Compliation Chapter 7; ;960208 16:26:39;skien114.telepost.no
+6833;Oscars Motettkør/Torsten Nilsson;Cantate Domino;Kor;960208 16:28:03;yeti.termo.unit.no
+50366;Los Calchakis;Misa Criolla Cantates;;960208 16:28:31;yeti.termo.unit.no
+88041;DANCE / SOUL;Harthouse Compliation Chapter 7; ;960208 16:28:35;skien114.telepost.no
+6833;Oscars Motettkør/Torsten Nilsson;Cantate Domino;Kor;960208 16:28:42;yeti.termo.unit.no
+14948;Handel;ACIS AND GALATEA;Burrowes/Rolfe Johnsen/Eng Bar/Gardiner;960208 16:36:15;yeti.termo.unit.no
+31063;Zappa, Frank;Jazz From Hell;;960208 16:39:01;pc32.robit.no
+19501;Clapton, Eric;Crossroads;;960208 17:00:19;sei116.Nfh.Uit.No
+25795;Depeche Mode;Personal Jesus;;960208 17:27:55;vtas01.protek.unit.no
+33074;Depeche Mode;World In My Eyes;;960208 17:28:06;vtas01.protek.unit.no
+62150;Rush;Counterparts;;960208 17:34:26;ns.fredolsen.no
+35943;Mahler;Symfoni # 4/Lieder eines Fahrende Gesellen;Raskin/von Stade/Cleveland/Szell;960208 17:52:21;pc1.horten-pm2-1.eunet.no
+58937;Mahler;Symfoni # 5;New Philharmonia/Barbirolli;960208 17:54:09;pc1.horten-pm2-1.eunet.no
+52381;Springsteen, Bruce;Roll Of The Dice;;960208 17:54:14;pc5.ndt.telepost.no
+68608;Springsteen, Bruce;57 Channels;;960208 17:54:23;pc5.ndt.telepost.no
+52633;TRIBUTE ALBUMS;Cover Me;(Bruce Springsteen);960208 17:54:32;pc5.ndt.telepost.no
+70743;Springsteen, Bruce;Chimes Of Freedom;;960208 17:55:13;pc5.ndt.telepost.no
+3578;Springsteen, Bruce;The Wild, The Innocent And The E Street.;;960208 17:55:33;pc5.ndt.telepost.no
+86182;Janacek/Hindemith/Prokofiev;Sinfonietta/Symph. Metamorphosen/Symf. #3.;London SO/Abbado.;960208 17:56:40;pc1.horten-pm2-1.eunet.no
+80998;Satie/Debussy;Klavermusikk;Masselos/Weissenberg;960208 18:11:09;fp2-ppp11.oslo.net
+80998;Satie/Debussy;Klavermusikk;Masselos/Weissenberg;960208 18:11:25;fp2-ppp11.oslo.net
+58937;Mahler;Symfoni # 5;New Philharmonia/Barbirolli;960208 18:18:53;pc8.horten-pm2-1.eunet.no
+608141;WILLIAMS, ROBIN;Best of, The.;Utekstet orginalinnspilling;960208 18:21:03;fp2-ppp11.oslo.net
+607121;WILLIAMS, ROBIN;An evening with Robin Williams;Utekstet orginalinnspilling;960208 18:21:18;fp2-ppp11.oslo.net
+35943;Mahler;Symfoni # 4/Lieder eines Fahrende Gesellen;Raskin/von Stade/Cleveland/Szell;960208 18:21:44;pc8.horten-pm2-1.eunet.no
+35943;Mahler;Symfoni # 4/Lieder eines Fahrende Gesellen;Raskin/von Stade/Cleveland/Szell;960208 18:21:52;pc8.horten-pm2-1.eunet.no
+601552;Sigourney Weaver/Tom Skerritt/John Hurt;ALIEN;Utekstet orginalinnspilling;960208 18:23:22;fp2-ppp11.oslo.net
+86182;Janacek/Hindemith/Prokofiev;Sinfonietta/Symph. Metamorphosen/Symf. #3.;London SO/Abbado.;960208 18:23:46;pc8.horten-pm2-1.eunet.no
+86182;Janacek/Hindemith/Prokofiev;Sinfonietta/Symph. Metamorphosen/Symf. #3.;London SO/Abbado.;960208 18:23:55;pc8.horten-pm2-1.eunet.no
+54385;Hindemith;Nobilissima Visione/Konzertmus;San Francisco/Blomstedt;960208 18:24:53;pc8.horten-pm2-1.eunet.no
+85671;Div. Artister;Tilbudsplater klassisk; ;960208 18:25:06;fp2-ppp11.oslo.net
+76931;Bækkelund, Kjell;Arietta -38 klassiske norske klaverperler;Piano;960208 18:25:29;fp2-ppp11.oslo.net
+803589;SPILL;Gabriel Knight - Sins Of The Fathers;Veldig bra Sierra spill!!!;960208 18:25:37;fredrikstad106.telepost.no
+54385;Hindemith;Nobilissima Visione/Konzertmus;San Francisco/Blomstedt;960208 18:26:06;pc8.horten-pm2-1.eunet.no
+1131;Pink Floyd;Wish You Were Here;;960208 18:26:50;pc8.horten-pm2-1.eunet.no
+1131;Pink Floyd;Wish You Were Here;;960208 18:26:55;pc8.horten-pm2-1.eunet.no
+21394;Bergman, Marie;Karlekens Ansikte;;960208 18:31:03;160.68.122.33
+21394;Bergman, Marie;Karlekens Ansikte;;960208 18:31:27;160.68.122.33
+1131;Pink Floyd;Wish You Were Here;;960208 18:32:07;pc8.horten-pm2-1.eunet.no
+1131;Pink Floyd;Wish You Were Here;;960208 18:32:22;pc8.horten-pm2-1.eunet.no
+35943;Mahler;Symfoni # 4/Lieder eines Fahrende Gesellen;Raskin/von Stade/Cleveland/Szell;960208 18:33:24;pc8.horten-pm2-1.eunet.no
+35943;Mahler;Symfoni # 4/Lieder eines Fahrende Gesellen;Raskin/von Stade/Cleveland/Szell;960208 18:33:29;pc8.horten-pm2-1.eunet.no
+6896;David & David;Boomtown;;960208 18:34:12;the-wall.falch.no
+58937;Mahler;Symfoni # 5;New Philharmonia/Barbirolli;960208 18:34:18;pc8.horten-pm2-1.eunet.no
+58937;Mahler;Symfoni # 5;New Philharmonia/Barbirolli;960208 18:34:24;pc8.horten-pm2-1.eunet.no
+17758;Hindemith;Mathis symf/Trauer/Sym metamor;San Francisco/Blomstedt;960208 18:36:09;pc8.horten-pm2-1.eunet.no
+54385;Hindemith;Nobilissima Visione/Konzertmus;San Francisco/Blomstedt;960208 18:36:36;pc8.horten-pm2-1.eunet.no
+54385;Hindemith;Nobilissima Visione/Konzertmus;San Francisco/Blomstedt;960208 18:36:41;pc8.horten-pm2-1.eunet.no
+86182;Janacek/Hindemith/Prokofiev;Sinfonietta/Symph. Metamorphosen/Symf. #3.;London SO/Abbado.;960208 18:39:20;pc8.horten-pm2-1.eunet.no
+86182;Janacek/Hindemith/Prokofiev;Sinfonietta/Symph. Metamorphosen/Symf. #3.;London SO/Abbado.;960208 18:39:26;pc8.horten-pm2-1.eunet.no
+85977;Tsjajkovskij;Symfoni # 6/Mephisto waltz/1812-ouverture.;Chicago/Reiner.;960208 18:42:59;pc8.horten-pm2-1.eunet.no
+85977;Tsjajkovskij;Symfoni # 6/Mephisto waltz/1812-ouverture.;Chicago/Reiner.;960208 18:43:06;pc8.horten-pm2-1.eunet.no
+45837;Stravinskij/Prokofiev;Vårofferet/Romeo J;New York/Mehta/Mitropoulos;960208 18:47:33;pc8.horten-pm2-1.eunet.no
+45837;Stravinskij/Prokofiev;Vårofferet/Romeo J;New York/Mehta/Mitropoulos;960208 18:47:38;pc8.horten-pm2-1.eunet.no
+59856;Everett, Betty;Love Rhymes & Happy Endings;;960208 18:52:15;eha.fafo.no
+36549;Blood, Sweat & Tears;Live & Improvised;;960208 18:54:04;pc8.horten-pm2-1.eunet.no
+36549;Blood, Sweat & Tears;Live & Improvised;;960208 18:54:09;pc8.horten-pm2-1.eunet.no
+36549;Blood, Sweat & Tears;Live & Improvised;;960208 18:55:25;pc8.horten-pm2-1.eunet.no
+66190;Blood, Sweat & Tears;Live;;960208 18:55:51;pc8.horten-pm2-1.eunet.no
+66190;Blood, Sweat & Tears;Live;;960208 18:56:12;pc8.horten-pm2-1.eunet.no
+5561;Cure, The;Pornography;;960208 19:19:56;storm.stud.unit.no
+86015;DIVERSE ARTISTER;104.9 An XFM Compilation Album;(Oasis,U2,Cure,Drugstore m.fl.);960208 19:20:13;storm.stud.unit.no
+81294;Burdon, Eric & The Animals;Inside Out; ;960208 19:46:05;monet114.telepost.no
+24483;Pages;Future Street;;960208 20:06:13;dialup100-5-11.swipnet.se
+18158;Tower Of Power;Tower Of Power (1973) (WEA);;960208 20:06:49;dialup100-5-11.swipnet.se
+87381;Fagen, Donald;Tomorrows Girls; ;960208 20:08:34;dialup100-5-11.swipnet.se
+67169;Fagen, Donald;Trans Island Skyway;;960208 20:08:42;dialup100-5-11.swipnet.se
+86229;DeLillos;Sent Og Tidlig; ;960208 20:48:51;haugesund103.telepost.no
+13130;Tubes, The;The Completion Backward Principle;;960208 20:56:34;ttyC8.itv.se
+86229;DeLillos;Sent Og Tidlig; ;960208 20:57:15;haugesund103.telepost.no
+84861;Shu-Bi-Dua;Live Og Glade Dage;(2 cd Live Og Unplugged);960208 20:58:57;bergen2-ppp6.oslo.net
+80463;Shu-Bi-Dua;12; ;960208 21:00:45;bergen2-ppp6.oslo.net
+10712;Who, The;Holligans;;960208 21:22:06;ppp04.lakenet.no
+62866;Vreeswijk, Cornelis;Mæster Cees Memoarer;;960208 21:23:19;adm-03.osir.hihm.no
+22382;Kalenda Maya;Norske Middelalderballader;;960208 21:24:15;vm218.ubt.unit.no
+22382;Kalenda Maya;Norske Middelalderballader;;960208 21:24:46;vm218.ubt.unit.no
+22505;Allegri/Palestrina/Mundy;Miserere etc;Tallis Scholars;960208 21:34:23;adm-03.osir.hihm.no
+43809;Bach;Die Kunst der Fuge;Julliard-kvartetten;960208 21:36:58;adm-03.osir.hihm.no
+43809;Bach;Die Kunst der Fuge;Julliard-kvartetten;960208 21:37:06;adm-03.osir.hihm.no
+44304;Led Zeppelin;Remasters;;960208 23:51:17;pc9.pm2-1.eunet.no
+55095;Prøysen, Alf;Original Prøysen;;960209 00:51:19;pc13.pm2-1.eunet.no
+61582;Prøysen, Alf;På Grammofon - Komplette Plateinnspillinger;;960209 00:51:40;pc13.pm2-1.eunet.no
+55095;Prøysen, Alf;Original Prøysen;;960209 00:52:03;pc13.pm2-1.eunet.no
+74485;TRIBUTE ALBUMS;Med Blanke Ark;Sanger Av Alf Prøysen;960209 00:52:33;pc13.pm2-1.eunet.no
+74485;TRIBUTE ALBUMS;Med Blanke Ark;Sanger Av Alf Prøysen;960209 00:53:16;pc13.pm2-1.eunet.no
+21752;Gitarkameratene;Gitarkameratene;;960209 00:54:05;pc13.pm2-1.eunet.no
+30296;Gitarkameratene;Typisk Norsk;;960209 00:54:15;pc13.pm2-1.eunet.no
+69757;Bjørnstad/Paus/Hamsun;Bjørnstad/Paus/Hamsun;;960209 01:34:28;nm6-ppp2.oslo.net
+75908;King Of Hearts;King Of Hearts;;960209 01:48:17;PPP105.internet.no
+84896;King Of Hearts;After The Love Is Gone; ;960209 01:48:37;PPP105.internet.no
+75908;King Of Hearts;King Of Hearts;;960209 01:49:31;PPP105.internet.no
+85345;Sherwood Ball n` Chain;White Light; ;960209 01:50:42;PPP105.internet.no
+39061;Metallica;Metallica;;960209 03:10:40;pc8.gjovik-pm2-1.eunet.no
+23594;Metallica;One;;960209 03:12:09;pc8.gjovik-pm2-1.eunet.no
+21470;Waits, Tom;The Heart Of Saturday Night;;960209 03:12:13;mackjemi53.uio.no
+64452;Metallica;Live Shit - Binge & Purge;;960209 03:12:26;pc8.gjovik-pm2-1.eunet.no
+8942;Waits, Tom;Swordfishtrombones;;960209 03:12:57;mackjemi53.uio.no
+55384;Metallica;Wherever I May Roam;;960209 03:13:05;pc8.gjovik-pm2-1.eunet.no
+4330;Waits, Tom;Rain Dogs;;960209 03:13:24;mackjemi53.uio.no
+21824;Waits, Tom;Small Change;;960209 03:13:57;mackjemi53.uio.no
+22150;Waits, Tom;Nighthawks At The Diner;;960209 03:14:19;mackjemi53.uio.no
+39775;Waits, Tom;Heartattack & Vine;;960209 03:14:44;mackjemi53.uio.no
+9088;Waits, Tom;Franks Wild Years;;960209 03:15:06;mackjemi53.uio.no
+10631;Metallica;Kill 'Em All;;960209 03:15:23;pc8.gjovik-pm2-1.eunet.no
+28551;Waits, Tom;Foreign Affairs;;960209 03:15:27;mackjemi53.uio.no
+31368;Waits, Tom;Closing Time;;960209 03:15:44;mackjemi53.uio.no
+48533;Waits, Tom;Bone Machine;;960209 03:16:03;mackjemi53.uio.no
+28550;Waits, Tom;Blue Valentine;;960209 03:16:25;mackjemi53.uio.no
+17194;Waits, Tom;Big Time;;960209 03:16:53;mackjemi53.uio.no
+17194;Waits, Tom;Big Time;;960209 03:17:53;mackjemi53.uio.no
+7901;Waits, Tom;Asylum Years;;960209 03:18:14;mackjemi53.uio.no
+63214;Waits, Tom;The Black Rider;;960209 03:19:52;mackjemi53.uio.no
+63214;Waits, Tom;The Black Rider;;960209 03:21:23;mackjemi53.uio.no
+5321;Violent Femmes;The Blind Leading The Naked;;960209 03:33:19;mackjemi53.uio.no
+70097;Violent Femmes;New Times;;960209 03:34:17;mackjemi53.uio.no
+36418;Violent Femmes;Why Do Birds Sing?;;960209 03:34:38;mackjemi53.uio.no
+60928;Violent Femmes;Add It Up;;960209 03:34:59;mackjemi53.uio.no
+20017;Violent Femmes;Hallowed Ground;;960209 03:35:39;mackjemi53.uio.no
+20005;Violent Femmes;Violent Femmes;;960209 03:35:59;mackjemi53.uio.no
+44703;Violent Femmes;Debacle:The First Decade;;960209 03:36:27;mackjemi53.uio.no
+31911;Violent Femmes;3;;960209 03:36:57;mackjemi53.uio.no
+18677;Dead Can Dance;The Serpent's Egg;;960209 03:39:15;mackjemi53.uio.no
+75618;Dead Can Dance;Toward The Within;;960209 03:39:41;mackjemi53.uio.no
+11657;Dead Can Dance;Within The Realm Of A Dying Sun;4AD;960209 03:40:00;mackjemi53.uio.no
+74950;Dead Can Dance;The Golden Age;;960209 03:40:26;mackjemi53.uio.no
+60818;Dead Can Dance;Into The Labyrinth;;960209 03:40:57;mackjemi53.uio.no
+29407;Dead Can Dance;Aion;;960209 03:41:35;mackjemi53.uio.no
+40982;Dead Can Dance;A Passage In Time; ;960209 03:42:15;mackjemi53.uio.no
+14016;Simon, Paul;In Concert/Live Rhymin;;960209 08:38:52;geopas.avh.unit.no
+14016;Simon, Paul;In Concert/Live Rhymin;;960209 08:40:58;geopas.avh.unit.no
+14016;Simon, Paul;In Concert/Live Rhymin;;960209 08:41:13;geopas.avh.unit.no
+39178;Diverse Artister;COMMITMENTS;;960209 08:51:24;pc-90-84.nsd.uib.no
+84060;Rebel/Telemann/Gluck;Les Elemens/Sonata/Alessandro;Musica Antiqua K ln/Goebel;960209 08:51:33;C202.avh.unit.no
+44041;Diverse Artister;COMMITMENTS II;;960209 08:51:33;pc-90-84.nsd.uib.no
+85686;Rebel.;Les Elemens/Caracteres de la Danse/Tombeau;Les Musiciens du Louvre/Minkowski;960209 08:52:14;C202.avh.unit.no
+39178;Diverse Artister;COMMITMENTS;;960209 08:52:32;pc-90-84.nsd.uib.no
+87601;Pink Floyd;Wish You Where Here & The Final C; ;960209 08:57:53;pc-studsko15.hifm.no
+88393;Bolin, Tommy;From The Archives, Vol. 1; ;960209 09:03:26;oslo514.telepost.no
+85940;Kyrkjeb, Sissel;Innerst I Sjelen; ;960209 09:12:12;blacky.fujitsu.co.jp
+51166;Kyrkjebø, Sissel;Gift Of Love;;960209 09:12:27;blacky.fujitsu.co.jp
+29362;Animals;The Complete Animals;;960209 09:23:56;ns0.alcatel.no
+29362;Animals;The Complete Animals;;960209 09:24:39;ns0.alcatel.no
+60152;Cave, The;Down To The Earth;;960209 09:26:15;MAC33-25.bi.no
+1002;Alabama;Roll On;;960209 09:27:04;pc04.Stangnes.Vgs.No
+60074;Ives, Burl;A Little Bitty Tear;;960209 09:28:06;dialup105-5-4.swipnet.se
+1002;Alabama;Roll On;;960209 09:28:53;pc04.Stangnes.Vgs.No
+60074;Ives, Burl;A Little Bitty Tear;;960209 09:29:02;dialup105-5-4.swipnet.se
+60074;Ives, Burl;A Little Bitty Tear;;960209 09:33:41;dialup105-5-4.swipnet.se
+60074;Ives, Burl;A Little Bitty Tear;;960209 09:35:26;dialup105-5-4.swipnet.se
+57383;ABBA;More Abba Gold;;960209 09:35:43;pc04.Stangnes.Vgs.No
+57383;ABBA;More Abba Gold;;960209 09:36:12;pc04.Stangnes.Vgs.No
+84300;Garbage;Garbage; ;960209 09:42:48;beyla.ifi.uio.no
+84300;Garbage;Garbage; ;960209 09:46:27;beyla.ifi.uio.no
+51588;Pink Floyd;Shine On;;960209 09:46:28;beyla.ifi.uio.no
+87601;Pink Floyd;Wish You Where Here & The Final C; ;960209 09:46:57;beyla.ifi.uio.no
+750617;Peter Gallager;Underneath, The;NTSC;960209 09:48:39;port-244.ppp.powertech.no
+20691;Tower Of Power;Live And In Living Color (WEA);;960209 09:50:01;beyla.ifi.uio.no
+34705;Doors, The;Doors, The;;960209 09:50:50;beyla.ifi.uio.no
+77936;Zorn, John & Fred Frith;The Art Of Memory; ;960209 09:57:38;mactfb05.uio.no
+65924;Pink Floyd;Atom Heart Mother;;960209 10:04:23;132.150.55.190
+15863;Yared, Gabriel;BETTY BLUE;;960209 10:09:43;SPC215.hiMolde.no
+54820;Hofseth, Bendik;Amuse Yourself;;960209 10:12:22;132.150.117.14
+40877;Hofseth, Bendik;IX;;960209 10:12:30;132.150.117.14
+82992;Hofseth, Bendik;MetAmorphoses; ;960209 10:12:41;132.150.117.14
+25913;Sevåg, Øystein;Close Your Eyes And See; ;960209 10:13:20;132.150.117.14
+66306;Sevåg, Øystein/Patey, Lakki;Visual;;960209 10:13:29;132.150.117.14
+41371;Juleplater;A Christmas Gift For You;From Phil Spector;960209 10:30:49;132.150.117.14
+74698;Flying Pickets;Blue Money;;960209 10:36:12;192.135.253.60
+74698;Flying Pickets;Blue Money;;960209 10:36:30;192.135.253.60
+72647;Led Zeppelin;Houses Of The Holy;;960209 10:42:25;BIBPC011.bi.no
+67435;Fish;Sushi;;960209 10:42:30;pc075.idb.hist.no
+77304;TRIBUTE ALBUMS;Return Of The Gypsy;Tribute To Jimi Hendrix;960209 10:43:08;BIBPC011.bi.no
+50589;Pete Seeger;Abiyoyo & Other Stories;;960209 10:48:47;s30412.stud.hint.no
+50590;Pete Seeger;American Industrial Ballads;;960209 10:49:12;s30412.stud.hint.no
+62827;Griffith, Nanci;The MCA Years - A Retrospective;;960209 10:54:58;s30412.stud.hint.no
+70083;Seal;Seal;;960209 10:58:05;132.150.55.190
+77301;Seal;Kiss From A Rose;;960209 10:58:25;132.150.55.190
+36678;Seal;Seal;;960209 10:58:36;132.150.55.190
+45650;Minelli, Liza;CABARET;;960209 11:14:24;double-tree.ericsson.se
+88267;Tortoise;Millions Now Living Will Never Die; ;960209 11:21:05;FY5113.mnfak.unit.no
+804339;SPILL;Rise of the robots;;960209 11:27:41;mama.link.no
+78399;The The;Hanky Panky; ;960209 11:32:25;193.160.16.166
+57862;The The;Burning Blue Soul;;960209 11:32:51;193.160.16.166
+29034;Last Of The The Teenage Idols;Satellite Head Gone Soft;;960209 11:33:06;193.160.16.166
+9934;The The;Soul Mining;;960209 11:33:21;193.160.16.166
+69584;The The;Solitude;;960209 11:33:35;193.160.16.166
+76305;The The;Shades Of Blue;;960209 11:34:04;193.160.16.166
+37693;David Byrne;The Forest;;960209 11:36:18;193.160.16.166
+87571;Stranglers, The;The Sessions; ;960209 11:41:05;193.160.16.166
+82324;Stranglers, The;About Time; ;960209 11:41:41;193.160.16.166
+52197;Stranglers;The Old Testament;;960209 11:42:08;193.160.16.166
+17358;Stranglers;The Meninblack;;960209 11:42:31;193.160.16.166
+5087;Stranglers;Dreamtime;;960209 11:42:49;193.160.16.166
+60857;O'Connor, Mark;Heroes;;960209 11:55:38;node137.hil.no
+62782;10.000 Maniacs;MTV Unplugged;;960209 11:56:53;sv94203.avh.unit.no
+62782;10.000 Maniacs;MTV Unplugged;;960209 11:57:02;sv94203.avh.unit.no
+80237;Sacred Spirit;Chants And Dances Of The Native Americans; ;960209 12:01:46;oversoul.idb.hist.no
+52361;Kamen, Michael;BRAZIL;;960209 12:09:26;s8.vestdata.no
+85996;Hartmann, Mette;Swan; ;960209 12:20:27;pir11.grm.hia.no
+604983;Jarre, Jean-Michel;Rendez-Vous Houston;Utekstet orginalinnspilling;960209 12:31:15;storm.stud.unit.no
+604983;Jarre, Jean-Michel;Rendez-Vous Houston;Utekstet orginalinnspilling;960209 12:31:44;storm.stud.unit.no
+606220;Jarre, Jean-Michel;The China concerts;Utekstet orginalinnspilling;960209 12:32:49;storm.stud.unit.no
+76617;Nine Inch Nails;Head Like A Hole;;960209 12:32:51;ronin.studby.uio.no
+609470;Jarre, Jean Michel;Europe in concert;Utekstet orginalinnspilling;960209 12:32:59;storm.stud.unit.no
+607891;Jarre, Jean Michel;Paris la defence-a city in concert(75mi);Utekstet orginalinnspilling;960209 12:33:02;storm.stud.unit.no
+49627;Nine Inch Nails;Broken;;960209 12:33:23;ronin.studby.uio.no
+61408;Carrere, Tia;Dream;;960209 12:33:50;storm.stud.unit.no
+44806;Harvey, P J;Dry;;960209 12:34:56;ronin.studby.uio.no
+44806;Harvey, P J;Dry;;960209 12:35:01;ronin.studby.uio.no
+84119;Rusty;Fluke; ;960209 13:29:34;ppp09.infonet.no
+86230;Smashing Pumpkins;Mellon Collie And The Infinite Sadne; ;960209 13:30:47;ppp09.infonet.no
+30668;Bee Gees & Crosby, Stills, Nash & Young;MELODY;;960209 13:50:09;gatekeeper.kvaerner.no
+67199;Bee Gees;Best;;960209 13:50:25;gatekeeper.kvaerner.no
+30229;Bee Gees;Best;;960209 13:50:36;gatekeeper.kvaerner.no
+2062;Bee Gees;Greatest Hits;;960209 13:50:46;gatekeeper.kvaerner.no
+30630;Bee Gees;Here At Last Bee Ges Live;;960209 13:50:55;gatekeeper.kvaerner.no
+22577;Bee Gees;Idea;Polydor/Polygram;960209 13:51:11;gatekeeper.kvaerner.no
+32355;Bee Gees;Tales From The Brothers Gibb;;960209 13:51:31;gatekeeper.kvaerner.no
+604349;DIVERSE;Peter Pan;Utekstet orginalinnspilling;960209 13:51:33;158.39.46.252
+80755;Bee Gees;Wine & Women; ;960209 13:51:42;gatekeeper.kvaerner.no
+58723;Waller, Fats;1929 (Classics);;960209 13:52:24;mackjemi13.uio.no
+15448;Armstrong, Louis;The Hot Fives & Hot Sevens Vol.1;;960209 13:56:06;mackjemi13.uio.no
+55300;Armstrong, Louis;1925-1926;;960209 13:56:39;mackjemi13.uio.no
+9577;Vivaldi;De fire årstider/Konserter;Stuttgart/Munchinger;960209 13:59:24;mackjemi13.uio.no
+55662;Wilson, Teddy;Cole Porter Classics (BL);;960209 14:22:49;mackjemi13.uio.no
+601220;Queen;Greatest Flix;Utekstet orginalinnspilling;960209 14:36:37;pc-eaa.fi.uib.no
+601220;Queen;Greatest Flix;Utekstet orginalinnspilling;960209 14:37:13;pc-eaa.fi.uib.no
+606863;Queen;Box of Flix;Utekstet orginalinnspilling;960209 14:39:02;pc-eaa.fi.uib.no
+76535;Pizzicato Five;Made In USA;;960209 14:42:14;macpaal.origo.telenor.no
+76535;Pizzicato Five;Made In USA;;960209 14:42:53;macpaal.origo.telenor.no
+79880;Pizzicato Five;Big Hits And Jet Lags 1991-95; ;960209 14:43:08;macpaal.origo.telenor.no
+79880;Pizzicato Five;Big Hits And Jet Lags 1991-95; ;960209 14:43:11;macpaal.origo.telenor.no
+54302;Duran Duran;The Wedding Album;;960209 14:49:26;nm3-ppp13.oslo.net
+66469;Duran Duran;The Wedding Album;;960209 14:49:44;nm3-ppp13.oslo.net
+54302;Duran Duran;The Wedding Album;;960209 14:50:01;nm3-ppp13.oslo.net
+705404;DISNEY;Aladdin.;NTSC;960209 15:01:02;137.133.123.13
+22086;Rollins, Sonny;Movin Out (Jap.Imp.);;960209 15:01:24;dibbler.Uit.No
+85196;Hole;Ask For It; ;960209 15:04:54;ronin.studby.uio.no
+80981;Nirvana;Hormoaning; ;960209 15:06:24;ronin.studby.uio.no
+86728;Nirvana;Singles; ;960209 15:06:37;ronin.studby.uio.no
+29733;Neville Brothers, The;Brother's Keeper;;960209 15:10:15;193.90.67.111
+650678;Richard Chamberlain, Raquel Welch;TORNEFUGLENE;Norsk tekst / tale;960209 15:33:33;193.90.67.111
+86708;Letters To Cleo;Wholesale Meats And Fish; ;960209 15:58:41;fp2-ppp12.oslo.net
+706075;Linda Fiorentino, Bill Pullman.;LAST SEDUCTION, THE;NTSC;960209 16:00:31;pckjemi30.uio.no
+88217;Visit Venus;Music For Space Tourism Vol.1;-Yo Mama Records-;960209 16:02:00;billi.anima.no
+80455;Pogo Pops;Pure; ;960209 16:16:43;amfibol.Ibg.Uit.No
+79300;Harvey, P J;To Bring You My Love; ;960209 16:22:23;peon.idt.unit.no
+21723;Baker, Chet;Chet Baker Sings And...;;960209 16:22:59;pckjemi30.uio.no
+24153;Bach;Klaverkonserter BWV 1052/1055/1056;Fischer/Edwin Fischer Chamber Orch;960209 16:44:23;surt.ifi.uio.no
+62496;Bach;Brandenburgkonsert # 2/Klaverkonserter/Fantasier;Fischer/Philharmonia Orchestra;960209 16:45:50;surt.ifi.uio.no
+67968;Scofield, John & Pat Metheny;I Can See Your House From Here;;960209 16:54:29;pc-215-222.svf.uib.no
+10577;Scofield, John;Blue Matter (Rhino);;960209 16:54:42;pc-215-222.svf.uib.no
+86050;Scofield, John;Groove Elation; ;960209 16:55:10;pc-215-222.svf.uib.no
+88381;Haden, Charlie;Now Is The Hour;- Quartet West -;960209 16:55:55;pc-215-222.svf.uib.no
+750328;Mozart;LE NOZZE DI FIGARO;PAL;960209 17:06:04;cnmac84.uio.no
+703281;Robert de Niro, Jeremy Irons;MISSION, THE;NTSC;960209 17:07:55;cnmac84.uio.no
+608404;Mozart;DON GIOVANNI;Utekstet orginalinnspilling;960209 17:10:05;cnmac84.uio.no
+609428;Mozart;DON GIOVANNI;Utekstet orginalinnspilling;960209 17:10:39;cnmac84.uio.no
+19501;Clapton, Eric;Crossroads;;960209 17:24:16;sei108.Nfh.Uit.No
+1789;Dire Straits;Dire Straits;;960209 17:27:20;sei108.Nfh.Uit.No
+61737;TRIBUTE ALBUMS;The Times They Are A Changin';A Tribute To Bob Dylan;960209 17:28:50;sei108.Nfh.Uit.No
+86229;DeLillos;Sent Og Tidlig; ;960209 17:32:54;haugesund116.telepost.no
+86229;DeLillos;Sent Og Tidlig; ;960209 17:34:25;haugesund116.telepost.no
+86229;DeLillos;Sent Og Tidlig; ;960209 17:36:05;haugesund116.telepost.no
+71022;Jake And The Spitfires;My Private Rodeo;;960209 19:12:08;aurskog.a.sn.no
+70258;Tempchin, Jack And The Seclusions;After The Rain;;960209 19:12:48;aurskog.a.sn.no
+83440;Tempchin, Jack And The Seclusions;Jack Tempchin; ;960209 19:13:02;aurskog.a.sn.no
+67163;Willie And The Poor Boys;Live;;960209 19:13:23;aurskog.a.sn.no
+64068;Willie And The Poor Boys;Willie And The Poor Boys;;960209 19:13:29;aurskog.a.sn.no
+68677;Williams, Otis And The Charms;Original Rockin And Chart Masters;;960209 19:13:44;aurskog.a.sn.no
+79097;U96;Club Bizarre; ;960209 19:13:57;Sandnes114.robin.no
+76989;Ruben And The Jets;For Real !;;960209 19:14:02;aurskog.a.sn.no
+68053;Richman, Jonathan And The Modern Lovers;Jonathan Richman And The Modern Lovers;;960209 19:14:14;aurskog.a.sn.no
+19594;Peter And The Test Tube Babies;The Best Of;;960209 19:14:29;aurskog.a.sn.no
+76989;Ruben And The Jets;For Real !;;960209 19:15:25;aurskog.a.sn.no
+67292;Kenny And The Kasuals;Things Getting Better/Nothing Better To Do;;960209 19:15:39;aurskog.a.sn.no
+73896;Eddie And The Hot Rods;BBC Radio One Live In Concert;;960209 19:16:18;aurskog.a.sn.no
+71022;Jake And The Spitfires;My Private Rodeo;;960209 19:16:35;aurskog.a.sn.no
+68677;Williams, Otis And The Charms;Original Rockin And Chart Masters;;960209 19:16:56;aurskog.a.sn.no
+83440;Tempchin, Jack And The Seclusions;Jack Tempchin; ;960209 19:24:31;aurskog.a.sn.no
+81017;Deep Purple;The Best Of Rare Collection; ;960209 20:22:46;PPP115.internet.no
+58796;Deep Purple;Progression;;960209 20:24:32;PPP115.internet.no
+2562;Vivaldi;De fire årstider;Standage/English Concert/Pinnock;960209 20:52:36;hinux.hin.no
+19671;Vivaldi/Telemann;Piccolokons(4)/Fantasie;Beaumadier/Orch Nat de France/Rampal;960209 20:53:48;hinux.hin.no
+48846;Vivaldi;Obokonserter (5);Bourgue/I Solisti Veneti/Scimone;960209 20:58:07;hinux.hin.no
+60473;Vivaldi;Obokonserter (8);Pierlot/I Solisti Veneti/Scimone;960209 20:58:39;hinux.hin.no
+60473;Vivaldi;Obokonserter (8);Pierlot/I Solisti Veneti/Scimone;960209 20:58:44;hinux.hin.no
+86229;DeLillos;Sent Og Tidlig; ;960209 21:27:23;haugesund102.telepost.no
+86229;DeLillos;Sent Og Tidlig; ;960209 21:28:00;haugesund102.telepost.no
+81717;Creedence Clearwater Revival;36 Greatest Hits; ;960209 21:30:44;drammensnett211.telepost.no
+75217;East 17;Steam;;960209 22:37:08;pc10.pm2-1.eunet.no
+40115;Orb, The;Peel Sessions;;960209 23:37:31;xyplex28.uio.no
+59186;Orbital;Orbital;;960209 23:37:57;xyplex28.uio.no
+47486;Orb, The;U.F. Orb;;960209 23:38:14;xyplex28.uio.no
+83908;Goldie;Timeless; ;960209 23:38:44;xyplex28.uio.no
+607030;PENTHOUSE;Centrefold vol.2;Utekstet orginalinnspilling;960209 23:42:44;194.52.245.213
+608566;Kylie Minogue, Charlie Schlatter;DELINQUENTS, THE;Utekstet orginalinnspilling;960209 23:47:32;194.52.245.213
+28595;Lehrer, Tom;An Evening Wasted With;;960209 23:50:12;stavanger212.telepost.no
+73864;Rolling Stones;Exile On Main St.;;960210 00:01:06;e9.vestdata.no
+87399;DANCE / SOUL;Mega Dance 1995; ;960210 00:07:05;hol-6.ppp.sn.no
+87999;DANCE / SOUL;Top Dance 96; ;960210 00:08:42;hol-6.ppp.sn.no
+87999;DANCE / SOUL;Top Dance 96; ;960210 00:09:36;hol-6.ppp.sn.no
+68898;Tag Team;Whomp !;;960210 00:26:22;d-71.home-ip.as.ucsb.edu
+86152;Jarrett, Keith;At The Blue Note; ;960210 00:38:11;d-71.home-ip.as.ucsb.edu
+3835;Jarrett, Keith;Standards Vol.2 (ECM);;960210 00:39:15;d-71.home-ip.as.ucsb.edu
+70432;DIVERSE ARTISTER;It`s Summertime;;960210 00:47:46;d-71.home-ip.as.ucsb.edu
+70431;DANCE / SOUL;It's Summerdance - 20 Hits;;960210 00:48:32;d-71.home-ip.as.ucsb.edu
+58065;DIVERSE ARTISTER;Definitive Summer Hits (EVA);;960210 00:49:04;d-71.home-ip.as.ucsb.edu
+82491;White, Maurice & Bill Meyers;GATCHAMAN VOL. 2; ;960210 11:58:39;Hanu6.pc.Helsinki.FI
+83429;Cantos, Bill;Who Are You; ;960210 12:01:11;Hanu6.pc.Helsinki.FI
+69084;Cantos Project, Bill;The Bill Cantos Project;;960210 12:01:26;Hanu6.pc.Helsinki.FI
+87620;Gaitsch, Bruce;A Lyre In A Windstorm; ;960210 12:01:58;Hanu6.pc.Helsinki.FI
+87623;Champlin, Bill;He Started To Sing; ;960210 12:07:35;Hanu6.pc.Helsinki.FI
+16063;Williams, John;EMPIRE OF THE SUN;;960210 12:07:57;stovner.a.sn.no
+16063;Williams, John;EMPIRE OF THE SUN;;960210 12:08:04;stovner.a.sn.no
+60276;Omartian, Michael;White Horse & Adam Again;;960210 12:08:36;Hanu6.pc.Helsinki.FI
+16063;Williams, John;EMPIRE OF THE SUN;;960210 12:09:07;stovner.a.sn.no
+16063;Williams, John;EMPIRE OF THE SUN;;960210 12:09:23;stovner.a.sn.no
+16063;Williams, John;EMPIRE OF THE SUN;;960210 12:09:57;stovner.a.sn.no
+68613;The The;Dis-Infected;;960210 12:38:11;ppp67.bgnett.no
+78399;The The;Hanky Panky; ;960210 12:38:43;ppp67.bgnett.no
+56328;Springsteen, Bruce;In Concert - MTV Plugged;;960210 12:54:36;xanadu.centrum.dk
+11645;Springsteen, Bruce;Live Collection Vol.1;;960210 12:55:10;xanadu.centrum.dk
+11645;Springsteen, Bruce;Live Collection Vol.1;;960210 13:38:38;pc62.nhidh.nki.no
+52991;Waits, Tom;The Early Years Vol. 2;;960210 13:39:10;pc62.nhidh.nki.no
+651374;Andrew Dice Clay, Priscilla Presley.;FORD FAIRLANE;Norsk tekst / tale;960210 13:40:16;pc62.nhidh.nki.no
+605026;Kirk Douglas,Ann-Margret,Schwarzenegger;CACTUS JACK;Utekstet orginalinnspilling;960210 13:41:54;pc62.nhidh.nki.no
+704669;Andrew Dice Clay, Teri Hatcher;BRAIN SMASHER...A LOVE STORY;NTSC;960210 13:42:28;pc62.nhidh.nki.no
+78125;R.E.M.;Bang And Blame; ;960210 13:59:10;pc33-184.hiof.no
+9927;R.E.M.;Dead Letter Office & Chronic Town;;960210 13:59:24;pc33-184.hiof.no
+18118;R.E.M.;Eponymous;;960210 13:59:35;pc33-184.hiof.no
+4524;R.E.M.;Fables Of Reconstruction;;960210 13:59:47;pc33-184.hiof.no
+18883;R.E.M.;Green;;960210 13:59:56;pc33-184.hiof.no
+6547;R.E.M.;Lifes Rich Pageant;;960210 14:00:05;pc33-184.hiof.no
+74575;R.E.M.;Monster;;960210 14:00:14;pc33-184.hiof.no
+3396;R.E.M.;Murmur;;960210 14:00:22;pc33-184.hiof.no
+85395;R.E.M.;Murmur; ;960210 14:00:31;pc33-184.hiof.no
+34864;R.E.M.;Out Of Time;;960210 14:00:43;pc33-184.hiof.no
+3397;R.E.M.;Reckoning;;960210 14:00:53;pc33-184.hiof.no
+74174;R.E.M.;Singles Collected;;960210 14:01:01;pc33-184.hiof.no
+85946;R.E.M.;Strange Currencies; ;960210 14:01:11;pc33-184.hiof.no
+64448;R.E.M.;The Automatic Box;;960210 14:01:23;pc33-184.hiof.no
+40063;R.E.M.;The Best Of;;960210 14:01:35;pc33-184.hiof.no
+606677;DIVERSE;SOLARIS;Utekstet orginalinnspilling;960210 14:10:58;pc33-184.hiof.no
+804273;MUSIKK;Prince - Interactive;Medie rundt Prince... Meget bra !!!;960210 14:13:03;pc33-184.hiof.no
+84997;Osborne, Joan;Relish; ;960210 14:24:23;129.177.87.105
+58603;Balke, Jørgensen & Kleive;Jøkleba;;960210 16:46:56;PPP103.internet.no
+78359;Mirah;Mirah; ;960210 16:47:05;xyplex-port2.unik.no
+78359;Mirah;Mirah; ;960210 16:47:15;xyplex-port2.unik.no
+86297;Handel;Engelske arier (14).;Bowman/King's Consort/King.;960210 16:48:08;PPP103.internet.no
+64799;Doro;Live;;960210 16:51:55;PPP102.internet.no
+82941;Morissette, Alanis;Jagged Little Pill; ;960210 17:07:18;oslo916.telepost.no
+82941;Morissette, Alanis;Jagged Little Pill; ;960210 17:12:15;oslo916.telepost.no
+82941;Morissette, Alanis;Jagged Little Pill; ;960210 17:13:59;oslo916.telepost.no
+86450;Cypress Hill;III Temples OF Boom; ;960210 17:15:34;fp2-ppp16.oslo.net
+85516;Oasis;(What`s The Story) Morning Glory ?; ;960210 17:16:17;fp2-ppp16.oslo.net
+8086;Uriah Heep;Abominog;;960210 17:19:37;Stavanger130.robin.no
+55542;Mozart;Missa Solemnis/Litaniae mm;Bonney/Concentus musicus W/Harnoncourt;960210 17:46:42;apollo.sysdeco.co.uk
+76584;Williams, Vanessa;The Sweetest Days;;960210 17:55:25;user72.link.no
+76242;Uggla, Magnus;100 % Uggla;;960210 17:57:52;fp5-ppp2.oslo.net
+26223;Uggla, Magnus;Vittring;;960210 18:22:13;10322.avh.unit.no
+30197;Uggla, Magnus;Godkend Pirat Live;;960210 18:23:14;10322.avh.unit.no
+30197;Uggla, Magnus;Godkend Pirat Live;;960210 18:24:03;10322.avh.unit.no
+27511;Ramones;Rocket To Russia;;960210 18:25:40;10322.avh.unit.no
+27511;Ramones;Rocket To Russia;;960210 18:26:19;10322.avh.unit.no
+82603;Gartnerlosjen;Due; ;960210 18:48:03;telesparc20b.tele.unit.no
+68684;Gartnerlosjen;Krem Fjes;;960210 18:48:15;telesparc20b.tele.unit.no
+66295;Marillion;Brave;;960210 19:49:01;telesparc20b.tele.unit.no
+1403;Beethoven/Liszt;Wellingtons seier/Slag;Cincinnati/Kunzel;960210 19:57:52;os18.ftns.no
+80487;Esperanto;Esperanto; ;960210 20:18:49;nm5-ppp5.oslo.net
+69584;The The;Solitude;;960210 20:24:50;pc3.kb-pm2-1.eunet.no
+29034;Last Of The The Teenage Idols;Satellite Head Gone Soft;;960210 20:25:33;pc3.kb-pm2-1.eunet.no
+804148;SPILL;Doom;De 3 første episodene...;960210 20:31:33;sierra.interlink.no
+604102;James Cagney, Virginia Mayo;WHITE HEAT;Utekstet orginalinnspilling;960210 20:35:35;xyplex22.uio.no
+45233;DANCE / SOUL;The Rebirth Of Cool;;960210 20:47:00;storm.stud.unit.no
+43681;DANCE / SOUL;The Rebirth Of COOL, Too;;960210 20:47:13;storm.stud.unit.no
+73506;DANCE / SOUL;Rebirth Of Cool 1994 Most;;960210 20:47:21;storm.stud.unit.no
+55369;Quatro, Suzi;Aggro-Phobia;;960210 21:00:23;fredrikstad203.telepost.no
+21721;Quatro, Suzi;Golden 20 Hits;;960210 21:00:44;fredrikstad203.telepost.no
+61255;Quatro, Suzi;If You Knew Suzi;;960210 21:01:05;fredrikstad203.telepost.no
+29102;Quatro, Suzi;Live And Kickin';;960210 21:01:21;fredrikstad203.telepost.no
+26414;Quatro, Suzi;Suzi Quatro;;960210 21:01:39;fredrikstad203.telepost.no
+28500;Quatro, Suzi;Rock Hard;;960210 21:01:54;fredrikstad203.telepost.no
+1816;Genesis;Duke;;960210 21:22:41;158.36.137.101
+41371;Juleplater;A Christmas Gift For You;From Phil Spector;960210 22:10:31;nm3-ppp8.oslo.net
+78572;DANCE / SOUL;Nova Mute : Version 1.1; ;960210 22:43:59;monet116.telepost.no
+29362;Animals;The Complete Animals;;960210 22:48:23;monet116.telepost.no
+18837;Uriah Heep;Look At Yourself; ;960210 22:51:28;monet116.telepost.no
+6325;Electric Light Orchestra;Greatest Hits;;960211 00:52:52;Sandnes115.robin.no
+26326;Electric Light Orchestra;The Very Best Of;;960211 00:54:46;Sandnes115.robin.no
+76126;Electric Light Orchestra;The Very Best Of;;960211 00:55:32;Sandnes115.robin.no
+72630;TRIBUTE ALBUMS;No Prima Donna;The Songs Of Van Morrison;960211 01:06:30;cooler24.icenet.no
+84106;Andersen, Benny & Povl Dissing;Svantes Viser; ;960211 01:08:17;cooler24.icenet.no
+71026;Dissing / Andersen;Hilsen Til Forårssolen;;960211 01:08:32;cooler24.icenet.no
+17768;Dissing, Povl & Anderson, Benny;Over Adskillige Grænser;;960211 01:08:46;cooler24.icenet.no
+58863;Bræin;Orkestermusikk m/Ut mot havet;Solister/Bergen/Oslo/NRK/Andersen/Bergh;960211 01:15:08;port-243.ppp.powertech.no
+16491;Deep Purple;Nobody's Perfect;;960211 01:16:14;haugesund108.telepost.no
+2140;Steely Dan;Gaucho;;960211 02:00:16;trondheim-ppp26.oslo.net
+36402;Steely Dan;Gaucho;;960211 02:01:21;trondheim-ppp26.oslo.net
+78427;Velvet Belly;Window Tree; ;960211 03:43:21;bergen208.telepost.no
+602691;Peter Ustinov,Angie Dickinson;CHARLIE CHAN AND THE DRAGON QUEEN;Utekstet orginalinnspilling;960211 09:05:10;morenett102.telepost.no
+650266;Angie Dickinson, Robert Wagner;PEARL 1;Norsk tekst / tale;960211 09:05:29;morenett102.telepost.no
+610711;Kenneth Branagh, Paul Scofield, Emma Thompson;HENRY V;Utekstet orginalinnspilling;960211 09:07:08;morenett102.telepost.no
+609891;Anthony Hopkins, Emma Thompson.;REMAINS OF THE DAY;Utekstet orginalinnspilling;960211 09:07:36;morenett102.telepost.no
+610823;Anthony Hopkins, Emma Thompson.;REMAINS OF THE DAY;Utekstet orginalinnspilling;960211 09:07:44;morenett102.telepost.no
+651532;Anthony Hopkins, Emma Thompson.;RESTEN AV DAGEN (AKA. THE REMAINS OF THE DAY);Norsk tekst / tale;960211 09:08:01;morenett102.telepost.no
+603523;Playboy Fantasies;Playboypiker;Utekstet orginalinnspilling;960211 09:10:01;morenett102.telepost.no
+85600;Deftones;Adrenaline; ;960211 09:59:27;drammensnett114.telepost.no
+85516;Oasis;(What`s The Story) Morning Glory ?; ;960211 10:45:36;drammensnett215.telepost.no
+27929;Alvad, Christian;Heartware;;960211 10:57:26;137.133.101.202
+78030;Salvador Dream;Ur; ;960211 10:57:43;137.133.101.202
+88287;Black, Frank;The Cult Of Ray; ;960211 13:12:34;pc-f260-2.idt.unit.no
+80834;Black, Frank;Black Sessions; ;960211 13:12:40;pc-f260-2.idt.unit.no
+54988;Black, Frank;Frank Black;;960211 13:12:58;pc-f260-2.idt.unit.no
+30041;Jane's Addiction;Ritual De Lo Habitual;;960211 13:13:57;pc-f260-2.idt.unit.no
+5998;Bauhaus;The Singles 1981-1983;;960211 13:24:25;hamar2-ppp1.oslo.net
+23930;Bauhaus;Swing The Heartache;;960211 13:25:01;hamar2-ppp1.oslo.net
+86505;DIVERSE ARTISTER;Totally Wired (Rock);Bauhaus,Magazine,Au Pairs,Delta 5;960211 13:25:24;hamar2-ppp1.oslo.net
+23930;Bauhaus;Swing The Heartache;;960211 13:25:36;hamar2-ppp1.oslo.net
+48712;Bauhaus;Rest In Peace The Final Concert;;960211 13:25:46;hamar2-ppp1.oslo.net
+37845;Booker T. & The M.G.'s;Green Onions;;960211 13:29:27;nm2-ppp13.oslo.net
+37845;Booker T. & The M.G.'s;Green Onions;;960211 13:29:56;nm2-ppp13.oslo.net
+37845;Booker T. & The M.G.'s;Green Onions;;960211 13:30:15;nm2-ppp13.oslo.net
+37845;Booker T. & The M.G.'s;Green Onions;;960211 13:30:19;nm2-ppp13.oslo.net
+601157;Pink Floyd;THE WALL;Utekstet orginalinnspilling;960211 13:40:57;ns0.alcatel.no
+604409;Div, Stones, Hendrix, Pink Floyd, Cream mmm;Superstars in concert;Utekstet orginalinnspilling;960211 13:42:23;ns0.alcatel.no
+608522;Dream Theater;Images and words - live in Tokyo;Utekstet orginalinnspilling;960211 13:43:26;ns0.alcatel.no
+603988;Toy Dolls;We're mad;Utekstet orginalinnspilling;960211 13:44:16;ns0.alcatel.no
+608533;Val Kilmer/The Doors;DOORS, THE;Utekstet orginalinnspilling;960211 13:45:32;ns0.alcatel.no
+22432;Dream Theater;When Dream & Day Unite;;960211 13:48:21;ns0.alcatel.no
+65924;Pink Floyd;Atom Heart Mother;;960211 13:49:33;ns0.alcatel.no
+16459;Pink Floyd;Dark Side Of The Moon;;960211 13:49:45;ns0.alcatel.no
+4170;Dylan, Bob;Street Legal;;960211 13:53:27;ns0.alcatel.no
+88250;Ministry;Filth Pig; ;960211 13:59:56;firewall.statoil.no
+81859;Evans, Bill & Stan Getz;Two Lonely People; ;960211 14:30:05;nmr1000.kjemi.unit.no
+25888;Øverli, Jørn Simen;Levende Bandasjer;;960211 14:30:07;baccarat.samfundet.unit.no
+86273;Baker, Chet & Stan Getz;Haig `53 - The Other Piano Less...; ;960211 14:30:24;nmr1000.kjemi.unit.no
+77129;Morrison, Van;The Very Best Of;;960211 14:32:54;nmr1000.kjemi.unit.no
+72630;TRIBUTE ALBUMS;No Prima Donna;The Songs Of Van Morrison;960211 14:33:22;nmr1000.kjemi.unit.no
+29793;Getz, Stan;Live At Montmartre Vol.2;;960211 14:34:28;nmr1000.kjemi.unit.no
+41919;Getz, Stan;Highlights;;960211 14:34:38;nmr1000.kjemi.unit.no
+5498;Getz, Stan & Peterson, Oscar;Silver Collection;;960211 14:40:49;nmr1000.kjemi.unit.no
+29261;Getz, Stan;Anniversary;;960211 14:41:09;nmr1000.kjemi.unit.no
+36364;Getz, Stan;Serenity;;960211 14:41:22;nmr1000.kjemi.unit.no
+42705;Getz, Stan & Barron, Kenny;People Time;;960211 14:42:00;nmr1000.kjemi.unit.no
+651092;DISNEY;Robin Hood;Norsk tekst / tale;960211 14:56:34;PPP108.internet.no
+650653;Kevin Costner, Morgan Freeman;ROBIN HOOD - TYVENES PRINS;Norsk tekst / tale;960211 14:57:35;PPP108.internet.no
+68162;3rd And The Mortal, The;Sorrow;;960211 15:05:50;SPC56.hiMolde.no
+53918;Spagna;Greatest Hits - Spagna & Spagna;;960211 15:06:21;itlab10.hibo.no
+53918;Spagna;Greatest Hits - Spagna & Spagna;;960211 15:07:05;itlab10.hibo.no
+73647;3rd And The Mortal, The;Tears Laid In Earth;;960211 15:07:24;SPC56.hiMolde.no
+53918;Spagna;Greatest Hits - Spagna & Spagna;;960211 15:08:35;itlab10.hibo.no
+53918;Spagna;Greatest Hits - Spagna & Spagna;;960211 15:08:41;itlab10.hibo.no
+88267;Tortoise;Millions Now Living Will Never Die; ;960211 15:19:49;xyplex10.uio.no
+54519;LoDuca, Joseph & Elfman, Danny;ARMY OF DARKNESS;;960211 15:22:05;hfl234.avh.unit.no
+48894;Bach;Klaverkonserter # 1-5 & 7.;Gould/Columbia SO/Bernstein/Golschman;960211 15:22:59;xyplex10.uio.no
+602522;Bruce Campbell, Sarah Berry;EVIL DEAD 2;Utekstet orginalinnspilling;960211 15:23:37;hfl234.avh.unit.no
+75789;Mozart;Klaversonater komplett;Gould;960211 15:23:43;xyplex10.uio.no
+73481;Prazsky Vyber & Zappa, Frank;Live;;960211 15:46:23;signy3.stud.unit.no
+13359;AC/DC;74 Jailbreak;;960211 16:35:47;fp7-ppp13.oslo.net
+6538;Supertramp;Supertramp;;960211 16:46:17;158.38.104.134
+3295;Supertramp;Live In Paris;;960211 16:47:00;158.38.104.134
+18272;Supertramp;Live '88;;960211 16:47:25;158.38.104.134
+5396;Supertramp;Indeliby Stamped;;960211 16:47:43;158.38.104.134
+12499;Supertramp;Free As A Bird;;960211 16:48:04;158.38.104.134
+3294;Supertramp;Famous Last Word;;960211 16:48:28;158.38.104.134
+6541;Supertramp;Even In The Quietest Moments;;960211 16:49:04;158.38.104.134
+6539;Supertramp;Crisis? What Crisis?;;960211 16:49:22;158.38.104.134
+3293;Supertramp;Crime Of The Century;;960211 16:49:40;158.38.104.134
+20041;Supertramp;Classics;;960211 16:50:07;158.38.104.134
+2362;Supertramp;Brother Where You Bound;;960211 16:50:21;158.38.104.134
+29913;Supertramp;Breakfast In America;;960211 16:50:37;158.38.104.134
+3292;Supertramp;Breakfast In America;;960211 16:50:54;158.38.104.134
+57383;ABBA;More Abba Gold;;960211 17:01:35;trondheim112.telepost.no
+33073;Minogue, Kylie;Step Back In Time;;960211 17:15:17;194.52.245.210
+650973;Happy anniversary 007;25 år med James Bond;Norsk tekst / tale;960211 17:17:09;194.52.245.210
+85813;Mr.Bungle;Disco Volante; ;960211 17:19:15;nyi.ifi.uio.no
+651963;Val Kilmer, Tommy Lee Jones, Jim Carrey;Batman Forever;Utekstet orginalinnspilling;960211 17:20:03;194.52.245.210
+610720;Rowan Atkinson.;MR. BEAN - UNSEEN BEAN;Utekstet orginalinnspilling;960211 17:25:50;194.52.245.210
+29656;Enya;Storms In Africa;;960211 17:43:44;gw6-1.oslo.no.powertech.net
+29656;Enya;Storms In Africa;;960211 17:44:20;gw6-1.oslo.no.powertech.net
+85092;Pacheco, Tom;Bluefields; ;960211 17:46:38;pc7.pm2-2.eunet.no
+803227;OPPSLAGSVERK;Microsoft Bookshelf;Leksikon på CD-ROM!!!;960211 17:48:57;gw6-1.oslo.no.powertech.net
+53918;Spagna;Greatest Hits - Spagna & Spagna;;960211 18:09:22;itlab07.hibo.no
+53918;Spagna;Greatest Hits - Spagna & Spagna;;960211 18:10:06;itlab07.hibo.no
+15414;Young, Neil;This Note's For You;;960211 18:10:28;io.transpoecon.no
+83171;Young, Neil;Mirror Ball; ;960211 18:10:50;io.transpoecon.no
+28798;Young, Neil;Eldorado;;960211 18:11:28;io.transpoecon.no
+58182;Young, Neil;Unplugged;;960211 18:12:42;io.transpoecon.no
+58182;Young, Neil;Unplugged;;960211 18:13:40;io.transpoecon.no
+4774;Doors, The;The Best Of;;960211 18:15:43;pc1.asker-pm2-1.eunet.no
+1737;Matt Bianco;Whose Side Are You On?;;960211 18:31:47;xyplex07.uio.no
+31712;Matt Bianco;The Best Of;;960211 18:31:59;xyplex07.uio.no
+40864;Matt Bianco;Samba In Your Casa;;960211 18:32:08;xyplex07.uio.no
+70276;Matt Bianco;Another Remix;;960211 18:32:17;xyplex07.uio.no
+5337;Matt Bianco;Matt Bianco;;960211 18:32:30;xyplex07.uio.no
+69029;Matt Bianco;Another Time Another Place;;960211 18:32:40;xyplex07.uio.no
+5399;U2;Boy;;960211 18:34:01;pc-terjeg.hrp.no
+38946;Amina;Amina;;960211 19:42:16;pc1.fredrikstad-pm2-1.eunet.no
+20102;Village People;Greatest Hits;;960211 19:57:18;fp5-ppp12.oslo.net
+39769;Village People;The Hits;;960211 19:57:48;fp5-ppp12.oslo.net
+88370;Wolff, Rikard;Pojken På Månen; ;960211 20:09:24;gw6-16.oslo.no.powertech.net
+27331;Musikk Fra TV-Serien;PENNIES FROM HEAVEN;;960211 20:12:30;gw6-16.oslo.no.powertech.net
+27331;Musikk Fra TV-Serien;PENNIES FROM HEAVEN;;960211 20:12:39;gw6-16.oslo.no.powertech.net
+68423;Jackson, Michael;Dangerous;;960211 20:28:54;ppp06.infonet.no
+68423;Jackson, Michael;Dangerous;;960211 20:29:51;ppp06.infonet.no
+47033;Jackson, Michael;In The Closet Mixes 1;;960211 20:31:19;ppp06.infonet.no
+23885;Jackson, Michael;Instrumental Version Collection;;960211 20:31:43;ppp06.infonet.no
+23885;Jackson, Michael;Instrumental Version Collection;;960211 20:31:50;ppp06.infonet.no
+79754;Borodin;PRINCE IGOR;Borodina/Kit/Kirov/Gergiev;960211 21:32:45;fp7-ppp10.oslo.net
+79754;Borodin;PRINCE IGOR;Borodina/Kit/Kirov/Gergiev;960211 21:33:47;fp7-ppp10.oslo.net
+4170;Dylan, Bob;Street Legal;;960211 22:13:58;ns0.alcatel.no
+4170;Dylan, Bob;Street Legal;;960211 22:14:21;ns0.alcatel.no
+601157;Pink Floyd;THE WALL;Utekstet orginalinnspilling;960211 22:17:02;ns0.alcatel.no
+601157;Pink Floyd;THE WALL;Utekstet orginalinnspilling;960211 22:17:13;ns0.alcatel.no
+86230;Smashing Pumpkins;Mellon Collie And The Infinite Sadne; ;960211 22:19:11;ns0.alcatel.no
+74822;Motorpsycho;Timothy`s Monster;;960211 22:19:56;ns0.alcatel.no
+46192;Toy Dolls;The Collection;;960211 22:20:42;ns0.alcatel.no
+73410;Lundeng, Susanne;Drag;;960211 22:43:46;volla.sn.no
+54172;Campbell, John;A Man & His Blues;;960211 22:47:30;nm5-ppp15.oslo.net
+53836;Campbell, John;Howlin Mercy;;960211 22:48:11;nm5-ppp15.oslo.net
+40106;Campbell, John;One Believer;;960211 22:48:44;nm5-ppp15.oslo.net
+74491;Stiltskin;The Mind`s Eye;;960211 22:49:59;PPP113.internet.no
+39679;Barclay James Harvest;B.J.H. And Other Short Stories;;960211 22:51:45;PPP113.internet.no
+3820;Wayne, Jeff;WAR OF THE WORLDS;;960211 22:56:41;PPP113.internet.no
+3820;Wayne, Jeff;WAR OF THE WORLDS;;960211 22:57:02;PPP113.internet.no
+28763;Bach;Kantater BWV 202/209/211/212   2cds;Ameling/English/Nimsgern/Collegium Aureu;960211 23:01:23;bodo2-ppp3.oslo.net
+28763;Bach;Kantater BWV 202/209/211/212   2cds;Ameling/English/Nimsgern/Collegium Aureu;960211 23:02:29;bodo2-ppp3.oslo.net
+43002;Booze Brothers, The;Brewers Droop;(Mark Knopfler & Dave Edmunds);960211 23:26:56;esgsun.ews.sa.gov.au
+46120;Knopfler, David;Release;;960211 23:28:54;esgsun.ews.sa.gov.au
+46122;Knopfler, David;Lips Against The Steel;;960211 23:30:21;esgsun.ews.sa.gov.au
+46121;Knopfler, David;Cut The Wire;;960211 23:31:20;esgsun.ews.sa.gov.au
+62910;Knopfler, David;Behind The Lines;;960211 23:31:57;esgsun.ews.sa.gov.au
+51166;Kyrkjebø, Sissel;Gift Of Love;;960211 23:36:19;esgsun.ews.sa.gov.au
+67148;Kyrkjebø, Sissel;Innerst I Sjelen;;960211 23:36:59;esgsun.ews.sa.gov.au
+11625;Beatles;White Album;;960212 00:03:14;bodo2-ppp2.oslo.net
+80730;Ardis;Love Addict; ;960212 00:29:45;pc22.pm2-2.eunet.no
+34964;Barrett, Syd;The Peel Session;;960212 00:46:24;melvinj9.stud.unit.no
+34964;Barrett, Syd;The Peel Session;;960212 00:46:53;melvinj9.stud.unit.no
+610213;Pink Floyd;Pulse.;Utekstet orginalinnspilling;960212 00:48:11;melvinj9.stud.unit.no
+49346;Barrett, Syd;Octopus;;960212 00:49:14;melvinj9.stud.unit.no
+34964;Barrett, Syd;The Peel Session;;960212 00:57:21;melvinj9.stud.unit.no

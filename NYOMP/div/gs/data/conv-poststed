@@ -1,0 +1,20 @@
+#!/local/bin/perl5 -w
+
+use POSIX;
+setlocale(LC_CTYPE, "iso_8859_1");
+
+open(F, "./conv poststed.tab |") or die;
+
+%seen = ();
+while (<F>) {
+   chomp;
+   ($nr, $navn) = split('\t', $_, 2);
+   $navn = lc $navn;
+   next unless length $nr;
+   $navn = "-" unless length $navn;
+   if ($seen{$nr}++) {
+      print STDERR "duplikat $nr $navn\n";
+      next;
+   }
+   print "$nr\t$navn\n";
+}

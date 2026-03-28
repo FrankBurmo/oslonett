@@ -1,0 +1,196 @@
+
+   Netsurfer Digest FAQ
+     _________________________________________________________________
+   
+   
+   
+                  NETSURFER DIGEST FREQUENTLY ASKED QUESTIONS
+                                       
+   
+   
+  1.0 Where can this FAQ be found?
+  2.0 What is Netsurfer Digest?
+  3.0 How much does Netsurfer Digest cost?
+  4.0 How is Netsurfer Digest delivered?
+  5.0 In what formats can I get Netsurfer Digest?
+  6.0 How do I SUBSCRIBE to Netsurfer Digest?
+  7.0 How can I change my subscription from TEXT to HTML format?
+  8.0 How do I change my delivery address?
+  9.0 Why do you bother mailing the HTML version?
+ 10.0 How come I did not get my last issue of Netsurfer Digest?
+ 11.0 How can I unsubscribe to Netsurfer Digest?
+ 12.0 Who publishes Netsurfer Digest?
+       
+   
+  1.0 WHERE CAN THIS FAQ BE FOUND?  
+
+   This information is available via FTP and WWW at: 
+
+   FTP: ftp://ftp.netsurf.com/pub/nsd/ndfaq.txt           
+   WWW: http://www.netsurf.com/nsd/ndfaq.html
+
+  2.0 WHAT IS NETSURFER DIGEST?
+  
+   Netsurfer Digest is your guide to interesting news, places, and
+   resources online. Each week it brings you short, crisp newsbytes,
+   notices, and reviews designed to provide an informative and
+   entertaining snapshot of the vast wired world. Periodically you can
+   also expect to see special longer features, a letters to the editor
+   section, and possibly special bulletins about significant breaking
+   stories (e.g. imminent death of the Internet).
+   
+  3.0 HOW MUCH DOES NETSURFER DIGEST COST?
+   
+   Netsurfer Digest is free. However, we presume our readers are mature
+   enough to understand that in the real world of bills and taxes a
+   business such as this can't survive without sponsors. Thus you can
+   expect to see a trade supplement show up in your mailbox, no more then
+   twice per week, and no larger then the average issue of the Digest.
+   
+   The goal is to deliver this material in a non-intrusive and clearly
+   marked manner on the assumption that you are interested in who is
+   offering what online. Read it at your leisure or delete it, it's part
+   of the package and both we and the sponsors will be interested in your
+   reaction to it.
+   
+  4.0 HOW IS NETSURFER DIGEST DELIVERED?
+   
+   Netsurfer Digest is delivered via E-mail directly to your mailbox. The
+   Digest can reach you at any E-mail address which is capable of
+   receiving mail from the Internet.
+   
+  5.0 IN WHAT FORMATS CAN I GET NETSURFER DIGEST?
+   
+   Netsurfer Digest comes in one of two formats, plain ASCII text, or
+   HTML formatted text suitable for viewing with any World Wide Web
+   browser. The HTML version has live links to all the sites named in the
+   text so that with a simple click of a mouse you can connect to the
+   site you have just been reading about.
+   
+   NOTE: You do not have to be connected directly to the Internet in
+   order to enjoy the benefits of the HTML version. Any HTML browser,
+   such as Mosaic or Lynx, can be used to read Netsurfer Digest in a
+   nicely formatted style, much superior to boring old ASCII text.
+   
+   WE STRONGLY ENCOURAGE YOU TO SUBSCRIBE TO THE HTML VERSION.
+   That way you can take advantage of various neat features we
+   are working on for future versions of the digest.
+
+  6.0 HOW DO I SUBSCRIBE TO NETSURFER DIGEST?
+   
+   Send all subscription requests to: nsdigest-request@netsurf.com
+   
+   To subscribe to the HTML version send the following command in the
+   BODY of the message:
+
+     subscribe nsdigest-html
+   
+   To subscribe to the TEXT version send the following command in the
+   BODY of the message:
+
+     subscribe nsdigest-text
+
+   To unsubscribe send one of the following commands in the BODY of the
+   message:
+   
+    unsubscribe nsdigest-html
+    unsubscribe nsdigest-text
+   
+  7.0 HOW CAN I CHANGE MY SUBSCRIPTION FROM TEXT TO HTML FORMAT?
+
+   Easy. Simply send the following to nsdigest-request@netsurf.com in 
+   the BODY of the message:
+ 
+    unsubscribe nsdigest-text 
+    subscribe nsdigest-html
+
+   If you want to switch from HTML to TEXT just reverse the order like so:
+
+    unsubscribe nsdigest-html
+    subscribe nsdigest-text
+
+  8.0 HOW CAN I CHANGE MY DELIVERY ADDRESS?
+
+   It's easy. Simply send an unsubscribe command from your old address
+   and then send a subscribe command from your new address.
+
+   Note that our subscription software automatically reads the address
+   from the "From:" field of your E-mail message, so the subscribe
+   and unsubscribe commands must come from the appropriate addresses.
+
+  9.0 WHY DO YOU BOTHER MAILING THE HTML VERSION?
+   
+   Why not just put up the Web server? Well, there are really two reasons
+   for this.
+   
+   First, the Web clients such as Mosaic and others make very nifty
+   universal readers for all of our customers, even those without direct
+   access to the Internet. Since we like our product to look good this
+   seems the obvious solution to go with.
+   
+   The second reason is that we do not want our WWW server to be a choke
+   point for our readers. Why have thousands of readers trying to hook up
+   to our machine and potentially wind up in a giant traffic jam, just to
+   link to an unrelated site they read about in the Digest? From the
+   standpoint of reliability and bandwidth usage it makes sense to mail
+   out HTML source.
+   
+  10.0 HOW COME I DID NOT GET MY LAST ISSUE OF NETSURFER DIGEST?
+
+    We've been doing this long enough to know that there are a number of
+    problems which crop up over and over again either due to factors
+    beyond our control or due to our dizzy growth rate. 
+
+    On any given mass mailing we get between 5%-10% bounced E-mail.
+    This means our software tried to deliver to your address but could
+    not. Some of the reasons we've seen why this happens:
+
+      - Your machine or mailing software was down when we tried mailing.
+      - Your file system was full.
+      - Your address has changed.
+      - The link to your site was down somewhere along the delivery chain.
+      - Our mailing software starts acting up for utterly unknown reasons
+        (well, usually it's because we've been mucking with our machines).
+      - A conspiracy involving aliens, Elvis, and the Trilateral Commission.
+      
+    If all else fails you can always stop at our FTP or WWW sites to
+    get the latest issue of Netsurfer Digest:
+
+      http://www.netsurf.com/nsd/index.html
+      ftp://ftp.netsurf.com/pub/nsd/
+
+  11.0 HOW CAN I UNSUBSCRIBE TO NETSURFER DIGEST? 
+
+    It hurts us to have to tell you how to do that. It really does. If it
+    comes to this it means we have failed you, our gentle readers. If you
+    unsubscribe there will be wailing and gnashing of teeth, and someone
+    will throw themselves on the point of their mouse pad. So don't. Just
+    tell us how to get better.
+    
+    Mail nsdigest-request@netsurf.com with one of the following in the 
+    BODY of the message:
+    
+        unsubscribe nsdigest-html 
+        unsubscribe nsdigest-text
+    
+
+  12.0 WHO PUBLISHES NETSURFER DIGEST?
+   
+   Netsurfer Digest is published by Netsurfer Communications Inc., a small
+   company of netsurfers interested in creating interesting and innovative
+   products via the online medium. We also provide consulting services 
+   for businesses interested in creating an online presence or distributing
+   products online in an ethical, responsible, and effective manner.
+   
+   You can find out more about Netsurfer Communications by sending e-mail
+   to info@netsurf.com or visiting our home page at:
+
+   http://www.netsurf.com/
+   
+     _________________________________________________________________
+
+   Netsurfer Digest is a trademark of Netsurfer Communications, Inc..
+   Copyright 1994, Netsurfer Communications, Inc.
+
+     _________________________________________________________________
+

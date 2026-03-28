@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="40"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Profesjonenes Ole Brumm-dilemma: Modernisering vs. profesjonelle standarder og tradisjoner"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Studiested Bislet, Pilestredet 52"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="14.00 - 15.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="29"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Høgskolen i Oslo (HiO)"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Oslo"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Profesjonenene bygger på faglige tradisjoner, og profesjonsmedlemmene er opptatt av det sikre det faglige nivået i yrkesutøvelsen. Samtidig blir de utsatt for krav om modernisering, effektisering og økonomisk rasjonalisering fra myndighetene og det omliggende samfunn. Hvordan reagerer de på dette dilemmaet? Dette er aktuelt for de fleste av Høgskolen i Oslos profesjoner, ikke bare bibliotekarene, som er utgangspunktet for prosjektet. Forelesningen er ved avdelingsrådsleder ved Avdeling for journalistikk, biblioteks- og informasjonsfag, Ragnar Audunson.` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?10.10"?)\s*>` with `` checked>` -->

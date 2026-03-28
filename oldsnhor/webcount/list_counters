@@ -1,0 +1,16 @@
+#!/local/bin/perl5 -w
+
+use Fcntl;
+use NDBM_File;
+
+$dbmfile = "counters";
+
+tie %counter, NDBM_File, $dbmfile, O_RDONLY, 0;
+
+while (($key, $val) = each %counter) {
+    ($no, $time) = split(';', $val);
+    print "$key\t$no\t" . localtime($time) . "\n";
+}
+
+
+

@@ -1,0 +1,79 @@
+<html>
+<head>
+ <title>FONO: Oppdatering av data om utgivelser</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body bgcolor="#ffffff" background="/fono/img/back.gif">
+<img alt="" src="/fono/img/logo.gif">
+
+<h1>FONO: Oppdatering av data om utgivelser</h1>
+
+<form method="POST" action="finntittel.cgi">
+<input type="hidden" name="format" value="html">
+
+<blockquote>
+<hr noshade size=1>
+<font size=+1>
+ Dette skjemaet brukes til å oppdatere FONOs base over utgivelser på
+ SN Horisont. Angi utgivelsen ved å angi utgivelsens nummer eller
+ deler av navnet, artist og selskap
+ Velger du det siste, og det er flere titler som
+ klaffer, får du opp en liste over disse og kan velge videre
+ herfra. Til slutt får du opp det originale registreringsskjemaet
+ med tittelinformasjon fylt inn slik at du kan endre det du
+ vil.
+</font>
+<hr noshade size=1>
+</blockquote>
+
+
+Dersom ingen av feltene nedenfor fylles ut, returneres en <a
+href="finntittel.cgi?format=html&felt.artist=on">liste
+over alle registrerte</a>. 
+
+
+<pre>
+<hr noshade size=2>
+
+<input type="submit" value="Start søk etter tittel">
+
+Navn på tittel:  <input name="Tittel" type="text" size=50>
+
+Tittelnummer  :  <input name="Tittelnr" type="text" size=10>
+
+Artist        :  <input name="Artist" type="text" size=10>
+
+</pre>
+
+
+<h2>Sorteringsalgoritme</h2>
+Dersom søket gir to eller flere treff i databasen skal listen sorteres...
+
+<blockquote>
+<input type="radio" name="sortering" value="alfabetisk" checked>
+alfabetisk<br>
+<input type="radio" name="sortering" value="numerisk">
+etter medlemsnummer<br>
+
+</blockquote>
+
+<input type="submit" value="Start søk etter tittel">
+<input type="reset" value="Resett skjema">
+</form>
+<address>
+<hr noshade size=1 width=30% align=left>
+   <a href="http://www.sn.no/fono/">
+   <img src="/fono/img/icon.gif"
+        alt="[FONO-Hjemmeside]"
+     valign=middle align=left
+     border="0"></a>
+
+   <a href="http://www.sn.no">
+   <img src="http://www.sn.no/img/horisont.gif"
+        alt="[SN Horisont]"
+     valign=middle align=right
+     border="0"></a>
+</address>
+
+</body>
+</html>

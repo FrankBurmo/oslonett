@@ -1,0 +1,147 @@
+#!/local/bin/perl
+
+
+# gencat.cgi
+#
+# Dag Wigum, Steinar Kjærnsrød,12.12.95
+#
+# Genererer en htmlfil med aksjekurser
+#
+
+
+
+# Neste linje virker kun for method="GET". Bør gi feilmelding hvis dette
+# ikke er tilfelle eller bruke read(STDIN, $kat, $ENV{'CONTENT_LENGTH'}
+# hvis method="POST".
+
+
+read(STDIN, $var, $ENV{'CONTENT_LENGTH'});
+
+open(STDERR, "/dev/null");
+
+     @I = split(/\=/,$var);
+
+     $kat = $I[1];
+
+
+
+dbmopen(%AKSJER,"aksje",0664) || print "Content-type: text/html\n\nFoo";
+dbmopen(%KAT,"kategori",0664) || print "Content-type: text/html\n\nFo";
+
+
+
+# Lag title-tag...
+
+$title = "Dagens aksjekurs";
+
+# Lag body-tag...
+$body_tag = "<body bgcolor=\"ffffff\" background=\"trb&bgr.gif\">";
+
+
+&header;
+&katalog;
+&footer;
+
+sub header {
+
+
+    $log = "/home/frogner/www/nl/fi/boers/log/sistelog";
+    $stamp = "/home/frogner/www/nl/fi/boers2/.timestamp";
+
+    open (STAMP, "$stamp") || die "Død\n";
+    while (<STAMP>) { $dato = $_;};
+    close (STAMP);
+
+    print "Content-type: text/html\n\n";
+
+    print "
+<html>
+<head>
+<title>
+$title
+</title>
+</head>
+
+$body_tag
+
+<a href=\"/\"><img src=\"/img/sn_horisont_liten.gif\" border=\"0\" align=\"right\"></a>
+
+
+<h1>$kat</h1>
+
+Data er sist mottatt fra tekst-TV $dato. Kursene <i>kan</i> være inntil 15 minutter forsinket i forhold til børsen.
+<p>
+
+Delphi Economics garanterer ikke i noen forstand for informasjonens
+korrekthet og tar ikke ansvar for posisjoner tatt på bakgrunn av denne
+informasjonen.<p>
+
+<i>Kilde: Oslo Børs, NRK Tekst-TV</i><p>
+
+
+
+<table border=1 width=450>
+<tr>
+<th>Name</th><th>VPnr</th><th>Last</th><th>Volume</th><th>Bid</th><th>Ask</th>
+</tr>
+";
+
+    return;
+}
+
+sub katalog{
+
+
+  @NAMES = split(/\+/,$KAT{$kat});
+
+  foreach $_ (@NAMES) {
+    @FIRM = split(/,/);
+
+    @TMP = split(/,/,$AKSJER{$FIRM[0]});
+    @KJOP = split(/:/,$TMP[1]);
+    @SELG = split(/:/,$TMP[2]);
+    @PRIS = split(/:/,$TMP[3]);
+    @VOLUM = split(/:/,$TMP[4]);
+
+
+    if ($FIRM[1] ne '') {
+    print "<tr><td>$FIRM[1]</td><td>$FIRM[2]</td><td align=right>";
+    printf "%8.2f", "$PRIS[1]";
+    print "</td><td align=right>";
+    printf "%8.2f", "$VOLUM[1]";
+    print "</td><td align=right>";
+    printf "%8.2f", "$KJOP[1]";
+    print "</td><td align=right>";
+    printf "%8.2f", "$SELG[1]";
+    print "</td></tr>";  
+}
+
+}
+
+}
+
+
+sub footer {
+
+    print "
+</table>
+<p>
+<hr>
+
+
+<a href=\"/\"><img src=\"/img/sn_horisont_liten.gif\" border=\"0\" align=\"right\"></a>
+
+
+</body>
+</html>
+
+";
+
+    return;
+}
+
+
+dbmclose(%AKSJER);
+
+close FIL;
+	

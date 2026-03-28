@@ -1,0 +1,279 @@
+<html>
+<head>
+ <title>Internett og elektronisk legitimasjon</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body bgcolor="#ffffff">
+
+
+
+<a href=cw954312.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/me/ts/cw/gifs/up.gif></a> <a href=cw954314.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a> <a href=/me/ts/cw/CW.html><img align=middle alt="[CW hjemmeside]" src=/me/ts/cw/gifs/cw.gif></a>  
+<hr>
+
+
+
+<h1>Internett og elektronisk legitimasjon</h1>
+
+<blockquote><h4>
+<hr>
+Det er bare et spørsmål om tid før de første svindelsakene dukker opp over
+Internett, skriver Jon Ølnes ved <a href=http://www.nr.no/>Norsk Regnesentral</a>.<hr>
+</h4></blockquote>
+Bruk av skikkelige krypteringsmetoder er absolutt nødvendig for sikker
+kommunikasjon. Det  er bare den haken at påstander av typen "... og
+sikkerhetsproblemene er løst ved at alt krypteres/signeres" er altfor
+lettvinte. De fleste foreslåtte eller implementerte tjenester for
+betalingsformidling på Internett er allerede sikrere enn det som ofte
+aksepteres for "vanlig" handel (skrekkeksempelet er belastning av  kredittkort
+over telefon). Samtidig er det ingen grunn til å akseptere  annet enn løsninger
+som reduserer muligheten for svindel til tilnærmet null. Begrensningene er
+nemlig ikke teknologien, men reglene for hvordan den brukes. Her svikter
+dessverre de fleste av dagens  løsninger. Det er kanskje ikke så rart at det
+tas snarveier når målet er å kapre markedsandeler så fort som mulig. Når
+elektronisk handel også skal omfatte betalingsformidling, er det  klart at
+sjansene for svindel og misbruk blir store. Det er bare et spørsmål om tid før
+de første svindelsakene dukker opp over Internett.
+<h3>
+Om tillit</h3>
+Et sikkert system må alltid bygges ut fra en eller flere komponenter (tekniske
+deler, rutiner, mennesker, ...) som en stoler ubetinget på.  En vanlig feil er
+å designe systemet uten  å identifisere disse  komponentene, eller å stille for
+svake krav til dem. Dersom en bygger et ellers sikkert system på tillit til noe
+som en ikke burde stole på,  kan en regne med  å få seg noen overraskelser før
+eller seinere -- en  kjede er som kjent ikke sterkere enn det svakeste leddet 
+<h3>
+Nettsikkerheten</h3>
+Elektronisk handel har krav til konfidensialitet, integritet og  sporbarhet --
+informasjon skal holdes skjult for uvedkommende, informasjon skal være korrekt,
+og det skal være mulig  å spore hendelser på en sikker måte. Det siste er
+aktuelt f.eks. når kunden   ønsker  å klage, eller når en leverandør skal
+bevise at en kunde  virkelig har sendt en bestilling (og ikke betalt). Noen
+løsninger, for eksempel Netscapes system basert på Secure Sockets
+Layer-protokollen, sikrer bare kommunikasjonslinjene mellom kunde og
+leverandør ved hjelp av kryptering. Dette beskytter bare mot angrep fra
+utenforstående. Både sender og mottaker har adgang til alle data i ubeskyttet
+klartekst, og har i prinsippet mulighet til  å endre eller fabrikkere
+meldinger. Sporbarheten blir for dårlig, og konfidensialiteten  blir heller
+ikke tilfredsstillende tatt vare på. <p>
+Jeg ser for meg at en del Internett-leverandører kan få problemer den dagen en
+kunde beskylder dem for å ha manipulert med en betalings-melding, og det eneste
+leverandøren har å vise til er en dårlig sikret, klartekst loggfil. Elektronisk
+handel foregår ved hjelp av meldingsutveksling, og sikkerheten må integreres
+med meldingene selv. Dersom leverandøren i eksempelet over kunne hente fram fra
+loggen en melding med digital  signatur fra kunden, burde saken være ute av
+verden med en gang. 
+<h3>
+Digitale signaturer </h3>
+Basisteknologien her er offentlig-nøkkel-kryptering. Litt forenklet har hver
+bruker en privat krypteringsnøkkel som bare brukeren selv skal ha adgang til,
+og en tilhørende offentlig nøkkel som hvem som  helst skal ha adgang til. En
+bruker signerer en melding ved å kryptere  med den private nøkkelen, og for å
+verifisere signaturen, må en få tak  i riktig offentlig nøkkel, og sjekke at
+denne gir riktig resultat ved  dekryptering. Innholdet i en signert melding kan
+ikke endres uten at  det blir oppdaget ved dekrypteringen.
+Offentlig-nøkkel-kryptering kan også brukes til selektiv  konfidensialitet i en
+melding. La oss f.eks. si at meldingen er en varebestilling som skal belastes
+et kort. Da kan en konstruere meldingen slik at det er skjult for kortselskapet
+hva som er bestilt,  og skjult for leverandøren hvilket kortnummer som brukes,
+selv om  begge deler er inkludert i meldingen.<p>
+Problemet er at det er lite som hindrer meg i å lage et nøkkelpar, og  si at
+"her er den offentlige nøkkelen til Stein Rik-Mann - alle  meldinger signert
+med den tilsvarende private nøkkelen, stammer fra  ham". Parallellen i
+"papirverdenen" er en håndskrevet signatur, der en ikke har noe å sammenligne
+med. I prinsippet kan hvem som helst ha  skrevet under, med hvilken som helst
+håndskrift. I papirverdenen kan en løse problemet ved  å deponere en
+signaturprøve,  eller ved bruk av legitimasjon. Signaturprøver er ikke mulig
+for digitale signaturer, siden signaturverdien er avhengig av innholdet i hver
+enkelt melding. Men elektronisk legitimasjon finnes.
+<h3>
+Sertifikater</h3>
+En "elektronisk legitimasjon" kalles et sertifikat, og inneholder en  offentlig
+nøkkel, en identitet, gyldighetsperiode, utsteders navn og  eventuelt mer. Alt
+dette er signert med utstederens private nøkkel, dvs. at utstederen går god for
+informasjonen. Sertifikatet verifiseres  ved  å bruke utstederens offentlige
+nøkkel. Her er det dessverre at det altfor ofte kortsluttes. Både i
+papirverdenen og i den elektroniske verden kan i prinsippet hvem som  helst
+utstede legitimasjoner. Mens det i papirverdenen er innarbeidet  praksis på
+hvilke typer legitimasjoner som blir godtatt i forskjellige sammenhenger, later
+mange til å tro at i det elektroniske tilfellet er enhver legitimasjon like
+god.<p>
+Hvis jeg tropper opp i banken og legitimerer meg med visittkortet  eller
+id-kortet fra jobben -- utstedt av min arbeidsgiver -- ligger jeg  antagelig
+dårlig an. En personlig anbefaling fra en god venn hjelper bare overfor de som
+kjenner, og stoler på vennen min. I den  elektroniske verdenen tilsvarer dette
+sertifikater utstedt av arbeidsgiver og sertifikater utstedt av venner og
+kjente. Merk at "identiteten" i et sertifikat ikke behøver  å være personnavn.
+Ett alternativ kan være kontonummer, der den som har den private  nøkkelen, kan
+disponere kontonummeret i sertifikatet. Hvis anonymitet er et poeng (og det kan
+det ofte være), må en finne løsninger av denne  typen.
+<h3>
+PGP er ikke tilstrekkelig</h3>
+Programmet PGP (Pretty Good Privacy) er tatt i bruk i en del systemer  for
+elektronisk handel. PGP muliggjør kryptert og signert kommunikasjon mellom
+parter uten at det eksisterer noen som helst  infrastruktur for dette. Jeg kan
+utstede sertifikater til de personer jeg ønsker, fortrinnsvis etter å ha
+forsikret meg om at de opplysningene jeg signerer, er korrekte. På samme måte
+kan jeg sørge for  å få mine venner til  å signere sertifikater for meg selv.
+En  person som kjenner og stoler på en av mine venner, vil akseptere at
+vedkommende har gått god for meg, og vil igjen akseptere at jeg har gått god
+for de personene jeg har signert sertifikater for, osv. Det  hele blir som en
+kjede av personlige anbefalinger. Dette er en meget elegant løsning, men, som
+en kan se av analogiene over, dette holder ikke for betalingsformidling. Ved
+bruk av PGP stoler en på "hvem som helst", og selv personer en har stor tillit
+til, kan falle for sterke nok fristelser. Det er selvsagt mulig å presse PGP
+inn i et system der en velger bare å stole på enkelte sertifikatutstedere, men
+da finnes det bedre alternativer.            
+<h3>
+Sertifiseringshierarki     </h3>
+PGP er antagelig det beste en kan få til uten noen definert infrastruktur for
+sertifisering. For Internett er det faktisk definert hvordan en slik
+infrastruktur skal se ut, og den begynner så smått  å komme på plass.<p>
+ 	Toppnivået, IPRA (Internett Policy Registration Authority), er i drift. På
+nivået nedenfor skal det ligge PCAer (Policy Certification  Authority), med
+sertifikater utstedt av IPRA. En PCA definerer retningslinjer for
+sertifisering, som skal følges innenfor dens domene. Forskjellige PCAer kan
+definere retningslinjer for forskjellige formål og sikkerhetsnivåer. PCAene
+utsteder sertifikater for CAer (Certification Authority), som forplikter seg
+til følge PCAens retningslinjer. CAene kan i sin tur utstede sertifikater for
+andre, underordnede CAer, og for brukerne av systemet. Siden hvert
+underliggende ledd er sertifisert av nivået over, får en  også her, som i PGP,
+en kjede av sertifikater mellom to brukere. Her  stoler en imidlertid ikke på
+"hvem som helst", men på de som er involvert, med en grad av tillit gitt av
+retningslinjene til PCAene  som er involvert. I Norge er det opprettet en PCA
+for <a href=http://www.uninett.no>Uninett</a> (det norske nettverket for  universiteter, høgskoler og
+forskningsinstitutter). Dette er gjort  gjennom et prosjekt utført av Norsk
+Regnesentral for UNINETT A/S. PCAen  sertifiserer CAer for UNINETTs
+medlemsorganisasjoner, som i sin tur  sertifiserer ansatte og studenter. Målet
+er å sertifisere de fleste  personer innenfor UNINETTs medlems-organisasjoner.
+Mer informasjon kan  finnes på <a href=http://www.uninett.no/>http://www.uninett.no/</a>
+<h3>
+Utilstrekkelig sertifisering</h3>
+Den vanligste bruken av sertifiseringshierarkiet er generell sikring  av
+elektronisk post som definert i Inter-nett-standarden for PEM  (Privacy
+Enhanced Mail). Sertifisering gjennom organisasjoner (som  f.eks. i UNINETTs
+system), som igjen sertifiserer sine medlemmer/ ansatte, er korrekt
+"tjenestevei" for forretningskorrespondanse og  lignende. Ved visse former for
+elektronisk handel, f.eks. bestilling av varer  til organisasjonen, kan dette
+også godtas, men for elektronisk handel  generelt (spesielt hvis det innebærer
+betalingsformidling) er det  liten grunn til å stole på "mitt id-kort fra
+jobben". Jobben og jeg kan ha felles interesser i å svindle, i hvert fall hvis
+jeg har greid  å få etablert et "postkassefirma" inn i sertifiseringssystemet,
+og det  vil ofte være en lett innside-jobb  å bestikke sertifikatutstederen.
+UNINETTs system legger opp til høyere troverdighet enn mange andre PCAer, men
+har likevel ikke ambisjoner om  å dekke betalingsformidling  annet enn for
+eksperimentelle formål
+<h3>
+Offisielle utstedere</h3>
+I dagens "papirsamfunn" finnes en infrastruktur for legitimering,  basert på at
+det finnes regler for hvilke instanser som godtas som offisielle
+legitimasjonsutstedere, og for hvilke legitimasjoner som blir godtatt i
+forskjellige sammenhenger. Skikkelig sikkerhet i elektronisk handel, og
+spesielt i betalingsformidling, krever et  tilsvarende sertifiseringssystem, og
+tilsvarende regler. Poenget er at vi for elektronisk kommunikasjon, som i
+dagens  virkelighet, kan trenge en rekke legitimasjoner for forskjellige
+formål, og en rekke sertifikatutstedere: Jobben vil sertifisere meg for
+jobb-formål, og min private Internett-leverandør for privat bruk. Alle ansatte
+innen det offentlige sertifiseres med tanke på  saksbehandling basert på
+elektroniske dokumenter.  Det offentlige sertifiserer samtlige borgere for  å
+muliggjøre f.eks. elektroniske, signerte selvangivelser? Innen helsevesenet
+sertifiseres alt personale (i rollen som lege   eller annet) for å kunne sikre
+og signere f.eks. en elektronisk journal. Bankene (og posten) sertifiserer sine
+kunder, og knytter dette til rettigheter for bruk av konti. <p>
+Systemene vil kreve varierende grad av sikkerhet. For UNINETT brukes  det
+f.eks. en ren programvareløsning hos brukerne -- privat nøkkel er
+lagret/kryptert på disk, og det trengs et passord for å dekryptere. I mange
+andre tilfeller vil en ikke akseptere noe annet enn bruk av smartkort, der
+privat nøkkel aldri forlater kortet. Sertifisering av  brukerne er da knyttet
+til utlevering av smartkortet til riktig  person. Ulempen er at en må ha
+kortleser på arbeidsplassmaskinen, og  det er det ikke særlig mange som har i
+dag. Det stilles strenge krav til en sertifikatutsteder. For
+betalingsformidling kan en korrupt eller kompromittert sertifikatutsteder gjøre
+svært stor skade, og sikkerheten rundt drift av sertifiseringssystemet må være
+meget høy. Dette er definitivt en jobb for "proffene" -- de som vet hvordan et
+datasystem skal drives med skikkelig fysisk, logisk og administrativ sikkerhet
+-- ikke for tilfeldige Internett-leverandører eller    "handelssentraler" på
+nettet.
+<h3>
+Sikker autentisering</h3>
+En må skaffe sikkert bevis for identiteten til de personene en utsteder
+sertifikater til. For skikkelig sikkerhet    kommer en neppe utenom personlig
+(fysisk) oppmøte og legitimering. For et slikt formål kan en sertifikatutsteder
+operere med et nettverk av registreringsautoriteter. Dette tilsvarer bankkort,
+som utstedes sentralt, men man kan måte opp i en hvilken som helst bankfilial
+for å be om utstedelse.<p>
+En sertifikatutsteder bør være en TTP (Tiltrodd Tredje-Part) som ikke selv har
+preferanser mot den ene eller den andre parten ved en transaksjon. Mange
+sertifiseringssystemer vil ligge utenfor Internetts sertifiseringshierarki. Ved
+kryss-sertifisering mellom systemene, og  bruk av felles sertifikatformat, kan
+imidlertid et sertifikat (og  dermed en signatur) verifiseres overalt i et
+framtidig globalt system  - uten at det betyr at en stoler p å en signatur
+overalt.       Sikker autentisering er det vanskeligste punktet. Mange systemer
+i dag  vil utstede sertifikater basert p å at brukere sender over et
+egensignert "prototype sertifikat" i en e-post melding. Selv i et  forholdsvis
+lav-sikkerhet system som UNINETTs tjeneste ble dette  vurdert som for usikkert.
+Forespørsler over telefon eller papirbrev er  heller ikke sikkert nok, men et
+system som baserer seg p å flere  forskjellige "kanaler", og med
+"tilbakeringing" og tilsvarende  prosedyrer, kan gjøres forholdsvis sikkert
+(men blir nødvendigvis  tungvint).
+<h3>
+Sertifisering for betalingsformidling </h3>
+På Internett bør betalingsformidlere bare akseptere sertifikater utstedt under
+PCAer med tilfredsstillende sikkerhetskrav, eller av tilsvarende utstedere
+utenom (men kryss-sertifisert mot) Internett. Det kan tenkes at det blir
+opprettet helt nye instanser for  sertifisering, f.eks. av det offentlige for
+utstedelse av elektroniske "borgerkort". Med god nok sikkerhet kan slike
+utstede sertifikater som er gyldige for de fleste formål.       For
+betalingsformidling er det ellers nærliggende å tenke på bankene. Merk at
+banker uten videre kan utstede sertifikater til sine eksisterende kunder, siden
+disse allerede er legitimert når kundeforholdet ble opprettet. Smartkort eller
+disketter med private  nøkler kan sendes kundene med rekommandert post eller
+utleveres ved  personlig frammøte, på samme måte som bankkort. En bank passer
+også i en TTP-rolle for betalingsformidling, i hvert fall der banken selv ikke
+er kjøper eller selger. Samtidig har banken  en egeninteresse i høy sikkerhet,
+for å unngå å bli svindlet. I øyeblikket er kreditt-/debet-kortselskapene de
+mest aktive innen etablering av betalingssystemer på Internett. Det er flere
+grunner til å arbeide for at disse ikke skal bli enerådende: <p>
+Kortselskapene er interessert i størst mulig volum, mens de som regel velter
+tapene ved svindel over på kunder og leverandører. De vil derfor lett kunne
+akseptere sikkerhetsløsninger som ikke er fullgode (jfr. dagens løsninger for
+belastning av kort). Transaksjonskostnadene ved bruk av kort er store -- det
+blir dyrt å betale sin elektroniske avis med kredittkort. Samtidig er
+belastning av kort over Internett en fornuftig  betalingsmåte i mange
+sammenhenger, ikke minst fordi kort er akseptert  internasjonalt. Sikkerheten
+blir imidlertid bare god nok dersom  kortselskapene sørger for skikkelig
+sertifisering av sine kunder.<p>
+Et siste alternativ for betalingstjenester er elektroniske kontanter -- ved
+hjelp av avansert krypteringsteknologi kan en overføre "penger"  anonymt og
+sikkert. Elektroniske kontanter tilsvarer omtrent  forhåndsbetalte kort, der
+det trekkes et beløp for hver betaling. Av både tekniske og politiske grunner
+ser det ikke ut til at dette vil bli  annet enn en nisjeløsning for betaling
+over nett.<p>
+Sikkerheten i betalingssystemer på Internett (og andre nett) er avhengig av
+skikkelig legitimasjon. Legitimasjon, i form av offentlig-nøkkel-sertifikater,
+må utstedes av betrodde instanser med  høy sikkerhet, og med svært sikre
+rutiner for autentisering av  "kundene".<p>
+Dessverre er tendensen heller at sikkerhetsløsningene som tas i bruk  ikke
+holder mål. Det er verdt å merke seg at selv disse gir en  sikkerhet som er
+svært mye bedre enn det som aksepteres for "vanlig"  betaling -- som å
+etterlate seg avtrykk av <a href=http://www.internex.net/visa/Cards.html>VISA</a>-kortet på tilfeldige  restauranter og butikker,
+eller bestille varer og belaste  kredittkortet over telefon. Poenget er at den
+samme teknologien gjør det mulig å lage systemer som nesten vil eliminere
+mulighetene for  svindel. Begrensningene ligger ikke i teknologien, men i
+konvensjonene  for hvordan den brukes.       <p>
+For mer informasjon om betalingssystemer på Internett, se for eksempel
+<a href=http://www.w3.org/hypertext/WWW/Payments/roadmap.html>http://www.w3.org/hypertext/WWW/Payments/roadmap.html</a> <p>
+
+<p>
+<a href=cw954312.html><img align=middle alt="[Forrige artikkel]" src=/CW/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/CW/gifs/up.gif></a> <a href=cw954314.html><img alt="[Neste artikkel]" align=middle src=/CW/gifs/next.gif></a> 
+
+
+<pre><hr><a href=/cgi-bin/imagemap/CWartmap><img alt="[Image map not available]" src=/CW/gifs/artmap.gif ismap></A><hr></pre>
+<h5>
+<address>
+Artikkel automatisk generert, 16/11-95, kl. 19.22 <a href=/CW/kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

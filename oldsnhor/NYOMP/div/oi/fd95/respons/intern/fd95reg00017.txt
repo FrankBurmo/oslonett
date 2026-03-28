@@ -1,0 +1,11 @@
+overskrift: dall dall
+kommentar: jeg er forsker da forsker sier jeg jo hører dere ikke forsker forsker ! dall dall 
+intern: nei
+anonym: ja
+firma: knus en stein a/s
+navn: krøsli algetor
+stilling: forsker forsker forsker sier jeg forsker
+adresse: mammaveien
+base: fd95
+maskin: 
+regdato: 20.10.95 14:44:12

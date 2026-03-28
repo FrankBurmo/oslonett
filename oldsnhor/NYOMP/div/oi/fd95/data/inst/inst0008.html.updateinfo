@@ -1,0 +1,11 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="8"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Høgskolen i Telemark"` -->
+<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value="http://www.tmlh.no/grafikk/hit/hitlogo/hit1.gif"` -->
+<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value="http://www.hit.no"` -->
+<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Høgskolen i Telemark har mer enn 4100 studenter og drøye 400 ansatte. Høgskolen har studiesteder i Rauland, Notodden, Bø, Skien og Porsgrunn. Forskning og utvikling er en vesentlig del av virksomheten som ellers omfatter bl.a allmenn- og førskolelærerutdanning, faglærerutdanning innen ulike områder, ingeniørstudier og sivilingeniørstudier, sykepleierutdanning og utdanning til barnevernspedagog, folkekulturstudier og studier innen forming, økonomi og administrasjon, informatikk, natur- og miljøvernfag, idretts- og friluftslivsfag, kulturarbeid, matematikk, examen philosophicum, språkfag, forfatterstudium og historie. Høgskolen i Telemark tilbyr dessuten utdanning opp til hovedfagsnivå samt doktorgradsutdanning innen enkelte fagområder. ` -->
+<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``Høgskolen i Telemark satser mye på FD '95. Dette omfatter bl.a temautstilling og seminar i Fylkesgalleriet om forskning innen skapende arbeid, åpne publikumsdager ved avdelingene i Bø og i Porsgrunn, seminarer og kurs rettet mot næringslivet, seminar om natur- og miljøvernstudier, miljøfilosofisk seminar samt målrettede framstøt overfor media om allmennt interessante forskningsprosjekter. Det er opprettet nærmere kontakt med bl.a fylkeskommunen og Telemark krets av Kommunenes Sentralforbund om forskning i regionen. Forskningsstiftelsene Telemarksforsking-Notodden, Telemarksforsking-Bø og Tel-Tek i Porsgrunn er med i markeringen av Forskningsdagene '95.` -->
+<!-- replace `<option(.*Høgskole)` with `<option selected`` -->

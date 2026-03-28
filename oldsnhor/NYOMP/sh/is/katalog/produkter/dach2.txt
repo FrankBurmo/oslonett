@@ -1,0 +1,60 @@
+
+2.1.3.DACHSTEIN ALPIN STØVLER
+2.1.3.25021#DZR. Sr. konkuranse støvel#Str. 37,5-47,0#2716#DCRAC.gif
+2.1.3.25081#DZ TEAM. Jr. konk. støvel#Str. 34,5-42,5#1590
+2.1.3.25111#Pro 66. Lady Sport støvel m/damelest#Str. 34,5-42,5#1650#PRO66.gif
+2.1.3.V-LINE
+2.1.3.25211#V 4. Sporty og komfortabel m/click & go#Str. 37,5-48,0#1990
+2.1.3.25241#V2 Lady. Sporty og komfortabel#Str.34,5-42,5#1650#V2LADY.gif
+2.1.3.LIGHT & CLEAN
+2.1.3.25321#Light & Clean Men. Komf. støvel m/vaskbar innerstøvel#Str. 37,5-47,0#1190#L&Cmen.gif
+2.1.3.25331#Light & Clean Lady. Komf. støvel m/vaskbar innerstøvel#Str. 34,5-42,5#1190#L&Clady.gif
+2.1.3.DUAL COMFORT LINE
+2.1.3.25531#DC KIDS. Komfortabel spennestøvel for barn m/click & go#Str. 31,5-35,0#790#dckids.gif
+2.1.3.23351#Bambi. Komfortabel barnestøvel#Str. 24,0-28,0#560#bambi.gif
+2.1.3.FJELLSTØVLER
+2.1.3.26900#M.S. BOOT varme vanntette vinterboots#Str. 37,0-47,0#890#MSBOOT.gif
+2.1.2 KNEISSEL SLALOMSKI#slalom.gif
+2.1.2.55011#M 1 SSL racing storslalom#190cm-210cm#2990
+2.1.2.55031#M 3 SL racing slalomski#180cm-207cm#2990
+2.1.2.55041#M 5 Mogul SL racing kuleski#170cm-203cm#2990
+2.1.2.55021#WS M 1 Team junior racing ski#130cm-175cm#1690
+2.1.2.55151#ERGO135 S NYHET super allroundski#199cm ,183cm,161cm#2440
+2.1.2.55051#WS QR 99 frikjøringsski#175cm-207cm#2940
+2.1.2.55061#WS QR 77 frikjøringsski#175cm-203cm#2525
+2.1.2.55071#WS QR 55 allroundski#170cm-200cm#1668
+2.1.2.55081#WS QR 33 allroundski#165cm-185cm#1314
+2.1.2.55101#WS QR 13#140cm-175cm#1090
+2.1.2.54091#WS QR 11#100cm-140cm#695
+2.1.2.54091#WS QR 11#150cm-160cm#730
+2.1.2.54091#WS QR 11#165cm-180cm#797
+2.1.2.55131#Innsbruck Super 170cm-190cm#1150
+2.1.2.75031#Big foot Who inkl.bag#1490#bigfoot.gif
+2.1.1.Konkuranse langrennski
+2.1.1.65011#Ultra P klassisk 190cm-210cm#2100#langren.gif
+2.1.1.65021#Ultra K klassisk 190cm-210cm#2100#langren.gif
+2.1.1.65031#Ultra S Cap skate 181cm-196cm#2100#langren.gif
+2.1.1.65041#WM C klassisk 190cm-210cm#1490#langren.gif
+2.1.1.65051#WM S skate 181cm-196cm#1590#langern.gif
+2.1.1.65061#WM S Jr. skate 170cm-180cm#1190#langren.gif
+2.1.6.Tillegsutstyr
+2.1.6.33171#Kneissl skipose (2 par)#400
+2.1.6.8102#Combi bag#450
+2.1.6.8101#Racing team bag#650
+2.1.6.8103#Støvel bag#300
+2.1.6.8104#Ryggsekk#400
+2.1.6.ALPINA SLALOMBRILLER
+2.1.6.73878-30#Alpina Slalombriller Quatroflex Virus P#590
+2.1.6.71819-80#Alpina Slalombriller Doubleflex Proxima SL#398
+2.1.6.74085-40#Alpina Slalombriller Doubleflex Lady SL#350
+2.1.6.72238-60#Alpina Slalombriller Doubleflex Quasar SL#345
+2.1.6.74277-30#Alpina Slalombriller Singelflex Targa SL#270
+2.1.6.74651-10#Alpina Slalombriller Singelflex Team barnebriller#190
+2.1.6.ALPINA SKIBRILLER
+2.1.6.78365-30#Alpina Twin-swing sportsglass#595
+2.1.6.78944-00#Alpina Mega-swing sportsglass#540
+2.1.6.76350-10#Alpina Gecko sportsglass#530
+2.1.6.76715-80#Snake sportsglass#450
+2.1.6.82350-20#Moscitoo sportsglass#430
+2.1.6.77581-80#Junior Swing sportsglass#195
+

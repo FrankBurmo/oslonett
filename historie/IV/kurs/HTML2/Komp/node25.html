@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3O//DTD W3 HTML 2.0//EN">
+<!- Converted with LaTeX2HTML 0.6.4 (Tues Aug 30 1994), Oslonett version : Dec 7, 1994 by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds ->
+<P>
+<HEAD>
+<TITLE>4.2 CERN httpd og htimage programmet</TITLE>
+<meta name="description" value="4.2 CERN httpd og htimage programmet">
+<meta name="keywords" value="Komp">
+<meta name="resource-type" value="document">
+<meta name="distribution" value="global">
+</HEAD>
+<BODY><P>
+ <BR> <HR><A NAME=tex2html475 HREF="node26.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/graphics/l2h/next.gif"></A> <A NAME=tex2html473 HREF="node23.html"><IMG ALIGN=BOTTOM ALT="up" SRC="/graphics/l2h/up.gif"></A> <A NAME=tex2html467 HREF="node24.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="/graphics/l2h/previous.gif"></A> <A NAME=tex2html477 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="/graphics/l2h/contents_motif.gif"></A> <A NAME=tex2html478 HREF="node49.html"><IMG ALIGN=BOTTOM ALT="index" SRC="/graphics/l2h/index_motif.gif"></A> <BR>
+<B> Neste:</B> <A NAME=tex2html476 HREF="node26.html">4.3 Imagemaps i Netsite </A>
+<B>Opp:</B> <A NAME=tex2html474 HREF="node23.html">4 Imagemaps</A>
+<B> Forrige:</B> <A NAME=tex2html468 HREF="node24.html">4.1 NCSAs imagemap program</A>
+<BR> <HR> <P>
+<H2><A NAME=SECTION00062000000000000000>4.2 CERN httpd og htimage programmet</A></H2>
+<P>
+CERNs httpd Web server har sitt eget program for imagemapping, <tt>htimage</tt>.
+Merk dog at det ikke er noe i veien for at man installerer NCSAs <tt>imagemap</tt>
+program i CERNs server - dette programmet har litt rikere funksjonalitet
+når det gjelder å beskrive områder i bildet som skal kunne klikkes.
+<P>
+<A NAME=334>&#160;</A>
+CERN serveren opererer ikke med en indireksjonstabell slik NCSA gjør, men
+gjør det mulig å nevne filnavnet på konfigurasjonsfilene direkte i URLen.
+I CERN serveren er det nemlig rike muligheter for tekstlig remapping av navn
+vha <b>Map</b> direktivet, og det hadde f.eks. ikke vært noe i veien for at 
+man kunne skjule både <tt>cgi-bin</tt> og <tt>htimage</tt> programmet helt fra
+URLen, f.eks. slik:
+<P>
+<PRE> &lt;a href=&quot;/img/demobilde.conf&quot;&gt;
+  &lt;img src=&quot;bilde.gif&quot; ISMAP&gt;&lt;/a&gt;</PRE>
+<P>
+<A NAME=338>&#160;</A>
+<P>
+<BR> <HR>
+<P><ADDRESS>
+© Oslonett AS og Intervett AS, 03/05-95, 23:04:38
+</ADDRESS>
+</BODY>

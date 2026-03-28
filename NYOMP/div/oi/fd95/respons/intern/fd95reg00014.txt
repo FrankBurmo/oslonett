@@ -1,0 +1,18 @@
+overskrift: Vitenskapelige høgskoler ?
+kommentar: Hører ikke NVH, NTH og NLH inn under kategorien vitenskapelige høgskoler ? 
+publiseres: nei
+besvart: ja
+firma: Norges landbrukshøgskole
+navn: Ragnar Flengsrud
+stilling: Førsteamanuensis
+adresse: Institutt for bioteknologifag
+postnummer: 1432
+poststed: Ås
+epost: biorf@nlh10.nlh.no
+telefon: 64947710
+fax: 64947720
+regdato: 3.10.95 15:02:01
+revdato: 6.10.95 17:04:09
+intern: nei
+anonym: nei
+file: /local/www/div/oi/fd95/respons/intern/fd95reg00014.txt

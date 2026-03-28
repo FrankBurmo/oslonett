@@ -1,0 +1,107 @@
+<html>
+<head>
+ <title>IBM med ATM på ryggradsnettet</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+
+
+
+<a href=cw951213.html><img align=middle alt="[Forrige artikkel]" src=../../gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=../../gifs/up.gif></a> <a href=cw951215.html><img alt="[Neste artikkel]" align=middle src=../../gifs/next.gif></a> <a href=../../><img align=middle alt="[CW hjemmeside]" src=../../gifs/cw.gif></a>  
+<hr>
+
+
+
+<h1>IBM med ATM på ryggradsnettet</h1>
+
+<blockquote><h4>
+<hr>
+Stadig flere opplever at ryggradsnettet kneler under belastningen av tung
+lokalnett-trafikk. Eller at linjekapasiteten mellom HUB og en av
+tjenermaskinene blir en flaskehals. IBMs svar på slike problemer heter <a href=http://www.atmforum.com/>ATM</a> for
+Campus.<hr>
+</h4></blockquote>
+<i>Anders Løvøy</i><p>Mens de fleste konkurrentene konsentrerer seg om å lage
+100 Mbit/sekund LAN-løsninger, har IBM en fremtidsløsning leveringsklar. 100
+Mbit/sekund <a href=http://www.atmforum.com/>ATM</a> (Asynkron Transport Metode) over optisk fiber på
+ryggradsnettet, med mulighet til å dobble kapasiteten mellom belastede punkt.
+<p>
+	Kjernen i konseptet er 8260 Multiprotocol switching HUB, som støtter Token
+Ring, Ethernet, FDDI og nå også <a href=http://www.atmforum.com/>ATM</a>. Den nye 8260 <a href=http://www.atmforum.com/>ATM</a> Switch/Control Point
+modulen har 8 GB svitsje-kapasitet, og den nye 8260 <a href=http://www.atmforum.com/>ATM</a> 100 Mbit/sekund
+konsentrator modulen tar fire 100 Mbit/sekund <a href=http://www.atmforum.com/>ATM</a> linjer.<p>
+	Dersom du ønsker å kjøre <a href=http://www.atmforum.com/>ATM</a> helt ut til arbeidsplassen, tilbyr IBM 25
+Mbit/sekund over kategori 3 kabel helt fram til PCen, og de mener at den
+hastigheten holder.<p>
+	Programmerings-grensesnittene for <a href=http://www.atmforum.com/>ATM</a> er ikke standardiserte ennå, så det
+finnes lite programvare dedikert for <a href=http://www.atmforum.com/>ATM</a>. Det finnes en IP- standard for <a href=http://www.atmforum.com/>ATM</a>
+(RFC 1577) som IBM har implementert, men ingen løsning for protokoller som for
+eksempel IPX eller NETBIOS.
+<h3>
+LAN-emulering</h3>
+Siden nesten all interessant programvare kjører over tradisjonelle LAN,
+benytter IBM seg av LAN-emulering i sin <a href=http://www.atmforum.com/>ATM</a>-løsning. Emuleringen får det
+<a href=http://www.atmforum.com/>ATM</a>-svitsjede ryggradsnettet til å fremstå som et vanlig LAN for omverdenen.
+Programvaren som kjører mot tjenestemaskinene kan dermed forbli urørt.
+Resultatet blir at flaskehalsen i ryggradsnettet er fjernet.<p>
+	Forutsetningen er at en LAN-emulator-tjener settes på nettet. Denne tjeneren
+foretar adressekonvertering mellom MAC og <a href=http://www.atmforum.com/>ATM</a>. Det hele gjøres helt transparent
+for transportlaget (lag 3) i applikasjonene.<p>
+	De gamle nettene kobles til <a href=http://www.atmforum.com/>ATM</a>-nettet med 8281 LAN bridge. Den kan ta i mot
+to Token Ring eller Ethernet innganger, og har en 100 Mbit/sekund full duplex
+optisk fiber til 8260 HUB. Det er 8281 som utfører utvekslingen av
+adresseinformasjon med emulator-tjeneren. Tjeneren kobles til 8260 HUBen med
+full duplex 100 Mbit/sekund over optisk fiber.
+<h3>
+Full fart</h3>
+De arbeidsplassene som trenger full fart, kobles til en 8282 konsentrator. Den
+tar åtte eller tolv full duplex 25 Mbit/sekund arbeidsstasjoner over kategori 3
+kabel, og har en full duplex 100 Mbit/sekund over optisk fiber til 8260 HUB.<p>
+	Mens alle konkurrentene har ment at hastighetene i <a href=http://www.atmforum.com/>ATM</a>-nettverk skal starte på
+55 eller 100  Mbit/sekund, har IBM vært mer eller mindre alene om å mene at 25
+Mbit/sekund er tilstrekkelig. Derfor gned IBM seg i hendene da <a href=http://www.atmforum.com/>ATM</a>-forum
+godkjente denne standarden tidligere i år. I og med godkjenningen er IBM først
+ute med et skalerbart <a href=http://www.atmforum.com/>ATM</a>-konsept, der kategori 3 kabel kan benyttes frem til
+arbeidsplassen.<p>
+	Selv om arbeidsstasjonene kjører på 25Mbit/sekund, vil selve ryggradsnettet og
+linjen mellom konsentrator og HUB kjøre på full duplex 100 Mbit/sekund. Dette
+kan oppgraderes til 155 Mbit/sekund.<b><p>
+	-- I et klient/tjener-miljø blir det forskjellig belastning på tjeneren og
+arbeidsstasjonen. Derfor er det viktig å kunne tilby forskjellig hastighet til
+tjeneren og arbeidsstasjonen, mener Henri Souabers, Leder for utvikling av
+<a href=http://www.atmforum.com/>ATM</a>-svitsjen i den nye HUBen.</b><p>
+	-- Med full duplex 25 Mbit/sekund vil begrensningen ligge i arbeidsstasjonen
+en god tid framover, mener han.<p>
+	Selv om han kanskje har rett, hører det med til historien at før <a href=http://www.microsoft.com>Microsoft</a>
+lanserte Windows, var det ingen som forsto hva man skulle med så mye datakraft
+som det sitter i en vanlig PC i dag. Det er nok av de som mener at med mer
+kraft i nettverket, vil programvaren kreve mer. 
+<h3>
+Investere</h3>
+Det er ikke akkurat gratis å investere i <a href=http://www.atmforum.com/>ATM</a>-teknologi ennå. Løsningen er
+leveringsklar 24. mars, og for å komme i gang, må en mellomstor organisasjon
+regne med et utlegg på rundt 200.000 kroner. Spørsmålet er om dette er
+interessant for så mange. <p>
+	At noen tror på <a href=http://www.atmforum.com/>ATM</a>-teknologien og ikke har tid til å vente på lavere priser,
+er hevet over en hver tvil. For i det øyeblikket den første leveransen kommer
+til Mastemyr, går fem av de nye HUBene rett ut av huset igjen og inn i en
+større norsk bedrift.
+<p><i>VISER: Teknisk sjef Henri Souabers fra IBM viser frem 8260 Intelligent
+Switching HUB med den nye 8260 <a href=http://www.atmforum.com/>ATM</a> Switch Control Point. Oppå ligger en 8282
+<a href=http://www.atmforum.com/>ATM</a> konsentrator. (Foto: A. Løvøy)<p>
+ADAPTER: Markedssjef for <a href=http://www.atmforum.com/>ATM</a> adapterkort Dean Stockwell fra IBM viser frem en
+25 Mbit/sekund <a href=http://www.atmforum.com/>ATM</a> adapter for ISA. Prisen for denne er 3.500 kroner. Senere i
+<p>
+<a href=cw951213.html><img align=middle alt="[Forrige artikkel]" src=../../gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=../../gifs/up.gif></a> <a href=cw951215.html><img alt="[Neste artikkel]" align=middle src=../../gifs/next.gif></a> 
+
+
+<pre><hr><a href=../../maps/art.map><img alt="[Image map not available]" src=../../gifs/artmap.gif ismap></A><hr></pre>
+<h5>
+<address>
+Artikkel automatisk generert, 24/03-95, kl. 12.49 <a href=../../kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

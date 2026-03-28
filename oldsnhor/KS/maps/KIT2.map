@@ -1,0 +1,15 @@
+default http://www.kit.kommorg.no/
+
+#Kit hjem
+rect http://www.kit.kommorg.no/  0,0  117,36
+
+#Tips red.!
+rect http://www.kit.kommorg.no/html/tips.html 118,0  236,36
+
+#Søk i Kit
+rect http://www.kit.kommorg.no/html/soek.html 237,0  354,36
+
+#Hjelp
+rect http://www.kit.kommorg.no/html/hjelp.html 355,0  472,36
+
+

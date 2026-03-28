@@ -1,0 +1,11 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="47"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="NORGES GEOLOGISKE UNDERSØKELSE (NGU)"` -->
+<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Norges geologiske undersøkelse (NGU) er landets sentrale institusjon for kunnskap om berggrunn, mineralressurser, løsmasser og grunnvann. NGU er en forvaltningsbedrift underlagt Nærings -og energidepartementet, og er departementets faginstans i spørsmål innenfor sitt ansvarsområde. NGU har også status som Miljøverndepartementets temasenter for miljøgeologisk informasjon i Norge. Forskningen ved NGU er styrt i henhold til vår virksomhetside GEOLOGI FOR SAMFUNNET og har som hovedmål å bidra til økt verdiskapning innenfor mineralbasert industri til en balansert forvaltning av ressursene og til økonomiske besparelser ved offentlig utbygging. Vår forskning har derfor et anvendt preg i tillegg til den rene grunnforskningen. Vi forsker på historien bak jordens dannelse og dens sammensetning og naturlige tilstand, men er samtidig fokusert på anvendelsen av de geologiske ressursene. Visste du at mineralene kvarts og feltspat er de viktigste bestanddelene i melkegIasset ditt og at ren kvarts også benyttes i fiberoptikk og elektroniske produkter. Eller at kalkstein har flere anvendelsesområder enn noe annet mineral og benyttes som byggeråstoff i sement, i kjemisk og metallurgisk industri, som filler og, som tilsetning i landbruket. Anvendelsen av alle våre mineralressurser, inkludert industrimineraler, metaller, naturstein, sand/grus og grunnvann, stiller store krav til forskning på nye forekomster, renere produkter og bedret utnyttelse. ` -->
+<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``NGU STILLER MED EGEN BOD UNDER FELLESARRANGEMENT NORDRE. SE UNDER ARRANGEMENT I TRONDHEIM FOR MER INFO.` -->
+<!-- replace `<option(.*Offentlig institusjon)` with `<option selected`` -->

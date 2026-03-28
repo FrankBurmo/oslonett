@@ -1,0 +1,69 @@
+
+ FIL: ./org/info.html
+ SCRIPT: imagemap/ omp_orgmap"><img src="/gifs/on/org-h.gif" alt="[Organisasjoner]" border="0" ismap></a>
+
+ FIL: ./nl/mes/itexpo/old/expo94.html
+ SCRIPT: imagemap/ ITmap><img src=itexpo94.gif ismap></A>
+
+ FIL: ./nl/mes/itexpo/old/expo94v.html
+ SCRIPT: imagemap/ ITmap><img src=itexpo94.gif ismap></A>
+
+ FIL: ./nl/dt/kk/systemsikk/tmp.html
+ SCRIPT: imagemap/ expo-bunn><img alt="" src=/EXPO94/gifs/expo-bunn.gif ismap></A>
+
+ FIL: ./nl/dt/hw/sg/SG.html
+ SCRIPT: imagemap/ bottombar.map?387,39">WebFORCE</A> best&aring;r av f&oslash;lgende produkter:</H2>
+
+ FIL: ./nl/dt/hw/sg/default.html
+ SCRIPT: imagemap/ bottombar.map?387,39">WebFORCE</A> best&aring;r av f&oslash;lgende produkter:</H2>
+
+ FIL: ./sh/info.html
+ SCRIPT: imagemap/ omp_shmap"><img src="/gifs/on/kjop-h.gif" alt="[Kjøp og salg]" border="0" ismap></a>
+
+ FIL: ./sp/info.html
+ SCRIPT: imagemap/ omp_spmap"><img src="/gifs/on/sport-h.gif" alt="[Sport]" border="0" ismap></a>
+
+ FIL: ./me/fo/index.html
+ SCRIPT: imagemap/ omp_medmap><img src="/gifs/on/media-h.gif" alt="[Media - bokhandlere]" ismap border=0></a>
+
+ FIL: ./me/info.html
+ SCRIPT: imagemap/ memap"><img src="/gifs/on/media-h.gif" alt="[Media]" border="0" ismap></a>
+
+ FIL: ./me/ts/index.html
+ SCRIPT: imagemap/ omp_medmap><img src="/gifs/on/media-h.gif" alt="[Media - bokhandlere]" ismap border=0></a>
+
+ FIL: ./me/ts/cw/utg/9441/cw944101.html
+ SCRIPT: imagemap/ cwartmap><img alt="[Image map not available]" src=/me/ts/cw/gifs/artmap.gif ismap></A><hr>
+
+ FIL: ./me/bh/index.html
+ SCRIPT: imagemap/ omp_medmap><img src="/gifs/on/media-h.gif" alt="[Media - bokhandlere]" ismap border=0></a>
+
+ FIL: ./index.html
+ SCRIPT: imagemap/ topmap">
+
+ FIL: ./uh/info.html
+ SCRIPT: imagemap/ uhmap"><img src="/gifs/on/underh-h.gif" alt="[Underholdning]" border="0" ismap></a>
+
+ FIL: ./rl/op/OsloPRO.html
+ SCRIPT: imagemap/ osloprom_main><img alt="Klikkbart kart krever grafisk WWW klient" src=/NYOMP/rl/op/pictures/OP_mainmenu1.gif ismap border=0></a>
+
+ FIL: ./rl/op/index.html
+ SCRIPT: imagemap/ osloprom_ny><img alt="Klikkbart kart krever grafisk WWW klient" src=/NYOMP/rl/op/pictures/OP_mainmenu1.gif ismap border=0></a>
+
+ FIL: ./rl/info.html
+ SCRIPT: imagemap/ omp_rlmap"><img src="/gifs/on/reiseliv-h.gif" alt="[Reiseliv]" border="0" ismap></a>
+
+ FIL: ./help.html
+ SCRIPT: imagemap/ help_map"><img alt="" src="/gifs/on/oslonett-h.gif" ismap border=0></a>
+
+ FIL: ./div/info.html
+ SCRIPT: imagemap/ omp_divmap"><img src="/gifs/on/diverse-h.gif" alt="[Diverse]" border="0" ismap></a>
+
+ FIL: ./div/oi/index.html
+ SCRIPT: imagemap/ omp_divmap><img src="/gifs/on/diverse-h.gif" alt="[Diverse]" ismap border=0></a>
+
+ FIL: ./whatsnew.html
+ SCRIPT: imagemap/ whatsnew_map"><img alt="" src="/gifs/on/oslonett-h.gif" ismap border=0></a>
+
+ FIL: ./med/index.html
+ SCRIPT: imagemap/ memap"><img src="/gifs/on/media-h.gif" alt="[Media]" border="0" ismap></a>

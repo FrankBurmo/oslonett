@@ -1,0 +1,99 @@
+<html>
+<head>
+ <title>Internet, brannmurer og følsom informasjon.</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+
+
+
+<a href=cw950818.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/me/ts/cw/gifs/up.gif></a> <a href=cw950820.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a> <a href=/me/ts/cw/><img align=middle alt="[CW hjemmeside]" src=/me/ts/cw/gifs/cw.gif></a>  
+<hr>
+
+
+
+<h1>Internet, brannmurer og følsom informasjon.</h1>
+
+<blockquote><h4>
+<hr>
+I et leserbrev i Computerworld nr. 7 har signaturene "hth" og "amr" en del
+betraktninger omkring <a href=/EXPO94/In/>Internet</a>, brannmurer og informasjonssikring. Leserbrevet
+gir en god oversikt over de problemer man møter når konfidensialitet av data
+skal sikres. Deres konklusjon er at separate nett er nøvendig for å begrense
+tilgang til følsom informasjon. Etter min vurdering er enkelte av de påstandene
+som fremkommer om brannmurer ikke helt korrekte, og fortjener en kommentar.<hr>
+</h4></blockquote>
+1. "Bruken av brannmur vil derimot ikke kunne forhindre at den sensitive
+informasjonen blir sendt ut på <a href=/EXPO94/In/>Internet</a>".<p>
+	Det er fullt ut mulig å begrense hvilke tjenester man gjør tilgjengelig
+gjennom en brannmur. I det ekstreme tilfellet kunne man sette opp en brannmur
+slik at <i>kun </i>inngående post var tillatt, og at utgående FTP
+(put-kommandoen) ikke var tilgjengelig. Digital har et antall brannvegger
+mellon vårt interne nettverk og <a href=/EXPO94/In/>Internet</a> hvor FTP er begrenset på denne måten.
+Vi tillater imidlertid utgående post, fordi vi forutsetter at alle medarbeidere
+vurderer konfidensialitetet av informasjonen de behandler før de sender slik
+informasjon til utenforstående.<p>
+	Med mindre alle brukerne i nettverket er klarert for tilgang til alle data,
+kan man ha et tilsvarende problem også uten tilknytning til <a href=/EXPO94/In/>Internet</a>. I de
+fleste systemer i dag finnes det informasjon som ikke skal være tilgjengelig
+for alle brukere av systemet. Man kan avlytte nettverkstrafikk, slik at selve
+bruken av følsom informasjon kan representere en risiko. Enkelte har løst dette
+problemet med interne brannvegger i nettverket, slik at de som må ha tilgang
+til fortrolig informasjon arbeider innenfor en brannvegg, men kan gå ut på det
+"åpne" nettet for å hente den informasjon de trenger der.<p>
+2. "I tillegg er en brannmurløsning både kostbar og kompetansekrevende å
+installere og vedlikeholde".<p>
+	Brannmurer kan bygges på mange måter - fra en enkel "screening router" til et
+mer komplisert 2-maskinopplegg. De mer komplekse løsningene kan implementere en
+mer detaljert styring av tjenester, og gi bedre loggingsmuligheter. Den
+løsningen Digital leverer som en del av "Digital Firewalk Service", benytter en
+eller to maskiner. En slik løsning har vi benyttet oss av de siste syv årene
+for å beskytte vårt interne nettverk overfor <a href=/EXPO94/In/>Internet</a>.<p>
+	Oppsett av en effektiv brannmur krever en god del kompetanse og helst
+erfaring. Men når en brannmur først er satt opp korrekt, begrenser arbeidet seg
+til oppfølging av systemlogger. Selve brannmuroppsettet trenger ikke endring,
+med mindre man skal endre de tjenester som er tillatt. Som tommelfinger-regel
+regner vi med at ca. &eacute;n dag i uken vil medgå til gjennomgang av logger
+for en systemadministrator.<p>
+	Dette oppfølgingsarbeidet er viktig. Hvorfor skulle man investere i et
+sikringsiltak hvis man ikke følger opp at det virker? Man må veie dette mot
+kompleksitet (og kostnadene) med dupliserte nettverk - flere terminaler/PC pr.
+bruker, duplisert kabling, mer manuell dataoverføring og redusert
+produktivitet. Man må være oppmerksom på at delte nett virkelig må være fysisk
+(og ikke bare logisk) adskilt, fordi man ellers kan avlytte nettverkstrafikk.<p>
+	Det sentrale spørsmålet når man diskuterer sikkerhet i nettverk er å formulere
+en klar sikkerhetspolicy. Hvilke tjenester er tilgjengelig? Hvem skal kunne
+gjøre hva? Dette kan så sammen med vurderinger av dataenes følsomhet, verdi,
+krav fra lover, konsesjonsbetingelser m.m. danne grunnlaget for en konkret
+løsning. En slik sikkerhetspolicy må ha støtte fra ledelsen for å kunne ha noen
+effekt, og må følges opp med skolering av brukerne - hvorfor har man reglene? I
+motsatt fall risikerer man at enkelte brukere kommer opp med "kreative"
+uautoriserte løsninger.<p>
+	Hva er reellt sett en brannmur? Det er konkretiseringen av en sikkerhetspolicy
+i praksis. Den bygges mellom to nettverk for å fremtvinge at policy blir fulgt
+for så  vidt det angår utveksling av informasjon mellom nettverkene. I denne
+forbindelse er <a href=/EXPO94/In/>Internet</a> "just another network" som man må forholde seg til og
+ha en policy overfor.<p>
+	For en nærmere diskusjon av brannmurer kan man blant annet se på vår norske
+WWW-tjener: <a href=http://unix.digital.no/tjenester/Security/home.html>http://unix.digital.no/tjenester/Security/home.html</a><p>
+Man må imidlertid ikke glemme at media som bånd og disketter også fremdeles i
+denne nettverkenes tid kan brukes til lekkasje av informasjon. Det finnes liten
+statistikk om "datakriminalitet", men enkelte antar at så mye som 90 prosent er
+utført av legitime brukere.
+<i>BJøRN MYHRHAUG, BRANNVEGGMURER, <a href=/html/adv/DEC/DEC.html>Digital Equipment</a> CORP. AS.
+BJORNMY@NWO.DEC.COM</i><p>
+<i>LAILA B. CARLSEN</i><p>
+<p>
+<a href=cw950818.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/me/ts/cw/gifs/up.gif></a> <a href=cw950820.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a> 
+
+
+<pre><hr><a href=/me/ts/cw/maps/art.map><img alt="[Image map not available]" src=/me/ts/cw/gifs/artmap.gif ismap></A><hr></pre>
+<h5>
+<address>
+Artikkel automatisk generert, 24/02-95, kl. 10.35 <a href=/me/ts/cw/kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

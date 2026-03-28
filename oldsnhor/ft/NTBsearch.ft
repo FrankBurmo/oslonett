@@ -1,0 +1,243 @@
+#!/local/bin/perl
+# Søkeskript for Forvaltningstjenesten
+# Søker etter forekomster av subtekst i newsartikler under
+# $rot/$dag/$newsgruppe.
+$|=1;
+
+$ENV{'PATH'} = "/local/gnu/bin:/local/bin:/usr/bin:/bin";
+
+$rot = '/local/www/ihtml/ntb';
+$wwwroot = '/ihtml/ntb';
+
+%weekday = ('mandag', 1, 'tirsdag', 2, 'onsdag', 3, 'torsdag', 4,
+	    'fredag', 5, 'lørdag', 6, 'søndag', 7);
+
+%input = &getinput;
+
+&printheader("Søkeresultat");
+
+# Hvilke grupper som skal søkes i hver dag er angitt i <ul>-liste (?) i
+# filen(e) $rot/$dag/index.html. Åpner aktuell(e) index-fil(er) og
+# finner disse gruppene. Lagrer dem i %okgruppe til senere bruk
+@dag = ($input{'dag'}) || ('mandag', 'tirsdag', 'onsdag',
+			 'torsdag', 'fredag', 'lørdag', 'søndag' );
+foreach $dag (@dag) {
+    open(INDEX, "$rot/$dag/index.html") || next;
+    while (<INDEX>) {
+	$okgruppe{$dag.$1} = 1 
+	    if m!<li>.+/ihtml/ntb/$dag/(.+)/index.html!i;
+    }
+    close INDEX;
+}
+
+$input{'gr'} = '\D*' unless length $input{'gr'};
+$input{'dag'} = '.*' unless length $input{'dag'};
+
+$b = "\\b" if ($input{'heleord'} && $input{'heleord'} !~ /^nei$/);
+
+$uttrykk = $input{'subtekst'};
+if (length $uttrykk) {
+    $uttrykk =~ s/([^\w, ])/\\$1/g;
+    $uttrykk =~ s/\s*,\s*/|/g;
+    $uttrykk =~ s/\s+eller\s+/|/ig;
+    $uttrykk =~ s/\|/$b|$b/g;
+    $uttrykk = $b . $uttrykk . $b;
+}
+
+$follow = "-follow" if $input{'dag'} eq 'idag';
+
+close(STDERR);
+open(STDERR, ">/dev/null");	# Kast evt. feilmeldinger fra `find`
+@files = grep(m!^$rot/$input{'dag'}/$input{'gr'}\D*/\d+\.html?$! &&
+	      !/index.html?\Z/,
+	      split(/\n/, `find $rot/ $follow -print`));
+
+
+ FILE: 
+    foreach $file (@files) {
+	$inode = (stat($file))[1];
+	next FILE if ($seen{$inode}++); # Unngå dobbeltoppføringer
+
+	# Det skal kun søkes i et utvalg grupper for hver dag...
+	($dag, $gr) = ( $file =~ m!^$rot/([^/]+)/(.+)/! );
+	next unless $okgruppe{$dag.$gr};
+	
+	open(F, $file) || next;
+
+	undef($/);
+	$content = <F>;
+	close F;
+	push(@match, $file) if $content =~ /$uttrykk/i;
+    }
+
+
+$treff = @match;
+print "<hr>\n<h2>Søk etter '$input{'subtekst'}' ga $treff treff.</h2>\n"
+    if length $input{'subtekst'};
+
+
+local (@datakey);
+foreach $f (@match) {
+    $gr = &group($f);
+    $gr =~ s/(\S+).+/$1/;
+    ($dag) = ( $f =~ m!$rot/([^/]+)! );
+    $key = $gr . $weekday{$dag} . &title($f);
+    push(@datakey, $key);
+}
+sub bygroup { $datakey[$a] cmp $datakey[$b]; }
+@match = @match[sort bygroup $[ .. $#datakey];
+
+foreach $filename (@match) {
+    $group = &group($filename);
+    if ($group ne $lastgroup) {
+	print "<h2>$group</h2>\n";
+	$lastgroup = $group;
+    }
+
+    ($url = $filename) =~ s/^$rot/$wwwroot/;
+    print qq!<a href="$url">!, &title($filename), "</a><br>\n";
+}
+
+&printfooter;
+exit 0;
+
+
+sub printheader {
+    local($title) = $_[0];
+
+    $heleordja = "checked" 
+	if ($input{'heleord'} && $input{'heleord'} !~ /^nei$/i);
+    print "Content-type: text/html\n\n";
+
+    print "<html>\n<head>\n <title>$title</title>\n</head>\n";
+    print "<body bgcolor=\"#ffffff\">\n<h1>$title</h1>\n\n";
+    print qq!<form method="POST" action="$ENV{'SCRIPT_NAME'}">!;
+    print "Dette er et søkegrensesnitt mot siste ukes nyhetsmeldinger ";
+    print "fra NTB.<p>\n";
+    print "<blockquote><b>\n";
+    $dag = $input{'dag'} || "hele uken";
+    print "Søker etter nyheter fra $dag.<br>\n";
+    if (length $input{'gr'}) {
+	$gr = &group("$rot/idag/$input{'gr'}/foo"); # '/foo' fjernes av &group
+	$gr =~ s/,?\s*\S+dag.+//;
+	$gr =~ s/^$rot//;
+	$gr = $input{'gr'} unless $gr;
+	print "Søker kun etter nyheter fra gruppen \"$gr\".<br>\n";
+    } else {
+	print "Søker etter nyheter fra vilkårlig gruppe.<br>\n";
+    }
+    print <<EOT;
+</b></blockquote>
+
+Gi et søkeuttrykk: <input name="subtekst" size="60" value="$input{'subtekst'}">
+<input type="hidden" name="gr" value="$input{'gr'}">
+<input type="hidden" name="dag" value="$input{'dag'}">
+
+<blockquote>
+<b>Søk kun etter hele ord: <input type="checkbox" name="heleord" $heleordja></b>
+</blockquote>
+<input type="submit" value="  Søk  ">
+<input type="reset" value="  Slett søkefeltet  ">
+</form>
+<p>
+
+Dersom du vil søke etter nyheter fra andre dager eller grupper, bruk
+<a href="$wwwroot/search.html">det generelle søke-skjemaet</a>.
+
+EOT
+}
+
+
+sub printfooter {
+    @tm = localtime(time);
+    $dato = sprintf("%d.%d.%d, kl. %d:%d:%d",
+		    $tm[3], $tm[4]+1, $tm[5], @tm[2,1,0]);
+    print <<EOT;
+
+<p><hr>
+<a href="/ihtml/ntb/search.html">
+ <img alt="[Let i artiklene]" src="/ihtml/ntb/gifs/search.gif"></a>
+<a href="/ihtml/ntb/hjelp.html">
+ <img alt="[Hjelp]" src="/ihtml/ntb/gifs/help.gif"></a>
+<hr>
+
+<address>Automatisk generert $dato</address>
+</body>
+</html>
+EOT
+}
+
+
+
+sub group {
+    local($file) = $_[0];
+    local($title);
+
+    $file =~ s!/[^/]+$!!;
+    return $title{$file} if length $title{$file};
+    open(F, "$file/index.html") || return $file;
+
+    while (<F>) {
+	if ( m!<title>\s*(.+)\s*</title>!i ) {
+	    $title = $1;
+	    $title =~ s/^ntb:\s*//i;
+	    close F;
+	    $title{$file} = $title;
+	    return $title;
+	}
+    }
+}
+
+
+sub title {
+    local($file) = $_[0];
+
+    open(F, $file) || return $file;
+    while (<F>) {
+	if ( m!<title>\s*(.+)\s*</title>!i ) {
+	    close F;
+	    return $1;
+	}
+    }
+    return $file;
+}
+
+
+
+
+sub getinput {
+# Leser inn data (med method GET eller POST) og plasserer dem i en
+# assosiativ array, der nøklene i array'en er feltnavnene
+
+    local($i, $name, $value, $data, @data, %input);
+
+    if ($ENV{'REQUEST_METHOD'} eq "GET") {
+        $data = $ENV{'QUERY_STRING'};
+    } elsif ($ENV{'REQUEST_METHOD'} eq "POST") {
+        read(STDIN, $data, $ENV{'CONTENT_LENGTH'});
+    } else {
+        return undef;
+    }
+
+    # Del opp input-data i felter ved alle forekomster av '&'.
+    @data = split(/&/, $data);
+
+    for $i (0 .. $#data) {
+
+        # Pluss oversettes til SPC
+        $data[$i] =~ tr/+/ /;
+
+        # Alt til venstre for første "=" er feltnavn, resten er felt-verdi
+        ($name, $value) = split(/=/, $data[$i], 2);
+
+        # Erstatt forekomster av %<hexkode> med tilsvarende tegn
+        $name =~ s/%(..)/pack("c",hex($1))/ge;
+        $value =~ s/%(..)/pack("c",hex($1))/ge;
+
+        # Hvis kun whitespace er sendt med ignoreres dette name-value paret
+        next if $value !~ /\S/;
+
+        $input{$name} = $value;
+    }
+    %input;                     # returnerer den assosiative array'en
+}

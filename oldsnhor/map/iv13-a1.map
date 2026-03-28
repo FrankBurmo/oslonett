@@ -1,0 +1,12 @@
+#mapfil for fisker...
+
+#fisk1
+rect 0,33 42,54 http://www.uio.no/
+
+#fisk2
+rect 7,58 77,78 http://www.uit.no/
+
+#fisk3
+rect 69,5 110,30 http://www.unit.no/
+
+#default http://www.uit.no/~kjellmi

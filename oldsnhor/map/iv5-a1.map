@@ -1,0 +1,5 @@
+#joda her kommer rektangelet
+rect http://www.ub.uit.no/chess/ 53,72 120,111
+#og en til
+rect http://bilbo.thh.no/meny.htm 174,45 279,103
+default http://www.ub.uit.no/

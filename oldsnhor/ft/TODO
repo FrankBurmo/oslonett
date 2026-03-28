@@ -1,0 +1,97 @@
+Anders, her er ting til NTB statusmøtet mandag. Dette består av tre
+ting:
+
+ - spørsmål fra meg til deg om virkemåte
+ - småfeil i forhold til spec
+ - forslag til noen endringer
+
+1. Spørsmål
+
+   - FT har allerede skriptet til Odd Einar, og dette ser ut til å virke
+    og legge meldinger i spooldir sier de. Jeg antar at dette bare ligger og
+    lytter kontinuerlig. Spørsmål: hvordan koples da "ntb" skriptet
+    inn og starter prosessering og Web utlegg? Kaller programmet til Odd 
+    Einar opp "ntb" skriptet?
+ 
+   - hvordan sikres at "ntb" skriptet ikke griper en fil som er under
+     skriving? Sjansen er selvsagt mikroskopisk, men hvis de to programmene
+     jobber asynkront, er den jo der?
+
+   - kastes en fil fra spool etter at den er prosessert? En eller annen
+     form for opprydding må jo gjøres?
+
+   - det er slik at programmene avgjør hvilken dag vi er på utfra dagens
+     dato, er det ikke? Ikke fra innhold i filene? Da er det vel noen
+     muligheter for at man får data over midnatt som egentlig hører hjemme
+     dagen før, men dette spiller jo ikke all verden rolle. Jeg spør bare
+     for å vite det i tilfelle FT spør.
+
+   - la oss si at vi er i gang og det ligger data for nøyaktig en uke
+     inne. Så kommer vi over på neste dag slik at vi må overskrive en
+     dag. Da oppdager vel skriptene dette og hiver data for forrige uke
+     for denne dagen? Gjøres det for alle kategoriene samtidig eller 
+     først når det kommer data for en ny kategori denne dagen? Hvordan
+     "oppdager" du dette egentlig?
+
+2. Rettinger
+
+Jeg sendte deg det jeg fant - rette ".git" til ".gif" og "ZZZ" til "Hjelp".
+Samt dette med at du innfører en variabel som inneholder server-relativ
+URL til toppen av HTML hierarkiet, og at denne benyttes istf. $TOP alle
+steder der det refereres bilder (<img src..) eller linker (<a href=..).
+
+3. Endringsforslag
+
+Jeg finner ikke igjen min egen spec, så jeg vet ikke om det er jeg eller du
+som har glemt dette jeg nå kommer med:-) Det er sikkert meg, men det spiller
+ingen rolle. Mye av dette under tror jeg er så trivielt at jeg greier det
+selv, og for å spare tid (jeg skal jo innstallere hos FT tirsdag) tror jeg
+at vi deler der vi kan. Jeg skal angi under hva jeg tror du må gjøre,
+fordi det blir for komplekst for meg pga. Perl og/eller strukturen i
+programmene (som jeg ikke er helt familiær med).
+
+Here we go:
+
+ - du lager en underkategori "NNN" under hovedkategoriene. I tillegg har
+   noen hovedkategorier andre underkategorier. Er det slik å forstå at du
+   har innført "NNN" fordi det programmeringsmessig må være en slik
+   underkategori alltid? I så fall er det greit. Men det ser litt
+   unødig ut, og om mulig hadde det vært fint at denne ble helt borte.
+   
+   HVEM: Anders.
+
+ - i det øyeblikk første artikkel etter midnatt kommer (kategori vilkårlig),
+   bør det flyttes en symlink vi kaller "idag" til å peke på ny dag, altså
+   på directoriet tilhørende denne nye dagen. Dermed kan man der det er behov
+   for det snakke om "idag/index.html" og få til dynamikk uten at filinnhold
+   endres. Dette vil jeg bruke på den aller ytterste index.html filen som
+   settes opp manuelt og som ikke du behøver å bry deg om.
+
+   HVEM: Anders
+
+ - litt om forrige, neste og "up" pekere i index.html filene på dagnivå og
+   kategorinivå (under en dag):
+
+   Du har jo en mal for disse to filene på "lib" området og bruker en
+   del tekst substitusjon mot dem allerede når du legger dem opp, bla. for
+   innsetting av dag og kategori.
+
+   Jeg vil ha ytterligere ting inn her, slik:
+
+   dag.index.html: innlegging av peker til neste dag, "opp" og neste dag
+   samt søking.
+
+   HVEM: Steinar legger inn i lib-filen, men Anders gjør Perl besvergelser
+   for å bytte ut "makroene" @YESTERDAY@, @TOMORROW@ etc. når denne filen
+   legges på plass. Men dette gjøres kanskje alt ? Finnes det også en
+   "makro" for dagnavnet på den dagen vi er på i dag? F.eks. @TODAY@? Da vil
+   jeg benytte denne også, og du skal substituere denne mot variabelen 
+   $wdaystr i koden din, så vidt jeg  kan se.
+
+   kat.index.html: jeg vil ha ting litt annerledes her, men det ordnes med
+   substitusjon/ekspandering av eksisterende makroer + at du legger inn
+   @TODAY@ byttet mot navnet på nåværende dag, slik som over.
+
+ - søkeskript NTBsearch:
+
+   Jeg ordner det selv.

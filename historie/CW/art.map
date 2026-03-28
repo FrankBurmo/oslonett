@@ -1,0 +1,17 @@
+default /historie/CW/maphelp.html
+
+# Home
+rect    /historie/CW/index.html 1,1 90,37
+
+# Søk
+rect    /historie/CW/search.cgi 231,1 292,37
+
+# Indeks
+rect    /historie/CW/utg/index.html 105,1 199,37
+
+# Info
+rect    /historie/CW/Om.html 314,1 380,37
+
+# Hjelp
+rect    /historie/CW/Hjelp.html 391,1 470,37
+

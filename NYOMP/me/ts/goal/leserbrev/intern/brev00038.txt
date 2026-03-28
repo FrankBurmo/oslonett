@@ -1,0 +1,13 @@
+overskrift: leserbrev-eksempel: smtp
+leserbrev:  An important feature of SMTP is its capability to relay mail across <br> transport service environments. A transport service provides an <br> interprocess communication environment (IPCE). An IPCE may cover one <br> network, several networks, or a subset of a network. It is important <br> to realize that transport systems (or IPCEs) are not one-to-one with <br> networks. A process can communicate directly with another process <br> through any mutually known IPCE. Mail is an application or use of <br> interprocess communication. Mail can be communicated between <br> processes in different IPCEs by relaying through a process connected <br> to two (or more) IPCEs. More specifically, mail can be relayed <br> between hosts on different transport systems by a host on both <br> transport systems. <br> 
+navn: kgn
+epost: kgn@oslonett.no
+svar: Stang inn! <br> 220-hasle.oslonett.no Sendmail 8.6.12/on1 ready at Fri, 29 Sep 1995 18:26:10 +0100 <br> 220 ESMTP spoken here <br> VRFY kgn <br> 250 &lt;kgn@hasle.oslonett.no&gt; <br> QUIT <br> 221 hasle.oslonett.no closing connection <br> 
+signatur: KG
+publiseres: ja,mail
+besvart: ja
+navn: kgn
+epost: kgn@oslonett.no
+regdato: 29.9.95 18:25:30
+revdato: 29.9.95 19:19:30
+file: /home/frogner/www/me/ts/goal/leserbrev/intern/brev00038.txt

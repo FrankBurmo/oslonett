@@ -1,0 +1,17 @@
+#!/local/bin/perl5 -w
+
+$/ = '';
+
+while (<>) {
+   ($name) = /^name:\s*(.+)/m;
+   $name =~ s/"//g;
+   push(@entries, [$name, $_]);
+}
+$count = scalar(@entries);
+print STDERR "Sorting $count entries...\n";
+
+@entries = sort {$a->[0] cmp $b->[0]} @entries;
+
+foreach (@entries) {
+	print $_->[1];
+}

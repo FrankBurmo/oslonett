@@ -1,0 +1,7 @@
+title: Re: y
+passwd: wiXKcjfquej1c
+from: K&aring;re Gunnar (@stovner.oslonett.no)
+ref: art00007.txt
+host: stovner.oslonett.no/194.143.10.10
+date: 27. november 95 12:01:04
+body: x (@stovner.oslonett.no) skriver (22. november 95 20:20:37):<br><br>> z<br><br><br>kun en test av ny variant av mail-utsending (&aelig;&oslash;&aring;, &AElig;&Oslash;&Aring;)<br><br><br>      blanke linjer, <br><br>                 innrykk<br>                     og spesiell formattering<br>

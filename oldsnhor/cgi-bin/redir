@@ -1,0 +1,36 @@
+#!/bin/sh
+
+LOG="/home/frogner/a/jar/log/outlog"
+
+exec 2> $LOG/errors
+
+if [ "$REQUEST_METHOD" != GET -o -z "$QUERY_STRING" ]; then
+    cat << E_O_F
+Content-Type: text/html
+
+<html>
+<head>
+<title>Redirect error</title>
+</head>
+<body>
+<h1>Redirect error</h1>
+The redirect script was not called correctly
+</body>
+</html>
+E_O_F
+    exit 1
+fi
+
+DATE=`date +%y%m%d`
+until mkdir $LOG/lock 2>/dev/null; do
+    sleep 5
+done
+
+echo "$REMOTE_HOST $QUERY_STRING" >> $LOG/log.$DATE
+
+rmdir $LOG/lock
+
+cat << E_O_F
+Location: $QUERY_STRING
+
+E_O_F

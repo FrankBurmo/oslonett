@@ -1,0 +1,11 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="60"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Nordlandsforskning"` -->
+<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value="Privat stiftelse"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Nordlandsforskning er en privat stiftelse som utfører forskningsoppdrag for næringsliv og offentlig forvaltning. Vi er omlag 60 personer i et spennende fagmiljø som arbeider med naturvitenskapelige, økonomisk/administrative og sammfunnsvitenskaelige fag. Omsetningen var i fjor på 24 mill. kroner. Vi holder til i Bodø, samlokalisert med Høgskolen i Bodø` -->
+<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``Arrangerer foredrag og debatt om forskningsjournalistikk tirsdag 10. oktober kl 15-1900. Søk etter enkeltarrangementer for oversikt over foredragstitlene.` -->
+<!-- replace `<option(.*Angitt nedenfor)` with `<option selected`` -->

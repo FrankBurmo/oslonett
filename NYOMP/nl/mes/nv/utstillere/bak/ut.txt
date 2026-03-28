@@ -1,0 +1,156 @@
+3M Norge A/S, CA-21
+Acto Informasjonssystemer A/S, BB-20
+Admi Systemer AS, CB-15
+AGS Gruppen AS, Horten, BB-40
+Aladdin Software A/S, CA-05
+Alcadon AS, CA-18
+AMP Norge A/S, CA-17
+Andresen Data, GA-20
+Av Teknikk AS, CA-38
+Baltic Business Software AS, GA-07
+Bergman Systems A/S, BB-14
+Bergstrøm Trading A/S, Dennis, CA-27
+Bexab Norge A/S, CB-31
+BJ Electronics Software, CB-23
+Boole & Babbage, CB-08
+Cardel AB, CB-32
+CMS A/S, CB-16
+Computer 2000 Norge AS, BB-11
+Autodesk AB, BB-11
+Philips Konsumentelektronikk AB, BB-11
+Genius Scandinavia AB, BB-11
+CADpoint AS, BB-11
+Nordak AS, BB-11
+Tørrkopi Civit A/S, BB-11
+AGS Gruppen AS, Horten, BB-11
+KTB Engineering, BB-11
+Nestor, BB-11
+Grøner Data AS, BB-11
+AT & T Global Information Solutions A/S, BB-11
+Computer Associates  A/S, BB-02
+Connect AS, BB-08
+Connecta Kontorsyst. AS, BB-28
+Cosima Top Systems as, CB-05
+CreditInform AS, GA-01
+CS Systems, CA-01
+Vero Electronics Ltd., CA-01
+Danyko A/S, BA-25
+Datanet AS, BB-24
+DataPower Norge A/S, BB-26
+Datatjenester AS, CA-11
+Piramide Automatisering BV, CA-11
+Powerteam A/S, CA-11
+Deko A/S, BA-11
+Digital Equipment Corp. A/S, CB-10
+Easy Data A/S, BA-15
+EDS Unigraphics, CA-23
+Ergo-Teknikk A/S, CA-08
+Ergosoft A/S, BB-15
+Esi Techtrans Norge AS, CA-14
+Ess Data AS, GA-10
+Esselte Dymo A/S, GA-12
+Euro-Tec A/S, BB-19
+Akademika A/S, BB-19
+Front End, BB-19
+France Telecom Network Services AS, CA-34
+GG Data AS, CB-06
+Graphitech AS, BA-32
+Gregersen Tegneutstyr A.S, BA-26
+Gupta Norge as, CB-17
+Hewlett Packard Norge AS, BA-14
+IBM A/S, BA-02
+Intergraph Norge AS, BB-04
+Techno Cad, BB-04
+International Thomson Publishing, GB-07
+Kapital Data/PC Magazine, BA-24
+kontor-teknisk, CB-09
+Kunnskapsforlaget A/S, CB-21
+LT Kontorsystemer AS, BB-06
+Maconomy Norge as, GA-09
+Mandata A/S, CA-13
+Micro Warehouse Norway AS, CA-07
+Microsoft Norge, BA-18
+mips a.s, CA-30
+Moderne Produksjon A/S, CA-30
+MSC Nordic, BB-18
+Multimedia Presentation as, GB-10
+NEMKO, GB-03
+Newtech A/S/Newsoft AS, BB-10
+Nocom Norge AS, BA-09
+NorConnect Internet Services AS, GB-11
+Nordcomp Norway A/S, GA-11
+Norex AS, CB-33
+Norman Data Defense Systems AS, GA-02
+NorMedia, BA-31
+Novell Norge, BA-12
+Olivetti Norge A/S, CA-29
+Ambrasoft, CA-29
+UMI A.S, CA-29
+Oslonett AS, GB-15
+Panasonic Norge A/S, BB-05
+PC Lan Produkter AS, BB-25
+PC World Norge, CA-32
+PC-Systemer Norge A/S, BB-21
+Åsdata, BB-21
+Hult & Lillevik, BB-21
+Office AS, BB-21
+Platinum Technology, GB-05
+Polyteknisk Revy, GA-05
+Postbanken, CB-04
+Powersoft Norge, CB-28
+Powertech Information Systems A/S, CB-11
+Pre-Data AS, CA-19
+Prentice Hall, GA-19
+Programutvikling, CA-16
+Programvareforlaget AS, GA-06
+Economica AS, GA-06
+ProMed, GA-06
+IsoSoft, GA-06
+Software Contractor A/S, GA-06
+Protect Data Norge AS, BB-36
+Digipass S.A., GA-06
+PSI A/S, BA-13
+Renico AS, CA-20
+Respons Business Partner AS, BB-38
+Ricoh Norge A/S, BB-29
+Rittal A/S, BB-31
+Roland Scandinavia, Norge, BB-35
+Aagaard Musikk, BB-35
+Rosengrens Norge AS, E.A., CB-19
+Scanhold Norge AS, BA-33
+Screenguard Miljøprodukter AB, BA-33
+Malmstolen AB, BA-33
+Norsk ESD-Kontroll AS, BA-33
+Ergo-Line AS, BA-33
+Scanord Invest AS, Megafect, CB-29
+Setterberg, Kalin Data A/S, BA-29
+Silicon Graphics A/S, BA-08
+TV2, Bergen, BA-08
+EUnet Norge, BA-08
+Statens Datasentral AS, GB-06
+Static A/S, BA-19
+Summit Systems AS, BA-01
+SuperOffice a.s, CA-25
+SuprAVision AS, CB-20
+Datatid, CB-20
+Sybase Norge, CB-26
+Tallgrass Technologies AS, BB-17
+Team Data A/S, BB-22
+Acucobol Scandinavia AB, BB-22
+Teknisk Ukeblad, GB-12
+Tektronix Norge A/S, GA-04
+Telefax Schandinavia Norge AS, GA-13
+Telefonselskapet A.S., CB-37
+Tele-Teknikk AS, CB-37
+Telenor Dialog AS, CB-01
+TelePost Communication A.S, GB-12
+Telia Norge AS, CA-15
+Time Recorder A/S, CA-24
+Total Consept AS, GA-15
+Tørrkopi Civit A/S, CA-26
+UBI A/S, CA-03
+Unicus Data AS, GA-03
+Unisoft as, CB-30
+Vega Software AS, CA-09
+Vestfold Industridata A/S, BB-16
+Vidamic A/S, CB-02

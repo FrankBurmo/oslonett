@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# 
+# Dette skriptet legger p} Oslonett header og footer
+# p} HTML filene, setter som tittel det samme som <h1> og
+# setter inn forrige og neste pekere i hver artikkel.
+#
+# Det tas f|rst en kopi av HTML filen til $x.bak. Dette
+# gj|r at man kan utf|re dette skriptet vilk}rlig mange
+# manger, i tilfelle man vil endre p} headere, footere etc.
+# Da legger man tilbake de r}e HTML filene fra .bak filene
+# og kj|rer doit p} nytt. Skriptet rewind legger tilbake
+# .bak filene.
+
+PATH=/home/stovner/a/kgn/cw/bin:/usr/bin:/bin:/local/bin:/usr/ucb
+export PATH
+TMP=$$.tmp
+
+for x in *.html
+do
+  echo Working with $x ..
+  cp $x $x.bak
+  cat $x | perl -pe 's/\[\[\?\?\]\]/"/g' | addtopbottom | urlfix | fixtitle -f | fixprevnext $x > $TMP
+  mv $TMP $x
+  echo $x done
+done
+
+

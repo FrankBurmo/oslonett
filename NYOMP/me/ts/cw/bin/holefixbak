@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# Fikser hull i filsekvensen
+
+
+rename 's/..\./sprintf ("%02d.",++$n)/e' cw??????.html.bak
+
+
+

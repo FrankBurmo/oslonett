@@ -1,0 +1,60 @@
+<html>
+<header>
+<title>DND - innmeldingsskjema</title>
+</header>
+<body>
+<hr size=2>
+<center><h1>Innmeldingsskjema/Bestilling</h1></center>
+<hr size=4>
+
+<form method=POST action="http://www.oslonett.no/cgi-bin/mailit/">
+<input type=hidden name=mailto value="dnd@oslonett.no">
+<input type=hidden name=subject value="Innmelding i DND">
+
+<h3>FYLL UT FORMEN NEDENFOR:</h3>
+<pre>
+Medlemsnummer: <input name=Medlemsnummer size=10> (fylles ut dersom du er medlem)
+<input type=checkbox name="Nytt medlem" value=Ja> <strong>Jeg er interessert i å bli medlem</strong>
+<hr>
+Navn      : <input name=Navn size=60>
+
+Firma     : <input name=Firma size=60>
+Firma adr : <input name=Firmaadr size=60>
+Firma tlf : <input name=Ftlf size=20>      Firma Fax: <input name=Ffax size=20>
+
+Privat adr: <input name=Privadr size=60>
+Privat tlf: <input name=Ptlf size=20>
+</pre>
+<p>
+<strong>Ønsker følgende medlemsskap:
+<pre>
+<SELECT NAME="Medlemskapsstype">
+<OPTION> Studentmedlemsskap
+<OPTION> Personlig medlemsskap
+<OPTION> Medlem under bedrift
+<OPTION> Bedrift
+</SELECT> Antall medlemmer hvis bedrift: <input name=Antall_bedr_medl size=4>
+<pre>
+<p>
+<hr>
+<h3>BESTILLING:</h3>
+<pre>
+<strong>Artnr:     Beskrivelse:</strong>
+<input name=art1 size=4>   <input name=art1b size=62>
+<input name=art2 size=4>   <input name=art2b size=62>
+<input name=art3 size=4>   <input name=art3b size=62>
+<input name=art4 size=4>   <input name=art4b size=62>
+<input name=art5 size=4>   <input name=art5b size=62>
+
+
+<input type=submit value="Send"> <input type=reset value="Slett">
+</pre>
+</form>
+
+
+<hr size=4><pre>
+<a href="http://www2.oslonett.no/"><img src="/graphics/home.gif" alt="[Oslonett]></a> <a href="http://www2.oslonett.no/org/dnd/"><img src="/org/dnd/GIF/dndlogosmall.gif" alt="[DND hjemmeside]"></a>
+</pre><hr size=4>
+
+</body>
+</html>

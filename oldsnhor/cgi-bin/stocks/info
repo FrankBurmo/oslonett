@@ -1,0 +1,61 @@
+#!/local/bin/perl
+
+print "Content-type: text/html\n\n";
+
+foreach (split('&', $ENV{QUERY_STRING})) {
+    ($type,$val) = split('=', $_, 2);
+    $q{$type} = $val;
+}
+
+open(INFO, "stocks/info.html") || die;
+
+$prevno = 0;
+$prevtitle = "";
+
+while (<INFO>) {
+    next unless /^<h2>(\d+)\s*-\s*(.+)\((\d\d:\d\d)\)/i;
+    $no = int($1);
+    $title = $2;
+    $time = $3;
+    #next if $no == $prevno+1 && $prevtitle eq $title;
+    $prevno = $no; $prevtitle = $title;
+    $header{$no} = "$time $title";
+}
+
+print "<title>Information fra Oslo Børs</title>
+<h1>Information fra Oslo Børs</h1>
+";
+
+&findit if length $ENV{PATH_INFO};
+
+print "<ul>\n";
+foreach (sort { $a <=> $b } keys %header) {
+    $ref = sprintf("%03d", $_);
+    ($time, $title) = unpack("A5 x1 A*", $header{$_});
+    print "<li> <a href=\"$ENV{SCRIPT_NAME}/$ref\">$title</a> <b>$time</b> (side $_)\n";
+}
+print "</ul>\n";
+
+print '<hr>
+<a href="/index.html"><img alt="[Oslonett]" SRC="/graphics/home.gif"></a>
+<a href=/stocks/index.html><img src=/stocks/oslostock-small.gif alt="[Tilbake til børsoversikt]"></a>';
+
+exit;
+
+
+sub findit
+{
+    $ref = $ENV{PATH_INFO};
+    $ref =~ s,^/,,;
+    seek(INFO, 0, 0) || die "Can't seek";
+    while (<INFO>) {
+	next unless /^<h2>$ref/o .. /^<\/pre>/;
+	if (/^<h2>/) {
+	    @note = ( $_ );
+	} else {
+	    push(@note, $_);
+	}
+    }
+    for (@note) { print; }
+    print "<hr>\n" if @note;
+}

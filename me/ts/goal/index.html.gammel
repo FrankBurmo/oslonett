@@ -1,0 +1,57 @@
+<html> <head>
+<title>Fotballbladet GOAL</title>
+</head>
+
+<body bgcolor="#503060" text=#ffffff link=#ffffaa vlink=#ffffaa>
+
+<center>
+<h1><img alt="GOAL" src=gifs/goal.gif></h1>
+<img alt="Internasjonalt Fotballmagasin" src=gifs/inter.gif width=370><p>
+
+</center>
+
+<p>
+<center>
+<table border=0 cellspacing=2 cellpadding=15>
+<tr>
+<td valign=top>
+<ul>
+<!--  <li> <font size=+2><a href="innhold.html">Innhold</a></font><p> -->
+  <li> <font size=+2><a href="struktur/stp.html">Stjerneportrett</a></font><p>
+  <li> <font size=+2><a href="struktur/tb.html">Tidenes beste</a></font><p>
+  <li> <font size=+2><a href="struktur/sp.html">Spillere</a></font><p>
+  <li> <font size=+2><a href="struktur/kl.html">Klubber</a></font><p>
+  <li> <font size=+2><a href="struktur/tm.html">Temaer</a></font><p>
+  <li> <font size=+2><a href="/me/ts/goal/diskusjon.cgi/Internasjonal%20fotball">Diskuter Internasjonal fotball</a></font><p>       
+  <li> <font size=+2><a href="arkiv/">Tidligere utgaver</a></font><p>       
+</ul>
+<font size=+3><a href="rating.html">Konkuranse:</a></font><br>
+<font size=+1>Si hva du mener om GOAL på Internett, og bli med på trekningen av en fotballvideo.</font>
+</td>
+<td valign=top>
+
+<img alt="" src=gifs/goal_header.gif ><p>
+<font size=+3><a href="http://www.oslonett.no/me/ts/goal/arkiv/utg11/">Siste nummer, i salg nå!</a></font><br>
+<font size=+1>Les om: <a href="/me/ts/goal/arkiv/utg11/goal951108.html">Juninho</a>, <a href="/me/ts/goal/arkiv/utg11/goal951109.html">Yeboah</a>, <a href="/me/ts/goal/arkiv/utg11/goal951106.html">Paul Ince</a> mm.</font>
+
+</td>
+</tr>
+<tr>
+<td colspan=2 align=middle>
+<font size=+3>
+<a href="/me/ts/goal/bestilling.html">Bestilling</a> av abonnement.
+</font>
+<p>
+<font size=+3>
+<a href="/cgi-bin/goalwais">Søk blant GOALs artikler.</a>
+</font>
+<p>
+</td>
+</tr>
+</table>
+</center>
+<hr size=2 noshade>
+<center>
+<i><a href="/">Schibsted Nett AS</a>, GOALs samarbeidspartner på Internett.</i>
+</center>
+</body> </html>

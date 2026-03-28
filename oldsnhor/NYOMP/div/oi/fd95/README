@@ -1,0 +1,4 @@
+Filnavn-konvensjon:
+Filer som slutter på 2.html er alternative sider for klienter som støtter 
+tabeller o.a. HTML3 spesifikke muligheter. "index.cgi" velger riktig
+sett med filer

@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Søk i Akers Mic-katalogen</title>
+</head>
+<body background="gifs/bg.gif" link="#0000ff" vlink="#000088">
+
+<h1><a href="/home/akersm/">
+<img alt="AkersMic" src="gifs/logo.gif" border="0"></a></h1>
+<h1>Søk i AkersMic-katalogen</h1>
+
+<blockquote>
+<hr noshade size="2">
+<font size="+1">
+
+Angi artist/skuespillere eller tittel du ønsker å søke etter. Fyll inn
+begge feltene for å avgrense ytterligere. 
+
+</font>
+<hr noshade size="2">
+</blockquote>
+
+<form method="POST" action="search-new.cgi">
+<input type="hidden" name="subtext" value="yes">
+<input type="hidden" name="product" value="VHS - VIDEO">
+
+<dl>
+  <table border="0" cellpadding="3">
+<tr>
+<td colspan="3" align="right"><input type="submit" value=" Søk i databasen ">
+  <br>
+  </td>
+  <tr>
+  <dt><td><font size="+2">Produkt-type:</font></td>
+  <dd><td colspan="2"><font size="+1"><b><a href="form-new-cd.html">CD</a></b>,
+       <b>VHS-VIDEO</b>,
+       <b><a href="form-new-laser.html">LASERDISC</a></b> eller
+       <b><a href="form-new-spill.html">SPILL</a></b></font></td>
+<br></td>
+
+<tr>
+<dt><td><font size="+2">Tittel:</font></td>
+<dd><td colspan="2"><input name="title" size="45"><br></td>
+
+<tr>
+<dt><td><font size="+2">Artist/skuespiller(e):</font></td>
+<dd><td colspan="2"><input name="artist" size="45"><br></td>
+
+<tr>
+<dt><td><font size="+2">Kategori:</font></td>
+<dd><td colspan="2"><select name="category">
+<option value=""> Alle kategorier
+<option value="C&W"> C&W
+<option value="DIV. SNADDER"> Div. snadder
+<option value="JAZZ"> Jazz
+<option value="KLASSISK DIVERSE"> Klassisk diverse
+<option value="KLASSISK"> Klassisk
+<option value="MUSIKK VIDEO"> Musikk video
+<option value="SPILLE-/CULTFILM"> Spille-/cultfilm
+<option value="TEGNEFILM"> Tegnefilm
+</select><br>
+</td>
+
+<tr>
+<dt><td valign="middle"><font size="+2">Søke-metode:</font></td>
+<dd><td colspan="2">
+<input type="radio" name="method" value="advanced" checked> <a href="info-nor.html#advanced">Avansert søk</a>
+<input type="radio" name="method" value="expert"> <a href="info-nor.html#expert">Ekspert-søk</a><br>
+</td>
+
+<tr>
+<dt><td><font size="+2">Maks. antall treff:</font></td>
+<dd><td>
+<select name="maxcount">
+<option> 20
+<option selected> 50
+<option> 100
+<option> 200
+<option> 500
+</select>
+<br>
+</td>
+     
+<dt> <td align="right"><input type="submit" value=" Søk i databasen "></td>
+</table>
+</dl>
+</form>
+
+<p> <img alt="" src="gifs/blueline.gif"><br> Tilrettelagt for <a
+href="/home/akersm/">AkersMic</a> av <a
+href="/">Schibsted Nett AS</a>.
+
+</body>

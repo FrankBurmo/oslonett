@@ -1,0 +1,123 @@
+<html>
+<head>
+ <title>Helan og Halvan</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body bgcolor="#ffffff">
+
+
+
+<a href=cw954354.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/me/ts/cw/gifs/up.gif></a> <a href=cw954356.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a> <a href=/me/ts/cw/CW.html><img align=middle alt="[CW hjemmeside]" src=/me/ts/cw/gifs/cw.gif></a>  
+<hr>
+
+
+<h1>Helan og Halvan</h1>
+
+Peters Plass<p>
+<p>
+<b>Jeg vil holde en tale om de fete og de smale.</b><p>
+<b></b><p>
+nn Vel, kanskje ikke en tale akkurat, men enda ett innkast i klient/tjener
+debatten. De to hovedvariantene for klient/tjener er "fet klient/smal tjener"
+og "smal klient/fet tjener". De fleste systemer som er utviklet i denne
+første, famlende fasen av denne nye teknologien
+tilhører den første kategori: All behandling
+foregår i klientene (PCene) - derfor må de ha stor kapasitet.
+Tjenermaskinene brukes utelukkende til å lagre data som klientene henter
+og leverer. Jeg har i to tidligere Peters Plass (CWN nr 27 og 31)
+løftet en advarende pekefinger hvis man skal utvikle systemer
+som er vesentlig større enn "babyer". Poenget var at det er lett
+å utvikle for "fete klienter", men at ytelsen fort kan bli et problem
+når systemet skaleres oppover, og det kan komme til å koste. Fete
+klienter er dyre og krever mye administrasjon. Leverandører tok
+kontakt og fortalte meg om systemer som ikke har slike vekstproblemer. Jeg
+kommer til å presentere en slik løsning senere, men i dag
+tar jeg for meg den mer uvanlige varianten, "smal klient/fet tjener" som jeg
+har stor tro på.<p>
+<p>
+nn Scansoft er en kjent norsk produsent av administrative standardsystemer
+innen økonomistyring, ordre/lager/fakturering o.l. med 30
+ansatte  Firmaet ble etablert i 1984, basert på en id&eacute; som var ganske
+fremtidsrettet: Systemene ble bygget på relasjonsdatabaser som
+grunnkonsept. Oracle var basisproduktet. Ideen var god, i dag er den alminnelig
+akseptert, men Scansoft var 5 år forut for sin tid, og det straffer seg.
+Til slutt fikk de frem standardpakken sin, ES4, som er i bruk hos 250 kunder i
+Skandinavia, men de fikk mange dyrekjøpte erfaringer og knakk
+ryggen. Merkantildata trådte til som en reddende engel, og Scansoft er
+blitt en avdeling i Merkantildata Applikasjon som teller 200 personer og
+står bak produkter som Nor-22 og Formula Open Software. <p>
+<p>
+nn Scansoft legger nå siste hånd på utviklingen av ES4s
+etterfølger, ES2. Pakken er i sluttesting og
+prøvedrift. Målt med konsulenttimepriser har det kostet 10
+millioner kroner å komme så langt. ES2 gjenskaper ES4s
+funksjonalitet, basert på to støttepilarer: Windows og
+Oracle. Det vil si at produktet ikke er database-uavhengig. Dette er et bevisst
+valg. Fordelen med å basere utviklingen på verktøy fra
+&eacute;n produsent (som Oracle) er at man dermed kan optimalisere sine
+løsninger. Utviklerne kan utnytte 100% av de mulighetene som
+Oracle-produktene tilbyr, og det har en gunstig effekt på svarstidene.
+Løsninger basert på prinsippet med fete klienter er gjerne
+laget slik at på kunden kan velge mellom 2-3 databaser - fordi
+forbindelsen mellom klienter og tjeneren er enkle (men mange) SQL-kall. ES2,
+som er basert på "fet tjener", kan ikke v¾re slik fordi da måtte
+Scansoft utvikle flere komplette versjoner av systemet: en for Oracle, en for
+Sybase osv. Årsaken er at selv om alle relasjonsdatabaser bygger på
+SQL for å hente og levere data, er de ellers sv¾rt forskjellige. Innmaten
+og grunnkonseptene er ikke standardisert i det hele tatt. Jeg tror ikke at
+bindingen til Oracle vil skremme mange kunder fra å velge ES2 hvis de er
+fornøyd med pakkens funksjonalitet.<p>
+<p>
+nn ES2 består av tre hoveddeler. Hjertet er selvfølgelig
+databasene <i>som også inneholder den aller meste av
+behandlingslogikken</i>. Måten å gjøre det på
+heter <i>triggere </i>og<i> prosedyrer</i>, teknikker som opprinnelig ble
+oppfunnet av Sybase, men som i dag brukes av n¾r sagt alle. En trigger kan
+f.eks. sjekke at felter som skal v¾re fylt ut, er fylt ut, og hvis noe mangler
+be om ekstrainformasjon fra klienten. En prosedyre kan f.eks. kontrollere
+lagerbeholdningen, og i tilfelle manko opprette en bestilling. Det er lettest
+å tenke på dem slik at databasetabellene er omgitt av et beskyttende
+lag med programmer som kontrollerer alle data som passerer og som også kan
+skape nye data, f.eks. automatposteringer. Dette laget er en del av databasen
+og like flyttbar som Oracle-produktene ellers. Triggere og prosedyrer er
+programmert i Oracles PL/SQL. Windows-klientene inneholder de to andre delene i
+ES2 (også de programmert i PL/SQL): skjermbilder for registrering og
+uthenting av data. De kan dessuten inneholde Excel, Word, Salesmaker og
+lignende verktøy som kan brukes til registrering og
+datauthenting på lik linje med ES2«s skjermbilder. <p>
+<p>
+nn Hva er poenget her? For det første behøver
+klientene ikke ha s¾rlig stor kapasitet. De skal verken gjøre
+så mye arbeid eller lagre så mange programmer som sine fete
+brødre. All behandlingslogikk er lagret ett sted istedenfor i 20
+eller 50 PCer. Fordi databasen er omgitt av dette beskyttende programlaget som
+kontrollerer alt som skjer, er det fullt forsvarlig å åpne den for
+programmer som ikke er utviklet av Scansoft. Det kan noe kundene har skrevet i
+Excel, men en av løsningens styrker er at man trygt kan gi
+tilgang til databasene fra andre produsenters systemer. Det er et stort problem
+i dag at hvis du f.eks. vil kjøpe økonomisystem
+fra &eacute;n produsent og ordre/fakturering fra en annen, ender du opp med to
+kunderegistre. Fordi begge pakkene er komplette, inneholder de hvert sitt
+kunderegister som må ajourholdes separat.  Andre fordeler er redusert
+nettrafikk mellom klienter og tjener (fordi mesteparten av arbeidet
+foregår i tjeneren) og at det er enklere og raskere å utvikle nye
+klientprogrammer ettersom de ikke skal inneholde inputkontroller (som gjerne
+utgjør 50% av all programlogikk). Om ES2 er godt nok
+funksjonelt, vet jeg ikke - men konseptet liker jeg.<p>
+<p>
+<i>Du treffer meg på <a href=mailto:hidas@oslonett.no>hidas@oslonett.no</a> </i><p>
+<p>
+<p>
+<a href=cw954354.html><img align=middle alt="[Forrige artikkel]" src=/CW/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/CW/gifs/up.gif></a> <a href=cw954356.html><img alt="[Neste artikkel]" align=middle src=/CW/gifs/next.gif></a> 
+
+
+<pre><hr><a href=/cgi-bin/imagemap/CWartmap><img alt="[Image map not available]" src=/CW/gifs/artmap.gif ismap></A><hr></pre>
+<h5>
+<address>
+Artikkel automatisk generert, 16/11-95, kl. 19.31 <a href=/CW/kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

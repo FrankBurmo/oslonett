@@ -1,0 +1,72 @@
+#!/local/bin/perl5
+
+# $Id: imgsize,v 1.4 1995/07/17 22:05:41 aas Exp $
+#
+# This is a quick and dirty program to determine the size of an image.
+# Supported formats are: JFIF (JPEG), GIF and PPM.
+#
+# Author: Gisle Aas, Oslonett AS
+
+
+die "Usage: $0 <imgfile>...\n" unless @ARGV;
+
+while ($file = shift) {
+    open(F, $file) or die "Can't open $file: $!\n";
+    $n = sysread(F, $header, 1024);
+    if (substr($header, 0, 4) eq "ÿØÿà" && substr($header, 6, 5) eq "JFIF\0") {
+	size_jfif();
+    } elsif (substr($header, 0, 3) eq "GIF") {
+	size_gif();
+    } elsif ($header =~ /^P[1-6]\n/) {
+	size_ppm();
+    } else {
+	die "Unknown: 0 0\n";
+    }
+}
+exit;
+
+sub size_jfif {
+   ($head, $size, $id, $major, $minor, $units, $xdensity, $ydensity,
+    $xthumbnail, $ythumbnail) = unpack("a4 n A5 C C C n n C C", $header);
+   substr($header, 0, $size+4) = "";
+
+   # print "Density: $xdensity, $ydensity (";
+   # if ($units == 0) { print "aspect ratio"; }
+   # elsif ($units == 1) { print "inch"; }
+   # elsif ($units == 2) { print "cm"; }
+   # else { print "unknown units: $units"; }
+   # print ")\n";
+   # print "Thumbnail: $xthumbnail, $ythumbnail\n";
+
+   print "JFIF-$major.$minor: ";
+
+   while (length $header) {
+      ($x, $size) = unpack("a2 n", $header);
+      $content = substr($header, 4, $size-2);
+      # print "$x, $size\n";
+      if ($x eq "ÿÀ" && $size == 17) {
+         ($height, $width) = unpack("xnn", $content);
+         print "$width $height\n";
+         return;
+      }
+      last if $x eq "ÿÚ";
+      substr($header, 0, $size+2) = "";
+   }
+   print "0 0\n";
+}
+
+sub size_gif
+{
+   ($id, $width, $height) = unpack("a6 v v", $header);
+   print "$id: $width $height\n";
+}
+
+sub size_ppm
+{
+   $header =~ s/^#.*//mg;
+   ($id, $width, $height) = ($header =~ /^(P[1-6])\s+(\d+)\s+(\d+)/);
+   $id = "PBM" if $id eq "P1" || $id eq "P4";
+   $id = "PGM" if $id eq "P2" || $id eq "P5";
+   $id = "PPM" if $id eq "P3" || $id eq "P6";
+   print "$id: $width $height\n";
+}

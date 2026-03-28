@@ -1,0 +1,155 @@
+<HTML>
+<HEAD>
+ <TITLE>Oslonett Aksess FAQ - Andre offline-lesere</TITLE>
+ <LINK REV=MADE HREF="mailto:webmaster@oslonett.no">
+</HEAD>
+<BODY BACKGROUND="/gifs/on/onbg.gif">
+<P>
+Aksess-sidene kjøres nå på en egen server: <A HREF="http://aksess-www.oslonett.no/">http://aksess-www.oslonett.no</A>.
+Disse sidene vil ikke lenger bli oppdatert, og de vil etter hvert forsvinne. 
+</P>
+<A HREF="aksess.map"><IMG ALT="Oslonett Akess" ALIGN=MIDDLE SRC="http://www.oslonett.no/gifs/on/aksess-h.gif" BORDER=0 ISMAP></A>
+<H1>Oslonett Aksess FAQ - Andre offline-lesere</H1>
+
+<HR SIZE=3>
+
+<OL>
+  <LI><A HREF="#1">Kan dere anbefale en offline-leser for MS-DOS?</A>
+  <LI><A HREF="#2">Kan dere anbefale en offline-leser for MS-WINDOWS?</A>
+  <LI><A HREF="#3">Jeg får beskjed om at det er kommet post (You
+	have new mail), men når jeg henter pakken over er posten borte!</A>
+  <LI><A HREF="#4">Jeg bruker BlueWave "offline"-leser. Det går fint å lese
+      nyheter, men jeg ser aldri noe til innkommende elektronisk post.</A>
+  <LI><A HREF="#5">Hvordan øker jeg max. antall blokker jeg kan
+      hente i pakke for lesing offline.</A>
+  <LI><A HREF="#6">Hvordan kan jeg skifte mellom å lese Usenet nyhetsgrupper online
+      og offline?</A>
+</OL>
+  
+<HR>
+
+<OL>
+  <A NAME="1"><H3><LI>Kan dere anbefale en offline-leser for MS-DOS?</H3></A>
+    <P>
+      Vi kjenner to som fungerer rimelig godt mot Usenet/Internet.
+
+    <DL><BR>
+    <DT><STRONG>Yarn (basert på SOUP-formatet)</STRONG>
+    <DD>er gratis, og er en svært
+        kraftig leser (støtter bl.a. en full meldingsbase). Yarn
+        er imidlertid ikke helt enkel å konfigurere og krever
+        også litt arbeid for å vedlikeholde meldingsbasen.
+
+    <DT><STRONG>ZipNews (eget format)</STRONG>
+    <DD>er shareware ($20), og enkel å sette
+        opp og å bruke.  ZipNews støtter dessuten norske tegn bedre
+        enn de fleste andre offline lesere (vha. MIME).  ZipNews
+        støtter ingen database (kun en pakke om gangen), men har
+        den fordelen at den er enklere i bruk enn Yarn.  Vær inidlertid
+        OBS på at shareware-versjonen har såpass mange restriksjoner
+        at du må regne med å betale $20 "registering" for å få en
+        "nøkkel" som gjør ZipNews brukbar.
+    </DL></P>
+  <P>
+    Hvilken er "best"?  Yarn er gratis og kraftig.  ZipNews er bedre
+    til å håndtere norske tegn og er enklere -- både på godt og på
+    vondt.  Begge fungerer godt.  Hvilken som er "best" avhenger litt
+    av hvordan du prioriterer.</P>
+  <P>
+    Yarn, ZipNews og en del andre offlinelesere finner du på Oslonett,
+    på dette filområdet:
+
+    <UL>
+      <LI><A HREF="ftp://ftp.oslonett.no/Software/MsDos/Comm/Offline">Offline</A>
+    </UL></P>
+
+    <HR>
+
+    <A NAME="2"><H3><LI>Kan dere anbefale en offline-leser for MS-WINDOWS?</H3></A>
+    <P>
+      Dersom du kun er interessert i mail er den kommersielle pakken
+      Eudora  (ca. kr. 650,-) vel verdt prisen.  Den har et svært godt,
+      grafisk brukergrensesnitt, en velskreven manual og fungerer utmerket
+      med full støtte for norske tegn (vha. MIME). Oslonett er
+      forhandler for Eudora. Det finnes også en gratis versjon av
+      Eudora med mer begrenset funksjonalitet.</P>
+    <P>
+      Eudora finnes også til Macintosh.</P>
+    <P>
+      Dersom du også ønsker støtte for News finnes det etter min
+      mening ingenting brukbart som går direkte under Windows.  I
+      stedet foreslår jeg at du bruker Yarn eller ZipNews (3.1) i et
+      DOS-vindu under MS-Windows.</P>
+
+    <HR>
+
+    <A NAME="3"><H3><LI>Jeg får beskjed om at det er kommet post (You
+	have new mail), men når jeg henter pakken over er posten borte!</H3></A>
+    <P>
+      Problemet er sannynligvis at du har startet et program for
+      "online"-lesing (f.eks. mm, mail, pine eller elm) før du
+      starter qw/soup/zipdoor eller olbatch for å hente "offline"-
+      pakken.  Så snart du starter et "online"-program (det spiller
+      ingen rolle hvorvidt du leser meldinger med det) blir all
+      post utilgjengelig for offline-lesere og blir derfor ikke
+      med i pakken.  Posten er imidlertid ikke borte, men den må
+      leses online.</P>
+
+    <HR>
+
+    <A NAME="4"><H3><LI>Jeg bruker BlueWave "offline"-leser. Det går fint å lese
+      nyheter, men jeg ser aldri noe til innkommende elektronisk post.</H3></A>
+    <P>
+      For å bruke BlueWawe må du kjøre qwkdoor med +W opsjonen.
+      Du starter altså qwkdoor slik:<BR>
+      <PRE>oslonett.no% qwkdoor +W</PRE><BR>
+      Husk at det er forskjell på store og små bokstaver.</P>
+
+
+    <HR>
+
+    <A NAME="5"><H3><LI>Hvordan øker jeg max. antall blokker jeg kan
+      hente i pakke for lesing offline.</H3></A>
+    <P>
+      Start programmet cmeny slik:<BR>
+      <PRE>oslonett.no% cmeny</PRE><BR>
+      Velg:
+      <UL>
+         <LI>1.  Endre oppsett/
+         <LI>7.  Oppsett for offline-leser
+      </UL></P>
+    <P>
+      Du kan nå sette antall blokker til det du ønsker (inklusive
+      "uendelig").</P>
+
+    <HR>
+
+    <A NAME="6"><H3><LI>Hvordan kan jeg skifte mellom å lese Usenet
+	nyhetsgrupper online og offline?</H3></A>
+    <P>
+      Hvilke nyhetsgrupper du leser online (f.eks. med trn) bestemmes
+      av en fil som ligger i din hjemmekatalog som heter ".newsrc".
+      Hvilke nyhetsgrupper du leser offline (vha. qwkdoor, soupdoor
+      zipdoor eller olbatch) bestemmes normalt av en fil som ligger i
+      din hjemmekatalog som heter ".newsrc.qwk".  At du melder deg ut
+      av eller inn i nye grupper online har ingen effekt offline -- og
+      vice versa.</P>
+    <P>
+      For å endre dette må du spesifisere <STRONG>samme</STRONG> fil for
+      offline- og online-lesing. Du kan gjøre dette med å bruke funksjonen "endre
+      oppsett" i cmeny for å endre oppsett for offline-leser (se <A HREF="#5">pkt.
+      5</A> ovenfor).</P>
+
+</OL>
+
+<HR SIZE=3>
+
+<A HREF="http://www.oslonett.no/"><IMG ALT="[Oslonett]" SRC="http://www.oslonett.no/gifs/on/home.gif" BORDER=0></A>
+<A HREF="index.html"><IMG ALT="[Opp]" SRC="http://www.oslonett.no/gifs/on/opp.gif" BORDER=0></A>
+<A HREF="http://www.oslonett.no/search.html"><IMG ALT="[Søk]" SRC="http://www.oslonett.no/gifs/on/sok.gif" BORDER=0></A>
+<A HREF="http://www.oslonett.no/help.html"><IMG ALT="[Hjelp]" SRC="http://www.oslonett.no/gifs/on/hjelp.gif" BORDER=0></A>
+
+<H5>Oppdatert, 22. mai 1995, <A HREF="http://www.oslonett.no/html/CommentForm.html">webmaster@oslonett.no</A></H5>
+
+</BODY>
+</HTML>

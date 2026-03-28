@@ -1,0 +1,7 @@
+default http://www.w3.org
+#Trondheim
+circle http://www.oslonett.no 236,316 242,311 
+#Mo i Rana
+poly http://www.sun.no 320,197 319,206 327,208 331,200 325,195 
+#Ålesund
+rect http://www.eunett.no 152,332 161,344 

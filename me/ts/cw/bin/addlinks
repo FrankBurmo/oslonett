@@ -1,0 +1,161 @@
+#!/local/bin/perl -w
+
+# Interprocess communication constants...
+$dest = 'kvasir.oslonett.no';	# Internetadresse til Kvasir
+$port = 80;			# Port 80 for HTTP server
+$delay = 3;			# Minimum delay between requests
+$AF_INET = 2;
+$SOCK_STREAM = 1;
+$sockaddr = 'S n a4 x8';
+$lasttime = 0;			# Used to separate HTTP requests
+
+# Filenames...
+$LIB = '/home/stovner/a/kgn/cw/lib';
+$ext = '.bak';
+$links = "$LIB/links.txt";
+$okdirs = "$LIB/okdirs.txt";
+$notdirs = "$LIB/notdirs.txt";
+$notlinks = "$LIB/notlinks.txt";
+
+$SIG{'INT'} = 'restorefiles';
+
+foreach ( $links, $okdirs, $notdirs, $notlinks ) {
+    system("cp $_ $_$ext") if -e $_;
+}
+
+open(LINKS, "+>>$links") || die;
+open(OKDIRS, "+>>$okdirs") || die;
+open(NOTDIRS, "+>>$notdirs") || die;
+open(NOTLINKS, "+>>$notlinks")|| die;
+
+while ( <LINKS> ) { 
+    next if /^#/;
+    chop;
+    ($fra, $til) = m#^([^%]+)%<a\s+href="?([^">]+)"?>[^<]+</a>#;
+    $links{$til} = $fra;
+}
+while ( <OKDIRS> ) { chop; $okdirs{$_} = 1; }
+while ( <NOTDIRS> ) { chop; $notdirs{$_} = 1; }
+while ( <NOTLINKS> ) { chop; $notlinks{$_} = 1; }
+
+&processdir("/kvasir/");
+
+close LINKS;
+close OKDIRS;
+close NOTDIRS;
+close NOTLINKS;
+
+exit 0;
+
+# dummy call to prevent warning about unused sub-routine:
+&restorefiles;
+
+
+
+
+sub isdir {
+    local ($url) = @_;
+
+    ( $url =~ m#^http://kvasir.oslonett.no# ) ||
+     !( $url =~ /:/ );
+}
+
+
+sub processdir {
+    local($path) = @_;
+
+    local($link, @links, $url, $title, $svar);
+
+    print "---- Entering directory: $path\n\n";
+    @links = &getlinks("$path");
+    foreach $link (@links) {
+	($url, $title) = split("<>", $link);
+	if (&isdir($url) && !$notdirs{$url} && !$okdirs{$url}) {
+	    print "Nytt dir: $title ($url). OK? (n) ";
+	    $svar = <STDIN>;
+	    if ($svar =~ /^[jJyY]/) {
+		$okdirs{$url} = $title;
+		print OKDIRS "$url\n";
+	    }
+	    else {
+		$notdirs{$url} = $title;
+		print NOTDIRS "$url\n";
+	    }
+	}
+	elsif (!&isdir($url) && !$notlinks{$url} && !$links{$url} ) {
+	    while ( ($key, $val) = each %links) {
+		print "Fra før:: $val ($key)\n" if $val eq $title;
+	    }
+	    print "Ny link: $title. ($url) OK? (n) ";
+	    $svar = <STDIN>;
+	    if ($svar =~ /^[jJyY]/) {
+		$links{$url} = $title;
+		print LINKS "$title%<a href=\"$url\">$title</a>\n";
+	    }
+	    else {
+		$notlinks{$url} = $title;
+		print NOTLINKS "$url\n";
+	    }
+	}
+    }
+
+    foreach $link (@links) {
+	($url, $title) = split("<>", $link);
+	&processdir($url) if ( &isdir($url) && $okdirs{$url} );
+    }
+}
+
+
+
+sub getlinks {
+    # Make TCP/IP connection to host: $dest, port: $port
+    # Get WWW-page indicated by path given as parameter
+
+    local($path) = @_;
+    local($/);
+    local($hostname, $name, $aliases, $proto, $type, $len);
+    local($thisaddr, $thataddr, $this, $that, $inb);
+    local($url, $title, @links);
+
+    $tts = $delay - (time - $lasttime);
+    sleep($tts) if ($tts > 0);
+
+    @links = ();
+
+    chop($hostname = `hostname`);
+    ($name, $aliases, $proto) = getprotobyname('tcp');
+    ($name, $aliases, $type, $len, $thisaddr) = gethostbyname($hostname);
+    ($name, $aliases, $type, $len, $thataddr) = gethostbyname($dest);
+
+    $this = pack($sockaddr, $AF_INET, 0, $thisaddr);
+    $that = pack($sockaddr, $AF_INET, $port, $thataddr);
+
+    socket(S, $AF_INET, $SOCK_STREAM, $proto) || die "Socket failed: $!\n";
+    bind(S, $this) || die "Bind failed: $!\n";
+    connect(S, $that) || die "Connect failed: $!\n";
+
+    select(S); $|=1; select(STDOUT);
+
+    print S "GET $path\n";
+
+    $/ = "</a>";
+    $* = 1;
+    while (<S>) {
+	$inb = m#<blockquote># .. m#</blockquote>#;
+	if ( $inb && $inb !~ /E/ ) {
+	    ($url, $title) = m#<a\s+href=\"?([^">]+)\"?>([^<]+)</a>#;
+	    $url = $path . $url if &isdir($url);
+	    push(@links, join("<>", ($url, $title))) if ($url && $title);
+	}
+    }
+    @links;			# returner alle linker som er funnet.
+}
+
+
+sub restorefiles {
+    print "\nSIGINT caught - restoring old files.\n";
+    for ($links, $okdirs, $notdirs, $notlinks) {
+	rename($_.$ext, $_);
+    }
+    exit(1);
+}

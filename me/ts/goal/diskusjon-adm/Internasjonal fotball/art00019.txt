@@ -1,0 +1,6 @@
+title: Supporterklubber
+passwd: spK072fmS.0cI
+from: Arne Petter Omholt (arneom@stovner.a.sn.no)
+host: stovner.a.sn.no/194.143.10.10
+date: 6. desember 95 10:08:06
+body: <br>Er det noen som har en oversikt over hvilke engelske supporterklubber<br>som har web-sider i Norge?<br>Jeg har funnet Liverpool.

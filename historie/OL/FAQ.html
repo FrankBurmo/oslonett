@@ -1,0 +1,117 @@
+<html>
+<head>
+ <title>FAQ for Oslonett's "WWW Meets The 1994 Winter Olympics"</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+<h1>FAQ for Oslonett's "WWW Meets The 1994 Winter Olympics"</h1>
+Due to a tremendous number of connections and many questions and remarks
+from users all over the world, we have decided to make a FAQ for this
+service.
+<h4>
+<hr>
+<i>Please note that the contents and opinions expressed herein are
+the opinions of Oslonett, not Skrivervik Data nor Sun Microsystems.</i>
+<hr>
+</h4>
+<dl>
+<dt><b>The mirror site at sun.com is nice, but the files there are not up-to-date</b>
+<dd>This is a temporary problem and will hopefully be solved by Sun and 
+    Oslonett soon. The files are created here in Oslo every 15 minutes.
+    <i>[Fixed on February 18]</i>
+<dt><b>Where do you guys get your news from? Do you run an electronic newspaper?</b>
+<dd>No. We get our news from NTB - a  Norwegian news wire which sells
+    their news to newspapers and anyone else willing to pay for it.
+    The technical aspects of the delivery- and formatting process are 
+    <a href=/historie/OL/About.html>described elsewhere</a>.
+<dt><b>Why are some of the pages so poorly formatted?</b>
+<dd>Good question. Please note that basically no formatting is done at all! We
+    receive raw news messages from the NTB wire, and embed the text within
+    &lt;pre&gt; ...     &lt;/pre&gt; tags. It is impossible to do any automatic
+    formatting, since the raw data contains no markup at all. We do our best
+    to post-edit everything though.
+<dt><b>What does the word "KUNSTLØP" mean? You seem to need a K12 level English course?</b>
+<dd>Maybe we do, but note that NTB deliver Norwegian news only. Before the
+    project started, we hoped to receive results only, not results mixed
+    with comments and other noise from the journalist on duty at the NTB desk.
+    <p>
+    We have set up a translating filter which originally was designed to
+    only translate names of countries, event names and other common phrases
+    likely to appear on the lists. This Perl filter soon turned out to be more
+    or less a natural language translator. We do some post-editing to correct
+    funny translations, but we are not able to cope properly with every single
+    file. Please live with it and feel free to learn a couple of Norwegian
+    words :-)
+    <p>
+    Btw, "KUNSTLØP" is the Norwegian word for Figure Skating.
+<dt><b>Why do you post the same message 2 or 3 times on your result indexes?</b>
+<dd>We don't - the news wire do. If you take a closer look, the duplicate 
+    messages are slightly different. Maybe the journalist made a typo in the
+    first message and creates a new message. We try to remove duplicate
+    messages from the indexes now and then. However, the Next and Previous
+    links will take you to every message as before.
+<hr>
+<dt><b>How do you make the images? Do you have your own reporters up at Lillehammer?</b>
+<dd>No. We do screen captures on an Indy workstation with video-in cards.
+    Analog video is fed directly into the Indy from a VCR which only acts
+    as a tuner.
+<dt><b>Why do you mostly capture portraits of Norwegian athlets?</b>
+<dd>Do we? We try to shoot the winners or the athlets who are most likely
+    to win. Look at the Medal Standings - they should give you an impression
+    on how the images are distributed within the participating countries.
+<dt><b>Can I ask to you make a shot of my favorite athlet and favorite event?</B>
+<dd>Yes, you can and we will try, but we won't guarantee anything. It is difficult for us
+    to capture events which take place after office time (timezone MET).
+<dt><b>What about the images and copyrights? Is it legal to capture the TV signals and publish the images on the Internet?</b>
+<dd>Thank you for asking - indeed a very interesting question. CNN's lawyers
+    will say "no, it is not legal". But so far, we haven't captured CNN, only
+    the Norwegian channel NRK.
+    <p>
+    In Norway - and probably in most other countries - there is an amendment
+    called "The Right To Cite". Naturally, this is most used within the field
+    of regular text publishing and also electronic text publishing. We think
+    it is feasible to also claim the right to "cite" information in other 
+    forms - typically audio, images and video. Authoritative opinions on this
+    as well as legal practise in this field in other countries are welcomed.
+<dt><b>I haven't seen an image of the Olympic logo yet. Where is it? It should be easy to capture?</b>
+<dd>Please don't ask. The five rings are probably one of the worlds best
+    protected trademarks. We don't want the IOC lawyers on our backs.
+<dt><b>In the <a href=Images.html>Image Archive</a> you mention MBONE. Can you transmit your VCR stream  to the MBONE?</b>
+<dd>No. This would be to ask for trouble. Screen captures of single frames
+    are one thing, video tapping is something totally different.
+<hr>
+<dt><b>When using your WAIS engine, I got strange URLs back from Mosaic. They don't work and seem to include the text "www.ncsa.uiuc.edu:8001".</b>
+<dd>Our WAIS servers are not registered within the directory-of.servers.src at
+    CNIDR, and your WWW client has not direct WAIS support, so it is using the
+    WAIS gateway at NCSA. Tell your sysadm to compile lynx and Mosaic with
+    direct WAIS support. You need the freeWAIS src distribution, but the whole
+    thing is trivial. I don't know anything about PC clients, sorry. You can 
+    get more help on WAIS together with WWW and Mosaic, by reading the
+    <a href=http://wintermute.ncsa.uiuc.edu:8080/wais-tutorial/wais.html>WAIS tutorial from NCSA</a>.
+<dt><b>Where do I find current Point and Medal Standings?</b>
+<dd>NTB post these lists now and then so they will appear on the daily
+    listings. You could either use the WAIS engines to locate them, or you 
+    can just let your WWW client search in <a href=/historie/OL/Events.html>the chronological list of events</a>. We will eventually try to make a pointer to the
+    current Medal Standings list.
+<dt><b>The GIF images are not transmitted properly, only the upper half of the image show up, the rest of it is distorted</b>
+<dd>This is (at least I think it is) because of network contention and 
+    temporarily HTTP timeouts. Between Feb 14 and Feb 15 (~27 hours) our 
+    Plexus server has logged ~130.000 connections, or - more 
+    accurately - HTTP GET commands. As an exercise, find out how many GET
+    commands this is pr. minute. I am not kidding!
+    <p>
+    A <a href=http://www.sun.com>US mirror site</a> is already set up  by the time you 
+    read this. 
+    Please use this if you are within the US or Pacific Rim.
+</dl>
+<hr>
+  <a href=/historie/OL/OL94.html>
+     <img alt="[Olympic Home Page]" src=/historie/OL/gifs/OLhome.gif></a>
+  <a href=/historie/OL/Images.html>
+     <img alt="[Image Archive]" src=/historie/OL/gifs/gifs.gif></a>
+ <!--#include virtual="/historie/OL/footer.html" -->
+<address>
+FAQ last updated, February 23, 1994, <a href=http://priv.infostream.no/~steinar/>Steinar Kjærnsrød</a>
+</address>
+</body>
+</html>

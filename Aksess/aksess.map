@@ -1,0 +1,3 @@
+default http://www.oslonett.no/Aksess/
+circle  http://www.oslonett.no/Aksess/info.html 65,68,64,50
+

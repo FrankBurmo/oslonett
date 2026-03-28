@@ -1,0 +1,167 @@
+<HTML>
+<HEAD>
+ <TITLE>SN Internett OSS - PPP</TITLE>
+ <LINK REV=MADE HREF="mailto:webmaster@a.sn.no">
+</HEAD>
+<BODY bgcolor="ffffff">
+ 
+<a href="/"><img src=/rndtopp.cgi border=0></a><br>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=130>
+<pre> </pre>
+</td>
+<td>
+<a href="/gen/SisteNy_1_1.html"><img src="/img/hovedmeny/nyheter_av.gif" border="0" alt="[nyheter]"></a><a href="/gen/Musikk_2_1.html"><img src="/img/hovedmeny/fritid_av.gif" border="0" alt="[fritid]"></a><a href="/gen/Diverse_3_1.html"><img src="/img/hovedmeny/kjop_av.gif" border="0" alt="[kjop og salg]"></a><a href="/gen/Service_4_1.html"><img src="/img/hovedmeny/proff_av.gif" border="0" alt="[proff]"></a><a href="/medlem/"><img src="/img/hovedmeny/medlem_pa.gif" border="0" alt="[medlemstjenester]"></a><a href="/innhold/"><img src="/img/hovedmeny/veiviser_av.gif" border="0" alt="[veiviseren]"></a>
+</td>
+</tr>
+</table>
+
+<p>
+<H1>SN Internett OSS - PPP</H1>
+
+<HR SIZE=3>
+
+<OL>
+  <LI><A HREF="#1">Hva er forskjellen på en SLIP- eller PPP-basert oppkobling
+       og opkobling vha. OnTerm o.l.?</A>
+  <LI><A HREF="#3">Hva må til for å bruke "ekte" PPP?</A>
+  <LI><A HREF="#4">Hvor finner jeg disse programmene?</A>
+  <LI><A HREF="#5">Hva slags brukergrensesnitt får man med SLIP?</A>
+  <LI><A HREF="#7">Hva er fordelene med å velge "ekte" SLIP/PPP framfor løsninger
+      basert på SLIP-emulering (TIA eller OnTerm/remsock)?</A>
+  <LI><A HREF="#8">Hva er forskjellen på SLIP, CSLIP og PPP?</A>
+</OL>
+  
+<HR>
+
+<OL>
+  <A NAME="1"><H3><LI>Hva er forskjellen på en SLIP- eller PPP-basert oppkobling
+       og bruk  av Oslonett gjennom OnTerm o.l.? Jeg har jo adgang til de samme
+      programmene (telnet, osv.) i begge tilfelle?</H3></A>
+       <P>
+             Når du bruker Onterm bruker du i utgangspunktet Internet ved at
+             du kjører en såk. terminalemulator (f.eks. OnTerm) på din egen
+             datamaskin, og bruker denne til å ringe opp, logge inn og
+             starte telnet på <b>vår</b> maskin.
+       <P>
+             Med SLIP eller PPP skal du ha de Internet-programmene du ønsker
+             å bruke (telnet, osv.) installert på <b>din</b> egen maskin og kommer
+             direkte ut på nettet uten å logge inn på vår maskin først.
+       <P>
+             Skillet mellom de to tilknytningformene er imidlertid ikke så
+             klart dersom man trekker "SLIP-emulatorer" som OnTerm/remsock og
+             TIA inn i diskusjonen.  Vi anbefaler imidlertid alle våre brukere
+             å satse på "ekte" PPP framfor SLIP-emulatorer.
+       <P>
+  <HR>
+
+  <A NAME="3"><H3><LI>Hva må til for å bruke "ekte" PPP?</H3></A>
+       <P>
+      Du trenger et kommunikasjonsprogram som støtter PPP.
+       <P>
+      Nyere operativsystemer som Windows'95, W/NT og OS/2 Warp
+      har ofte de nødvendige kommunikasjonsmoduler
+      innebygget, som f.eks. W/NT RAS og OS/2 IAK.
+       <P>
+      Dersom programvare for kommunikasjon ikke finnes i ditt
+      operativsystem må du installere tilleggsmoduler. For Microsoft
+      Windows anbefaler Oslonett Trumpet Winsock, for Macintosh MacPPP.
+      Det finnes imidlertid en rekke andre løsninger som også kan
+      brukes.
+       <P>
+      Du trenger dessuten programmer (klientutgaver) av alle de tjenester
+      du ønsker å bruke (ftp, telnet, WWW, archie, gopher, osv.). Også
+      disse må du installere på din egen maskin.
+
+  <HR>
+
+  <A NAME="4"><H3><LI>Hvor finner jeg disse programmene?</H3></A>
+    <P>
+    Oslonett selger en "pakkeløsning" bygget rundt den kommersielle
+    utgaven av Netscape Navigator.  Denne pakkeløsningen kalles for
+    "Oslonett Nettlos" og inneholder alt du trenger, inklusive et
+    eget installasjonsprogram som forenkler arbeidet med å sette
+    opp programvaren til bruk mot Oslonett.
+       <P>
+    En del nyere operativssystemer (f.eks. OS/2-Warp, Windows/NT og
+    Unix/linux) blir levert med en del programvare som kan brukes i
+    samband med en PPP-tilkytning, slik at det ikke er nødvendig å
+    kjøpe programvare i tillegg.
+       <P>
+    Det er også mulig å selv samle sammen det man trenger ved selv å
+    hente tingene inn fra nettet.  Nøkkelprodukter som Netscape og
+    Trumpet er imdlertid ikke lenger gratis, men <B>skal</b> betales for
+    selv om man henter dem inn fra nettet selv.
+
+  <HR>
+
+  <A NAME="5"><H3><LI>Hva slags brukergrensesnitt får man med SLIP?</H3></A>
+    <P>
+      SLIP innebærer at <STRONG>din</STRONG> maskin er direkte tilkoblet Internet, og
+      du trenger ikke logge på Oslonetts maskin i det hele tatt for å
+      gjøre bruk av tjenester på nettet.</P>
+    <P>
+      Hva slags grensesnitt du får er derfor helt og fullt avhengig av
+      den softwaren du installerer på din egen maskin. Stort sett er
+      de SLIP-programpakkene som selges for MS-Windows og Macintosh i
+      basert på et grafisk brukergrensesnitt.</P>
+
+  <HR>
+
+  <A NAME="7"><H3><LI>Hva er fordelene med å velge "ekte" SLIP/PPP framfor løsninger
+      basert på SLIP-emulering (TIA eller OnTerm/remsock)?</H3></A>
+    <P>
+      TIA/OnTerm/remsock støtter ikke nødvendigvis samtlige
+      IP-baserte tjenester (selv om lista er blitt ganske lang
+      etterhvert) -- mens SLIP og PPP i prinsippet skal gjøre det.
+    <P>
+      "Ekte" SLIP (og i enda sterkere grad PPP) er mer robust
+      i forhold til overføringsfeil enn løsninger basert på
+      emulatorer.
+
+  <HR>
+
+  <A NAME="8"><H3><LI>Hva er forskjellen på SLIP, CSLIP og PPP?</H3></A>
+    <P>
+      Grovt sett er dette alternative løsninger på samme problem:
+      Hvordan sender man IP (Internet Protocol) datapakker over
+      asynkrone serielle linjer (f.eks. telefonlinjer)?</P>
+    <P>
+      SLIP står for "Serial Line IP".  SLIP er beskrevet i RFC 1055
+      (1988-01-06).  Den fulle tittelen er "Nonstandard for transmission
+      of IP datagrams over serial lines: SLIP".  CSLIP er bare en
+      variant av SLIP som benytter såkalt "TCP header compression".</P>
+    <P>
+      PPP (RFC 1171) er "The Point-to-Point Protocol for the
+      Transmission of Multi-Protocol Datagrams Over Point-to-Point
+      Links" (1990-07-24).</P>
+    <P>
+      PPP er altså en nyere standard, og den er mer generell, da den
+      tillater flere protokoller enn bare IP. (Oslonetts PPP tilbud
+      gjelder kun IP over PPP).</P>
+    <P>
+      PPP inneholder en forhandlingsfase der det forhandles om hvilken
+      protokoll som skal benyttes, om det skal benyttes TCP header
+      compression og andre finurligheter. PPP er også mer robust mht.
+      kommunikasjonsfeil o.l.  SLIP/CSLIP er bare en rimelig "rå"
+      innkapsling av IP pakker over en seriell forbindelse.</P>
+    <P>
+      Litt avhengig av hva slags programvare man benytter i PC-enden er
+      SLIP noe mindre effektivt enn PPP, mens CSLIP som regel er litt
+      raskere enn PPP.</P>
+
+</OL>
+
+<HR SIZE=3>
+
+ 
+
+ 
+ 
+
+<P>
+Sist oppdatert, 15. nov. 1995, <A HREF="mailto:gisle@a.sn.no">gisle@a.sn.no</A>
+
+</BODY>
+</HTML>

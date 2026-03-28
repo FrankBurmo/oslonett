@@ -1,0 +1,18 @@
+	FILENAME: Mediasound.ToolBar
+	    NOTE: lines beginning with white space are comments!
+
+OPEN
+SAVE
+SAVE AS
+LOAD CLIP
+SAVE CLIP
+UNDO
+REDO
+CUT
+COPY
+PASTE
+INSERT
+MIX
+ZOOM IN
+ZOOM OUT
+ZOOM SELECT

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# 
+LIB=/home/frogner/a/kgn/cw/lib
+
+PATH=/usr/bin:/bin:/local/bin:/usr/ucb
+
+cat $LIB/header - $LIB/footer
+

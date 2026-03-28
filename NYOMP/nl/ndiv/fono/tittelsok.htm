@@ -1,0 +1,121 @@
+<html>
+<head>
+ <title>Søkegrensesnitt til FONOS titteldatabasa på SN Horisont</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body background=img/back.gif bgcolor="ffffff">
+<table><tr><td valign=top width=25%><a href=/fono/><img alt="[FONO-logo]" align=left SRC=img/logo.gif border=0></a><br><pre>               </pre><td valign=top> <h1>Foreningen Norske Plateselskaper<br><a href="img/menu.map"><IMG SRC="img/stikk_menu.gif" border=0 ismap></a></h1>
+</table>
+<br clear=all>
+
+<h1>Søkegrensesnitt til FONOS titteldatabasa på SN Horisont</h1>
+
+<form method="POST" action="finntittel.cgi">
+
+
+<blockquote>
+<hr noshade size=1>
+<font size=+1>
+ Dette skjemaet brukes til å søke i tittelbasen. Man kan ta ut
+ lister etter ulike kriterier og i ulike formater. Spesifiserer man
+ søkekriterier som identifiserer en unik tittel, returneres info
+ om denne tittelen.
+</font>
+<hr noshade size=1>
+</blockquote>
+
+
+Dersom ingen av feltene nedenfor fylles ut, returneres en <a
+href="finntittel.cgi?format=html">liste
+over alle titler</a>. Hvis flere felter fylles ut brukes logisk
+<b>og</b>-operasjon i utvelgelsen av tittelpostene. I feltet for
+tittelnavn kan man fylle ut et regulært uttrykk (perl regexp).
+
+<p>
+
+<pre>
+<hr noshade size=2>
+
+<input type="submit" value="Start søk">
+
+
+Tittel       :  <input name="Tittel" type="text" size=50>
+
+Tittelnummer :  <input name="Tittelnr" type="text" size=10>
+
+Artist       :  <input name="Artist" type="text" size=50>
+
+Genre        :  <input name="Genre" type="text" size=50>
+
+Label        :  <input name="Label" type="text" size=50>
+</pre>
+
+<hr noshade size=2>
+
+
+<h2>Ønsket format</h2>
+
+Oppgi ønsket format for dokumentet som returneres:
+
+<blockquote>
+<input type="radio" name="format" value="html" checked>
+HTML-dokument<br>
+
+<input type="radio" name="format" value="psskjerm">
+PostScript-dokument for visning på skjerm<br>
+
+<input type="radio" name="format" value="psfil">
+PostScript-dokument for lagring til fil<br>
+
+</blockquote>
+
+<h2>Ønskede felter i liste</h2>
+
+Nedenfor velges hvilke felter som skal med i listen i tillegg til
+firmanavn og kundenummer. (Pass selv på å ikke velge for mange linjer
+slik at det ikke blir plass på arket/skjermen.)
+
+<blockquote>
+<input type="checkbox" name="felt.kontakt" > Kontaktperson <br>
+<input type="checkbox" name="felt.tel" > Telefon <br>
+<input type="checkbox" name="felt.adr" > Adresse <br>
+<input type="checkbox" name="felt.type" > Annonsetype<br>
+<input type="checkbox" name="felt.pris" > Faste leieinntekter pr. kvartal (spesialavtaler ikke medregnet)<br>
+<input type="checkbox" name="felt.kontakt1" > Initiell kontakt<br>
+<input type="checkbox" name="felt.kontakt2" > Operativ kontaktperson<br>
+</blockquote>
+<h2>Sorteringsalgoritme</h2>
+Dersom søket gir to eller flere treff i databasken skal listen sorteres...
+
+<blockquote>
+<input type="radio" name="sortering" value="alfabetisk" checked>
+alfabetisk<br>
+<input type="radio" name="sortering" value="numerisk">
+etter kundenummer<br>
+<input type="radio" name="sortering" value="dato">
+etter registreringsdato, siste registrering først
+</blockquote>
+
+<input type="submit" value="Start søk">
+<input type="reset" value="Resett skjema">
+
+<p>
+<hr size=1 noshade>
+<a href="/">
+  <img border="0" alt="[Oslonett]" src="/gifs/on/home.gif"></a>
+<a href="/on/www/kunder">
+  <img border="0" alt="[Webtjenester]" src="/gifs/on/opp.gif"></a>
+<a href="/help.html">
+  <img border="0" alt="[Hjelp]" src="/gifs/on/hjelp.gif"></a>
+<a href="/search.html">
+  <img border="0" alt="[Søk]" src="/gifs/on/sok.gif"></a>
+
+
+<address>
+ <font size="-1">
+  Copyright &#169; 1995,  Oslonett AS.
+ </font>
+</address>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+default /schibsted/default.html
+#Balance
+rect /schibsted/kv3/eng/balanse.html 100,32 197,51 
+#Key
+poly /schibsted/kv3/eng/nokkel.html 84,65 195,66 195,51 105,51 82,65 
+#Org
+poly /schibsted/orgeng.html 59,79 199,80 197,65 82,65 58,77 
+#Statement
+poly /schibsted/kv3/eng/kommentar.html 31,93 162,94 161,80 55,79 32,92 
+#Home
+poly /schibsted/ 40,86 30,66 30,50 36,33 52,17 70,14 86,15 104,22 113,31 95,31 96,49 101,53 41,87 

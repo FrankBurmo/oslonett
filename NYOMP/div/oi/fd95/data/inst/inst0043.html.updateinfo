@@ -1,0 +1,11 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="43"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Høgskolen i Agder"` -->
+<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Høgskolen i Agder er med sine over 6000 studenter og nær 500 vitenskapelige ansatte en av de største høgskolene i Norge. Høgskolen har over 100 studietilbud, og legger stor vekt på at studentene skal trives både på og utenfor studiene. Høgskolen driver en utstrakt forskningsvirksomhet med vekt på deltakelse i nasjonale og internasjonale forskningsprosjekter. Høgskolen har knutepunktfunksjoner i Norgesnettet innen matematikkdidaktikk, fagoversetterstudier og spesialiseringsområdene internasjonalisering og prosjektadministrasjon i siviløkonom-utdanningen i Norge. Videre har høgskolen utpekt mekatronikk og telematikk som satsingsområder innen ingeniørutdanningen sin. ` -->
+<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``Forskningsdagene '95 markeres på høgskolen gjennom to seminarer` -->
+<!-- replace `<option(.*Høgskole)` with `<option selected`` -->

@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1149"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Åpen dag/Fagdag ved Høgskolen i Stavanger, Ullandhaug"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Høgskolen i Stavanger, Ullandhaug"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="kl. 0900-1500"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="77"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Høgskolen i Stavanger"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Høgskolen i Stavanger presenterer en rekke spennende prosjekter som speiler den store bredden og det store mangfoldet i avdelingene og de to kompetansesentrene for atferdsforskning og leseforskning. Bli kjent med en av landets største høgskoler gjennom nærmere 30 lærerike og underholdende forelesninger. Velkommen til HiS fredag 13. oktober! Eksempler fra programmet: - 'Manipulering med liv?', Avdeling for humanistiske fag, rom D-201 - Omvisning i Kjell Arholms hus, Avdeling for helse- og sosialfag - Simulatortrening i bruk av medisinsk teknisk utstyr Avdeling for teknisk-naturvitenskapelige fag, rom E-452 ` -->
+<!-- replace `<option(.*Rogaland)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?13.10"?)\s*>` with `` checked>` -->

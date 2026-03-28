@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1158"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Foredrag fra NVH. avd Sandnes"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Auditoriet på Arkeologisk Museum"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="kl. 12.15"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="79"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Norges veterinærhøgskole, avdeling Sandnes"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``SLUMRENDE VIRUS OG TIKKENDE BOMBER HOS SAU. Maedi og scrapie v/ professor dr.med.vet. Martha J. Ulvund (NVH). Årsak, symptom og sykdomsforandringer ved disse to dødelige sykdommene hos sau, som setter hele småfeholdet i fare. Utfordringer vi står overfor bl.a. når det gjelder diagnostikk og bekjempning. Del av foredragsserie: Se Arkeologisk museum i Stavanger. ` -->
+<!-- replace `<option(.*Rogaland)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?14.10"?)\s*>` with `` checked>` -->

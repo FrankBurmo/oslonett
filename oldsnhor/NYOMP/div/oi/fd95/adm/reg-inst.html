@@ -1,0 +1,110 @@
+<html>
+<head>
+ <title>Registreringsskjema for deltakerinstitusjoner</title>
+</head>
+
+<body bgcolor="ffffff" text="42315a" link="295239" vlink="ff8410">
+
+<center>
+<h1><img src="/div/oi/fd95/gifs/fd95-logo-inv.gif" alt="Forskningsdagene '95" ></h1>
+
+</center>
+<h1>Registreringsskjema for deltakerinstitusjoner</h1>
+
+<blockquote>
+<hr noshade size="1">
+
+Denne tjenesten tilbyr deg å registrere arrangementene direkte i
+FD'95s database. Tjenesten er automatisk, dvs. at det genereres et
+HTML-dokument med presentasjon av arrangementet ut fra feltene i
+skjemaet nedenfor. Vær derfor nøyaktig med utfyllingen.
+
+<hr noshade size="1">
+</blockquote>
+
+<form method="POST" action="reg-inst.cgi">
+
+<!-- Linjen nedenfor med input/name="Nummer" må ikke fjernes! -->
+<input type="hidden" name="Nummer">
+
+
+<h2>Fyll inn skjemaet og send FD'95</h2>
+
+Navnefeltet <i>må</i> fylles ut. Bruk fullt navn, sett eventuell(e)
+forkortelse(r) i parentes etter fullt navn. Når man søker etter
+institusjoner kan man også søke etter institusjonens forkortelse.
+
+  <b><pre>
+ Navn på institusjon     : <input name="Institusjon" type="text" size="40">
+</pre></b>
+
+Feltene for URL til logo og egen web-server kan stå tomme dersom man
+ikke har egne sider eller logo tilgjengelig via world wide web. (Det
+er ingen ulempe for presentasjonen i denne databasen om man ikke har
+egne web-sider.) Hvis man ikke har egne web-sider men likevel ønsker
+logo i presentasjonen må logo legges opp på Oslonetts maskiner. Ta
+kontakt med <a
+href="mailto:mariann@oslonett.no>mariann@oslonett.no</a> eller <a
+href="mailto:kgn@oslonett.no>kgn@oslonett.no</a> for mer informasjon.
+
+<b><pre>
+ URL til egen web-server : <input name="ServerURL" type="text" size="40">
+ URL til logo            : <input name="LogoURL" type="text" size="40">
+</pre></b>
+
+<p>
+
+<h2>Kategorisering av institusjon</h2>
+
+Det er valgt faste kategorier for å lagre informasjonen om alle
+deltakerinstitusjoner i en hierarkisk struktur. Dersom <em>ingen</em>
+av kategoriene ovenfor passer, kan man oppgi egen kategori i feltet
+nedenfor. Det beste er imidlertid om man kan velge en kategori som
+allerede er i bruk. Før nytt kategorinavn velges er det derfor lurt å
+ta en titt på <a href="/div/oi/fd95/finn-inst.cgi">listen over
+allerede brukte kategorier</a> som man finner øverst på siden med
+oversikt over alle deltagerinstitusjonene.
+
+<pre>
+ Velg kategori           : <select name="Kategori">
+   <option> Forskningsinstitutt
+   <option> Universitet
+   <option> Høgskole
+   <option> Bedrift
+   <option> Museum
+   <option> Offentlig institusjon
+   <option value=""> Angitt nedenfor
+  </select>
+<br>
+ Navn på egen kategori   : <input name="Altkategori" size=40>
+</pre></b>
+
+<p>
+
+ <h2>Kort beskrivelse av institusjonen:</h2>
+
+Denne beskrivelsen settes inn i den presentasjonssiden som lages om
+institusjonen.<p>
+
+<textarea name="Beskrivelse" rows="5" cols="80"></textarea>
+
+<h2>Kort om institusjonens deltagelse i FD'95:</h2>
+
+<textarea name="Deltagelse" rows="5" cols="80"></textarea>
+<p>
+
+<center>
+<input type="submit" name="Knapp" value="Registrer i FD '95s database">
+<input type="reset" value="Nytt skjema">
+</center>
+<!-- passord -->
+
+</form>
+
+<hr>
+<font size="-1">
+<address>
+Tilrettelagt for <a href="/div/oi/fd95/">Forskningsdagene '95</a> av <a href="http://www.oslonett.no">Oslonett</a></address>
+
+</body>
+</html>

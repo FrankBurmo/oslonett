@@ -1,0 +1,20 @@
+overskrift: Liste over flere enn 50 arrangement
+kommentar: Jeg er ikke i stand til å få opp mer enn 50 arrangement, selv om det er gjort 170 funn på søket. Jeg har forsøkt å sette maks 200 som grense. Det betyr at jeg ikke får opp Sør-Trøndelag fylke i det hele tatt, så jeg får ikke se hvilke arrangementer som er lagt inn i basen.
+svar: Det er nå lagt inn mulighet for å vise alle treff uten øvre begrensning i antall treff. Når man tidligere gjorde søk fra siden "Oversikt over arrangementer" var antall treff alltid øvre begrenset til 50. Denne grensen er nå fjernet slik at man vil få vist alle treff for angitt dag eller angitt fylke. Om man ønsker arragnementer for _en_ bestemt dag for et angitt fylke, kan man bruke siden "Søk etter arrangement". Fra denne siden er det forøvrig mulig å søke etter vilkårlige kombinasjoner av feltnavnene.
+signatur: kgn@oslonett.no
+publiseres: ja,mail
+besvart: ja
+firma: NVI - Norsk voksenpedagogisk forskningsinstitutt
+navn: Margit Lea Myklebust
+stilling: Informasjonskonsulent
+adresse: Jonsvannsveien 82
+postnummer: 7035
+poststed: TRONDHEIM
+epost: MLM@NVI.NO
+telefon: 73941100
+fax: 73941222
+regdato: 26.9.95 15:01:59
+revdato: 27.9.95 19:13:58
+intern: nei
+anonym: nei
+file: /local/www/div/oi/fd95/respons/intern/fd95reg00010.txt

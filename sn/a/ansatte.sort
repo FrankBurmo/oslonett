@@ -1,0 +1,37 @@
+#!/usr/local/bin/perl5 -w
+
+# $Id: personell.sort,v 1.1 1994/01/07 10:20:07 aas Exp $
+#
+
+$db = shift || "ansatte.db";
+
+open(DB, $db) || die;
+$/ = "\n\n";
+
+@sorted = sort mysort <DB>;
+
+print @sorted;
+
+
+sub mysort
+{
+    # Should really make it sort Ê, ¯, Â and aa the right way
+
+    return -1 if ($a =~ /^#/);
+    return 1 if ($b =~ /^#/);
+    
+    $afn = $1 if $a =~ /^FN:\s*(.+)/m;
+    $aen = $1 if $a =~ /^EN:\s*(.+)/m;
+    $bfn = $1 if $b =~ /^FN:\s*(.+)/m;
+    $ben = $1 if $b =~ /^EN:\s*(.+)/m;
+    $an = "$aen $afn"; $bn = "$ben $bfn";
+    $an =~ tr/A-Z”Û∆ÿ≈Ê¯Â/a-zoo{|}{|}/;
+    $bn =~ tr/A-Z”Û∆ÿ≈Ê¯Â/a-zoo{|}{|}/;
+    $an =~ s/aa/}/g;
+    $bn =~ s/aa/}/g;
+
+    #print "$an <=> $bn\n";
+
+    return $an cmp $bn;
+}
+

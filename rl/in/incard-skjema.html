@@ -1,0 +1,110 @@
+<html>
+<head>
+ <title>Søknad om Inhotel Card</title>
+</head>
+
+<body background=gifs/bg.gif text=fed0a7 vlink=#fed0a7 link=#fed0a7 alink=#fed0a7>
+
+<center><h1>Søknad om Inhotel Card</h1></center>
+
+<blockquote>
+<hr noshade size=1>
+For kun kr. 125,- pr. år kan du sikre deg Inhotel Card. Kortet gir deg
+hotellfordeler og bonusopparbeidelse på 44 av norges ledende hoteller + 4
+assosierte hoteller i Sverige og Danmark. Alle er blottet for upersonlig
+kjedeuniformering, er sentralt beliggende, og har sjel og særpreg i
+behold. På Inter Nor-hotellene er det bare kvaliteten, gjestfriheten og
+fordelene som er felles. Inhotel Card er det eneste kortet som gir deg
+bonus på overnatting, kurs, møter og restaurantbesøk.
+
+<hr noshade size=1>
+</blockquote>
+
+<form method="POST" action="/cgi-bin/mailit">
+<input type="hidden" name="mailto" value="internor@sn.no,mariann@a.sn.no">
+<input type="hidden" name="reply-to" value="internor@sn.no">
+<input type="hidden" name="bodyattr" value="bgcolor=#ffffff.gif">
+<input type="hidden" name="imgattr" value="src=/internor/gifs/inh.gif">
+<input type=hidden name="subject" value="Søknad om Inhotel Card">
+
+<table border="2" cellpadding="2" cellspacing="2" >
+<tr>
+<td><input type=checkbox name="Bestilling" value="bets">
+<td> Jeg vil gjerne ha Inhotel Card. Send meg kortet snarest mulig.
+ Medlemsavgiften er kun kr. 125,- pr. år. Forbehold om prisendringer.
+ Vedtekter sendes sammen med kortet.<br>
+<tr>
+<td><input type=checkbox name="Informasjon" value="info">
+<td> Jeg ønsker mer informasjon om Inhotel Card med MasterCard<p>
+</table>
+<p>
+<center>
+<table border="5" cellpadding="10" cellspacing="10">
+<tr>
+<td colspan="2"><b>Personlige opplysninger</b>
+<pre><b>
+ Etternavn           :  <input name="Etternavn" type="text" size=50>
+ Fornavn             :  <input name="Fornavn" type="text" size=50>
+ Fødselsdato         :  <input name="Fødselsdato" type="text" size=50>
+ Privatadresse       :  <input name="Privatadresse" type="text" size=50>
+ Postnr./sted        :  <input name="Postnr og sted"type="text" size=50>
+ Tlf.                :  <input name="Tlf.nr" type="text" size=50>
+ Email               :  <input name="Email" size="50">
+</tr>
+</pre>
+</b>
+<tr>
+<td colspan="2"><b>Ditt firma</b> 
+<pre><b>
+ Firma               :  <input name="Firma" type="text" size=50>
+ Firmaadresse        :  <input name="Firmaadresse" type="text" size=50>
+ Postnr./sted        :  <input name="Postnr og sted"type="text" size=50>
+ Tlf.                :  <input name="Tlf.nr" type="text" size=50>
+ Stilling            :  <input name="Stilling" type="text" size=50>
+ Bransje             :  <input name="Bransje" type="text" size=50>
+</table>
+<p>
+<hr>
+</pre></b>
+</center>
+<input type=checkbox name="Post til firma" value="Ja"> Ønsker post til firmadresse (firmakort)<br>
+<input type=checkbox name="Post privat" value="Ja"> Ønsker post til privatadresse (privatkort)
+<p>
+<input type=checkbox name="Røyker" value="Ja"> Røyker<br>
+<input type=checkbox name="Ikke røyker" value="Ja"> Ikke røyker
+<p>
+<input type=checkbox name="Ønsker riksavis" value="Ja"> Ønsker riksavis<br>
+<input type=checkbox name="Ønsker lokalavis" value="Ja"> Ønsker lokalavis
+<p>
+<input type=checkbox name="Behov for garasje" value="Ja"> Behov for garasje<br>
+<input type=checkbox name="Rom nær heis" value="Ja"> Rom nær heis
+<p>
+<hr>
+<b>Interesser:</b><br>
+<input type=checkbox name="Interesser" value="Golf"> Golf 
+<input type=checkbox name="Interesser" value="Tennis"> Tennis 
+<input type=checkbox name="Interesser" value="Alpint"> Alpint
+<input type=checkbox name="Interesser" value="Langrenn"> Langrenn
+<input type=checkbox name="Interesser" value="Ishokey"> Ishocey
+<input type=checkbox name="Interesser" value="Bilsport"> Bilsport
+<input type=checkbox name="Interesser" value="Båtliv"> Båtliv
+<input type=checkbox name="Interesser" value="Sportfiske"> Sportfiske
+<input type=checkbox name="Interesser" value="Trening"> Helsestudio/trening 
+<input type=checkbox name="Interesser" value="Fotball"> Fotball 
+<input type=checkbox name="Interesser" value="Idrett"> Annen sport/idrett
+<hr><b>Kultur/annet:</b><br>
+<input type=checkbox name="Interesser" value="Teater"> Teater/revy
+<input type=checkbox name="Interesser" value="Konserter"> Konserter/musikk<br>
+<input type=checkbox name="Interesser" value="Kunst"> Kunst/utstilling
+<input type=checkbox name="Interesser" value="Bøker"> Bøker<br>
+<input type=checkbox name="Interesser" value="Klær"> Klær/moter<br>
+<input type=checkbox name="Interesser" value="FeriereiserNorge"> Feriereiser i Norge
+<input type=checkbox name="Interesser" value="Feriereiser-utlandet"> Feriereiser i utlandet<br>
+<input type=checkbox name="Interesser" value="Mat"> Mat/vin<br>
+<b>Annet:</b><br>
+<textarea name="Diverse" rows=6 cols=70></textarea>
+<hr>
+<input type="submit" value="Send til Inter Nor Hotels Sommerservice"> <input TYPE="reset" value="Reset skjema"></center>
+<hr>
+</body>
+</html>

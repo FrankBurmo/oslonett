@@ -1,0 +1,88 @@
+<!---Aftenposten - IT Utvikling: Jon Fredrik Fikse-------------------------->
+<!---Sist redigert av: Jan Thoresen --------------------------------------------->
+<HTML>
+<HEAD>
+<TITLE>Aftenposten - Storby</TITLE>
+</HEAD>
+<!-- For Netscape-navigatorer: Bakgrunnsfarger mm.  EGGESKALL BAKGRUNN -->
+<BODY BGCOLOR="#ffffee" TEXT="#000000" LINK="#000088" VLINK="#880000" ALINK="#880000">
+<!------ Bakgrunnsfarger mm: slutt ------------------>
+
+<!------------------- Standard header -------------------------->	<P ALIGN=center>
+<A  HREF="../../banner/stor_ho.map">
+<IMG ALIGN=center WIDTH=454 HEIGHT=65 SRC="../../banner/stor_ho.gif" ISMAP border=0></A><br>
+<!------------------- Standard header: slutt -------------------------->	<BR>
+<center>
+<!------------------- Deklarerer hele tabellen -------------------------->	
+<TABLE WIDTH=454 ALIGN=CENTER BORDER=0 CELLPADDING=5>
+<TR>
+<!------------------ TOPP: bilde & ingress til venstre ------------------->
+<TD valign=middle WIDTH=305 ALIGN=CENTER>
+<FONT SIZE=+3>Hva skjer?</FONT><BR>
+
+
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=5>
+<TR>
+
+<TD WIDTH=60 VALIGN=MIDDLE ALIGN=CENTER>
+<FONT SIZE=+1>i o<B><I>s</B></I>lo</FONT>
+
+</TD>
+<TD  WIDTH=250>
+<A HREF="kons.htm">Konsert</A><BR>
+<B>Vaya con Dios</B><BR>
+                        Belgias store stjernenavn med vokalisten Dani Klein i spissen.
+                        Blues og soul inspirert stil. Tirsdag <BR>
+<I>                        Sentrum Scene, Arbeidersamfunnets pl. 1 </I><BR<
+
+
+
+
+
+
+</TD>
+
+</TR>
+</table>
+
+<!------------------ TOPP: slutt  ------------------->
+
+<!------------------ FASTE VALG --------------------->
+<TD valign=MIDDLE>
+<LI><A HREF="dans.htm">Dans</a><BR>
+<LI><A HREF="div.htm">Diverse</a><BR>
+<LI><A HREF="forbarn.htm">For Barn</a><BR>
+<LI><A HREF="friluf_v.htm">Friluftsliv</a><BR>
+<LI><A HREF="kirker.htm">Kirker</a><BR>
+<LI><A HREF="kons.htm">Konserter</a><BR>
+<LI><A HREF="lopp_auk.htm">Lopper/Auksjoner</a><BR>
+<LI><A HREF="museer.htm">Muséer</a><BR>
+<LI><A HREF="resguide.htm">Restaurantguiden</a><BR>
+<LI><A HREF="kinoidag.htm">Spesialkinoer</a><BR>
+<LI><A HREF="teaarkiv.htm">Teateranmeldelser</a><BR>
+<LI><A HREF="teat_rev.htm">Teater/Revy</a><BR>
+<LI><A HREF="utstill.htm">Utstillinger</a><BR>
+</TD>
+
+<!------------------ FASTE VALG: slutt ----------------------------------->
+</tr>
+</TABLE>
+
+<BR>
+<!---------------------------------------- I KVELD-TEASER ------------------>
+
+<!------------------------------------- I KVELD-TEASER SLUTT--------------->
+
+<!------------------ KNAPPERAD + tekstversjon--------------->
+<HR NOSHADE WIDTH=450>
+<P ALIGN=center>
+<font size="-1">
+<a href="../../innhold/index.htm">[Innhold]</a> 
+<a href="../../info/index.htm">[Info]</a> 
+<a href="../../index.htm">[Aftenposten hjemmeside]</a>
+<a href="../index.htm">[Kultur og underholdning]</a>  
+<a href="../../info/post/index.htm">[Post]</a>
+</font>
+<!------------------ KNAPPERAD..: slutt--------------->
+
+<BR>

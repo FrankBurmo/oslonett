@@ -1,0 +1,11 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="38"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Høgskolen i Akershus"` -->
+<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Høgskolen i Akershus består av 4 avdelinger: Formgiving og produktdesign, Yrkesfaglærerutdanning, Sykepleierutdanning, Vernepleierutdanning. Tilsammen 2000 studenter og 175 vitenskapelige stillinger. Foreløpig knutepunkt i Norgesnettet er 'Yrkespedagogikk', og et satsningsområde er 'kosthold og ernæring'. ` -->
+<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``Høgskolen vil markere Forskningsdagene 95 med åpen skole med diverse foredrag 18. oktober. Henvendelse Bjørn Hornlien` -->
+<!-- replace `<option(.*Høgskole)` with `<option selected`` -->

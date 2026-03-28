@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1105"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Konferanse om utmarka og allemannsretten"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Kongress-sentret, Folkets Hus, Oslo"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="09.00 - 15.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value="Det Kgl. Selskap for Norges Vel, Skjetten postkonontor, 2013 SKJETTEN"` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="58"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Norges landbrukshøgskole (NLH)"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Konferanse d. 17.10. om bruk av utmarka i ly av allemannsretten - omfang, bruksområder, verdi og brukergrupper. Det Kgl.Selskap for Norges Vel er medarrangør.` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?15.10"?)\s*>` with `` checked>` -->

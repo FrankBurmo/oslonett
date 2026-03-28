@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1157"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="GEOLOGI. Forskningsdagene på Arkeologisk Museum"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Auditoriet på Arkeologisk Museum"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Kl. 1330 "` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value="Alle"` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="76"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Arkeologisk museum i Stavanger"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``HVORFOR FINNER VI OLJE I NORDSJØEN? v/ forskningsleder dr. philos Olav Walderhaug (RF - Rogalandsforskning). SANDSTRENDENE PÅ JÆREN - et dynamisk landskap' v/ førsteamanuensis Sverre Bakkevig, Sanddynene er i stadig endring, styrt av eroderende og oppbyggende prosesser. I en ustabil fase har menneskelig virksomhet og klimaendringer stor betydning, og disse faktorene blir i foredraget sett i et historisk perspektiv. Nye observasjoner av spesielle bølgefenomen forklarer hvordan det oppstår store punktvise skader på sanddynene. ` -->
+<!-- replace `<option(.*Rogaland)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?14.10"?)\s*>` with `` checked>` -->

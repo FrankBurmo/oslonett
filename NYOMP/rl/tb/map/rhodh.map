@@ -1,0 +1,15 @@
+#$MTIMFH
+#$-:Please do not edit lines starting with "#$"
+#$VERSION:1.20
+#$TITLE:Menu
+#$AUTHOR:Schibsted Nett
+#$DATE:Fri Jan 05 12:45:45 1996
+#$PATH:C:\Temp\
+#$GIF:MENU.gif
+#$FORMAT:ncsa
+#$EOH
+default /tjaereborg/rhodotc.html
+rect /tjaereborg/rhodotc.html#athineon 117,106 140,127
+rect /tjaereborg/rhodotc.html#aglaia 62,79 85,98
+rect /tjaereborg/rhodotc.html#pearl 84,40 113,57
+rect /tjaereborg/rhodotc.html#costas 72,56 95,73

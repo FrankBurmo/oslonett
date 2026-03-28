@@ -1,0 +1,86 @@
+#!/usr/local/bin/perl
+
+# $Id: personell.pl,v 1.11 1994/09/13 06:41:51 aas Exp $
+#
+
+
+$db = "/local/www/NR/personell.db";
+
+open(DB, $db) || die "Can't open $db: $!";
+
+$* = 1;
+$/ = "\r\n\r\n";
+
+$no = 0;
+while (<DB>) {
+    next if 1 .. /Dan/;
+    next if /^#/;
+    &mail;
+    $no++;
+}
+
+
+sub mail {
+    s/\r//g;
+
+    local($fn,$en,$ti,$st,$kom,$k,$kt,$e,$pt,$pa,$f,$gr,$uid,$key);
+    $fn = $1 if /^FN:\s*(.+)/;
+    $en = $1 if /^EN:\s*(.+)/;
+    $ti = $1 if /^TI:\s*(.+)/ ;
+    $st = $1 if /^ST:\s*(.+)/;
+    $k = $1 if /^K:\s*(.+)/;
+    $kom = $1 if /^KOM:\s*(.+)/;
+    $kt = $1 if /^KT:\s*(.+)/ ;
+    $e = $1 if /^E:\s*(.+)/ ;
+    $pt = $1 if /^PT:\s*(.+)/;
+    $pa = $1 if /^PA:\s*(.+)/;
+    $f = $1 if /^F:\s*(.+)/ ;
+    $gr = $1 if /^GR:\s*(.+)/ ;
+    $uid = $1 if /^UID:\s*(.+)/ ;
+    $key = $1 if /^KEY:\s*(.+)/ ;
+
+    unless (defined $e) {
+	print STDERR "No email address for $fn $en\n" if defined $fn || defined $en;
+        return;
+    }
+    if ($e =~ /[æåøÆÅØ]/) {
+        print STDERR "$e is an illegal mail address\n";
+        return;
+    }
+    print STDERR "Sending mail to $e\n";
+    open(M, "|/usr/lib/sendmail -t") || die "Can't invoke sendmail";
+    #open(M, "|cat") || die "Can't invoke sendmail";
+    
+    print M "To: $e\n";
+    print M "Reply-to: nina@nr.no\n";
+    print M "Subject: Er denne informasjonen riktig?\n";
+
+    print M "
+Følgende informasjon er registrert om deg (brukes i WWW databasen og
+etterhvert også andre steder):
+
+Fornavn:    $fn
+Etternan:   $en
+Tittel:     $ti
+Stilling:   $st
+Kontor:     $k";
+    print M "
+Kommentar:  $kom" if defined $kom;
+    print M "
+Telefon:    $kt
+Email:      $e
+Privat adr: $pa
+Privat tlf: $pt
+Forskningsområder: $f
+Forskningsgruppe:  $gr
+Unix brukernavn:   $uid";
+    print M "
+Nøkkelord:         $key" if defined $key;
+    print M "
+
+Er det noe som ikke stemmer her så fortell dette til Nina, f.eks. ved
+å svare på denne mailen.
+ ";
+    close(M);
+    sleep(15);
+}

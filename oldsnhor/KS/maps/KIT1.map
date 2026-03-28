@@ -1,0 +1,16 @@
+default http://www.kit.kommorg.no/ 
+
+#Kit hjem
+rect http://www.kit.kommorg.no/  0,0  94,40
+
+#Norweb
+rect http://www.nta.no/uninett/norweb.html  95,5  190,40
+
+#Tips red.!
+rect http://www.kit.kommorg.no/html/tips.html 198,5  288,90
+
+#Søk i Kit
+rect http://www.kit.kommorg.no/html/soek.html 292,5  386,90
+
+#Hjelp
+rect http://www.kit.kommorg.no/html/hjelp.html 390,5  482,40

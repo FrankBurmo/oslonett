@@ -1,0 +1,255 @@
+default /EXPO94/default.html
+
+# DEC 
+poly    /EXPO94/lev/DEC/DEC.html 581,430 604,387 654,387 630,430
+poly    /EXPO94/lev/DEC/DEC.html 605,510 580,466 631,466 654,510
+
+# Presse Arr.kont
+poly    /EXPO94/lev/Presse/Presse.html 678,511 666,482 677,431 727,431 727,511
+
+# HP
+poly    /EXPO94/lev/HP/HP.html 515,535 465,450 565,450
+
+# Oslonett
+rect    /EXPO94/lev/Oslonett/Oslonett.html 53,564 136,590
+
+#IDG Books
+rect    /EXPO94/lev/IDG/IDG.html 137,563 218,598
+
+#Novell Forum
+rect    /EXPO94/lev/NovellForum/NovellForum.html 223,563 267,598
+
+#Kunnskapsforlaget
+rect    /EXPO94/lev/Kunnskapsforlaget/Kunnskapsforlaget.html 269,563 316,598
+
+#EUnet Norge
+rect    /EXPO94/lev/EUnet/EUnet.html 322,563 369,598
+
+#Inovex A/B
+rect    /EXPO94/lev/Inovex/Inovex.html 371,563 419,598
+
+#Prentice Hall
+rect    /EXPO94/lev/PrenticeHall/PrenticeHall.html 430,563 519,598 
+
+#DnD
+rect    /EXPO94/lev/DND/DND.html 532,563  594,598
+
+#CS Systems
+rect    /EXPO94/lev/CSsystems/CSsystems.html 605,563 696,598
+
+#Saber Xircom
+rect    /EXPO94/lev/Xircom/Xircom.html 114,87 157,120
+
+#SCO
+rect    /EXPO94/lev/SCO/SCO.html 161,87 200,120
+
+#Olicom
+rect    /EXPO94/lev/Olicom/Olicom.html 211,87 252,120
+
+#Novell Svanska
+rect    /EXPO94/lev/NovellSvenska/NovellSvenska.html 253,87 308,120
+
+#APC
+rect    /EXPO94/lev/APC/APC.html 312,87 345,120
+
+#Cisco Norge
+rect    /EXPO94/lev/Cisco/Cisco.html 346,87 391,120 
+
+#Microsoft
+rect    /EXPO94/lev/Microsoft/Microsoft.html 395,87 460,120
+
+#MS Smaabedrift
+rect    /EXPO94/lev/MSSmaabedrifter/MSSmaabedrifter.html 462,87 536,120
+
+#Intel
+rect    /EXPO94/lev/IntelSweden/IntelSweden.html 537,87 568,120 
+
+#NetCenter
+rect    /EXPO94/lev/NetCenter/NetCenter.html 570,87 632,120
+
+#Konferanserom
+rect    /EXPO94/lev/Konferanserom/Konferanserom.html  7,242 29,535
+
+#Network Management Center 
+poly    /EXPO94/lev/NMC/NMC.html 30,536 30,450 95,450 44,535
+
+#Lev.pres
+poly    /EXPO94/lev/Levpres/Levpres.html 31,386 31,242 44,242 96,334 68,387
+
+#PC World
+poly    /EXPO94/lev/PCWorld/PCWorld.html 31,449 31,388 68,388 95,449
+
+#IFD
+poly    /EXPO94/lev/InstDatasikk/InstDatasikk.html 41,216 70,172 84,172 109,215
+
+#Eagle Techn
+poly    /EXPO94/lev/Eagle/Eagle.html 112,215 135,175 160,215
+
+#Norman
+poly    /EXPO94/lev/NormanDDS/NormanDDS.html 131,165 180,165 155,207
+
+#Nordic Comm
+poly    /EXPO94/lev/NordicComm/NordicComm.html  133,164 154,124 202,123 177,164
+
+#Euroline
+poly    /EXPO94/lev/Euroline/Euroline.html 111,214 89,171 105,171 131,129 158,129
+
+#Tallgrass techn.
+poly    /EXPO94/lev/Tallgrass/Tallgrass.html  158,328 135,284 158,242 207,328
+
+#Ericsson semafor
+poly    /EXPO94/lev/Ericsson/Ericsson.html  110,327 133,284 159,327
+
+#Boole & Babbage
+poly    /EXPO94/lev/BooleBabbage/BooleBabbage.html  134,282 112,237 156,237
+
+#Telecom Revy
+poly    /EXPO94/lev/Telecom/Telecom.html 85,282 61,242 106,242 131,284
+
+#Computer Associates
+poly    /EXPO94/lev/CompAssociates/CompAssociates.html  135,387 161,345 207,345 183,386
+
+#Vestfold Ind. Data
+poly    /EXPO94/lev/VestfoldID/VestfoldID.html 134,385 114,340 155,345
+
+#Dataimport
+poly    /EXPO94/lev/Dataimport/Dataimport.html  110,427 85,387 109,345 133,386
+
+#Knurr
+poly    /EXPO94/lev/Knurr/Knurr.html 112,428 135,388 183,388 158,430
+
+#AST
+poly    /EXPO94/lev/AST/AST.html 86,510 110,468 161,468 181,510
+
+#Heath com.
+poly    /EXPO94/lev/HeathComm/HeathComm.html 112,554 135,511 184,511 208,554  
+
+#Visitron Feiring
+poly    /EXPO94/lev/Visitron/Visitron.html 62,553 87,512 128,513 106,552
+
+#Assistor A/S
+poly    /EXPO94/lev/ASSISTOR/ASSISTOR.html  172,227 222,144 274,227
+
+#Swanholm
+poly    /EXPO94/lev/Swanholm/Swanholm.html  222,312 172,229 222,228
+
+#Protect Data
+poly    /EXPO94/lev/ProtectData/ProtectData.html  223,314 223,228 272,228
+
+#Alcatel Telecom Norway
+poly    /EXPO94/lev/Alcatel/Alcatel.html  171,450 222,365 270,450
+
+#Backup-Centralen
+poly    /EXPO94/lev/Backupsentralen/Backupsentralen.html  222,538 175,451 268,451
+
+#Connect
+poly    /EXPO94/lev/Connect/Connect.html 256,173 231,128 282,129 305,172  
+
+#System Sikkerhet
+poly    /EXPO94/lev/SystemSikk/SystemSikk.html 281,217 255,172 307,172  
+
+#Memorex Telex
+poly    /EXPO94/lev/Memorex/Memorex.html  307,172 284,130 381,130 357,172
+
+#X-tech
+poly    /EXPO94/lev/XTech/XTech.html  332,215 307,173 356,173
+
+#PDI
+poly    /EXPO94/lev/PDI/PDI.html 283,217 306,174 329,217
+
+#Coltux
+poly    /EXPO94/lev/Coltux/Coltux.html 256,510 280,469 305,510
+
+#Dell
+poly    /EXPO94/lev/Dell/Dell.html 232,555 257,511 306,511 280,555
+
+#Teknisk Ukeblad
+poly    /EXPO94/lev/TU/TU.html 285,553 306,513 327,553
+
+#Cinet
+poly    /EXPO94/lev/Cinet/Cinet.html 404,554 358,467 453,467
+poly    /EXPO94/lev/Cinet/Cinet.html 332,554 282,467 334,467 381,554
+
+#Datanett
+poly    /EXPO94/lev/Datanet/Datanet.html 432,509 454,468 478,509
+
+ComputerWorld
+poly    /EXPO94/lev/ComputerWorld/ComputerWorld.html 460,553 433,511 478,511 503,533
+
+#EDA
+poly    /EXPO94/lev/EDA/EDA.html 408,553 429,515 454,553
+#Upnet
+poly    /EXPO94/lev/Upnet/Upnet.html 355,217 381,172 429,172 403,217
+
+#Schroff
+poly    /EXPO94/lev/Schroff/Schroff.html 382,171 405,130 430,171 
+
+#Macrosoft
+poly    /EXPO94/lev/MacroSoft/MacroSoft.html 431,168 409,130 452,130
+
+#Bull
+poly    /EXPO94/lev/Bull/Bull.html 429,172 458,130 506,130 480,172
+
+#Telematikk Systemer
+poly    /EXPO94/lev/Telematikksys/Telematikksys.html 405,217 429,172 479,172 457,217
+
+#Lantech Ungermannbass
+poly    /EXPO94/lev/Lantech/Lantech.html 516,312 467,227 566,227
+
+#Nocom
+poly    /EXPO94/lev/Nocom/Nocom.html 450,430 495,350 542,430
+
+#SynOptics
+poly    /EXPO94/lev/SynOptics/SynOptics.html 550,172 526,130 575,130 600,172
+
+#Foss
+poly    /EXPO94/lev/FOSS/FOSS.html 575,216 552,173 599,173 624,216
+
+#Fluke
+poly    /EXPO94/lev/Fluke/Fluke.html 625,216 601,172 668,172 690,216
+
+#AGIL Nettverk
+poly    /EXPO94/lev/Agil/Agil.html 529,329 554,284 578,329 
+
+#LAN Control
+poly    /EXPO94/lev/LANcontrol/LANcontrol.html 580,328 555,282 579,242 627,242
+
+#Elko
+poly    /EXPO94/lev/Elko/Elko.html 607,282 628,246 651,282
+
+#PC LAN
+poly    /EXPO94/lev/PC_LAN_Prod/PC_LAN_Prod.html 629,327 607,286 652,285
+
+#Unisys
+poly    /EXPO94/lev/Unisys/Unisys.html 679,327 666,297 696,242 728,242 728,327
+
+#Data Equipment
+poly    /EXPO94/lev/DataEquipment/DataEquipment.html 554,386 530,344 629,344 655,386
+
+#SCS
+rect    /EXPO94/lev/SCS/SCS.html 282,282 363,327
+
+#Skyhawk
+poly    /EXPO94/lev/Skyhawk/Skyhawk.html 234,327 282,239 282,327
+
+#D-link Scand
+poly    /EXPO94/lev/Dlink/Dlink.html 532,552 554,511 602,510 580,552
+
+#AMP Norge
+poly    /EXPO94/lev/AMP/AMP.html 582,552 604,512 628,552
+
+#Lanco
+poly    /EXPO94/lev/Lanco/Lanco.html 557,508 579,471 601,508
+
+#Anixter Norge
+poly    /EXPO94/lev/Anixter/Anixter.html 630,554 605,511 651,511 677,552
+
+#Skrivervik
+poly    /EXPO94/lev/Skrivervik/Skrivervik.html 382,327 382,239 456,239 499,327
+
+#Televerket
+poly    /EXPO94/lev/TeleverketDB_MK/TeleverketDB_MK.html 300,438 355,344 409,345 409,438 
+
+#TBK
+poly    /EXPO94/lev/TBK/TBK.html 410,438 410,345 500,342 454,438 
+

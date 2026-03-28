@@ -1,0 +1,6 @@
+title: Test
+passwd: 0fLb9oTV8hqFs
+from: Jon Laake (@pk177.uio.no)
+host: pk177.uio.no/129.240.47.47
+date: 17. oktober 95 15:18:48
+body: Dette er en test

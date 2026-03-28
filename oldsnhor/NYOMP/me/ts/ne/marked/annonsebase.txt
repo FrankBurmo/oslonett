@@ -1,0 +1,354 @@
+SØKES
+OSLO SENTRUM
+KOMB. LOKALER
+Oslo Sentrum	150-200	68	Volu Med	22 68 57 57
+Oslo	550	72	ICM Oslo-Akershus AS	63 81 27 30
+
+SELGES
+OSLO SENTRUM
+KONTORLOKALER
+Parkveien 5	1785	29	Centrum Eiendom as	22 11 35 10
+Torggata 25	1664	29	Centrum Eiendom as	22 11 35 10
+
+OSLO VEST
+KONTORLOKALER
+Majorstuen	60	69	Kollen Eiendomsmegling	22 60 16 30
+TOMTER
+Sognsveien 90	9,7 da	104	Oslo Kommune etat for eiendom og utbygg	22 66 79 70
+
+OSLO ØST
+KONTORLOKALER
+Fossveien 19	1180	29	Centrum Eiendom as	22 11 35 10
+BUTIKK/FORRETNINGSLOKALE
+Markveien 59	120	45	Sandia Eiendomsutvikling as	22 64 69 50
+KOMB. LOKALER
+Grünerløkka	7100	74	Eiendoms-Consult as	22 43 78 00
+Bryn	4300	73	Eiendoms-Consult as	22 43 78 00
+HOTELL/RESTAURANT
+Åkebergveien 42	226	45	Sandia Eiendomsutvikling as	22 64 69 50
+
+OSLO SYD
+TOMTER
+Hauketo Næringsområde	5,2-12,2 da	104	Oslo Kommune etat for eiendom og utbygg	22 66 79 70
+Åsbråten 2	3,8 da	104	Oslo Kommune etat for eiendom og utbygg	22 66 79 70
+Slimeveien 6	10 da	104	Oslo Kommune etat for eiendom og utbygg	22 66 79 70
+Enebakkveien 300	10 da	104	Oslo Kommune etat for eiendom og utbygg	22 66 79 70
+Lunhvileveien	3 da	104	Oslo Kommune etat for eiendom og utbygg	22 66 79 70
+
+OSLO NORD
+TOMTER
+Haraldrudveien	3,9-5 da	104	Oslo Kommune etat for eiendom og utbygg	22 66 79 70
+Trondheimsveien 395-401	4,7 da	104	Oslo Kommune etat for eiendom og utbygg	22 66 79 70
+Hovin Nord	48,6 da	104	Oslo Kommune etat for eiendom og utbygg	22 66 79 70
+Ryenstubben	6,6 da	104	Oslo Kommune etat for eiendom og utbygg	22 66 79 70
+INDUSTRIEIENDOM
+Breivollveien 25	Div.	63	Banco Eiendomsmegling as	22 46 10 52
+Alnabru	Div.	21	Næringseiendommer A/S	22566075
+
+ASKER/BÆRUM
+KONTORLOKALER
+Leangbukta 40	2250	63	Banco Eiendomsmegling as	22 46 10 52
+Ravneborgveien 33	459	69	Eiendoms-Consult as	22 43 78 00
+Billingstad	420	22	NNM	22 46 32 00
+
+SKI/OPPEGÅRD
+TOMTER
+Mastemyr/Oppegård	20 da.	39	Foss & Co Eiendomsmegling	66 80 08 85
+
+LØRENSKOG/SKEDSMO
+KOMB. LOKALER
+Solheimsveien 62	428	45	Sandia Eiendomsutvikling as	22 64 69 50
+
+ØSTFOLD
+FORRETNINGSEIENDOMMER
+Spydeberg	2943	49	Eiendom & Finans	69 25 53 00
+BOLIG/LEILIGHETER/HUS
+Pollyg. 24,sarpsborg	282	49	Eiendom & Finans	69 25 53 00
+
+LANDET FORØVRIG
+KOMB. LOKALER
+Nærsnes	4400	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+INDUSTRIEIENDOM
+Nydal,hamar	1800	27	Real Eiendomsmegling as	67 97 60 00
+Gjøvik	Div.	75	Eiendoms Omsetning AS	61 18 09 40
+FORRETNINGSEIENDOMMER
+Tollbodgaten 6,kristiansand	4150	65	Solum as	380 79 900
+
+LEIE
+OSLO SENTRUM
+KONTORLOKALER
+Fredensborgveien 4-6	3 x 300	21	Næringseiendommer A/S	22566075
+Akersgata 65 B	3 x 270	11	Olav Thon Gruppen	22 01 06 00
+Pilestredet 9	3 x 230	75	Olav Thon Gruppen	22 01 06 00
+Stortingsgata 2	385-2100	74	Eiendoms-Consult as	22 43 78 00
+Dronningens Gate 8 B	100-1900	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Fyrstikkalleen 3	400+1100	103	Nydalens Compagnie	55 29 56 60
+Møllergata 4	730+950	103	Nydalens Compagnie	55 29 56 60
+Waldemar Thranes Gate	530+700	40	Sannerbrobyggene as	22 35 46 95
+Dronningens Gate 8 B	597+652	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Nær Stortinget	384+495	26	Erland Morud as	22 42 96 80
+Ved Oslo Børs	120+470	34	Eiendoms-Consult as	22 43 78 00
+Universitetsgata 22/24	190-450	11	Olav Thon Gruppen	22 01 06 00
+Waldemar Thranes Gate	30+444	40	Sannerbrobyggene as	22 35 46 95
+Rådhusgata 1-3	280+440	7	Uni Storebrand Eiendom	22 31 21 05
+Waldemar Thranes Gate	60+433	40	Sannerbrobyggene as	22 35 46 95
+St Olavs Plass	150-430	21	Næringseiendommer A/S	22566075
+Pilestredet 15 B	2 x 429	21	Næringseiendommer A/S	22566075
+Møllergata 7-9	240+390	75	Olav Thon Gruppen	22 01 06 00
+Skippergata 33	200+380	41	Heba Forvaltning as	22 42  65 40
+Dronningens Gate 8 B	301+322	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Prinsens Gate 22	179+261	7	Uni Storebrand Eiendom	22 31 21 05
+Tollbugata 19	75-255	5020	Aveny as	22 33 34 00
+Pilestredet 27	195+250	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Torggata 25	201+225	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Brugata 14	165+205	60	Lilletorget 1 as	22 17 18 21
+Pilestredet 15 B	115+128	21	Næringseiendommer A/S	22566075
+Pilestredet 15 B	100+127	21	Næringseiendommer A/S	22566075
+Fredensborgveien 24	90+120	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Rådhusgata 20	78+100	41	Heba Forvaltning as	22 42  65 40
+Havnelagerbygningen	39+78	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Waldemar Thranes Gate	10-70	40	Sannerbrobyggene as	22 35 46 95
+Prinsens Gate 22	41+48	7	Uni Storebrand Eiendom	22 31 21 05
+Ibsen Kvartalet	32000	20	Akershus Eiendom as	22 41 48 00
+Fredensborgveien 24	5000	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Pilestredet 15 B	1328	21	Næringseiendommer A/S	22566075
+Møllergata 4	1050	103	Nydalens Compagnie	55 29 56 60
+Karl Johans Gate 6 B	700	11	Olav Thon Gruppen	22 01 06 00
+Ved Oslo Børs	650	34	Eiendoms-Consult as	22 43 78 00
+Prinsens Gate 14/16	650	5020	Aveny as	22 33 34 00
+Midt I Sentrum	630	40	Eiendoms-Consult as	22 43 78 00
+Rådhusgata 1-3	600	7	Uni Storebrand Eiendom	22 31 21 05
+Waldemar Thranes Gate	588	40	Sannerbrobyggene as	22 35 46 95
+Fredensborgveien 24	550	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Nær Stortinget	545	26	Erland Morud as	22 42 96 80
+Youngstorget 1	400	11	Olav Thon Gruppen	22 01 06 00
+Pilestredet 27	353	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Kronprinsens Gate 1	320	26	Eiendoms-Consult as	22 43 78 00
+Stranden 1, Aker Brygge	316	65	Aker Brygge as	22 83 26 80
+Stranden 3, Aker Brygge	302	65	Aker Brygge as	22 83 26 80
+Grensen 17	300	7	Uni Storebrand Eiendom	22 31 21 05
+Lille Grensen 3	290	11	Olav Thon Gruppen	22 01 06 00
+Torggata 35	275	75	Olav Thon Gruppen	22 01 06 00
+Brugata 14	273	60	Lilletorget 1 as	22 17 18 21
+Skippergata 19	255	41	Adv. Finn Braaten	22 41 33 55
+Kristian Iv's Gate 1	250	75	Olav Thon Gruppen	22 01 06 00
+Akersgata 43	220	21	Næringseiendommer A/S	22566075
+Rosenkrantz Gate 4	200	75	Olav Thon Gruppen	22 01 06 00
+Parkveien 5	200	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Karl Johans Gate 23	175	33	Karl Johansgate 23 as	22 42 66 22
+Øvre Slottsgate 15 B	155	75	Olav Thon Gruppen	22 01 06 00
+Storgata 12	135	69	Adv. Finn Braaten	22 41 33 55
+Rådhusgata 20	100	41	Heba Forvaltning as	22 42  65 40
+Ibsen Kvartalet	Div.	43	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Vika	Div.	501	Uni Storebrand Eiendom	22 31 21 05
+Vika	Div.	501	Bøhler Prosjekt AS	22 83 88 40
+LAGERLOKALER
+Brugata 14	300	60	Lilletorget 1 as	22 17 18 21
+Skippergata 19	240	41	Adv. Finn Braaten	22 41 33 55
+Pilestredet 15 B	150	21	Næringseiendommer A/S	22566075
+Prinsens Gate 22	16	7	Uni Storebrand Eiendom	22 31 21 05
+BUTIKK/FORRETNINGSLOKALE
+Sas-Hotellet	95+292	26	Eiendoms-Consult as	22 43 78 00
+Havnelagerbygningen	39	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+KOMB. LOKALER
+Waldemar Thranes Gate	110+240	40	Sannerbrobyggene as	22 35 46 95
+Pilestredet 15 B	1478	21	Næringseiendommer A/S	22566075
+Sentrum Øst	180	5	EAB Eiendom as	22 38 39 40
+
+OSLO VEST
+KONTORLOKALER
+Gjerdrums Vei 11	590+640	103	Nydalens Compagnie	55 29 56 60
+Hegdehaugsveien 31	211+393	40	Eiendoms-Consult as	22 43 78 00
+Nydalsveien 36	100-250	2	Avantor AS	22 95 05 22
+Vitaminveien 11	190+210	103	Nydalens Compagnie	55 29 56 60
+Drammensveien 134	5342,5	37	Høegh invest as	22 55 44 00
+Gullhaugveien 7	2500	2	Avantor AS	22 95 05 22
+Gjerdrums Vei 11	1290	103	Nydalens Compagnie	55 29 56 60
+Hegdehaugsveien 31	929	40	Eiendoms-Consult as	22 43 78 00
+Lillogaten 5	850	33	Orkla Finans Eiendomsmegling as	22 40 08 53
+Sondreveien 1	770	15	Torkildsen & Torkildsens	22 20 28 40
+Gjerdrums Vei 16	560	103	Nydalens Compagnie	55 29 56 60
+Skøyen/Vækerø	400	22	NNM	22 46 32 00
+Gjerdrums Vei 10 C	380	103	Nydalens Compagnie	55 29 56 60
+Majorstua	375	34	Abel Eiendomsforvaltning as	22 69 22 24
+Gjerdrums Vei 12	330	103	Nydalens Compagnie	55 29 56 60
+Harbitzalleen 2 A	284	72	Sigurd Olsvold Eiendom as	67 13 29 19
+Maridalsveien 139	275	502	Aveny as	22 33 34 00
+Gjerdrums Vei 10 A	250	103	Nydalens Compagnie	55 29 56 60
+Nydalen	169	26	Eiendoms-Consult as	22 43 78 00
+Bygdøy Allè 5	120	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Skøyen Atrium	Div.	52	Real Consult / Møller Investor	22695680/229534
+LAGERLOKALER
+Lillogaten 5	1830	33	Orkla Finans Eiendomsmegling as	22 40 08 53
+Gullhaugveien 7	850	2	Avantor AS	22 95 05 22
+Nydalsveien 33	700	2	Avantor AS	22 95 05 22
+Sondreveien 1	310	15	Torkildsen & Torkildsens	22 20 28 40
+KOMB. LOKALER
+Sagveien 17	2000	5020	Aveny as	22 33 34 00
+Røa Næringspark	330	5	EAB Eiendom as	22 38 39 40
+APARTMENTS
+Holmboes Gate 8	Div.	5	EAB Eiendom as	22 38 39 40
+
+OSLO ØST
+KONTORLOKALER
+Nordregate 2	150-1850	73	Atrium as	22 72 05 60
+Christian Michelsens Gate 35	250-820	11	Olav Thon Gruppen	22 01 06 00
+Ensjø	553+647	72	Eiendoms-Consult as	22 43 78 00
+Carl Berner	460+615	15	Torkildsen & Torkildsens	22 20 28 40
+Rodeløkka	63+450	5	EAB Eiendom as	22 38 39 40
+Hjalmar Brantings Vei 8	332+362	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Carl Berner	285+340	15	Torkildsen & Torkildsens	22 20 28 40
+Markveien 35	210+310	45	Sandia Eiendomsutvikling as	22 64 69 50
+Tvetenveien 55	25-200	65	Rieber Eiendom as	55342800/226436
+Markveien 35	82+129	45	Sandia Eiendomsutvikling as	22 64 69 50
+Haslevangen 15	1560	19	Gjensidige	22 96 95 63
+Grønland	1100	43	Abel Eiendomsforvaltning as	22 69 22 24
+Ensjø	739	72	Eiendoms-Consult as	22 43 78 00
+Østensjøveien 18	260	45	Sandia Eiendomsutvikling as	22 64 69 50
+Østensjøveien	200	45	Sandia Eiendomsutvikling as	22 64 69 50
+Trondheimsveien	160	2	Avantor AS	22 95 05 22
+Tøyen	100	72	Bauer & Bech	22 67 00 60
+Myren	Div.	71	Eiendoms-Consult as	22 43 78 00
+LAGERLOKALER
+Østensjøveien 18	528	45	Sandia Eiendomsutvikling as	22 64 69 50
+Østensjøveien	307	45	Sandia Eiendomsutvikling as	22 64 69 50
+KOMB. LOKALER
+Trondheimsveien 184	542-1065	60	Borg Eiendomsselskap A.S	22 64 44 60
+Trondheimsveien	265+1000	2	Avantor AS	22 95 05 22
+Østensjøveien 18	400+660	45	Sandia Eiendomsutvikling as	22 64 69 50
+Schweigaards Gate 34	310+610	33	As Schweigaardsgate 34	22 05 45 00
+Østensjøveien 18	1848	45	Sandia Eiendomsutvikling as	22 64 69 50
+Carl Berner	815	15	Torkildsen & Torkildsens	22 20 28 40
+Markveien 35	710	45	Sandia Eiendomsutvikling as	22 64 69 50
+Myren	570	71	Eiendoms-Consult as	22 43 78 00
+Ensjø	500	72	Eiendoms-Consult as	22 43 78 00
+Trondheimsveien 184	330	60	Borg Eiendomsselskap A.S	22 64 44 60
+Rodeløkka	211	5	EAB Eiendom as	22 38 39 40
+Schweigaards Gate 34	150	33	As Schweigaardsgate 34	22 05 45 00
+Myrenes Verksted	Div.	73	Eiendoms-Consult as	22 43 78 00
+
+OSLO SYD
+KONTORLOKALER
+Trollåsveien 4,mastemyr	200-3500	41	Tschudi & Malling	22 83 05 00
+Ravnåsveien 1	208+218	71	Europrop as	22 64 77 70
+Ryensvingen 15	377	23	NNM	22 46 32 00
+BUTIKK/FORRETNINGSLOKALE
+Enebakkveien 69	1200+1300	39	Abel Eiendomsforvaltning as	22 69 22 24
+Kolbotn-Torget	57	5	EAB Eiendom as	22 38 39 40
+
+OSLO NORD
+KONTORLOKALER
+Sinsen/Økern	270+640	74	Valter Jensen & Sønn as	22 44 33 67
+Ole Deviks Vei 2	290+557	7	Uni Storebrand Eiendom	22 31 21 05
+Brobekkveien	220+550	74	Dyno Industrier AS	22 31 70 00
+Østre Aker Vei 68	2 x 250	23	NNM	22 46 32 00
+Strømsveien 223	113+134	68	TB-Eiendom as	22 64 77 70
+Strømsveien 223	30+61	68	TB-Eiendom as	22 64 77 70
+Brobekkveien 80	2500	31	Fabritus Eiendom as	22 63 11 70
+Brobekkveien 38	1600	7	Uni Storebrand Eiendom	22 31 21 05
+Ole Deviks Vei 2	1400	7	Uni Storebrand Eiendom	22 31 21 05
+Veitvet	300	39	Real Eiendomsmegling as	67 97 60 00
+Brobekkveien 104 B	178	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Sinsen Næringspark	115	5	EAB Eiendom as	22 38 39 40
+Strømsveien 195	100	15	Torkildsen & Torkildsens	22 20 28 40
+Ole Deviks Vei 36	100	21	Næringseiendommer A/S	22566075
+LAGERLOKALER
+Østre Aker Vei 68	500-1000	23	NNM	22 46 32 00
+Ole Deviks Vei 36	450	21	Næringseiendommer A/S	22566075
+Brobekkveien 38	400	7	Uni Storebrand Eiendom	22 31 21 05
+Alnabru	346	5	EAB Eiendom as	22 38 39 40
+Ole Deviks Vei 2	166	7	Uni Storebrand Eiendom	22 31 21 05
+BUTIKK/FORRETNINGSLOKALE
+Haugerud Senteret	Div.	502	Aveny as	22 33 34 00
+KOMB. LOKALER
+Veitvet	175+252	39	Real Eiendomsmegling as	67 97 60 00
+Strømsveien 195	2000	15	Torkildsen & Torkildsens	22 20 28 40
+Østre Aker Vei 68	1500	23	NNM	22 46 32 00
+Brobekkveien	800	74	Dyno Industrier AS	22 31 70 00
+INDUSTRIEIENDOM
+Alnabru	250	21	Næringseiendommer A/S	22566075
+
+ASKER/BÆRUM
+KONTORLOKALER
+Solbråveien 11/13	5 X 440	37	Persen & co as.	22 33 90 50
+Hagaløkkveien 13/15	4 x 900	37	Persen & co as.	22 33 90 50
+Holtet 45	3 x 986	35	Persen & co as.	22 33 90 50
+Eiksveien 110	400-14824	69	Atrium as	22 72 05 60
+Holtet 45	2 x 1538	35	Persen & co as.	22 33 90 50
+Maritimgården	570+1150	22	NNM	22 46 32 00
+Billingstadsletta 91	200-1100	2	Avantor AS	22 95 05 22
+Holtet 45	919+982	35	Persen & co as.	22 33 90 50
+Solbråveien 11/13	655+970	37	Persen & co as.	22 33 90 50
+Industriveien 33	46-900	41	Tschudi & Malling	22 83 05 00
+Hagaløkkveien 13/15	420+880	37	Persen & co as.	22 33 90 50
+Strandveien 37,lysaker	374+406	41	Tschudi & Malling	22 83 05 00
+Høvik	186-384	23	NNM	22 46 32 00
+Holtet 45	2 x 379	35	Persen & co as.	22 33 90 50
+Løkketangen Senter	285+357	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Brynsveien 96	100-150	72	Sigurd Olsvold Eiendom as	67 13 29 19
+Fornebukrysset	1757,4	38	Atrium as	22 72 05 60
+Solbråveien 23	4200	72	Sigurd Olsvold Eiendom as	67 13 29 19
+Lysaker,strandkanten	3400	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Holtet 45	1439	35	Persen & co as.	22 33 90 50
+Løkketangen Senter	939	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Kirkeveien 71 A	650	72	Sigurd Olsvold Eiendom as	67 13 29 19
+Billingstad	420	22	NNM	22 46 32 00
+Bekkestua Handelshus	260	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Industriveien 20	220	75	Olav Thon Gruppen	22 01 06 00
+Nye Vakås Vei 4	220	21	Næringseiendommer A/S	22566075
+Gml.Drammensvei 48	207	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+O.H.Bangs Vei 54-56	57	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Lysaker Torg	Div.	13	Nilsen & Nilsen	22 33 14 00
+LAGERLOKALER
+Industriveien 33	36-500	41	Tschudi & Malling	22 83 05 00
+Høvik	135	23	NNM	22 46 32 00
+Nye Vakås Vei 4	Div.	21	Næringseiendommer A/S	22566075
+BUTIKK/FORRETNINGSLOKALE
+Løkketangen Senter	94+98	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Løkketangen Senter	60+90	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+Bekkestua Handelshus	830	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+KOMB. LOKALER
+Holmensenteret	130-1050	79	Atrium as	22 72 05 60
+Rud/Hauger	1600	61	Eyvind Holt as	67 13 56 90
+Slemmestad	1410	60	Gunnar Krogsveen AS	66 90 42 00
+Billingstadsletta 91	835	2	Avantor AS	22 95 05 22
+Arnestad Bruk	750	41	Tschudi & Malling	22 83 05 00
+Høvik	519	23	NNM	22 46 32 00
+Ki-Senteret, Bærum	Div.	7	Uni Storebrand Eiendom	22 31 21 05
+
+DRAMMEN/EIKER
+KONTORLOKALER
+Glassverket Industrisenter	10-100	79	Veidekke	32 88 05 90
+LAGERLOKALER
+Glassverket Industrisenter	200-3000	79	Veidekke	32 88 05 90
+KOMB. LOKALER
+Glassverket Industrisenter	200-1500	79	Veidekke	32 88 05 90
+
+LØRENSKOG/SKEDSMO
+KONTORLOKALER
+Fjellhammer	125+325	27	Real Eiendomsmegling as	67 97 60 00
+Fjellhammer	100+110	27	Real Eiendomsmegling as	67 97 60 00
+Vestvollveien 10, Skedsmo	500	79	Eiendomsutvikling Kristiansand AS	22 33 08 40
+Skårer	500	27	Real Eiendomsmegling as	67 97 60 00
+LAGERLOKALER
+Fjellhammer	Div.	27	Real Eiendomsmegling as	67 97 60 00
+KOMB. LOKALER
+Skårer	1380	27	Real Eiendomsmegling as	67 97 60 00
+Skårer	880	27	Real Eiendomsmegling as	67 97 60 00
+
+ØSTFOLD
+KONTORLOKALER
+Sarpsborg	1000	49	Eiendom & Finans	69 25 53 00
+Solgaard Skog 104,moss	335	49	Eiendom & Finans	69 25 53 00
+Strandgata 9,sarpsborg	317	49	Eiendom & Finans	69 25 53 00
+Mosseveien 20 A,råde	160	49	Eiendom & Finans	69 25 53 00
+Sarpefossen Næringspark	Div.	75	Sarpefossen Næringspark	69 12 03 01
+BUTIKK/FORRETNINGSLOKALE
+Dronningens Gate 16/18,moss	600	49	Eiendom & Finans	69 25 53 00
+KOMB. LOKALER
+Dronningens Gate 11,moss	110	49	Eiendom & Finans	69 25 53 00
+
+LANDET FORØVRIG
+KOMB. LOKALER
+Nærsnes	4400	9	Bøhler Eiendomsforvaltning A.S	22 41 17 75
+

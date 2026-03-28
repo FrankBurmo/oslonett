@@ -1,0 +1,358 @@
+<html>
+<head>
+ <title>Styringssystem-serverefor relasjonsdatabaser</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+
+
+
+<a href=cw952105.html><img align=middle alt="[Forrige artikkel]" src=../../gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=../../gifs/up.gif></a> <a href=cw952107.html><img alt="[Neste artikkel]" align=middle src=../../gifs/next.gif></a> <a href=../../><img align=middle alt="[CW hjemmeside]" src=../../gifs/cw.gif></a>  
+<hr>
+
+
+
+<h1>Styringssystem-serverefor relasjonsdatabaser</h1>
+
+<blockquote><h4>
+<hr>
+Leverandørene av styringssystem-servere for relasjonsdatabaser går nå til
+drastiske skritt for å tilpasse sine tilbud til de mer eller mindre
+sofistikerte delene av markedet, mens de utstyrer sine mellomklasse-produkter
+med avanserte funksjoner.<hr>
+</h4></blockquote>
+<i>OVERSATT AV MORTEN SOLLI</i><p>På den ene siden presser leverandørene sine
+produkter til maksimal ytelse på server-maskinvare som bruker symmetrisk
+multiprosessering (SMP) eller massiv parallellprosessering (MPP). Selskaper som
+AT&T, Informix Software, <a href="http://www.ibm.no/">IBM</a>, Oracle og Sybase har kommet opp med versjoner av
+sine DBMS-servere som kjører på SMP- eller MPP-maskiner for å støtte online
+transaksjonsprosessering med høy ytelse (OLTP) samt applikasjoner for
+datalagring. <p>
+	Flere av de store aktørene på markedet for DBMS-servere -- deriblant Computer
+Associates (CA), Oracle og Sybase -- går samtidig langt i motsatt retning ved å
+konsentrere seg om produkter i det nedre sjiktet som kan konkurrere med
+PC-baserte DBMSer som Borlands dBASE og Paradox. Disse serverne vil gjøre
+mindre arbeidsgrupper og selv fjernbrukere i stand til å bruke lokalt lagrede
+data og gjøre nytte av store bedriftsservere uten ekstra bry med
+datasynkronisering.
+<h3>
+Mellomsjiktet </h3>
+Det har vært mindre aktivitet i mellomsjiktet i markedet. Her har leverandørene
+fulgt opp løfter om å tilføye fasiliteter for datareplikering og støtte for nye
+datatyper til sine tradisjonelle produkter til bruk i avdelinger/mellomstore
+bedrifter.<p>
+<b>	Ved hjelp av replikering kan DBMS-servere arbeide med kopier av delte data,
+og derved bedre ytelsen og datatilgjengeligheten. Støtte for nye datatyper gjør
+det mulig for DBMS-serverne å lagre komplekse bilder, tekst, kart, lyd og
+video, samt enkle tall og tegnstrenger, på servere som omfatter hele
+bedriften.</b><p>
+<b></b>	De tre variablene som veier tyngst for valget av DBMS-server er
+datatype, hvilke applikasjoner som brukes, og den nødvendige ytelse.<p>
+	Enkle retningslinjer kan gi en pekepinn på hvilken type spesialisert
+DBMS-server du bør se nærmere på. Produkter som passer for store
+bedriftsmiljøer, har gjerne kapasitet for mer enn 100 brukere og databaser på
+20 GB eller mer per SMP- eller MPP-server. <p>
+	Mellomstore bedrifter, eventuelt avdelinger i større bedrifter, får sine behov
+dekket med produkter med kapasitet for 20 til 100 brukere og databaser på
+mellom 1GB og 20GB per CPU-eller SMP-server. DBMS-servere som dekker behovene
+for store eller mellomstore enheter, kan kjøre beslutningsstøtte og
+OLTP-applikasjoner. 
+<h3>
+Småbedrifter</h3>
+På arbeidsgruppe/småbedrifts-nivå har produktene kapasitet for opptil 20
+brukere og databaser på inntil 1 GB for hver enkelte CPU-server. DBMS-servere
+for arbeidsgrupper kjører applikasjoner som gjør brukerne i stand til å dele
+felles data.<p>
+	<b>Det kommende settet av såkalte personlige DBMS-er kan dekke enkeltbrukerens
+behov for databaser på inntil 500 MB på en PC, selv en bærbar. Personlige
+DBMS-er er modne for applikasjoner som bruker data kopiert fra servere i et
+nettverk for databehandling på PC eller mobile maskiner.</b><p>
+<b></b>	I det siste året har det nærmest gått inflasjon i løfter om
+DBMS-servere som kjører på SMP- eller MPP-maskiner. <p>
+	Oracle og Informix har versjoner av sine DBMS-servere som kjører på
+sofistikert maskinvare som Sequent Computer Systems' SMP-baserte servere i
+seriene Symmetry 2000 og Symmetry 5000. AT&T GIS, Oracle og Sybase har
+DBMS-servere som kjører på kraftige maskinvareplattformer som AT&T GIS' 3600
+MPP. I tillegg finnes IBM og Oracles versjoner av DBMS-servere som kjører på
+maskinvareplattformer som IBMs SP2 Power parallell-maskin. Tandem Computers har
+en DBMS som kjører på sin egen Himalaya MPP. <p>
+	DBMS-servere som nyttiggjør seg kraften i maskiner med
+multiprosessor-arkitektur,  gjør deg i stand til å bygge applikasjoner som gir
+bedre ytelse, støtter flere brukere, og håndterer større databaser. Men det
+innebærer også at mer oppmerksomhet må rettes mot operativsystem og maskinvare.
+<h3>
+Parallell</h3>
+<b>For å utnytte kraften i SMP- eller MPP-maskiner, er DBMS-serveren nødt til å
+støtte parallell query-prosessering eller parallell transaksjonsprosessering.
+Parallell query-prosessering er fordelaktig for applikasjoner for
+beslutningsstøtte, mens parallell transaksjonsprosessering gir kraftig økning i
+ytelsen for OLTP-applikasjoner. </b><p>
+<b>	Formålet med parallell prosessering for beslutningsstøtte, er å forbedre
+query- responstiden. Med parallell query-prosessering, blir hver query av
+DBMS-serveren oppdelt i en rekke oppgaver, hvorpå hver oppgave videreføres til
+en av prosessorene i en multiprosessor-maskin for å utføres der.</b><p>
+<b></b>	Sett at en query vil kreve at DBMS-serveren skanner en svært stor fil.
+DBMS-en bryter opp query slik at hver prosessor skanner en forskjellig del av
+filen. Dermed kan man søke etter de etterlyste dataene i hele filen langt
+raskere enn dersom en enkelt prosessor skulle søkt gjennom hele filen.<p>
+     	Parallell prosessering av en query innebærer likevel mer enn at det går
+an å hente data fra et eksternt lagringssted. Komplekse queries innbefatter
+blant annet å få tilgang til data fra flere tabeller, samt sette sammen og
+sortere disse dataene. Jo mer disse operasjonene kan utføres parallelt, desto
+bedre blir den totale ytelsen.<p>
+     	Leverandører som tilbyr parallell prosessering med DBMS-servere, gir kun
+kapasitet for å utføre enkelte av disse operasjonene parallelt. Det er derfor
+vesentlig å få klarhet i hvilke spesifikke operasjoner parallell prosesseringen
+gjelder.<p>
+	Parallell transaksjonsprosessering, på en annen side, gjør DBMS-serveren i
+stand til å motta separate transaksjoner fra mange brukere på en gang. DBMS-en
+fordeler hver transaksjon til en separat prosessor som maksimerer den totale
+transaksjonen hele veien og holder prosesseringskravene for hver transaksjon på
+et minimum.<p>
+	Enhver DBMS-server som kjører på en SMP-maskin som benytter flere
+operativsystem-prosesser eller -tråder for å kunne håndtere flere brukere på en
+gang, har i realiteten parallell transaksjonsprosessering. For å få til en
+effektiv planlegging av transaksjoner for parallell prosessering, kan det være
+en hjelp å bruke en monitor for transaksjonsprosessering, som IBMs CICS, AT&T
+GIS' Top End, Novells Tuxedo eller Transarcs Encina.<p>
+     <b>	Fordi hver prosessor i en SMP-maskin deler felles minne, blir ytelsen
+maksimal med rundt 30 prosessorer. MPP-arkitekturen fjerner dette hinderet ved
+å gjøre hver prosessor i stand til å ha sitt eget minne og arbeide i en løst
+koplet konfigurasjon. MPP-maskiner kan derfor gi fortsatt ytelsesforbedring
+mens de oppskalerer til hundrevis av prosessorer.</b><p>
+<b></b>	Men selv om MPP-serveren betyr fortsatt bedret ytelse for parallell
+transaksjonsprosessering, har det sin pris. Hver prosessor må kjøre sin egen
+kopi av DBMS-serveren og benytte en distribuert skrive-reservasjon for å
+opprettholde datakonsistens de forskjellige minne-cachene imellom. 
+<h3>
+Datakonsistens</h3>
+Oracle var en av de første leverandørene som støttet en distribuert
+skrive-reservasjon med sin Oracle6 DBMS, noe som viste seg å være en flaskehals
+for ytelse. Derfor har Oracle omgjort sin skrive-reservasjon for Oracle7 DBMS,
+slik at den nå benytter spesiell maskinvare for å redusere kostnaden for å
+opprettholde datakonsistens over flere prosessorer. IBM Parallel Transaction
+Server skrive-reservasjon, brukt i DB2/MVS versjon 4, som nå foreligger i
+beta-versjon, bruker også spesialmaskinvare for å oppnå tilsvarende
+resultater.<p>
+	Mens SMP og MPP kan bidra til raskere utføring av queries og transaksjoner på
+serveren, finnes det andre DBMS-verktøy som kan bedre nettverksytelsen til
+klient/tjener-applikasjoner i større bedrifter.<p>
+	Å formidle SQL kode opprettet på klienter over hele nettverket kan  gi
+uakseptabel ytelse. Det kan være en hjelp å bruke lagrede prosedyrer på DBMS-
+serveren. Med lagrede prosedyrer kan klientene sende enkle kommandoer for å
+sette igang prosessering av forhåndsdefinerte rutiner, og på denne måten
+redusere trafikken på nettverket.<p>
+     	Denne applikasjonsstilen innbefatter imidlertid vanligvis en tre-trinns
+arkitektur der klient-applikasjoner kommuniserer med servere både på avdelings-
+og bedriftsnivå. DBMS-lagrede prosedyrer er lite egnet til å støtte
+applikasjonsprosessering over flere servere, særlig når disse serverne kjører
+forskjellige databaseprodukter.<p>
+     	Løsningen ligger i å bruke middleware for applikasjoner, slik som fjerne
+prosedyre oppringninger eller meldingsorientert middleware. Denne typen
+middleware gir større applikasjonsfleksibilitet med hensyn til håndtering av
+prosesseringen over flere servere, og drar fordel av å ikke være knyttet til
+noen bestemt leverandør. Ulempen er en mer kompleks applikasjonsutvikling i en
+verden der det finnes få sofistikerte utviklings- og testingsverktøy for denne
+typen prosessering.
+<h3>
+Mellomstort</h3>
+Dersom du ikke er avhengig av den høye ytelsen til DBMS-servere innstilt for
+SMP- eller MPP-maskiner, men trenger mer enn hva de kommende "low-end" serverne
+byr på, er tingen servere for avdelinger/mellomstore bedrifter, som ikke har
+endret seg mye det siste året. <p>
+	De fleste klient/tjener-applikasjoner laget til dags dato fungerer bra sammen
+med disse DBMS-servere for slike miljøer. Applikasjoner for
+avdelinger/mellomstore bedrifter bruker normalt klienter som får tilgang til
+data på en fjerntliggende server ved å sende SQL queries, kommandoer og data
+over hele nettverket. De lagrede prosedyrene som støttes av DBMS-servere for
+avdelinger/mellomstore bedrifter, bidrar til å dempe belastningen på
+nettverket.<p>
+<b>	De tre markedslederne i DBMS-servere for avdelinger/mellomstore bedrifter
+er Oracles Oracle7, Sybases Sybase SQL Server og Informix' Informix-OnLine
+Dynamic Server. I det kommende året vil CA kunne vinne tilbake noe av det
+terrenget selskapet tapte etter den dårlig administrerte overtakelsen av ASK
+Group Inc. og dets Openingres-produkt. </b><p>
+<b></b>	CA forsøker nå å overbevise kunder om at selskapet investerer tungt i
+det som nå kalles CA-Openingres, og at dette vil øke produktets ytelse ved
+hjelp av multiprosesseringsstøtte. <p>
+	Et annet produkt i kjømda er version 2.0 av IBMs DB2 for <a href="http://www.cs.uit.no/OS2/">OS&#47;2</a> og DB2 for Unix.
+Den nye versjonen nærmer seg produksjonsslipp og byr forbedringer som vil gi
+langt sterkere klient/tjener-kapasitet. IBM kommer dessuten med en ny versjon
+av DB2 for Windows NT. 
+<h3>
+<a href=http://www.microsoft.com>Microsoft</a></h3>
+Den mest betydelige leverandøren vil nok likevel være Microsoft.
+Programvaregiganten har mye å tjene på den økte aksepten for Windows NT som
+operativplattform for servere, i tillegg til at integreringen mellom NT og dens
+Microsoft SQL Server versjon 6 fortsetter. <p>
+	Microsoft SQL Server 6 er en av mange DBMS-serverne for mindre bedrifter som
+vil bli utstyrt med replikeringsfunksjoner som automatiserer distribueringen av
+data mellom servere. <p>
+	Selv om replikeringssystemer ofte blir pakket sammen i en enkelt kategori,
+finnes det forskjellige implementeringer tilpasset et av tre bruksområder:
+kopiering av data mellom flere driftssystemer med kapasitet for daglige
+driftsoppgaver; kopiering av data fra et driftssystem til et beslutningssystem
+med kapasitet for beslutningsstøtte og trend-analyse; kopiering av data som
+skal brukes av flere beslutningssystemer. De fleste replikeringssystemer har nå
+kapasitet for førsnevnte og andre bruksområde.<p>
+<b>	Når data replikeres mellom driftssystemer, er det få krav til rensing eller
+omformatering av dataene, fordi alle systemer bruker de samme formatene.
+Isteden forkuseres det nå på deling av data mellom flere servere, samt flytting
+av data til målsystemer fortest mulig, slik at alle kopier holdes oppdatert.
+Denne replikeringsstilen gir økt interesse for produkter som tillater at enhver
+kopi av de aktuelle data kan oppdateres likt. </b><p>
+<b></b>	CA-Openingres pionerte denne teknikken ved å innføre
+replikeringssystemer med  konflikt-detektering og konflikt-deling for å takle
+situasjoner der datatap oppsto som følge av at en gitt server ikke hadde siste
+versjon av dataene fordi datareplikeringen foregikk asynkront.<p>
+	Oracle innførte nylig liknende funksjoner, i likhet med Praxis International,
+som lager DBMS-er for stormaskiner og verktøy for datareplikering. Andre
+leverandører vil ganske sikkert følge etter. Bruken av delt oppdatering i
+replikeringssystemer passer imidlertid dårlig for uerfarne brukere, og krever
+et forsiktig applikasjonsdesign for å sikre datasynkronisering.<p>
+	Under replikering av data fra driftssystemer til beslutningssystemer
+vektlegges fangst av utklipp av dataene etter brukerdefinerte intervaller.
+Denne typen replikering krever også en funksjon som renser og omformaterer
+dataene slik at de kan brukes av bedriftssapplikasjoner. <p>
+     	De fleste replikeringsverktøy har idag nokså begrenset kapasitet for
+rensing og omformatering. Dessuten er denne begrenset til kopiering av data
+mellom DBMS-servere med relasjonssstruktur. Dermed blir det umulig å bruke
+disse verktøyene for å bygge beslutningsdatabaser fra driftsdatabaser som ikke
+har relasjonsstruktur. 
+<h3>
+Komplekse data</h3>
+Mens de fleste data lagret i relasjonsdatabaser består av tall og strenger, er
+det et økenede behov for lagring av mer komplekse data, som grafikk, bilder og
+kart. <p>
+	I de siste årene har støtte for slike komplekse data kunnet oppdrives via en
+datatype kjent som Binary Large Objects (BLOBs). Hver BLOB kan bestå av inntil
+2GB data uansett innhold. BLOB-er kan dermed lagre grafikk, bilder og andre
+data. <p>
+	<b>Det utvikles stadig flere komplekse multimedia-applikasjoner, og dette gir
+brukerne et behov for å definere datatyper og funksjoner selv, slik at
+applikasjonene blir bedre i stand til å manipulere lagret informasjon. Et av de
+første produktene med kapasitet for brukerdefinerte datatyper, var
+CA-Openingres. IBM presenterte nylig  liknende kapasiteter i DB2 for OS/2 og
+DB2 for Unix. Nyere såkalt utvidede relasjonsprodukter, som Illustra
+Information Technologies' Illustra Server og UniSQLs' UniSQL Server, har også
+disse kapasitetene. </b><p>
+<b></b>     	Leverandørene av DBMS-servere fokuserer også i stor grad på å lage
+produkter som kan brukes til å bygge systemer for beslutningsstøtte. Slike
+systemer gjør bedriftsledere i stand til å bruke data innhentet fra
+driftssystemer fra hele bedriften som grunnlag for rapporter som gjør det mulig
+å nærmest daglig forholde seg til endringer i markedet.
+<h3>
+Driftssystemer</h3>
+Data i driftssystemer har ofte en annen form enn den som et system for
+beslutningsstøttesystemer krever, og de fleste driftssystemer gir ikke
+historiske eller summariske data. Løsningen er å omformatere og kopiere data
+til et separat datalagringssystem som forankrer beslutningsstøttesystemet.
+Dermed kan data integreres fra flere kilder, og det blir langt lettere for
+brukerne å få tilgang til og analysere data.<p>
+     	Funksjonene i dagens DBMS-servere er til hjelp for flytting av data inn
+og ut av lageret. Men DBMS-serverne utgjør bare en del av lager- og
+beslutningsstøttemiljøet. Organisasjoner som bygger systemer for
+beslutningsstøtte har normalt som utgangspunkt et datalager styrt av en stor
+bedrifts DBMS-server som inneholder data hentet fra driftssystemer.
+Sluttbrukere får direkte tilgang til dataene fra sin PC.<p>
+     	Over tid kan disse organisasjonene tilføye mindre såkalte datawarehouse,
+administrert av DBMS-servere for arbeidsgrupper eller mellomstore
+bedriftsenheter/avdelinger som inneholder biter eller sammendrag av data
+kopiert fra bedriftens datalager. Sluttbrukere kan gi klient-arbeidsstasjoner
+mulighet for tilgang til data fra lokale datawarehouse-servere. <p>
+     <b>	Størrelsen på DBMS-servere som skal støtte et lagermiljø er
+selvfølgelig avhengig av mengden data som skal lagres, samt hvor omfattende og
+kompleks sluttbrukerprosessering som skal foretas mot nevnte data. Et av
+formålene med et datalager er å tilby sluttbrukerne historiske data slik at det
+er mulig å oppspore tendenser og operasjoner i bedriften over lengre tid.
+Lagerdatabasene blir dermed lett svært omfattende, slik at det trengs stor
+databehandlingskraft for å prosessere de komplekse queriene som denne
+analyseformen forutsetter. </b><p>
+<b></b>	Det er derfor avgjørende at DBMS-serveren som brukes til å administrere
+lageret, støtter høyytelesverktøy for lasting og bulk-oppdatering av data. Like
+viktig er ytelsen til funksjonene for opprettelse av indekser, reservekopiering
+og gjenfinning av databaser, og evt. omorganisering av databaser. 
+<h3>
+PC-basert</h3>
+I de siste månedene har en rekke leverandører av DBMS-servere annonsert at de
+planlegger å prøve seg i den "nedre" delen av markedet med henblikk på
+PC-baserte DBMS-servere som dBASE og Paradox. Oracle bebudet Personal Oracle7
+og Oracle7 Workgroup Server. Sybase overtok nylig Watcom International og dets
+Watcom SQL, for å gjøre sitt nærvær kjent i dette markedssegmentet. Sybase har
+dessuten lagt planer om å forbedre Watcom SQLs kompatibilitet med Sybase SQL
+Server. <p>
+     	CA har bebudet CA-Open-Ingres/Desktop, som inkorporerer teknologi
+lisensiert fra Gupta. IBM henger seg på fra midten av året, når selskapet
+slipper en PC-versjon av DB2.<p>
+     	Det er flere grunner til denne aktiviteten. Først og fremst er det økende
+behov for å knytte mobile brukere til større eller mindre DBMS-servere via
+landkabler eller trådløse tjenester. Dette gjør at de mobile maskinene kan
+operere som fullverdige klienter, istedenfor at man må drasse med seg kopier av
+data som raskt foreldes. Med unntak for Oracles Oracle in Motion, har
+DBMS-leverandørene hittil gjort lite på dette området.<p>
+     	Den andre hovedfaktoren i utviklingen i det "nedre" markedssegmentet for
+DBMS-servere, er den betydelige veksten i bruk av databaser blant små
+bedrifter. Dette nye markedet er enormt. Nøkkelen her er produkter som er enkle
+å installere og administrere.<p>
+	Man kan velge å bruke &eacute;n DBMS-server for hele bunten av applikasjoner
+eller en nisje-DBMS for hver applikasjon. Utfordringen framover vil uansett
+bestå i å tilby et felles grensesnitt som gir brukeren transparent tilgang til
+dataene på hver enkelt DBMS-server.<p>
+     	Og det forutsetter et nøye valg av middleware for tilknytning mellom
+klient og server. <p>
+
+<pre><hr><b>                    Oversikt over DBMS-servere med
+relasjonsstruktur<br>
+DBMS-servere for flere miljøer: Oracles Oracle7 kjører på et bredt utvalg av
+prosesseringsplattformer, og drar fordel av betydelig støtte fra tredjeparts
+utviklingsverktøy og applikasjonsleverandører. Kapasiteten for parallell
+transaksjon og parallelle queries gjør serveren egnet også for store
+bedriftsdatabaser. Oracles Workgroup 2000-servere gir i tillegg støtte for
+databaser på arbeidsgruppe- og avdelings/småbedrifts-nivå. Oracle satser stort
+på bygging av utviklingsverktøy, mobil databehandling og spesialiserte servere
+for multimedia, foruten å drive nybrottsarbeid med hensyn til hvordan
+databasebrukere kan utnytte <a href=/EXPO94/In/>Internet</a>.<br>
+DBMS-servere med parallell prosessering: IBMs IBM DB2 - Parallel Edition for
+AIX vil få mye oppmerksomhet, ettersom selskapet har brukt betydelige ressurser
+på å forbedre kapasitetene til DB2 Unix. Produktets tette integrering og
+utnyttelse av IBMs SP2 Powerparallel "massively parallel processing" (MPP)
+maskinvare, koplet med de godt designede parallelle query-kapasitetene, gjør
+produktet ideelt for datalagre i store bedrifter. <br>
+Informix Softwares Informix-OnLine Dynamic Server er framkommet som et resultat
+av at selskapet løp en betydelig risiko ved å endre designet av arkitekturen i
+Informix-OnLine database for å dra nytte av multiprosessor-maskiner. Gamblingen
+ser ut til å ha lønnet seg, for den gjeldende versjon 7 gir utmerket ytelse og
+skalerbarhet på maskiner med symmetrisk multiprosessering. I Versjon 8, som
+ventes snart, tilføyes fullstendig parallell query-kapasitet, mens parallell
+prosesseringen utvides til å omfatte MPP-arkitekturen. <br>
+DBMS-servere for mellomstore bedrifter/avdelinger: Microsofts Microsoft SQL
+Server 6 peker seg ut, selv om mange andre produkter også vil dekke de behov
+brukere måtte ha. Databasene i avdelinger/mindre bedrifter utgjør kjernen i
+dagens klient/tjener-systemer. Microsoft SQL Server er tett integrert med
+operativsystemet Windows NT, og det gjør nok denne kombinasjonen til en vinner
+både på pris og ytelse når det gjelder systemer i dette sjiktet. Når man så
+legger til administrasjonsverktøyene til Microsoft Systems Management Server
+samt nye replikerings- og styringsfunksjoner, blir dette produktet vanskelig å
+slå.<br>
+DBMS-servere for arbeidsgrupper/små bedrifter: Watcom Internationals Watcom SQL
+4.0, som nylig ble overtatt av Sybase, tilfredsstiller behovene for grupper på
+opptil 20 brukere som tapper fra databaser på inntil 1GB. Produktet gir lave
+maskinvare-kostnader, og samtidig både enkel installering og høy ytelse til en
+lav pris.</b><hr></pre>
+<p><i>KAOS: Ved det komplette kaos står alt stille. Dette bildet fra Paris
+viser en situasjon da man bør ha god tid. Det er tydeligvis flere enn
+relasjonsdatabasene som kunne trenge et styringssystem. (Foto: <a href=../../cv/ahlert.html>Ahlert Hysing</a>)<p>
+<p>
+<a href=cw952105.html><img align=middle alt="[Forrige artikkel]" src=../../gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=../../gifs/up.gif></a> <a href=cw952107.html><img alt="[Neste artikkel]" align=middle src=../../gifs/next.gif></a> 
+
+
+<pre><hr><a href=../../maps/art.map><img alt="[Image map not available]" src=../../gifs/artmap.gif ismap></A><hr></pre>
+<h5>
+<address>
+Artikkel automatisk generert, 01/06-95, kl. 17.31 <a href=../../kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

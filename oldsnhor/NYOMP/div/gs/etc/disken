@@ -1,0 +1,19 @@
+Current partition table (original sd16):
+        partition a - starting cyl      0, # blocks  1047926 (874/0/0)
+        partition b - starting cyl    874, # blocks  1047926 (874/0/0)
+        partition c - starting cyl      0, # blocks  4190505 (3495/0/0)
+        partition d - starting cyl   1748, # blocks  2094653 (1747/0/0)
+        partition e - starting cyl      0, # blocks        0 (0/0/0)
+        partition f - starting cyl      0, # blocks        0 (0/0/0)
+        partition g - starting cyl      0, # blocks        0 (0/0/0)
+        partition h - starting cyl      0, # blocks        0 (0/0/0)
+
+partition> ^D
+
+1> disk init name="sd16a", physname="/dev/rsd16a", vdevno=6, size=261956
+2> go
+1> disk init name="sd16b", physname="/dev/rsd16b", vdevno=7, size=261956
+2> go
+1> sp_helpdevice
+2> go
+

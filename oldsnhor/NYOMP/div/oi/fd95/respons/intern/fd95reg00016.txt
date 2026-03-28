@@ -1,0 +1,14 @@
+overskrift: Helse i hvert telleskritt - Telemedisin
+kommentar:  Går det ann å få en presentasjon av det foredraget/presentasjonen som ble holdt i Tromsø, i regi av Universitetet, onsdag den 11.10.1995 ? I tilfelle ikke, hvor kan jeg søke informasjon om det prosjektet som RiTø har som et samarbeidsprosjekt bl.a. sammen med Telenor mange takk for svar 
+intern: nei
+anonym: nei
+navn: Helge G. Watndal
+stilling: Konsulent
+adresse: Refsnesstranda 19
+postnummer: 1518
+poststed: mOSS
+epost: WATNDAL@TELEPOST.NO
+telefon: 69271925
+base: fd95
+maskin: 
+regdato: 11.10.95 22:55:33

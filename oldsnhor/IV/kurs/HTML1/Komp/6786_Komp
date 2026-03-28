@@ -1,0 +1,1416 @@
+%\documentstyle[A4,12pt,norsk,fancybox,pstimes,ifipsfonts,psfig,fix,shadow,isolatin,html,pstricks,titlepage,progtext]{article}
+\documentstyle[12pt,psfig,html,titlepage,A4,norsk,fancybox,fix,shadow,isolatin,progtext]{article}
+\setlength{\parskip}{0.3cm}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.1}
+\addtolength{\fboxsep}{0.3cm}
+\setlength{\parindent}{0cm}
+
+\makeatletter
+\def\l@subsection{\@dottedtocline{2}{1.5em}{2.8em}}
+\def\l@subsubsection{\@dottedtocline{3}{4.3em}{3.7em}}
+\makeatother
+\setcounter{totalnumber}{6}
+
+%
+%Tittel på første side, ikke sidenummer
+%
+
+\title{ \Huge\bf Introduksjon til HTML  \\
+\vspace{1cm}
+\large\rm Grunnleggende praktisk innføring i HTML 
+      }
+% For 1 forfatter bruk neste \author, for 2, bruk neste etter der
+%
+% 1 forfatter 
+%
+\author{\LARGE \bf
+\copyright Oslonett AS og Intervett AS \\
+Steinar Kjærnsrød \\
+\tt steinar@oslonett.no
+}
+
+% 2 forfattere
+%\author{\begin{tabular}{|c|c|} \hline 
+%    \bf Oslonett AS & \bf Intervett AS \\ \hline Steinar Kjærnsrød& Knut Jørstad
+%  \\ \tt steinar@oslonett.no& \tt intervett@oslonett.no \\ \hline
+%\end{tabular}
+%}
+
+\makeindex
+
+\begin{document}
+
+
+\begin{rawhtml}
+<center><H1><img alt="Introduksjon til HTML" src=/IV/gifs/HTML1.gif></H1></center>
+<p>
+<center><img alt="Næringsakademiet AS" src=/IV/gifs/NA.gif></center>
+<p>
+<pre><center><img align=middle alt="Oslonett AS"  src=/graphics/oslonett-165x60.gif>     <img align=middle alt="Intervett AS" src=/IV/gifs/iv.gif></center></pre>
+<BR clear=all> 
+<hr size=4>
+\end{rawhtml}
+
+\newcommand  {\eks}[2] % Eksempel
+{ {\it #1}
+ \begin{quote}
+ \hrule 
+ \vspace{0.2cm}
+
+#2 
+
+ \vspace{0.2cm}
+ \hrule 
+ \end{quote}
+}
+\newcommand {\href}{\htmladdnormallink}
+\newcommand {\merk}[1]{ {\bf \em #1}} 
+\newcommand {\email}[1]{ {\it \em #1}} 
+\newcommand {\prog}[1]{ {\tt \em #1}} 
+\newcommand {\post}[1]{ {\it \em #1}} 
+\newcommand {\bok}[1]{ {\bf \em #1}} 
+
+\newcommand {\bokseks}[1]
+{
+\vspace{0.3cm}
+
+\centerline{\fbox{#1}}
+}
+
+\newcommand {\ffig}[3]
+{
+\begin{figure}[ht]
+ \begin{center}
+ \ovalbox{\large
+   \begin{minipage}{.9\textwidth}
+    \VerbatimInput{#1}
+   \end{minipage}
+        }
+   \caption{\it #2}\label{#3}
+ \end{center}
+\end{figure}
+}
+
+\newcommand {\tag}[1]
+{
+{\tt <#1>}
+}
+
+\newcommand {\tagend}[1]
+{
+{\tt </#1>}
+}
+
+\newcommand {\tagopt}[1]
+{
+{\tt #1}
+}
+
+\newcommand {\tagentry}[3]
+{
+\item {#1} \\
+#2 \index{tager;\tag{#3}}
+}
+
+
+\newcommand {\fig}[3]
+{
+\begin{figure}[t]
+\centerline{\doublebox{\psfig{figure=#1,width=10cm}}}
+\caption{\it #2}
+\label{#3}
+\end{figure}
+}
+
+
+\newcommand {\ord}[2]
+{ 
+\item[\sl #1 ] #2
+
+\index{\it #1}
+
+}
+
+
+\begin{latexonly}
+\bibliographystyle{alpha}
+\begin{titlepage}
+\begin{center}
+  \shparbox{15cm}{
+\begin{minipage}[c]{14cm}{ \maketitle \vbox{}}
+\end{minipage}
+}
+\end{center}
+
+
+\thispagestyle{empty}
+\vspace{1cm}
+\centerline{\psfig{figure=na.eps,height=4cm}}
+\vspace{2cm}
+\centerline{\psfig{figure=logo.eps,height=2cm}\hfill \psfig{figure=iv.eps,height=2cm}}
+
+\end{titlepage}
+
+\newpage
+\end{latexonly}
+
+ \pagestyle{headings} 
+
+\setlength{\parskip}{0cm}
+\pagenumbering{roman}
+\tableofcontents
+
+
+\newpage
+\pagenumbering{arabic}
+\setlength{\parskip}{0.3cm}
+\section*{Forord}
+\index{Oslonett}
+Dette kompendiet består av utfyllende stoff til kurset \merk{Introduksjon til HTML} som holdes i regi av Intervett AS og Oslonett AS.
+I tillegg til denne dokumentasjonen, inneholder dette dokumentet pekere
+til mye god online informasjon om HTML. Disse pekerne forekommer i form
+av fotnoter i teksten, der selve fotnoten er en såkalt URL -- dvs. en
+World Wide Web adresse til den aktuelle informasjonsressursen.
+Dette dokumentet finnes selv i en online versjon, og der er de nevnte pekerne aktive hyperlinker
+til andre dokumenter ute på Internettet. Alle anbefales å prøve den
+elektroniske versjonen av kompendiet.
+
+Når det gjelder forutsetninger og bakgrunnskunnskaper til deltagerne, er det
+nødvendig med god forståelse for engelsk skriftlig i forbindelse med
+lesing av ekstern dokumentasjon og de praktiske
+øvelsene. I tillegg forutsettes det at deltagerne er i stand til å bruke
+en tekstbehandler som f.eks. Word under de \href{praktiske øvelsene}{http://intervett.oslonett.no/IV/kurs/HTML1/Oppgaver.html}.
+
+
+\section{Introduksjon}
+HTML er en forkortelse for \merk{HyperText Markup Language} og er
+et beskrivelsesspråk som brukes for å lage portable dokumenter
+og samlinger av dokumenter. Med et ``portabelt'' dokument, menes
+her et dokument som kan flyttes mellom ulike dokumentsystemer og
+maskinplattformer uten at struktur og innhold i dokumentet går
+tapt.
+
+Den viktigste anvendelsen av HTML i dag,
+er som dokumentformat for å kode hypermedia dokumenter innenfor \href{World
+Wide Web}{http://www.w3.org/} på Internettet.
+\index{World Wide Web}\index{HTML}
+
+Rent teknisk foreligger \href{HTML spesifikasjonen}{http://hopf.math.nwu.edu/html2.0/htmlspec281194\_1.html} som et såkalt \merk{Internet draft}
+dokument. Dette betyr i praksis at HTML må få status som en
+``standard under utvkling''. Nåværende HTML versjon er 2.0, mens
+versjon 3.0 vil bli den første offisielle HTML standarden, kanskje
+en gang i løpet av 1995.
+
+Utviklingen av HTML og andre WWW relaterte standarder, drives av
+IETF\footnote{Internet Engineering Task Force} i nært samarbeide
+med \href{World Wide Web konsortiet}{http://www.w3.org/}.
+
+HTML er videre nært beslektet med SGML - Standard Generalized
+Markup Language, en ISO standard og en de-facto standard for
+elektronisk koding og strukturering av dokumenter. SGML er særlig
+anvendelig som plattform hvis informasjon skal ut på mange forskjellige
+former og i forskjellige medier som f.eks. trykt tekst, CD-ROM og
+HTML/WWW. Rent formelt er HTML det som heter en ``SGML applikasjon'',
+og er beskrevet vha. en såkalt SGML DTD\footnote{Document Type
+Definition}.
+
+\index{DTD}
+\index{SGML}
+\index{IETF}
+
+\subsection{Markup vs. layout}
+
+Allerede nå er det på tide å rydde av veien den mest vanlige
+misforståelsen når det gjelder HTML:
+
+\begin{quote}
+{\sl
+HTML er et beskrivelsesspråk som beskriver strukturer og 
+sammenhenger mellom de enkelte delene av et dokument, og evt. mellom
+forskjellige dokumenter. HTML sier så godt som ingen ting om fysisk
+utseende og layout -- det er opp til programmet som tolker HTML koden
+og knytte en layout til de enkelte HTML konstruksjonene.
+Siden det er mange forskjellige slike programmer, følger det at et
+dokument både kan bli vist fram (og skrevet ut på trykk) med forskjellig
+fysisk utseende avhengig av hvilket program som ble benyttet.
+}
+\end{quote}
+Alt dette er til å begynne med uvant, og særlig for folk med ståsted
+innen grafisk bransje, men som det forhåpentligvis vil fremgå i dette
+kurset, er det mange fordeler forbundet med dette skillet mellom innhold
+og form på den ene siden og utseende på den andre siden.
+
+En \aa penbar fordel, er at det til en viss grad er brukeren og leseren som 
+kan bestemme hvordan dokumentet skal se ut, ikke forfatteren av dokumentet.
+Dette har leseren mulighet til \aa\ p\aa virke ved \aa\ konfigurere 
+leseprogrammet hun bruker, ved \aa\  f.eks. kople gitte fonter til
+de enkelte HTML elementene.
+
+{\em Hvorfor er s\aa\ denne friheten viktig?}
+
+Lesere har forskjellig behov og de har forskjellig typer maskiner, skjermer
+og framvisningsprogrammer. En gitt fysisk layout som passer et sted, passer
+ikke n\o dvendigvis et annet sted.
+
+En annen fordel, er at ``The Web'' -- dvs. samlingen av alle HTML
+dokumenter p\aa\ Internettet -- f\aa r en viss konsistens s\aa\ sant
+alle som koder HTML bruker HTML til det er tiltenkt, og ikke fors\o ker
+\aa\ ``tvinge'' fram spesiell layout.
+
+
+
+\eks{En analogi til dette, kan v\ae re flg:}{
+En organisasjon bruker Microsoft Word som dokumentsystem. Det er mange\index{Word}
+dokumentforfattere i organisasjonen, og ledelsen \o nsker at alle dokumenter
+skal ha en felles stil og profil. I stedet for \aa\ fortelle 
+dokumentforfatterne at alle ingresser skal settes i 12 pt Times 
+og alle bylines i 10 pt kursiv, lages det to s\aa kalte Word maler som
+kalles ``ingress'' og ``byline''. I definisjonen av malene angir
+man hvordan tekst som benytter denne malen skal formatteres. Ledelsen
+s\o rger s\aa\ for at disse malene gj\o res automatisk tilgjengelig for
+Word installasjonen i organisasjonen, og instruerer forfatterne i at
+disse malene skal brukes.
+
+Hvis n\aa\ alle dokumentforfattere overholder dette og unng\aa r \aa\ bruke
+eksplisitt layout markup, vil alle dokumentene i organisasjonen
+f\aa\ samme profil. Samtidig er det lett \aa\ endre definisjonen
+av malene hvis man \o nsker \aa\ endre profilen.
+}
+
+La dette være en foreløpig introduksjon til HTML og hva som er spesielt
+med HTML. Før vi setter i gang med å se på selve språket, kan det være 
+nyttig å definere noen begreper og uttrykk som vil bli brukt
+gjennom hele kompendiet.
+
+\subsection{Noen definisjoner}
+\begin{description}
+\item ``Browser''
+
+Kjært barn har mange navn -- HTML browser, Web browser og Web klient er
+alle ord som betyr det samme -- nemlig programmet som du benytter
+for å lese og navigere i World Wide Web. De to mest kjente slike programmene
+er NCSA Mosaic og Netscape.
+
+\item ``WWW server / Web server''
+
+Et mer korrekt  (men lite brukt) ord, er HTTP server. Dette er programmet
+som betjener Web klientenes forespørsler om å sende HTML dokumenter (og
+andre typer data) tilbake til klienten.
+
+\item ``HTTP''
+
+HTTP står for HyperText Transfer Protocol, og er protokollen som benyttes
+mellom Web klient og Web server for å utveksle data.
+\end{description}
+
+\fig{HTTP2.eps}{HTTP protokollen}{HTTP}
+
+Figur \ref{HTTP} viser hvordan disse tingene henger sammen.
+
+
+
+
+
+
+
+
+
+\section{Grunnleggende elementer i HTML} \label{BASIC}
+
+HTML er et relativt lite omfattende språk, og det tar ikke svært
+lang tid å få oversikt over språket.
+
+Siden HTML er et markupspråk, betyr det at markup kommandoene er
+blandet inn i selve teksten i dokumentet. HTML er videre et rent
+ASCII\footnote{HTML benytter Latin1, altså et 8 bits tegnsett og egentlig ikke 7bits ASCII} basert språk, slik at HTML dokumentene er greie å transportere
+mellom systemer, editere vha. standard tekstediteringsverktøy
+osv.
+
+\index{tager} 
+\subsection{Introduksjon til HTML tager}
+Sentralt i språket står begrepet {\bf tag}, eller {\bf kommando}
+om vi vil. I dette kompendiet vil vi bruket ordet ``tag'' i det
+følgende.
+
+En tag innledes av en venstre skråparentes -- '<' -- og avsluttes
+med '>'. Tagens navn vil være første element mellom de to parentesene,
+og oftest står det ikke noe mere mellom parentesene. Men  en tag kan
+også ha sk. opsjoner, der en opsjon har et navn og evt. en verdi. 
+
+Et eksempel på to tager uten opsjoner er vist i figur \ref{tag1}, mens
+figur \ref{tag2} viser en tag med to opsjoner.
+
+\ffig{tag1.html}{Eksempel på to tager uten opsjoner}{tag1}
+
+\ffig{tag2.html}{Eksempel på en tag med to opsjoner}{tag2}
+
+\index{tag; startag}
+Hittil har vi kun snakket om og vist såkalte {\bf starttager}. Noen
+tager krever også en {\bf avslutningstag}, og slike tager kan vi
+si ``opererer på'' teksten som står mellom start- og avslutningstagen.
+Innenfor SGML terminologien sier vi at en slik tag er en {\bf container}.
+
+I figur \ref{tag3} ser vi flere container tager brukt. Dette eksemplet viser
+samtidig \href{hvordan et helt minimalt HTML dokument kan se ut}{http://www.oslonett.no/IV/kurs/HTML1/Komp/hello.html}. Merk at et HTML dokument
+består av to atskilte deler -- nemlig en {\bf header} del og en {\bf kropp}. Rundt
+hele dokumentet ligger \tag{html} .. \tagend{html}. Et HTML dokument bør også ha
+en veldefinert avslutning, men dette vil rent teknisk være en del av dokumentkroppen,
+og det er ikke definert seksjoneringstager for dette formålet.
+
+\ffig{hello.html}{Et minimalt HTML dokument med eksempler på container type tager}{tag3}
+
+\index{tag; endtag} \index{tag; avslutningstag}
+
+Et par andre nyttige ting å vite før vi ser på de enkelte tagene:
+
+\begin{itemize}
+\item Tagnavnene
+kan skrives med både store og små bokstaver, men for leselighetens skyld
+anbefales det å {\it ikke} bruke dette om hverandre.
+
+\item Sammenhengende blanke tegn kompakteres og linjeskift ignoreres
+i HTML koden unntatt innenfor tagen \tag{pre} som brukes for preformattert tekst.
+\end{itemize}
+
+\subsection{Gjennomgang av de viktigste tagene}
+
+Dette kurset og dette kompendiet tar ikke mål av seg til å gjennomgå hele HTML, og vil
+derfor kun drøfte de viktigste tagene som er nødvendig for å skrive et HTML dokument
+ihht. HTML 2.0. Gjennomgangen er lagt opp ihht. hvilken funksjon tagene har i
+et dokument.
+
+\subsubsection{Dokument kontroll tager}
+
+Dette er tager som deler opp de enkelte logiske delene av et dokument.
+\begin{description}
+
+\tagentry { \tag{html} ... \tagend{html}}{
+Omslutter hele dokumentet.}{html}
+
+\tagentry { \tag{head} ... \tagend{head}}{
+Omslutter header delen av dokumentet, se \ref{head}.}{head}
+
+\tagentry { \tag{body} ... \tagend{body}}{
+Omslutter selve dokumentkroppen.}{body}
+
+\end{description}
+
+\subsubsection{Header tager} \label{head}
+Det finnes en del tager som bare kan stå innenfor \tag{head} .. \tagend{head} og som
+alttid må være der.
+\begin{description}
+
+\tagentry { \tag{title} ... \tagend{title}}{
+Angir dokumentets tittel. Denne må alltid være med. Dokumentets tittel bør
+velges med omhu pg være helt kontekstuavhengig. Det er viktig å være klar over at 
+denne tittelen ikke er direkte
+synlig for leseren som en del av teksten, men vil bli brukt av Web klienten som
+et navn på dokumentet. Når man f.eks. bruker add-to-hotlist eller add-bookmark
+funksjonene i en Web klient, er det alltid dokumenttittelen som vil være
+synlig i listen. Automatiske Web søkeroboter vil også kunne bruke tittelen når
+dokumenter indekseres.}{title}
+
+\tagentry { \tag{base href="URL"}}{
+Viser dokumentets URL. Brukes ikke ofte.}{base href=..}
+
+\tagentry { \tag{link rev="made" href="URL"}}{
+Kan brukes for å angi dokumentets forfatter.}{link href=..}
+\end{description}
+
+%% STRUKTUR
+
+\subsubsection{Strukturelle tager}
+
+Dette er tager som benyttes for å angi {\it strukturer} innen et dokument.
+Dette kan være alt fra ulike typer nivåer og overskrifter paragrafer
+og tekstblokker.
+
+\begin{description}
+\tagentry { \tag{h1} ... \tagend{h1}}{
+Angir ytterste seksjonseringsnivå i et dokument. Bør alltid være med, og brukes
+ofte for å angi dokumentets tittel, identisk med \tag{title} tagen.}{h1}
+
+\tagentry { \tag{h?} ... \tagend{h?}}{
+HTML støtter inntil 6 undernivåer i et dokument, angitt ved tagene
+\tag{h2} til \tag{h6}. Bruk disse for å angi undernivåer og 
+deloverskrifter, men ikke ``hopp over'' et eller flere nivåer når
+et undernivå brukes.
+
+WWW browsere vil vise tekst innenfor disse tagene i forskjellige
+fonstørrelser og fonttyper, men det er helt opp til det enkelte
+program hvordan dette gjøres. Ikke fall for fristelsen til å bruke
+slike tager bare for å tvinge fram en spesiell type layout!}{h2}
+\index{tager;h3} \index{tager;h4} \index{tager;h5} \index{tager;h6}
+
+\tagentry { \tag{blockquote} ... \tagend{blockquote}}{
+Brukes for å skille ut en del av en tekst, f.eks. et sitat el. De 
+fleste Web browsere vil lage litt luft foran og bak denne tagen
+og sette teksten med innrykket høyre- og venstre marg, men dette er
+selvsagt ikke noe man kan anta sånn uten videre. Denne blokktekst
+tagen brukes ofte til å sette ingresser ol.}{blockquote}
+
+\tagentry { \tag{pre} ... \tagend{pre}}{
+Brukes for preformattert tekst. Tekst som settes innenfor denne
+tagen vil beholde alle blanke tegn, tabulatorer og linjeskift.
+Siden HTML 2.0 ikke har støtte for tabeller, brukes ofte denne
+tagen for å sette tabeller og annen tekst der man ønsker
+aligning av kolonner. En forutsetning for at dette skal bli
+pent, er at teksten settes med en fastbredde font, og det gjøres
+automatisk av Web browseren.
+
+Det er mulig å benytte opsjonen \tagopt{width=".."} for å gi et
+hint til browseren om bredde.
+
+\tag{pre} bør ikke inneholde høyere ordens strukturtager.}{pre}
+
+\tagentry { \tag{hr}}{
+Horisontal rule -- altså en vannrett strek. Noen browsere vil lage
+et linjeskift før og etter denne, andre ikke. Foreslåtte opsjoner til
+\tag{hr}, er bla \tagopt{size=..} og \tagopt{width=..}, men dette er
+ennu ikke en offisiell del av HTML.}{hr}
+
+\tagentry { \tag{br}}{
+Break -- tvungen linjeskift. Brukes der man ønsker å ha kontroll med
+linjeskift uten at man må være innenfor \tag{pre} .. \tagend{pre}.}{br}
+
+\tagentry { \tag{p}}{
+Paragraph -- linjeskift pluss en blank linje, men det er opp til hver
+enkelt browser hvor mye ``luft'' som benyttes. Det er foreslått opsjonen
+\tagopt{align=..} der verdiene kan være "center", "right" og "left", men
+dette er ennu ingen offisiell del av HTML 2.0.}{p}
+\end{description}
+
+
+\subsubsection{Lister}
+HTML har flere listetager, og tillater også nestede lister, dvs. lister 
+inne i andre lister.
+\begin{description}
+\tagentry { \tag{ul}\tag{li} .. \tagend{ul}}{
+Unordered list -- dvs. en unummerert liste. Hvert element i listen angis
+med \tag{li}  -- ``List Item'' -- tagen. De fleste Web browsere vil benytte en eller annen form
+for ``bullet'' foran hvert element i listen. Netscape Communications har 
+foreslått HTML utvidelser der man som opsjon til \tag{ul} kan angi hva slags
+type bullet man vil bruke.}{ul}
+
+\tagentry { \tag{ol}\tag{li} .. \tagend{ol}}{
+Ordered list -- en nummerert liste. Brukes akkurat som \tag{ul} tagen. I foreslåtte HTML utvidelser er det mulig å angi hva slags nummerering man ønsker å benytte i listen.}{ol}
+
+\tagentry {\tag{dl}\tag{dt}..\tag{dd}..\tag{dt}..\tag{dd}.. .. \tagend{dl}}{
+Description list. Her brukes \tag{dt} for å angi en tittellinje for hvert 
+element i listen, mens \tag{dd} brukes for å angi ``data'' for dette elementet.
+Den listen du nå leser kunne f.eks. vært satt vha. en definition-list.
+
+\tag{dl} har opsjonen {\tt "compact"} som kan brukes for å angi en mere kompakt
+presentasjon, men det er ikke alle browsere som reagerer på denne.}{dl}
+
+\tagentry { \tag{menu}\tag{li} .. \tagend{menu}}{
+Denne liste typen vil oftest ikke bli vist annerledes enn en
+\tag{ul} liste, men dette er avhengig av browser implementasjonen.}{menu}
+
+\tagentry { \tag{dir}\tag{li} .. \tagend{dir}}{
+Directory. Enda en type liste, men som heller ikke vil noe annet utseende
+enn enn \tag{ul} liste. Det er imidlertid meningen at en browser skal kunne
+vise elemenetene i listen i flere kolonner, men dette er stort sett ikke
+implementert.}{dir}
+\end{description}
+
+\subsubsection{Logiske tager}
+
+Alle tagene under har navn som indikerer noe om tiltenkt bruk.
+Men dette er selvsagt bare mulige bruksområder. Poenget er at
+man bruker tagene konsekvent og ikke benytter flere forskjellige
+tager til samme ting på ulike steder i dokumentet.
+
+\begin{description}
+
+\tagentry { \tag{address} ... \tagend{address}}
+{Denne tagen kan brukes for å angi hvem som har oppdatert et
+dokument samt adressen for siste oppdatering. Intelligente Web 
+roboter kan finne på å bruke denne informasjonen til å bygge
+opp forfatterlister(!), så ikke bruk denne tagen til andre
+ting.}{address}
+
+\tagentry {\tag{cite} ... \tagend{cite}}{
+Citation. Brukes for å sitere et eller annet.}{cite}
+
+\tagentry {\tag{code} ... \tagend{code}}{
+Brukes for å angi en sekvens med programkode.}{code}
+
+\tagentry {\tag{dfn} ... \tagend{dfn}}{
+Definition. For å angi en definisjon av et eller annet.}{dfn}
+
+\tagentry {\tag{em} ... \tagend{em}}{
+Emphasis. Brukes når man vil utheve et eller annet. Browsere
+setter ofte slik tekst i en kursiv fontstil.}{em}
+
+\tagentry {\tag{kbd} ... \tagend{kbd}}{
+Keyboard. Bruk denne hvis du skal referere en tast på
+tastaturet -- f.eks. \tag{kbd}ESC\tagend{kbd}}{kbd}
+
+\tagentry {\tag{samp} ... \tagend{samp}}{
+(Ex)sample. Bruk denne tagen hvis du skal vise et eksempel
+på noe.}{samp}
+
+\tagentry {\tag{strong} ... \tagend{strong}}{
+Denne brukes der du vil ha kraftig utheving av noe. Vanligvis vil
+browseren benytte en fet fontvariant for tekst satt med denne
+tagen. }{strong}
+
+\tagentry {\tag{var} ... \tagend{var}}{
+Variable. Bruk denne for benevning av en ``variabel'' eller andre
+ting og objekter du beskriver i dokumentet ditt.}{var}
+\end{description}
+\subsubsection{Font kontroll tager}
+Som nevnt mange ganger(!), er HTML et strukturelt markup språk, ikke et
+layout språk. Slik sett er det ikke meningen at det skal være tilgjengelig
+kommandoer som eksplisitt angir layout og fontskifter.
+
+Dog finnes det noen få tager som angir {\it fontstiler}, dvs. 
+slik som ``fet'', ``kursiv'' osv. Det finnes {\it ikke} kommandoer som
+gir eksplisitt kontroll over fontfamilie og størrelse i HTML 2.0.
+
+\begin{description}
+\tagentry { \tag{b} ... \tagend{b}}{Bold. Teksten settes med fete typer.}{b}
+
+\tagentry { \tag{i} ... \tagend{i}}{Italic. Teksten settes i kursiv.}{i}
+
+\tagentry { \tag{tt} ... \tagend{tt}}{Typewriter. Teksten settes i en fastbredde font, f.eks. Courier.}{tt}
+
+\tagentry { \tag{u} ... \tagend{u}}{Underline. Teksten settes med understreking. Denne tagen er ikke offisielt med i HTML 2.0, og kun de færreste browsere støtter den.}{u}
+
+Det anbefales å bruke disse eksplisitte tagene minst mulig! Bruk i stedet
+logiske tager. Husk på at det er leseren som skal kontrollere eksplisitt
+layout, ikke dokumentforfatteren!
+
+\end{description}
+
+\subsubsection{Spesialtegn}
+På grunn av spesialbetydningen til en rekke tegn, må det spesielle
+mekanismer til når disse skal brukes som en del av løpende tekst.
+I HTML er det to måter å gjøre dette på, enten vha. såkalte {\it
+SGML entities} eller vha. numeriske tegnkoder.
+
+\index{SGML}  \index{SGML;entity} 
+\index{Latin1} \index{ISO8859-1}
+
+\begin{enumerate}
+\item {\sl SGML entities} \\
+
+Ethvert tegn i ISO8859-1 kan angis vha. en sk. SGML entity. F.eks. må
+ampersand tegnet '\&' og større-enn '>' og mindre-enn '<' tegnet angis
+spesielt siden disse tegnene ellers vil tolkes av HTML parseren.
+
+Tabell \ref{entity} viser en liste over nyttige SGML entities, en 
+\href{komplett liste er dessuten tilgjengelig online}{http://www.w3.org/hypertext/WWW/MarkUp/Entities.html}.
+
+
+\begin{table}[t] \label{entity}
+\begin{center}
+\doublebox{
+\begin{tabular}{|c|l|}
+\hline
+\bf Tegn & \bf Entity \\
+\hline\hline
+æ  & \&aelig; \\
+Æ  & \&AElig; \\
+ø  & \&oslash; \\
+Ø  & \&Oslash; \\
+å  & \&aring; \\
+Å  & \&Aring; \\
+\hline
+\& & \&amp; \\
+< & \&lt; \\
+> & \&gt; \\
+\hline
+© & \&copy; \\
+\hline
+\end{tabular}
+}
+\end{center}
+\caption{\it Nyttige SGML entities}
+\end{table}
+
+
+\item {\sl Numeriske tegnkoder} \\
+
+Alternativt kan man benytte en notasjon der man bruker den numeriske
+koden for et tegn i Latin-1 alfabetet. Dette gjøres vha. notasjonen
+\vspace{0.3cm}
+
+\bokseks{\sl \&\#nnn;}
+
+der 'nnn' er et tall mellom 32 og 255 (men en del posisjoner
+i fontvektorene er ikke koplet til et tegn).
+
+\end{enumerate}
+
+\subsubsection{Kommentarer}
+
+Som i de fleste språk, er det i HTML også mulig å legge inn kommentarer
+i koden. Kommentarer vil hverken vises eller tolkes, men kan gjøre koden
+mere leselig og forståelig for de som senere skal rette i koden. Det
+oppfordres til å bruke kommentarer.
+
+En kommentar i HTML ser slik ut
+\vspace{0.3cm}
+
+   \bokseks{\tag{!-- Dette er en kommentar --}}
+
+Det anbefales ikke å la kommentarer gå over flere linjer, da mange
+browsere ikke støtter dette.
+\section{Introduksjon til linker og URLer} \label{URL}
+
+Vi har til nå kun sett på grunnleggende HTML tager, dvs. tager som brukes
+for å formattere og strukturere teksten i dokumentet. Men HTML er et språk
+for å kode hypermedia systemer, og vi skal nå se på mekanismene for dette.
+Sentralt i dette bildet står de to begrepene {\bf URL} og {\bf link}.
+
+Men før vi gjør dette, kan det være nyttig å se tilbake på figur  \ref{HTTP}
+på side  \pageref{HTTP}. Figuren viser en Web klient som ber om og mottar
+et dokument fra en HTTP tjener via protokollen HTTP. Men HTTP er bare en
+av flere protokoller som kan brukes fra en Web klient. Web klienter skal 
+f.eks. også minst kunne snakke med FTP tjenere, News tjenere og Gopher 
+tjenere. Noen Web klienter kan også snakke med WAIS databaser.
+
+\index{WAIS} \index{FTP} \index{News} \index{Gopher}
+
+\index{hypertekst} \index{hypermedia}
+
+Nettopp denne støtten for flere protokoller, er noe av grunnen til at
+man snakker om {\it hypermedia} til forskjell fra bare {\it hypertekst}.
+Andre medier i Web rammeverket, er lyd, bilde og video, men rent teknisk
+er dette bare filer som overføres fra en eller annen server som Web klienten
+kan snakke med.
+
+Siden Web støtter mange forskjellige protokoller,
+er det klart at man må ha en metode for å angi for en Web klient hva slags
+objekt den skal hente. Metoden må fortelle hvilken protokoll som skal
+benyttes, hvilken maskin man skal henvende seg til, og til slutt et entydig
+navn på objektet innenfor den maskinen man kommer fram til.
+
+Denne lille oppfriskningen av hva World Wide Web er, var ment som motivasjon
+for avsnittet som følger.
+
+\subsection{URLer}
+
+{\bf URL} er en forkortelse for Uniform Resource Locator, og er en mekanisme
+som entydig identifiserer et objekt på Internettet. URLer bærer 
+fysisk adresseinformasjon i seg, dvs. mer eller mindre eksplisitt informasjon
+om hvilken maskin på Internettet objektet befinner seg på.
+
+\index{URL} \index{URI} \index{URN}
+
+URLer er et spesialtilfelle av det mer generelle begrepet {\bf URI} som
+står for Universal Resource Identifier. En annen type URI, er
+en såkalt {\bf URN} -- Universal Resource Name. I motsetning til
+URLer, bærer URNer ikke fysisk adresseinformasjon i seg, og er avhengig
+av en form for navneoppslags mekanisme for å kunne bli oversatt til
+fysisk adresseinformasjon. Ideen med URNer, er at disse kan følge et
+dokument så lenge dokumentet lever, selv om det fysisk flytter seg.
+
+{\em URNer er foreløpig ikke i bruk på Internettet da man ikke har definert
+oppslagsmekanismen for å oversette URNer til fysisk adresseinformasjon, f.eks.
+en URL.}
+
+\subsubsection{Generell URL syntaks}
+
+Generelt ser en URL slik ut
+
+
+\bokseks{prot://xx.yy.zz[:port]/en.eller.annen.path}
+
+
+der
+
+\begin{description}
+\item {\bf prot}\\
+er navnet på en støttet protokoll i World Wide Web. Eksempler kan f.eks. være 
+{\em ftp, http, wais, news, telnet} og {\em file}.
+
+\item {\bf xx.yy.zz}\\
+er et såkalt Internet {\it domainnavn} eller IP adresse. \index{domainnavn}
+
+\item {\bf [port]} (optional)\\
+er et TCP port nummer. Utelates dette, brukes standard TCP
+portnummeret for denne protokollen slik IANA\footnote{Internet
+Assigned Numbers Authority} har spesifisert. \index{IANA}
+
+\item {\bf en.eller.annen.path}\\
+er en lokal spesifikasjon (filspesifikasjon f.eks.) som evalueres
+relativt til maskinen og protokoll tjeneren som er angitt
+tidligere i URLen.
+\end{description}
+
+Ovenstående syntaks spesifiserer såkalt {\it fulle} URLer. Det finnes også
+noe som kalles {\it partielle} eller {\it relative} URLer. Disse vil evalueres
+og tolkes relativt til det dokumentet de forekommer i, dvs. relativt til
+navnerommet til den tjeneren (f.eks. HTTP) som betjener originaldokumentet.
+Dette vil gå klarere fram i neste avsnitt om {\bf linker}.
+
+\subsection{Linker}
+
+Fra en HTML fil kan man sette opp en såkalt {\bf link} til et annet
+objekt på Internettet.  Dette gjøres vha. {\bf anchor} tagen i HTML.
+Syntaksen for dette ser slik ut:
+
+
+\bokseks{<a href="URI">Link tekst</a>}
+
+
+der URI er en Uniform Resource Identifier, vanligvis en URL, og 
+``Link tekst'' er den teksten man ønsker å bruke som hypertekst
+link mot objektet man linker til. Det hele klargjøres best med
+et par eksempler:
+
+\subsubsection{Eksempler på linker og URLer}
+
+\begin{enumerate}
+ \item {\bf \tag{a href="http://www.oslonett.no/index.html"}}\\
+Et dokument i Oslonetts Web server\tagend{a}
+
+ \item {\bf \tag{a href="ftp://ftp.microsoft.com/pub"}}\\
+ Pub-området i Microsofts FTP server\tagend{a}
+
+ \item {\bf \tag{a href="gopher://gopher.oslonett.no:2032"}}\\
+ En gopher server på port 2032\tagend{a}
+
+ \item {\bf \tag{a href="wais://wais.oslonett.no:211/Olympics"}}\\
+ En WAIS database med navn Olympics i en WAIS server på port 211\tagend{a}
+
+ \item {\bf \tag{a href="telnet://cdnow.com"}}\\
+ En TELNET forbindelse til maskinen cdnow.com\tagend{a} (en CD butikk på Internettet)
+
+ \item {\bf \tag{a href="\#z32"}}\\
+ Et sted med navn "z32" i samme dokument\tagend{a}
+
+ \item {\bf \tag{a href="/html/jobb/Jobbanonser.html\#z23"}}\\
+ Et sted med navn "z23" i et annet dokument, men på samme maskin\tagend{a}
+
+ \item {\bf \tag{a href="/html/jobb/Jobbanonser.html\#z23"}}\\
+   \tag{img src="/gifs/jobb.gif" alt="Jobbannonser"}\tagend{a}
+
+ \item {\bf \tag{a href="file://localhost/etc/motd"}}\\
+ Filen /etc/motd i Web klientenes lokale filsystem\tagend{a} 
+
+\end{enumerate}
+
+
+\subsection{Ankere}
+
+Et {\it anker} kan man tenke på som et merke i et dokument. Merker setter
+man fra seg for å kunne referere til disse stedene i dokumentet, dvs. hoppe
+dit via hyperlinker. Dette kan man gjøre fra andre steder i samme dokument
+eller fra andre dokumenter på andre maskiner på Internettet.
+
+\index{anker}
+
+Eksempel 6, 7 og 8 over viser hva slags URLer man benytter for å linke til
+et anker i et dokument. 
+
+Vi må også ha en mekanisme for å sette ankeret
+inn i teksten og knytte det til et område. Dette gjøres slik:
+
+\bokseks{<a name="Ankernavn">Anker tekst</a>}
+
+her blir altså "Ankernavn" navnet på ankeret, og teksten som er knyttet
+til ankeret blir altså dit man kommer hvis man aktiverer en hyperlink
+som peker ut ankeret. 
+
+NB! Legg merke til at når man setter opp en link til ankeret, så må
+``krysstegnet'' '\#' settes inn foran ankernavnet slik vist i eksempel
+6, 7 og 8 over.
+
+\subsubsection{Relative URLer}
+
+Relative URLer -- eller relative linker -- er greie å bruke når man fra et HTML dokument 
+skal referere andre filer som ligger innenfor samme filomgivelse
+som HTML dokumentet selv.
+
+I en relativ link mangler protokollspesifikasjon, maskinnavn og evt. 
+portnummer i URLen, og URLen begynner altså med en eller annen path
+spesifikasjon. Alle disse utelatte komponentene ``arves'' fra
+originaldokumentet.
+
+Hvis URLen begynner med en slash ('/'), angir man en full filspesifikasjon
+innenfor filsystemet til den aktuelle tjenesten (f.eks. HTTP filsystemet
+eller FTP filsystemet).
+
+Begynner pathkomponenten derimot uten en innledende slash, tolkes
+angivelsen relativt til det filområdet orignaldokumentet lå på.
+Noen eksempler vil klarlegge dette. Anta at vi har et HTML dokument dok1.html
+liggende på et filområde i en Web tjener. I dette området ligger
+også dokumentene dok2.html og dok3.html og underkatalogene dir1 og dir2.
+På underkatalogen dir1 ligger dokumentet dok1-1.html og på området dir2
+ligger dok2-2.html.
+
+I originaldokumentet kan vi nå benytte flg. relative linker/URLer for å linke til
+disse dokumentene:
+
+\begin{description}
+
+\item {\bf \tag{a href="dok1.html"}} \\ 
+      Dokumentet dok1.html\tagend{a}
+
+\item {\bf \tag{a href="dir1/dok1-1.html"}}\\
+      Dokumentet dok1-1.html i underkatalogen dir1\tagend{a}
+
+\item {\bf \tag{a href="/cgi-bin/test"}}\\
+      Programmet test i området /cgi-bin\tagend{a} 
+
+\item {\bf \tag{a href="dir2/"}}\\
+      En directorylisting av underområdet dir2\tagend{a}\\
+      (noen HTTP servere kan være konfigurert slik at det ikke er
+       mulig å få sendt tilbake directory listinger)
+
+\end{description}
+
+I tillegg til å spare noen bytes i overførsel over nettet, gjør konsekvent
+bruk av relative linker at det er enkelt å flytte et helt hierarki av
+filer fra et sted til et annet i filsystemet -- og også til andre
+maskiner på Internettet,
+
+\subsection{Ekstern informasjon om URLer}
+
+\begin{itemize}
+\item \href{CyberWebs URL oversikt}{http://WWW.Stars.com/Vlib/Misc/URLs.html}
+\item \href{URL spesifikasjonene}{http://info.cern.ch/hypertext/WWW/Addressing/Addressing.html}
+\item \href{URL oversikt}{http://info.cern.ch/hypertext/WWW/Addressing/URL/Overview.html}
+\end{itemize}
+
+\section{Bilder i et HTML dokument} \label{Bilder}
+
+En av de mest brukte (og misbrukte) fasilitetene i HTML, er muligheten
+for å inkludere bilder i dokumentene. 
+
+\subsection{\tag{img} tagen}
+
+Til dette benyttes \tag{img} tagen slik:
+
+\bokseks{<img src="URL" alt="alternativ tekst" align="...">}
+
+der URLen må peke ut en bildefil etter vanlig URL syntaks. Tagen har
+en opsjon for aligning av bildet med evt. tekst ved siden av bildet. 
+Mulige verdier for align opsjonen, er "top", "middle" og "bottom".
+
+Det er viktig å være klar over at det i HTML 2.0 ikke er muligheter for å
+sette blokktekst ved siden av et bilde. Det er heller ikke enkelt
+mulig å sentrere et bildet horisontalt på en side. Alt dette er enkelt
+i HTML 3.0 (og med Netscape utvidelser i dag).
+
+Opsjonen {\bf alt} er viktig, og bør alltid brukes. Denne gjør det mulig
+å spesifisere alternativ tekst som ikke-grafiske browsere vil se i stedet
+for bildet. Vanligvis vil ikke-grafiske browsere vise teksten {\em [IMAGE]} 
+der et bilde skulle være vist. Benytter man alt-opsjon, har man kontroll
+over teksten som vises i stedet for bildet.
+
+\subsection{Bildeformater}
+
+Standard bildeformat i Web er GIF, alle grafiske browsere skal støtte det.
+X bitmap format er også vanligvis støttet, og nye browsere som f.eks.
+Netscape støtter også
+JPEG som inline bildeformat. Dette er meget nyttig, for JPEG kodete bilder
+er både mer kompakte enn GIF bilder, og er dessuten et format som egner
+seg bedre for scannete bilder enn GIF.
+
+\subsection{Bilde skikk-og-bruk}
+
+Weben flyter i dag over av grafikk, og linjene over Atlanteren er fylt
+med glorete firmalogoer som fyker over i begge retninger, mens kanskje
+personene i mottagerenden egentlig er interessert i tekstbasert
+informasjon når det kommer til stykket.
+
+{\em Hva gjør man med det,lar være å bruke bilder?}
+
+Nei, det behøver man ikke, men man bør nøye vurdere hva slags budskap
+og informasjonsformål som bildene skal ha. Dessuten kan størrelsen på
+bildefiler ofte reduseres mye uten at kvalitet forringes nevneverdig.
+
+En annen teknikk, er å presentere bilder i to nivåer, der første nivået
+kun er et bitte lite ikon. Klikker man ikonet, får man så opp bildet
+i full størrelse. Dette er antydet i eksempel 8 i seksjon \ref{URL}. Her
+er bildet brukt som hyperlink -- det er fullt mulig!
+
+En annen mulighet, er å lage to sett med filer -- et uten bruk av bilder
+og et med bruk av bilder. Dette er kanskje ikke veldig vanlig, og krever 
+i hvert fall mere data-administrasjon.
+
+Det er også slik at de fleste browsere har kommandoer som gjør det mulig å
+slå av loading av bilder. I stedet blir det vist opp et fast ikon som
+er hyperlinket til det aktuelle bildet slik at man kan klikke for å få
+opp bildet selv. Dette er nøyaktig den første teknikken som ble
+beskrevet over.
+
+\index{JPEG} \index{GIF}
+\section{Koding av HTML dokumenter -- noen tips}
+
+
+HTML er et enkelt språk, og det tar ikke lang tid å få oversikt over
+de såkalte {\bf tagene} som kan benyttes og hvilken funksjon de har.
+Det tar allikevel lang tid å bli en god HTML programmerer, for det 
+er en rekke ting man bør tenke på og kanskje aller helst ha erfart
+selv når man lager HTML presentasjoner.
+
+Disse tingene har ingen ting med teknikk å gjøre, men dreier seg om form og
+struktur på dokumentene man lager. Et par tommelfingerregler kommer her:
+
+\begin{itemize}
+  \item Ikke forutsett forutgående kontekst hos leseren. Husk at Weben
+        er dynamisk og uten nivåer, og at man kan linke fritt inn til
+        vilkårlige filer som er en del av en større presentasjon.
+
+  \item Gi alle dokumenter en ordentlig tittel vha \tag{title} tagen.
+        Dokumenttitler kan benyttes av søkemaskinerier og programmer
+        som lager automatiske innholdsfortegnelser.
+
+  \item IKKE bruk strukturtager som \tag{h1}, \tag{h2} osv. for å tvinge
+        fram en spesiell layout! Husk ``markup vs. layout''. Bruk \tag{h1}
+        kun \'en gang pr. dokument.
+
+  \item Prøv å finne naturlige linktekster i hyperlinkene. Unngå
+        tekster av typen ``Klikk her''. Husk at det ikke er alle som
+        har noe å klikke med en gang!
+
+  \item Bruk gjerne grafikk for å fiffe opp dokumenter, men
+        ikke ukritisk. Tenk på hvilket budskap du egentlig
+        vil bringe og hvor viktig evt. grafikken er for dette budskapet.
+        Det finnes teknikker for å redusere størrelsen i GIF bilder uten
+        at kvalitet forringes nevneverdig. Forsøk om mulig å la leseren
+        velge hva slags grafikknivå man vil legge seg på, ved å tilby
+        flere valg. Et bilde kan f.eks. presenteres som et hyperlinket ikon
+        der en aktivering av linken bringer opp bildet i full størrelse. På
+        dette viset lar du brukeren bestemme 
+
+  \item Hvis du lager en større presentasjon, forsøk å dele den opp på
+        en naturlig måte og sett opp hyperlinker mellom de enkelte delene.
+        Det skal være unødvendig for leseren å gå opp til en meny bare
+        for å gå videre til ``neste side'' eller ``neste dokument''.
+
+  \item I en større presentasjon vil det nødvendigvis alltid være en logisk
+	``topp'' i dokumentstrukturen, f.eks. hjemmesiden for en Web site.
+        Det er spesielt viktig at denne gir gode navigasjonsmuligheter
+        videre, og samtidig kort forteller hva slags informasjon leseren
+        kan forvente å finne. Automatiske Web roboter vil kunne finne på å
+        indeksere alt som står på en slik hjemmeside eller toppside. Et
+        \href{imagemap alene på denne siden}{http://web.telepost.no/} vil f.eks. gi få indikasjoner på 
+        hva slags informasjon som ligger bak kulissene!
+
+
+         
+\end{itemize}
+
+
+\section{HTML verktøy} \label{Tools}
+
+Med HTML verktøy, menes programmer som benyttes for  å
+
+\begin{itemize}
+ \item vise fram HTML. Web browsere er det vanlige ordet.
+
+ \item kode HTML. HTML editorer er ordet som brukes om denne familien
+ verktøy
+
+ \item oversette til HTML fra et annet format
+
+ \item sjekke og validere HTML kode
+\end{itemize}
+
+Alt dette er verktøy som dokumentforfattere vil kunne trenge i større eller
+mindre grad. Dette kompendiet tar ikke mål av seg til å gi noen fyldige 
+lister over disse verktøyene, dessuten finnes det mange 
+\href{gode slike lister}{http://www.charm.net/~web/Vlib.html} ute på nettet.
+Vi skal derfor bare knytte noen kommentarer til disse verktøyfamiliene. Til
+slutt i denne seksjonen finnes det flere pekere til informasjon ute
+på Internettet om disse emnene.
+
+\subsection{Web browsere}
+
+For ganske kort tid siden var utvalget av Web browsere relativt moderat
+og kvaliteten på store deler av utvalget var så som så. Alt som var
+tilgjengelig var dessuten gratisprogramvare som stort sett kom fra
+universitets- og forskningsmiljøer. I kjølvannet av den enorme interessen
+for Internet og World Wide Web, har det nå dukket opp kommersielle
+World Wide Web browsere. Svært mange av disse er bygget på kildekoden
+som er lisensiert fra NCSA, og disse programmene benytter derfor 
+delvis samme plattform som det berømte NCSA Mosaic programmet.
+
+\index{NCSA} \index{Mosaic} \index{IBM} \index{Microsoft}
+Eksempler på slike ``enhanced NCSA Mosaic'' finner du bla. hos
+\href{Spry}{http://www.spry.com/}, \href{SPYGLASS}{http://www.spyglass.com/}, 
+\href{FTP Software}{http://www.ftp.com/}, 
+\href{Quadralay}{http://www.quadralay.com/} og \href{Quarterdeck}{http://www.quarterdeck.com/}. 
+
+Ellers så har jo både IBM og Microsoft lansert egne browsere.
+
+Den mest kjente og brukte browseren for tiden, er nok \href{Netscape}{http://home.mcom.com/} programmet
+fra Netscape Communications. Programmet har en del ting som ikke andre
+browsere har og er raskt og effektivt å bruke.
+
+\subsection{HTML editorer}
+
+En HTML editor er en spesiell teksteditor som brukes for å produsere 
+HTML kode. Formålet med slike programmer er tosidig:
+
+\begin{enumerate}
+ \item skjule detaljer i HTML språket for brukeren
+ \item sørge for at HTML koden som produseres er ihht. gjeldende standarder
+       for HTML
+\end{enumerate}
+
+Det finnes i dag flere gode slike editorer for UNIX, Mac og Windows, men det
+er nok slik at man må kjenne litt til HTML for å få full glede av et slikt 
+program. Et eksempel på en brukbar slik editor, er \href{HoTMetal PRO}{http://www.sq.com/hmpro.html} fra firmaet SoftQuad.
+
+\index{HoTMetal}
+
+Mange HTML programmerere foretrekker allikevel å bruke sin standard editor
+for å produsere HTML, evt. med forskjellige tillegg som støtter opp under
+produksjonen av HTML kode. 
+
+Slike tillegg/biblioteker finnes i dag for
+Microsoft Word, \href{Word Perfect}{http://www.novell.com:80/wp/busapps/epub/intpub.htm}, Emacs m.fl.
+
+\subsection{HTML validering}
+
+Det er antatt at av den HTML koden som finnes ute i Web så er bare noen få
+prosent ihht. gjeldende standarder for HTML. Grunnen til dette er at HTML
+utviklingen har foregått langs flere uavhengige akser uten nødvendig
+koordinering.
+
+Først var det NCSA som mer eller mindre ``overtok'' HTML etter at Mosaic
+ble lansert. De la inn en del utvidelser til HTML, der noen av disse nå
+er med i standarden, andre ikke.
+
+I den senere tid er det Netscape Communications som har lagt inn en rekke
+utvidelser. Tilsynelatende er mange av disse utvidelsene nyttige -- de gir
+rikere layoutmuligheter og ``penere'' sider. Problemet er bare at 
+utvidelsene ikke er standardisert, og at man er nødt til å ha en Netscape
+browser for å ha glede av dem.
+
+\index{Netscape}
+Strengt tatt bør derfor alle HTML forfattere kode HTML ihht. den til
+enhver tid gjeldende standarden. Dette gjør dokumentene portable, og
+man kan ha en viss forhåpning om at dokumentene lar seg vise fram
+vha. alle browserne som finnes der ute.
+
+\index{DTD}
+
+Det er mao. behov for verktøy som kan sjekke om HTML filer er ihht.
+standarden. Det finnes flere gode slike verktøy. De fleste benytter
+HTML 2.0 DTDen som mal for sjekkingen.
+
+\subsection{Oversetterprogrammer}
+
+En av de kanskje største samlingene HTML verktøy, er familien med systemer
+og programmer som kan brukes for å oversette fra et annet format og til HTML.
+I dag finnes det f.eks.  hjelpemidler som gjør det mer eller mindre enkelt å oversette
+fra de fleste tekstbehandlingssystemer og til HTML.
+
+HTML koden som produseres av slike systemer er vanligvis av en slik art at
+man ønsker å pusse på den, for det er de færreste av disse systemene som gir
+brukeren god nok kontroll over den HTML koden som lages.
+
+At det er interesse for krysspublikasjon av data fra store dokument- og 
+informasjonssystemer ut mot Web, vises med all tydelighet når aktører som
+Lotus og Oracle tilbyr moduler som gjør at data fra hhv. 
+\href{Lotus Notes}{http://www.lotus.com/intrprod/17e.htm} og
+\href{Oracle 7}{http://dozer.us.oracle.com:8080/} kan eksporteres ut til
+World Wide Web.
+
+En annen interessant lansering kom fra Electronic Book Technologies for
+en tid tilbake. EBT leverer i dag det avanserte SGML authoring systemet
+Dynabook, og har lansert \href{Dynaweb}{http://dozer.us.oracle.com:8080/}, en Web server som on-the-fly kan serve
+Dynabook filer og SGML filer ut mot World Wide Web.
+
+\subsection{Samlinger av pekere til HTML verktøy}
+
+\begin{itemize}
+
+\item \href{CyberWebs HTML pekere}{http://WWW.Stars.com/Vlib/Providers/HTML.html}
+\item \href{CyberWebs liste over HTML editorer}{http://WWW.Stars.com/Vlib/Providers/HTML\_Editors.html}
+\item \href{CERN's liste over HTML editorer og oversettere}{http://www.w3.org/hypertext/WWW/Tools/Overview.html}
+\item \href{Samling med pekere til HTML validerings verktøy}{http://www.hal.com/~markg/WebTechs/}
+\item \href{Programmer for oversetting til HTML}{http://WWW.Stars.com/Vlib/Providers/Translators.html}
+
+
+\end{itemize}
+
+
+
+\section{Visjoner og spådommer}
+
+En ting man ikke behøver å se inn i krystallkulen for å si, er at HTML og
+World Wide Web har grepet om seg og kommer til å spre seg ytterligere
+til nye brukergrupper og anvendelsesområder.
+
+
+World Wide Web gjør det mulig å spre informasjon på en effektiv måte til
+millioner av mennesker, og HTML og HTTP er maskineriet som i dag benyttes for
+å ``bære ut'' denne informasjonen. Men det er ikke til å stikke under stolen
+at både HTML og HTTP har sine begrensninger, og kanskje slett ikke en gang
+var laget for å skalere til den fantastiske utbredelsen Web har fått.
+
+Det er derfor rimelig å anta at både kodespråket (i dag HTML) og
+bæremekanismen (i dag HTTP) kommer til å se en del forandringer i nær
+framtid. Det vil kun forbli en definisjonssak om disse forandringene
+blir så store at man ikke lenger kan snakke om ``HTML'' og ``HTTP'' i den
+betydningen vi kjenner dette i dag.
+
+\subsection{HTML i fremtiden}
+HTML 3.0 er på trappene og det finnes allerede et par browsere man kan
+bruke for å teste dokumenter kodet i HTML 3.0, bla. 
+\href{Arena browseren}{http://www.w3.org/hypertext/WWW/Arena/} fra
+CERN samt \href{siste versjon av Netscape}{http://home.mcom.com/info/newsrelease16.html}.
+
+HTML 3.0 inneholder flere utvidelser som mange dokumentformattere vil sette
+pris på, interesserte kan lese mer om
+\href{HTML 3.0}{http://WWW.Stars.com/Vlib/Providers/HTML\_plus.html}.
+
+Men det er også et spørsmål om ikke også HTML 3.0 er for lite generelt for
+fremtidens avanserte behov. Det diskuteres derfor om ikke SGML selv burde
+brukes som dokumentkodings språk. Da må SGML dokumentene som skal brukes
+innenfor Web knyttes til et såkalt style-sheet som forteller Web klienten
+hvordan dokumentets fysiske layout skal være. Det pågår en del forskjellige
+aktiviteter rundt dette. Bla. er det laget et spesifikasjonsspråk som kalles
+\href{Document Style Semantics and Specification Language (DSSSL)}{
+http://www.falch.no/~pepper/DSSSL-Lite/}, der tanken er at dette skal kunne
+brukes som et kodespråk for style-sheets.
+
+\index{style-sheet} \index{SGML} \index{DSSSL}
+Tanken er besnærende, og man vil kunne lage mere avanserte dokumenter.
+Men samtidig påfører man browseren en del kraftige arbeidsoppgaver i
+forbindelse med parsing og rendering av SGML dokumentene.
+
+Av andre aktiviteter i retning av å innføre mer avanserte muligheter
+i hypermedia presentasjonene, må nevnes Silicon Graphics arbeide rundt
+SMML -- Standard Multimedia Markup Language. SMML skal gjøre det mulig
+å utføre 3D animasjoner. Slikt krever selvsagt om mulig enda mere av
+brukerens programvare og maskiner -- det er nok ikke alle i verden som
+er så heldige at de har en SGI på pulten eller i stua hjemme!
+
+\index{SMML}
+
+Hvordan HTML, eller arvtageren til HTML, blir seende ut i fremtiden, er 
+derfor ikke godt å si. Det eneste som kan sies med sikkerhet, er at 
+vi vil se store forandringer.
+
+\subsection{HTTP i fremtiden}
+
+
+HTTP protokollen er også beheftet med problemer og skalerer dårlig.
+HTTP i dag er en såkalt {\it tilstandsløs} protokoll. Dette betyr at alle
+forespørsler en HTTP tjener mottar er {\it helt uavhengige av og urelatert
+til hverandre} sett fra tjeneren. Det er mao. umulig for en HTTP tjener 
+å se at en serie forespørsler faktisk kommer fra samme bruker.
+
+Dette gjør det tungvint å innføre transaksjons- og sesjonsorienterte
+klient/tjener baserte tjenester. I slike systemer et det helt nødvendig
+for tjenerdelen å ha kontroll med transaksjonene fra klienten, og kunne
+relatere de enkelte transaksjonene mot en bruker i andre enden. I dag
+må man gjøre store krumspring innenfor HTTP/WWW for å implementere slike
+tjenester.
+
+\index{HTTP} \index{TCP}
+En annen følge av at HTTP er tilstandsløs, er at en TCP forbindelse må settes
+opp og tas ned for hver eneste forespørsel som gjøres. Dette er dyrt og tar
+tid, og denne tiden må en bruker bak en Web klient sitte og vente.
+
+Pga. alle disse problemene, har man begynt å se på det som kalles
+\href{HTTP-NG -- Next Generation HTTP}{http://www.w3.org/hypertext/WWW/Protocols/HTTP-NG/http-ng-status.html}. Foreløpige målinger og tester av denne
+protokollen viser svært lovende resultater.
+
+
+%\input{Tags}
+\newpage
+\section{Appendiks}
+
+\subsection{Kilder}
+Den viktigste kilden til dette kurset har vært og vil for all framtid 
+fortsette å være Internettet selv. Denne kilden er dynamisk og 
+utømmelig, men den kan ikke høstes fra annet enn ved å bruke 
+nettet. 
+
+HTML og World Wide Web er fortsatt nytt, og det har så vidt begynt å dukke
+opp bøker om emnet. Boken \cite{TUW} kan anbefales som en grei introduksjon
+til HTML.
+
+Her følger noen pekere til annen relevant informasjon om HTML (og World Wide Web) som forfatteren selv har hatt stor glede av.
+
+\subsection{Eksterne pekere til annen HTML og WWW informasjon}
+
+\begin{itemize}
+\item \href{Offisiell WWW FAQ (Frequently Asked Questions)}{http://sunsite.unc.edu/boutell/faq/www\_faq.html}
+
+\item \href{Meget god Quick Reference liste over HTML tager}{http://kuhttp.cc.ukans.edu/lynx\_help/HTML\_quick.html}
+
+\item \href{CyberWebs HTML pekere}{http://WWW.Stars.com/Vlib/Providers/HTML.html}
+
+\item \href{Bjørn Boruds norske HTML guide}{http://www.dsl.unit.no/unit.www/html-doc/}
+
+\item \href{CyberWebs liste over HTML editorer}{http://WWW.Stars.com/Vlib/Providers/HTML\_Editors.html}
+
+\item \href{Meget god liste over forskjellige HTML editorer}{http://teloz.latrobe.edu.au/gabriel/editors/}
+
+\item \href{CERN's liste over HTML editorer og oversettere}{http://www.w3.org/hypertext/WWW/Tools/Overview.html}
+
+\item \href{Programmer for oversetting til HTML}{http://WWW.Stars.com/Vlib/Providers/Translators.html}
+
+\item \href{HTML+ / HTML 3.0}{http://WWW.Stars.com/Vlib/Providers/HTML\_plus.html}
+
+\item \href{Pekere til SGML informasjon}{http://WWW.Stars.com/Vlib/Providers/SGML.html}
+\end{itemize}
+
+
+
+\begin{theindex}
+
+
+\item domainnavn, 12
+\item DTD, 2
+
+  \indexspace
+
+\item FTP, 11
+
+  \indexspace
+
+\item Gopher, 11
+
+  \indexspace
+
+\item HTML, 1
+\item hypermedia, 11
+\item hypertekst, 11
+
+  \indexspace
+
+\item IANA, 12
+\item IETF, 2
+\item ISO8859-1, 10
+
+  \indexspace
+
+\item Latin1, 10
+
+  \indexspace
+
+\item News, 11
+
+  \indexspace
+
+\item Oslonett, 1
+
+  \indexspace
+
+\item SGML, 2, 10
+  \subitem entity, 10
+
+  \indexspace
+
+\item tag
+  \subitem  avslutningstag, 5
+  \subitem  endtag, 5
+  \subitem  startag, 4
+\item tager, 4
+  \subitem  {\ptt <address>} , 8
+  \subitem  {\ptt <b>} , 9
+  \subitem  {\ptt <base href=..>} , 6
+  \subitem  {\ptt <blockquote>} , 7
+  \subitem  {\ptt <body>} , 6
+  \subitem  {\ptt <br>} , 7
+  \subitem  {\ptt <cite>} , 8
+  \subitem  {\ptt <code>} , 8
+  \subitem  {\ptt <dfn>} , 9
+  \subitem  {\ptt <dir>} , 8
+  \subitem  {\ptt <dl>} , 8
+  \subitem  {\ptt <em>} , 9
+  \subitem  {\ptt <h1>} , 6
+  \subitem  {\ptt <h2>} , 7
+  \subitem  {\ptt <head>} , 6
+  \subitem  {\ptt <hr>} , 7
+  \subitem  {\ptt <html>} , 6
+  \subitem  {\ptt <i>} , 9
+  \subitem  {\ptt <kbd>} , 9
+  \subitem  {\ptt <link href=..>} , 6
+  \subitem  {\ptt <menu>} , 8
+  \subitem  {\ptt <ol>} , 8
+  \subitem  {\ptt <p>} , 7
+  \subitem  {\ptt <pre>} , 7
+  \subitem  {\ptt <samp>} , 9
+  \subitem  {\ptt <strong>} , 9
+  \subitem  {\ptt <title>} , 6
+  \subitem  {\ptt <tt>} , 9
+  \subitem  {\ptt <u>} , 9
+  \subitem  {\ptt <ul>} , 8
+  \subitem  {\ptt <var>} , 9
+  \subitem h3, 7
+  \subitem h4, 7
+  \subitem h5, 7
+  \subitem h6, 7
+
+  \indexspace
+
+\item URI, 12
+\item URL, 12
+\item URN, 12
+
+  \indexspace
+
+\item WAIS, 11
+\item Word, 2
+\item World Wide Web, 1
+
+\end{theindex}
+
+\bibliography{biblio}
+\subsection{Informasjon om Intervett AS}
+Intervett AS har som forretningside å arrangere Internet kurs
+for norsk næringsliv, og er administrativt ansvarlig for gjennomføringen
+av kursene.
+
+\subsection{Informasjon om Oslonett AS}
+\index{Oslonett}
+Oslonett er et konsulentselskap med utspring i forskningsmiljøet
+i Gaustadbekkdalen i Oslo, og er i dag landets ledende miljø på
+Internet, Internet tjenester, UNIX og TCP/IP. 
+
+Oslonett ble  internasjonalt kjent da de distribuerte
+resultater fra Lillehammer OL til Internettet, og gjorde det
+samme med EU avstemningen i Norge,
+
+Oslonett er dessuten  en norsk Internet tilbyder, og kan tilby
+bedrifter og privatpersoner alle former for Internet tilgang,
+inkludert oppringt aksess, SLIP, PPP, faste linjer, Frame Relay
+og ISDN. Selskapet tilbyr dessuten en lang rekke konsulenttjenester
+i tilknytning til Internet, inkludert oppsett av brannveggløsninger
+og oppsett av World Wide Web baserte tjenester.
+
+Oslonett driver selv en elektronisk markedsplass basert på
+World Wide Web teknologi -- \href{Oslonett Markedsplassen}{http://www.oslonett.no/html/adv/ON-market.html}.
+Oslonett er faglig og pedagogisk ansvarlig for Intervett kursene,
+og står for både kursutvikling og forelesninger.
+
+\setlength{\parskip}{0cm}
+\listoffigures
+
+\listoftables
+
+\section*{Til slutt ..}
+
+Dette kompendiet er versjon 1.0 og kommer til å bli gitt ut i mange nye utgaver. Som
+deltager på et Intervett kurs, vil du være garantert tilgang til nyeste versjon av
+kompendiet når som helst. Det krever bare at du har Internett tilgang og World Wide
+Web aksess. Da vil du finne all nødvendig informasjon om dette i \href{Intervetts
+WWW hjemmeside}{http://intervett.oslonett.no/IV/IV.html}.
+
+
+\vspace{0.6cm}
+{\it Vi treffes på Internet!}
+\vspace{0.6cm}
+
+Oslo, \today
+
+\vspace{1cm}
+\centerline{\bf Steinar Kjærnsrød}
+\end{document}

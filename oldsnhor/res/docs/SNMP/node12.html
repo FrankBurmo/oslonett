@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3O//DTD W3 HTML 2.0//EN">
+<!- Converted with LaTeX2HTML 0.6.4 (Tues Aug 30 1994), Oslonett version : Dec 7, 1994 by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds ->
+<P>
+<HEAD>
+<TITLE>2.2.1 SNMP vs. OSIs CMIP</TITLE>
+<meta name="description" value="2.2.1 SNMP vs. OSIs CMIP">
+<meta name="keywords" value="SNMP">
+<meta name="resource-type" value="document">
+<meta name="distribution" value="global">
+</HEAD>
+<BODY><P>
+ <BR> <HR><A NAME=tex2html216 HREF="node13.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/graphics/l2h/next.gif"></A> <A NAME=tex2html214 HREF="node11.html"><IMG ALIGN=BOTTOM ALT="up" SRC="/graphics/l2h/up.gif"></A> <A NAME=tex2html210 HREF="node11.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="/graphics/l2h/previous.gif"></A> <A NAME=tex2html218 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="/graphics/l2h/contents_motif.gif"></A> <A NAME=tex2html219 HREF="node15.html"><IMG ALIGN=BOTTOM ALT="index" SRC="/graphics/l2h/index_motif.gif"></A> <BR>
+<B> Neste:</B> <A NAME=tex2html217 HREF="node13.html">2.3 Kilder</A>
+<B>Opp:</B> <A NAME=tex2html215 HREF="node11.html">2.2 Videreutvikling av SNMP</A>
+<B> Forrige:</B> <A NAME=tex2html211 HREF="node11.html">2.2 Videreutvikling av SNMP</A>
+<BR> <HR> <P>
+<H3><A NAME=SECTION00042100000000000000>2.2.1 SNMP vs. OSIs CMIP</A></H3>
+<P>
+Når det gjelder SNMP vs. CMIP/CMIS, har det lenge vært en skyttergravkrig
+om fortreffeligheten til de respektive. For en tid tilbake var det nemlig 
+aktiviteter på gang for å samordne OSI og Internet management, men det hele
+ble droppet fordi det var for vanskelig å bli enige. Det ble dog gjort
+testimplementasjoner av <b>CMOT</b> - CMIP Over TCP/IP, altså CMIP
+implementert over TCP/IP med et minimalt OSI sesjonslag på toppen.
+Selv om samordningsforsøket ble droppet, lever for så vidt CMOT videre i dag.
+<P>
+<A NAME=190>&#160;</A> <A NAME=191>&#160;</A>
+Uenigheten skyldtes kulturforskjeller i de to leirene. Internet leiren 
+definerer en enkel standard og lar så standarden utvikle seg og bli
+endret på bakgrunn av implementasjoner og real-life testing. 
+OSI standardiseringen på sin side er en rigorøs prosess der praktisk
+vinkling ofte totalt mangler, og endringer og nye standarder ser
+dagens lys lenge før implementasjoner gjør det.
+<P>
+Siden CMIP/CMIS krever en hel OSI protokollstakk, er protokollen lite
+egnet for implementasjon i enkelt utstyr som f.eks. modemer og 
+terminalsvitsjer. Her har derimot SNMP sin styrke i form av sin
+enkelhet. Påden annen side er SNMP i sin nuværende form lite skalerbar og
+lite egnet i svært store nett pga. den utstrakte pollingen som må til for
+å samle inn data. CMIP og CMIS er her bedre, og ikke minst
+velegnet for kommunikasjon manager til manager slik vist i modellen i figur 6.
+<P>
+For brukere (i denne sammenheng f.eks. systemansvarlige) er protokollkriger og
+uenighet om standarder lite interessant, da dette har lett for å
+trekke oppmerksomheten bort fra de egentlige problemene, nemlig hvordan man 
+skal administrere distribuerte og heterogene systemer og nettverk på
+best mulig måte. I denne sammenheng trenger man riktignok protokoller
+og standarder, men framfor alt trenger man rammeverk og virkelige
+applikasjoner.
+<P>
+I lys av dette er det derfor naturlig å trekke fram OSFs DME
+eksempel på noe som fokuserer på nettopp dette. DME kan være lyset
+i enden av tunnelen som vil bedre driftpersonalets hverdag. En skisse
+av DME arkitekturen er vist i figur <A HREF="node5.html#DME">2</A>.
+<P>
+<A NAME=193>&#160;</A>
+<P>
+Når det gjelder SNMP, ser man stadig nye anvendelser, og det siste er at
+man implementerer SNMP agenter inni større programsystemer, for å kunne
+kontrollere programsystemene via nettet og generelle nettverks 
+operasjonssentre. Databasesystemer er et eksempel hvor dette kan være nyttig.
+<P>
+<BR> <HR><A NAME=tex2html216 HREF="node13.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/graphics/l2h/next.gif"></A> <A NAME=tex2html214 HREF="node11.html"><IMG ALIGN=BOTTOM ALT="up" SRC="/graphics/l2h/up.gif"></A> <A NAME=tex2html210 HREF="node11.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="/graphics/l2h/previous.gif"></A> <A NAME=tex2html218 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="/graphics/l2h/contents_motif.gif"></A> <A NAME=tex2html219 HREF="node15.html"><IMG ALIGN=BOTTOM ALT="index" SRC="/graphics/l2h/index_motif.gif"></A> <BR>
+<B> Neste:</B> <A NAME=tex2html217 HREF="node13.html">2.3 Kilder</A>
+<B>Opp:</B> <A NAME=tex2html215 HREF="node11.html">2.2 Videreutvikling av SNMP</A>
+<B> Forrige:</B> <A NAME=tex2html211 HREF="node11.html">2.2 Videreutvikling av SNMP</A>
+<BR> <HR> <P>
+<BR> <HR>
+<P><ADDRESS>
+© Oslonett AS, 15/05-95, 10:35:03
+</ADDRESS>
+</BODY>

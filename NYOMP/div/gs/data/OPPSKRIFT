@@ -1,0 +1,97 @@
+Oppskrift på hvordan data skal legges inn i databasen
+-----------------------------------------------------
+
+Databasens tabelldefinisjoene er å finne som gs/lib/*.tab.  Hvis
+databasen ikke inneholder tabelldefinisjonene så må disse genereres
+ved å kjøre "cretab" skriptet som ligger sammen med tab-filene.
+
+Det er sikkert lurt å legge inn disse linjene i oppstartsfilene dine
+slik at du kan kjøre sybase-programmet isql:
+
+   SYBASE=/home/frogner/www2/sybase; export SYBASE
+   PATH=$PATH:$SYBASE/bin; export PATH
+
+Programmet osql kan brukes som et substitutt for isql og kan benyttes
+når du har behov for å sende sql kommandoer fra et skript til
+databasen.  Innlogging og passord er hardkodet i dette skriptet.
+
+Programmet obcp er en wrapper omkring bcp som kopierer inn en
+<tab>-separert fil inn i en databasetabell.  Programmet antar at
+tabellen heter det samme som filen (uten suffiks.)
+
+Sørg for at databasedumpen fra Eurocall er å finne på gs/data
+katalogen. Kommandoen ls skal gi:
+
+   $ pwd
+   .../div/gs/data
+   $ ls *.tab
+   firma.tab       poststed.tab    stikkreg.tab
+   info.tab        stikkord.tab    telefon.tab
+
+Disse matcher tabellnavn i vår Sybase database.  Unntak er "telefon"
+som blir lagt inn i tabellen "nettadr" og "info" som blir lagt inn i
+firma-tabellen.
+
+Hvis dette ikke er en komplett dump av databasen (bare en oppdatering
+siden sist, inkrementell oppdatering) så må firmaene først fjernes fra
+databasen slik at de ikke blir oppført dobbelt.  Dette kan skriptet
+"delete-firma" hjelpe deg med.  Output fra skriptet er SQL som kan
+fores til osql.  Bruk følgende:
+
+   $ delete-firma | osql
+
+Poststedene kommer bestandig komplett.  Hvis det er en oppdatering så
+fjernes først data fra poststed tabellen.
+
+   $ osql
+   1> truncate table poststed
+   2> go
+   1> quit
+
+Neste trinn er å lage bcp filer som kan importeres til databasen ved
+hjelp av obcp skriptet:
+
+   $ conv-firma >firma.bcp
+   $ conv-poststed >poststed.bcp
+   $ conv-tlf >nettadr.bcp
+   $ conv stikkreg.tab >stikkreg.bcp
+   $ conv-stikkord >stikkord.bcp
+
+Disse kan så importeres til databasen ved hjelp av kommandoene:
+(NB! Rekkefølge er viktig)
+
+   $ obcp poststed.bcp
+   $ obcp firma.bcp
+   $ obcp nettadr.bcp
+   $ obcp stikkord.bcp
+   $ obcp stikkreg.tab
+
+Merk! Hvis dette er en inkrementell oppdatering så skal ikke
+"stikkord" konverteres og legges inn i databasen med obcp.  Ved
+inkrementell oppdatering så legges stikkordene inn i databasen ved å
+kjøre:
+
+   $ update-stikkord | osql
+
+Siden update-stikkord tar veldig lang tid å kjøre (må sjekke gjennom
+databasen for alle ordene for å vite hvilke som kan endres/legges inn
+som nye), så kan det være en idé å kjøre denne kommandoen i 2 steg:
+
+   $ update-stikkord >stikkord.sql
+   $ osql <stikkord.sql
+
+Ved både inkrementell og full oppdatering:
+
+ Til slutt kan "info" postene legges inn ved å kjøre skriptet
+ "update-info".  Skriptet vil oppdatere direkte i databasen, basert på
+ innholdet i "info.tab".
+
+   $ update-info
+
+ALler sist må indekser bygges. Gjør 
+
+   $ cretab -I | osql
+
+Dette var dett!
+
+--Gisle

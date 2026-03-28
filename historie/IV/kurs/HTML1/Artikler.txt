@@ -1,0 +1,178 @@
+   SATS/TEKNIKKER OG UTSTYR INNEN DESKTOP PUBLISHING
+   
+   PageMaker 5.0 er kommet. Tar sikte på direkte konfrontasjon med
+   QuarkXPress
+   
+   Seybold Rep. on Desktop Publish. 7 nr.5: 27-30 (jan.93)
+   
+   Desktop-programmenes "bestefar" PageMaker og dets opphav Aldus har
+   lenge vært trette av å bli nevnt som nr. 2 i konkurransen med Quark
+   XPress. Utgave 5.0 er etter Aldus' mening bedre enn Quark XPress. De
+   har tilogmed sendt ut en liste med "Top 10 Quark-beaters" og en
+   brosjyre med 75 punkter, hvor PageMaker nå skulle være bedre enn Quark
+   XPress. I forberedelsene til den kampanjen, som Aldus nå vil kjøre,
+   har man benyttet seg av den enorme basen av eksisterende kunder. I
+   løpet av seks uker ble alle kunder i Nord-Amerika ringt opp, noe som
+   bare lot seg gjøre fordi hver eneste ansatt ble pålagt å bruke 15
+   timer på saken. PageMaker vil slå Quark XPress på tre hovedområder:
+   Egenskaper (facilities), hastighet og brukergrenseflate. Seybold-folk
+   har arbeidet med en testutgave - en såkalt beta-versjon av en 486/33
+   PC og er temmelig imponerte over hastigheten ved rotering av
+   TIFF-bilder og tekst på skjermen. Rotering kan skje i trinn på 0,1
+   grad, programmet kan fargeseparere direkte, det finn flere
+   typografiske egenskaper, "Expert kerning" følger med i en Addition,
+   det finn bedre muligheter for produksjon av lange dokumenter
+   (generering av innholdfortegnelser, fotnoter, toppnoter mm.).
+   Fargestyring, trapping og noen få andre ting er stadig "underveis",
+   men kommer. For øvrig har Aldus et spesielt program til trapping -
+   TrapWise.
+   
+   EO: desktop publishing, ombrekking, satsfremstilling, PageMaker 5.0,
+   Aldus Quark XPress
+   
+   GI 182/93
+
+###
+   
+   Williams, R.
+   
+   Definer din terminologi
+   
+   Desktop Communications nr. 10: 11-13 (1992)
+   
+   Skrifter kan idag skaleres fritt, og man kan derfor ikke lenger kalle
+   hver punktstørrelse for en separat skrift. Terminologisk er det også
+   litt forvirring, når man bruker engelske faguttrykk. Ordet Typeface
+   dekker en skriftfamilie som f.eks. Times ordinær, Times kursiv, Times
+   fet. Det engelske ordet font dekker en skrift i en størrelse, form og
+   trykkelse. Times ordinær 10 punkt er således en font, hvilket man på
+   dansk kaller et garnityr. Med skalerbare skrifter blir det
+   vanskeligere å opprettholde disse definisjonene, hevder forfatteren.
+   Selv skriftleverandørene kaller sine skriftdisketter fonts. Typefaces
+   og skriverskrifter dannes fra samme skrift.
+   
+   EO: desktop publishing, satsfremstilling, skrift
+   
+   GI 183/93
+
+###
+   
+   Nielen-Haberl, A.
+   
+   Lasersetter - high-tech med forbehold
+   
+   Desktop Dialog nr. 12: 30-36 (4 s.) (1993)
+   
+   Idag blir kompliserte sammenhenger som oftest forenklet. Man hører
+   ofte slagord som "Trommelsettere er bedre enn capstan-settere" uten
+   nærmere begrunnelse. For å unngå at investeringsbeslutninger tas på et
+   løst grunnlag, forsøker forfatteren i artikkelen å gi et innblikk i de
+   generelle og kritiske funksjoner i moderne PostScript lasersettere.
+   Han fremhever forskjellene mellom trommel- og capstan-settere og peker på
+   kritiske punkter, som har innvirkning på presisjon og kapasitet. De
+   forskjellige typer illustreres med prinsipptegninger.
+   
+   EO: setter, trommelsetter, capstansetter, PostScript, lasersetter
+
+   GI 184/93
+
+###
+   
+   Ronald, K.
+   
+   Denokratisering av farger
+   
+   Graphic Repro 13 nr. 11: 10,11 (des.92)
+   
+   På samme måte som desktop publishing (DTP) bragte store endringer
+   innenfor grafisk industri, spesielt for setterier, er den samme
+   teknikken nå i ferd med å gjøre seg gjeldende på fargeområdet. Et av
+   de firmaer, som er i ferd med å utvikle DTP fargeprogramvare, som kan
+   konkurrere med fagmannens kunnskaper, er EFI - Electro-nics For
+   Imaging. Artikkelen beskriver hvordan fargestyringsprogrammet EfiColor
+   og redigeringsprogrammet Cachet lagrer data om trykkforhold og styrer
+   fargereproduk-sjonsprosessen. Ved hjelp av programmet unngår man å
+   kalibere den brukte skjerm-terminalen, som likevel aldri kan vise de
+   korrekte trykkfargene. En versjon av programmet kommer i første
+   halvdel av 1993 som en Xtension til Quark XPress. Photo CD data kan
+   allerede leses inn i Cachet via en standard Macintosh CD-spiller. Den
+   høye kvaliteten og de lave skanneprisene vil gi reproanstalter stor
+   konkurranse.
+   
+   EO: desktop publishing, fargerepro, kalibrering, programvare,
+   EfiColor
+
+   GI 185/93
+
+###
+   
+   Braswell, F.M.
+   
+   Alle bør lære PostScript
+   
+   Desktop Communications s. 27-29 (jan/feb.93)
+   
+   Normalt fungerer alt bra når man sender en fil til utskrift i et
+   PostScript-format, men hva gjør man når det oppstår feil ? Hvis en
+   feil oppstår, kan den ofte rettes uten at operatøren er
+   PostScript-programmerer. Når en feilmelding oppstår, skal man 1) lese
+   feilmeldingen og 2) rette i sitt dokument etter meldingen. Meldingen
+   består av feilen og rettekommandoen, f.eks. %% (Error:limitcheck,
+   Offending Command:stroke)%%. Feiltypen er limitcheck, som oppstår når
+   en fils kompleksibilitet overstiger det RIP'en formår. Offending
+   Command er den kommando PostScript prøvde å utføre. I dette tilfelle
+   er det en "stroke", som PostScript ikke kan gjenkjenne. PostScript har
+   25 forskjellige feiltyper. Quark XPress oversetter feilmeldingene til
+   egne koder, f.eks. error-8133, men Quark viser umiddelbart før
+   meldingen de vanlige %%. Problemet kan ofte løses ved først å skrive
+   ut filen til en disk og deretter overføre den til bildesetteren med
+   font download eller kommunikasjonsprogramvare. Artikkelen beskriver
+   hvorledes man endrer i en jobb for å feilkorrigere, gir informasjon om
+   bøker, som beskriver feilrettinger, sam viser til de vanlige
+   rettelsesprosedyrer.
+   
+   EO: desktop publishing, reproduksjon, satsfremstilling, feil,
+   PostScript
+
+   GI 186/93
+
+###
+   
+   Fisher, P.
+   
+   Adobe Acrobat
+   
+   Om Adobes Acrobat - kanskje det viktigste produkt siden PostScript
+   
+   Desktop Publishing Commentary 8 nr. 8: 6-9 (feb.93)
+   
+   Adobes nye standard kan meget vel vise seg å være den mest
+   bemerkelsesverdige utvikling siden PostScript kom for ti år siden.
+   Mange i bransjen har sikkert tidligere hørt om Acrobat, som under
+   utviklingen ble omtalt som Carousel - et varemerke som åpenbart var
+   opptatt av en annen produsent. Ifølge Adobe Systems er det nå like
+   mange brukere av PostScript, som det er innbyggere i UK, nemlig 55
+   millioner. Mer enn 5000 programmer kan bruke PostScript, og på
+   "Adobespråk" er firmaets oppgave å tilby brukerne av forskjellige
+   plattformer muligheten for å utveksle informasjonsrike dokumenter.
+   Produktfamilien Acrobat er designet for å arbeide sammen med Macintosh
+   OS, Windows, PC(DOS) og Unix, og gjør det mulig på en av disse
+   plattformer å se PostScript-dokumenter, som er opprettet i de andre
+   miljøer, uansett om man har det programmet, som dokumentet er
+   opprettet i i sin datamaskin eller ikke. Hvis man ikke har de
+   skrifter, som er benyttet i dokumentet, velger systemet automatisk den
+   skriften, som ligner mest mulig av de skrifter, som er tilstede i
+   datamaskinen. Dokumentene kan også mottas og sendes elektronisk.
+   Umiddelbart er Acrobat vel egnet til overføring av dokumenter, men
+   systemet åpner for mange andre fremtidige muligheter. Ifølge
+   opplysninger vil Acrobat komme på markedet i tredje kvartal 1993.
+   
+   EO: desktop publishing, kompatibilitet, programvare, PostScript,
+   Acrobat
+   
+
+   Artiklene er hentet fra Grafisk Institutts World Wide Web server. 
+   Artikkelsamlingens Web adresse er http://www.gi.no/Docs/LU/LU494.html.
+   
+   Oslo, 22. mars 1995, ......
+

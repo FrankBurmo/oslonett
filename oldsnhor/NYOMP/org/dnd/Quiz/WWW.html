@@ -1,0 +1,62 @@
+<html>
+<head>
+  <title>Info om WWW implementasjonen av DNDs brukergrensesnitt-test</title>
+  <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+<h1><img src=gif/dnd.gif></h1>
+<h2>Info om WWW implementasjonen av DNDs brukergrensesnitt-test</h2>
+
+Denne demoimplementasjonen  er gjort av Steinar Kjærnsrød,
+Oslonett A/S.
+<p>
+Formålet er bare å vise hva som er mulig å realisere av
+interaktive applikasjoner vha. WWW rammeverket. Det er ikke
+lagt vekk på sikkerhet, dette er en "quick-and-dirty" implementasjon.
+Forøvrig er ikke WWW implementasjonen et "godt brukergrensesnitt" i seg
+selv. Til det er mulighetene i WWW/HTML/HTTP for rudimentære. Skyld
+derfor ikke på DND når det gjelder dette, men flame meg (og WWW ...).
+<p>
+Siden HTTP er en stateless protokoll, må man overføre syntetisk
+state-informasjon mellom WWW klienten og HTTP serveren. Til forskjell
+fra Windows implementasjonen i Visual Basic, er nemlig dette en
+distribuert implementasjon der mange brukere kan tenkes å kjøre
+testen samtidig. Det er dermed nødvendig for serveren å holde rede
+på hvem den snakker med til enhver tid og sørge for å ta hånd om
+evt. concurrency problematikk som måtte oppstå.
+<p>
+Man kan tenke seg mange måter å implementere state i serveren på.
+I denne demoen har jeg gjort det ved å overføre state informasjon
+gjennom $PATH_INFO variabelen som er definert av CGI spesifikasjonen.
+Det er dermed CGI skriptene som styrer med dette, ikke selve
+HTTP serveren.
+<p>
+Det er nødvendig med et enkelt databasesystem i bånn for lagring
+av resultater. Jeg bruker også databasen for mellomlagring av
+poengsummer mellom hver test. Alternativet hadde vært temporære
+filer eller HTML forms av type <b>hidden</b>. Som "databasesystem"
+har jeg valgt <tt>dbm</tt> under UNIX.
+<p>
+Hver bruker lagres i denne basen med et nummer som nøkkel. Disse
+numrene genereres fortløpende i stigende rekkefølge, og kan leses ut
+av siste komponent i path-en som aktiverer skriptene.
+<p>
+CGI skriptene mine er i virkeligheten ett enkelt C-program
+implementert som en tilstandsmaskin. Programmet detekterer hvilken
+tilstand det skal inn i ved å pakke opp $PATH_INFO og $QUERY_STRING
+variablene.
+<p>
+Nesten all HTML kode er generert ferdig på forhånd. Tilstandsmaskinen
+bruker dog UNIX shell verktøy (f.eks. <tt>sed</tt>) for å substituere inn
+state-avhengig informasjon før HTML koden sendes tilbake til WWW
+klienten.
+
+<hr>
+<a href=Om.html>
+  <img alt="ÆInfo om testenÅ" src=gif/omtesten.gif></a>
+<a href=Quiz.html>
+  <img alt="ÆOKÅ" src=gif/ok.gif></a>
+<hr>
+
+</body>
+</html>

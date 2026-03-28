@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <title>
+   Påmelding til Oslonett jubileumsarrangement : Feilmelding
+  </title>
+  <link rel="stylesheet" href="@ERRORSTYLE@" type="text/css">
+</head>
+<body class="main">
+    <!--#include virtual="/ssi/head_main.html" -->
+    <table width="100%" border="0" cellspacing="0" cellpadding="10">
+      <tr valign="top">
+        <!--#include virtual="/ssi/left_historie.html" -->
+        <td>
+	<h2 align="center">
+	   Påmelding til Oslonett jubileumsarrangement : Feilmelding
+	</h2>
+
+<form>
+<p class="error" align="center">
+@MESSAGE@
+</p><p align="center">
+<input class="input" type="button" value="Tilbake til forrige bilde"
+  onClick="history.back(1)">
+</p>
+</form>
+
+        </td>
+      </tr>
+      <!--#include virtual="/ssi/address_main.html" -->
+    </table>
+  </body>
+</html>
+

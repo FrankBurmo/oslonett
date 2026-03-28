@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3O//DTD W3 HTML 2.0//EN">
+<!- Converted with LaTeX2HTML 0.6.4 (Tues Aug 30 1994), Oslonett version : Dec 7, 1994 by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds ->
+<P>
+<HEAD>
+<TITLE>3 HTTP protokollen</TITLE>
+<meta name="description" value="3 HTTP protokollen">
+<meta name="keywords" value="Komp">
+<meta name="resource-type" value="document">
+<meta name="distribution" value="global">
+</HEAD>
+<BODY><P>
+ <BR> <HR><A NAME=tex2html217 HREF="node9.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/graphics/l2h/next.gif"></A> <A NAME=tex2html215 HREF="Komp.html"><IMG ALIGN=BOTTOM ALT="up" SRC="/graphics/l2h/up.gif"></A> <A NAME=tex2html209 HREF="node7.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="/graphics/l2h/previous.gif"></A> <A NAME=tex2html219 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="/graphics/l2h/contents_motif.gif"></A> <A NAME=tex2html220 HREF="node37.html"><IMG ALIGN=BOTTOM ALT="index" SRC="/graphics/l2h/index_motif.gif"></A> <BR>
+<B> Neste:</B> <A NAME=tex2html218 HREF="node9.html">3.1 HTTP request</A>
+<B>Opp:</B> <A NAME=tex2html216 HREF="Komp.html">Introduksjon til World Wide </A>
+<B> Forrige:</B> <A NAME=tex2html210 HREF="node7.html"> WWW: Introduksjon av </A>
+<BR> <HR> <P>
+<H1><A NAME=SECTION00050000000000000000>3 HTTP protokollen</A></H1>
+ <A NAME=HTTP>&#160;</A>
+<P>
+HyperText Transfer Protocol er en <i>tilstandsløs</i>  og objekt-orientert
+protokoll for å utveksle vilkårlige typer data i en klient/tjener 
+omgivelse. Protokollen ble laget spesielt for World Wide Web, men
+kan brukes til flere ting.
+<P>
+<UL><LI> <b>TCP</b><BR><A NAME=151>&#160;</A>
+Protokollen bruker TCP (se figur <A HREF="node6.html#OSI">1</A>) som transport, men kan bruke en vilkårlig
+datagram- eller streamorientert transportmekanisme.
+<P>
+<LI> <b>Format forhandling</b><BR>En spesiell egenskap ved protokollen, er muligheten for forhandling
+mellom klient og tjener når det gjelder hva slags dataformater og 
+datatyper partene betjener (denne egenskapen er bare delvis
+utnyttet i dagens WWW programvare).
+<P>
+<LI> <b>MIME</b><BR><A NAME=155>&#160;</A>
+HTTP bruker <A HREF="http://www.oac.uci.edu/indiv/ehood/MIME/MIME.html"><b>MIME</b></A>
+for å kode og angi datatypene som utveksles mellom WWW klienten og
+WWW tjeneren (HTTP tjeneren). MIME står for Multipurpose Internet Mail
+Extensions, og er først og fremst kjent som en mekanisme for å kunne
+sende vilkårlige datatyper over en vanlig <A HREF="ftp://ds.internic.net/rfc/rfc821.txt">SMTP</A> mail transportmekanisme, men kan brukes som en generell
+mekanisme for å representere data innenfor mange omgivelser.
+<P>
+</UL>
+Figur <A HREF="node8.html#HTTP2">2</A> viser en tenkt HTTP sesjon mellom en WWW klient og
+en HTTP tjener. Figuren finnes også <A HREF="/historie/IV/kurs/WWW1/gifs/HTTP2.gif">i full størrelse her</A>.
+<P>
+<P><A NAME=421>&#160;</A><A NAME=HTTP2>&#160;</A><IMG ALIGN=BOTTOM SRC="_23371_figure419.gif">
+<BR><STRONG>Figur 2:</STRONG> <i>HTTP protokollen</i><BR>
+<P>
+<P>
+Det er ikke dette kursets mål å gjøre en full gjennomgang av
+HTTP protokollen og mulighetene som ligger i den, så vi skal
+bare raskt se på de viktigste protokollmeldingene og hva slags
+type informasjon som kan utveksles mellom klient og tjener.
+Til slutt i dette avsnittet finnes noen henvisninger til annen
+online informasjon om HTTP.
+<P>
+<BR> <HR>
+<UL> 
+<LI> <A NAME=tex2html221 HREF="node9.html#SECTION00051000000000000000">3.1 HTTP request</A>
+<LI> <A NAME=tex2html222 HREF="node10.html#SECTION00052000000000000000">3.2 HTTP response</A>
+<LI> <A NAME=tex2html223 HREF="node11.html#SECTION00053000000000000000">3.3 HTTP metoder</A>
+<UL> 
+<LI> <A NAME=tex2html224 HREF="node12.html#SECTION00053100000000000000">3.3.1 GET</A>
+<LI> <A NAME=tex2html225 HREF="node13.html#SECTION00053200000000000000">3.3.2 POST</A>
+<LI> <A NAME=tex2html226 HREF="node14.html#SECTION00053300000000000000">3.3.3 HEAD</A>
+</UL> 
+<LI> <A NAME=tex2html227 HREF="node15.html#SECTION00054000000000000000">3.4 Pekere til annen HTTP informasjon</A>
+</UL>
+<BR> <HR>
+<P><ADDRESS>
+© Oslonett AS  15/05-95, 11:16:50
+</ADDRESS>
+</BODY>

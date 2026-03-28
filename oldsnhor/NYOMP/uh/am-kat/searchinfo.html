@@ -1,0 +1,213 @@
+<html>
+<head>
+<title>Informasjon om søkemuligheter i AkersMic-katalogen</title>
+</head>
+<body background="gifs/bg.gif" link="#0000ff" vlink="#000088">
+
+<h1><a href="http://www.oslonett.no/home/akersm/">
+<img alt="AkersMic" src="gifs/logo.gif" border="0"></a></h1>
+<h1>Informasjon om søkemuligheter i AkersMic-katalogen</h1>
+
+<blockquote>
+<hr noshade size="2">
+<font size="+1">
+
+Det er lagt opp til at søk i databasen skal kunne gjøres raskt og
+effektivt men samtidig med mulighet for fleksible, avanserte søk.
+Nedenfor beskrives de forskjellige søkemulighetene.
+
+</font>
+<hr noshade size="2">
+</blockquote>
+
+<a name="general"><h2>Innledning</h2></a>
+
+Man kan søke etter enten artist/gruppe eller tittel. Det er også mulig
+å angi begge deler for å avgrense søket ytterligere. Videre kan man
+angi at man kun vil søke i én av kategoriene (dette gjør søket
+betydelig raskere). Man angir med et enkelt valg om man vil søke etter
+hele ord eller deler av ord.
+
+<a name="names"><h2>Konvensjoner for navn</h2></a>
+
+Navn skrives på fomatet <em>Etternavn, Fornavn</em>. Egennavn som
+starter med kortord skrives på formatet <em>Egennavn, Kortord</em>.<p>
+
+Eksempel:
+<blockquote>
+<form method="POST" action="search.cgi">
+<input type="hidden" name="artist" value="September When, The">
+<input type="hidden" name="method" value="advanced">
+<input type="hidden" name="subtext" value="no">
+<input type="hidden" name="maxcount" value="50">
+<input type="submit" value=" Søk etter: ">
+<font size="+2"><em>September When, The</em></font>
+</form>
+</blockquote>
+
+<a name="simple"><h2>Enkelt søk</h2></a>
+
+Velger man <strong>enkelt søk</strong> finnes kun forekomster som
+passer eksakt med det man har tastet inn. Denne søkemetoden er (litt)
+raskere enn de to neste.<p>
+
+For eksempel, søk etter spesifisert tittel:
+<blockquote>
+<form method="POST" action="search.cgi">
+<input type="hidden" name="title" value="Abbey Road">
+<input type="hidden" name="method" value="advanced">
+<input type="hidden" name="subtext" value="no">
+<input type="hidden" name="maxcount" value="50">
+<input type="submit" value=" Søk etter: ">
+<font size="+2"><em>Abbey Road</em></font>
+</form>
+</blockquote>
+
+<a name="advanced"><h2>Avansert søk</h2></a>
+
+Velger man <strong>avansert søk</strong> har to tegn spesiell
+betydning: spørsmålstegn og stjerne. "?" passer med ett vilkårlig
+ikke-blankt tegn og "*" passer med vilkårlig antall vilkårlige
+ikke-blanke tegn.<p>
+
+Når man velger avansert søk kan man bruke de tre logiske operatorene
+"OG", "ELLER" og "IKKE". (De logiske operatorene kan også skrives på
+engelsk: "AND", "OR" og "NOT".) Er det tvil om operatorenes presedens
+kan man bruke parenteser til å tydeliggjøre ovenfor seg selv eller
+perl.
+
+Eksempler:
+<blockquote>
+<form method="POST" action="search.cgi">
+<input type="hidden" name="artist" value="Af*elius, Bjørn ELLER Str?mstedt">
+<input type="hidden" name="method" value="advanced">
+<input type="hidden" name="subtext" value="no">
+<input type="hidden" name="maxcount" value="50">
+<input type="submit" value=" Søk etter: ">
+<font size="+2"><em>Af*elius, Bjørn ELLER Str?mstedt</em></font>
+</form>
+
+<form method="POST" action="search.cgi">
+<input type="hidden" name="artist" value="(gitarkam* OR Sunde) and not Eggum">
+<input type="hidden" name="method" value="advanced">
+<input type="hidden" name="subtext" value="no">
+<input type="hidden" name="maxcount" value="50">
+<input type="submit" value=" Søk etter: ">
+<font size="+2"><em>(gitarkam* OR Sunde) and not Eggum</em></font>
+</form><br>
+
+</blockquote>
+<a name="expert"><h2>Ekspertsøk</h2></a>
+
+Med <b>ekspertsøk</b> kan man angi logiske relasjoner (OG/ELLER/IKKE
+eller AND/OR/NOT) på same måte som for avansert søk.<p>
+
+Det er også mulig å angi klasser av tegn ved hjelp av hakeparenteser:
+[abcde] passer med ett av tegnene 'a', 'b', ..., 'e'. Man kan angi
+tegn-intervaller ved å bruke minus-tegnet: [a-e] (dette betyr det
+samme som forrige eksempel). Man kan også angi negerte klasser ved å
+bruke hatt-tegnet: [^abcde] passer med ett tegn, og tegnet kan ikke
+være a,b,...,e. Noen vanlige tegnklasser er forhåndsdefinert og har
+fått egne forkortelser:
+
+<center>
+<table border="2" cellpadding="3">
+<tr>
+<td align="center">Forkortelse</td>
+<td align="center">Omvendt klasse</td>
+<td align="center">Tegnklasse</td>
+<td>Beskrivelse/kommentar<br></td>
+
+<tr>
+<td align="center">\w</td align="center">
+<td align="center">\W</td>
+<td align="center">[a-zA-Z0-9_]</td>
+<td>Alle alfanumeriske tegn<br></td>
+
+<tr>
+<td align="center">\d</td>
+<td align="center">\D</td>
+<td align="center">[0-9]</td>
+<td> Alle sifre<br></td>
+
+<tr>
+<td align="center">\s</td>
+<td align="center">\S</td>
+<td align="center">[ ]</td>
+<td>blank, samt tab, linjeskift, vognretur<br></td>
+
+<tr>
+</table>
+</center>
+<p>
+
+Videre er det mulig å angi antall tegn som tillates av en type eller
+fra en klasse. Dette gjør man med krøllparenteser, slik: \d{4} (betyr
+at vi forventer nøyaktig fire sifre. Det er også mulig å angi et
+intervall for antall tegn: \w{3,6} Det finnes noen forkortelser for
+mye brukte intervaller:
+
+<center>
+<table border="2" cellpadding="3">
+<tr>
+<td align="center">Forkortelse</td>
+<td align="center">Ekvivalent med...</td>
+<td>Passer med...<br></td>
+
+<tr>
+<td align="center">?</td>
+<td align="center">{0,1}</td>
+<td>ingen eller ett tegn<br></td>
+
+<tr>
+<td align="center">*</td>
+<td align="center">{0,1}</td>
+<td>ingen, ett eller flere tegn<br></td>
+
+<tr>
+<td align="center">+</td>
+<td align="center">{1,}</td>
+<td>Ett eller flere tegn<br></td>
+
+<tr>
+<td align="center">*</td>
+<td align="center">{0,}</td>
+<td >null, ett eller flere tegn<br></td>
+
+<tr>
+</table>
+</center>
+<p>
+
+Man kan også komme til å trenge noen speialtegn, f.eks. selve tegnene
+backslash, spørsmålstegn, pluss, stjerne og andre tegn som har
+spesiell betydning. Disse tegnene skriver man inn ved å sette
+backslash foran. Eksepmler:
+
+<blockquote>
+<form method="POST" action="search.cgi">
+<input type="hidden" name="title" value="toccata eller noct.rn">
+<input type="hidden" name="artist" value="ikke (chopin eller debuss?y)">
+<input type="hidden" name="method" value="expert">
+<input type="hidden" name="subtext" value="no">
+<input type="hidden" name="maxcount" value="100">
+<input type="hidden" name="category" value="KLASSISK">
+<input type="submit" value=" Søk etter: ">
+<font size="+2"><em>Tittel: toccata eller noct.rn<br>
+Komponist: ikke (chopin eller debuss?y)</em></font><br>
+Kategori: Klassisk<br>
+Hele ord: nei<br>
+Maks. antall: 100<br>
+</form><br>
+
+</blockquote>
+
+<p>
+Send gjerne inn <a href="comments.html">kommentarer eller spørsmål</a>
+eller gå direkte til <a href="search.html">søkeskjemaet</a>.
+
+<p> <img alt="" src="gifs/blueline.gif"><br> Tilrettelagt for <a
+href="http://www.oslonett.no/home/akersm/">AkersMic</a> av <a
+href="http://www.oslonett.no/">Oslonett AS</a>.
+
+</body>

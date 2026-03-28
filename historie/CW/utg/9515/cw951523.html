@@ -1,0 +1,93 @@
+<html>
+<head>
+ <title>Visual Basic: Mer enn snutter!</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+
+
+
+<a href=cw951522.html><img align=middle alt="[Forrige artikkel]" src=../../gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=../../gifs/up.gif></a> <a href=cw951524.html><img alt="[Neste artikkel]" align=middle src=../../gifs/next.gif></a> <a href=../../><img align=middle alt="[CW hjemmeside]" src=../../gifs/cw.gif></a>  
+<hr>
+
+
+
+<h1>Visual Basic: Mer enn snutter!</h1>
+
+<blockquote><h4>
+<hr>
+CW's utmerkede kommentator, Peter Hidas hadde for et par nummer siden en
+kommentar til SAS-systemet.  Han mente her bl.a. at SAS ville være overkill for
+en bruker som egentlig klarer seg med noen Visual Basic snutter.<br>
+	Dette har han selvsagt rett i.<hr>
+</h4></blockquote>
+	Hva som egentlig får meg til å gripe til tastaturet er dette: Jeg regner med
+at en del personer har den oppfatning av Visual Basic at det er bra til
+snutter, men kommer til kort i "tyngre" problemstillinger.  Peter Hidas har
+ikke direkte gitt uttrykk for denne oppfatning, men det kan kanskje leses
+mellom linjene. Korriger meg om jeg tar feil.<p>
+	Versjon 1 av VB kan nok kalles et språk for snutter. Men det har gjennomgått
+en betydelig utvikling frem til dagens versjon 3.0, og undertegnede har selv
+vært involvert i en utviklingsprosess der VB har vært satt på en virkelig
+styrkeprøve og bestått den.<p>
+	Noen vil kanskje hevde at VB eksekverer noe langsomt, selv med ferdige
+.exe-filer. Men vår erfaring er at det tidskritiske element ligger i
+prosessering av SQL-kall (i vårt tilfelle mot SQL server) og kapasitet på
+nettet til enhver tid, ikke i eksekveringshastighet på bordmaskinen.<p>
+	Derfor skyter Borlands nye Visual Pascal (som jeg vil kalle det her)  på siden
+av det egentlige målet. Betydningen av en lynraskt eksekverende kode blir på
+mange måter marginal i forhold til de øvrige faktorene. Dette ikke til
+forkleinelse for Borlands sikkert solide forøk på å bringe Pascal inn i nåtiden
+(for ikke å si fremtiden), men jeg tror ikke at rask kode er den virkelige
+vinner-egenskapen. Visual Basic har en slik måte å jobbe på at de mest
+"grisete" SQL-kall lett lar seg dekomponere, og kjøres i 2 pass i stedet.  En
+får da også lettere debugging, for debugging av feilmeldinger fra SQL-server er
+ikke alltid like "plain sailing".<p>
+	Den problemstillingen som VB i mitt tilfelle har vært benyttet på er nokså
+tøff.  Her er det snakk om å kombinere data fra en rekke tabeller med relativt
+kompleks nøkkelkstruktur (noe som avspeiler selve problemets kompleksitet) og
+fremstile rapporter nær sagt i alle tenkelige omvendinger.<p>
+	VB var aldri flaskehalsen når det gjaldt å nå frem til resultatet,
+flaskehalsen var faktisk problemstillinges egen grad av kompleksitet.<p>
+	I denne sammenheng kan det nevnes at VB i dette tilfellet har fortrengt et
+annet herværende, vel ansett utviklingsverktøy i Windows mot database. La det
+være usagt hvilket, det er ikke poenget. Poenget er faktisk at VB beviste sitt
+metier gjennom raske, praktiske resultater, slik at klienten fikk tillit til
+verktøyets slagkraft.<p>
+	Etter det gled det naturlig inn, og "det andre" verktøyet forsvant ut av
+oppmerksomhetes fokus. Visual Basic er ikke "objektorientert" i den teoretisk
+korrekte forstand.  Her finnes ikke klassebiblioteker og automatisk håndtering
+ved gjenbruk av kode.<p>
+	Dette må man fatisk administrere selv. Og det lar seg gjøre uten store
+merutgifter. En enkel, egenutviklet where-used rutine forteller oss raskt
+hvilke programmoduler eller skjermbildemoduler som inngår i hvilke prosjekter,
+slik at man med en gang får oversikten over hvor en eventuell endring i en
+modul med utstrakt gjenbruk vil få konsekvenser.<p>
+	På den måten har vi i praksis bedrevet utstrakt arv av egenskaper og gjenbruk
+av kode. At dette kanskje ikke er godt nok for objektorienterte
+fundamentalister, er mulig. Men det virker i praksis, og gir kunden det han vil
+ha.  En annen svakhet kan sies å være at VB ikke håndterer
+transaksjonsorientert prosessering mot SQL-server via ODBC helt bra.<p>
+	En oppdatering direkte via et SQL-kall kan ikke uten videre angres med en
+rollback fra VB selv. (At dette går utmerket mot Access databaser er selvsagt).
+Men det finnes veier rundt dette også, på en slik måte at  denne svakheten i en
+totalvurdering ikke kommer til å overkygge alle de positive og
+produltivitets-fremmende egenskapene forbundet med Visual Basic 3.0. Det er all
+grunn til å se med spenning frem til lansering av VB 4.0, selv om det ble
+veldig stille om denne versjonen etter at den først var forhånds-annonsert fra
+<a href=http://www.microsoft.com>Microsoft</a>. Men det er en annen historie.
+<i>PER-ANTON RøNNING</i><p>
+<p>
+<a href=cw951522.html><img align=middle alt="[Forrige artikkel]" src=../../gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=../../gifs/up.gif></a> <a href=cw951524.html><img alt="[Neste artikkel]" align=middle src=../../gifs/next.gif></a> 
+
+
+<pre><hr><a href=../../maps/art.map><img alt="[Image map not available]" src=../../gifs/artmap.gif ismap></A><hr></pre>
+<h5>
+<address>
+Artikkel automatisk generert, 21/04-95, kl. 10.13 <a href=../../kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

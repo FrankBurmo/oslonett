@@ -1,0 +1,110 @@
+<html>
+<head>
+ <title>Parallelliserer</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+
+<p>
+
+<pre>
+<a href=cw934360.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a>               <a href=/me/ts/cw/><img align=middle alt="[CW hjemmeside]" src=/me/ts/cw/gifs/cw.gif></a>              <a href=cw934362.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a>
+<hr>
+</pre>
+
+<h1>Parallelliserer</h1>
+<h2>Informix
+klar for nye krav</h2>
+<blockquote><h4>
+<hr>
+Dramatisk effektivisering av databaser er målet for Informix versjon 6.
+Effektiviseringen oppnås ved hjelp av Informix dynamiske skalerbare
+arkitektur.<hr>
+</h4></blockquote>
+<i>AHLERT HYSING</i><p>-- PCer genererer data kontinuerlig, uttaler Steinar
+Cook, adm. dir. i Informix. Behovet for bearbeiding av de oppsamlete dataene er
+i dag mye større enn tidligere.<p>
+	Informix versjon 6.0 -- som ble introdusert i desember -- er den første
+databasen som har innebygget parallellitet. Hensikten er å kunne ta seg av
+fremtidige brukerkrav som f.eks. reduksjon av søketiden for data til
+beslutningsstøtte, og overføring av stormaskinsbaser til UNIX-maskiner.<p>
+	Informix er et databasefirma med fokus på relasjonsdatabaser for store
+UNIX-miljøer.
+<h3>
+Ytelseskrise</h3>
+--Det er i ferd med å oppstå en ytelseskrise på databaser, fortsetter Steinar
+Cook. Data som er samlet gjennom flere år, slettes ikke.<p>
+	<b>Store datamengder, beslutningsstøtte, ordre, (batch), og
+transaksjonsprosessering skaper til sammen grunnlaget for ytelseskrisen Steinar
+Cook snakker om. Selv i Norge er brukere i ferd med å opparbeide kjempestore
+databaser. Statens Kartverk på Hønefoss har ifølge Cook en database på 90
+GB.</b><p>
+	-- Informix har utviklet en dynamisk skalerbar arkitektur, DSA, for å møte
+morgendagens krav til vekstpotensial, sier Steinar Cook. Hensikten er å kunne
+foreta parallelle dataforespørsler -- ved hjelp av multiprosessormaskiner --
+uten å måtte endre på brukernes applikasjon<p>
+	Utviklingen av DSA startet i 1991. Da satte Informix seg som mål å utvikle
+neste generasjons databaseteknologi. Ideen var å utnytte parallellitet. En av
+grunnene var Informix erkjennelse at behandling av tabeller i
+relasjonsdatabaser kan effektiviseres ved hjelp av parallell teknologi.<p>
+	<b>Kombinering av tabeller, skriving, sortering og søking etter data er
+arbeidsoppgaver som med hell kan utnytte at forskjellige deler av datamaskinen
+jobber uavhengig av hverandre. Lesing på flere platelagre samtidig er en typisk
+parallell funksjon.</b><p>
+	Dertil bør det være mulig å utnytte symetrisk multiprosessering som ved hjelp
+av mange prosessorer i maskinen, vil kunne effektivisere datasøkingen i basen.
+<h3>
+Tråder</h3>
+Konsekvensen av å utvikle en dynamisk skalerbar arkitektur er at Informix har
+måttet bygge om databasearkitekturen fra grunnen av. Ved å utnytte teoretiske,
+(virtuelle) prosessorer kan databasen effektivisere bearbeidingsoppgavene.<p>
+	<b>Informix har delt inn databasebearbeidingen i tre klasser: administrasjon,
+beregninger og inn/utmatninger. Dermed kan brukeroppgavene prioriteres etter
+inndeling i de forskjellige klassene. Ved en inn/utmating kan andre oppgaver
+settes i gang.</b><p>
+	De teoretiske prosessene utnytter trådteknologi. Trådene er små delrutiner med
+et begrenset antall programinstruksjoner som kan prioriteres og avbrytes,
+avhengig prosessenes viktighet.<p>
+	<b>Informix versjon 6 dynamiske skalerbare arkitektur utnytter sin egen
+låsemekanisme som består av et fåtall C-instruksjoner istedenfor tusenvis av
+linjer med kode som UNIX krever for å oppnå det samme. I praksis har den nye
+utgaven av Informix overtatt de adminstrasjonsrutinene som er nøye tilknyttet
+databasen.</b><p>
+	En dramatisk forbedring av svartiden ved datasøk i forbindelse med
+beslutningsstøtte, er målet for neste versjon av Informix. I løpet av 1994
+regner Informix med å redusere tiden for fremskaffing av datagrunnlaget for
+beslutningsstøtte til femtendepart eller mer avhengig av antall prosessorer og
+platelagre.
+<pre>
+<hr><b>			Informix</b><hr>
+</pre>
+<b><i>Informix er et databasefirma som har spesialisert seg på å levere
+effektive relasjonsdatabaser med bakgrunn i sin erfaring fra indekserte
+kartotekssystemer.</i></b>
+<p><b>Informix</b><blockquote>Versjon 6 leveres fra desember
+1993</blockquote><p><b>Nyheter</b><blockquote>Dynamisk skalerbar arkitektur,
+DSA, som benytter parallellitet. Baseoppgavene deles i tre forskjellige
+deloppgaver som administreres ved parallelle virtuele prosesser, basert på
+trådteknologi.</blockquote><p><b>Levering</b><blockquote>Først på Sequent, HP
+9000, Sun, RS/6000 fra 15 desember 1993. Alminnelig tilgjengelighet i januar.
+Andre pulje vil omfatte SCO, Solaris 2.2, NCR, Unisys, Pyramid og Bull/IBM
+multiprosessering.</blockquote><p><i>PARALLELL: Informix versjon 6 som leveres
+i Norge fra begynnelsen av 1994, er totalt bygget om for å utnytte
+parallellitet, fremhever Steinar Cook, adm. dir i Informix. Vår dynamisk
+skalerbare arkitektur utnytter symetrisk multiprosessering.<br>
+EFFEKTIVISERE: Ved å dele en brukeroppgave i underoppgaver kan uavhengige
+
+<pre>
+<hr>
+    <a href=/me/ts/cw/maps/art.map><img alt="[Image map not available]" src=/me/ts/cw/gifs/artmap.gif ismap></A>
+<hr>
+</pre>
+<h5>
+<address>
+Artikkel automatisk generert, 30/09-94, kl. 15.13 <a href=/me/ts/cw/kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

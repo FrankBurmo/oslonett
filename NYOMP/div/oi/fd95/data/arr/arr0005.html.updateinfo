@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="5"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Nansen Senteret for Miljoe og Fjernmaaling (NERSC)"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Sjoelyst konferansesenter"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value="Presse, skoleungdom, studenter, andre"` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="9"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Nansen Senteret for Miljoe og Fjernmaaling (NERSC)"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Sjoelyst konferansesenter"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``NERSC vil presentere paagaaende prosjekter innen klima, miljoe og fjernmaaling. Presentasjonen er en del av NERSC's profilering under den 46. International Astronautical Federation's (IAF) konferanse i Oslo i tiden 2-6 oktober. NERSC vil ha en egen presentasjon i sitt hovedkvarter i Bergen tirsdag 10. oktober.` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?06.10"?)\s*>` with `` checked>` -->

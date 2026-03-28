@@ -1,0 +1,21 @@
+# Konverter greier markert med <xx>, frm til neste <yy>
+# Tabell left
+TL: "<Tab left>" ""
+# Tabell center
+TC: "<Tab center>" ""
+# Tabell right
+TR: "<Tab right>" ""
+# Overskrift / Mellomtittel
+OV: "<h2>" "</h2>"
+# Ingress
+ING: "<blockquote><em>" "</em></blockquote>"
+# Forfatter
+FO: "<em>" "</em>"
+# Uthevet tekst
+UT: "<em>" "</em>"
+# Informasjonsfelt
+INF: "<title>" "</title>"
+# Informasjon til redaksjonene
+RED: "<blockquote><em>" "</em></blockquote><br>"
+# Start tabell-linje
+STL: "<Start tabellinje>" ""

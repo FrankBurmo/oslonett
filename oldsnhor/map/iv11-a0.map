@@ -1,0 +1,7 @@
+# Definere 1.rektangelet
+rect http://www.ssb.no 33,185 191,287
+# Definer 2.rektangel
+rect http://jana.imv.uit.no/homepage.htm 157,1 360,185
+# Definer 3.rektangel
+rect http://www.oslonett.no 381,71 477,194
+default http://www.foto.gu.se/

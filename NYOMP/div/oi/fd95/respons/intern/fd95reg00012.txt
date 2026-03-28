@@ -1,0 +1,10 @@
+overskrift: Trykkleifer
+kommentar: Skuffende at ikke trykkleifer er rettet opp, på tross av påpekninger: Stiftelser og Arrangement er feilskrevet på sentrale steder!
+intern: nei
+anonym: nei
+firma: Høgskolen i Oslo
+navn: Tore Hoel
+stilling: informasjonssjef
+base: fd95
+maskin: 
+regdato: 27.9.95 15:59:35

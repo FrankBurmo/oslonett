@@ -1,0 +1,755 @@
+<HTML>
+<HEAD>
+<TITLE>Netsurfer Focus: Computer and Network Security</TITLE>
+</HEAD>
+<BODY background="/graphics/bg/greenwhi.gif">
+<P>
+<A HREF="http://www.netsurf.com/nsf/logo.gif">[Netsurfer Focus Logo]</A>
+<H2>NETSURFER FOCUS: COMPUTER AND NETWORK SECURITY</H2>
+<P>
+Wednesday, April 26, 1995 - Volume 01, Issue 01 <HR>
+<P>
+<I>&quot;God is in the details&quot;</I> 
+<H3>TABLE OF CONTENTS</H3>
+<DL>
+<DT><A href="#sc1">About Netsurfer Focus</A> 
+<DT><A href="#sc2">The Only Safe Computer is a Dead Computer</A>
+<DT><A href="#sc3">Good Housekeeping</A> 
+<DT><A href="#sc4">Open Sesame</A> 
+<DT><A HREF="#s11">Into the Labyrinth</A> 
+<DT><A href="#sc5">The Little Black Bag</A> 
+<DT><A href="#sc6">Great Walls of Fire</A> 
+<DT><A href="#sc7">Kerberos</A>
+<DT><A href="#sc9">Much Ado About Satan</A> 
+<DT><A href="#s10">Into the Soup - the Alphabet Soup</A> 
+<DT><A href="#s12">A Tale of Two Securities</A> 
+<DT><A href="#s13">Follow the Rainbow</A> 
+<DT><A href="#s14">Hacker, Cracker, Phracker, Spy</A> 
+<DT><A HREF="#s15">Confessions of an International Arms Courier</A>
+<DT><A href="#s16">Information at Your Fingertips</A> 
+<DT><A href="#s17">From Screen Worship to Sun Worship</A> 
+<DT><A href="#s21">Dangling Pointers</A> 
+</DL>
+<DL>
+<DT><A HREF="#SP">OUR SPONSOR:</A> <B>BELLCORE</B>
+<DT><A HREF="#CI">CONTACT INFORMATION</A>
+<DT><A HREF="#CR">CREDITS</A>
+</DL>
+
+<H2><A NAME="sc1"></A>ABOUT NETSURFER FOCUS</H2>
+<HR>
+
+<P>
+<I>Editor's Introduction</I> 
+<P>
+Welcome to Netsurfer Focus! In putting together Netsurfer Digest
+we have discovered that sometimes a topic deserves more attention
+and depth than can be provided in the Digest. Netsurfer Focus
+is designed to address these topics. Each issue focuses on a single
+topic, and is published on a periodic basis. Like the Digest,
+issues are sent out via e-mail and placed at our World Wide Web
+site. In addition, the issues are supplemented by a comprehensive database
+of resources at our web site. This two-tiered approach allows
+us to give the big picture for general readers and provide detailed
+resources for the experts.
+<P>
+Netsurfer Focus departs from the Digest format that you love and
+support. But we hope that it delivers the same useful and
+entertaining values of our &quot;More Signal, Less Noise&quot;
+promise. Please let us know what you think by writing to 
+<a href="mailto:focus@netsurf.com">focus@netsurf.com</a>.
+Your input will help us shape future issues of the Focus.<p>
+<H2><A NAME="sc2"></A>THE ONLY SAFE COMPUTER IS A DEAD COMPUTER
+</H2>
+<HR>
+
+<P>
+<I>The three tradeoffs</I> 
+<p>
+Life is full of tradeoffs and computer security is no different.
+<OL>
+<LI>The only safe computer is a dead computer. Or at least a disconnected
+one. If no one can get to it, no one can harm it. The only problem
+is, it's not exactly useful in that state. So the extent of computer
+safety or security is always a tradeoff between putting the computer
+to use and restricting its misuse and abuse.
+<LI>The time and money you spend on securing
+your computer has to be weighed against the likely loss if it is broken into or
+damaged; e.g., you're not likely to keep your garbage under lock
+and key.
+<LI> The cracker likewise has a cost-benefit tradeoff.  It's unlikely that
+someone will break into Fort Knox for a box of wheaties. So a modicum of good housekeeping
+can serve as an effective deterrent against the doorknob rattlers and window breakers.
+</OL>
+
+<P>
+As you design or modify your computer and network
+security, think about how you want to use your systems and what
+you stand to lose if it is compromised. This will help guide your
+choice of solutions and their relative complexity and costs.
+<A NAME="sc3"><H2>GOOD HOUSEKEEPING</H2></A>
+<HR>
+
+<P>
+<I>Or, more things come in threes </I>
+<P>
+All systems consist of three components, the software and hardware parts, the people,
+and the procedures. The same is true of computer and network systems.
+Securing your computer system means security of the software and
+hardware, trustworthiness of the people who use and manage it, and reliability of the procedures for using and managing the system.
+In this issue, we will mainly focus on secure
+software and system management practices. But when you are evaluating
+the security of your system, don't forget to consider the other
+components.
+<P>
+And while we are talking about threesomes, remember that there
+are three kinds of threats to your system: malice, ignorance,
+and acts of god or nature. A malfunctioning sprinkler system in
+the computer room, a magnitude 6.0 earthquake, a disgruntled employee,
+or a misguided big cheese can do equal amounts of damage. Think
+through each of the components, the what-if scenarios, the technical
+and non-technical solutions, and the cost-benefit tradeoffs. Also, don't
+count on your computer to come out of the box with its security mechanisms
+set up correctly for you. They aren't always that way.
+<P>
+The bottom line: It really is housekeeping, and it really is up
+to you what kind of a computer house you keep.
+<H2><A NAME="sc4"></A>OPEN SESAME</H2>
+<HR>
+
+<P>
+<I>Ali Baba is my real name</I> 
+<P>
+The whole idea of security is tied to who can have access to what.
+You prove who you are by providing a secret password. The cave
+doors magically open and you get to the jewels: you can read and
+write file, run programs, allow other users access to your files
+and computers, etc. Multiuser computer systems, like Unix, usually
+have a hierarchy of personages, each with different access privileges.
+If you prove you are the Grand Vizier (a.k.a. root), you can basically
+do whatever you want - wipe out entire disks of files, change
+how the system is set up, and maybe even launch a frog battalion
+against Upper Timbuktu. However, even the lowliest courtier can let
+intruders in, setting off a chain of intrigue and skullduggery
+of who does what to whom.
+<P>
+So the first line of defence is secure passwords. The second is
+to make sure that only selected people have access to the powerful
+files and tools.
+<H2><A NAME="s11"></A>INTO THE LABYRINTH</H2>
+<HR>
+
+<P>
+<I>Twisty passages all connected to each other</I> 
+<P>
+Now, connect your single computer to other computers, through
+phone lines, a local network, or the Internet. The plot
+thickens. An intruder doesn't even have to be physically near
+your computer. Through the magic of telecommunications, they are
+only a handshake or two away. At this point, to make things worse,
+not only can people try to pretend they are you, computers can
+also pretend they are your computers (known in the vernacular
+as &quot;spoofing&quot;). And oh, by the way, about the telecommunications
+- it's a party line. On the way from your computer to some other
+computer, anyone can use a &quot;sniffer&quot; program to tap
+in and listen to what you are saying.
+<P>
+Before you hide your computer under the bed, remember our friends,
+the tradeoffs. Think through the system components and the risks
+methodically and logically. You've done the basic good housekeeping
+on each computer. Minimize your risk by making only one of them
+publically available and hiding the rest behind a secure barrier
+or firewall. Then focus on the exposed gateway computer and make
+it as secure as you can from potential intruders. Monitor it for
+intruders. And make sure you don't transmit secret information
+- like your password - over the Internet without protection.
+<H2><A NAME="sc5"></A>THE LITTLE BLACK BAG</H2>
+<HR>
+
+<P>
+<I>Basic tools of the trade</I> 
+<P>
+You want to make sure of the basics: that the passwords on your system are
+secure and hard to break, that only the right people have write access
+to system files and programs, and that no one has modified the
+files without your knowledge.  A log of who has been active on your system
+is also helpful for monitoring usage and documenting malfeasance.
+Here are some useful readings and a list of
+(free) tools that will help you get started on protecting
+your system.
+<P>
+<B>References</B> 
+<PRE>
+Site Security Handbook (RFC 1244)
+<A href=http://www.cis.ohio-state.edu/hypertext/htbin/rfc/rfc1244.html>"http://www.cis.ohio-state.edu/hypertext/htbin/rfc/rfc1244.html"</A>
+Basic Computer Security
+<A href= http://www.cis.ohio-state.edu/hypertext/faq/usenet/security-faq/faq.html>"http://www.cis.ohio-state.edu/hypertext/faq/usenet/security-faq/faq.html"</A>
+</PRE>
+
+<P>
+<B>Password crackers and checkers</B> 
+<PRE>
+Crack
+<A href=ftp://ftp.win.tue.nl/pub/security/crack4.1.tar.Z>&quot;ftp://ftp.win.tue.nl/pub/security/crack4.1.tar.Z&quot;</A>
+Crackerjack (for DOS)
+<A href=ftp://theta.iis.u-tokyo.ac.jp/pub1/security/tools/Crackerjack-1.4.tar.gz>&quot;ftp://theta.iis.u-tokyo.ac.jp/pub1/security/tools/Crackerjack-1.4.tar.gz &quot;</A>
+Npasswd
+<A href=ftp://emx.utexas.edu/>&quot;ftp://emx.utexas.edu/&quot;</A>
+S/key
+<A href=ftp://thumper.bellcore.com/pub/skey/>&quot;ftp://thumper.bellcore.com/pub/skey/&quot;</A>
+</PRE>
+
+<P>
+<B>Check system for password protection, access permissions, system
+file modifications</B> 
+<PRE>
+COPS
+<A href=ftp://cis.ohio-state.edu/pub/cops>"ftp://cis.ohio-state.edu/pub/cops"</A>
+tiger
+<A href=ftp://net.tamu.edu/pub/security/TAMU/>&quot;ftp://net.tamu.edu/pub/security/TAMU/&quot;</A>
+Tripwire
+<A href=ftp://coast.cs.purdue.edu/pub/COAST/Tripwire>&quot;ftp://coast.cs.purdue.edu/pub/COAST/Tripwire &quot;</A>
+</PRE>
+
+<P>
+<B>Login Monitoring</B> 
+<PRE>
+PowerLogin/PowerBroker
+<A href=http://www.fsa.ca/>&quot;http://www.fsa.ca/&quot;</A>
+SysGuard
+<A href=http://www.bellcore.com/SECURITY/sysguard.html>&quot;http://www.bellcore.com/SECURITY/sysguard.html&quot;</A>
+</PRE>
+
+<H2><A NAME="sc6">GREAT WALLS OF FIRE</A></H2>
+<HR>
+
+<P>
+<I>Put all your eggs in one basket and watch it</I> 
+<P>
+Every computer is a potential host of vulnerabilities. The more
+accessible it is, the more it is susceptible to attack. Connecting
+to a network such as the Internet makes it potentially accessible
+to everyone on the network. We want the advantages of Internet
+access, but we also need to limit our exposure to intruders. The
+solution is often the installation of a &quot;firewall&quot;, so that only
+selected "gateways"  have access to the outside world.
+<p>
+The "gateway", either a computer or a router,
+stands guard over your network, rejecting all incoming traffic
+not directed to itself, and selectively forwarding communications such as
+mail between the inside and outside networks.
+A proxy server is a program that mediates application-specific traffic, e.g., ftp,
+through the firewall, making secure access less cumbersome.  
+It usually has additional logging, user authentication, and protocol-specific
+security capabilities.
+<P>
+The computer firewall industry has become a hotbed of growth with
+the increasing popularity of the Internet. You can build your own from free
+software toolkits, purchase hardware and/or software solutions from a vendor,
+or engage consultants who will implement a custom solution. Hardware
+solutions include both Intel x86 boxes running Unix and network routers that
+support intelligent packet filtering.
+Another option is to use an Internet
+Service Provider who provides the firewall and gateway service
+between your network and the Internet. Whatever approach you choose,
+protecting the exposed gateway is of primary importance, and a later
+section on Satan suggests some tools that can be used.
+<P>
+<B>Reading</B> 
+<PRE>
+Firewall FAQ
+<A href= http://www.tis.com/Home/Firewalls/FAQ.html>&quot;http://www.tis.com/Home/Firewalls/FAQ.html&quot;</A>
+Thinking about Firewalls
+<A href=http://first.org/secpubs/fwalls.ps>&quot;http://first.org/secpubs/fwalls.ps&quot;</A>
+Routers and Firewalls
+<a href=ftp://ftp.livingston.com/pub/firewall/firewall-1.1.ps.Z>"ftp://ftp.livingston.com/pub/firewall/firewall-1.1.ps.Z"</a>
+Keeping the Visigoths Out
+<A href= http://www.ziff.com/~pcweek/netweek/jan_1995/rev_ttech_0123.html>&quot;http://www.ziff.com/~pcweek/netweek/jan_1995/rev_ttech_0123.html&quot;</A>
+</PRE>
+
+<P>
+<B>Firewall Tools</B> 
+<PRE>
+Firewall Toolkit
+<A href=ftp://ftp.tis.com/pub/firewalls/toolkit/>&quot;ftp://ftp.tis.com/pub/firewalls/toolkit/&quot;</A>
+drawbridge (IP bridging filter)
+<A href=ftp://net.tamu.edu|/pub/security/TAMU/>&quot;ftp://net.tamu.edu|/pub/security/TAMU/&quot;</A>
+Socks (generic proxy server)
+<A href=ftp://ftp.nec.com/pub/security/socks.cstc>&quot;ftp://ftp.nec.com/pub/security/socks.cstc&quot;</A>
+</PRE>
+
+<P>
+<B>Secure Internet Service</B> 
+<PRE>
+Pilot Networking Services
+<A href=http://www.pilot.net/>&quot;http://www.pilot.net/&quot;</A>
+</PRE>
+
+<H2><A NAME="sc7"></A>KERBEROS</H2>
+<HR>
+
+<P>
+<I>The three-headed hound from hell</I> 
+<P>
+You've protected your systems from external threats with a firewall,
+but what happens when you cannot trust everyone in your own organization?
+You may have confidential data to send, e.g., personnel records,
+or you may just need to login to another host in your network.
+This is particularly true in the academic environment. MIT considered
+this problem back in the 80's and came up with the Kerberos package.
+This is an authentication system that uses cryptography to protect
+passwords and other sensitive information in network traffic.
+<P>
+Kerberos relies on the security of a central authentication server, i.e., a single
+point of failure.  Every network program, such as remote login, that wants to 
+use its authentication 
+and encryption capabilities must be modified to include Kerberos code directly.
+A third significant limitation is that Kerberos uses Data Encryption
+Standard (DES) to encrypt its information. Codebreaking played a key
+role in the success of the Allied Forces during World War II.  As a result, certain
+forms of cryptography are still classified as &quot;Munitions&quot;
+by the US Government, subjecting them to International Traffic in Arms
+Regulations (ITAR).
+What this means is that special export licensing from the US State
+Department may be required to take Kerberos software out of the
+country, even if it is only an ftp download.
+<P>
+<B>Reading</B> 
+<PRE>
+Kerberos: An Authentication Scheme for Open Networks
+<A href=http://hightop.nrl.navy.mil/docs/ps_files/kerberos.ps>&quot;http://hightop.nrl.navy.mil/docs/ps_files/kerberos.ps&quot;</A>
+Limitations of the Kerberos System
+<A href= http://hightop.nrl.navy.mil/docs/ps_files/kerblim.ps>&quot;http://hightop.nrl.navy.mil/docs/ps_files/kerblim.ps&quot;</A>
+Kerberos FAQ
+<A href= http://www.cis.ohio-state.edu/hypertext/faq/usenet/kerberos-faq/user/faq.html>"http://www.cis.ohio-state.edu/hypertext/faq/usenet/kerberos-faq/user/faq.html"</A>
+</PRE>
+
+<P>
+<B>Getting Kerberos</B> 
+<PRE>
+Kerberos (Unix)
+<A href=ftp://athena-dist.mit.edu/pub/kerberos>&quot;ftp://athena-dist.mit.edu/pub/kerberos&quot;</A> 
+Kerberos (Unix, Mac, Windows)
+<A href=http://www.cygnus.com/data/cns.html>&quot;http://www.cygnus.com/data/cns.html&quot;</A>
+</PRE>
+
+<P>
+<B>Cryptography Export Control</B> 
+<PRE>
+Archives
+<A href= http://www.cygnus.com/~gnu/export.html>&quot;http://www.cygnus.com/~gnu/export.html&quot;</A>
+ITAR
+<A href=ftp://ftp.cygnus.com/pub/export/itar.in.full>&quot;ftp://ftp.cygnus.com/pub/export/itar.in.full&quot;</A>
+</PRE>
+
+<H2><A NAME="sc9"></A>MUCH ADO ABOUT SATAN </H2>
+<HR>
+
+<P>
+<I>Where's the beef?</I> 
+<P>
+April 5th has come and passed. Satan was released to the Internet
+on schedule and the networked world as we know it has not collapsed
+in an apocalypse of security incidents.
+<P>
+Satan, short for Security Administrator Tool for Analyzing Networks,
+is a set of tools that probes remote computers on the Internet
+for known vulnerabilities. It is not the first of its kind; tools
+that check host computers for well-known vulnerabilities in ftp,
+tftp, and sendmail have been available for several years. These
+include public and commercial versions of the Internet Security
+Scanner (ISS), PINGWARE (commercial only), and the Security Profile
+Inspector (SPI) which is currently available only to the Departments
+of Energy and Defense. What is different about Satan is that it is widely
+available and has an HTML-based interface. This allows users to
+probe networks with point-and-click ease through a World Wide
+Web browser. In addition, Satan also provides extensive documentation
+on the vulnerabilities being identified and how to repair them.
+<P>
+Satan can be used by the system administrator to test local security,
+or it can be used by crackers to look for weaknesses in a potential
+victim. The risk to a system decreases with good security practices
+and using Satan first to uncover and repair any additional vulnerabilities
+before a cracker can discover them. To help system administrators
+detect when their systems may be under scrutiny from a rogue copy
+of Satan, CIAC has developed &quot;Courtney&quot;, a program to
+monitor and report on any network activity that resembles a Satan
+probe.
+<P>
+As security experts and system administrators use Satan on different
+systems, its strengths and weaknesses are being characterized.
+A security hole was quickly discovered for host machines running Satan. 
+Version 1.1 introduced a new and different hole, and now Version 1.2 
+is expected shortly.  Although the initial noise about Satan's release
+may look like hype or hysteria in retrospect, there's no reason
+to let down your guard. Crackers may simply be lurking until the
+scrutiny dies down; they now have one more powerful tool in their
+black bag.
+<P>
+<B>Resources</B> 
+<PRE>
+Satan
+<A href=ftp://ftp.win.tue.nl:/pub/security/satan.tar.Z>&quot;ftp://ftp.win.tue.nl:/pub/security/satan.tar.Z&quot;</A>
+Detailed Review of Satan
+<A href=http://cica.llnl.gov/ciac/notes/Notes07.shtml>&quot;http://cica.llnl.gov/ciac/notes/Notes07.shtml&quot;</A>
+Satan Vulnerability
+<A
+href=ftp://info.cert.org/pub/cert_advisories/CA-95:07.README>"ftp://info.cert.org/pub/cert_advisories/CA-95:07.README&"</A>
+Courtney
+<A href=http://ciac.llnl.gov/ciac/ToolsUnixNetMon.html#Courtney>&quot;http://ciac.llnl.gov/ciac/ToolsUnixNetMon.html#Courtney&quot;</A>
+CERT Advisories
+<A href=ftp://info.cert.org/pub/cert_advisories/>&quot;ftp://info.cert.org/pub/cert_advisories/&quot;</A>
+Internet Security Scanner
+<A href=ftp://aql.gatech.edu/pub/security/iss/ISS/>&quot;aql.gatech.edu/pub/security/iss/ISS&quot;</A>
+Internet Security Systems 
+<A href=http://iss.net/~iss/iss.html>&quot;http://iss.net/~iss/iss.html&quot;</A>
+PINGWARE
+<A href=http://www.bellcore.com/SECURITY/pingware.html>&quot;www.bellcore.com/SECURITY/pingware.html&quot;</A>
+SPI
+<A href=http://ciac.llnl.gov/cstc/CSTCProducts.html#spi>&quot;ciac.llnl.gov/cstc/CSTCProducts.html#spi&quot;</A>
+</PRE>
+
+<H2><A NAME="s10"></A>INTO THE SOUP - THE ALPHABET SOUP</H2>
+<HR>
+
+<P>
+<I>Just say CERT</I> 
+<P>
+Your system is under attack by the Mother of Uebercrackers, and
+you are in hot soup. Sooo, who do you call? AUSCERT, CERT, CERT/NL,
+CIAC, COAST, DFN/CERT, FIRST, NASIRC, NAVCIRT, NIH, NIST/CSRC...
+Just say CERT, which stands for Computer Emergency Response Team,
+an organization that works with
+users and vendors, in confidence, to respond to security incidents.
+Simply pick the one in or closest to your part of the world.
+<P>
+<B>AUSCERT</B> - Australia (Hotline +61 7 365 4417)<BR>
+<A href=http://www.auscert.org.au/>&quot;http://www.auscert.org.au/&quot;</A>
+
+<P>
+<B>CERT</B> - United States (Hotline +1 412 268 7090)<BR>
+<A href=http://www.sei.cmu.edu/SEI/programs/cert.html>&quot;http://www.sei.cmu.edu/SEI/programs/cert.html&quot;</A>
+
+<P>
+<B>CERT/NL</B> - Netherlands<BR>
+<A href=http://www.nic.surfnet.nl/surfnet/security/cert-nl.html>&quot;http://www.nic.surfnet.nl/surfnet/security/cert-nl.html&quot;</A>
+
+<P>
+<B>DFN/CERT</B> - Germany<BR>
+<A href=http://www.cert.dfn.de/eng>&quot;http://www.cert.dfn.de/eng&quot;</A>
+
+<P>
+<B>What to Do if Your Site Has Been Compromised</B><BR>
+<A href=http://www.cis.ohio-state.edu/hypertext/faq/usenet/computer-security/compromise-faq/faq.html>
+"http://www.cis.ohio-state.edu/hypertext/faq/usenet/computer-security/compromise-faq/faq.html" </A>
+<H2><A NAME="s13"></A>FOLLOW THE RAINBOW</H2>
+<HR>
+
+<P>
+<I>To the pot of gold</I> 
+<P>
+Orange book, yellow book, green book. They are all part of the
+Rainbow Series of publications on Trusted Systems, the DOD term
+for a system that &quot;employs sufficient hardware and software
+assurance measures to allow its use for simultaneous processing
+of a range of sensitive or classified information&quot;. The book
+that contains the Trusted Computer Security Evaluation Criteria
+is the Orange Book; and there are Canadian and European versions
+as well. The Yellow Book tells you how to implement the Orange
+Book, and the Green Book is all about password management. Insecure off-the-shelf
+Unix workstations, PC's, and Macintosh's need not apply.
+<P>
+<B>Resources</B> 
+<PRE>
+Orange Book
+<A href=http://hightop.nrl.navy.mil/rainbow.html>&quot;http://hightop.nrl.navy.mil/rainbow.html&quot;</A>
+Rainbow Series
+<A href=http://first.org/secpubs/>&quot;http://first.org/secpubs/&quot;</A>
+Trusted Systems
+<A href=http://mls.saic.com/docs.html>&quot;http://mls.saic.com/docs.html&quot;</A>
+</PRE>
+
+<H2><A NAME="s12"></A>A TALE OF TWO SECURITIES</H2>
+<HR>
+
+<P>
+<I>Money talks</I> 
+<P>
+It was the best of times with the dreams of online commerce roaring
+across the Global Information Superhighway. It was the worst of
+times when it was pointed out that the Internet is one giant party
+line. Confidential information such as credit card numbers can
+easily be captured between sender and receiver. The techies rushed
+in with a variety of secure implementations of electronic commerce,
+and when the dust settled, two contenders for standardization were left.
+<P>
+On one side was Netscape Communications, with their
+Secure Sockets Layer (SSL).  SSL is an additional layer in the networking
+protocol (between the application and TCP/IP connection layers)
+It protocol that is applicable
+to the channel of communication. On the other side, CommerceNet, a
+non-profit consortium of companies and organizations established to create
+an electronic marketplace on the Internet, weighed in with Secure-HTTP (S-HTTP).
+S-HTTP is an application level "meta-protocol" that allows web applications
+to negotiate the protocols of encryption and authentication to
+be used with the documents being exchanged. Both sides lined up
+major commercial supporters, submitted proposals to various standard
+bodies such as the World Wide Web Consortium, created reference
+implementations, and took gentle potshots at the other side.
+<P>
+Was this shaping up to be another VHS versus Beta battle in the
+search for a common security standard for online commerce? Fortunately,
+saner heads prevailed. Rather than sow mass confusion and delay
+market development, Netscape joined forces with heavyweights IBM,
+America Online, and H&amp;R Block (owner of CompuServe), and
+purchased a controlling interest in Terisa Systems, Inc., tasking
+it with the responsibility of combining the two rival standards.
+The &quot;Open Security Platform&quot; toolkit is expected in
+June of 1995. Terisa Systems, of course, is a joint venture between
+cryptography vendor RSA Data Security, and
+Enterprise Integration Technology, Internet consultants and
+the project manager for CommerceNet.
+<p>
+<B>Resources</B> 
+<PRE>
+CommerceNet Secure-HTTP
+<A href=http://www.commerce.net/information/standards/draft/shttp.txt>&quot;http://www.commerce.net/information/standards/draft/shttp.txt&quot;</A>
+<A href=http://www.eit.com/projects/s-http/>&quot;http://www.eit.com/projects/s-http/&quot;</A>
+Netscape Secure Sockets Layer
+<A href=http://home.mcom.com/newsref/ref/netscape-security.html>"http://home.mcom.com/newsref/ref/netscape-security.html"</A>
+Terisa Systems and the Open Security Platform
+<A href=http://www.terisa.com/pr/qa.html>&quot;http://www.terisa.com/pr/qa.html&quot;</A>
+</PRE>
+<H2><A NAME="s14"></A>HACKER, CRACKER, PHRACKER, SPY</H2>
+<HR>
+
+<P>
+<I>What's in a name?</I> 
+<P>
+A hacker is a person who is intensely interested in how complex
+systems, in particular computer systems, work. A cracker extends
+this interest to unauthorized entry and modification of these
+systems. The term hacker has also been used synonymously with
+cracker, much to the dismay of hackers who are sometimes called
+on to detect, repair, and prevent future damage by crackers. Phrack
+is an electronic magazine in publication since 1985 and dedicated
+to providing information on operating systems, networking technologies,
+telephony, and news of the international computer underground.
+Varied topics such as lock picking and construction of acetyline
+bombs have also been covered in their &quot;philes&quot;. The
+uebercracker is a cracker of superior skill, and is very hard
+to keep out of your systems. Phone phreaks have a fascination
+with telephone systems. There is no special meaning to the word
+spy in computer security, but you can be an international arms
+courier...
+<p>
+<B>Resources</B> 
+<PRE>
+A Guide to Cracking Unix
+<A href=http://tamsun.tamu.edu/~clm3840/2600/security/cracking_guide>&quot;http://tamsun.tamu.edu/~clm3840/2600/security/cracking_guide&quot;</A>
+The Uebercracker Web Page
+<A href=http://underground.org/>&quot;http://underground.org/&quot;</A>
+Phrack Magazine Home Page
+<A href=http://freeside.com/~phrack.html>&quot;http://freeside.com/~phrack.html&quot;</A>
+The Social Organization of the Computer Underground
+<A href=http://hightop.nrl.navy.mil/docs/general/hacker.txt>&quot;http://hightop.nrl.navy.mil/docs/general/hacker.txt&quot;</A>
+</PRE>
+
+<H2><A NAME="s15"></A>CONFESSIONS OF AN INTERNATIONAL ARMS COURIER</H2>
+<HR>
+
+<P>
+<I>and other lighter elements</I> 
+<P>
+The export regulations on encryption presents challenges we don't
+quite expect. Here is the story of someone who found himself becoming
+an international arms courier despite his best intentions.<BR>
+<A href=http://www.netsurf.com/nsf/v01/01/local/courier.html>&quot;http://www.netsurf.com/nsf/v01/01/local/courier.html &quot;</A>
+
+<P>
+If you have a fast line and your browser can understand .au sound
+files, don't miss Cliff Stoll's Performance Art Theater and Networking
+Security Revue. Stoll is best known for his experience tracking
+a cracker through Germany and back to the KGB, a tale described
+in his book, &quot;The Cuckoo's Egg&quot;. <BR>
+<A href=http://town.hall.org/university/security/stoll/cliff.html>&quot;http://town.hall.org/university/security/stoll/cliff.html&quot;</A>
+
+<P>
+Hacker versus cracker again took a turn in the limelight in February
+when Tsutomu Shimomura decided to track down Kevin Mitnick after
+Mitnick broke into Shimomura's computer. Shimomura ultimately
+got his man, but Mitnick got the fan club. On to book and movie
+rights.<BR>
+<A href=news://alt.fan.kevin-mitnick>"news://alt.fan.kevin-mitnick"</A>
+
+<P>
+And then there are the Bloopers of the system administration world.
+For all of us who've said &quot;Oh !@#$%!&quot; in our turn.<BR>
+<A href=http://mls.saic.com/papers/admin_stories.txt>&quot;http://mls.saic.com/papers/admin_stories.txt&quot;</A>
+
+<H2><A NAME="s16"></A>INFORMATION AT YOUR FINGERTIPS</H2>
+<HR>
+
+<P>
+<I>The educated person knows where to find the information</I>
+
+<P>
+There is a lot of useful information and tools on the Internet.
+In the interest of brevity, we have only included a selection
+in this issue. You can find a more comprehensive list of resources
+at our web site, including <BR>
+
+<UL>
+<LI>additional resource lists
+<LI>other topics and tools
+<LI>readings and bibliographies
+<LI>mailing lists
+<LI>newsgroups
+<LI>conference and event calendars
+<LI>organizations
+<LI>product and service providers
+</UL>
+
+<P>
+<A href=http://www.netsurf.com/nsf/v01/01/resource/index.html>
+&quot;http://www.netsurf.com/nsf/v01/01/resource/index.html&quot;</A>
+
+<P>
+Other directory sites include:
+<P>
+COAST Archive At Purdue University.  It claims to be the largest
+archive of computer security resources, it has about 400 documents,
+120 Unix tools, 30 DOS tools, and 40 Macintosh tools. <BR>
+<A href=http://www.cs.purdue.edu.coast/archive/index.html>&quot;http://www.cs.purdue.edu.coast/archive/index.html&quot;</A>
+
+<P>
+NIH Unix Security Page.  From the Advanced Laboratory Workstation
+Systems group at the National Institute of Health this server
+includes discussions on general and specific security issues,
+security advisories, programs, patches, and a directory to other
+security sites. <BR>
+<A href=http://www.alw.nih.gov/Security/security.html>&quot;http://www.alw.nih.gov/Security/security.html&quot;</A>
+
+<P>
+NIST Computer Security Resource Clearinghouse. The Clearinghouse
+includes a selection of publications, alerts, news, and event
+calendars. In addition to the standard security papers such as
+Bill Cheswick's &quot;An Evening with Berferd&quot;, it has a
+detailed collection of US Government publications. These range
+from standards-oriented publications from NIST, e.g., security
+in ISDN or security in the SQL data language, to the Department
+of Defense's documents on security architecture and trusted systems.
+<BR>
+<A href=http://first.org/>&quot;http://first.org/</A> 
+<H2><A NAME="s17"></A>FROM SCREEN WORSHIP TO SUN WORSHIP</H2>
+<HR>
+
+<P>
+<I>Curl up with a good book</I> 
+<P>
+Spring is here! (At least for those of us in the Northern Hemisphere.)
+There are times when even the most dedicated Netsurfer wants to
+get away from our computer screens and sit out in the garden with
+a good book. Here is our selection on the topic of Computer Security
+for your consideration.
+<P>
+<B>General:</B> 
+<UL>
+<LI>&quot;Cyberpunk: Outlaws and Hackers on the Computer Frontier&quot;,
+Katie Hafner and John Markoff, Simon &amp; Schuster, 1991.
+<LI>&quot;The Cuckoo's Egg&quot;. Clifford Stoll, Doubleday, 1989.
+<LI>&quot;The Hacker Crackdown&quot;, Bruce Sterling, Bantam,
+1992.
+</UL>
+
+<P>
+<B>Technical:</B> 
+<UL>
+<LI>&quot;Practical Unix Security&quot;, Simson Garfinkel and
+Gene Spafford, O'Reilly &amp; Associates, 1991.
+<LI>&quot;Unix Systems Security: A Guide to Users and System Administrators&quot;,
+David A. Curry, Addision-Wesley, 1992.
+</UL>
+<P>
+But remember, just as with computer security, it's up to you to
+take care of yourself. So wear a hat and suncreen.
+<p>
+<H2><A NAME="s21"></A>DANGLING POINTERS</H2>
+<HR>
+<P>
+<I>AKA coming attractions</I> 
+<P>
+In talking about computer security, we have barely scratched the surface of cryptography and have not yet touched the thorny issues of privacy and the law.  
+At the same time, while the Open Security Platform is still
+months away, commercial and financial transactions are already taking place over the Internet. Electronic cheque- and cash-equivalents are also being developed.
+Here's a selection of links to whet your appetite for the upcoming Netsurfer Focus issues on cryptography and online commerce.
+<p>
+Cryptography and the Cypherpunks<br>
+<a href=ftp://ftp.u.washington.edu/public/phantom/cpunks/README.html> "ftp://ftp.u.washington.edu/public/phantom/cpunks/README.html"</a>
+
+<p>
+<A HREF="http://www.netsurf.com/nsf/ribbon.gif">[yellow ribbon]</A><BR>
+Privacy, Liberty, and The Phil Zimmermann Legal Defense Fund <br>
+<a href=http://www.netresponse.com/zldf> "http://www.netresponse.com/zldf"</a>
+<p>
+Secure Purchasing on the Internet Today<br>
+<a href=http://www.fv.com/> "http://www.fv.com/"</a>
+<p>
+Electronic Cash<br>
+<a href=http://www.digicash.com> "http://www.digicash.com"</a>
+<p>
+<H2><A NAME="SP">OUR SPONSOR</A></H2>
+<HR>
+<P>
+<A HREF="http://www.netsurf.com/nsf/bellcore.gif">[Bellcore Logo]</A><BR>
+<P>
+This issue of Netsurfer Focus is sponsored by <B>Bellcore</B>.<BR> 
+For more information about Bellcore and our other advertisers, please see
+the current issue of Netsurfer Security Marketplace.<BR> 
+<A href=http://www.netsurf.com/nsf/v01/01/nsfm.01.01.html>
+"http://www.netsurf.com/nsf/v01/01/nsfm.01.01.html"</A>
+
+<P>
+Participation in the Security Marketplace is unrelated to editorial coverage within Netsurfer Focus.
+<H2><A NAME="CI">CONTACT INFORMATION</A></H2>
+<HR>
+
+<P>
+Netsurfer Focus is currently a periodic supplement to Netsurfer
+Digest and Netsurfer Tools.
+<P>
+Netsurfer Focus Home Page: 
+<a href=http://www.netsurf.com/nsf/index.html>http://www.netsurf.com/nsf/index.html</a>
+<BR>
+Letters to the Editor: 
+<a href="mailto:focus@netsurf.com"> focus@netsurf.com</a>
+<P>
+To subscribe to Netsurfer Digest or Netsurfer Tools:
+<p>
+By WWW form: <a href="http://www.netsurf.com/subscribe.html">http://www.netsurf.com/subscribe.html</a><BR>
+By e-mail: <a href="mailto:nsdigest-request@netsurf.com">nsdigest-request@netsurf.com</a><BR>
+Body:
+<PRE>
+      subscribe nsdigest-html
+      subscribe nsdigest-text
+</PRE>
+
+<p>
+
+<H2><A NAME="CR">CREDITS</A></H2>
+<HR>
+
+<P>
+<b>Publisher: S. M. Lieu<br>
+Production Manager: Bill Woodcock</b><BR>
+<B>Marketing and Sales: Lisa Nichols</B>
+<P>
+<I>NETSURFER FOCUS</I> (c) S. M. Lieu. This document may be distributed
+freely in electronic form in its entirety and without modification.
+All other rights reserved. <BR>
+<I>NETSURFER DIGEST</I> is a trademark of Netsurfer Communications, Inc. 
+Other publication, product, and company names may be trademarks of their companies. <br>
+<i>"God is in the Details"</i> is a quote from Mies van der Rohe.
+</BODY>
+
+</HTML>

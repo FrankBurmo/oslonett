@@ -1,0 +1,284 @@
+<html>
+<head>
+ <title>Mellomprogramvare -- et salig rot</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body bgcolor="#ffffff">
+
+
+
+<a href=cw960312.html><img align=middle alt="[Forrige artikkel]" src=../../gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=../../gifs/up.gif></a> <a href=cw960314.html><img alt="[Neste artikkel]" align=middle src=../../gifs/next.gif></a> <a href=../../CW.html><img align=middle alt="[CW hjemmeside]" src=../../gifs/cw.gif></a>  
+<hr>
+
+
+
+<h1>Mellomprogramvare -- et salig rot</h1>
+
+<blockquote><h4>
+<hr>
+Mellomprogramvare er olje i det komplekse IT-maskineriet med applikasjoner,
+databaser, kommunikasjon og operativsystemer . Men mellomprogramvare er
+komplekst og veien mot DCE og CORBA er lang. <hr>
+</h4></blockquote>
+<i>INFOWORLD USA, OVERSATT AV MORTEN SOLLI</i><p>Skal du kople sammen alle
+systemene og applikasjonene i en stor virksomhet,  selv bare noen få, må du
+våge deg ut i hengemyra kalt "middleware", eller mellomprogramvare.
+Mellomprogramvaren kan selvsagt lette ferden ved å være det manglende leddet
+mellom flere systemer, men det blir stadig vanskeligere å tråkke seg gjennom
+denne myra etter som produktene både blir flere og får flere funksjoner.<p>
+	På veien mot de åpne, distribuerte systemers paradis -- der knirkefri
+plug-and-play-forbindelse mellom applikasjoner, databaser, operativsystemer og
+kommunikasjonsmidler er den rådende tilstand -- ligger det mange komplekse
+spørsmål som savner enkle svar. Mellomprogramvare kan lette noen av problemene,
+men samtidig utgjør disse programmene et ekstra kompleksitetslag for den som
+skal administrere virksomheten. Og egentlig fungerer de bare som et skritt på
+veien mot virkelig åpne, distribuerte systemer som til fulle kan utnytte
+arkitekturer som DCE (Distributing Computing Environment) og CORBA (Common
+Object Request Broker Architecture).<p>
+	IT-virksomheter som forsøker å få opp distribuerte systemer i dag, kan
+selvfølgelig knapt vente til det kommer flere produkter som støtter DCE, eller
+til CORBA 2.0 endelig blir ferdig. Dette gir en stor åpning for
+mellomprogramvare-leverandører, samt et markedssegment med stor
+befolkningsøkning som blir stadig mer mangeartet. <p>
+	- Det er ikke noe pent bilde, mener Mark Hanner, programdirektør  med ansvar
+for strategi for applikasjonsutvikling ved Meta Group Inc., i Burlingame,
+California. Hanners definisjon av mellomprogramvare -- "den tingen som kommer i
+veien for deg og dataene dine" -- gir et hint om hvor konkret man kan betegne
+spekteret av tilgjengelige produkter. <p>
+	Ifølge Patricia Seybold Group Inc., i Boston, kan man definere
+mellomprogramvare som enhver type programvare som styrer og administrerer
+informasjonsflyten mellom klienter og servere. Mellomprogramvare omfatter
+dermed oppkalling for fjernprosedyrer (remote procedure calls -- RPC),
+gatewayporter for database, filoverføringsprogrammer, object request brokers og
+overvåkingsprogrammer for transaksjonsprosessering. <p>
+	Ikke helt enkelt å orientere seg i dette landskapet. Men når vi vil knytte
+sammen applikasjoner, databaser, plattformer og nettverk med sikte på
+virksomhetsvide systemer som tåler virkelig stor oppgave-belastning, gir
+mellomprogramvare iallfall en pust i bakken mens vi venter på utviklingen.<p>
+	Hvordan finne ut hva slags mellomprogramvare som er mest hensiktsmessig? Det
+viktigste er å ha for seg et klart mål. Det dreier seg om å forstå og definere
+problemet i virksomheten, eller hvilken funksjon det er man trenger, mener Jim
+Handy, ansvarlig ingeniør ved systemintegreringsselskapet SSDS Inc., i
+Englewood, Colorado. De fleste mellomprogramvare-produkter tjener en av to
+funksjoner: Databasetilgangstjenester og tjenester for distribuerte systemer. 
+<h3>
+Tilgang på data</h3>
+Verktøy og produkter for dataadministrasjon eller datatilgang, som Information
+Builder Inc.s EDA/SQL og Open Horizon Corp.s Connection, er basert på ODBC
+(Open Database Connectivity) og tilbyr felles "call-level", API for
+forskjellige databaser og applikasjoner. <p>
+	ODBC API støtter polymorfisme (programmerere kan skjule forskjellige
+implementasjoner bak et felles grensesnitt, slik at kommunikasjonen mellom
+objekter forenkles) gjennom lagrede prosedyrer, og lar programmereren definere
+standardparametre. Lagrede prosedyrer hjelper utviklere med å redusere
+klientkostnadene ved å flytte SQL-kode til serveren. De isolerer dessuten
+applikasjonen fra den underliggende datamodellen. Både lagrede prosedyrer og
+standardparametere isolerer applikasjoner mot databaseendringer. <p>
+	Generelt arbeider produkter for datatilgang på et høyere nivå enn produkter
+for distribuerte systemer. De er modnere og enklere å bruker, mener Hanner. -
+Vi har en grunnregel: Hold deg til tolags, klient/tjener, SQL-basert
+mellomprogramvare hvis du kan.<p>
+	Ved Caterpillar Inc., i Peoria, Illinois, var utfordringen å kunne tilby en
+fleksibel fremgangsmåte som forretningsenheter kan følge når de skal ha tilgang
+til data fra stormaskinlagre, og kombinere disse dataene med de typene data og
+prosessorer de ønsker å bruke, forklarer Jerry Hosler, systemsjef for
+Caterpillars servicegruppe for klient/tjener.<p>
+	Systemene til dette selskapet, som driver produksjonskonstruksjon, omfatter
+store virksomhetsvide applikasjoner satt ut på <a href="http://www.ibm.no/">IBM</a>-stormaskiner som kjører MVS,
+med CICS og IMS transaksjonsmonitorer. Applikasjoner som styrer prosessen på
+fabrikkgulvet, kjører på <a href=http://www.digital.no/>Digital Equipment</a> Corp.s VAX/VMS. Ingeniørene bruker
+Unix arbeidsstasjoner fra <a href=http://www.oslonett.no/nl/dt/hw/hp/HP.html>Hewlett-Packard</a> Co. og Digital. Det adminsitrative
+personalet bruker PCer som arbeider med et bredt spekter av operativsystemer,
+bl.a. <a href="http://www.cs.uit.no/OS2/">OS&#47;2</a>, DOS, Windows og Windows NT. <p>
+	Etter å ha sett nærmere på markedet, fant Hosler og hans team ut at
+mellomprogramvare beregnet på datatilgang for flere plattformer var svaret på
+selskapets behov for gjennomsiktige transaksjoner for unike datatyper og
+kombinerte datatyper. Selskapet valgte Information Builders' EDA/SQL, fordi
+dette produktet ga inntrykk av å være det modneste på dette markedet.
+Hovedfordelen med EDA/SQL er at det ikke berører Caterpillars eksisterende
+vertsystemer, forteller Hosler. <p>
+	Ved Home Depot, i Atlanta, Georgia, vakte ikke arvede stormaskinsystemer noen
+bekymring i utgangspunktet. Men også her ble det besluttet å kjøpe inn et
+ODBC-basert datatilgangsprodukt, SequeLink fra Intersolv Inc. (erhvervet i
+selskapets nylige oppkjøp av TechGnosis Inc.), for å få tilgang til data lagret
+på relasjonsdatabaser av typene Informix og DB2. <p>
+	- Vi hadde alt gjort en rekke valg vedrørende vårt tekniske miljø, og trengte
+et produkt som kunne fylle datatilgangsnisjen, opplyser Beach Clark, Home
+Depots ansvarlige for nettverksarkitektur. - Vi hadde standardisert med
+relasjonsdatabasen som grunnmuren i vår databasestruktur. ODBC fylte våre
+behov. Sequelink forestår SQL-oversettelsen. <p>
+	Ifølge Hanner er det bruken av visuelle grensesnitt og verktøy på høyere nivå
+som utgjør hovedfordelen når det gjelder databasetilgang, hvilket gjør disse
+produktene langt enklere å implementere enn dem med tjenester for distribuerte
+systemer.<p>
+	Leverandørene av mellomprogramvare for datatilgang forbereder seg også på
+frremtiden, ved å inkludere støtte for DCE og CORBA.
+<h3>
+Systemtjenester</h3>
+Mellomprogramvare for tjenester for distribuerte systemer kan også gi løsninger
+på utfordringene med IS-forbindelse, men kompleksitetsnivået her er langt
+høyere enn hva som er tilfellet med mellomprogramvare for datatilgang. <p>
+	- Når det blir snakk om mellomprogramvare som skal brukes til å flytte
+prosedyrer fra applikasjonen til nettverket eller serveren, og så få disse til
+å  fungere interaktivt med andre prosedyrer på andre systemer, da begynner ting
+å bli virkelig kompliserte, sier Hanner. <p>
+	Generelt arbeider disse metodene på et dypere nivå, og er mer
+virksomhetsorienterte og kommunikasjonsdrevne enn databasetilgang. De to
+primære metodene som brukes i dag, er RPC-er og meldingsorientert
+mellomprogramvare (MOM). RPCer knyttes til operativsystemer som Unix og
+plattformer fra selskaper som Sun Microsystems Inc. og IBM.<p>
+	Av MOM-progammer kan nevnes IBMs MQSeries Three-Tier utviklingspakke og
+Peerlogic Inc.s Pipes. Med MQSeries kan Visualage-utviklere kople seg til
+infrastrukturen for stormaskinskommunikasjon, mens Pipes lar utviklerne lage
+mellomprogramvare for meldingsformidling med tanke på kommunikasjon mellom
+applikasjoner over flerprotokollsnettverk.<p>
+	Disse to metodene -- RPC og MOM -- blir ofte satt opp mot hverandre av
+tilhengere på hver side. I virkeligheten tjener begge en funksjon når det
+gjelder å sette samme bitene i distribuerte systemer, og de kan attpåtil brukes
+samtidig.<p>
+	For eksempel bruker Home Depot både RPC-er og MOM.<p>
+- Vi tror det er plass til begge, mener Clark. Dreier det seg om ODBC og
+RPC-er, bør det være en bruker på enden av linjen, mens MOM ikke krever noen
+bruker. MOM brukes til maskin-til-maskin-prosesser eller oversettelse,
+forklarer Clark.<p>
+	- RPC-miljøer kjennetegnes ved høy, nesten sanntids prosessering, forteller
+Mitch Kramer, konsulentsjef ved Patricia Seybold Group. - Men når en
+applikasjon brukes over store organisasjonsenheter, f.eks. fra selskap til
+selskap, er meldingsformidlingen hendig, fordi et selskap ikke trenger å legge
+beslag på et annets ressurser.<p>
+	Både RPC-er og MOM skjuler komplekse, systemspesifikke
+kommunikasjonsgrensesnitt for utviklere, og skjuler nettlokaliteten for de
+distribuerte tjenestene for klienten.<p>
+	Forskjellene dreier seg om metode. MOM muliggjør asynkron kommunikasjon. Det
+tillater at meldinger sendes fra et kildeprogram til et eller flere
+destinasjonsprogrammer i sanntid. Men når en forbindelse faller bort, trer MOM
+inn med meldingsformidlingskøer, og sikrer asynkron levering til
+destinasjonen.<p>
+	Med en RPC kan programmereren utvikle applikasjoner der forskjellige
+prosedyrer kan distribueres og oppkalles fjernstyrt for et eller flere
+nettverksystemer: Prosedyrene opptrer som om de eksekveres på brukerens system.
+Disse prosedyrene er synkrone, og vil hindre den forespørrende applikasjonen i
+å fortsette å eksekvere inntil det mottas et svar fra fjerntjenestene.<p>
+	Faktisk mener analytikere at mellomprogramvare både for RPC og MOM ganske
+enkelt flytter forbindelseskompleksiteten fra database og applikasjon til
+kommunikasjon.<p>
+	- Man flytter byrden til et annet punkt i virksomheten, nemlig
+administreringen av infrastrukturen for mellomprogramvare, hevder Greg Pavoni,
+arkitekt ved systemintegreringsselskapet Technology Investment Inc., basert i
+Tampa, Florida.<p>
+	SDSS' Handy peker på at begge formene for distribuert system bærer med seg
+spørsmål om design, koding og vedlikehold. IS-avdelinger må vurdere både
+ytelse, skalerbarhet, pålitelighet og sikkerhetsstandarder.<p>
+	På bakgrunn av MOMs og RPCs kompleksitet, går Meta Groups Hanner så langt som
+å anbefale at man, om mulig, venter til disse produktene blir tilstrekkelig
+modne.
+<h3>
+Standard</h3>
+Om mellomprogramvare kan være en løsning på en del IS-problemer, bringer laget
+det tilføyer også med seg en masse trøbbel i forbindelse med utvikling og
+administrasjon, som man godt kunne greid seg uten.<p>
+	Det store potensialet ligger i miljøer som byr på en arkitektur som ikke
+krever mellomprogramvare for å tilknyttes heterogene systemer. DCE og CORBA har
+presentert seg som kandidater til å oppfylle dette løftet. DCE er et sett av
+applikasjons- og nettverkstjenester, som katalogtjenester (directory services),
+RPCer og distribuert sikkerhet. Det ble designet med sikte på bruk for flere
+operativsystemer og nettverksprotokoller, og letter byrden på programmerere ved
+å tilby et konsistent sett APIer for tilgang til forskjellige tjenester.<p>
+	Blant leverandørene av Mellomprogramvare som har tatt i bruk DCE, finner vi
+Transarc Corp., Open Horizon og Gradient Technologies Inc. Gradients PC-DCE og
+PC-DCE/32 tilrettelegger DCE-tjenester for Windows-PCer. Hovedfordelene med DCE
+er kapasiteten til å maskere de forskjellige operativsystemene og protokollene
+for brukeren samt forenkle nettverksadministrasjonen.<p>
+	Ved University of Arizona, in Tucson, gir DCE de facto-standarden for
+distribuert sikkerhet, kalt Kerberos, og for enkel påsigneringskapasitet,
+informerer John Detloff, utviklingsspesialist ved det universitetet. Detloff
+deltar i en gruppe, Student Information Systems 2000, som utvikler teknologisk
+infrastruktur for universitetet.<p>
+	Universitetet benytter Open Horizons Connection for å tilby ODBC over DCE.<p>
+	- DCE er en etablert standard på universitetsområdet. Vi bruker den fordi den
+tilrettelegger et enkelt påsignerings-ID for nettverk, og gjør oss i stand til
+å kryptere data over nettverket, forklarer Detloff.<p>
+	Noe av utfordringen med å sette opp Connection og annen DCE-basert
+mellomprogramvare ligger i å løse spørsmålene rundt servere og
+nettverksadministrasjon.<p>
+	- Vi må modellere for å ta beslutninger om hvor vi skal plassere
+applikasjonsservere, systemstyringsverktøy for sikkerhetskopiering,
+programvaredistribusjon og grunnleggende systemadministrasjon, forteller
+Detloff. <p>
+	Ulempen med DCE, ifølge analytikere, er dens ektremt kompliserte API. Og en
+potensiell bruker uttrykker bekymring over det faktum at brukere ikke forstår
+arkitekturen.<p>
+	- Vi synes godt om DCEs sikkerhet, katalogtjenestene og det distribuerte
+filsystemet, sier Home Depots Clark. - Bøygen er at det er for få folk som
+bruker den. Og det kryr ikke akkurat av produktleverandører, heller. <p>
+	- DCE er konseptuelt sett er god id&eacute;, men det krever en god del
+Unix-ekspertise å få til en vellykket implemenetring, mener Seattle-baserte
+Dave Rahfeldt, teknisk sjef ved Strategic Systems Europe, et selskap som gir
+selskaper assistanse i strategisk teknologiplanlegging.<p>
+	Til tross for at den ikke er en distribuert systemarkitektur, blir CORBA
+2.0-spesifikasjonen lansert som en metode utviklere kan bruke til å brolegge
+språk og OSer ved hjelp av dens "object request broker""-teknologi.<p>
+	Det største aberet med å ta i bruk CORBA, er at det fortsatt vil gå halvannet
+til to år før versjon 2.0 av spesifikasjonen er ferdig. Likevel er det nok av
+utviklere og konsulenter som ser på CORBA som den distribuerte databehandlings
+hellige gral.<p>
+	- CORBA er et skritt i riktig retning, mener Rahfeldt. - I en perfekt verden
+ville teknologisjefer omstrukturere forretningsprosesser og systemer, utvikle
+en klar og gjennomtenkt taktisk plan fra topp til bunn, og kvitte seg med
+gammel, arvet teknologi, istedenfor å ta i bruk mellomprogramvare.<p>
+	- Mellomprogramvare brukes som en kur når man kommer til kort med henhold til
+langsiktig utvikling, og arkitektur og planlegging, mener Rahfeldt. Selv om
+mellomprogramvare forlenger levetiden for nåværende investeringer, føler
+Rahfeldt at man i det lange løp bare legger enda en sten til den allerede tunge
+teknologi-gjeldsbyrden. - Det er ikke enkelt å evaluere kostnadene for
+mellomprogramvare på kort og lang sikt, særlig dersom selskapet mangler en klar
+strategi. Og selskaper flest gjør ikke strategiske vurderinger av denne typen. 
+<h3>
+Kortsiktig</h3>
+På kort sikt tjener mellomprogramvare en rekke funksjoner for
+informasjonssystemene -- muligheten til å gi arvede systemer et lenger liv,
+forbindelse til klient/tjener-arkitekturer og distribusjon av data og tjenester
+over store virksomheter. Ulempen med dette er at mellomprogramvare gir et
+betydelig mer komplisert databehandlingsmiljø. Det viser seg særlig når noe går
+galt. <p>
+	- Mellomprogramvare fordrer at mange elementer skal fungere sammen, sier
+Hosler. - Når ett av disse endres, kan det oppstå en reaksjon der sluttbrukerne
+ikke lenger får gjort jobben sin. <p>
+	Ved Caterpillar omfatter disse mange elementene et GUI på klientsiden, deler
+av appllikasjon skrevet i C++, EDA/SQL på PCen, progamvare for
+telekommunikasjon, rutere, broer og stormaskinserver.<p>
+	Hosler sier han ser fram til den dagen det finnes verktøy på markedet som kan
+gjøre en bra jobb med å isolere problemer. I mellomtiden har selskapet et
+SWAT-team av godt betalte teknikere til å utføre den jobben, forteller han.
+Ytterligere kompliserende for administrasjonen er det at SWAT- teamet fordeler
+seg på flere organisasjonsledd: - Vi må gå til hver enkelt avdeling,
+PC-teknikeren, LAN-teknikeren, stormaskin-folkene, og så videre. Og det er jo
+ikke alltid samme person.<p>
+	Analytikerne mener det vil bli utviklet verktøy som kan ta seg av denne
+kompleksiteten etter hvert. Leverandører av mellomprogramvare vil danne
+partnerskap med leverandører av applikasjonsverktøy, med utgangspunkt i
+standarder som DCE og CORBA. Alt nå finnes det en rekke
+mellomprogramvare-leverandører som klargjør for DCE.<p>
+	DCE og CORBA er fundamenter det kan bygges applikasjoner på uten hensyn til
+kompleksiteten i det underliggende miljøet. Hva angår DCE, er denne
+kompleksiteten stort sett knyttet til nettverk. Når det gjelder CORBA, ser
+mange fagfolk fram til begynnelsen på en virkelig plug-and-play-verden med
+distribuert databehandling.<p>
+<p>
+DCE og CORBA er fundamenter<p>
+Forskjellene dreier seg om metode<p>
+Mellomprogramvare brukes som en kur
+<p>
+<a href=cw960312.html><img align=middle alt="[Forrige artikkel]" src=/CW/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/CW/gifs/up.gif></a> <a href=cw960314.html><img alt="[Neste artikkel]" align=middle src=/CW/gifs/next.gif></a> 
+
+
+<pre><hr><a href=/historie/CW/maps/art.map><img alt="[Image map not available]" src=/CW/gifs/artmap.gif ismap></A><hr></pre>
+<h5>
+<address>
+Artikkel automatisk generert, 19/01-96, kl. 09.20 <a href=/CW/kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

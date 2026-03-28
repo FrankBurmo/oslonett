@@ -1,0 +1,6 @@
+default http://www.sn.no/sh/is/index.html
+
+rect http://www.sn.no/sh/is/soek.html 68,0 165,17
+rect http://www.sn.no/sh/is/komment.html 68,20 165,37
+rect http://www.sn.no/sh/is/hjelp.html 68,40 165,57 
+

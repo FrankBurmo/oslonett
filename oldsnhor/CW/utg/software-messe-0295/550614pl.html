@@ -1,0 +1,108 @@
+<html>
+<head>
+ <title>Objekter og objekter er tre forskjellige ting</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+<center>
+<a href=/CW/CW.html><img align=middle alt="[CW hjemmeside]" src=/CW/gifs/cw.gif></a>  
+</center><hr>
+<h2>Objekter og objekter er tre forskjellige ting</h2>
+<blockquote><h4>
+<hr>
+SAN FRANCISCO: -- Hvis det ikke står klient/tjener og objektorientert på pakken
+så selger den ikke -- selv om det bare er et program til
+sikkerhetskopiering.<hr>
+</h4></blockquote>
+<i>TORBEN B. SøRENSEN</i><p>Ordene kommer fra Anders Hejlsberg fra Borland,
+Danmark, et av flere programvarehus som satser på objektorientering. I 1994 ble
+ikke bransjen mindre opptatt av objekter, tvert i mot -- nå begynte man å
+snakke om objektkrig på samme måte som man tidligere snakket om krigen mellom
+programmeringsspråk og styresystemer.<p>
+	Forvirringen blir ikke mindre av at objektorientering i dag brukes innen flere
+områder, hvor det har forskjellig betydning. De grunnleggende begrepene --
+innkapsling, nedarving og polymorfisme kan anvendes på flere disipliner
+innenfor edb. De dukket først opp i forbindelse med systemutvikling, siden ble
+de brukt innenfor brukergrensesnitt og nå blir de benyttet i systemavvikling.
+<h3>
+C++ førende</h3>
+Innen for systemutvikling er C++ blitt det førende objektorienterte
+programmeringsspråket. Andre objektorienterte språk er Smalltalk, Objekt Pascal
+og Beta. En av fordelene ved objektorientert utvikling er innkapslingen.:
+Programmereren bygger enkeltstående moduler som kan kommunisere ved å sende
+beskjeder til hverandre.<p>
+	Når først en modul (et objekt) er ferdig og gjennomtestet kan det settes
+sammen med andre objekter til en stor applikasjon. Nedarving utnytter man ved
+først å utvikle objekter med meget generelle egenskaper. Nye objekter kan arve
+egenskaper fra disse generelle objektene og utvides med mer spesielle
+muligheter. Med polymorfisme (mangearthet) kan objekter tilføyes løpende -- de
+behøver ikke kjenne hverandres oppbygning på forhånd.<p>
+	Et objektorientert brukergrensesnitt behøver ikke nødvendigvis være skrevet
+med et objektorientert utviklingsverktøy selv om dette ofte vil være tilfelle.
+Et tidlig eksempel på et objektorientert brukergrensesnitt var Nextstep på
+Steve Jobs Next Computer. OS/2s Workspace er objektorientert og Microsoft
+arbeider på en objektorientert Windows-utgave med kodenavnet Cairo. Kjennetegn
+på objektorienterte brukergrensesnitt er at objektene har flere funksjoner: De
+kjenner ikke bare igjen navnet, men også  de ulike handlinger som kan utføres.
+Vil man skrive ut et objekt trekkes dette bare bort til og slippes på
+printer-objektet.
+<h3>
+Hvilken standard?</h3>
+Den objektkrigensom er begynt utspiller seg imidlertid hverken på
+programmeringsspråk eller grensesnittsiden. Det handler om anvendelsen av
+objekter mellom kjørende programmer. Hvis programmer er implementert som
+objekter som kan kommunisere ved å sende beskjeder til hverandre, må det være
+en standard for hvordan denne kommunikasjonen skal foregå. Spørsmålet er kun:
+Hvilken standard?<p>
+	I Microsoft Windows-verden heter standarden OLE(Object Linking and Embedding).
+Den gir mulighet for å sette inn objekter fremstilt i et program inn i et
+dokument fra et annet program. Tilhengere av den "rene" objektorienteringen
+kritiserer OLE for ikke å være fullt objektorientert -- for eksempel støtter
+den ikke nedarving. Den nåværende versjonen, OLE 2.0 støtter heller ikke
+kommunikasjon mellom objekter som ikke er på samme maskin.<p>
+	<b>Alternativet til OLE kommer fra Objekt Management Group. Denne gruppen av
+edb-leverandører har i fellesskap kommet frem til en standard for hvordan
+objekter kommuniserer ved hjelp av en såkalt "objekt request broker" (ORB), en
+objektmegler. Standarden heter Common Objekt Request Broker Architecture
+(CORBA). Det viktigste elementet her er språket IDL(Interface Definition
+Language) som brukes til å beskrive hvordan kommunikasjonen mellom objekter
+foregår.</b><p>
+	-- I PC-verden blir OLE standarden når det gjelder standard programvare. En
+distribuert utgave med kommunikasjon via nettverk kommer i løpet av et par år,
+mener Jens Christensen, administrerende direktør i det lille programvarehuset
+Postmodern Computing i California. Firmaet satser allikevel på CORBA-utvikling
+på grunn av at dette formatet er mer avansert. En av kundene er et
+elektrisitetsforsyningsselskap som vil plassere PCer hos 400.000 kunder. PCene
+skal holde styr på hvor og når kundene bruker strøm for på denne måten tilby
+kundene billigere strøm hvis de skrur ned i perioder med topp belastning.
+Programmene i hver av de 400.000 PCene kal kunne kommunisere med programmene
+hos el-selskapet. Denne kommunikasjonen sørger Postmodern Computing for.
+<h3>
+Ekte åpenhet</h3>
+-- Fordelen med CORBA er at det er en standard som kan gi oss ekte åpne
+systemer. Hvis kunden ikke blir tilfreds med vår ORB, kan han kjøpe en annen så
+lenge den følger COPRBA-standarden, sier Jens Christensen.<p>
+	Han gjør allikevel oppmerksom på at det ikke enda er så enkelt. I den første
+spesifikasjonen av IDL glemte men nemlig å spesifisere hvilken informasjon som
+skal ligge hvor i den pakke data som sendes ut på nettet. Dette vil bli rettet
+opp etterhvert som standardiseringsarbeidet fortsetter.<p>
+	Anders Hejlsberg, som er sjefsarkitekt for Borlands kommende objektorienterte
+utviklingsmiljø, Delphi95, venter at flertallet av klient/tjener systemene vil
+klare seg uten ORB-tekologien.<p>
+	--Det er og blir en nisjeteknologi. Til klient/tjener-systemer med PCer som
+kommuniserer med databaseservere er SQL (Structured Query Language)
+tilstrekkelig, sier han.
+<i>Oversatt og bearbeidet fra Computerworld Danmark av Kristin Mack Løvdal</i>
+
+<p>
+
+<pre><hr><a href=/cgi-bin/imagemap/CWartmap><img alt="[Image map not available]" src=/CW/gifs/artmap.gif ismap></A><hr></pre>
+<h5>
+<address>
+Artikkel automatisk generert, 7/2-95 <a href=/CW/kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+ <TITLE>Aktuelle Mac-linker</TITLE>
+ <LINK REV=MADE HREF="mailto:webmaster@oslonett.no">
+</HEAD>
+<BODY BACKGROUND="/gifs/on/onbg.gif">
+<P>
+Aksess-sidene kjøres nå på en egen server: <A HREF="http://aksess-www.oslonett.no/">http://aksess-www.oslonett.no</A>.
+Disse sidene vil ikke lenger bli oppdatert, og de vil etter hvert forsvinne. 
+</P>
+<A HREF="aksess.map"><IMG ALT="" ALIGN=MIDDLE SRC="http://www2.oslonett.no/gifs/on/aksess-h.gif" BORDER=0 ISMAP></A>
+<H1>Aktuelle linker for Macintosh-brukere</H1>
+
+<HR SIZE=3>
+
+<UL>
+  <LI><B>Firmaer på nettet:</B>
+      <UL>
+        <LI><A HREF="http://www.apple.com/"><I>Apple</I>
+	    <UL>
+	      <LI><A HREF="http://www.info.apple.com/">Hjemmeside for support
+		   og informasjon</A>
+	      <LI><A HREF="http://www.apple.no/"><I>Apple Norge</I></A>
+	    </UL>
+	<LI><A HREF="http://www.drammensnett.no/radata/"><I>Ra Data</I></A>
+        <LI><A HREF="http://www.mot.com/"><I>Motorola</I></A>
+        <LI><A HREF="http://www.taligent.com/"><I>Taligents</I> Web-server.</A>
+        <LI><A HREF="http://www.tenon.com/"><I>Tenon Instersystems'</I> hjemmeside</A>
+        <LI><A HREF="http://www.iquest.com/~fairgate"><I>Fairgaite Technologies'</I> Web-server</A>
+	<LI><A HREF="http://www.claris.com/"><I>Claris'</I> ClarisWeb</A>
+      </UL><BR>
+  <LI><B>Nyhetsmagasiner direkte:</B>
+      <UL>
+        <LI><A HREF="http://www.ziff.com/~macweek/"><I>MacWeek</I></A>
+	<LI><A HREF="http://www.ziff.com/~macuser/"><I>MacUser</I></A>
+        <LI><A HREF="http://power.globalnews.com/"><I>PowerPC News'</I> hjemmeside</A>
+        <LI><A HREF="http://www.netsurf.com/nsd/nsd.95.01.04.html"><I>Netsurfer Digest</I> - Spesialutgave for MacWorld Expo '95</A>
+      </UL><BR>
+  <LI><B>Filområder:</B>
+      <UL>
+        <LI><A HREF="http://rever.nmsu.edu/~elharo/faq/software.html">Liste over en rekke FTP-arkiv</A>
+        <LI><A HREF="http://www.nexor.co.uk/public/mac/archive/welcome.html">Program-arkivet
+            ved University of Michigan/Merit.</A>
+      </UL><BR>
+  <LI><B>Diverse informasjon om Macintosh:</B>
+      <UL>
+	<LI><A HREF="http://mac120.mac.uib.no/Default.hmtl">Universitetet i Bergens Mac-sider</A>. Denne serveren med mange linker kjører på en Mac!
+        <LI><A HREF="http://rever.nmsu.edu/~elharo/faq/Macintosh.html">Alt om Mac på Internett!</A>
+        <LI><A HREF="http://www.iquest.com/~fairgate/mac.html">&#171;Cool Mac Pages&#187;</A>
+        <LI><A HREF="http://www.nada.kth.se/~d88-jwa/mac-faq.html">Mac-programmerernes FAQ</A> (Fra comp.sys.mac.programmer)
+        <LI><A HREF="http://bambam.cchem.berkeley.edu/~schrier/mhz.html">Informasjon om clock chipping</A>
+      </UL><BR>
+</UL>
+
+<HR SIZE=3>
+
+<A HREF="http://www2.oslonett.no/"><IMG ALT="[Oslonett]" SRC="http://www2.oslonett.no/gifs/on/home.gif" BORDER=0></A>
+<A HREF="index.html"><IMG ALT="[Opp]" SRC="http://www2.oslonett.no/gifs/on/opp.gif" BORDER=0></A>
+<A HREF="http://www2.oslonett.no/search.html"><IMG ALT="[Søk]" SRC="http://www2.oslonett.no/gifs/on/sok.gif" BORDER=0></A>
+<A HREF="http://www2.oslonett.no/help.html"><IMG ALT="[Hjelp]" SRC="http://www2.oslonett.no/gifs/on/hjelp.gif" BORDER=0></A>
+
+<H5>Oppdatert, 22. mai 1995, <A HREF="http://www2.oslonett.no/html/CommentForm.html">webmaster@oslonett.no</A></H5>
+
+</BODY>
+</HTML>

@@ -1,0 +1,8 @@
+#!/usr/bin/csh -e
+
+echo "Programmet søker i titlene i alle filene (antatt HTML-format) som er oppgitt"
+echo " som argument og returnerer url for filer med passende titler."
+
+while (1)
+  /home/stovner/a/kgn/cw/bin/finnref.pl $*
+end

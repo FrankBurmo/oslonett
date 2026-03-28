@@ -1,0 +1,149 @@
+
+body { 
+  font-family: sans-serif;
+  color: black;
+  background: white;
+}
+
+div.projection { display: block }
+div.screen { display: block; margin: 1em;
+width: 50%; border: 1px solid black; padding: 0.5em; }
+
+div.speakernotes { display: block; margin-left: 2em;
+width: 80%; color: blue; font-style: oblique; border: 1px solid red; padding: 0.5em;
+font-size: 1.2em; }
+
+
+div.author {
+	 text-align: right;
+	 font-family: sans-serif;
+	 font-size: 1em;
+	 font-style: normal;
+	 margin-top: 3em;
+	 margin-right: 1em;
+   
+	}
+	
+	div.subheading {
+	 text-align: right;
+	 font-size: 1.2em;
+	 font-style: normal
+	 margin-top: 1.5em;
+	  margin-right: 1em;
+   
+	}
+	img.authorimage {
+	  float: right;
+	  margin-right: 1em;
+		margin-top: 1em;
+   
+	}
+	
+span.line { color: red }
+
+pre, tt {
+  font-weight: bold;
+  color: #ac6f54;
+}
+
+/* settings for normal screen mode */
+
+@media screen {
+  body {
+    color: black;
+    background: white;
+    margin: 2em;
+  }
+
+  div.projection { display: block }
+  div.logo { display: none }
+  div.screen { display: block }
+
+}
+
+/* settings for projection mode */
+
+@media projection {
+  body {
+    font: 36px Gill Sans, Helvetica, Arial, sans-serif;
+    color: black;
+		background: url("http://www.oslo.net/img/on_bg.jpg");
+		background-attachment: fixed;
+    background: gray;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  h1, h2 { 
+    page-break-before: always;
+    
+    font-size: 1.4em;
+    padding-left: 200px;
+    padding-right: 0.2em;
+    margin-top: 0.2em;
+    padding-bottom: 0.2em;
+    border-bottom: 20px outset #ac6f54;
+    text-align: right;
+  }
+
+
+  div.projection { display: block }
+  div.screen { display: none }
+	div.speakernotes { display: none; }
+	
+	div.subheading {
+	 text-align: right;
+	 font-size: 1.2em;
+	 font-style: normal
+	 margin-top: 1.5em;
+	  margin-right: 1em;
+   
+	}
+	
+	ul {
+	 margin-left: 2em;
+	 list-style-image: url("http://www.oslo.net/img/on-bullet.gif");
+	}
+	
+	li {
+	   margin-bottom: 1em;
+		 }
+	
+	/* "Hide" links to others than author */
+	
+	a {
+	  text-decoration: underline;
+		color: black;
+	}
+		
+	a:hover {
+		  background: white;
+	}
+			
+	div.author {
+	 text-align: right;
+	 font-family: sans-serif;
+	 font-size: 1em;
+	 font-style: normal;
+	 margin-top: 3em;
+	  margin-right: 1em;
+   
+	}
+	
+	.authorimage {
+	  float: right;
+	  margin-right: 1em;
+   
+	}
+  div.logo {
+    position: fixed; 
+    top: 5px;
+    left: 20px;
+    height: 80px;
+    width: 80px;
+  }
+
+}
+
+
+body { padding-top: 1px } /* hack to get around but in Opera 4.0 */

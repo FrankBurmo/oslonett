@@ -1,0 +1,19 @@
+#!/local/bin/perl5 
+#
+# Script som velger riktig logo avhengig av tid på døgnet.
+# Velger ett av bildene
+#	/img/home_natt.gif
+#	/img/home_morgen.gif
+#	/img/home_dag.gif
+#	/img/home_aften.gif
+
+# array med 24 elementer 00..23, indeksnr. tilsvarer klokkeslett.
+# Verdiene angir indeks i tabellen @tekst nedenfor
+@indeks = ( 0,0,0,0, 1,1,1,1,1,1, 2,2,2,2,2, 3,3,3,3, 0,0,0,0,0 );
+
+@tekst = ( 'natt', 'morgen', 'dag', 'aften' );
+
+@i = localtime;
+
+print "Location: $ENV{SERVER_URL}/img/home_$tekst[$indeks[$i[2]]].gif\n\n";
+exit 0;

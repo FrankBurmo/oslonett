@@ -1,0 +1,22 @@
+
+<body>
+<h1>Bolig</h1>
+
+<#form Bolig#>
+
+<pre>
+Tittel:   <#input Tittel#>
+Adresse:  <#input Adresse#>
+          <#input Postnr#> <#input Poststed#>
+Byggeår:  <#input Byggeår#>
+Rom:      <#input Antall-Soverom#>
+Visning:  <#input Visning#>
+Type:     <#input Type#>
+Eierform: <#input Eierform#>
+Megler:   <b><#user#></b>
+</pre>
+
+<#input Fritekst#>
+
+</form>
+</body>

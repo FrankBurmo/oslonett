@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="580"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Into the great wide open"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Universitetsbiblioteket, Auditoriet, 1. etasje"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Kl. 11.00-12.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="31"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Universitetet i Oslo"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Universitetsbiblioteket, Auditoriet, 1. etasje"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Om ny teknologi og nye tjenester i biblioteket. En demonstrasjon av databaser på Internet. Opplæringskonsulent Live Rasmussen` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?14.10"?)\s*>` with `` checked>` -->

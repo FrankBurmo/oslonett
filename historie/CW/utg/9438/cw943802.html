@@ -1,0 +1,216 @@
+<html>
+<head>
+ <title>CMOS-teknologi på S/390 plattform</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+
+<p>
+
+<pre>
+<a href=cw943801.html><img align=middle alt="[Forrige artikkel]" src=../../gifs/prev.gif></a>               <a href=../../><img align=middle alt="[CW hjemmeside]" src=../../gifs/cw.gif></a>              <a href=cw943803.html><img alt="[Neste artikkel]" align=middle src=../../gifs/next.gif></a>
+<hr>
+</pre>
+
+MIPS var ikke lenger til å stole på.<p>
+Sitater: CMOS-teknologien fordobler hastighet over to år 
+<i></i><p><blockquote><h4>
+<hr>
+En artikkel av David Elboth om IBMs CMOS-teknologi i (Computerworld nr. 35) har
+avfødt reaksjoner hos IBM. Karl-Erik Stenfors, sjefkonsulent på stormaskiner i
+IBM, har som et tilsvar skrevet følgende artikkel om IBMs bruk av
+CMOS-teknologi.<hr>
+</h4></blockquote>
+<h1>CMOS-teknologi på S/390 plattform</h1>
+<blockquote><h4>
+<hr>
+IBM har ikke bare revitalisert s/390 plattformen og MVS/ESA -- men vi har også
+gjort plattformen til en meget attraktiv medspiller i en åpen klient/tjener
+arkitektur.<hr>
+</h4></blockquote>
+<p>
+Da datamaskiner var yngre og mindre kompliserte oppsto behovet for å måle og
+sammenlikne ytelsen til forskjellige datamaskiner fra forskjellige
+leverandører. De fleste datamaskiner var så enkle at de stort sett kunne utføre
+en "instruksjon" for hver maskinsyklus -- klokkeslag.<p>
+	En aktuell målemetode kunne da være å utføre et kjent antall instruksjoner --
+og måle hvor lang tid en gitt maskin brukte på å gjøre jobben. (Jeg ser her
+bort fra eventuelle forskjeller i "nytte" grunnet forskjellige arkitekturer).<p>
+	Måleenheten ble da IPS -- Instruksjoner Per Sekund, senere KIPS -- Kilo
+(tusen) Instruksjoner Per Sekund og enda senere MIPS -- Millioner Instruksjoner
+Per Sekund.<b><i><p>
+	</i></b>I denne sammenheng -- dessverre -- ble datamaskiner mer og mer
+kompliserte, ikke bare på grunn av at det ble flere og flere arkitekturer --
+men også fordi de fleste datamaskiner kunne utføre flere instruksjoner per
+klokkeslag -- noen brukte flere klokkeslag per instruksjon -- og noen ble ved
+"et klokkeslag -- en instruksjon".<p>
+	Sammenlikninger ble vanskelige og vår måleenhet MIPS var ikke lenger til å
+stole på.<p>
+	Men innen visse grenser kan MIPS stadig brukes og blir brukt -- det er fullt
+mulig og forsvarlig å sammenlikne MIPS-tall innen samme arkitektur, samme
+operativsystem og samme type arbeidsbelastning.<p>
+	I erkjennelse av dette startet IBM for en del år siden en serie av målinger --
+med det formål å kunne forutsi ytelser på nye maskiner utsatt for samme
+operativsystem og arbeidsbelastning som målinger allerede utført på kjente,
+eksisterende maskiner.<p>
+	Med utgangspunkt i en gitt kjent maskin kan IBM med ganske stor nøyaktighet
+forutsi at en annen maskin er så og så mange gange kraftigere eller svakere enn
+en kjent maskin.<p>
+	Det er med denne forutsetning at "MIPS" er brukt i det følgende.<p>
+	En "MIPS"-sammenlikning mellom en arbeidsstasjon av typen PC og en server av
+typen ES/9000 -- er totalt misvisende og faller på sin egen urimelighet.<p>
+	For å kunne sammenlikne to så forskjellige datamaskiner må en bruke en annen
+måleenhet enn "MIPS". En kunne for eksempel ta utgangspunkt i en PC
+implementering med en gitt klokkefrekevens og en ES/9000 med samme frekvens --
+og måle hvilken nytte hver av disse maskinene gjør for sin(e) brukere.<p>
+	Måleenheten kunne for eksempel være antall aktive brukere med svartid under et
+visst akseptabelt nivå -- for eksempel et halvt sekund. Et eventuell "MIPS"
+tall for to så ulike maskiner viser seg å være helt uten sammenheng med den
+nytte maskinen vil gjøre i et virkelig, levende miljø.<b><i><p>
+	</i></b>I løpet av de siste 25-30 årene har IBM til stadighet utviklet nye og
+raskere datamaskiner basert på S/360 annonseringen i april 1964 og senere
+utvidelser til S/370 og S/390.<p>
+	De seneste generasjoner av IBMs store datamaskiner har været basert<p>
+på såkalt <b><i>bipolar</i></b> teknologi.<p>
+	Den viktigste grunnen til dette har vært denne teknologiens ekstremt høye
+hastighet -- med andre ord -- teknologien har gjort det mulig å bygge
+superraske prossesorer med S/390 arkitektur. Historisk sett har IBM klart å
+fordoble ytelsen på slike prossesorer i løpet av en femårsperiode.<p>
+	For de største brukerne av S/390 systemer har ikke denne veksten vært nok --
+og IBM har -- for å møte sine brukeres krav -- i en årrekke utviklet metoder
+som har gjort det mulig å sammenkople et antall prossesorer mot felles minne og
+håndtere et slikt flerprossesor system under et operativsystem -- MVS/ESA.<p>
+	Et slikt system er kjent under navnet Symmetrisk Multi Prossesor (SMP). Per i
+dag markedsfører IBM et slikt system med 10 prossessorer og en samlet ytelse på
+over 500 "MIPS" -- ES/9000 9021 Model 9X2.<p>
+	Pris/ytelses forholdet for systemer på S/390 plattformen har forbedret seg med
+fra 15 prosent til 25 prosent årlig. I begynnelsen av 1980-årene begynnte IBM å
+bygge S/390 datamaskiner basert på CMOS teknologi -- 9370 maskinserien.<p>
+	Denne serien har vært grunnlaget for IBM 9221 maskinserie -- den nyeste av
+disse er den model 211-baserte serien annonsert tidligere i år. Den samme CMOS
+teknologien er også blitt annonsert i tre nye maskinserier, 9672 parallel
+enterprise-server, 9672 parallel transaksjons-server og 9673 parallel
+query-server.<p>
+	Alle disse fire maskinserier er basert på den samme teknologien -- og det er
+den samme prossessor som sitter i alle fire. Forskjellen er dels hvordan de
+enkelte komponenter er pakket og dels for hvilke anvendelsesområder maskinene
+er bygget.<p>
+	IBM 9221 maskinserien er ment å dekke den del av S/390 markedet som er kjent
+som "entry-level" eller "low end. Ofte brukes operativsystemene VSE/ESA
+og/eller VM/ESA -- men i stigende grad brukes også MVS/ESA i disse miljøer.<p>
+	IBM 9221 211-baserte maskiner omfatter 3 enkeltprossesorer og to 2-veis
+flerprossesorer og dekker ytelsesområdet fra ca. 11 til ca. 30 "MIPS". IBM 9672
+parallel enterprise-server -- annonsert i september 1994 -- en helt ny
+prossessor familie basert på CMOS teknologi. Maskinserien omfatter 6 modeller i
+ytelsesområdet fra ca 15 til ca 65 "MIPS".<p>
+	Serien er ment å erstatte eldre generasjoner av S/370 og S/390 maskiner i det
+nevnte ytelsesområde -- og som begynnelsespunkt for nye brukere. Alle modellene
+i serien kan oppgraderes til 9672 parallel transaksjons-server.<p>
+	IBM 9672 parallel transaksjons-server er samme maskin som 9672 parallel
+enterprise-server utstyrt med ekstra funksjoner slik at transaksjons-server kan
+koples sammen med andre typer maskiner -- ES/9000 9021 serien og ES/9000 9121
+serien -- og/eller flere transaksjonsservere. Dette skjer under kontroll av
+operativsystemet MVS/ESA versjon 5.<b><i><p>
+	</i></b>Uansett antall maskiner fremstår systemet som et hele -- sett fra
+bruker- synspunkt, operasjonelt og fra systemprogrammeringssynspunkt. Dette
+kaldes S/390 Parallel Sysplex. Parallel Sysplex gjør det mulig å bygge systemer
+fra ytelser på fra ca. 15 til ca. 16.000 "MIPS".  Et parallelt Sysplex er satt
+sammen på slik måte at systemet alltid vil være tilgjengelig -- uansett om det
+skal foretas vedlikehold på maskiner eller programsystemer -- og det er mulig å
+tilføye og/eller fjerne komponenter -- prosessorer og diskutstyr -- uten at
+systemet må gjøres utilgjengelig for brukerne.<p>
+	Den parallelle transaksjon-server skal gjøre det mulig å bygge
+små-mellomstore- og store systemer -- i små steg og uten avbrytelser. <p>
+	I tillegg gir den IBMs eksisterende kunder på 9021 og 9121 maskiner mulighet
+for gradvis og uten avbrytelser, eller endringer av applikasjoner -- å ta i
+bruk og nyttigjøre seg den nye CMOS teknologien.<p>
+	IBM 9674 parallel query-server er en maskin som er bygget av samme teknologien
+som de tre nevnte.Query-server er sammensatt av fra 1 til 8 maskiner hver med
+fra 1 til 6 prossesorer -- disse er koplet sammen med et antall disk enheter
+slik at det blir et total system.<p>
+	I serveren kjører et MVS/ESA og DB2 basert system som gjør det mulig å
+parallellisere store, komplekse SQL forespørsler -- med det formål å bringe ned
+gjennomløps- og svartider for sluttbrukere.<b><i><p>
+	</i></b>Over det siste halvåret har en sett IBM ta en ny teknologi -- CMOS --
+inn i hele S/390 familien -- og hvorfor ? Den bipolære teknologien har tjent
+lenge og godt -- og kunne for så vidt videreutvikles -- utfordringen ville være
+å levere bedre og bedre pris/ytelsesforhold år over år.<p>
+	Hastigheten til den binære teknologien nærmer seg raskt en grense for hva det
+er mulig å få til og de siste stegene mot denne grensen kan være serdeles
+kostbare -- dels å bygge, dels å bruke (strøm og kjøling).<p>
+	CMOS -- på den andre siden -- er en yngre og "kaldere" teknologi -- og per i
+dag noe "langsommere" enn tilsvarende bipolær teknologi. Men -- teknologien
+befinner seg på en annen utviklingskurve når det gjelder hastighet og pris
+ytelse.<p>
+	Utviklingen synes å vise at CMOS-teknologien fordobler hastighet over to år --
+mot bipolær fem år -- og kost/ytelse forbedrer seg med fra 25 prosent til 35
+prosent fra år tilår.<p>
+	På grunn av mindre strømforbruk og dermed mindre behov for kjøling er det
+mulig å benytte en meget stor grad av integrasjon ved framstilling av CMOS
+baserte prosessorer.<p>
+	Per idag bygger IBM en S/390 CMOS prossesor på en chip -- inneholdende ca. 3.4
+millioner transistorer. I tillegg til prosessoren er det også plass til
+mikrokode og mellomlager på samme chip.<p>
+	En slik integrasjon gjør det mulig å bygge svært kompakte S/390 systemer med
+stor ytelse -- det blir færre deler og dermed bedre stabilitet -- det blir
+mindre strøm- og kjølebehov -- det blir meget lavere vedlikeholdspriser -- slik
+at totalomkostningene ved å eie og drive et S/390 system blir dramatisk
+lavere.<p>
+	Samtidig har IBM utviklet sitt MVS/ESA operativsystem til å kunne drive og
+kontrollere et system som består av et stort antall sammenkoblede MVS/ESA
+systemer -- på forskjellige maskinetyper av typen ES/9000 -- som om det var et
+enkelt MVS/ESA system -- og uten at kunden eller brukeren behøver å endre en
+eneste ting i sin applikasjonsportefølje -- nye versjoner av de kjente
+sub-systemene CICS, IMS, DB2 og VTAM sørger for dette.<b><i><p>
+	</i></b>Parallelt med den teknologiske utvikling i S/390 maskinvaren har IBM
+over de siste årene nedlagt mye arbeid i å ta inn åpne standarder i MVS/ESA
+miljøet.<p>
+	I perioden har IBM vært en aktiv deltaker i de fleste organisasjoner som
+beskjeftiger seg med åpne systemer -- og har mottatt og tilbudt produkter og
+løsninger innad i disse organisasjonene.<p>
+	For MVS/ESE har dette betydd at det er kommet noen viktige produkter som åpner
+MVS/ESA mot standarder. Den første versjon av MVS OpenEdition -- som kom ut for
+vel et år siden -- omhandler en stardard som er kjent under navnet POSIX 1003.x
+-- som er "eid" av IEEE -- en velkjent organisasjon.<p>
+	POSIX 1003.x er nå implementert som en integrert del av MVS/ESA -- standarden
+omhandler bærbarhet av applikasjoner -- altså muligheten for å ta en eller
+flere programmer som er skrevet for en plattform, og bære disse over på en
+annen plattform, installere og deretter utføre de på en annen plattform uten
+endringer.<p>
+	Det er således mulig å ta en gitt applikasjon på -- for eksempel en
+UNIX-plattform -- bringe denne inn på MVS/ESA og eksekvere uten å måtte endre
+på applikasjonen.<p>
+	I tillegg gir POSIX 1003.x anledning til å kjøre et såkalt POSIX-shell under
+TSO på MVS/ESA. Litt populært kan en si at MVS/ESA kan bringes til å se ut som,
+smake som, gå som og lukte som UNIX. <p>
+	Neste skritt på veien i "åpningen" av MVS/ESA kom i vår da IBM annonserte en
+utvidelse til MVS OpenEdition -- DCE -- eller Distributed Computing
+Environment. DCE er en "overbygging" til POSIX 1003.x -- DCE gjør det mulig å
+operere en samling av forskjellige plattformer som om disse var et system.<p>
+	En kan tenke seg applikasjoner sammensatt av kodebiter fra forskjellige
+maskiner med forskjellig arkitektur -- fremstå som en samlet applikasjon. En
+typisk klient/tjener løsning.<p>
+	Hvor åpen er MVS/ESA og hvor går det neste skrittet? Ifølge D.H. Brown
+associates -- et amerikansk selskap -- er MVS/ESA allerde i 1994 betydelig mer
+åpen enn mange UNIX-systemer.<p>
+	I løpet av neste år er det meningen at MVS/ESA skal utvides til å omfatte
+XPG/4 branding -- og Spec. 1170 -- den kanskje viktigste åpne standard.<p>
+	Spec. 1170 branding gir retten til å kalle systemet sitt for UNIX -- altså en
+universell UNIX variant. Med disse to siste spesifikasjoner vil MVS/ESA bli et
+av det mest åpne systemer i bransjen.<b><i><p>
+	</i></b>Med ovennevnte produkter og annonseringer har IBM ikke bare
+revitalisert s/390 plattformen og MVS/ESA -- men også gjort plattformen til en
+meget attraktiv medspiller i en åpen klient/tjener arkitektur.
+
+<pre>
+<hr>   <a href=../../maps/art.map><img alt="[Image map not available]" src=../../gifs/artmap.gif ismap></A><hr>
+</pre>
+<h5>
+<address>
+Artikkel automatisk generert, 13/11-94, kl. 13.47 <a href=../../kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

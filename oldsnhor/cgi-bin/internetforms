@@ -1,0 +1,19 @@
+#! /local/bin/perl
+
+@form = split(/\&/, $ARGV[0]);
+open (OUT,"|/usr/ucb/mail -s Internet94 controlb") || die "ups\n";
+foreach $name (@form) {
+	print OUT "$name\n";
+}
+print OUT "T=Thursday, FP = Friday(AM), FA = Friday(PM), S = Saturday\n";
+print OUT "c = choise, s = stream\n";
+close OUT;
+
+printf "Content-type: text/html%c%c", 10, 10;
+print "<HEAD>\n<TITLE>internet'94 forms</TITLE>\n</HEAD>\n\n";
+print "<BODY>\n<B>Your forms are registrated</B>\n\n";
+print "<HR>\n<A HREF=\"/index.html\"><IMG ALT=\"[Oslonett Home]\" SRC=\"/graphics/home.gif\"></A>\n";
+print "<A HREF=\"/data/adv/ON-market.html\">\n";
+print "<IMG ALT=\"[Oslonett Markedsplassen]\" SRC=\"/graphics/market.gif\"></A>\n";
+print "<BODY>\n";
+exit 0

@@ -1,0 +1,8 @@
+AuthUserFile /home/steinar/wwwdomains/SJKAUTH
+AuthName "Oslonett Aksess"
+AuthType Basic
+
+<Limit GET>
+order deny,allow
+allow from .ifi.uio.no
+</Limit>

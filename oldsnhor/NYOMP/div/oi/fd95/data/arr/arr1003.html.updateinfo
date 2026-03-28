@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1003"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Pressekonferanse"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Institutt for energiteknikk (IFE), Instituttveien 18, Kjeller"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="10.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="34"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Institutt for energiteknikk"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Pressekonferanse. Kontaktperson (IFE) : Rolf Lingjærde Kontaktperson (NILU): Bjarne Sivertsen` -->
+<!-- replace `<option(.*Akershus)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?12.10"?)\s*>` with `` checked>` -->

@@ -1,0 +1,10 @@
+#dette er en test av imagemaps..
+
+#pil-tilbake
+rect http://www.uio.no/ 0,0 37,32
+
+#pil-forover
+rect http://www.uit.no/ 43,0 81,32
+
+#default
+default http//www.uib.no/

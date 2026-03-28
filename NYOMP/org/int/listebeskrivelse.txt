@@ -1,0 +1,85 @@
+Oversikt over IPMA's mailinglister!
+
+board:controlb
+Lukket (ikke synlig i working groups)
+
+
+cert-group:controlb
+Lukket
+
+certification:controlb
+Åpen
+Open for general information regarding certification matters in IPMA.
+
+cod:controlb
+Lukket
+Consul of delegates.
+
+contract:controlb
+Åpen
+Open for specific interest group SIG, contract management.
+
+cost:controlb
+Åpen
+Open for specific interest group SIG, cost control
+
+exco:controlb
+Lukket
+
+globnet:controlb
+Åpen
+Open workgroups for all projectmanagers regarding global professional corporations.
+
+ipma:controlb
+Åpen
+Information regarding general matters of IPMA. "Broadcasting channel".
+
+na:controlb
+Lukket
+Information in between national associations and IPMA.
+
+pharmacy:controlb
+Åpen
+Open for specific interest group SIG, pharmacy
+
+plan:controlb
+Åpen
+Open for specific interest group SIG, planning
+
+pmed:controlb
+Åpen
+Open for general information regarding education matters in IPMA.
+
+pmed-group:controlb
+Lukket
+Closed channel for members of the education project team.
+
+pmqa:controlb
+Åpen
+Open for general information regarding quality assurance in PM matters in IPMA.
+
+pmqa-group:controlb
+Lukket
+Closed channel for members of the quality assurance in PM project team.
+
+pmresearch:controlb
+Åpen
+Open for general information regarding PM reaserach matters in IPMA.
+
+pmresearch-group:controlb
+Lukket
+Closed channel for members of the PM reaserach project team.
+
+risk:controlb
+Open for specific interest group SIG, risk management
+
+telecom:controlb
+Open for specific interest group SIG, PM in telecom
+
+denmark:controlb
+Åpen
+Open for all matters within Danish association of PM.
+
+norway:controlb
+Åpen
+Open for all matters within Norwegian association of PM.

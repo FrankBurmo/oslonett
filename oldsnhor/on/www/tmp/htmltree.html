@@ -1,0 +1,103 @@
+<html>
+<head>
+  <title>htmltree - innholdsfortegnelse for subtre i filsystemet</title>
+  <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body background="/gifs/on/onbg.gif">
+<a href="www-info.map">
+<img alt="" align=middle src="/gifs/on/www-h.gif" border=0 ismap>
+</a>
+
+<h1>htmltree - innholdsfortegnelse for subtre i filsystemet</h1>
+
+<form method="POST" action="htmltree.cgi">
+
+<hr noshade size=1>
+<h2>Start-directory...</h2>
+...angis relativt til HTTP-serverens rot.
+<pre>
+Start-directory: <input name="dir" value="on" size=50>
+</pre>
+<hr noshade size=1>
+
+<h2>Filutvelgelse</h2>
+<pre>
+Inkluder:        <input name="files" size=50>
+</pre>
+Ønskes kun hierarkiet vist, sender man ikke med noen filangivelse her.
+Ønsker man å vise filer i tillegg til directories, sender man med et
+regulært uttrykk (perl regexp) som match'es mot hvert filnavn. F.eks.
+viser "<b>.*</b>" alle filer, mens "<b>\.html?$</b>" viser alle filer
+som slutter med .htm eller .html.
+<p>
+
+Nedenfor kan du angi hvilke av filene som slipper gjennom filtreringen
+ovenfor som likevel ikke skal vises i det ferdige dokumentet.
+<pre>
+Ekskluder:       <input name="notfiles" value="\.bak$|\~$|\.map$|\.cgi$|^\." size=50>
+</pre>
+
+Det er lurt å droppe filer som slutter på "<b>.bak</b>" og "<b>~</b>" fordi disse
+antas å være backupfiler med utdatert informasjon. Filer som slutter
+på "<b>.map</b>" og (ofte) "<b>.cgi</b>" vil gi feilmelding dersom de aksesseres
+uten parametere fra web-klienten. Derfor bør også disse utelates.
+Filer som begynner med "<b>.</b>" bør også utelates (antar at disse ikke er
+ment å vises fram).
+
+<hr noshade size=1>
+
+<h2>Maks dybde, ikoner og directories uten index.htm(l)</h2>
+
+Angi her hvor mange nivåer man skal kunne gå ned i filtreet:
+<pre>
+Maks dybde:      <input name="maxlevel" value=15 size=20>
+
+Ikoner foran hver fil?
+     <input type="radio" name="icons" value=""> Nei    <input type="radio" name="icons" value="yes" checked> Ja
+
+Vise directories directories uten "index.htm(l)"?
+     <input type="radio" name="showdir" value="" checked> Nei    <input type="radio" name="showdir" value="nolink"> Ja, men uten link     <input type="radio" name="showdir" value="link"> Ja, som link
+</pre>
+
+<hr noshade size=1>
+<h2>Standard header og footer</h2>
+
+Standard header og footer kan hentes fra egne filer. Headerfilen skal
+inneholde <b>&lt;head&gt; &lt;title&gt;...&lt;/title&gt; ...
+&lt;/head&gt; &lt;body...&gt; &lt;h1&gt; ... &lt;/h1&gt;</b>. Alle
+forekomster av "_SERVERNAME_" og "_DIR_" i denne filen byttes ut med
+hhv. navn på maskinen script'et kjører på og startdirectory for
+innholdsfortegnelsen. Footerfilen skal inneholde <b>&lt;/body&gt;</b> og
+<b>&lt;/html&gt;</b>.
+
+<pre>
+Header:          <input name="header" value="/home/frogner/www2/cgi-src/htmltree/HEADER" size=50>
+Footer:          <input name="footer" value="/home/frogner/www2/cgi-src/htmltree/FOOTER" size=50>
+
+<input type="submit" value="Lag innholdsfortegnelse">   <input type="reset" value="Resett skjema">
+</pre>
+</form>
+
+
+<hr size=1 noshade>
+<a href="/">
+  <img border="0" alt="[Oslonett]" src="/gifs/on/home.gif"></a>
+
+<a href="/on/www">
+  <img border="0" alt="[Om Oslonett]" src="/gifs/on/opp.gif"></a>
+  
+<a href="/help.html">
+  <img border="0" alt="[Hjelp]" src="/gifs/on/hjelp.gif"></a>
+  
+<a href="/search.html">
+  <img border="0" alt="[Søk]" src="/gifs/on/sok.gif"></a>
+<hr size=2 noshade>
+
+<address>
+ <font size="-1">
+  Copyright &#169; 1995,  Oslonett AS.
+ </font>
+</address>
+
+</body>
+</html>

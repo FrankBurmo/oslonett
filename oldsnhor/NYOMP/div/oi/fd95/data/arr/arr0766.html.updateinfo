@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="766"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Hva er kreftforskning-hvordan bruke resultatene?"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Auditoriet, Det Norske Radiumhospital"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Kl. 17.00-19.30"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="31"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Universitetet i Oslo"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Auditoriet, Det Norske Radiumhospital"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Kl. 17.00-17.10: Åpning ved direktør Jan Vincents Johannessen, Kl. 17.10-17.35: Grunnforskning-kommer resultatene pasienten til nytte? v/Erik Boye, Kl. 17.40-18.00: Klinisk forskning-er pasienten «forsøkskanin»? v/Steinar Aamdal, Kl. 18.00-18.10: Diskusjon, Kl. 18.10-18.30: Pause, Når Det norske radiumhospitals forskningsresultater frem til de som trenger dem?, Kl. 18.30-18.50: Informasjon til politikerne og pressen v/Ole Nome, Kl. 18.50-19.00: Informasjon til helsepersonell-Universitetet i Oslos rolle v/Håkon Aune, Kl. 19.00-19.20: Hvordan bruke informasjonen i beslutningsprosessen - politikernes dilemma v/Stortingsrepresentant Johan J. Jacobsen,  Oppsummering v/Styreformann Idar Magne Holme Omvisning` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?10.10"?)\s*>` with `` checked>` -->

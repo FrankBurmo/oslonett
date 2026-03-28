@@ -1,0 +1,713 @@
+\batchmode
+\documentstyle[11pt,html,psfig,titlepage]{article}
+\makeatletter
+\@ifundefined{A@def}{  \def \A@def{}  \input{a4.sty}  \addtolength{\oddsidemargin}{-1.50 cm}
+  \addtolength{\evensidemargin}{-1.50 cm}
+  \addtolength{\textwidth}{2.5 cm}
+  \addtolength{\marginparwidth}{-0.5cm}
+  \addtolength{\marginparsep}{-0.15cm}
+}{\@warning{A4 style read more than once; last read ignored}}
+\def\fileversion{1.1.2}
+\def\filedate{04 November 1993}
+\def\docdate{16 february 1992}
+\ifx\undefined\captionsnorsk
+\else
+  \selectlanguage{norsk}
+\def\background#1{\special{background #1}}
+\def\subdef#1{\gdef\globalColor##1{\special
+       {color push #1}##1\special{color pop}}}
+\def\textColor#1{\subdef{cmyk #1}\special{color cmyk #1}}
+\def\Color#1#2{\special{color push cmyk #1}#2\special{color pop}}
+\def\newColor #1 {\expandafter\def\csname #1\endcsname##1{\special
+   {color push #1}##1\special{color pop}}
+   \expandafter\def\csname text#1\endcsname{\subdef{#1}
+    \special{color #1}}}\newColor GreenYellow     \newColor Yellow	  \newColor Goldenrod	  \newColor Dandelion	  \newColor Apricot	  \newColor Peach		  \newColor Melon		  \newColor YellowOrange	  \newColor Orange	  \newColor BurntOrange	  \newColor Bittersweet	  \newColor RedOrange	  \newColor Mahogany	  \newColor Maroon	  \newColor BrickRed	  \newColor Red		  \newColor OrangeRed	  \newColor RubineRed	  \newColor WildStrawberry  \newColor Salmon	  \newColor CarnationPink	  \newColor Magenta	  \newColor VioletRed	  \newColor Rhodamine	  \newColor Mulberry	  \newColor RedViolet	  \newColor Fuchsia	  \newColor Lavender	  \newColor Thistle	  \newColor Orchid	  \newColor DarkOrchid	  \newColor Purple	  \newColor Plum		  \newColor Violet	  \newColor RoyalPurple	  \newColor BlueViolet	  \newColor Periwinkle	  \newColor CadetBlue	  \newColor CornflowerBlue  \newColor MidnightBlue	  \newColor NavyBlue	  \newColor RoyalBlue	  \newColor Blue		  \newColor Cerulean	  \newColor Cyan		  \newColor ProcessBlue	  \newColor SkyBlue	  \newColor Turquoise	  \newColor TealBlue	  \newColor Aquamarine	  \newColor BlueGreen	  \newColor Emerald	  \newColor JungleGreen	  \newColor SeaGreen	  \newColor Green		  \newColor ForestGreen	  \newColor PineGreen	  \newColor LimeGreen	  \newColor YellowGreen	  \newColor SpringGreen	  \newColor OliveGreen	  \newColor RawSienna	  \newColor Sepia		  \newColor Brown		  \newColor Tan		  \newColor Gray		  \newColor Black		  \newColor White		  
+\subdef{Black}
+
+\ifx \@def@psm\undefined \fi
+
+\def \rmdefault{psmtim}
+\def \bfdefault{b}
+\def \sldefault{it}
+\def \sfdefault{psmhlv}
+\def \ttdefault{psmcou}
+
+\family{psmtim}
+
+\@ifundefined{smaller}{  \@ifundefined{selectfont}{
+}{\input{newsmaller.sty}}}  {}
+
+\newcount \@hours
+\newcount \@minutes
+
+\def\timeofday{\@hours=\time  \@minutes=\time
+  \divide \@hours by 60
+  \the\@hours \iflanguage{norsk}{.}{:}  \multiply \@hours by 60
+  \advance \@minutes by -\@hours
+  \ifnum \@minutes<10 0\fi
+  \the\@minutes}
+
+
+
+\def\subparagraph{\@startsection
+ {subparagraph}{5}{\parindent}{3.25ex plus 1ex minus 
+ .2ex}{-1em}{\normalsize\bf}}
+
+
+\def\big#1{{\hbox{$\left#1\vcenter to 1.428\ht\strutbox{}\right.\n@space$}}}
+\def\Big#1{{\hbox{$\left#1\vcenter to 2.142\ht\strutbox{}\right.\n@space$}}}
+\def\bigg#1{{\hbox{$\left#1\vcenter to 2.857\ht\strutbox{}\right.\n@space$}}}
+\def\Bigg#1{{\hbox{$\left#1\vcenter to 3.571\ht\strutbox{}\right.\n@space$}}}
+
+
+\def\magstep#1{\ifcase#1 1000\or 1200\or 1440\or 1728\or                          2074\or 2488\or 2986\or 3583\or                          4300\or 5160\or 6192\or 7430\fi                          \relax}
+
+\def\sloppy{\tolerance 9999 \hfuzz .5\p@ \vfuzz .5\p@        \hbadness=\tolerance \pretolerance=\tolerance \relax}
+
+\newbox\TestBox
+\newcount\Test@Count
+
+\def\AmSTeX{{\the\textfont2 A}\kern-.1667em\lower.5ex\hbox
+        {\the\textfont2 M}\kern-.125em{\the\textfont2 S}-\TeX}
+\@ifundefined{selectfont}{  \newfont{\fix@smc}{cmcsc10}
+  \def\La{\Test@Count=\the\fam \leavevmode L\raise.42ex
+        \hbox{$\fam\Test@Count\scriptstyle\kern-.3em A$}}  \def\BibTeX{{\rm B\kern-.05em{\fix@smc i\kern-.025emb}\kern-.08em\TeX}}
+  \def\mf{{\fix@smc Metafont}}
+  \def\nLaTeX{n\LaTeX}
+  \def\PiC{P\kern-.12em\lower.5ex\hbox{I}\kern-.075em C}
+  \def\SliTeX{{\rm S\kern-.06em{\fix@smc l\kern-.035emi}\kern-.06em\TeX}}
+}{  \def\fix@smc{\smaller\smaller\smaller}
+  \def\La{\leavevmode L\raise 0.42ex\hbox{\fix@smc \kern -0.35em A}}  \def\BibTeX{{\rm B\kern-.03em{\fix@smc I\kern-.025em B}\kern-.05em}\TeX}
+  \def\mf{M{\fix@smc ETAFONT}}
+  \def\nLaTeX{{\fix@smc N}\kern -0.08em\LaTeX}
+  \def\PiC{P\kern-.12em\lower.5ex\hbox{\fix@smc I}\kern-.06em C}
+  \def\SliTeX{{\rm S\kern-.06em{\fix@smc L\kern-.035em I}\kern-.05em\TeX}}
+}  
+\def\LaTeX{\La\kern -0.10em \TeX}
+\font\manual=logo10 \def\MF{{\manual META}\-{\manual FONT}}
+\def\PiCTeX{\PiC\kern-.08em\TeX}
+
+
+\def\bull{\vrule height 1ex width .8ex depth -.2ex } \def\cents{{\rm\raise.05ex\rlap{\kern.075em$\scriptstyle/$}c}}
+\def\Mc{\setbox\TestBox=\hbox{M}M\kern -0.1em
+        \vbox to\ht\TestBox{\hbox{c}\vfil}}
+\def\qed{\ifhmode\unskip\nobreak\fi\ifmmode\ifinner\else\hskip5\p@\fi\fi
+        \hbox{\hskip5\p@\vrule width4\p@ height6\p@
+          depth1.5\p@\hskip\p@}}
+\def\registered{{\ooalign
+    {\hfil\raise.07ex\hbox{\smaller\smaller\smaller\smaller R}\hfil
+      \crcr\mathhexbox20D}}}
+
+\def\sla{/}     \def\lt{<}
+\def\gt{>}
+
+\def\bsl{{\tt \char92\relax}}  \def\lbr{{\tt \char123\relax}}  \def\rbr{{\tt \char125\relax}}  
+\def\d@sh#1{\nobreak\thinspace#1\penalty\z@\thinspace}
+\def\dash{\d@sh{--}}
+\def\Dash{\d@sh{---}}
+
+
+\def\permille{{\smaller\raisebox{0.6ex}{\smaller\smaller 0}        \hspace{-0.1em}\raisebox{0.1ex}{/}\hspace{-0.05em}        \smaller\smaller 00}}
+
+\def\!{\protect\pshriek}
+\def\pshriek{\relax \ifmmode \mskip -\thinmuskip\else \negthinspace \fi}
+
+\newbox\shadbox
+\newdimen\sht  
+\newdimen\shboxsep  \newdimen \shparboxsep
+\newdimen\shdim     \newdimen \shpardim
+\newdimen\shboxrule  
+\shboxsep  = 3pt    \shparboxsep = 10pt
+\shdim     = 1.5pt  \shpardim    = 4pt
+\shboxrule = 0.4pt
+\def\@shadowbox#1{\setbox\@tempboxa\hbox{#1}\setbox\shadbox\hbox{\@tempdima = \shboxrule
+    \advance \@tempdima \shboxsep  \advance \@tempdima \dp\@tempboxa
+    \hbox{\lower\@tempdima \hbox
+        {\vbox{\hrule \@height\shboxrule
+           \hbox{\vrule \@width\shboxrule \hskip\shboxsep
+           	\vbox{\vskip\shboxsep \box\@tempboxa \vskip\shboxsep}		\hskip\shboxsep
+		\vrule \@width\shboxrule}            \hrule \@height\shboxrule}}}}\sht=\ht\shadbox  \advance \sht -\shdim
+\@tempdima = \dp\shadbox  \advance \@tempdima \shdim
+\leavevmode 
+\lower \@tempdima \hbox
+    {\vbox{\baselineskip=0pt  \lineskip=0pt
+     \hbox{\copy\shadbox \vrule width\shdim height\sht}     \hbox{\kern\shdim  \vrule height\shdim width\wd\shadbox}}}}
+
+\def\shbox#1{\@shadowbox{#1}}
+
+\def\shparbox#1#2{{\shboxsep=\shparboxsep \shdim=\shpardim 
+	\@shadowbox{\vbox{\hsize=#1\relax 
+	\advance \hsize -2\shboxsep  \advance \hsize -2\shboxrule
+	\advance \hsize -\shdim \noindent #2}}}}
+
+\ifx \yen        \undefined 
+\def\setboxz@h{\setbox\z@\hbox}
+\def\wdz@{\wd\z@}
+
+
+
+\expandafter\chardef\csname pre amssym.def at\endcsname=\the\catcode`\@
+\catcode`\@=11
+
+
+\def\undefine#1{\let#1\undefined}
+\def\newsymbol#1#2#3#4#5{\let\next@\relax
+ \ifnum#2=\@ne\let\next@\msafam@\else
+ \ifnum#2=\tw@\let\next@\msbfam@\fi\fi
+ \mathchardef#1="#3\next@#4#5}
+\def\mathhexbox@#1#2#3{\relax
+ \ifmmode\mathpalette{}{\m@th\mathchar"#1#2#3} \else\leavevmode\hbox{$\m@th\mathchar"#1#2#3$}\fi}
+\def\hexnumber@#1{\ifcase#1 0\or 1\or 2\or 3\or 4\or 5\or 6\or 7\or 8\or
+ 9\or A\or B\or C\or D\or E\or F\fi}
+
+\font\tenmsa=msam10
+\font\sevenmsa=msam7
+\font\fivemsa=msam5
+\newfam\msafam
+\textfont\msafam=\tenmsa
+\scriptfont\msafam=\sevenmsa
+\scriptscriptfont\msafam=\fivemsa
+\edef\msafam@{\hexnumber@\msafam}
+\mathchardef\dabar@"0\msafam@39
+\def\dashrightarrow{\mathrel{\dabar@\dabar@\mathchar"0\msafam@4B}}
+\def\dashleftarrow{\mathrel{\mathchar"0\msafam@4C\dabar@\dabar@}}
+\let\dasharrow\dashrightarrow
+\def\ulcorner{\delimiter"4\msafam@70\msafam@70 }
+\def\urcorner{\delimiter"5\msafam@71\msafam@71 }
+\def\llcorner{\delimiter"4\msafam@78\msafam@78 }
+\def\lrcorner{\delimiter"5\msafam@79\msafam@79 }
+\def\yen{{\mathhexbox@\msafam@55}}
+\def\checkmark{{\mathhexbox@\msafam@58}}
+\def\circledR{{\mathhexbox@\msafam@72}}
+\def\maltese{{\mathhexbox@\msafam@7A}}
+
+\font\tenmsb=msbm10
+\font\sevenmsb=msbm7
+\font\fivemsb=msbm5
+\newfam\msbfam
+\textfont\msbfam=\tenmsb
+\scriptfont\msbfam=\sevenmsb
+\scriptscriptfont\msbfam=\fivemsb
+\edef\msbfam@{\hexnumber@\msbfam}
+\def\Bbb#1{\fam\msbfam\relax#1}
+\def\widehat#1{\setboxz@h{$\m@th#1$} \ifdim\wdz@>\tw@ em\mathaccent"0\msbfam@5B{#1} \else\mathaccent"0362{#1}\fi}
+\def\widetilde#1{\setboxz@h{$\m@th#1$} \ifdim\wdz@>\tw@ em\mathaccent"0\msbfam@5D{#1} \else\mathaccent"0365{#1}\fi}
+\font\teneufm=eufm10
+\font\seveneufm=eufm7
+\font\fiveeufm=eufm5
+\newfam\eufmfam
+\textfont\eufmfam=\teneufm
+\scriptfont\eufmfam=\seveneufm
+\scriptscriptfont\eufmfam=\fiveeufm
+\def\frak#1{{\fam\eufmfam\relax#1}}
+\let\goth\frak
+
+\catcode`\@=\csname pre amssym.def at\endcsname
+
+\fi
+\ifx \@def@psm   \undefined        \fi
+\ifx \currency   \undefined \font\tenwasy = wasy10
+\font\ninewasy = wasy9
+\font\eightwasy = wasy8
+\font\sevenwasy = wasy7
+\font\fivewasy = wasy5
+
+\def \tensy{\family{cmsy}\series{m}\normalshape}
+
+\newfam\wasyfam
+\newcount\wasyfamcount
+\wasyfamcount=\wasyfam \multiply\wasyfamcount by 256
+\def\wasy{\fam\wasyfam\tenwasy}
+\textfont\wasyfam=\tenwasy
+\scriptfont\wasyfam=\sevenwasy
+\scriptscriptfont\wasyfam=\fivewasy
+\def\overstrike#1#2{{\setbox0\hbox{$#2$}\hbox to \wd0{\hss
+    $#1$\hss}\kern-\wd0\box0}}
+\def\male{\hbox{\wasy\char"1A}}
+\def\female{\hbox{\wasy\char"19}}
+\def\currency{{\wasy\char"1B}}
+\def\phone{{\wasy\char"07}}
+\def\recorder{{\wasy\char"06}}
+\def\clock{{\wasy\char"1C}}
+\def\lightning{{\wasy\char"12}}
+\def\pointer{{\wasy\char"09}}
+\def\RIGHTarrow{{\wasy\char"11}}
+\def\LEFTarrow{{\wasy\char"10}}
+\def\UParrow{{\wasy\char"4B}}
+\def\DOWNarrow{{\wasy\char"4C}}
+\def\AC{\hbox{\kern0.5pt\wasy\char"3A\kern0.5pt}}
+\def\HF{\lower0.9pt\hbox to 0pt{\kern0.5pt\wasy\char"3A\hss}        \raise0.9pt\hbox{\kern0.5pt\wasy\char"3A\kern0.5pt}}
+\def\VHF{\hbox{\wasy\char"40}}
+\def\Box{\hbox{\wasy\char"32}}\let\Square\Box
+\def\XBox{\hbox{\wasy\char"34}}
+\def\Diamond{\hbox{\wasy\char"33}}
+\def\hexagon{\hbox{\wasy\char"37}}
+\def\pentagon{\hbox{\wasy\char"44}}
+\def\octagon{\hbox{\wasy\char"38}}
+\def\varhexagon{\hbox{\wasy\char"39}}
+\def\hexstar{\hbox{\wasy\char"41}}
+\def\varhexstar{\hbox{\wasy\char"42}}
+\def\davidsstar{\hbox{\wasy\char"43}}
+\def\diameter{\hbox{\wasy\char"1F}}
+\def\invdiameter{\hbox{\wasy\char"15}}
+\def\varangle{\hbox{\wasy\char"1E}}
+\def\lozenge{\hbox{\wasy\char"35}}
+\def\kreuz{\hbox{\wasy\char"36}}
+\def\smiley{\hbox{\wasy\char"01}}
+\def\frownie{\hbox{\wasy\char"04}}
+\def\blacksmiley{\hbox{\wasy\char"02}}
+\def\sun{\hbox{\wasy\char"03}}
+\def\checked{\hbox{\wasy\char"08}}
+\def\bell{\hbox{\wasy\char"0A}}
+\def\eighthnote{\hbox{\wasy\char"0B}}
+\def\quarternote{\hbox{\wasy\char"0C}}
+\def\halfnote{\hbox{\wasy\char"0D}}
+\def\fullnote{\hbox{\wasy\char"0E}}
+\def\twonotes{\hbox{\wasy\char"0F}}
+\def\brokenvert{\hbox{\wasy\char"7C}}
+\def\therefore{\hbox{\wasy\char"05}}
+\def\Circle{\hbox{\wasy\char"23}}
+\def\CIRCLE{\hbox{\wasy\char"20}}
+\def\Leftcircle{\hbox{\wasy\char"49}}
+\def\LEFTCIRCLE{\hbox{\wasy\char"47}}
+\def\Rightcircle{\hbox{\wasy\char"4A}}
+\def\RIGHTCIRCLE{\hbox{\wasy\char"48}}
+\def\LEFTcircle{\hbox to 0pt{\wasy\char"47\hss}\hbox{\wasy\char"23}}
+\def\RIGHTcircle{\hbox to 0pt{\wasy\char"48\hss}\hbox{\wasy\char"23}}
+\def\aries{\hbox{\wasy\char"17}}
+\def\ascnode{\hbox{\wasy\char"13}}
+\def\descnode{\hbox{\wasy\char"14}}
+\def\fullmoon{\hbox{\wasy\char"23}}
+\def\newmoon{\hbox{\wasy\char"20}}
+\def\leftmoon{\hbox{\wasy\char"24}}
+\def\rightmoon{\hbox{\wasy\char"25}}
+\def\astrosun{\hbox{\tensy\char"0C}}
+\def\mercury{\hbox{\wasy\char"27}}
+\def\venus{\raise0.2ex\hbox{\wasy\char"19}}
+\def\earth{\lower0.3ex\hbox{\wasy\char"26}}
+\def\mars{\lower0.2ex\hbox{\wasy\char"1A}}
+\def\jupiter{\hbox{\wasy\char"28}}
+\def\saturn{\hbox{\wasy\char"29}}
+\def\uranus{\hbox{\wasy\char"2A}}
+\def\neptune{\hbox{\wasy\char"2B}}
+\def\pluto{\hbox{\wasy\char"30}}
+\def\APLstar{{\hbox{\wasy\char"45}}}
+\def\APLlog{{\hbox{\wasy\char"16}}}
+\def\APLbox{{\hbox{\wasy\char"7E}}}
+\def\APLup{{\hbox{\wasy\char"00}}}
+\def\APLdown{{\hbox{\wasy\char"46}}}
+\def\APLinput{{\hbox{\wasy\char"7D}}}
+\def\APLcomment{{\hbox{\wasy\char"7F}}}
+\def\APLinv{{\hbox to 0pt{\tensy\char"04\hss}\APLbox}}
+\def\APLuparrowbox{{\hbox{\wasy\char"6E}}}
+\def\APLdownarrowbox{{\hbox{\wasy\char"6F}}}
+\def\APLleftarrowbox{{\hbox{\wasy\char"70}}}
+\def\APLrightarrowbox{{\hbox{\wasy\char"71}}}
+\def\notbackslash{\overstrike{\backslash}{-}}
+\def\notslash{\overstrike{/}{-}}
+\def\APLnot#1{\overstrike{\sim}{#1}}
+\def\APLcirc#1{\overstrike{\circ}{#1}}
+\def\APLvert#1{\overstrike{\vert}{#1}}
+\def\APLminus{\raise0.7ex\hbox{$-$}}
+\def\photon{\hbox{\wasy\char"3A\char"3A\char"3A\char"3A}}
+\def\gluon{\hbox{\wasy\char"51\char"50\char"50\char"50    \char"50\char"50\char"50\char"52}}
+\def\Bowtie{\hbox{\wasy\char"31}}
+\def\leftturn{\hbox{\wasy\char"22}}
+\def\rightturn{\hbox{\wasy\char"21}}
+\def\wasymathchardef#1#2{    \count"FF=\wasyfamcount
+    \advance\count"FF by"#1
+    \mathchardef#2\count"FF}
+\wasymathchardef{302C}{\lhd}
+\wasymathchardef{302E}{\rhd}
+\wasymathchardef{3010}{\LHD}
+\wasymathchardef{3011}{\RHD}
+\wasymathchardef{302D}{\unlhd}
+\wasymathchardef{302F}{\unrhd}
+\wasymathchardef{303C}{\sqsubset}
+\wasymathchardef{303D}{\sqsupset}
+\wasymathchardef{303E}{\apprle}
+\wasymathchardef{303F}{\apprge}
+\wasymathchardef{301D}{\varpropto}
+\wasymathchardef{0018}{\invneg}
+\wasymathchardef{303B}{\leadsto}
+\wasymathchardef{2023}{\ocircle}
+\wasymathchardef{3016}{\logof}
+\wasymathchardef{1072}{\varint}
+\wasymathchardef{1073}{\iint}
+\wasymathchardef{1074}{\iiint}
+\wasymathchardef{1075}{\varoint}
+\wasymathchardef{1076}{\oiint}
+\def\newpropto{\let\propto\varpropto}
+\def\newint{\let\int\varint \let\oint\varoint}   \fi
+\ifx \@def@uwcyr \undefined      \fi
+
+\def \brokenbar{\leavevmode
+  \kern 0.3em 
+  \vrule width 0.6pt height 0.4ex depth 0.4ex
+  \kern -0.6pt
+  \vrule width 0.6pt height 1.4ex depth -0.6ex
+  \kern 0.3em }
+
+\def \get@iso@char #1#2#3{\ifmmode #2\else #3\fi}
+
+\def \iso@def #1#2#3{\expandafter \def \csname iso@def@#1\endcsname{    \get@iso@char{#1}{#2}{#3}}  }
+
+\def \make@quote #1{  \setbox1=\hbox{#1}  \setbox2=\hbox{#1#1}  \ifdim \wd2 < 1.5\wd1 
+    #1#1  \else
+    {\fontfamily{UWCyr}\selectfont #1}\fi
+}
+
+\def \make@quote@left  {\make@quote{<}}
+\def \make@quote@right {\make@quote{>}}
+
+\catcode"A0=\active  \let ^^a0 = ~
+\iso@def{A1}{\mbox{\it\char"BD }}{\char"BD }
+  \catcode"A1=\active  \def^^a1{\csname iso@def@A1\endcsname}
+\iso@def{A2}{\mbox{\cents}}{\cents}
+  \catcode"A2=\active  \def^^a2{\csname iso@def@A2\endcsname}
+\iso@def{A3}{\mbox{\it\pounds}}{\pounds}
+  \catcode"A3=\active  \def^^a3{\csname iso@def@A3\endcsname}
+\iso@def{A4}{\mbox{\currency}}{\currency}
+  \catcode"A4=\active  \def^^a4{\csname iso@def@A4\endcsname}
+\iso@def{A5}{\mbox{\yen}}{\yen}
+  \catcode"A5=\active  \def^^a5{\csname iso@def@A5\endcsname}
+\iso@def{A6}{\brokenbar}{\brokenbar}
+  \catcode"A6=\active  \def^^a6{\csname iso@def@A6\endcsname}
+\iso@def{A7}{\S}{\S}
+  \catcode"A7=\active  \def^^a7{\csname iso@def@A7\endcsname}
+\iso@def{A8}{\ddot{}}{\"{}}
+  \catcode"A8=\active  \def^^a8{\csname iso@def@A8\endcsname}
+\iso@def{A9}{\mbox{\fontfamily{pssymu}\selectfont c}}            {{\fontfamily{pssymu}\selectfont c}}
+  \catcode"A9=\active  \def^^a9{\csname iso@def@A9\endcsname}
+\iso@def{AA}{^{a}}{$^{\mbox{\normalshape\scriptsize a}}$}
+  \catcode"AA=\active  \def^^aa{\csname iso@def@AA\endcsname}
+\iso@def{AB}{\ll}{\make@quote@left}
+  \catcode"AB=\active  \def^^ab{\csname iso@def@AB\endcsname}
+\iso@def{AC}{\lnot}{$\lnot$}
+  \catcode"AC=\active  \def^^ac{\csname iso@def@AC\endcsname}
+\catcode"AD=\active  \let ^^ad = \-
+\iso@def{AE}{\mbox{\fontfamily{pssymu}\selectfont b}}            {{\fontfamily{pssymu}\selectfont b}}
+  \catcode"AE=\active  \def^^ae{\csname iso@def@AE\endcsname}
+\iso@def{AF}{\bar{}}{\={}}
+  \catcode"AF=\active  \def^^af{\csname iso@def@AF\endcsname}
+\iso@def{B0}{^{\circ}}{$^{\circ}$}
+  \catcode"B0=\active  \def^^b0{\csname iso@def@B0\endcsname}
+\iso@def{B1}{\pm}{$\pm$}
+  \catcode"B1=\active  \def^^b1{\csname iso@def@B1\endcsname}
+\iso@def{B2}{^2}{$^{\mbox{\normalshape\scriptsize 2}}$}
+  \catcode"B2=\active  \def^^b2{\csname iso@def@B2\endcsname}
+\iso@def{B3}{^3}{$^{\mbox{\normalshape\scriptsize 3}}$}
+  \catcode"B3=\active  \def^^b3{\csname iso@def@B3\endcsname}
+\iso@def{B4}{\acute{}}{\'{}}
+  \catcode"B4=\active  \def^^b4{\csname iso@def@B4\endcsname}
+\iso@def{B5}{\mu}{$\mu$}
+  \catcode"B5=\active  \def^^b5{\csname iso@def@B5\endcsname}
+\iso@def{B6}{\P}{\P}
+  \catcode"B6=\active  \def^^b6{\csname iso@def@B6\endcsname}
+\iso@def{B7}{\cdot}{$\cdot$}
+  \catcode"B7=\active  \def^^b7{\csname iso@def@B7\endcsname}
+\iso@def{B8}{\mbox{\char"0B }}{\char"0B }
+  \catcode"B8=\active  \def^^b8{\csname iso@def@B8\endcsname}
+\iso@def{B9}{^1}{$^{\mbox{\normalshape\scriptsize 1}}$}
+  \catcode"B9=\active  \def^^b9{\csname iso@def@B9\endcsname}
+\iso@def{BA}{^{o}}{$^{\mbox{\normalshape\scriptsize o}}$}
+  \catcode"BA=\active  \def^^ba{\csname iso@def@BA\endcsname}
+\iso@def{BB}{\gg}{\make@quote@right}
+  \catcode"BB=\active  \def^^bb{\csname iso@def@BB\endcsname}
+\iso@def{BC}{1\over4}{$1\over4$}
+  \catcode"BC=\active  \def^^bc{\csname iso@def@BC\endcsname}
+\iso@def{BD}{1\over2}{$1\over2$}
+  \catcode"BD=\active  \def^^bd{\csname iso@def@BD\endcsname}
+\iso@def{BE}{3\over4}{$3\over4$}
+  \catcode"BE=\active  \def^^be{\csname iso@def@BE\endcsname}
+\iso@def{BF}{\mbox{\it\char"BE }}{\char"BE }
+  \catcode"BF=\active  \def^^bf{\csname iso@def@BF\endcsname}
+\iso@def{D7}{\times}{$\times$}
+  \catcode"D7=\active  \def^^d7{\csname iso@def@D7\endcsname}
+\iso@def{DF}{\mbox{\it \ss}}{\ss}
+  \catcode"DF=\active  \def^^df{\csname iso@def@DF\endcsname}
+\iso@def{F7}{\div}{$\div$}
+  \catcode"F7=\active  \def^^f7{\csname iso@def@F7\endcsname}
+\iso@def{FF}{\ddot{y}}{\"y}
+  \catcode"FF=\active  \def^^ff{\csname iso@def@FF\endcsname}
+\def\fileversion{0.92}
+\def\filedate{92/10/02}
+\setlength{\parskip}{0.3cm}
+\setlength{\parindent}{0cm}
+\pagestyle{empty}
+\psset{fillstyle=solid,fillcolor=lightgray}
+
+\title{\Blue{ \Huge\sl Internet som  annonsemedium og salgskanal for varer og tjenester  \\ 
+\vspace{1cm}
+\Large\rm UNINETT-94\\ 
+\vspace{0.6cm}}
+\centerline{\psfig{figure=uninett.logo.eps,width=6cm}}}
+\vspace{0.6cm}
+
+\author{Steinar Kjærnsrød,\\ 
+{\tt steinar@oslonett.no}\\ 
+\vspace{0.6cm}
+\centerline{\psfig{figure=logo.eps,width=6cm}} 
+}
+
+\def\A@def {}\def\fileversion{1.1.2}\def\filedate{04 November 1993}\def\docdate{16 february 1992}\def\background#1{\special{background #1}}\def\subdef#1{\gdef\globalColor##1{\special
+       {color push #1}##1\special{color pop}}}\def\textColor#1{\subdef{cmyk #1}\special{color cmyk #1}}\def\Color#1#2{\special{color push cmyk #1}#2\special{color pop}}\def\newColor #1 {\expandafter\def \csname #1\endcsname##1{\special
+   {color push #1}##1\special{color pop}}
+   \expandafter\def \csname text#1\endcsname{\subdef{#1}
+    \special{color #1}}}\def\rmdefault {psmtim}\def\bfdefault {b}\def\sldefault {it}\def\sfdefault {psmhlv}\def\ttdefault {psmcou}\def\timeofday{\@hours=\time  \@minutes=\time
+  \divide \@hours by 60
+  \the\@hours \iflanguage{norsk}{.}{:}  \multiply \@hours by 60
+  \advance \@minutes by -\@hours
+  \ifnum \@minutes<10 0\fi
+  \the\@minutes}\def\subparagraph{\@startsection
+ {subparagraph}{5}{\parindent}{3.25ex plus 1ex minus 
+ .2ex}{-1em}{\normalsize\bf}}\def\big#1{{\hbox{$\left#1\vcenter to 1.428\ht\strutbox{}\right.\n@space$}}}\def\Big#1{{\hbox{$\left#1\vcenter to 2.142\ht\strutbox{}\right.\n@space$}}}\def\bigg#1{{\hbox{$\left#1\vcenter to 2.857\ht\strutbox{}\right.\n@space$}}}\def\Bigg#1{{\hbox{$\left#1\vcenter to 3.571\ht\strutbox{}\right.\n@space$}}}\def\magstep#1{\ifcase#1 1000\or 1200\or 1440\or 1728\or                          2074\or 2488\or 2986\or 3583\or                          4300\or 5160\or 6192\or 7430\fi                          \relax}\def\sloppy{\tolerance 9999 \hfuzz .5\p@ \vfuzz .5\p@        \hbadness=\tolerance \pretolerance=\tolerance \relax}\def\AmSTeX{{\the\textfont2 A}\kern-.1667em\lower.5ex\hbox
+        {\the\textfont2 M}\kern-.125em{\the\textfont2 S}-\TeX}\def\La{\Test@Count=\the\fam \leavevmode L\raise.42ex
+        \hbox{$\fam\Test@Count\scriptstyle\kern-.3em A$}}\def\BibTeX{{\rm B\kern-.05em{\fix@smc i\kern-.025emb}\kern-.08em\TeX}}\def\mf{{\fix@smc Metafont}}\def\nLaTeX{n\LaTeX}\def\PiC{P\kern-.12em\lower.5ex\hbox{I}\kern-.075em C}\def\SliTeX{{\rm S\kern-.06em{\fix@smc l\kern-.035emi}\kern-.06em\TeX}}\def\fix@smc{\smaller\smaller\smaller}\def\La{\leavevmode L\raise 0.42ex\hbox{\fix@smc \kern -0.35em A}}\def\BibTeX{{\rm B\kern-.03em{\fix@smc I\kern-.025em B}\kern-.05em}\TeX}\def\mf{M{\fix@smc ETAFONT}}\def\nLaTeX{{\fix@smc N}\kern -0.08em\LaTeX}\def\PiC{P\kern-.12em\lower.5ex\hbox{\fix@smc I}\kern-.06em C}\def\SliTeX{{\rm S\kern-.06em{\fix@smc L\kern-.035em I}\kern-.05em\TeX}}\def\LaTeX{\La\kern -0.10em \TeX}\def\MF{{\manual META}\-{\manual FONT}}\def\PiCTeX{\PiC\kern-.08em\TeX}\def\bull{\vrule height 1ex width .8ex depth -.2ex }\def\cents{{\rm\raise.05ex\rlap{\kern.075em$\scriptstyle/$}c}}\def\Mc{\setbox\TestBox=\hbox{M}M\kern -0.1em
+        \vbox to\ht\TestBox{\hbox{c}\vfil}}\def\qed{\ifhmode\unskip\nobreak\fi\ifmmode\ifinner\else\hskip5\p@\fi\fi
+        \hbox{\hskip5\p@\vrule width4\p@ height6\p@
+          depth1.5\p@\hskip\p@}}\def\registered{{\ooalign
+    {\hfil\raise.07ex\hbox{\smaller\smaller\smaller\smaller R}\hfil
+      \crcr\mathhexbox20D}}}\def\sla{/}\def\lt{<}\def\gt{>}\def\bsl{{\tt \char92\relax}}\def\lbr{{\tt \char123\relax}}\def\rbr{{\tt \char125\relax}}\def\d@sh#1{\nobreak\thinspace#1\penalty\z@\thinspace}\def\dash{\d@sh{--}}\def\Dash{\d@sh{---}}\def\permille{{\smaller\raisebox{0.6ex}{\smaller\smaller 0}        \hspace{-0.1em}\raisebox{0.1ex}{/}\hspace{-0.05em}        \smaller\smaller 00}}\def\protect\!{\pshriek}\def\pshriek{\relax \ifmmode \mskip -\thinmuskip\else \negthinspace \fi}\def\@shadowbox#1{\setbox\@tempboxa\hbox{#1}\setbox\shadbox\hbox{\@tempdima = \shboxrule
+    \advance \@tempdima \shboxsep  \advance \@tempdima \dp\@tempboxa
+    \hbox{\lower\@tempdima \hbox
+        {\vbox{\hrule \@height\shboxrule
+           \hbox{\vrule \@width\shboxrule \hskip\shboxsep
+           	\vbox{\vskip\shboxsep \box\@tempboxa \vskip\shboxsep}		\hskip\shboxsep
+		\vrule \@width\shboxrule}            \hrule \@height\shboxrule}}}}\sht=\ht\shadbox  \advance \sht -\shdim
+\@tempdima = \dp\shadbox  \advance \@tempdima \shdim
+\leavevmode 
+\lower \@tempdima \hbox
+    {\vbox{\baselineskip=0pt  \lineskip=0pt
+     \hbox{\copy\shadbox \vrule width\shdim height\sht}     \hbox{\kern\shdim  \vrule height\shdim width\wd\shadbox}}}}\def\shbox#1{\@shadowbox{#1}}\def\shparbox#1#2{{\shboxsep=\shparboxsep \shdim=\shpardim 
+	\@shadowbox{\vbox{\hsize=#1\relax 
+	\advance \hsize -2\shboxsep  \advance \hsize -2\shboxrule
+	\advance \hsize -\shdim \noindent #2}}}}\def\setboxz@h{\setbox\z@\hbox}\def\wdz@{\wd\z@}\def\undefine#1{\let#1\undefined}\def\newsymbol#1#2#3#4#5{\let\next@\relax
+ \ifnum#2=\@ne\let\next@\msafam@\else
+ \ifnum#2=\tw@\let\next@\msbfam@\fi\fi
+ \mathchardef#1="#3\next@#4#5}\def\mathhexbox@#1#2#3{\relax
+ \ifmmode\mathpalette{}{\m@th\mathchar"#1#2#3} \else\leavevmode\hbox{$\m@th\mathchar"#1#2#3$}\fi}\def\hexnumber@#1{\ifcase#1 0\or 1\or 2\or 3\or 4\or 5\or 6\or 7\or 8\or
+ 9\or A\or B\or C\or D\or E\or F\fi}\def\dashrightarrow{\mathrel{\dabar@\dabar@\mathchar"0\msafam@4B}}\def\dashleftarrow{\mathrel{\mathchar"0\msafam@4C\dabar@\dabar@}}\def\ulcorner{\delimiter"4\msafam@70\msafam@70 }\def\urcorner{\delimiter"5\msafam@71\msafam@71 }\def\llcorner{\delimiter"4\msafam@78\msafam@78 }\def\lrcorner{\delimiter"5\msafam@79\msafam@79 }\def\yen{{\mathhexbox@\msafam@55}}\def\checkmark{{\mathhexbox@\msafam@58}}\def\circledR{{\mathhexbox@\msafam@72}}\def\maltese{{\mathhexbox@\msafam@7A}}\def\Bbb#1{\fam\msbfam\relax#1}\def\widehat#1{\setboxz@h{$\m@th#1$} \ifdim\wdz@>\tw@ em\mathaccent"0\msbfam@5B{#1} \else\mathaccent"0362{#1}\fi}\def\widetilde#1{\setboxz@h{$\m@th#1$} \ifdim\wdz@>\tw@ em\mathaccent"0\msbfam@5D{#1} \else\mathaccent"0365{#1}\fi}\def\frak#1{{\fam\eufmfam\relax#1}}\def\tensy {\family{cmsy}\series{m}\normalshape}\def\wasy{\fam\wasyfam\tenwasy}\def\overstrike#1#2{{\setbox0\hbox{$#2$}\hbox to \wd0{\hss
+    $#1$\hss}\kern-\wd0\box0}}\def\male{\hbox{\wasy\char"1A}}\def\female{\hbox{\wasy\char"19}}\def\currency{{\wasy\char"1B}}\def\phone{{\wasy\char"07}}\def\recorder{{\wasy\char"06}}\def\clock{{\wasy\char"1C}}\def\lightning{{\wasy\char"12}}\def\pointer{{\wasy\char"09}}\def\RIGHTarrow{{\wasy\char"11}}\def\LEFTarrow{{\wasy\char"10}}\def\UParrow{{\wasy\char"4B}}\def\DOWNarrow{{\wasy\char"4C}}\def\AC{\hbox{\kern0.5pt\wasy\char"3A\kern0.5pt}}\def\HF{\lower0.9pt\hbox to 0pt{\kern0.5pt\wasy\char"3A\hss}        \raise0.9pt\hbox{\kern0.5pt\wasy\char"3A\kern0.5pt}}\def\VHF{\hbox{\wasy\char"40}}\def\Box{\hbox{\wasy\char"32}}\def\XBox{\hbox{\wasy\char"34}}\def\Diamond{\hbox{\wasy\char"33}}\def\hexagon{\hbox{\wasy\char"37}}\def\pentagon{\hbox{\wasy\char"44}}\def\octagon{\hbox{\wasy\char"38}}\def\varhexagon{\hbox{\wasy\char"39}}\def\hexstar{\hbox{\wasy\char"41}}\def\varhexstar{\hbox{\wasy\char"42}}\def\davidsstar{\hbox{\wasy\char"43}}\def\diameter{\hbox{\wasy\char"1F}}\def\invdiameter{\hbox{\wasy\char"15}}\def\varangle{\hbox{\wasy\char"1E}}\def\lozenge{\hbox{\wasy\char"35}}\def\kreuz{\hbox{\wasy\char"36}}\def\smiley{\hbox{\wasy\char"01}}\def\frownie{\hbox{\wasy\char"04}}\def\blacksmiley{\hbox{\wasy\char"02}}\def\sun{\hbox{\wasy\char"03}}\def\checked{\hbox{\wasy\char"08}}\def\bell{\hbox{\wasy\char"0A}}\def\eighthnote{\hbox{\wasy\char"0B}}\def\quarternote{\hbox{\wasy\char"0C}}\def\halfnote{\hbox{\wasy\char"0D}}\def\fullnote{\hbox{\wasy\char"0E}}\def\twonotes{\hbox{\wasy\char"0F}}\def\brokenvert{\hbox{\wasy\char"7C}}\def\therefore{\hbox{\wasy\char"05}}\def\Circle{\hbox{\wasy\char"23}}\def\CIRCLE{\hbox{\wasy\char"20}}\def\Leftcircle{\hbox{\wasy\char"49}}\def\LEFTCIRCLE{\hbox{\wasy\char"47}}\def\Rightcircle{\hbox{\wasy\char"4A}}\def\RIGHTCIRCLE{\hbox{\wasy\char"48}}\def\LEFTcircle{\hbox to 0pt{\wasy\char"47\hss}\hbox{\wasy\char"23}}\def\RIGHTcircle{\hbox to 0pt{\wasy\char"48\hss}\hbox{\wasy\char"23}}\def\aries{\hbox{\wasy\char"17}}\def\ascnode{\hbox{\wasy\char"13}}\def\descnode{\hbox{\wasy\char"14}}\def\fullmoon{\hbox{\wasy\char"23}}\def\newmoon{\hbox{\wasy\char"20}}\def\leftmoon{\hbox{\wasy\char"24}}\def\rightmoon{\hbox{\wasy\char"25}}\def\astrosun{\hbox{\tensy\char"0C}}\def\mercury{\hbox{\wasy\char"27}}\def\venus{\raise0.2ex\hbox{\wasy\char"19}}\def\earth{\lower0.3ex\hbox{\wasy\char"26}}\def\mars{\lower0.2ex\hbox{\wasy\char"1A}}\def\jupiter{\hbox{\wasy\char"28}}\def\saturn{\hbox{\wasy\char"29}}\def\uranus{\hbox{\wasy\char"2A}}\def\neptune{\hbox{\wasy\char"2B}}\def\pluto{\hbox{\wasy\char"30}}\def\APLstar{{\hbox{\wasy\char"45}}}\def\APLlog{{\hbox{\wasy\char"16}}}\def\APLbox{{\hbox{\wasy\char"7E}}}\def\APLup{{\hbox{\wasy\char"00}}}\def\APLdown{{\hbox{\wasy\char"46}}}\def\APLinput{{\hbox{\wasy\char"7D}}}\def\APLcomment{{\hbox{\wasy\char"7F}}}\def\APLinv{{\hbox to 0pt{\tensy\char"04\hss}\APLbox}}\def\APLuparrowbox{{\hbox{\wasy\char"6E}}}\def\APLdownarrowbox{{\hbox{\wasy\char"6F}}}\def\APLleftarrowbox{{\hbox{\wasy\char"70}}}\def\APLrightarrowbox{{\hbox{\wasy\char"71}}}\def\notbackslash{\overstrike{\backslash}{-}}\def\notslash{\overstrike{/}{-}}\def\APLnot#1{\overstrike{\sim}{#1}}\def\APLcirc#1{\overstrike{\circ}{#1}}\def\APLvert#1{\overstrike{\vert}{#1}}\def\APLminus{\raise0.7ex\hbox{$-$}}\def\photon{\hbox{\wasy\char"3A\char"3A\char"3A\char"3A}}\def\gluon{\hbox{\wasy\char"51\char"50\char"50\char"50    \char"50\char"50\char"50\char"52}}\def\Bowtie{\hbox{\wasy\char"31}}\def\leftturn{\hbox{\wasy\char"22}}\def\rightturn{\hbox{\wasy\char"21}}\def\wasymathchardef#1#2{    \count"FF=\wasyfamcount
+    \advance\count"FF by"#1
+    \mathchardef#2\count"FF}\def\newpropto{\let\propto\varpropto}\def\newint{\let\int\varint \let\oint\varoint}\def\brokenbar {\leavevmode
+  \kern 0.3em 
+  \vrule width 0.6pt height 0.4ex depth 0.4ex
+  \kern -0.6pt
+  \vrule width 0.6pt height 1.4ex depth -0.6ex
+  \kern 0.3em }\def\get@iso@char  #1#2#3{\ifmmode #2\else #3\fi}\def\iso@def  #1#2#3{\expandafter \def  \csname iso@def@#1\endcsname{    \get@iso@char{#1}{#2}{#3}}  }\def\make@quote  #1{  \setbox1=\hbox{#1}  \setbox2=\hbox{#1#1}  \ifdim \wd2 < 1.5\wd1 
+    #1#1  \else
+    {\fontfamily{UWCyr}\selectfont #1}\fi
+}\def\make@quote@left   {\make@quote{<}}\def\make@quote@right  {\make@quote{>}}\def\fileversion{0.92}\def\filedate{92/10/02}\newcommand{\href}{\htmladdnormallink}
+\renewcommand{\@evenhead}{\underline{\vbox{\hsize \textwidth \small
+      \bf Side \thepage \hfill UNINETT-94: «Internet som  annonsemedium og salgskanal for varer og tjenester»}}}\renewcommand{\@oddhead}{\@evenhead}\renewcommand{\@evenfoot}{\vbox{\vspace{0.5cm} \underline{\hbox{\hsize
+        \textwidth}{\rule{\textwidth}{0cm}}} \\  
+    \psframebox*{\parbox{\textwidth}{\Blue{ \bf \copyright~Oslonett A/S
+          \hfill
+          \raisebox{-0.5cm}{\psfig{figure=logo.eps,width=4cm}}
+          \hfill \today}}}}}\renewcommand{\@oddfoot}{\@evenfoot}
+\makeatother
+\newenvironment{tex2html_wrap}{}{}
+\setlength{\textheight}{10in}\begin{document}
+\pagestyle{empty}
+\newpage
+
+{\samepage \clearpage \special
+       {color push Black}\ 
+}
+
+
+\newpage
+
+{\samepage \clearpage \special{color pop}\ 
+}
+
+
+\newpage
+
+{\samepage \clearpage $\m@th\mathchar"\ms$
+}
+
+
+\newpage
+
+{\samepage \clearpage $\scriptstyle/$
+}
+
+
+\newpage
+
+{\samepage \clearpage $^{\mbox{\normalshape\scriptsize a}}$
+}
+
+
+\newpage
+
+{\samepage \clearpage $\lnot$
+}
+
+
+\newpage
+
+{\samepage \clearpage $^{\circ}$
+}
+
+
+\newpage
+
+{\samepage \clearpage $\pm$
+}
+
+
+\newpage
+
+{\samepage \clearpage $^{\mbox{\normalshape\scriptsize 2}}$
+}
+
+
+\newpage
+
+{\samepage \clearpage $^{\mbox{\normalshape\scriptsize 3}}$
+}
+
+
+\newpage
+
+{\samepage \clearpage $\mu$
+}
+
+
+\newpage
+
+{\samepage \clearpage $\cdot$
+}
+
+
+\newpage
+
+{\samepage \clearpage $^{\mbox{\normalshape\scriptsize 1}}$
+}
+
+
+\newpage
+
+{\samepage \clearpage $^{\mbox{\normalshape\scriptsize o}}$
+}
+
+
+\newpage
+
+{\samepage \clearpage $1\over4$
+}
+
+
+\newpage
+
+{\samepage \clearpage $1\over2$
+}
+
+
+\newpage
+
+{\samepage \clearpage $3\over4$
+}
+
+
+\newpage
+
+{\samepage \clearpage $\times$
+}
+
+
+\newpage
+
+{\samepage \clearpage $\div$
+}
+
+
+\newpage
+
+{\samepage \clearpage \psfig{figure=uninett.logo.eps,width=6cm}
+}
+
+
+\newpage
+
+{\samepage \clearpage \psfig{figure=logo.eps,width=6cm}
+}
+
+
+\stepcounter{section}
+\newpage
+
+{\samepage \clearpage \fbox{\psfig{figure=matrix.ps,width=13cm}}
+}
+
+
+\stepcounter{subsection}
+\newpage
+
+{\samepage \clearpage \TeX
+}
+
+
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\newpage
+
+{\samepage \clearpage \begin{figure}% latex2html id marker 500
+\centerline{\fbox{\psfig{figure=netvekst.ps,width=13cm} }}
+\caption{\it Vekst i antall tilknyttete nettverk}
+\end{figure}
+}
+
+
+\newpage
+
+{\samepage \clearpage \begin{figure}% latex2html id marker 506
+\centerline{\fbox{\psfig{figure=isn.ps,width=13cm} }}
+\caption{\it «Internet Shopping Network» -- et Internet kjøpesenter}
+\end{figure}
+}
+
+
+\newpage
+
+{\samepage \clearpage \begin{figure}% latex2html id marker 518
+\centerline{\fbox{\psfig{figure=webservere.ps,width=13cm} }}
+\caption{\it Økningen i antall Web servere}
+\end{figure}
+}
+
+
+\stepcounter{section}
+\stepcounter{section}
+\newpage
+
+{\samepage \clearpage \begin{figure}% latex2html id marker 546
+\centerline{\fbox{\psfig{figure=cdnow.ps,width=13cm} }}
+\caption{\it Enkeltbedrifter publiserer og selger via Internettet}
+\end{figure}
+}
+
+
+\stepcounter{section}
+\stepcounter{subsection}
+\newpage
+
+{\samepage \clearpage \begin{figure}% latex2html id marker 562
+\centerline{\fbox{\psfig{figure=OMP.ps,width=13cm} }}
+\caption{\it Oslonett Markedsplassen}
+\end{figure}
+}
+
+
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+
+\end{document}

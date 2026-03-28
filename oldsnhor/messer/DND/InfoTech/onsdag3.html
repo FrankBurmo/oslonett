@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>Hyllevareintegrasjon i produksjonsmiljø - objektorienterte arkitekturer</title>
+</head>
+<body>
+<img src=/graphics/DND.gif>
+<h1>Hyllevareintegrasjon i produksjonsmiljø - objektorienterte arkitekturer</h1>
+<p>
+<b>Hvordan planlegge for en framtid med objektvare?</b><p>
+<p>
+Et alternativ til egenutvikling er kjøp av hyllevarekomponenter
+("Objectware") med ønsket funksjonalitet, som vi plugger inn og ut i
+en systemarkitektur (programvarearkitektur) etter behov.<p>
+<p>
+Brukere stiller krav til høy tilgjengelighet av effektive, standardiserte
+løsninger. Egenutviklede systemer kan være kostbare og tidkrevende å
+vedlikeholde over tid. Dersom vedlikehold overlates til andre, kan ressursene
+istedet anvendes til grundigere analyser og forståelse for virksomheten og de
+områder som har behov for EDB-
+
+understøttelse.<p>
+<p>
+Men det er også ulemper ved å satse på et hyllevarekonsept. Eksempler på dette
+er overlappende og unødvendig funksjonalitet. Konfigurasjonsstyring og
+versjonskontroll blir meget viktig. Hvordan sikrer vi kvalitet på
+komponentene?<p>
+<p>
+For at hyllevarekomponenter (objekter) skal virke sammen må de kommunisere og
+utnytte ressurser over en felles arkitektur. Men på hvilket nivå er det
+ønskelig å integrere (i brukergrensesnittet, på databasenivå, ODBC/SQL, API
+osv)? Med ny teknologi (Object Linking and Embedding OLE og Common Object
+Request Broker Architecture CORBA) vil programvarekomponenter (objekter) kunne
+kalle hverandre på tvers av prosesser, programmeringsspråk, operativsystem,
+maskinvarearkitektur, nettverk osv. Deler av et program vil kunne skilles ut og
+gjøres tilgjengelige som en tjeneste på nettverket. Forutsetningen er at
+klientene har tilgang til en "Object Request Broker" som tar for seg
+adressering, parameterkonvertering, autentisering osv.<p>
+<p>
+Sesjonen vil forsøke å gi svar på hvordan man i dag kan planlegge for en
+objektvare fremtid.<p>
+<p>
+Målgruppe:	Strategiansvarlige (metoder/verktøy), prosjektledere,
+systemutviklere og systemintegratorer.<p>
+<p>
+Programkomit&eacute;:	DND's fagkomite for "Systemutvikling"
+ står bak
+denne konferansen og er representert ved fagsjef <p>
+	Frode Gether-Rønning,
+Forsvarets tele- og datatjeneste og seniorforsker Arne-Jørgen
+Berre, SINTEF informatikk.<p>
+<b><p>
+<hr>Onsdag 2. november 1994<hr></b><p>
+<dl>
+<dt>0900	Innledning<p>
+<dd>	Fagsjef Frode Gether-Rønning,
+        Forsvarets tele- og datatjeneste<p>
+<p>
+<dt>0915	Samvirkende systemer og arkitekturer<p>
+	<dd>Seniorforsker Arne-Jørgen Berre, SINTEF Informatikk<p>
+	Det blir presentert en referansemodell for systemintegrasjon, som 
+        inkluderer
+integrasjon gjennom database, kommunikasjon og brukergrensesnitt, samt bruk av
+arbeidsflyt. Det blir vist hvordan objektorientert tankegang kan benyttes i
+alle 4 integrasjonsdimensjonene, samt hvilke kommersielle teknologier og
+verktøy som er tilgjengelig.<p>
+<p>
+<dt>1015	Kaffe<p>
+<p>
+<dt>1030	Bruk av Unix Integrasjonsteknologi- OMG CORBA <p>
+	<dd>Forsker Jan Øyvind Aagedal, SINTEF Informatikk<p>
+	Introduksjon til Object Management Group's (OMG) integrasjonsteknologi
+        (CORBA) 
+        -Hva finnes tilgjengelig av kommersielle produkter i markedet basert 
+         på CORBA teknologi? Eksempler på løsninger.<p>
+<p>
+<dt>1130	Erfaringer fra et større operativt EDB prosjekt i
+	forsvaret - NORCCIS II<p>
+	<dd>Underdirektør Bjørn Taale Sandberg og Førstekonsulent  
+        Bjørn Hjelle,
+        Forsvarets tele- og datatjeneste<p>
+	En kort beskrivelse av prosjektet og de erfaringer man har hatt med 
+        TOOLTALK
+på veien mot CORBA. Det vil fokuseres på problemer man har i dag med å få til
+integrasjon mellom hyllevarekomponenter som plugges inn og ut i en åpen
+arkitektur.<p>
+<p>
+<dt>1230	Lunsj<p>
+<p>
+<dt>1330	Bruk av WINDOWS Integrasjonsteknologi -
+
+
+OLE 2.0<p>
+	<dd>Daglig leder S. Rana, Win.HLP<p>
+	Introduksjon til Microsofts integrasjonsteknologi -
+
+
+Hva finnes tilgjengelig av kommersielle produkter i markedet basert på OLE
+teknologi? Eksempler på løsninger.<p>
+<p>
+<dt>1430	Kaffe<p>
+<p>
+<dt>1445	Erfaringer med bruk av OLE 2.0 og ODBC i utvikling av et integrert
+prosjektoppfølgingssystem<p>
+	<dd>Forsker Espen Frimann Koren, SINTEF Informatikk<p>
+ 	Microsoft's Office Development Kit (ODK) gir et integrasjonsverktøy for
+hyllevareapplikasjoner som Word, Excel, Prosject m.fl.  Dette har bl.a. blitt
+benyttet til utvikling av et prosjektoppfølgingssystem ved SINTEF.<p>
+<p>
+<dt>1530	Et forslag til standard for integrasjon av "standard" pakker for
+administrative applikasjoner <p>
+	<dd>Cand.real. og daglig leder Truls Lindemann, NetIT AS<p>
+	Det eksisterer et behov for å kunne integrere pakker for ulike
+anvendelsesområder (regnskap, ordre/faktura, lønn osv.) slik at de kan utveksle
+felles data og opptre overfor brukeren med et enhetlig brukergrensesnitt.  For
+å oppnå dette trengs det standarder.  Foreningen av norske
+programvareprodusenter (PROFF), har tatt initiativ til å få etablert en slik
+standard.<p>
+<p>
+<dt>1600	Avslutning<p>
+<p>
+<p>
+<hr>
+<h5>Messeprogrammet er lagt opp av <p>
+<a href=/EXPO94/lev/Oslonett.html><img align=middle src=/EXPO94/gifs/oslonett.gif></a> 
+<h5>Oppdatert, 5. oktober 1994</h5>
+</body>
+</html>

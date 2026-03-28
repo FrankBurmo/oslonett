@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="124"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Handlingsplan for folkemusikk og dans"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Høgskolen i Telemark, Bø"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="kl. 1145 - 1245"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="8"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Høgskolen i Telemark"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Høgskolen i Telemark, Bø"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Åpen forelesning v/amanuensis Anne S. Haugan. Planen er resultatet av arbdeidet i ei nemnd med representanter fra de sentrale organisjonene og institusjonene i folkemusikk og dans i Norge. ` -->
+<!-- replace `<option(.*Telemark)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?14.10"?)\s*>` with `` checked>` -->

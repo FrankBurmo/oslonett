@@ -1,0 +1,55 @@
+#!/usr/bin/perl
+require 'getopts.pl';
+
+&Getopts ('f');
+
+&init_words;
+
+while (<>) {
+    push (@start, $_);
+    last if /<h1>/;
+}
+s/.*<h1>//;
+
+until (m%</h1>% || eof) {
+    $text .= $_;
+    $_ = <>;
+    push (@start, $_);
+}
+chop;
+s%</h1>.*%%;
+$text .= $_;
+
+
+grep (s%<title>xxx</title>%<title>$text</title>%&&1, @start);
+
+print @start;
+
+die ("$0: Fant ikke <h1>\n") if (eof);
+
+while (<>) {
+	while (($key, $val) = each %word) {
+	    if (defined $opt_f) {	# Bare første forekomst
+		if (s/\b$key\b/$val/i) {
+		    push (@del, $key);
+		}
+	    } else {			# alle forekomster
+		s/\b$key\b/$val/gi;
+	    }
+	}
+	while ($i = pop @del) { delete $word{$i}}
+	print;
+};
+
+
+sub init_words {
+    open (ORD, '/home/frogner/a/kgn/cw/lib/linker') || die $!;
+
+    while (<ORD>) {
+        next if /^#/ || /^$/;
+        chop;
+        /(.*)%(.*)/;
+        $word{$1} = $2;
+    }
+    close (ORD);
+}

@@ -1,0 +1,114 @@
+<html>
+<head>
+ <title>Fort og gæli eller sent men godt</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+
+
+
+<a href=cw953147.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/me/ts/cw/gifs/up.gif></a> <a href=cw953149.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a> <a href=/me/ts/cw/CW.html><img align=middle alt="[CW hjemmeside]" src=/me/ts/cw/gifs/cw.gif></a>  
+<hr>
+
+
+
+<h1>Fort og gæli eller sent men godt</h1>
+
+<b>Jeg har fått en rekke henvendelser etter kommentaren "Yessir, that's my
+baby" (CWN 27/95) om klient/tjener utviklingsverktøy. Her kommer mer.</b><p>
+<b></b><p>
+nn Først et par avklaringer. Jeg kalte Visual BASIC, PowerBuilder m.m. "første
+generasjon". Flere lesere påpekte at dette er forvirrende, og det beklager jeg.
+I den klassiske inndelingen av utviklingsverktøy var første generasjon de
+maskinnære språk, og de er for lengst ute av soga for de fleste. De verktøy jeg
+skrev om tilhører alle den fjerde generasjon (4GL) der trengselen er stor.
+Innen 4GL foregår det en kraftig utvikling som betyr at også der finnes
+generasjoner, og det var disse jeg kommenterte. <p>
+<p>
+nn Den andre avklaringen gjelder nivåene "Yessir" handlet om forskjellen på to
+og trenivå arkitekturer, og mange synes at dette med nivåer er uklart. Det er
+fordi nivåbegrepet kan brukes på to måter. Det benyttes ofte om den
+<i>fysiske</i> realiseringen, det vil si de maskiner som løsningen baserer seg
+på. Fysisk sett er nivå 1 arbeidsstasjonene på brukernes pulter, nivå 2 de
+lokale tjenermaskinene og nivå 3 de sentrale tjenermaskinene. En annen ting er
+den<i>logiske</i>  nivåinndelingen, det vil si hvordan selve systemet er
+oppdelt. Logisk sett har de fleste av dagens klient/tjener systemer bare to
+nivåer: Brukerdialogen og selve databehandlingen er den ene,
+databasehåndteringen den andre. På fagspråket kalles dette <i>remote data
+management. </i>Dette er en relativt enkel løsning som funker bra for mindre
+systemer. I systemer som er utviklet f.eks. med Visual BASIC eller PowerBuilder
+blir brukerdialogen og hele databehandlingen utført på PCene mens felles data
+blir hentet fra en database på en tjener. Det vil si at her faller de fysiske
+og logiske nivåene sammen, og jeg kommenterte den skaleringsmessige risikoen
+som dette innebærer. Vi gjør oss helt avhengig av PCens kapasitet. Vokser
+systemets funksjonalitet, slik den ofte gjør, kan PCene vise seg å bli for
+svake, og da må de skiftes eller bygges ut. Flere lesere har fortalt at dette
+er blitt et velkjent problem i deres bedrift.<p>
+<p>
+nn I en løsning som har tre nivåer blir databehandlingen delt i to: De
+brukernære funksjonene (som inneholder brukerdialogen og som ofte varierer fra
+bruker til bruker) er den ene, fellesfunksjonene den andre. Håndteringen av
+databasene er det tredje nivået. I dag er det vanlig å realisere en slik
+<i>logisk</i> trenivå-løsning på to <i>fysiske</i> nivåer: Brukernære
+funksjoner på PCer, de andre to på en tjenermaskin. Fordelen med denne modellen
+(som blir kalt <i>distributed function</i>) er at de mest kapasitetskrevende
+delene av behandlingen blir utført på en maskin som er beregnet på dette, og
+hvis den ikke har nok kraft er det relativt enkelt og rimelig å bygge den ut.
+<p>
+<p>
+nn Når det gjelder valg av utviklingsverktøy finnes det to situasjoner: Det kan
+være slik at man bruker ett verktøy for å programmere for PCen og et annet for
+tjenermaskinen eller at det samme verktøy dekker begge. Det siste er det mest
+fordelaktige fordi da behøver man ikke på forhånd beslutte hvordan delingen
+skal være, men man kan la erfaringene avgjøre hvilken deling som er den
+optimale. I en så uforutsigelig verden som systemutvikling er det beste
+prinsippet alltid: Når det ikke er påkrevet å treffe en beslutning da er det
+påkrevet å <i>ikke</i> treffe en beslutning. Foreløpig er det få verktøy som
+understøtter denne "dynamiske" delingsmodellen, men det er klart at utviklingen
+går i denne retningen. 4GL-verktøy kommer hovedsakelig fra to kilder:
+Uavhengige produsenter som Gupta eller Uniface og leverandører av
+relasjonsdatabase-systemer som Oracle eller Sybase. Spesielt fra
+konstellasjoner rundt databaseleverandørene (som kombinasjonen Sybase og
+PowerSoft) kan vi forvente verktøy som understøtter dynamisk deling. <p>
+<p>
+nn Så noen ord om systemutviklingen som prosess. Oppgaven kan gripes an på to
+måter: "Fort og gæli" eller "sent men godt". De fleste brukere foretrekker
+selvfølgelig at systemet skal bli fort ferdig, og det <i>finnes</i> situasjoner
+der fort og gæli er godt nok. Hva sent men godt er vet alle som har drevet med
+systemutvikling en stund eller har gått på kurs om metodisk, modelldrevet
+utvikling. "Fort og gæli" vil si at utviklerne blir enige med noen
+toneangivende brukere om en røff skisse av de viktigste behov, og de lager et
+system som dekker disse behov. Dette tar bare noen uker. Resultatet blir tatt i
+bruk av de samme, sterkt motiverte brukere, åpenbare feil blir rettet, systemet
+blir erklært en suksess og går inn i en tilstand av evige forbedringer.
+Begrepet versjon er ukjent, systemet blir en byggeplass, omtrent som å pusse
+opp et hus der familien allerede har flyttet inn. Utviklingen har gått fort og
+funksjonaliteten er rimelig god. Problemene med pålitlighet og skalerbarhet
+(dvs. når antall brukere, behandlingsregler og datavolumene begynner å innta
+skikkelige proporsjoner) vil ikke dukke opp før en god stund etter at selve
+"utviklingen" er avsluttet. Antallet driftsproblemer og rapporterte feil går
+ikke ned etter en innledende "burn-in" periode som den pleier, men holder seg
+på et konstant høyt nivå. Det viser seg ofte at systemet ikke klarer å betjene
+så mange brukere som det skal, men må kasseres og et bedre planlagt system må
+utvikles. Det er ikke urimelig å anta at 50% av de systemer som blir utviklet
+fort og gæli må erstattes i løpet av 1-2 år. Dette er i og for seg ingen
+tragedie, man kan skrive hele saken på kontoen for opplæring. Tragedie (eller
+farse) blir det først hvis man ikke innser at det lønner seg å kvitte seg med
+systemet, men overlater til IT-avdelingen å holde liv i det med kunstig
+åndedrett.<p>
+<p>
+<i>Du treffer meg på <a href=mailto:hidas@oslonett.no>hidas@oslonett.no</a></i><p>
+<p>
+<a href=cw953147.html><img align=middle alt="[Forrige artikkel]" src=/CW/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/CW/gifs/up.gif></a> <a href=cw953149.html><img alt="[Neste artikkel]" align=middle src=/CW/gifs/next.gif></a> 
+
+
+<pre><hr><a href=/cgi-bin/imagemap/CWartmap><img alt="[Image map not available]" src=/CW/gifs/artmap.gif ismap></A><hr></pre>
+<h5>
+<address>
+Artikkel automatisk generert, 25/08-95, kl. 09.18 <a href=/CW/kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

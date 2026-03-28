@@ -1,0 +1,7 @@
+title: Bare Internettbruk etter kl.17.00
+passwd: RShoKDfxXKXNc
+from: Tine, Elise og Hege (@pc28.pm2-2.eunet.no)
+host: pc28.pm2-2.eunet.no/193.71.29.28
+date: 22. februar 96 17:49:01
+body: Hei Simon og alle dere andre!    I v&aring;r familie f&aring;r ingen bruke Internett f&oslash;r etter kl.17.00, ettersom det er billigere &aring; bruke telefonlinjene da.  Derfor skulle vi &oslash;nske du kunne v&aelig;rt p&aring; nettet litt lenger enn til 18.00.   Hvis andre &oslash;nsker det samme, kanskje vi f&aring;r det til?   Hilsen Tine (9) Elise (4 i morgen 23.2.) og Hege (34).   Bes&oslash;k gjerne familiesiden v&aring;r, forresten: http://login.eunet.no/~hegeoy
+published: yes

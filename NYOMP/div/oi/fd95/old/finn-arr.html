@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Forskningsdagene '95 - Søk</title>
+</head>
+
+<body bgcolor=ffdd00>
+<center>
+<img src="gifs/fd95-logo.gif" alt="Forskningsdagene '95" >
+
+<h1>Søk etter arrangement</h1>
+
+<form action="cgi/finn-arr.cgi">
+
+<table border="5" cellpadding="10" cellspacing="10">
+<tr>
+ <td>
+  <b>Arrangement<br>eller tema:</b>
+ </td>
+ <td>
+  <input name="Arrangement" size=40>
+ </td>
+
+<tr>
+ <td>
+  <b>Institusjon:</b>
+ </td>
+ <td>
+  <input name="Institusjon" size=40>
+ </td>
+
+<tr>
+ <td>
+  <b>
+  Georafisk beliggenhet:<br>
+  Fylke og lokal<br>
+  beliggenhet (by, <br>
+  kommune el. annet)
+  </b>
+ </td>
+ <td>
+  <select name="Fylke">
+   <option> Akershus
+   <option> Aust-Agder
+   <option> Buskerud
+   <option> Finnmark
+   <option> Hedmark
+   <option> Hordaland
+   <option> Møre og Romsdal
+   <option> Nord-Trøndelag
+   <option> Nordland
+   <option> Oppland
+   <option> Oslo
+   <option> Rogaland
+   <option> Sogn og Fjordane
+   <option> Sør-Trøndelag
+   <option> Telemark
+   <option> Troms
+   <option> Vest-Agder
+   <option> Vestfold
+   <option> Østfold
+  </select>
+  <br>
+  <input name="Beliggenhet" size=40>
+ </td>
+
+<tr>
+ <td>
+  <b>Dag/dato:</b>
+ </td>
+ <td>
+  <table>
+   <tr valign=baseline>
+   <td>
+    <input type=checkbox name="Dato" value="1009"> Mandag 9.10<br>
+    <input type=checkbox name="Dato" value="1010"> Tirsdag 10.10<br>
+    <input type=checkbox name="Dato" value="1011"> Onsdag 11.10<br>
+    <input type=checkbox name="Dato" value="1012"> Torsdag 12.10
+   </td>
+   <td>
+    <input type=checkbox name="Dato" value="1013"> Fredag 13.10<br>
+    <input type=checkbox name="Dato" value="1014"> Lørdag 14.10<br>
+    <input type=checkbox name="Dato" value="1015"> Søndag 15.10<br>
+   </td>
+  </table>
+ </td>
+
+</table>
+</center>
+<p>
+
+<pre>
+        <input type="submit" value="Start søk">    <b>Maks. antall treff: </b> <select name="Makstreff">                          
+  <option>10
+  <option selected>20
+  <option>50
+  <option>100
+</select>       <input type="reset" value="Resett skjema">
+<p>
+
+</pre>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+0 nr		int primary key
+1 ord		varchar not null
+
+INDEX ord

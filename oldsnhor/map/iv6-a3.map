@@ -1,0 +1,9 @@
+#
+# Created by WebMap 2.0b9
+# onsdag 20. september 1995 at 12:49
+# Format: NCSA
+#
+
+
+rect http://www.oslonett.no/ 10,17 48,48
+default http://www.nr.no/

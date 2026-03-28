@@ -1,0 +1,11 @@
+default http://www.sun.com/
+#Sørmaerika
+poly http://www.oslonett.no/ 114,146 152,237 175,232 194,148 150,120 
+#Afrika
+circle http://www.digital.com/ 268,117 282,156 
+#Søramerika
+poly http://www.oslonett.no/ 115,149 153,236 173,232 194,146 153,121 
+#Europa
+rect http://www.digital.com/ 239,13 303,69 
+#Afrika
+circle http://www.ibm.com/ 260,134 291,166 

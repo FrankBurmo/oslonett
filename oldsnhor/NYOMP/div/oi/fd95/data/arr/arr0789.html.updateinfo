@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="789"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Hudkreft"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Seminarrommet, F4, Det Norske Radiumhospital"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Kl. 17.00-19.10"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="31"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Universitetet i Oslo"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Seminarrommet, F4, Det Norske Radiumhospital"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Møteledere: Johan Tausjø og Trond Warloe Kl. 17.00-17.05 Velkommen-programorientering v/Johan Tausjø Kl. 17.05-17.35 Hvem får hudkreft og hvorfor? UVA-UVB solarier og faktorer v/Johan Moan Kl. 17.35-17.50 Spørsmål/Pause Kl. 17.50-18.15 Føflekker - hvor farlige er de? v/Steinar Aamdal Kl. 18.15-18.45 Hvordan skal de forskjellige former for hudkreft behandles? Strålebehandling Fotodynamisk v/Johan Tausjø og Trond Warloe Kl. 18.45-18.50 Spørsmål og kommentarer Kl. 18.50 Omvisning på Enhet for fotodynamisk behandling Omvisning` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?12.10"?)\s*>` with `` checked>` -->

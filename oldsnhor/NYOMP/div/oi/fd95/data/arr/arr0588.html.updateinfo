@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="588"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Kirkene bygges"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Middelaldersenteret i Det Norske Teatret"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Kl. 15.30-16.45    "` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="31"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Universitetet i Oslo"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Middelaldersenteret i Det Norske Teatret"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``- Kirken den er et gammelt hus. Kristendom og kirke Professor Signe Horn Fuglesang - Jomfruen fra vest. Sankta Sunniva, den første norske helgen Amanuensis Jan Erik Rekdal - Frå heller til pilegrimskyrkje. Heilagsstaden på Selja Forsker A. T. Hommedal -«Stavkirkeprekenen» fra Gammelnorsk homiliebok Skuespiller Jannik Bonnevie` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?14.10"?)\s*>` with `` checked>` -->

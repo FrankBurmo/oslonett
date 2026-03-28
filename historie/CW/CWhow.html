@@ -1,0 +1,83 @@
+<html>
+<head>
+      <title>ComputerWorld i World Wide Web - hvordan gjøres det?</title>
+</head>
+<body bgcolor="#ffffff">
+<img alt="" src=gifs/cwvisitt.gif>
+<h1>ComputerWorld i World Wide Web - hvordan gjøres det?</h1>
+Det er Oslonetts mål å automatisere mest mulig av arbeidet med å legge
+opp WWW utgaven av CW. Dette er en beskrivelse av fasene i dette
+arbeidet, og i hvilken grad de er automatisert.
+<p>
+CW produseres bla. ved hjelp av Microsoft Word og Lotus Notes. Den
+enkelte CW-journalist bruker Word som innskrivingsverktøy. Word filen
+blir senere dratt inn i Notes og bearbeidet videre, og bla. satt inn
+i sin rette kontekst i avisen.
+<p>
+CW har en rekke Word maler som hver journalist bruker (mer eller
+mindre konsekvent) for å angi strukturen i artikkelen. Eksempelvis
+finnes det maler for "tittel", "ingress", "vignett" osv.
+
+
+<h2>Produksjon av en CW-WWW utgave</h2>
+<dl>
+<dt><b> 1: Uploading til Oslonett</b>
+<dd> CW uploader en ZIP fil til en av Oslonetts UNIX maskiner. ZIP arkivet
+består av de enkelte Word filene denne utgaven består av. Uploadingen er
+halvautomatisk - CW ringer opp Oslonett med Procomm og initier så en
+upload.
+     <p>
+<dt><b> 2: Ekstrahering av Word filer og oversetting til RTF</b>
+<dd> Word filene ekstraheres fra ZIP arkivet og oversettes til RTF (Rich Text
+Format). Oversettingen skjer vha. Word makroer som følger med Word 6.0, men
+oversetting er allikevel bare halvautomatisk siden det kreves en del
+interaksjon med brukeren.
+     <p>
+<dt><b> 3: Oversetting fra RTF til første fase HTML</b>
+<dd> Et public domain program for å oversette fra RTF til HTML brukes i denne
+fasen. Programmet er delvis videreutviklet av Oslonett. Programmet oversetter
+fra RTF til HTML ut fra en beskrivelse av hvordan de enkelte RTF makroene
+skal mappes til HTML. Denne beskrivelsen er lagt opp av Oslonett, men selve
+mekanismen er en del av programmet som sådan. Oversettingen er helautomatisk,
+men må etterses, siden noen artikler ikke alltid har en tittel! En tittel
+er nødvendig for å kunne lage en fornuftig HTML tittel. En evt. manglende
+tittel, skyldes at journalistene ikke alltid er konsekvente mht.
+hvordan de bruker Word makroene.
+     <p>
+<dt><b> 4: WAIS indeksering</b>
+<dd> Etter at artiklen er oversatt, indekseres den vha. en WAIS indekser
+og WAIS databasen for CW-WWW oppdateres. Dette skjer automatisk.
+     <p>
+<dt><b> 5: Innsetting av linker</b>
+<dd> Oslonett har utviklet UNIX filtre som automatisk kan sette HTML
+linker inn i teksten. Til dette formål er det opprettet en "linkdatabase".
+Basen inneholder informasjon om hvilke ord og konstruksjoner det skal
+trigges på, samt hvordan disse konstruksjonene skal oversettes til
+en HTML link. Dessuten har CW i det siste begynt å nevne såkalte URLer.
+Dette er adresser som kan brukes innenfor World Wide Web. Våre UNIX
+filtre vil automatisk finne slike URLer, og erstatte dem med en
+aktiv link til informasjonsressursen som ligger bak URLen!
+Dette skjer automatisk.
+     <p>
+<dt><b> 6: Innlegging av faste elementer i topp og bunn</b>
+<dd> Her legges det på neste- og forrige pekere, samt andre faste
+elementer i topp og bunn av hver artikkel. Dette skjer automatisk.
+     <p>
+<dt><b> 7: Oppdatering av utgaveindeks og generering av artikkelindeks for
+denne utgaven</b>
+<dd> Dette skjer helt automatisk.
+</dl>
+
+<pre>
+<hr>   <a href=maps/art.map><img alt="[Image map not available]" src=gifs/artmap.gif ismap></A><hr>
+</pre>
+
+<h5>CW-WWW er tilrettelagt av Oslonett AS
+<p>
+<a href="/">
+  <img alt="[Oslonett Home]" src="/img/on.gif" border=0></a>
+</h5>
+
+</body>
+</html>
+

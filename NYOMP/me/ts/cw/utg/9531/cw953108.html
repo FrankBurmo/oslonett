@@ -1,0 +1,100 @@
+<html>
+<head>
+ <title>Windows på Unix</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+
+
+
+<a href=cw953107.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/me/ts/cw/gifs/up.gif></a> <a href=cw953109.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a> <a href=/me/ts/cw/CW.html><img align=middle alt="[CW hjemmeside]" src=/me/ts/cw/gifs/cw.gif></a>  
+<hr>
+
+
+
+<h1>Windows på Unix</h1>
+
+<h2>Drømmen som ble virkelighet</h2>
+
+<blockquote><h4>
+<hr>
+Å gi tilgang til Windows-applikasjoner på Unix-arbeidsplassene var ensbetydende
+med emulatorer med dårlig kompatibilitet og elendig ytelse. Med HP 500 Windiows
+Application Server får HP en løsning basert på samme tanke som Tektronix'
+Windd.<hr>
+</h4></blockquote>
+<i>Anders Løvøy</i><p>Problemet med å kjøre Windows-applikasjoner i Unix-miljø
+er kjent. Ingen løsninger ga skikkelig kompatibilitet før Tektronix lanserte
+sitt konsept med Windd. Med HP 500 Windows Application Server har HP erkjent
+det samme som Tektronix, men de har laget et produkt som er vesentlig
+raskere.<p>
+	Erkjennelsen er enkel: Hvis man skal kjøre Windows-applikasjoner bør de kjøre
+under Windows, og Windows kjører best på Intel.<p>
+	Både Textronix og HP har en egen Intel-basert tjener stående på nettet der
+applikasjonene kjører under vanlig Windows. Skjermbildene blir så sendt ut til
+brukeren. Når brukeren benytter tastaturet eller musa blir det sendt tilbake
+til tjenermaskinen.
+<h3>
+Forskjeller</h3>
+Men her stopper også likhetene. HP bruker ren X til å transportere data over
+nettet, mens Tektronix har en proprietær protokoll. Dette innebærer at
+brukerene må ha Tektronix X-terminaler for å ha glede av systemet.<p>
+	På tjenersiden er det motsatt. Tektronix baserer sin løsning på en standard
+Windows NT tjener med et multiuser-tillegg for å tillate kjøring av flere
+Windows-sesjoner samtidig.<p>
+	HP på sin side har en egen tjenermaskin som kjører SCO Unix og en
+systemprogramvare som gjør det mulig for DOS-Windows sesjoner å kommunisere med
+skjerm og tastatur over X. Både DOS og Windows lastes oppå denne programvaren.
+<p>
+	Systemet kjøpes "nøkkelferdig", slik at oppsett og konfigurasjon skal være så
+enkelt som mulig.
+<h3>
+Hastighet</h3>
+Det interessante er hva forskjellene utgjør i praksis. I en sammenligningstest
+som HP viste oss under lanseringen, ble en WinTics test kjørt samtidig på en
+HP500 Windows Application Server og en helt tilsvarende maskin med Windd. <p>
+	Overraskende nok kjørte HP500 Windows Application Server flere ganger raskere
+enn Textronix' Windd. <p>
+	Når det gjelder kompatibiliteten støtter HP 500 Windows Application Server
+standard mode Windows-applikasjoner, og 256 farger. Det er også mulig å ha en
+diskettstasjon koblet til X-terminalen som kan benyttes som A:. I nær fremtid
+vil enhanced mode støttes, og på nyåret vil det komme støtte for <a href="http://www.windows.microsoft.com/">Windows 95</a>.<p>
+	Og nettopp kompatibiliteten vil være et nøkkelspørsmål i dette spillet.<p>
+	Emulering av Windows har aldri blitt noen virkelig suksess, fordi man alltid
+er på etterskudd med nye versjoner. Det er også et tilbakevendende problem med
+programvare som bruker systemet på andre måter enn de som er testet.<p>
+	Derfor er tanken til Tektronix og HP trolig den eneste som vil ha livets rett.
+Applikasjoner som er laget for å kjøre under Windows bør kjøre under Windows,
+og sannsynligvis tar det ikke lang tid før flere aktører er på banen med
+tilsvarende løsninger. 
+<p><i>RASKT: Olav Folkestad fra HP foran HP 500 Windows Application Server som
+akkurat har bestått kabal-testen. Når et kort ble dratt rundt på skjermen, var
+det ingenting å utsette på skjermoppdateringen. (Foto: A. Løvøy)</i>
+<h4><hr><center><b>HP 500 Windows Application Server</b></center><hr></h4>
+<b><i>Systemet er basert på en egen tjenermaskin som står på nettet der
+Windowsapplikasjoner kjører under Windows. </i></b>
+Input fra brukeren og oppdatering av skjermen sendes over nettet gjennom
+X-protokollen. Dette gjør at standard X-terminaler kan brukes.<p>
+	Tjenermaskinen kjører SCO Unix i bunn. Oppå den kjører Xifier fra Locus. På
+toppen av den lastes DOS og Windows, og til slutt Windows-applikasjoner.<p>
+	Foreløpig støttes bare Standard mode Windows applikasjoner, men en versjon 1.1
+som støtter Enhanced mode vil bli gjort tilgjengelig som en gratis oppgradering
+om relativt kort tid.<p>
+	Versjon 2.0 som er beregnet å komme fem måneder etter 24. august, vil
+inneholde støtte for Windows 95.<p>
+	En løsning med programvare og maskinvare koster 122.060 kroner for 15 brukere,
+og 184.960 for 30 brukere.
+<p>
+<a href=cw953107.html><img align=middle alt="[Forrige artikkel]" src=/CW/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/CW/gifs/up.gif></a> <a href=cw953109.html><img alt="[Neste artikkel]" align=middle src=/CW/gifs/next.gif></a> 
+
+
+<pre><hr><a href=/cgi-bin/imagemap/CWartmap><img alt="[Image map not available]" src=/CW/gifs/artmap.gif ismap></A><hr></pre>
+<h5>
+<address>
+Artikkel automatisk generert, 25/08-95, kl. 09.11 <a href=/CW/kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

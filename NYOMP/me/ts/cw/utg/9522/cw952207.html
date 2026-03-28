@@ -1,0 +1,300 @@
+<html>
+<head>
+ <title>Få et grep om ustrukturert data</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+
+
+
+<a href=cw952206.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/me/ts/cw/gifs/up.gif></a> <a href=cw952208.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a> <a href=//me/ts/cw/><img align=middle alt="[CW hjemmeside]" src=/me/ts/cw/gifs/cw.gif></a>  
+<hr>
+
+
+
+<h1>Få et grep om ustrukturert data</h1>
+
+<i>DOUG
+VAN KIRK, INFOWORLD, OVERSATT  AV MORTEN SOLLI</i><p>Etter uttalelser fra
+enkelte analytikere og leverandører å dømme, er sammensatt dokumentstyring det
+neste store innen applikasjoner for bedrifter. Disse nye systemene, som
+muliggjør tilgang til samt lagring og oppsporing av dokument-elementer, vil
+gjøre det enklere for store organisasjoner å bedre utnytte informasjon lagret i
+notater, brev og rapporter. Mens de tidligere kunne anvendes kun for
+enkeltavdelinger, blir dokumentstyringssystemene nå utvidet slik at de passer
+for store organisasjoner. Grunnen er støtte til et bredt utvalg datatyper,
+herunder bilder, video og lyd.<p>
+	Likevel står det fortsatt betydelige teknologiske og kulturelle hindringer i
+veien for både industrien og for organisasjoner som prøver å implementere
+dokumentstyring. Programvareleverandører higer etter kompatibilitetsstandarder.
+Men de fleste systemer er fortsatt proprietære og mangler kapasitet for den
+mengden og de mange ulike typene informasjon som er vanlig i moderne
+bedrifter.<p>
+	Disse systemene truer dessuten med å omrokkere etablerte
+informasjons-infrastrukturer. Mye av datamengden i dokumenter passer ikke
+nødvendigvis lett inn i en vanlig struktur. Oppsporing, sortering og deling av
+slike data kan utgjøre en stor belastning for bedriftens nettverksservere, og
+PCer kompliserer utvekslingen av informasjon mellom applikasjoner. IT-sjefer
+som implementerer dokumentstyring må da være kyndige i alt fra
+objektdatabase-teknologi og query-språk til koding og utskriving. <p>
+	Til tross for disse problemene mener mange bransjeeksperter at dokumentstyring
+er i ferd med å ta helt av, og selskaper som <a href=http://www.novell.com>Novell</a>, <a href=http://www.microsoft.com>Microsoft</a> og Oracle ser ut
+til å være av samme oppfatning. <p>
+	-- Det er ikke lenge før enhver PC er utstyrt med enkel dokumentstyring,
+forsikrer Frank Gilbane, ansvarlig utgiver av Gilbane Report og leder for CAP
+Ventures, et konsulentfirma i Massachusetts.
+<h3>
+Arkivskap</h3>
+Dersom begrepet "dokumentstyring " får deg til å tenke på forsikringsselskaper
+som erstatter tårn av arkivskap med tårn av diskettpakker og tapebiblioteker,
+så er du ikke helt på jordet -- foreløpig. De fleste av de eksisterende
+dokumentstyrings-applikasjonene er brukertilpassede programmer som lagrer og
+styrer tekst-- og bildearkiver. Disse systemene kan katalogisere, lagre og
+raskt innhente enorme mengder informasjon. Ettersom de er basert på å skanne
+inn dokuementene som bilder, tillater flere av disse dokumentsystemene ikke at
+brukeren redigerer eller reviderer dokumentene.<p>
+	De nåværende dokumentstyringssystemene spenner fra de elementære, som kun
+lagrer dokumenter, holder orden på filnavn og eventuelt inneholder en enkel
+søkefunksjon, til de mer sofistikerte programmene som indekserer dokumenter og
+er utstyrt med opptatt/ledig-logging av dokumentene i biblioteket. Flertallet
+av de nåværende dokumentsystemene faller inn under sistnevnte kategori.
+Produkter som PC Docs' PC Docs Open og Novells SoftSolutions lagrer
+bedriftsdokumenter i server-baserte databaser, sammen med nøkkelord,
+tillatelser (lister over brukere som er innvilget tilllatelse til å lese eller
+redigere) og andre data. Enkelte systemer lager også indekser over dokumentets
+tekst med henblikk på støtte for hurtigsøk.<p>
+     	Selv om slike systemer er tilstrekkelige for å lagre og katalogisere
+eksisterende informasjon, er de designet slik at de behandler hvert dokument
+som en helhet. De kan ikke styre de forskjellige elementene som dokumenter
+inneholder. For å få tak i dataene i et lagret dokument, blir man derfor nødt
+til å hente selve dokumentet. Det er vanligvis greit, så lenge det bare dreier
+seg om en liten arbeidsgruppe.
+<h3>
+Langt frem</h3>
+Dokumentstyring på bedriftsnivå gir andre og større behov, ifølge Dave Hamson,
+som leder API-utviklingen for Novell groupware. For å muliggjøre levering av
+elektroniske sider i en hel bedrift (eller enda større enheter), vil
+dokumentstyringssystemene trenge følgende:<p>
+	* Åpne grensesnitt som gjør det mulig for en dokumentleser fra &eacute;n
+leverandør å vise dokumenter fra en annen leverandørs database.<p>
+	* Tett integrasjon med nettverkskataloger, for å sikre at dokumenter er
+tilgjengelige bare for brukere med autorisasjon og at distribuerte
+dokumentdatabaser kan opprettholdes. <p>
+	* Forskjellige verktøy for tilkopling til ulike dokumentstyringsplattformer.
+Analytikere forventer at dette behovet vil føre til at tredjepartsleverandører
+vil sprette opp som paddehatter, likt alle virksomhetene som har vokst frem ved
+å tilby e-post-transport og gateways.<p>
+	Ting er på gang. Under konferansen Association for Information and Image
+Management i San Francisco i april, ble Novell, Xerox, <a href="http://www.ibm.no/">IBM</a> og Saros enige om å
+danne en uavhengig organisasjon som vil definere grensesnittspesifikasjoner for
+dokumentstyringsapplikasjoner. Den nye organisasjonen, kalt Document Management
+Alliance (DMA), er en fusjon mellom to separate prosjekter -- Document Enabled
+Networking og Shamrock -- som hver for seg har arbeidet mot liknende, men
+potensielt konkurrenende grensesnitt. <p>
+	Merkbart fraværende var Microsoft, som i dag benytter tredjepartsleverandører
+som Saros for levering av dokumentstyringsverktøy basert på OLE-teknologien,
+ifølge analytiker Gilbane. <p>
+	-- Microsoft er litt unnvikende når det gjelder selskapets strategi for
+dokumentstyring, men det er klart at OLE spiller en betydelig rolle, mener
+Gilbane. <p>
+     	-- Fusjonen er godt nytt for IT-sjefer, sier David Yockelson, programsjef
+ved Meta Group i Conneticut. Straks standardene er utviklet og godkjent (trolig
+tidlig i 1996), trenger ikke IT-sjefene lenger å bekymre seg om
+dokumentsystemenes kompatibilitet. Med så stort lager av eldre dokumenter, må
+et dokumentstyringssystem for storbedrifter være mottakelig for alt fra
+gammeldagse stormaskinsystemer til dagens vertikale applikasjoner. <p>
+	Andre teknologier er raskt i ferd med å etablere seg som de facto standarder.
+Brukernes etterspørsel samt statlige krav lå bak den omfattende godkjenningen
+av Standard Generalized Markup Language (SGML), en ISO-spesifikasjon som
+beskriver en normal fremgangsmåte for koding av informasjon inne i dokumenter.
+Disse kodene opptrer som navnfelt i en database, bortsett fra at feltlengden
+ikke er begrenset. For eksempel lar SGML brukeren hente utelukkende
+kapitteloverskrifter eller lete raskt etter flere innholdsfortegnelser. 
+<h3>
+Neste generasjon</h3>
+-- Neste generasjon programvare for dokumentstyring vil ikke bare være
+mottakelig for kompatibilitet. Den vil i tillegg kunne styre og handle i
+forhold til komponentene i et dokument. Med den nye programvaretypen flyttes
+tyngdepunktet fra hele dokumenter til deres enkelte informasjonskomponenter,
+forklarer Gilbane. <p>
+	Blant de som er først ute av denne nye generasjonen er Astoria fra Huntsville,
+XSoft-avdelingen av Xerox. Astoria lagrer SGML-taggede komponenter av et
+dokument i en objektdatabase, sammen ned informasjon om disse objektene. Dermed
+kan brukerne lagre flere utgaver uten å lagre hele kopier av dokumentene; kun
+endringene katalogiseres.<p>
+	Programmer som Astoria og Information Manager fra Texcel U.K. i Windsor,
+England, vil automatisere produksjonen av dokumenter og gjøre brukerne i stand
+til å opprette og styre sammensatte sider som inkorporerer levende og statiske
+data fra flere kilder, mener analytikere. <p>
+	Slike programmer støtter dessuten online distribusjon, med innfelte
+multimedia- og binære objekter, og gir selskapene myndighet til å samle sammen
+og distribuere informasjon i hele organisasjonen, selv over Internettet. <p>
+	Disse systemene appellerer til enhver organisasjon som ønsker å tappe en stor
+mengde informasjon -- eksempelvis på forespørsel fra en kunde. <p>
+     	-- Et av de største aksjefondselskapene bruker for eksempel et sammensatt
+dokumentstyringssystem for å kunne gi støtte til en brukertjeneste-applikasjon,
+sier Gilbane.<p>
+ 	Mens en representant er på telefonen, kan vedkommende eksempelvis få
+tilgjengelighet til opplysninger om en kundekonto, rapporter om bestemte lager,
+prisopplysninger eller nyheter. 
+<h3>
+Brukerappell</h3>
+Hvor stor appell har egentlig disse systemene? CAP Ventures foretok nylig en
+undersøkelse blant 300 store organisasjoner som benytter
+dokumentstyringssystemer. Det viste seg at de i gjennomsnitt brukte 513.000
+dollar på programvare alene på et system for nær 230 brukere. <p>
+	Selv om det fortsatt er litt tidlig å stipulere grundige salgssanslag for
+sammensatte dokumentstyringssystemer, tror analytikere som Gilbane at disse
+systemene vil omfatte hele massen av dokumentstyringsapplikasjoner for
+storbedrifter i fremtiden. <p>
+     	-- All databehandling danser etter dokument-pipen, sier Gilbane. <p>
+	Meta Group anslår veksten for sammensatt dokumentstyring til "minst 100
+prosent i året." <p>
+	Den virkelige styrken til denne typen dokumentstyring ligger i dens kapasitet
+for oppretting av dokumenter som kan ta inn opplysninger fra en hel bedrift,
+for deretter å tjene som informasjonskilder. Disse sammensatte dokumentene kan
+lages av et utvalg formater, fra multimediautklipp, binære filer, andre
+applikasjoner og koplinger til data hentet fra stormaskiner og serverdatabaser.
+<p>
+ 	Straks de er opprettet, vil de sammensatte dokumentene leve komfortabelt i et
+online-miljø. Nå som bedriftsstore web-servere allerede registrerer titusener,
+selv hundretusener, av "hits" daglig, er det en relativt rimelig
+produktmarkedsføring å formidle informasjon online. Noen spådommer går ut på at
+sammensatte dokumenter vil genereres automatisk fra bedriftenes
+informasjonslagre -- evt. på forespørsel -- og dermed erstatte
+markedsføringsmateriale.<p>
+	-- Blant de viktigste drivkreftene for dokumentstyringssystemer er bedriftenes
+behov for og ønske om både elektroniske og skrevne utdata-produkter, mener
+Gilbane og fortsetter: -- Det er ikke så vanskelig å forestille seg at de
+ønsker et ensartet system bak disse dokumentene, enten de foreligger online
+eller i utskriftsform.
+<h3>
+Langt frem</h3>
+-- Selv når man blir enige om standarder, blir det ingen enkel sak å løse
+problemet med dokumentstyring, sier Gilbane. Om DMAs arbeid vil gi økt
+kompatibilitet mellom forskjellige dokumentstyringssystemer, er det mye som
+gjenstår. For eksempel finnes det ingen universal fremgangsmåte for å lage
+querier  til ustrukturerte dokumentdatabaser. Man er heller ikke enige om
+hvordan, eller om, dokumentsystemer skal opprettholde kataloger over brukere og
+deres privilegier.<p>
+	I tillegg bruker mange dokumentsystemer proprietære datalagre. Dermed binder
+de kunder til et bestemt system eller gjør det vanskelig å konvertere til et
+nytt når lagringen skal endres. Ekspertene minner om at selv systemer som
+bruker standard databaser, for eksempel de fra Oracle og Sybase, ikke
+nødvendigvis følger noen standard for ustrukturert datalagring. Disse systemene
+kan komme til å dele opp dokumenter og lagre dem i databasen nærmest vilkårlig.
+<p>
+	Samme type problem rammer SGML. Selv om SGML-taggede sider lett kan flyttes
+mellom kompatible dokumentstyringssystemer, forsvinner mye av hensikten på
+veien fordi hver bruker kan definere dokumenttypene forskjellig.<p>
+	-- SGML er svært nyttig for høyverdi-dokumenter, mener Laura Walker, XSofts
+markedssjef. Hun hevder likevel at det ikke virker særlig formålstjenlig å
+tagge flertallet av eksisterende dokumenter, og at mangelen på SGML-støtte fra
+PC-applikasjoner kan føre til at SGML vil få problemer med å etablere seg i
+markedet.<p>
+	-- De verktøyene vi bruker har ikke kapasitet for SGML, sier Margaret Melisko,
+som leder avdelingen for infrastruktur ved Arizona Public Services (APSC), en
+offentlig etat med base i Phoenix. APSC, som bruker Saros' Mezzanine for å
+styre dokumenter fra hele organisasjonen, insisterte på at disse dokumentene
+ble lagret i sitt oprinnelige format.<p>
+	-- Flere nye standarder for dokumentsammensetning vil trenge en finjustering.
+Microsofts OLE 2.0-teknologi tillater eksempelvis applikasjoner å dele
+komponenter,  men gir ikke mulighet for manuell definering av koplinger mellom
+objekter og deres vertsdokumenter, poengterer Walker. <p>
+	Likevel, at dagene med helt lukkede applikasjoner er talte, hersker det
+enighet om både blant analytikere og selskapene som publiserer slike systemer.
+Som det er med e-post-systemer, er det nærmest umulig å få oppslutning fra alle
+i en bedrift om den samme dokumentstyringsplattformen. Leverandører som satser
+på proprietære, lukkede teknologier blir mindre aktuelle for potensielle
+kunder.<p>
+	-- Store bedrifter trenger flere dokumentsystemer, mener Novells Hamson.
+Systemene for avdelinger/mellomstore bedrifter gir likevel størst verdi for
+mange applikasjoner, og mange brukere føler nok at deres behov kan dekkes
+utelukkende med slike spesialiserte programmer. I det minste er det å vente at
+forskjellige sluttbrukeravdelinger vil kreve forskjellige leveringssystemer.<p>
+	Ekspertene venter at det vil vokse fram en ny industrisektor som vil levere
+gatewayprogrammer til bruk mellom dokumentlagre, slik at et dokument lagret i
+ett system kan gjøres til gjenstand for queries og visning fra et annet. Disse
+gatewayene vil dessuten integrere autorisasjoner og tilgangsrettigheter knyttet
+nært opp mot nettverkskataloger. <p>
+	Ifølge Walker er distribuering av indekser for dokumenter og dokumentdatabaser
+over hele nettverket det neste området der det vil bli innført standarder.<p>
+-- Indekseringen blir radikalt forandret, mener Walker. 
+<h3>
+infrastruktur koster</h3>
+Også IT-sjefene må forberede seg på hvilke konsekvenser dokumentstyring på
+bedriftsnivå vil få for eksisterende og planlagte systemer. Her er båndbredde
+et viktig spørsmål. Straks en avdelingsleder finner ut hvordan man kan sette
+inn videoutklipp i et dokument, kommer alle andre til å følge etter.  I et
+slikt scenario ser man lett for seg at et gjennomsnittlig 10 Mbps Ethernet
+nettverk blir omtrent like responsvillig som en middels statsinstans og enda
+mindre effektivt.<p>
+	-- De eksisterende infrastrukturene er tilstrekkelige, inntil man tilføyer
+innskanning, sier Yockelson. <p>
+	Foruten å kjøpe produkter fra selskaper som har forpliktet seg til å støtte de
+foreslåtte dokumentstyringsstandardene, bør IT-sjefene vurdere produktenes
+integrering med NOS-ene. For eksempel vil det være større
+administrasjonskostnader knyttet til en applikasjon som ikke støtter Netwares
+katalogtjenester. <p>
+	Et annet nøkkelmoment er integreringen med eller avhengigheten av tung
+databaseteknologi. Når dokumentsystemene vokser, vil de måtte distribuere og
+synkronisere data i flere lokaliteter. Funksjonalitet kan tilbys av store
+databaseleverandører. <p>
+	-- Fra et IT-perspektiv vil det ideelle være en enkel dokumentstyringsdel på
+serversiden som støtter flere tilgangsmetoder, mener Gilbane. Men selv om en
+bedrift faktisk implementerer et slikt system, vil den fortsatt bli nødt til å
+distribuere disse dataene mellom flere servere og lokaliteter.<p>
+	Ettersom disse og andre problemer blir løst, vil dokumentsystemene for
+bedrifter begynne å gjøre seg gjeldende. Og mens dette skjer, kan disse nye
+tekniske verktøyene bidra til å omdefinere forretningsrutiner her og der. I det
+minste vil et sammensatt dokumentstyringssystem gi begrepet informasjonsdeling
+ny mening. <p>
+	-- Det er svært få dokumenter som er virkelig personlige i dag, mener Melisko
+og tilføyer: -- Vi forsøker å få folk til å innse at deres dokumenter er
+selskapets eiendom. <p>
+	Mange dokumentstyringsleverandører begynner så smått å støtte sammensatte
+dokumenter.  En fremgangsmåte er å gi brukere tilgang til dokumentkomponenter
+og samtidig opprettholde en fil- eller dokumentsentrert arkitektur. Disse
+leverandørene har tatt neste skritt mot virkelig objekt-orientert
+komponentstøtte:<p>
+
+
+<h1>DMA-forslaget</h1>
+Fusjonen
+i april mellom standardiseringsorganene Document Enabled Networking og
+Shamrock, som ga oss Document Management Alliance (DMA), gir løfter om
+kompatibilitet mellom dokumentstyringssystemer. I dag er de fleste
+dokumentstyringssystemer lukkede og proprietære: Enkeltleverandører står for
+både server- og klientsiden.<p>
+	DMA håper å endre dette ved å tilføye et standard klientgrensesnitt og
+nettverksbasert middleware som lar enhver DMA-kompatibel PC-programvare hente
+dokumenter fra ethvert dokumentlager. DMA vil også opprette standarder for
+bibliotektjenester -- opptatt/ledig -- og versjonkontroll-funksjonene som låser
+dookumenter og kan bestemme hvem som skal ha tilgang. Endelig vil
+standard-spesifikasjonen definere objektbaserte repository-lagre og muligheten
+for utvidelsesmoduler.  Fusjonsselskapet lover en foreløpig spesifikasjon i
+juli.<p>
+	For brukerne betyr leveringen av DMA-kompatible applikasjoner et bredt utvalg
+av PC-applikasjoner med kapasitet for queries og innhenting av dokumenter fra
+ethvert serverbasert dokumentlager. <p>
+	Selv om standarden først vil komme dokumentstyringssystemene til gode, kan
+DMA-kompatibilitet også bygges inn i applikasjoner for e-post, groupware og
+tekstbehandling. DMA bebuder at queries til dokument repositories vil bli
+konsistente og at enkeltvise queries får kapasitet for flere databaser.<p>
+
+
+<h2></h2>
+<p>
+<a href=cw952206.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/me/ts/cw/gifs/up.gif></a> <a href=cw952208.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a> 
+
+
+<pre><hr><a href=/me/ts/cw/maps/art.map><img alt="[Image map not available]" src=/me/ts/cw/gifs/artmap.gif ismap></A><hr></pre>
+<h5>
+<address>
+Artikkel automatisk generert, 08/06-95, kl. 17.47 <a href=/me/ts/cw/kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/div/oi/fd95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="2"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Fysikk og galskap. Genetikken i et nytt lys"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Slottet, loftet."` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="rett før hanegal"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value="meg"` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value="alt du har"` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value="deg"` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="3"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Norges forskningsråd (Forskningsrådet)"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="I smørøyet"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Sterkt møte mellom ladde partikler` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?06.10"?)\s*>` with `` checked>` -->

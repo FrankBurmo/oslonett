@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>
+NWR Order form
+</title>
+</head>
+<body bgcolor=#f1a15c text="#00000" link="#405925" vlink="#405925">
+
+
+<table cellspacing=1 cellpadding=5>
+<tr>
+<td>
+<img alt="" src=gifs/logo-liten.gif>
+<td>
+<font size=+3>Norwegian Wildlife & Rafting AS</font>
+</tr>
+</table>
+<p>
+<font size=+2>
+This is our order form. To make your reservation please fill in the blank spaces and send it in by pressing the "send" button below. You will receive a confirmation on your reservation by mail or fax. All prices are in Norwegian Kroner (NOK). Groups with more than six participants will get a 10 % discount.<p>
+</font>
+
+<center>
+<form method="POST" action="http://www.oslonett.no/cgi-bin/mailorder">
+<input type=hidden name=mailto value="dagwi@oslonett.no">
+<input type=hidden name=subject value="Bestilling av tjenester fra NWR">
+<input type=hidden name="reply-to" value="dagwi@oslonett.no">
+<input type="hidden" name="imgattr" value="alt=NWR src=/rl/nwr/gifs/logo-liten.gif">
+
+<table border="5" cellpadding="10" cellspacing="10">
+<tr>
+  <th><font size=+2>Order your adventures now!</font></th>
+</tr>
+<td>
+
+<pre>
+Name         : <input name="Navn" size="54">
+Adress       : <input name="Adresse" size="54">
+Zip          : <input name="Postnr" size="8"> City/State :  <input name="Poststed" size="28">
+Country      : <input name="Land" size="54">
+Telephone    : <input name="Telefon"  size="20">     Fax:  <input name="Fax"  size="20">  
+</pre>
+</td>
+<tr>
+<td>
+<pre>
+<font size=+1>
+
+                      Price(NOK)        Number of people
+
+Rafting
+     <input type="checkbox" name="day"> Daytrip           580,-              <input name="dayant"  size="3">
+     <input type="checkbox" name="2day"> 2  Daytrip       1730,-              <input name="2dayant"  size="3">
+     <input type="checkbox" name="school"> Rafting school   4200,-              <input name="schoolant"  size="3">
+     <input type="checkbox" name="safari"> Rafting Safari   Call for details,-  <input name="safariant"  size="3">
+<input type="checkbox" name="klatring"> Climbing               380,-              <input name="klatringant"  size="3">
+<input type="checkbox" name="grotting"> Grotting               380,-              <input name="grottingant"  size="3">
+<input type="checkbox" name="bre"> Glaciering             580,-              <input name="breant"  size="3">
+<input type="checkbox" name="fottur"> Trekking               280,-              <input name="fotturant"  size="3">
+<input type="checkbox" name="juv"> Canyoning              380,-              <input name="juvant"  size="3">
+<input type="checkbox" name="fiske"> Fishing                280,-              <input name="fiskeant"  size="3">
+<input type="checkbox" name="jakt"> Small game hunting     580,-              <input name="jaktant"  size="3">
+<input type="checkbox" name="elg"> Elk Safari             280,-              <input name="elgant"  size="3">
+</pre>
+</td>
+<tr>
+<td>
+
+<strong>Arrival Date:</strong> <input name="date"  size="15"><br>
+<strong>Need lodging for <input name="lodging"  size="3"> people for <input name="lodgedays"  size="3"> days.</strong><p>
+<strong>Yes, I am very interested in NWR's adventures. <br>Please send me more information:</strong> <input type="checkbox" name="date"><p>
+
+<input type="submit" value="Send your order">
+
+</td>
+</tr>
+</table>
+</form>
+
+<font size=+3>
+Norwegian Wildlife & Rafting AS</font><br>
+Randsverk, 2680 Våga, Norway<br>
+Tlf: +47 61 23 87 27 - Fax: +47 61 23 87 60
+</center>
+
+
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+.AppleDouble/
+.bash_history
+.forward.frogner
+.infax.a07550
+.molog
+Aksess/
+BASER/
+BIN/
+CW/
+Childwatch/
+CrystalD@
+DND_home.html@
+EU/
+EU-valg/
+EXPO94/
+Elanders/
+FK/
+HR/
+HTML/
+ITC.html@
+IV/
+Internet/
+Internett@
+KS/
+NB.html*
+NTIN/
+NYOMP/
+OL@
+OsloPRO@
+OsloPro@
+Rondo/
+Skif/
+TASKON@
+TI/
+TMP/
+TOOLS/
+TP/
+Timetech@
+VB/
+X-NDfest.html*
+XXgen/
+XXgenm/
+amalie/
+baklst
+bin/
+cern@
+cgi-bin/
+conf/
+data@
+dato.pl*
+dato.pl~*
+dbm/
+demo@
+div@
+dnlf/
+drfun/
+eng@
+faxfile*
+faxfile.txt*
+fn@
+forskdag95@
+ft/
+gen/
+genm/
+geoquest@
+gifs/
+graphics/
+hballvm95/
+help.html@
+help.map*
+hn@
+home.map*
+home.map~*
+home_m.map*
+home_m.map~
+hp@
+html/
+i.bak*
+img/
+imgsize*
+index-test.html*
+index-text.html*
+index.gammel*
+index.html*
+index.html~*
+index.ny.html
+index2.html
+indexm.html*
+indexm.html~*
+info@
+innhold/
+int-home.html@
+internet/
+jmfoto@
+juleribbe/
+juleweb/
+kindex.html~*
+kurv/
+libwww-perl/
+logs/
+lost+found/
+map/
+maps/
+marked/
+me@
+media@
+medlem/
+messer/
+mpeg/
+newsdesk/
+nl@
+ny/
+nyindex.html*
+nyindex.html~*
+nytt@
+oldlst
+on/
+org@
+oslo/
+proff/
+red/
+res/
+rl@
+rndlogo.cgi*
+rndtopp.cgi*
+rondo.html*
+santa/
+schibsted@
+search.html@
+sh@
+site.idx*
+sn/
+sounds/
+sp@
+stats/
+stocks/
+telia@
+thechamp@
+tmp/
+top.map*
+uh@
+vmjunior@
+wais/
+wc94/
+wca95@
+webcount/
+welcome.html@
+whatsnew.html@
+xls
+total 270
+drwxrwxr-x  2 steinar       512 Dec 10 12:43 .AppleDouble/
+-rw-r--r--  1 www          5934 Jan  5 16:47 .bash_history
+-rw-r--r--  1 www            10 Nov 27 09:58 .forward.frogner
+-rw-r--r--  1 www          1072 Sep 22 14:59 .infax.a07550
+-rw-------  1 steinar        40 Nov 15 22:54 .molog
+drwxrwsr-x  8 oyvindwe      512 Jan 24 01:32 Aksess/
+drwxrwxr-x  2 kentv         512 Jan 23 15:45 BASER/
+drwxrwxr-x  2 kentv         512 Jan 24 10:00 BIN/
+drwxrwsr-x 11 steinar       512 Jan 23 21:04 CW/
+drwxrwxr-x  7 aas          1024 Dec 10 12:43 Childwatch/
+lrwxrwxrwx  1 root           26 Oct  5 13:41 CrystalD -> /home/hasle/c/csd/www_docs/
+lrwxrwxrwx  1 root           29 Oct  5 13:41 DND_home.html -> /local/www/org/dnd/index.html*
+drwxrwxr-x  6 steinar       512 Oct 23 10:13 EU/
+drwxrwxr-x  8 anders        512 Feb 17  1995 EU-valg/
+drwxrwsr-x  9 steinar       512 Oct 23 10:13 EXPO94/
+drwxrwxr-x  4 steinar       512 Oct 23 10:13 Elanders/
+drwxrwxr-x  2 mariann       512 Oct 23 10:13 FK/
+drwxrwx---  4 mariann       512 Oct 23 10:13 HR/
+drwxrwxr-x  3 kentv        1024 Dec 17 14:16 HTML/
+lrwxrwxrwx  1 root           39 Oct  5 13:42 ITC.html -> /home/frogner/www/html/adv/ITC/ITC.html
+drwxrwxr-x  8 www          1024 Dec 11 08:15 IV/
+drwxrwxr-x  6 hph          1024 Dec 10 12:43 Internet/
+lrwxrwxrwx  1 root            8 Oct  5 13:41 Internett -> Internet/
+drwxrwxr-x  4 mariann       512 Oct 23 10:13 KS/
+-rwxr-xr-x  1 steinar      1275 Oct  7 21:32 NB.html*
+drwxrwsr-x  8 steinar       512 Nov  7 21:03 NTIN/
+drwxrwxr-x 16 arneom       1024 Dec 10 12:42 NYOMP/
+lrwxrwxrwx  1 root           10 Oct  5 18:17 OL -> ../www3/OL/
+lrwxrwxrwx  1 root           24 Oct  5 13:41 OsloPRO -> /home/frogner/www/rl/op//
+lrwxrwxrwx  1 root            7 Oct  5 13:41 OsloPro -> OsloPRO/
+drwxrwxr-x 10 www          1536 Dec 10 12:43 Rondo/
+drwxrwxr-x  9 steinar       512 Dec 10 12:43 Skif/
+lrwxrwxrwx  1 root           16 Oct  5 13:41 TASKON -> html/adv/TASKON/
+drwxrwx---  5 mariann      2048 Jan 23 21:04 TI/
+drwxrwsr-x  3 mariann       512 Oct 23 10:13 TMP/
+drwxrwxr-x  2 kentv         512 Dec  1 03:12 TOOLS/
+drwxrwxr-x  5 steinar       512 Oct 23 10:13 TP/
+lrwxrwxrwx  1 root           32 Oct  5 13:40 Timetech -> /home/sinsen/b/timetech/www_docs/
+drwxrwxr-x  6 steinar       512 Oct 23 10:13 VB/
+-rwxrwxr-x  1 mariann      2956 May 24  1995 X-NDfest.html*
+drwxrwxr-x  2 kentv        1536 Dec 11 12:50 XXgen/
+drwxrwx---  2 kentv        1536 Dec 11 12:50 XXgenm/
+drwxrwxr-x  9 mariann      2560 Dec 28 09:02 amalie/
+-rw-------  1 steinar     12971 Jan 23 20:49 baklst
+drwxrwxr-x  3 aas           512 Jan  5 09:20 bin/
+lrwxrwxrwx  1 root           23 Oct  5 13:40 cern -> /home/frogner/www3/cern/
+drwxrwsr-x  6 aas          5120 Jan 23 21:04 cgi-bin/
+drwxrwsr-x  3 stian         512 Dec 10 12:36 conf/
+lrwxrwxrwx  1 root            4 Oct  5 13:40 data -> html/
+-rwxr-xr-x  1 steinar       598 Dec 22 01:21 dato.pl*
+-rwxr-xr-x  1 steinar       592 Dec 22 01:20 dato.pl~*
+drwxrwsr-x  3 nobody        512 Feb 17  1995 dbm/
+lrwxrwxrwx  1 root           27 Oct  5 13:41 demo -> /home/frogner/www/html/demo/
+lrwxrwxrwx  1 root           10 Oct  5 13:40 div -> NYOMP/div//
+drwxrwxr-x 21 steinar      1024 Jan 23 21:04 dnlf/
+drwxrwsr-x  4 aas          2048 Jan 24 01:23 drfun/
+lrwxrwxrwx  1 root           10 Oct  5 13:40 eng -> NYOMP/eng//
+-rw-rwxr--  1 www           367 May 18  1995 faxfile*
+-rw-rwxr--  1 www          1101 May 18  1995 faxfile.txt*
+lrwxrwxrwx  1 root           30 Oct  5 13:41 fn -> /home/hasle/c/thomasb/www_docs/
+lrwxrwxrwx  1 root           12 Oct  5 13:41 forskdag95 -> div/oi/fd95//
+drwxrwxr-x  6 steinar      1024 Jan 23 21:04 ft/
+drwxrwxr-x  2 kentv        1536 Jan 24 13:05 gen/
+drwxrwxr-x  2 kentv        1024 Jan 24 10:00 genm/
+lrwxrwxrwx  1 root           30 Oct  5 13:41 geoquest -> /home/sinsen/a/gskweb/www_docs/
+drwxrwxr-x  4 steinar       512 Jan 18 17:45 gifs/
+drwxrwsr-x  8 steinar      4096 Dec 27 00:15 graphics/
+drwxr-xr-x  2 steinar       512 Dec  5 17:25 hballvm95/
+lrwxrwxrwx  1 root           15 Oct  5 13:40 help.html -> NYOMP/help.html*
+-rwxrwxr-x  1 kentv         194 Jul 11  1995 help.map*
+lrwxrwxrwx  1 root           29 Oct  5 13:41 hn -> /home/sinsen/a/nycomed/hafnyc/
+-rwxrwxr-x  1 kentv         430 Dec 11 12:55 home.map*
+-rwxrwxr-x  1 kentv         478 Dec  1 05:07 home.map~*
+-rwxrwxr-x  1 kentv         466 Dec 11 13:32 home_m.map*
+-rw-------  1 kentv         430 Dec 11 13:31 home_m.map~
+lrwxrwxrwx  1 root           30 Oct  5 13:41 hp -> /home/hasle/g/hpnorge/www_docs/
+drwxrwsr-x 11 steinar      1536 Jan 23 21:04 html/
+-rwx------  1 kentv        4730 Jan 15 12:11 i.bak*
+drwxrwxr-x  8 arneom       1536 Jan 12 18:26 img/
+-rwxrwxr-x  1 hph          1957 Nov 16 23:06 imgsize*
+-rwxrwxr-x  1 arneom       1498 Nov  2 16:12 index-test.html*
+-rwxrwxr-x  1 kentv        1043 Oct  8 11:05 index-text.html*
+-rwxrwxr-x  1 kentv        1802 Dec  1 03:42 index.gammel*
+-rw-rwxr--  1 www          5841 Jan 24 15:02 index.html*
+-rwxrwxr-x  1 dagwi        5801 Jan 24 11:51 index.html~*
+-rw-------  1 arneom       4941 Jan  4 16:36 index.ny.html
+-rw-rw-r--  1 www          6417 Jan 21 22:36 index2.html
+-rwxrwxr-x  1 kentv        3016 Dec 11 13:30 indexm.html*
+-rwx------  1 kentv        4252 Dec 11 13:07 indexm.html~*
+lrwxrwxrwx  1 root           29 Oct  5 13:41 info -> /home/frogner/www2/wca95/info/
+drwxrwxr-x 11 arneom       1024 Jan 16 00:27 innhold/
+lrwxrwxrwx  1 root           10 Oct  5 13:40 int-home.html -> index.html*
+drwxrwxr-x  2 aas           512 Jan  7 12:14 internet/
+lrwxrwxrwx  1 kentv          11 Jan 15 11:35 jmfoto -> nl/ndiv/jm//
+drwxrwxr-x  2 mariann       512 Dec 19 17:41 juleribbe/
+drwxrwxr-x  3 kgn          1024 Dec 31 11:57 juleweb/
+-rwxrwxr-x  1 kentv        4578 Dec 29 17:06 kindex.html~*
+drwxrwxr-x  6 kgn          1024 Jan 24 12:09 kurv/
+drwxr-xr-x  2 aas           512 Dec 19 18:57 libwww-perl/
+drwxrwsr-x  5 aas           512 Jan 24 13:47 logs/
+drwxrwxr-x  2 root         8192 Jan  3  1995 lost+found/
+drwxr-xr-x  2 root         1536 Dec 10 12:43 map/
+drwxrwsr-x  3 root          512 Oct 23 10:13 maps/
+drwxrwxr-x  5 steinar       512 Jan  5 15:20 marked/
+lrwxrwxrwx  1 root            8 Oct  5 13:41 me -> NYOMP/me/
+lrwxrwxrwx  1 root           30 Oct  5 13:41 media -> /home/frogner/www2/wca95/media/
+drwxrwxr-x 10 oyvindwe     1024 Jan 22 16:13 medlem/
+drwxrwsr-x  5 steinar       512 Oct 23 10:13 messer/
+drwxrwsr-x  3 steinar       512 Jul  6  1995 mpeg/
+drwxrwxr-x  8 webdesk      1024 Jan 22 14:24 newsdesk/
+lrwxrwxrwx  1 root            8 Oct  5 13:40 nl -> NYOMP/nl/
+drwxr-xr-x 12 steinar       512 Dec 10 12:43 ny/
+-rwxrwxr-x  1 arneom       5056 Jan 20 15:51 nyindex.html*
+-rwxrwxr-x  1 arneom       5522 Jan 18 18:33 nyindex.html~*
+lrwxrwxrwx  1 root           11 Oct  5 13:40 nytt -> NYOMP/nytt//
+-rw-------  1 steinar      5848 Jan 23 20:57 oldlst
+drwxrwsr-x 10 kgn          1024 Dec 20 00:38 on/
+lrwxrwxrwx  1 root           10 Oct  5 13:40 org -> NYOMP/org//
+drwxrwsr-x  5 kjell         512 Oct 23 10:14 oslo/
+drwxrwx---  3 dagwi         512 Oct 23 10:14 proff/
+drwxrwxr-x  3 kentv        1024 Dec 29 16:24 red/
+drwxrwxr-x  4 steinar       512 Dec 10 12:43 res/
+lrwxrwxrwx  1 root            9 Oct  5 13:40 rl -> NYOMP/rl//
+-rwxrwxr-x  1 kgn           237 Dec  5 10:21 rndlogo.cgi*
+-rwxrwxr-x  1 kgn           247 Dec  5 10:21 rndtopp.cgi*
+-rwxrwxr-x  1 arneom       2723 Sep 23 20:13 rondo.html*
+drwxrwxr-x  3 aas           512 Dec 10 12:43 santa/
+lrwxrwxrwx  1 steinar        27 Oct 31 16:43 schibsted -> /home/frogner/www/me/fo/sch/
+lrwxrwxrwx  1 root           28 Oct  5 13:41 search.html -> /local/www/NYOMP/search.html*
+lrwxrwxrwx  1 root            9 Oct  5 13:40 sh -> NYOMP/sh//
+-rwxrwsr-x  1 steinar      7275 Jun 26  1995 site.idx*
+drwxrwxr-x  4 kentv         512 Jan 21 23:11 sn/
+drwxrwsr-x  3 steinar       512 Feb 17  1995 sounds/
+lrwxrwxrwx  1 root            8 Oct  5 13:41 sp -> NYOMP/sp/
+d-wxrwx--x 18 www           512 Dec  8 21:21 stats/
+drwxrwsr-x 11 aas          1536 Oct 23 10:14 stocks/
+lrwxrwxrwx  1 root           41 Oct  5 13:41 telia -> /home/frogner/www/NYOMP/nl/dt/dkom/telia//
+lrwxrwxrwx  1 root           33 Oct  5 13:41 thechamp -> /home/frogner/www2/wca95/thechamp/
+drwxrwxr-x  2 kgn          1024 Jan 21 04:28 tmp/
+-rwxrwxr-x  1 kentv        1046 Jul 17  1995 top.map*
+lrwxrwxrwx  1 root            9 Oct  5 13:40 uh -> NYOMP/uh//
+lrwxrwxrwx  1 root           31 Oct  5 13:41 vmjunior -> /home/hasle/e/vmjunior/www_docs/
+drwxrwsr-x  7 steinar      9728 Jan 24 15:45 wais/
+drwxrwsr-x 13 stian        1024 Oct 23 10:14 wc94/
+lrwxrwxrwx  1 root           30 Oct  5 13:40 wca95 -> /home/frogner/www2/wca95/wca95/
+drwxrwxr-x  4 aas          1536 Jan 11 12:07 webcount/
+lrwxrwxrwx  1 root           17 Oct  5 13:41 welcome.html -> NYOMP/velkom.html*
+lrwxrwxrwx  1 root           21 Oct  5 13:40 whatsnew.html -> NYOMP/nytt/index.html*
+-rw-r--r--  1 root         1245 Jan 24 16:06 xls

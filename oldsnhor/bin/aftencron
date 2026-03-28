@@ -1,0 +1,11 @@
+#!/bin/sh
+
+cd /home/frogner/www/me/ts/aftenpo/rubrikk
+
+if [ -f rubrikk ]; then
+
+mv rubrikk rubdata
+pep -ob rubdata
+./annonser.pl rubdata
+fi
+

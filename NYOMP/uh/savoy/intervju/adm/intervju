@@ -1,0 +1,199 @@
+#!/local/bin/perl5
+
+require "/local/www/data/vg/include/include.pl";
+
+$top = "/local/www/data/intervju";
+$tellerfil = "$top/teller.txt";
+
+$kommando = $1 if $ENV{'PATH_INFO'} =~ s,/(new|submit)$,,; # 
+
+$navn = $ENV{'PATH_INFO'};
+$navn =~ s,^/+,,;
+
+&error("Du må oppgi hvilket intervju du vil se på")
+    unless length $navn;
+
+$dirnavn = "$top/$navn";
+
+&error("Angitt intervju ($navn) er ikke registrert")
+    unless -d "$dirnavn" && -r "$dirnavn.info";
+
+open(INFO, "$dirnavn.info") || &error("Kunne ikke åpne info-filen '$dirnavn.info'");
+while (<INFO>) {
+    last unless /\S/;
+    $info{lc $1} = $2 if /([^:\s]+)\s*:\s*(.+)/i;
+}
+while (<INFO>) {
+    chop;
+    push(@spm, $_);
+}
+close INFO;
+
+&nytt_spm if $kommando eq "new";
+&send_inn if $kommando eq "submit";
+&liste unless length $kommando;
+
+exit 0;
+
+
+sub nytt_spm {
+    &header("$info{'tittel'}");
+    while (<DATA>) {
+	s,XXXURL,$ENV{'SCRIPT_NAME'}/$navn/submit,;
+	s,XXXHOST,\@$ENV{'REMOTE_HOST'},;
+	print;
+    }
+    &std_footer;
+}
+
+
+sub send_inn {
+
+    %input = &getinput;
+
+    &error("Alle feltene må være utfylt")
+	unless (length $input{'innsender'} && length $input{'epost'}
+		&& length $input{'tittel'} && length $input{'tittel'});
+
+    open(COUNT, "+<$tellerfil") || open(COUNT, "+>$tellerfil")
+        || &error("Kunne ikke åpne tellerfilen $tellerfil");
+    $count = <COUNT>;
+    $count++;
+    seek(COUNT, 0, 0);
+    print COUNT "$count\n";
+    close COUNT;
+
+    $filnavn = sprintf("$dirnavn/spm%05d.txt", $count);
+    open(SPM, ">$filnavn") || &error("Kan ikke skrive filen $filnavn");
+    foreach (keys %input) {
+	print SPM "$_:\t$input{$_}\n";
+    }
+    close SPM;
+
+    &header("Takk for innsendt spørsmål");
+    print "Det innsendte spørsmålet er nå oversendt redaksjonen.<p>";
+    print qq!Følg med på <a href="$ENV{'SCRIPT_NAME'}/$navn">!;
+    print "intervjusiden</a> for å se om spørsmålet ditt blir tatt opp.";
+    &std_footer;
+
+}
+
+
+sub liste {
+    &header($info{'tittel'});
+    print qq!<blockquote><hr noshade>\n<font size="+2">\n$info{'intro'}\n</font>\n!;
+    print "<hr noshade></blockquote>\n";
+
+    foreach (@spm) {
+	open(F, sprintf("%s/spm%05d.txt", $dirnavn, $_)) || next;
+	while (<F>) {
+	    $spm{lc $1} = $2 if /^([^:\s]+)\s*:\s*(.+)/;
+	}
+	close F;
+	print "<h3>$spm{'tittel'}</h3>\n";
+	print qq!<font size="-1">Innsendt av $spm{'innsender'}, &lt;$spm{'epost'}&gt;</font><p>\n!;
+	print "$spm{'kommentar'}<p>\n";
+	print "<blockquote><em>\n$spm{'svar'}\n</em></blockquote>\n";
+    }
+
+    &std_footer;
+    exit 0;
+}
+
+
+
+sub header {
+    local($txt) = $_[0];
+
+    return if $HEADER++;
+
+    &top($txt);
+
+    print "<title>$txt</title>\n";
+    &std_header;
+    print qq!<h1><tt><font size="+5">$txt</font></tt></h1>\n\n!;
+}
+
+
+sub error {
+    local($msg) = $_[0];
+
+    &header("Feilmelding");
+
+    print "Programmet ble avbrutt med følgende feilmelding:\n\n<blockquote>\n";
+    print qq!<hr size="2" noshade>\n<font size="+1"><b>$msg</b></font>\n!;
+    print qq!<hr size="2" noshade>\n</blockquote>\n!;
+    &std_footer;
+    exit 0;
+}
+
+
+sub getinput {
+# Leser inn data (med method GET eller POST) og plasserer dem i en
+# assosiativ array, der nøklene i array'en er feltnavnene
+
+    local($i, $name, $value, $data, @data, %input);
+
+    if ($ENV{'REQUEST_METHOD'} eq "GET") {
+        $data = $ENV{'QUERY_STRING'};
+    } elsif ($ENV{'REQUEST_METHOD'} eq "POST") {
+        read(STDIN, $data, $ENV{'CONTENT_LENGTH'});
+    } else {
+        return;
+    }
+
+    # Del opp input-data i felter ved alle forekomster av '&'.
+    @data = split(/&/, $data);
+
+    for $i (0 .. $#data) {
+
+        # Pluss oversettes til SPC
+        $data[$i] =~ tr/+/ /;
+
+        # Alt til venstre for første "=" er feltnavn, resten er felt-verdi
+        ($name, $value) = split(/=/, $data[$i], 2);
+
+        # Erstatt forekomster av %<hexkode> med tilsvarende tegn
+        $name =~ s/%(..)/pack("c",hex($1))/ge;
+        $value =~ s/%(..)/pack("c",hex($1))/ge;
+
+        # En/flere forekomster av whitespace i $value oversettes til SPC
+
+	$value =~ s/\r//g;
+        $value =~ s/\n/<br>/g;
+        $input{$name} =  $value; # assosier verdi med feltnavn...
+    }
+    return %input;
+}
+
+
+
+__END__
+
+Skriv inn spørsmålet ditt nedenfor og send inn
+
+<form method="POST" action="XXXURL">
+
+<font size="+1">Navn:</font>
+<blockquote>
+  <input name="innsender" size="60">
+</blockquote>
+
+<font size="+1">E-post-adresse:</font>
+<blockquote>
+  <input name="epost" size="60" value="XXXHOST">
+</blockquote>
+
+<font size="+1">Spørsmålets tittel:</font>
+<blockquote>
+  <input name="tittel" size="60" value="">
+</blockquote>
+
+<font size="+1">Ditt spørsmål:</font>
+<blockquote>
+  <textarea name="kommentar" cols="60" rows="10"></textarea>
+</blockquote>
+
+<input type="submit" value=" Send spørsmål "> <input type="reset" value=" Blankt skjema ">
+</form>
+

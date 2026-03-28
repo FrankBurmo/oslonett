@@ -1,0 +1,237 @@
+#!/usr/local/bin/perl
+# count.xbm - Perl script to keep count of users of this
+# home page.
+#
+# Credits:
+#   Original C code:  Frans van Hoesel (hoesel@chem.rug.nl)
+#   Original port to Perl: Dan Rich (drich@corp.sgi.com)
+#   Modifications for cgi: Michael Nelson (m.l.nelson@larc.nasa.gov)
+#   Modifications for NSF: Mike Morse (mmorse@nsf.gov)
+#   I got this from Michael Baine (mbaine@deimos.ucsd.edu)
+#   I am Michael Breen (http://www.ucsd.edu/webmaster, mbreen@ucsd.edu)
+#   I've cleaned this up a bit, but it's basically as I got it
+
+# To install:
+#  1. Look at initialize() and fix everything you need to.
+#  2. Create the files referenced in initialize(), with the
+#     same owner as your server runs under, or world writable.
+#  NOTE: just create blank files to begin with, then stick the
+#     number you want to start with (0, or number from access.log
+#     file) in the counter.txt file.
+#  3. Stick the script in cgi-bin.  My experience is that the
+#     script file must have the extension ".xbm".
+#  4. Stick something like this in your home page:
+#         Number of home page visitors:
+#         <A HREF=http://my-server.domain/cgi-bin/stats>
+#         <IMG SRC="http://my-server.domain/cgi-bin/count.xbm"></A>
+#     The second line is only if you use our "stats" program, you
+#     can put anything there, or just use the IMG SRC bare.
+#  5. When the home page is displayed, Mosaic clients will retrieve
+#     the in-line bitmap.  This will invoke this script, which
+#     responds with a bitmap it builds on the fly, that looks like
+#     an automobile odometer.  If you include the A HREF, the odometer
+#     will be surrounded by a border (and look better), and users
+#     can click the odometer to get some other information.
+#  6. Don't worry if older WinMosaic versions display "Error" for
+#     the bitmap.  The script is doing the Right Thing.
+
+   &initialize;
+   &incrementCount;     # comment this out if the count is being generated
+                        # by something else (like another script)
+   &generateBitmap;
+   &writeBitmap;
+   exit(0);
+
+
+sub writeBitmap {
+   print ("Content-type: image/x-xbitmap\n\n");
+   if ($isHigh) {
+      printf ("#define count_width %d\n#define count_height 16\n",
+              $len*8);
+   }
+   else {
+      printf ("#define count_width %d\n#define count_height 10\n",
+              $len*8);
+   }
+   printf STDOUT "static char count_bits[] = {\n";
+   for($i = 0; $i < ($#bytes + 1); $i++) {
+      print("0x$bytes[$i]");
+      if ($i != $#bytes) {
+         print(",");
+         if (($i+1) % 7 == 0) {
+            print("\n");
+         }
+      }
+   }
+   print("};\n");
+}
+
+# generateBitmap() - $count contains number to display
+#                    $minLen contains minimum number of digits to display
+#                    $isHigh is one for 16 bit high numbers (else 10)
+#                    $isInverse is one for reverse video (white on black);
+sub generateBitmap {
+   $count = $totalReads;
+   @bytes = ();
+   $len = length($count) > $minLen ? length($count) : $minLen;
+   $formattedCount = sprintf("%0${len}d",$count);
+   if ($isHigh) {
+      for ($i = 0; $i < $len*3; $i++ ) {
+         if ($isInverse) {
+            push(@bytes,"ff");       # add three blank rows to each digit
+         }
+         else {
+            push(@bytes,"00");
+         }
+      }
+   }
+   for ($y=0; $y < 10; $y++) {
+       for ($x=0; $x < $len; $x++) {
+           $digit = substr($formattedCount,$x,1);
+           if ($isInverse) {             # $inv = 1 for inverted text
+               $byte = substr(@invdigits[$digit],$y*3,2);
+           }
+           else {
+               $byte = substr(@digits[$digit],$y*3,2);
+           }
+           push(@bytes,$byte);
+       }
+   }
+   if ($isHigh) {
+      for ($i = 0; $i < $len*3; $i++ ) {
+         if ($isInverse) {
+            push(@bytes,"ff");       # add three blank rows to each digit
+         }
+         else {
+            push(@bytes,"00");
+         }
+      }
+   }
+}
+
+
+
+sub initialize {
+   $host = $ENV{REMOTE_ADDR}; # replace this with your hostname e.g. "host.sub.domain"
+   $port = $ENV{SERVER_PORT}; # replace this with your port number e.g. 80
+   $minLen = 7;           # minimum number of digits in bigmap
+   $isHigh = 1;           # if 1, digits are 16 pixels high, to
+                          # allow room for border
+   $isInverse = 1;        # If 1, digits are white on black
+   $serverRoot = "/local/www";
+   $counterFile = "$serverRoot/logs/counter.txt";
+   $hostsFile = "$serverRoot/logs/counthosts.txt";
+   $dbmFile =   "$serverRoot/logs/hosts";
+   $logFile =   "$serverRoot/logs/counter.log";
+   $lockWait = 5;         # number of seconds to wait for lock
+   # bitmap for each digit
+   #  Each digit is 8 pixels wide, 10 high
+   #  @invdigits are white on black, @digits black on white
+   @invdigits = ("c3 99 99 99 99 99 99 99 99 c3",  # 0
+                 "cf c7 cf cf cf cf cf cf cf c7",  # 1
+                 "c3 99 9f 9f cf e7 f3 f9 f9 81",  # 2
+                 "c3 99 9f 9f c7 9f 9f 9f 99 c3",  # 3
+                 "cf cf c7 c7 cb cb cd 81 cf 87",  # 4
+                 "81 f9 f9 f9 c1 9f 9f 9f 99 c3",  # 5
+                 "c7 f3 f9 f9 c1 99 99 99 99 c3",  # 6
+                 "81 99 9f 9f cf cf e7 e7 f3 f3",  # 7
+                 "c3 99 99 99 c3 99 99 99 99 c3",  # 8
+                 "c3 99 99 99 99 83 9f 9f cf e3"); # 9
+
+
+      @digits = ("3c 66 66 66 66 66 66 66 66 3c",  # 0
+                 "30 38 30 30 30 30 30 30 30 30",  # 1
+                 "3c 66 60 60 30 18 0c 06 06 7e",  # 2
+                 "3c 66 60 60 38 60 60 60 66 3c",  # 3
+                 "30 30 38 38 34 34 32 7e 30 78",  # 4
+                 "7e 06 06 06 3e 60 60 60 66 3c",  # 5
+                 "38 0c 06 06 3e 66 66 66 66 3c",  # 6
+                 "7e 66 60 60 30 30 18 18 0c 0c",  # 7
+                 "3c 66 66 66 3c 66 66 66 66 3c",  # 8
+                 "3c 66 66 66 66 7c 60 60 30 1c"); # 9
+}
+sub incrementCount {
+   &makeLogEntry;
+   if (&lockFile == 1) {
+      $count = "0";
+      return;
+   }
+   &incrementTotalReads;
+   &incrementHosts;
+   &unlockFile;
+}
+
+
+sub unlockFile {
+   unlink("$counterFile.lock");
+}
+
+sub lockFile {
+   $lockCount = 0;
+   while (-f "$counterFile.lock") {
+      if ($lockCount > $lockWait) {
+         $count = 0;
+         return 1;             # forget it (would be nice to log though)
+      }
+      sleep 1;
+      $lockCount++;
+   }
+   open(LOCK,">$counterFile.lock") || die("Can't open $counterFile.lock: $!\n");
+   return 0;
+}
+
+
+
+sub incrementTotalReads {
+   if (-e $counterFile) {
+     open(COUNT,"$counterFile") || die("Can't open $counterFile: $!\n");
+   }
+   $totalReads = <COUNT>;
+   chop $totalReads;
+   close(COUNT);
+
+   $totalReads++;
+
+   open(COUNT,">$counterFile") || die "$0: can\'t open $counterFile: $!\n";
+   print (COUNT "$totalReads\n");
+   close(COUNT);
+}
+
+
+sub makeLogEntry {
+   ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) =
+           localtime(time);
+   $date = sprintf("%02d/%02d/%02d %02d:%02d:%02d",$year,$mon+1,$mday,
+             $hour,$min,$sec);
+   open(LOG,">>$logFile") || die "$0: can\'t open $logFile: $!\n";
+   print (LOG "$date\t$host\t$port\n");
+   close(LOG);
+}
+
+
+sub incrementHosts {
+   if (-e $hostsFile) {
+     open(COUNT,"$hostsFile") || die("Can't open $hostsFile: $!\n");
+   }
+   $totalHosts = <COUNT>;
+   chop $totalHosts;
+   close(COUNT);
+
+   dbmopen(HOSTS,$dbmFile,0666);
+   if (! $host) {
+      $host = "unknown";
+   }
+   $HOSTS{$host}++;
+   if ($HOSTS{$host} == 1) {
+      $totalHosts++;
+   }
+   dbmclose(HOSTS);
+
+
+   open(COUNT,">$hostsFile") || die "$0: can\'t open $hostsFile: $!\n";
+   print (COUNT "$totalHosts\n");
+   close(COUNT);
+}
+
+
+

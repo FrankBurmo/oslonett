@@ -1,0 +1,87 @@
+<html>
+<head>
+ <title>Bruk av Netscape mot Oslonett WWW-Aksess</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+<img alt="" src=Netscape.gif>
+
+<h1>Bruk av Netscape mot Oslonett WWW-Aksess</h1>
+
+Dette dokumentet sier litt om hvordan programmet Netscape kan brukes
+som et alternativ til Mosaic sammen med OnTerm mot Oslonett Aksess.
+<blockquote>
+<h4>
+<hr>
+<img alt=NB!" src=/graphics/warning.gif><br>
+Det er viktig å være klar over at Netscape ikke er å betrakte som en støttet
+tjeneste fra Oslonett! Aksess brukere må derfor finne seg i å være betatestere
+hvis man ønsker å bruke Netscape. Alle problemer og spørsmål kan meldes  på
+vanlig måte, og vi vil så godt som mulig forsøke å svare på disse, men kan
+ikke love noe.
+</h4>
+<hr>
+</blockquote>
+<h2>Hva er Netscape?</h2>
+
+Netscape er en såkalt World Wide Web klient, dvs. et program av samme type
+som NCSAs Mosaic og altså et program man kan bruke for å aksessere et vell av
+informasjon på Internettet. Dette inkluderer, men begrenser seg ikke til,
+informasjon som finnes i Web servere, Gopher servere, FTP arkiv, WAIS
+databaser, telnet aksesserbare databaser, USENET News grupper med mere.
+<h2>Hvordan få tak i Netscape, og hva koster det?</h2>
+Netscape lages av firmaet <a href=http://www.mcom.com>Netscape Communications</a> (tidligere het de Mosaic Communications),
+og finnes for Windows, Mac og de fleste UNIX/X11 plattformer.
+<p>
+Nåværende versjon (0.92 beta) av Netscape er gratis, men firmaet planlegger
+å lansere en kommersiell versjon (om enn til meget lav pris). Det er viktig
+å være klar over at man da forplikter seg til å slette alle gratisversjoner
+av programmet!
+<p>
+Når det gjelder nåværende gratisversjon, har Oslonett sendt en mail til
+Mosaic Communications der vi spør om lov til å legge opp denne i vår
+server. Inntil videre må Oslonett kunder hente programmet selv fra en
+av flg. FTP servere:
+<ul>
+ <li> <a href=ftp://src.doc.ic.ac.uk/packages/Netscape/>src.doc.ic.ac.uk</a> (England)
+ <li> <a href=ftp://unix.hensa.ac.uk/pub/mosaic.comm.corp/>unix.hensa.ac.uk</a> (England)
+</ul>
+<h2>Installasjon og konfigurasjon</h2>
+Etter at du har hentet ZIP filen for Windows, pakker du ut denne og installerer
+netscape et sted på harddisken din. Vi anbefaler at du installerer den under
+et område du kaller <b>c:\netscape</b>.
+<p>
+For å kunne bruke netscape sammen med OnTerm, er det to ting du nå må sørge
+for:
+<ol>
+ <li> Konfigurering av netscape gjennom Options/Preferences menyen
+ <li> Innlegging av netscape i Tjenestemenyen i OnTerm
+</ol>
+Når det gjelder første punkt, har Oslonett allerede gjort grovkonfigureringen
+og laget en <a href=netscape.ini>netscape.ini</a> fil som du skal installere
+under Windows området (vanligvis c:\windows). Etter at du har installert denne
+filen, kan du starte opp netscape og gjøre resten av konfigureringen gjennom
+programmet. Du behøver ikke være oppkoplet for å gjøre dette, så ignorer
+bare feilmeldingene om at netscape ikke får forbindelse mot Oslonett.
+<p>
+Innlegging av Netscape i Tjenestemenyen i OnTerm, gjøres ved å legge inn to
+linjer i onterm.ini filen som ligger under c:\windows. Lokaliser først det
+stedet i filen der det står <b>[Applications]</b> - det er her Tjenestemenyen
+defineres. Utvid så menyen med et entry ved å legge inn Netscape:
+<blockquote>
+[Applications]<br>
+Menu-1=Mosaic<br>
+Prog-1=$ONTERMDIR\MOSAIC.EXE<br>
+Menu-2=Eudora<br>
+Prog-2=$ONTERMDIR\WEUDORA.EXE $MAILDIR\MAIL<br>
+<i>Menu-3=Netscape<br>
+Prog-3=c:\netscape\netscape.exe</i>
+</blockquote>
+
+Dette skulle være alt - lykke til!
+<hr>
+<a href=Aksess.html>
+ <img alt="WWW-Aksess" align=middle src=/Aksess/Aksess-icon.gif></a>
+
+</body>
+</html>

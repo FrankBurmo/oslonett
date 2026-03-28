@@ -1,0 +1,10 @@
+default /
+
+rect /gen/SisteNy_1_1.html    124,70 172,85
+rect /gen/Musikk_2_1.html     175,70 217,85
+rect /gen/Diverse_3_1.html    217,70 296,85
+rect /gen/Service_4_1.html    299,70 337,85
+rect /medlem/index.html   240,70 450,85
+rect /innhold/index.html  361,33 451,47
+
+rect /sn/index.html 18,11 279,64 

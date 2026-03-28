@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# plexus-restart -- restart the plexus server
+#
+# plexus-restart,v 2.5 1993/09/20 22:42:29 sanders Exp
+#
+
+kill -USR1 `cat /home/frogner/www/plexus.pid`
+exit 0

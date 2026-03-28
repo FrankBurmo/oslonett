@@ -1,0 +1,18 @@
+# LaTeX2HTML 95 (Thu Jan 19 1995)
+# Associate image original text (scrambled) with physical files.
+
+$key = q/{tabular}lclbfVARIGHET;html_special_mark_amp;:;html_special_mark_amp;2dagerbfDELTAKERANTALL;html_special_mark_amp;:;html_special_mark_amp;Max16eller2prmaskinbfMÅLGRUPPE;html_special_mark_amp;:;html_special_mark_amp;AllesomønskerålæresegvideregåeHTML;html_special_mark_amp;;html_special_mark_amp;foråkunnegjøreHTMLdokumentermerinteraktive.bfFORUTSETNINGER;html_special_mark_amp;:;html_special_mark_amp;Rimeligeengelskkunnskaperogelementære;html_special_mark_amp;;html_special_mark_amp;kunnskaperibrukaveditorer,PCereller;html_special_mark_amp;;html_special_mark_amp;MACer,samthelstenWWWbrowsersom;html_special_mark_amp;;html_special_mark_amp;Netscapeel.Mosaic.Deterdessutennødvig;html_special_mark_amp;;html_special_mark_amp;åkunnegrunnleggeHTMLogWWW.{tabular}/;
+$cached_env_img{$key} ='<IMG ALIGN=BOTTOM SRC="_10994_tabular24.gif">'; 
+$key = q/{tabular}lclbfVARIGHET;html_special_mark_amp;:;html_special_mark_amp;2dagerbfDELTAKERANTALL;html_special_mark_amp;:;html_special_mark_amp;Max16eller2prmaskinbfMÅLGRUPPE;html_special_mark_amp;:;html_special_mark_amp;AllesomønskerålæresegvideregåeHTML;html_special_mark_amp;;html_special_mark_amp;foråkunnegjøreHTMLdokumentermerinteraktive.bfFORUTSETNINGER;html_special_mark_amp;:;html_special_mark_amp;Rimeligeengelskkunnskaperogelementære;html_special_mark_amp;;html_special_mark_amp;kunnskaperibrukaveditorer,PCereller;html_special_mark_amp;;html_special_mark_amp;MACer,samthelstenWWWbrowsersom;html_special_mark_amp;;html_special_mark_amp;Netscapeel.Mosaic.Deterdessutennødvig;html_special_mark_amp;;html_special_mark_amp;åkunnegrunnleggeHTML.{tabular}/;
+$cached_env_img{$key} ='<IMG ALIGN=BOTTOM SRC="_14474_tabular24.gif">'; 
+$key = q/{tabular}lclbfVARIGHET;html_special_mark_amp;:;html_special_mark_amp;2dagerbfDELTAKERANTALL;html_special_mark_amp;:;html_special_mark_amp;Max16eller2prmaskinbfMÅLGRUPPE;html_special_mark_amp;:;html_special_mark_amp;AllesomønskerålæresegvideregåeHTML;html_special_mark_amp;;html_special_mark_amp;foråkunnegjøreHTMLdokumentermerinteraktive.bfFORUTSETNINGER;html_special_mark_amp;:;html_special_mark_amp;Rimeligeengelskkunnskaperogelementære;html_special_mark_amp;;html_special_mark_amp;kunnskaperibrukaveditorer,PCereller;html_special_mark_amp;;html_special_mark_amp;MACer,samthelstenWWWbrowsersom;html_special_mark_amp;;html_special_mark_amp;Netscapeel.Mosaic.Deterdessutennødvig;html_special_mark_amp;;html_special_mark_amp;åkunnegrunnleggeHTMLogWWW,ogdeteren;html_special_mark_amp;;html_special_mark_amp;fordel(meningenforutsetning)åha;html_special_mark_amp;;html_special_mark_amp;programmeringserfaringfraetUNIXmiljø.{tabular}/;
+$cached_env_img{$key} ='<IMG ALIGN=BOTTOM SRC="_7230_tabular24.gif">'; 
+$key = q/{tabular}lclbfVARIGHET;SPM_amp;:;SPM_amp;2dagerbfDELTAKERANTALL;SPM_amp;:;SPM_amp;Max16eller2prmaskinbfMÅLGRUPPE;SPM_amp;:;SPM_amp;AllesomønskerålæresegvideregåeHTML;SPM_amp;;SPM_amp;foråkunnegjøreHTMLdokumentermerinteraktive.bfFORUTSETNINGER;SPM_amp;:;SPM_amp;Rimeligeengelskkunnskaperogelementære;SPM_amp;;SPM_amp;kunnskaperibrukaveditorer,PCereller;SPM_amp;;SPM_amp;MACer,samthelstenWWWbrowsersom;SPM_amp;;SPM_amp;Netscapeel.Mosaic.Deterdessutennødvig;SPM_amp;;SPM_amp;åkunnegrunnleggeHTMLogWWW,ogdeteren;SPM_amp;;SPM_amp;fordel(meningenforutsetning)åha;SPM_amp;;SPM_amp;programmeringserfaringfraetUNIXmiljø.{tabular}/;
+$cached_env_img{$key} ='<IMG  ALIGN=BOTTOM ALT="" SRC="img3.gif">'; 
+$key = q/{}specialcolorpushBlack{}/;
+$cached_env_img{$key} ='<IMG  ALIGN=BOTTOM ALT="" SRC="img1.gif">'; 
+$key = q/{}specialcolorpop{}/;
+$cached_env_img{$key} ='<IMG  ALIGN=BOTTOM ALT="" SRC="img2.gif">'; 
+
+1;
+

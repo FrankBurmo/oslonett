@@ -1,0 +1,6 @@
+default http://www.digital.no/
+#Intervett
+rect http://www.oslonett.no/IV/ 243,225 416,285 
+#Globus
+circle http://www.uninett.no/ 109,197 159,252 
+rect file:///C|/HOVED.HTM 56,292 415,352 

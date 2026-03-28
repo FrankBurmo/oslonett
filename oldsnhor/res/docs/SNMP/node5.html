@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3O//DTD W3 HTML 2.0//EN">
+<!- Converted with LaTeX2HTML 0.6.4 (Tues Aug 30 1994), Oslonett version : Dec 7, 1994 by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds ->
+<P>
+<HEAD>
+<TITLE>1.2 Plattformmodellen</TITLE>
+<meta name="description" value="1.2 Plattformmodellen">
+<meta name="keywords" value="SNMP">
+<meta name="resource-type" value="document">
+<meta name="distribution" value="global">
+</HEAD>
+<BODY><P>
+ <BR> <HR><A NAME=tex2html124 HREF="node6.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/graphics/l2h/next.gif"></A> <A NAME=tex2html122 HREF="node3.html"><IMG ALIGN=BOTTOM ALT="up" SRC="/graphics/l2h/up.gif"></A> <A NAME=tex2html118 HREF="node4.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="/graphics/l2h/previous.gif"></A> <A NAME=tex2html126 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="/graphics/l2h/contents_motif.gif"></A> <A NAME=tex2html127 HREF="node15.html"><IMG ALIGN=BOTTOM ALT="index" SRC="/graphics/l2h/index_motif.gif"></A> <BR>
+<B> Neste:</B> <A NAME=tex2html125 HREF="node6.html">2 Introduksjon til SNMP</A>
+<B>Opp:</B> <A NAME=tex2html123 HREF="node3.html">1 Modeller for nettverksadministrasjon</A>
+<B> Forrige:</B> <A NAME=tex2html119 HREF="node4.html">1.1 Agent / manager </A>
+<BR> <HR> <P>
+<H2><A NAME=SECTION00032000000000000000>1.2 Plattformmodellen</A></H2>
+<P>
+En idealisert modell for nettverksadministrasjon,  vil være noe som
+fullstendig skjuler mekanismene for kommunikasjon mellom manager og agent.
+<P>
+<P><A NAME=272>&#160;</A><A NAME=plattform>&#160;</A><IMG ALIGN=BOTTOM SRC="_12001_figure178.gif">
+<BR><STRONG>Figur 1:</STRONG> <i>``Plattform modellen'' for nettverksadministrasjon</i><BR>
+<P>
+<P>
+I denne modellen vil det kunne eksistere flere protokoller for utveksling
+av management informasjon, men de enkelte managere behøver ikke forholde seg
+til disse. Dette oppnås ved å innføre et lag mellom agent og manager.
+<P>
+Sett fra managerens side er dette kun et standardisert 
+programmeringsgrensesnitt som man kommuniserer gjennom. Bibliotekene som
+implementerer dette grensesnittet vil ta hånd om protokollkonverteringer,
+datakonverteringer, brukergrensesnitts relaterte funksjoner osv.
+<P>
+Denne modellen vil fremfor alt fremme utviklingen av avansert programvare
+for distribuert systemadministrasjon, og vil gjøre det attraktivt for tredje
+parts utviklere å tilby slik programvare - de kan forholde seg til ett
+programmeringsgrensesnitt og slipper å ta hensyn til protokoller og
+leverandørspesifikke undersystemer.
+<P>
+OSFs Distributed Management Environment (DME) er et godt eksempel på en
+realisering av denne modellen, og vises i figur <A HREF="node5.html#DME">2</A>.
+<P>
+<P><A NAME=279>&#160;</A><A NAME=DME>&#160;</A><IMG ALIGN=BOTTOM SRC="_16525_figure277.gif">
+<BR><STRONG>Figur 2:</STRONG> <i>DME - Distributed Management Environment</i><BR>
+<P>
+<P>
+<A NAME=129>&#160;</A> <A NAME=130>&#160;</A>
+<P>
+Plattformmodellen er skisssert i figur <A HREF="node5.html#plattform">1</A>
+<BR> <HR>
+<P><ADDRESS>
+© Oslonett AS, 15/05-95, 10:35:03
+</ADDRESS>
+</BODY>

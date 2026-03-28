@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1085"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Underlivskreft. 'Må jeg fjerne 'alt'?' Ved Gunnar Kristensen"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Det Norske Radiumhospital. Auditoriet"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="1725-1745"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value="Alle interesserte"` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="25"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Det Norske Radiumhospital"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Oslo"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``En drøfting av hvor radikale underlivsoperasjoner bør være.` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?12.10"?)\s*>` with `` checked>` -->

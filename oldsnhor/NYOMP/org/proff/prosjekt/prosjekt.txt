@@ -1,0 +1,104 @@
+
+<H3>PROFF STAMVEI</H3>
+<H7>Mål</h7>
+<p> 
+Prosjektets mål er å etablere en infrastruktur blant PROFF-medlemmene som danner basis for samarbeid programvareleverandørene imellom fra dag til dag.
+<p>
+Det skal etableres en effektiv kommunikasjons-stamvei i form av et nettverk for elektronisk informasjonsutveksling mellom PROFF-bedriftene for å fremme samarbeid og konkurransedyktighet i bransjen. Man skal tilby tjenester for PROFF-bedriftene som omfatter PROFF-spesifikke tjenester slik som adresseinformasjon/service, elektroniske konferanser, anbudsordninger, partnersøk, databasesøk, elektronisk post mellom medlemmene. I løpet av 1994 skal alle PROFF-bedriftene være tilknyttet Proff Stamvei. Det skal etableres en aktiv veiledningstjeneste for utnyttelse av Proff Stamvei.
+<p>
+Det skal etableres et tjenestespekter til norsk næringsliv og offentlig forvaltning basert på delmålene ovenfor. Alle bransjer som har tilsvarende problemstillinger som PROFF-bedriftene skal kjenne til Proff Stamvei i løpet av 1995.
+<H7>Nytteverdi</h7>
+Rask og effektiv kommunikasjon med sekretariatet og andre PROFF-medlemmer. Bedriften blir selv klar over de mulighetene som ligger i slike nett, og kan nå tjenester som man tidligere ikke var klar over. En rekke av PROFFs tjenester kan legges ut som tjenester i nettet, hvorpå disse kan effektiviseres dramatisk. Eksempler: Markedsinformasjon, statistikker, konferanser, nyhetsformidling. PROFF-bedriftene kan etablere temporært eller fast samarbeid seg i mellom ("Virtual Companies") for å kunne påta seg oppdrag som hver enkel bedrift ikke selv vil kunne være i stand til å påta seg eller bli vurdert som kompetent til å påta seg. I og med at PROFF-bedriftene selv bruker slike systemer, kan ringvirkninger i form av mer avanserte produkter komme deres kunder til gode. Opplæring, support, nyhetsformidling vil kunne skje via nettverk i stedet for post og seminarer. Dette vil være effektivt, og krever færre reiser og kostnader (ref. f.eks. fjernundervisning over telenettet). Effektene av at Norge har en operativ, brukertilpasset elektronisk satmvei og høy kompetanse i å implementere og drive en slik stamvei har potensielt store positive effekter på næringsliv og samfunn. PROFF medlemsbedriftene kan bli foregangsbedrifter i bruk av slike systemer, og kan gi et vesentlig bidrag til at andre følger etter og blir mer effektive.
+
+<H7>Resultater 1994</H7>
+Produkter og tjenester i Proff Stamvei er definert. Teknologi i Proff Stamvei er vurdert og valgt. Økonomi i Proff Stamvei er klarlagt. Sikkerhet i Proff Stamvei er vurdert og implementert. Det er arbeidet med å forberede og motivere PROFF-bedriftene for aktiv bruk av  Proff Stamvei. Markedsføring og opplæring i bruk av Proff Stamvei er påbegynt. Fremtidig administrasjon  og driftorganisasjon for Proff Stamvei er vurdert. Proff Stamvei er etablert og satt i drift i 1994.
+
+<H7>Budsjett 1994</H7>
+Arbeidet i 1994 er grovestimert til en total kostnad på 1.91 MNOK.
+
+<H3>PROFF KVALITET</h3>
+<H7>Mål</h7>
+Forbedre norske programvareprodukters muligheter på eksportmarkedet
+Økt kvalitet i norske programvareprodukter
+<p>
+Dette skal skje ved å:
+<UL>
+<LI>utvikle et sett betingelser - med tilhørende evalueringskriterier - et produkt må oppfylle for å få et PROFF kvalitetsstempel
+<LI>bevistgjøre om sammenhengen mellom kvalitet i produkt og prosess
+<LI>lage et opplegg for å hjelpe PROFF-bedrifter til å oppnå ISO 9000 sertifisering ved at de deler informasjon og erfaringer.
+</UL>
+<H7>Nytteverdi</H7>
+Forbedre norske programvareprodukters muligheter på det internasjonale marked. Dette skal skje ved å synliggjøre resultatet av evaluering av produkt-kvaliteten. Dette vil i sin tur øke tilliten til at man får den kvaliteten son er spesifisert og som man betaler for.
+
+<H7>Resultat 1994</H7>
+Resultatet av dette prosjektet ved utgangen av 1994:
+<UL>
+<LI>PROFF Produktkvalitet
+Utarbeide første versjon av et sett av prosedyrer for evaluering av kvalitet i programvare,bygd på data fra kunder og produsenter.
+</UL>
+<H7>Budsjett 1994</H7>
+Arbeidet i 1994 er grovestimert til en total kostnad på 0.72 MNOK
+
+
+
+
+
+<H3>PROFF Integrasjon</H3>
+<H7>Mål</H7>
+Målet med prosjektet er:
+<UL>
+<LI>Å legge forholdene til rette for en enklere integrasjon av delsystemer fra de ulike PROFF-leverandørene med (hver)andre
+<LI>Å knytte integrering opp mot varemerking i PROFF Kvalitet
+<LI>Å sette PROFF-bedrifter i stand til å "ta i bruk" de riktige integrasjons-teknikker til riktig tid.
+<LI>Å forenkle håndteringen av internasjonale data (koder, tegnsett, adresser, o.l.) bl.a. ved å ta i bruk og påvirke internasjonale standarder (EDIFACT, o.l.)
+<LI>Å understøtte brukers frihet til å velge/kjøpe komponenter fra ulike leverandører.
+<LI>Å etablere Norge som sentral leverandør av "Administrative" systemer i Europa.
+</UL>
+<H7>Nytteverdi</H7>
+Prosjektet vil muliggjøre samvirke mellom systemer fra ulike PROFF bedrifter og etablere en basis for felles produktleveranser. Dette vil gi bransjen og den enkelte leverandør økt tillit i markedet, ved at kundene får økt valgfrihet og fleksibilitet i sammensetning av egne løsninger, basert på ulike kommersielle delløsninger. Det vil også være arbeidssparende for den enkelte leverandør hvis man får til en standardisering rundt eksterne grensesnitt. Ved å samarbeide med bransjeorganisasjoner og IDIS-bedrifter vil det fokuseres på å møte de riktige behovene hos brukerne av systemene som skal kunne samvirke.
+
+<H7>Resultater 1994</H7>
+Delprosjekt 1: Semantisk integrasjon:
+<UL>
+<LI>Etablering av en "standard" datamodell for utveksling av administrativ informasjon.
+</UL>
+<p>
+Delprosjekt 2: Teknisk integrasjon:
+<UL>
+<LI>En integrasjonsguide for integrasjon mot ulike databasesystemer
+<LI>En integrasjonsguide for ulike integrasjons-teknikker som OLE2/CORBA/EDI m.fl.
+</UL>
+<H7>Budsjett 1994</H7>
+Arbeidet i 1994 er grovestimert til en total kostnad på 1.050 MNOK
+
+
+
+
+<H3>PROFF SYSTEMUTVIKLING</H3>
+
+<H7>Mål</H7>
+Målet med prosjektet er:
+<UL>
+<LI>Å sette PROFF-bedrifter i stand til å oppnå en optimal bruk av de beste systemutviklings-metoder og verktøy
+<LI>Å effektivisere erfaringsutveksling i forbindelse med bruk og evaluering av metoder og verktøy
+</UL>
+<H7>Nytteverdi</H7>
+Produktivitet i utvikling av sammenlignbar programvare kan variere med mer enn en faktor 5 mellom bedrifter. Produktiviteten vil følgelig ofte være avgjørende for bedriftenes konkurranseevne. En optimal bruk av systemutviklings-metodikk og -verktøy vil bidra til høy effektivitet i dette arbeidet og god kvalitet på de resulterende produktene. Store og raske teknologiske forandringer og stadig ny teknologi og nye brukerkrav betyr at PROFF-bedriftene bør videreutvikle seg kontinuerlig på dette området. Et felles forhold til systemutviklings -metoder og -verktøy gir en bedre mulighet for samarbeid og samvirke mellom bedriftene. Et eget forum for utredninger og anbefalinger i forhold til dette vil være effektiviserende for bransjen.
+<p>
+Resultater, aktiviteter
+<UL>
+<LI>En oversikt over PROFF-bedriftenes bruk av og erfaring med systemutviklings -metoder og verktøy.
+</UL>
+<H7>Budsjett 1994</H7>
+Arbeidet i 1994 er grovestimert til en total kostnad på 0.22 MNOK
+
+
+
+
+
+
+
+
+	side  1	1
+
+

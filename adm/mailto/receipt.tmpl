@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link rel="stylesheet" href="@RECEIPTSTYLE@" type="text/css" />
+    <title>Kvittering på påmelding til Oslonett jubileumsarrangement 12. desember 2001</title>
+  </head>
+
+  <body class="main">
+    <!--#include virtual="/ssi/head_main.html" -->
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="10">
+      <tr valign="top">
+        <!--#include virtual="/ssi/left_historie.html" -->
+
+        <td valign="top" colspan="2">
+        <h2>Kvittering på påmelding til Oslonett jubileumsarrangement 12. desember 2001</h2>
+
+          <p>Påmeldingsskjemaet du fylte inn er sendt i mail til <b>@TO@</b>, og
+          mailens tittel er <b>@SUBJECT@.</b> Her er en kvittering på
+          det du fylte inn (print gjerne ut dette og ta vare på
+          det):</p>
+
+          <div class="formdata" align="center" width="95%">
+     
+            <table width="95%" cellpadding="2" cellspacing="2"
+            class="input">
+
+              <tr bgcolor="#abcdef">
+                <th align="Left">
+                  Skjemafeltnavn
+                </th>
+                <th align="left">
+                  Utfylt innhold
+                </th>
+              </tr>
+       @FORMDATA@ 
+
+            </table>
+          </div>
+          <p>Dette skjemaet ble sendt inn @DATE@.</p>
+        </td>
+      </tr>
+      <!--#include virtual="/ssi/address_main.html" -->
+    </table>
+  </body>
+</html>
+

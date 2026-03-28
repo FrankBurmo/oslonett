@@ -1,0 +1,77 @@
+<!---Aftenposten - IT Utvikling: Jon Fredrik Fikse-------------------------->
+<HTML>
+<HEAD>
+<TITLE> - Vin</TITLE>
+</HEAD>
+<!-- For Netscape-navigatorer: Bakgrunnsfarger mm.  EGGESKALL BAKGRUNN -->
+<BODY BGCOLOR="#ffffee" TEXT="#000000" 
+           LINK="#0000ff" VLINK="#aa0000" ALINK="#ff0000">
+<!------ Bakgrunnsfarger mm: slutt ------------------>
+
+<!------------------- Standard header -------------------------->	<P ALIGN=center>
+<A  HREF="../../banner/vin_ho.map">
+<IMG ALIGN=center WIDTH=454 HEIGHT=65 SRC="../../banner/vin_ho.gif" ISMAP border=0></A><br>
+<!------------------- Standard header: slutt -------------------------->	<BR>
+<center>
+<!------------------- Deklarerer hele tabellen -------------------------->	
+<TABLE ALIGN=CENTER CELLSPACING=5 CELLPADDING=5 BORDER=0>
+<TR>
+<TD WIDTH=65 VALIGN=TOP>
+<IMG SRC="bilder/sjampis.gif" ALT="(illustrasjon)"  BORDER=1 WIDTH=60 HEIGHT=134><P>
+<IMG SRC="bilder/bok1.gif" ALT="(illustrasjon)"  BORDER=1 WIDTH=60 HEIGHT=84>
+<BR>
+</TD>
+
+<!------------------ TOPP: bilde & ingress til venstre ------------------->
+<TD valign=top WIDTH=300>
+<FONT SIZE=+2><A HREF="vinspalt/951222a.htm">Sexy, sprudlende champagne</A></FONT><BR>
+V&aring;r vinanmelder er ikke i tvil: A. Jacquart Champagne Grand Cru Vintage 1989, er den beste blant de vanlige i champagne-hyllen. Men husk at champagne kommer fra Frankrike.  Musserende vin er et alternativ.<P><HR>
+
+<FONT SIZE=+1><A HREF="vinspalt/951208.htm">Legg en vinbok under juletreet</A></FONT><BR>
+Vinb&oslash;ker kan gi et uendelig forr&aring;d informasjon og uttdypning, og er utmerkede julegaver.<P> <HR>
+<FONT SIZE=+1><A HREF="vinspalt/951124.htm">Vi har testet jule-akevitten</A></FONT><BR>
+Kvaliteten p&aring; den norske akevitten er jevn og h&oslash;y. Aftenposten har testet dem alle. <HR>
+<FONT SIZE=+1><A HREF="vinspalt/951020.htm">Vinjakt p&aring; Internett</A></FONT><BR>
+De elektroniske media er uendelig innholdsrik, men smaksfattig. <BR>
+</FONT><BR>
+
+
+<P>
+<I>Aftenpostens vinekspert <A HREF="mailto:geir.salvesen@aftenposten.no">Geir Salvesen</A> har hver uke nye vin-nyheter og -reportasjer.</I><BR>
+</TD>
+
+<!------------------ FASTE VALG  (vinguide mm)------------------->
+
+<TD valign=TOP WIDTH=150>
+<FONT SIZE=+1>
+
+<BR>
+<IMG ALT="vin:" ALIGN=TOP BORDER=0 SRC="bilder/rod.gif" WIDTH=12 HEIGHT=22>
+<A HREF="arkiv.htm">Tidligere artikler</a><br>
+
+
+<IMG ALT="vin:" ALIGN=TOP BORDER=0 SRC="bilder/rod.gif" WIDTH=12 HEIGHT=22>
+<A HREF="vinlink.htm">Relaterte lenker</a><P>
+
+<IMG ALT="R&oslash;dvin:" BORDER=0 SRC="bilder/rod.gif" ALIGN=TOP WIDTH=12 HEIGHT=22>
+<A HREF="rodguide.htm">R&oslash;dvinguide</A><BR>
+
+<IMG ALT="Hvitvin:" BORDER=0 SRC="bilder/hvi.gif" ALIGN=TOP WIDTH=12 HEIGHT=22>
+<A HREF="hvitguid.htm">Hvitvinguide</A><BR>
+
+<IMG ALT="Ros&eacute;vin:" BORDER=0 SRC="bilder/ros.gif" ALIGN=TOP WIDTH=12 HEIGHT=22>
+<A HREF="rosguide.htm">Ros&eacute;vinguide</A><P>
+</FONT>
+</TD>
+</TR>
+</table>
+</CENTER>
+
+<HR WIDTH=450>
+<!------------------ KNAPPERAD + tekstversjon--------------->
+<P ALIGN=center>
+<font size="-1"><a href="../../innhold/index.htm">[Innhold]</a> <a href="../../info/index.htm">[Info]</a> <a href="../../index.htm">[Aftenposten hjemmeside]</a>  <a href="../index.htm">[Kultur og underholdning]</a> <a href="../../info/post/index.htm">[Post]</a> </font>
+<!------------------ KNAPPERAD..: slutt--------------->
+</BODY>
+</HTML>
+<BR>

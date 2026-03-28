@@ -1,0 +1,178 @@
+1#nyheter$$
+
+1.1#Siste Nytt###sistenytt#nyhetsmal.html$$
+1.1.1#Schibsted Nett's egen NewsDesk#Vi holder deg oppdatert med nyheter fra nettet og ellers.#/newsdesk/$$
+1.1.2#Aftenposten#Oppdaterte nyheter hele døgnet.#http://www.sn.no/aftenposten/nyheter/110.html$$
+1.1.3#Morgenbladet#Norges kulturavis er tilgjengelig på SN Horisont hver torsdag.#http://www.sn.no/mb/$$
+1.1.4#Verdens Gang#Norges største avis i interaktiv utgave.#http://www.vg.no/vg/1.side/$$
+1.1.5#Reuters#Internasjonalt velrennomert nyhetsbyr&aring; med omfattende dekning innen politikk, storfinans, krig og konflikter.#http://www.yahoo.com/headlines/news/$$
+
+1.2#Innenriks###innenriks#nyhetsmal.html$$
+1.2.1#Aftenposten#Innenriksnyheter fra tekst-TV#http://www.sn.no/aftenposten/nyheter/111.html$$
+1.2.2#Morgenbladet#Tradisjonsrik avis med en utgivelse i uka. Mye stoff om kultur og teknologi gjennom kritikk, kommentarer og andre meningsytringer.#http://www.sn.no/me/ts/mb/$$
+
+1.3#Utenriks###utenriks#uriksmal.html$$
+1.3.1#Aftenposten#Utenriksnyhetene fra tekst-TV#http://www.sn.no/aftenposten/nyheter/131.html$$
+1.3.1#Aftonbladet#Svensk tabloidavis.#http://www.aftonbladet.se/start.html$$
+1.3.2#The San Francisco Cronicle#En av de st&oslash;rste distriktsavisene i USA. Sammen med The San Francisco Examiner utgis ogs&aring; webmagasinet <a href="http://www.sfgate.com/">"The Gate"</a>.#http://www.sfgate.com/chronicle/index.shtml$$
+1.3.3#USA Today#Den eneste riksavisen i USA.#http://www.usatoday.com/$$
+1.3.4#Time Daily - News#Det amerikanske 
+ukemagasinet Time Magazine med daglige nyhter fra den internasjonale 
+arena.#http://pathfinder.com/@@qH00bFGOBQMAQDxe/time/daily/time/1995/latest.html$$
+1.3.5#Yahoo:Daily News#Nettkatalogen Yahoo med sin opplisting av 
+nyhetsmedier med internasjonalt stoff.#http://www.yahoo.com/News/Daily/News/$$
+
+1.4#Sport###sport#sportmal.html$$
+1.4.1#Resultater, NM på ski#SN Horisont har resultatene fra NM på ski på Stryn. Hego Timing Systems og Schibsted Nett har lagt ut alle de offisielle resultatene.#http://www.sn.no/sp/hego/ski-nm96/$$
+1.4.2#Dallas vant Superbowl 27-17!#Dallas Cowboys vant amerikanernes "cupfinale" med resultatet 27 - 17 over Pittsburgh Steelers.#http://www.sn.no/newsdesk/html/960129-06.html$$
+1.4.3#VGs sportssider#Nyheter, reportasjer, diskusjoner og resultater#http://www.vg.no:80/vg/sportogspill/$$
+1.4.4#Aftenposten#Oppdaterte sportsnyheter med spillservice.#http://www.sn.no/aftenposten/nyheter/141.html$$
+1.4.5#Sports Illustrated#Sportsblad med mye amerikansk fotball, baseball og boksing.#http://pathfinder.com/@@rSnRD7GPNAIAQF1Q/si/welcome.html$$
+1.4.6#ESPN SportsZone##http://espnet.sportszone.com/$$
+1.4.7#Sports World##http://sportsworld.line.com/ $$
+1.4.8#Reuters#Sportsnyhter fra nyhetsbyr&aring;et Reuters.#http://www.yahoo.com/headlines/sports/$$
+
+1.5#Økonomi###nokonomi#okonomimal.html$$
+1.5.1#Aftenposten#Økonomiske nyheter#http://www.sn.no/aftenposten/nyheter/121.html$$
+1.5.2#Halvdan Skard støtter Rattsø-utvalget.#Regjeringen forslår at småkommunene skal få mindre overføringer fra 
+staten til fordel for byer og større kommuner. SN-horisont har 
+tabellene med konsekvensene for din kommune. Lederen i Kommunenes 
+Sentralforbund, Halvdan Skard,støtter utvalget. Småkommunene 
+protesterer.#http://www.sn.no/~kopinath/Rattso/Rattso.htm$$
+1.5.3#The Economist#The Economist har svært mye stoff om Internett og gir dessuten ut et eget magasin som bare publiseres på nettet.#http://www.economist.com/$$
+1.5.4#CNN Business News##http://cnnfn.com/$$
+1.5.5#Financial Times##http://www.ft.com/$$
+1.5.6#Fortune Business Report##http://pathfinder.com/@@Ld95iaG0RgAAQOVP/fortune/TNX/1995/$$
+1.5.7#Wall Street Journal Money & Investing Update##http://update.wsj.com/$$
+1.5.8#Reuters##http://www.yahoo.com/headlines/business/$$
+
+1.6#Været###vaeret#vaermal.html$$
+1.6.1#Aftenposten#Været#http://www.sn.no/aftenposten/nyheter/151.html$$
+1.6.2#INTELLiCast#Været rundt omkring i verden#http://www.intellicast.com/weather/intl/$$
+1.6.3#USA Today#Været i USA#http://www.usatoday.com/weather/wfront.htm$$
+
+2#fritid####fritidsmal.html$$
+
+2.1#Musikk###musikk#fritidsmal.html$$
+2.1.1#Akers Mic#Akers Mic er Nordens største spesialforretning innen hjemmeunderholdning, inkl. CD, video, laserdisk og multimedia. Her finner du blant annet hele CD katalogen søkbar!#/akersmic/$$
+2.1.5#VGs plateanmeldelser##http://www.vg.no:80/vg/95/anm/musikk/oversikt.html$$
+2.1.6#VG-lista#Norges offisielle hitliste er basert på siste ukes salg hos ca. 80 musikkforhandlere over hele landet. Nå har listen også fått lyd!#http://www.vg.no:80/vg/lista/index.html$$
+2.1.9#Savoy#Savoy (med bla. Paal Waaktaar) har lagt ut smakebiter fra debutalbumet. Her er det også gjestebok#http://www.sn.no/savoy/$$
+2.1.7#Hifi on WWW##http://www.unik.no/~robert/hifi/hifi.html$$
+2.1.2#Internet Underground Music Archive##http://www.iuma.com/IUMA-2.0/home.html$$
+2.1.3#CD NOW##http://cdnow.com/$$
+2.1.4#Web Wide World of Music##http://american.recordings.com/wwwofmusic/$$
+2.1.8#Top40##http://www.everyday.se/kiosk/topp40/$$
+
+2.2#Sport###sport#fritidsmal.html$$
+2.2.6#VGs sportssider#Her finner du, i tillegg til sportsnyheter, diskusjonsgrupper, tabeller, generell sportsinfo osv#http://www.vg.no:80/vg/sportogspill/$$
+2.2.5#Fotballbladet GOAL#Her finner du samtlige artikler fra GOALs 1995 utgaver, i en søkbare database#/goal/$$
+2.2.11#Seilas#Nyheter og seileinformasjon fra bladet Seilas#/seilas/$$
+2.2.10#Klatremuligheter i Europa#Oversikt over klatremuligheter i Europa, ute og inne#/sp/fjell/climbing/$$
+2.2.1#Håndball VM 1995#I det kampene blåses av finner du resultatene fra Håndball VM her. De norske jentene er klare for kvartfinalen etter at de slo Slovakia 32-21. På SN kan du følge jentenes tøffe vei mot  gullet. #/hballvm95/$$
+2.2.2#Sportsresultater#Informasjon og resultater fra sportsarrangementer som Sentrumsløpet, Holmenkollstafetten, Skarverennet, Oslo Maraton mm. Levert av Regnly-Timetech#/sp/tt/$$
+2.2.3#Sykkeldelisk#Norges ledende forhandler innen offroad, BMX og mountain bike.#/sp/sy/$$
+2.2.12#Hemsedal Resort#Reiselivsbedrift i Hemsedal, med bla Hemsen, Stavkroa, Hemsedal Alpin Appartment mm.#/hemsedalresort/#$$
+2.2.4#Fjellsportforum##http://www.sn.no/home/mariusbe/$$
+2.2.7#World Wide Web of Sports##http://www.tns.lcs.mit.edu/cgi-bin/sports$$
+2.2.8#Planet Reebok##http://planetreebok.com/$$
+2.2.9#Yahoos sportssider##http://www.yahoo.com/Recreation/Sports/$$
+
+2.3#Reise###reise#reisemal.html$$
+2.3.1#Hoteller#<a href="/rl/in">Inter Nor Hotels</a> er norges første hotellkjede på Internett, med oversikt over samtlige hoteller og mulighet for rombestilling.#/rl/in/$$
+2.3.2#Turoperatører#Arctic Adventours er en norsk turoperatør som arrangerer opplevelsesturer med vekt på arktiske områder.#/rl/aa/$$
+2.3.12#Opplevelsesferie#<a href="/rl/viking">Viking Spesialreiser</a> gir deg muligheten til storslåtte turer til Grønland.#/rl/viking/$$
+2.3.13#Charterturer#<a href"/tjaereborg/">Tjæreborg</a> er en av skandinavias største turoperatører, med reisemål i blant annet Hellas, Kypros, Spania, Tyrkia.#/tjaereborg/$$
+2.3.14#Hemsedal Resort#Reiselivsbedrift i Hemsedal, med bla Hemsen, Stavkroa, Hemsedal Alpin Appartment mm.#/hemsedalresort/#$$
+2.3.3#Fergeselskaper#<a href="http://www.colorline.no/">Color Line</a> har presentasjon av linjen Oslo-Hirtshals og skipets fasiliteter. Rutetider, priser på ulike produkter, kurs og konferanse, e-mail booking m.m.#http://www.colorline.no/$$
+2.3.4#Reisebyråer#<a href="/rl/lr/">Lysaker Reisebyrå</a> er et fullservice reisebyrå, og er agent for de fleste operatører innen reiselivsbransjen.#/rl/lr/$$
+2.3.5#Rutebok for Norge#Norsk Reiseinformasjon AS gir ut rutebok for Norge og Reiseplanlegger for PC. Produkter (og demoversjoner) kan bestilles online.#/nri/$$
+2.3.6#Turistinformasjon om Oslo#Oslo Promotion markedsfører Oslo som turistby, og har lagt ut masse informasjon på Internett.#/oslopro/$$
+2.3.15#Reiselivsinformasjon om Syd-Norge#Aurora Reiseliv AS markedsfører Syd-Norge som reisemål, med en egen reiselivsdatabase.#/aurora/sydnorge/$$
+2.3.7#Norsk reiselivsdatabase for WWW#Norwegian Tourist Information Network er en web-struktur for norsk reiselivsinformasjon#/rl/ntin/$$
+2.3.8#Thomsen Travelmart#Thomsen Travelmart selger restplasser med opptil 40% prisavslag på hotelleferier, sommerhus, båter og ferieleiligheter #http://www.travelmart.no/travelmart/$$
+2.3.9#The Nordic countries##http://www.centrum.dk/danmark/intravel/nordic.html$$
+2.3.10#Lonely Planet##http://www.lonelyplanet.com/$$
+2.3.11#City Net##http://www.city.net/$$
+
+2.4#Uteliv###uteliv#fritidsmal.html$$
+2.4.1#VGs restaurantguide##http://www.vg.no:80/vg/95/anm/mat/guide.html$$
+2.4.2#Henriks uteguide##http://www.uio.no/~henrikb/uteliv/live.html$$
+2.4.3#Kvasirs oversikt over utesteder##http://kvasir.sn.no/cgi-bin/kvasir/search?text=utesteder\&prefix=\&field=title\&field=description\&field=keywords$$
+
+2.5#Hobby###hobby#fritidsmal.html$$
+2.5.14#JM Foto#Fotoutstyr, optikk. Kameramuseum og mange spennende linker til inn- og utland.#/nl/ndiv/jm/$$
+2.5.1#Jaguarklubben##/home/nick/jaguar.html$$
+2.5.2#Norsk Sportsvognklubb##/home/ingem/nsk.html$$
+2.5.3#Triumph##/home/egilk/t2000.html$$
+2.5.4#Bridge##/home/perlange/turneringer.html$$
+2.5.5#Galaktisk Informasjonsservice##/home/permj$$
+2.5.6#Ola's hobbyrom for barn##/home/bjornrud/barn.html$$
+2.5.7#Berner Sennen hund##/home/aas/bs/$$
+2.5.8#Norsk Retrieverklubb##/home/rolfd/nrk.html$$
+2.5.9#Frimerker##/home/kjellg/ak95_2.html$$
+2.5.10#Vinklubben##/home/www-tm/$$
+2.5.11#Modellfly##/home/tkholst/ncmf.html$$
+2.5.12#Planter##/home/geirke/ggghome.htm$$
+2.5.13#Slektsgranskning##http://www.teleslekt.sn.no/$$
+
+2.6#Data###data#fritidsmal.html$$
+2.6.1#Den Norske Dataforening #DND er en interesseorganisasjon for alle som er opptatt av informasjonsteknologi i Norge. DND arrangerer kurs, seminarer og møter og står for flere bokutgivelser.#http://www.dnd.no/$$
+2.6.2#Dataleverandører hos Schibsted Nett#Her finner du en oversikt over dataleverandører hos Schibsted Nett, hardware- og softwareleverandører, kurs og konsulentfirmaer osv.#/nl/dt/$$
+2.6.3#Kvasir: Data og Internett##http://kvasir.sn.no/kvasir/Data_og_Internett/$$
+
+3#marked####kjopmal.html$$
+3.1#Diverse###diverse#kjopmal.html$$
+3.1.4#Kjøpesenter#InterShop er et ekte Internett kjøpesenter, som selger sportsutstyr, kontor og datautstyr og elektronikk.#/sh/is/$$
+3.1.1#Blomster#Interflora, Norges største blomsterkjede, nå også med bestillingsmulighet via Internett.#/interflora/$$
+3.1.2#Data#NetShop, Norges første "on-line only" databutikk.#http://www.telepost.no/netshop/$$
+3.1.2#Computer Resources InternetShop#Den mest komplette dataleverandøren på nettet!#http://www.sol.no/cri/$$
+3.1.3#Frimerker#Kjell Germeten AS, Frimerkesalg og auksjoner.#/div/kjellg/ $$
+3.1.5#Musikk#Akers Mic har lagt ut en søkbare CD-database, med over 65 000 titler, der man kan bestille og kjøpe CD'er over nettet.#/akersmic/$$
+3.1.6#Bøker#<a href="/home/sparta">Akademisk Nettverk</a><dd><a href="/me/bh/idg/">IDG bookshop</a><dd><a href="/me/bh/nlh/">Norwegian Library house AS</a><dd><a href="/prenhall/">Prentice Hall</a><dd><a href="http://www.sn.no/home/paul/uf00.html">Universitetsforlaget</a>#/gen/Diverse_3_1.html$$
+3.1.7#JM Foto#Fotoutstyr, optikk. Kameramuseum og mange spennende linker til inn- og utland.#/nl/ndiv/jm/$$
+
+4#proff####proffmal.html$$
+4.1#Service Senter###servicesenter#proffmal.html$$
+4.1.1#Gule sider#Eurocall Gule Side tilbyr søk efter telefonnummer og adresser#/gs/$$
+4.1.2#Norske organisasjoner#Elanders har lagt ut hele katalogen over Norske organisasjoner i World Wide Web#/Elanders/prosj/nororg/nowww.html$$
+4.1.3#Statistisk Sentralbyrå#Oversikt over norske kommuner#http://www.ssb.no/www-open/databaser/kart.html$$
+4.1.8#Næringseiendom#NæringsEiendom Online - Real Estate - Norway#http://www.sn.no/home/bladetne/$$
+4.1.4#Eiendomsmegling#<a href="/nl/ndiv/eiendomsinfo/">Eiendomsregisteret, Det landsomfattende, offisielle registeret over eiendommer i Norge</a><dd><a href="/m2/">M2 Eiendomsmegling</a>#/nl/ndiv/eiendomsinfo/$$
+4.1.5#Blomsterbestilling#Ved hjelp av Interflora kan du bestille blomster til en forretningsforbindelse#/interflora/$$
+4.1.6#Hotellrom#Internor Hotels tilbyr reservasjon av hotellrom#/rl/in/reservasjons-skjema.html$$
+4.1.7#Vikarbyråer#<a href="http://www.kelly.no/kelly/">Kelly bemanningsløsninger</a><dd><a href="/nl/dt/kk/xtra/">Xtra personell AS</a>#/gen/Service_4_1.html$$
+
+4.2#Stillingsannonser###stilling#proffmal.html$$
+4.2.1#Schibsted Nett AS#Stillingsannonser#/nl/ja/$$
+4.2.2#Arbeidsdirektoratet#Ledige stillinger#http://www.uio.no/cgi-bin/ledige_stillinger$$
+4.2.3#Kvasir: Ledige stillinger##http://kvasir.sn.no/kvasir/N%E6ringsliv/Ledige_stillinger/$$
+
+4.3#Offentlig informasjon###offinfo#proffmal.html$$
+4.3.1#Forskning#Norges forskningsråd er en sentral institusjon i norsk forskning og forvalter årlig ca. 2,3 milliarder kroner. Forskningsrådet skal fremme grunnleggende og anvendt forskning innenfor alle fagområder. Her finnes blant annet søknadsskjema og informasjon om søknadsfrister.#/div/oi/nfr/$$
+4.3.2#Brønnøysundregistrene#Brønnøysundregistrene har ansvar for en rekke forskjellige  statlige registre. Så godt som alle opplysningene i registrene  er offentlig tilgjengelig. Hos Schibsted Nett finner du  informasjon om de ulike registrene og hvordan du bruker dem.#/home/br-info/$$
+4.3.3#Regjeringen#ODIN tilbyr informasjon fra regjeringen, statsministerens kontor og departementene#http://odin.dep.no/$$
+4.3.4#Kommunenes informasjonstjener##http://www.ki.kommorg.no/$$
+4.3.5#Statistisk Sentralbyrå##http://www.ssb.no/$$
+
+4.4#Økonomi###okonomi#proffmal.html$$
+4.4.4#Delphi Economics#Delphi Economics er et av nordens ledende selskaper innen finansiell rådgivning, analyse og informasjonssystemer.#/delphi/$$
+4.4.1#BNbank#BNbank - en positiv annerledes bank.#/nl/fi/bnbank/$$
+4.4.2#Hallingbanken Aal Sparebank#Hallingdal sin største bank.#/hallingbanken$$
+4.4.3#Security First Network Bank##http://www.sfnb.com/$$
+4.4.4#Yahoo: Business and Economy##http://www.yahoo.com/Business_and_Economy/$$
+
+4.5#Selskapsinformasjon###selskap#proffmal.html$$
+4.5.1#Schibsted A/S#Årsrapport#http://www.sn.no/schibsted/$$
+4.5.2#Advokatfirmaet Føyen & Co ANS##http://www.foyen.no/$$
+4.5.3#Bolig- og Næringsbanken#Firmainformasjon#http://www.sn.no/nl/fi/bnbank/info.html$$
+4.5.4#Næringseiendom#Fakta#http://www.sn.no/home/bladetne/fakta/fakta.htm$$
+4.5.5#Skrivervik Data#Pressemeldinger#http://www.sdata.no/skrivervik/presse/INDEX.html$$
+
+
+
+
+
+
+
+

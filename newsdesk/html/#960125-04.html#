@@ -1,0 +1,53 @@
+<html>
+<head>
+ <title>Test fra Gisle</title>
+</head>
+<body bgcolor="#ffffff">
+<img alt="Nyheter fra Webdesken på SN Horisont" 
+     src="/rndtopp.cgi">
+
+
+<h1>Test fra Gisle</h1>
+
+<!-- Filen er automatisk generert av /local/www/newsdesk/bin/lagmelding -->
+
+<em>Oslo, 25. januar 1996, kl. 14:25</em>
+<p>
+
+Dette er en liten prøve på hvordan ting funker etc
+<p><em><a href=mailto:oddstad@a.sn.no>oddstad@a.sn.no</a></em>
+<hr noshade size="1">
+
+<!-- ENDBODY-->
+<a href="http://www.sn.no/newsdesk/html/960125-03.html"><img alt="[Forrige]" border="0" src="http://www.sn.no/gifs/on/arrows/prev.gif" align="absmiddle"></a>
+<a href="http://www.sn.no/newsdesk/html/index.html">
+  <img alt="[Indeks]" src="http://www.sn.no/gifs/on/arrows/up.gif" border="0" align="absmiddle"></a>
+<!-- Neste linje må ikke fjernes, den brukes ved automatisk oppdatering -->
+<!-- NEXTREFERENCE -->
+
+<a href="/cgi-bin/SN-wdeskwais.pl"><img alt="[Søk]" src="/graphics/binoc-t.gif" border="0" align="absmiddle"></a>
+
+<address>
+ <hr size=1 noshade width=100% align=left>
+ <table border=0 cellspacing=10 width=100%>
+ <tr><td>
+  <a href="/">
+   <img src="/img/horisont.gif"
+        alt="[SN Horisont]"
+     valign=middle
+     border="0"></a>
+     </td>
+ <td valign=middle>
+  <font size="-1">Copyright &#169; 1996 </font></td>
+  <td valign=middle><a href="/sn/">
+    <img src="/img/snikon.gif"
+         alt="[Schibsted Nett AS]"
+      border="0"></a>
+    </td></tr>
+    </table>
+</address>     
+
+<p>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<html>
+ <head>
+  <title>
+     Oppgaver til Intervett kurset «HTML fordypning»
+  </title>
+ </head>
+
+<body bgcolor="#ffffff">
+
+<h1>
+     Oppgaver til Intervett kurset  «HTML fordypning»
+</h1>
+
+    <img alt="" src=/IV/gifs/IV.gif>
+<p>
+     Oppgaven her er satt sammen av to deloppgaver, og går ut på at du
+     skal lage et "bestillingsskjema" for en stor internasjonal konferanse
+     som skal foregå i Oslo. Bestillingsskjemaet skal inneholde muligheter
+     for bestilling av hotellrom, konferansedeltagelse samt deltagelse på
+     en rekke tilleggsaktiviteter som sightseeingturer etc. Skjemaet må
+     selvsagt inneholde felter der de som melder seg på kan skrive navn
+     og adresse.
+<p>
+     Skjemaet skal bygges ut etter spiralmodellen, dvs. først enkle ting,
+     så stadig mer og mer avansert.
+
+<a name="z1"><h2>
+     Deloppgave 1 : bruk av Imagemap - «klikksensitive bilder»
+</h2></a>
+
+     Du skal starte det hele med å legge et imagemap på toppen av 
+     bestillingsskjemaet. GIF filen her består av de tre flaggene til
+     England, Norge og Tyskland. Du skal konfigurere dette imagemapet
+     slik at når man klikker på et av flaggene så får man opp skjemaet
+     på det tilhørende språket.
+
+<blockquote><em>
+       (ta det med ro, du skal slippe å skrive
+       skjemaet på tre språk, du kan ta en kopi av den norske filen
+       og kalle den hhv. "eng.htm" og "tysk.htm" og på toppen skrive et
+       eller annet som viser hvilket språk denne skal representere).
+</em></blockquote>
+     
+      For ordens skyld får du her en kvikk kokebok for hvordan du går
+      fram:
+
+<ol>
+ <li> Hent først <a href="/IV/kurs/HTML2/oppg.gif">GIF filen</a> og legg
+      den lokalt på harddisken "ved siden av" bestillingsskjemaet
+      (foreleser forklarer hvordan dette gjøres).
+ <li> Du skal nå finne koordinatene til de tre rektanglene som 
+      representerer de tre flaggene. Det kan du gjøre på 2 ulike
+      måter:
+<hr size=2 noshade>
+ <ol>
+   <li> Du kan bruke et program for å gjøre dette. Avhengig av 
+        hvor kurset foregår og hva slags maskinplattform som brukes,
+        kan det hende at et slikt program er tilgjengelig.
+   <li> Du kan bruke WWW for å finne det ut! Lag en HTML fil som
+        inneholder dette:
+
+   <pre>
+   &lt;form method="POST" action="http://www.oslonett.no/cgi-bin/mailit"&gt;
+   &lt;input type="image" name="Koordinat" src="<b>URL</b>"&gt;
+   &lt;/form&gt;</pre>
+        Du skal her bytte ut <b>URL</b> med URLen til det bildet du skal
+        benytte. Når du nå klikker på dette bildet i denne HTML filen,
+        vil du som svar få tilbake koordinatene til det punktet du
+        klikket på!
+
+ </ol>
+<hr size=2 noshade>
+ <li> Så skal den såkalte <i>imagemap konfigurasjonsfilen</i> skrives.
+      Dette gjør du lettest ved å kople deg til 
+      <a href=http://www.oslonett.no/map/">Oslonetts automatiske
+      imagemap konfigurasjonstjeneste</a> (foreleser forklarer).
+      Husk på å legge inn en <b>default</b> URL som skal benyttes når
+      du klikker utenfor de tre flaggene. 
+ <li> Når dette er gjort, er det bare å skrive inn den HTML koden
+      som skal til for å få inn bildet, angi at det er et imagemap samt
+      linke bildet til konfigurasjonsfilen. Bruker du Oslonetts tjeneste,
+      får du som kvittering den kodesnutten du skal benytte, enkelt
+      og greit.
+</ol>
+
+   Er det andre ting du mener du bør gjøre i forbindelse med dette
+   imagemapet? Hva f.eks. med de som enten ikke har mulighet til eller
+   ikke ønsker å bruke grafikk i Web klienten sin?
+
+<a name="z2"><h2>
+     Deloppgave 2 : bruk av FORM
+</h2></a>
+    Nå skal du sette opp selve skjemaet. Vi skal gjøre det gradvis og bygge
+    det ut med flere og flere elementer.
+<p>
+    Skjemaet skal bestå av fire seksjoner. Angi disse vha. f.eks.
+    &lt;h2&gt; tager. 
+<p>
+    I den første seksjonen presenterer du (kort) konferansen og
+    hva skjemaet inneholder. Du behøver ikke gjøre noe spesielt
+    ut av dette, for det er ikke dette som er poenget med øvelsen!
+<p>
+    I neste seksjon begynner selve skjemaet (og det er her du 
+    definerer ditt &lt;<form ...&gt;). Denne delen av skjemaet skal
+    inneholde mulighet for påmelding til konferansen.
+
+<p>
+
+    Neste seksjon er seksjonen for tilleggsaktiviteter under konferansen.
+    La oss anta at det arrangeres en sightseeing i Vigelandsparken og
+    en i Holmenkollen, men på hver sin dag. Det skal være mulig å krysse
+    av at man vil delta på <em>begge</em> disse. Hvis du vil gjøre det litt mere
+    avansert, kan du anta at det begge disse sightseeingdagene foregår
+    to parallelle turer. Du må da gjøre det slik at det kun er mulig å melde
+    seg på én av disse.
+
+<p>
+    Lag så en seksjon for bestilling av hotell. Anta at konferansen har avtale
+    med Grand og Plaza, og at man kan velge en av disse. La det være mulig
+    å bestille rom med eller uten røykemuligheter, samt med eller uten frokost.
+
+<p>
+    Til slutt lager du en seksjon der man skal legge igjen navn, adresse,
+    telefon, fax og email adresse. La det være mulig å angi om man vil
+    betale med kredittkort, samt om man vil ha bestillingen bekreftet
+    pr. email ELLER fax.
+
+</body>
+</html>

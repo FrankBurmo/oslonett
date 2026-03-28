@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3O//DTD W3 HTML 2.0//EN">
+<!- Converted with LaTeX2HTML 0.6.4 (Tues Aug 30 1994), Oslonett version : Dec 7, 1994 by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds ->
+<P>
+<HEAD>
+<TITLE>2.1.1 Management Information Base - MIB</TITLE>
+<meta name="description" value="2.1.1 Management Information Base - MIB">
+<meta name="keywords" value="SNMP">
+<meta name="resource-type" value="document">
+<meta name="distribution" value="global">
+</HEAD>
+<BODY><P>
+ <BR> <HR><A NAME=tex2html171 HREF="node9.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/graphics/l2h/next.gif"></A> <A NAME=tex2html169 HREF="node7.html"><IMG ALIGN=BOTTOM ALT="up" SRC="/graphics/l2h/up.gif"></A> <A NAME=tex2html163 HREF="node7.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="/graphics/l2h/previous.gif"></A> <A NAME=tex2html173 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="/graphics/l2h/contents_motif.gif"></A> <A NAME=tex2html174 HREF="node15.html"><IMG ALIGN=BOTTOM ALT="index" SRC="/graphics/l2h/index_motif.gif"></A> <BR>
+<B> Neste:</B> <A NAME=tex2html172 HREF="node9.html">2.1.2 MIB applikasjoner</A>
+<B>Opp:</B> <A NAME=tex2html170 HREF="node7.html">2.1 SNMP - de </A>
+<B> Forrige:</B> <A NAME=tex2html164 HREF="node7.html">2.1 SNMP - de </A>
+<BR> <HR> <P>
+<H3><A NAME=SECTION00041100000000000000>2.1.1 Management Information Base - MIB</A></H3>
+<P>
+Her må vi først si litt om hva en <i>variabel</i> er i SNMP sammenheng. 
+Sammen med selve protokolldefinisjonen som er gitt i 
+<A HREF="http://www.ifi.uio.no/doc/rfc/rfc1157.txt">RFC1157</A> <A HREF="node16.html#RFC1157">[CFSD90]</A>
+defineres det også noe som kalles en <b>Management Information Base</b>,
+oftest bare forkortet til <b>MIB</b>. Dette er den omtalte minste
+fellesnevneren med variable man finner det nødvendig at alt utstyr som
+skal støtte SNMP må implementere. Variablene er ordnet i grupper og favner
+f.eks. de fleste parametre rundt Internet protokoller som IP, ICMP, TCP, UDP,
+samt ruting tabeller og adressekart for oversettelse mellom IP adresser og 
+fysiske media adresser. Noen av variablene kan bare avleses, mens noen også
+kan settes verdier på vha. SNMP meldinger.
+<A NAME=157>&#160;</A> <A NAME=158>&#160;</A> <A NAME=159>&#160;</A> <A NAME=160>&#160;</A> <A NAME=161>&#160;</A>
+<P>
+Denne samlingen variable omtales gjerne som MIB-II eller
+``Internet MIBen'' og er definert i <A HREF="http://www.ifi.uio.no/doc/rfc/rfc1213.txt">RFC1213</A>. MIB filer defineres i
+et språk som kalles ASN.1 - Abstract Syntax Notation.
+<P>
+Det er dessuten mulig for leverandører å definere egne variable i tillegg
+til MIB-II, og dette gjøres i stor grad og er ganske enkelt. 
+Mekanismene for dette er standardisert og beskrevet i dokument
+<A HREF="http://www.ifi.uio.no/doc/rfc/rfc1155.txt">RFC1155</A>, Structure and Identification of Management Information, 
+oftest bare kalt ``SMI dokumentet''. <A NAME=164>&#160;</A>
+<P>
+En leverandør som benytter seg av denne muligheten lager da en tekstlig
+beskrivelse av sin private MIB etter de regler som gjelder og gjør
+denne beskrivelsen tilgjengelig til interesserte parter. 
+En vilkårlig leverandør av en SNMP basert manager kan da ``kompilere''
+denne beskrivelsen inn i manageren og kan etter det kommunisere med den
+andre leverandørens utstyr (agent) via SNMP.
+<P>
+Ved Institutt for informatikk, UiO, har vi f.eks. lagt inn flere
+leverandørspesifikke MIB-filer i <A HREF="http://www.ifi.uio.no/ steinar/mib.txt">den totale MIBen som våre SNMP
+verktøy benytter</A>.
+<P>
+<BR> <HR>
+<P><ADDRESS>
+© Oslonett AS, 15/05-95, 10:35:03
+</ADDRESS>
+</BODY>

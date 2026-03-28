@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>EuroCall Gule Sider - bransjesøk</title>
+</head>
+
+
+<body bgcolor="#ffffff">
+<h1>
+<img alt="EuroCall Gule Sider" src="gifs/guleeur2.gif"></h1>
+<p>
+
+<h2>Bransjesøk</h2>
+Her kan du søke etter firmaer innenfor hele bransjer. Bransjeinformasjonen
+ligger lagret i EuroCalls stikkordtabeller. Forsøk å oppgi ting som "snekker",
+"rørlegger", "advokat"  etc. i stikkordfeltet. Søket kan begrenses ved
+å oppgi poststed eller postnummerinformasjon, men avanserte logiske
+søk og søk som gir mange treff, kan foreløpig ta ganske lang tid å få utført.
+<p>
+Det anbefales å søke med kun ett eller noen få stikkord om gangen, men
+avskjær gjerne geografisk ved å oppgi et postnummerintervall ELLER
+et posted (f.eks. 'Oslo').
+
+<pre>
+<form method="POST"  action="db.cgi">
+Postnummer: <input name="postnr" size="15">  Poststed: <input name="poststed" size="25">
+Stikkord:   <input name="stikkord" size="54">
+Maks treff: <select name="rowcount">
+<option selected>20
+<option>50
+<option>100
+<option>150
+<option>200
+<option>500
+</select>
+<!-- Debug:    : <input type=radio name=debug value=1> Ja  <input type=radio name=debug value=0 checked> Nei -->
+
+<input type="submit" value="Start Søk"> <input type="reset" value="Slett skjema"> <a href="hjelp_bran.html"><em>Hjelp og eksempler</em></a></form></pre>
+
+
+<hr align=left width=20% size=1 noshade>
+</body>
+<address>
+EuroCalls Gule Sider på Internett er et tilbud til deg fra
+<br>
+<pre><a href="/"><img src="/gifs/on/oslonett-i.gif" alt="Schibsted Nett" border=0></a>           <a href="ec.html"><img alt="EuroCall" border="0" src="gifs/guleeuro.gif"></a></pre>
+© 1995, Schibsted Nett AS og EuroCall Norge AS.
+</address>
+</html>

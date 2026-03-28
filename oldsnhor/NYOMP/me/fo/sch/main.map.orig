@@ -1,0 +1,4 @@
+default http://www.oslonett.no/schibsted/default.html
+rect http://www.oslonett.no/schibsted/kv3/ 81,26 163,43 
+#Engelsk
+rect http://www.oslonett.no/schibsted/kv3/eng/ 61,43 166,60 

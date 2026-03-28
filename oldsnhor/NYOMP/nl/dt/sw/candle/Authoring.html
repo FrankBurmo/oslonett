@@ -1,0 +1,79 @@
+<html>
+<head>
+  <title>Authoring Software, Computers and Learning A/S</title>
+</head>
+<body>
+<img alt="[Graphics not shown]" src="/nl/dt/sw/candle/candleas.gif">
+<h1>The Candle Authoring System:</h1>
+<h2> Background </h2>
+The Candle authoring system was developed because Computers and Learning A/S
+needed a better tool for developing DOS-based 
+simulations and animations than what was available when
+development started in 1988. The system development was finished 
+in its current form toward the end of 1991, and has been used by us in
+Computers and Learning and by a couple of other CAL developers in Norway.
+<P>
+<h2> Basics </h2>
+The system consists of an interpreted language which is divided into
+two parts. The first part is a graphics object description language
+containing basic static text and graphics objects plus some more complex
+objects which we call dynamic objects. These objects are numbers, bars,
+graphs and the like plus three types of windows that may contain static
+objects and some simple dynamic objects. 
+<P>
+The second part is a very simple subset of the 'C' programming language.
+CAL simulations or animations are programmed using this system in that
+each screen 'lesson' is described by one file having a '.cal' extension.
+<P>
+The program 'cal.exe' is a driver-program which (not unlike a www-client
+displaying a '.html' file) 'runs' a '.cal' file. Since the '.cal'-file
+contains both graphics information and a C-program, it is more
+dynamic than WWW, and can be used for more interactive purposes.
+<P>
+<h2> Features </h2>
+One of the strong points of the CANDLE system is its ability to link
+variables directly to graphics objects. Such links are handled by the
+interpreter (cal.exe) so whenever a variable changes value, any graphics
+object linked to the variable will change accordingly in size, position,
+color, numeral value or whatever parameter is linked to the variable.
+<P>
+Another strong point is the CANDLE systems modular structure, which is
+very similar to WWW's URL hyperlinks. All modules are represented
+by '.cal'-files that may contain hyperlinks to other '.cal'-files. The
+interpreter maintains a stack of which '.cal' files are currently being
+interpreted and returns to the previous file when finishing interpreting
+a file. The stack mechanism may be controlled by the programmer to either
+restart a file on return, continue execution at calling point, return
+parameters etc.
+<P>
+In addition to the language and the interpreter, a graphics based
+authoring tool called 'chandler' is used to draw all graphics for
+applications made with the CANDLE system.
+<P>
+<h2> Technical information </h2>
+Runs under DOS on an EGA, VGA or better screen using
+EGA (640x350x4) 16 color graphics. Requires a mouse. Borland BGI is used for
+text and graphics, and all applications run entirely in graphics mode.
+Borlands VROOM is also used to keep the interpreter and applications from
+overflowing in DOS' 640K.
+<P>
+<h2> 'The catch' and future plans </h2>
+The CANDLE authoring system menus and documentation currently exist only
+in Norwegian, but we are considering translating it to english and offering
+it as shareware on a non-profit basis. Porting it to Windows and X should be
+fairly straightforward, but applications relying on graphics details may
+never be directly portable between platforms without some modifications
+by hand.
+<P>
+If you find this interesting and think you might like to have an english
+version of the CANDLE authoring system, drop us a line at
+candle@oslonett.no'.
+
+<hr>
+
+ <a href="/"><img src="/gifs/on/home.gif" alt="[Oslonett Home]" border=0></a> 
+
+ <a href="/nl/dt/sw/candle/"><img src="/nl/dt/sw/candle/candle5.gif" alt="[Home]" border=0></a> 
+<hr> 
+ </body> 
+ </html>

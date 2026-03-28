@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3O//DTD W3 HTML 2.0//EN">
+<!- Converted with LaTeX2HTML 0.6.4 (Tues Aug 30 1994), Oslonett version : Dec 7, 1994 by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds ->
+<P>
+<HEAD>
+<TITLE>1.1 Agent / manager modellen for nettverksadministrasjon</TITLE>
+<meta name="description" value="1.1 Agent / manager modellen for nettverksadministrasjon">
+<meta name="keywords" value="SNMP">
+<meta name="resource-type" value="document">
+<meta name="distribution" value="global">
+</HEAD>
+<BODY><P>
+ <BR> <HR><A NAME=tex2html114 HREF="node5.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/graphics/l2h/next.gif"></A> <A NAME=tex2html112 HREF="node3.html"><IMG ALIGN=BOTTOM ALT="up" SRC="/graphics/l2h/up.gif"></A> <A NAME=tex2html106 HREF="node3.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="/graphics/l2h/previous.gif"></A> <A NAME=tex2html116 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="/graphics/l2h/contents_motif.gif"></A> <A NAME=tex2html117 HREF="node15.html"><IMG ALIGN=BOTTOM ALT="index" SRC="/graphics/l2h/index_motif.gif"></A> <BR>
+<B> Neste:</B> <A NAME=tex2html115 HREF="node5.html">1.2 Plattformmodellen</A>
+<B>Opp:</B> <A NAME=tex2html113 HREF="node3.html">1 Modeller for nettverksadministrasjon</A>
+<B> Forrige:</B> <A NAME=tex2html107 HREF="node3.html">1 Modeller for nettverksadministrasjon</A>
+<BR> <HR> <P>
+<H2><A NAME=SECTION00031000000000000000>1.1 Agent / manager modellen for nettverksadministrasjon</A></H2>
+<P>
+Svært mange produkter og rammeverk for nettverks- og systemadministrasjon
+er bygget etter den såkalte <b>agent/manager</b> modellen.
+<P>
+En <b>manager</b> er i denne sammenheng et program eller en gruppe av
+programmer som har ansvar for å samle inn data om ressursene i nettet
+og presentere og manipulere disse dataene for om mulig å stille diagnoser,
+varsle operatører, iverksette tiltak etc. En manager kommuniserer med 
+<b>agenter</b> gjennom et veldefinert grensesnitt som f.eks. SNMP
+eller <b>CMIP</b><A NAME=tex2html1 HREF="footnode.html#118"><IMG ALIGN=BOTTOM ALT="gif" SRC="/graphics/l2h/foot_motif.gif"></A>
+eller gjennom en generell API som skjuler underliggende protokoller. 
+<A NAME=119>&#160;</A> <A NAME=120>&#160;</A>
+<P>
+Agentene kontrollerer ressursene i nettet som skal administreres, det være
+seg f.eks. maskiner eller nettverksbokser som broer, rutere, huber etc. 
+Agentene er som regel spesiallaget for akkurat det utstyret de skal
+kontrollere.
+<P>
+Hvis nå alt utstyr på nettet - både maskiner, nettverksbokser 
+og programvare -  implementerte samme administrasjonsprotokoll, ville det
+være mulig å ha &#233;n manager som kommuniserte med de forskjellige agentene,
+selv om disse kom fra flere leverandører og kontrollerte utstyr
+fra mange leverandører. Problemet forbundet med denne modellen, er selvsagt
+den store basen med utstyr som ikke oppfyller disse forutsetningene.
+<P>
+Det vil derfor trolig ta mange år før komplekse nettverk kan kontrolleres
+gjennom en eneste management protokoll.
+<P>
+I spesielle omgivelser er det imidlertid mulig å se at denne modellen
+får fotfeste, og det mest nærliggende å nevne er selvsagt rene TCP/IP
+baserte internett der SNMP protokollen så og si er enerådende.
+<P>
+<BR> <HR>
+<P><ADDRESS>
+© Oslonett AS, 15/05-95, 10:35:03
+</ADDRESS>
+</BODY>

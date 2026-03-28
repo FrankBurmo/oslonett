@@ -1,0 +1,2 @@
+#!/usr/bin/perl -p
+s%((http|ftp|gopher)://(\S+[\w/]))(\.?[\s,<])%<a href=$1>$1</a>$4%gi;

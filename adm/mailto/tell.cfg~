@@ -1,0 +1,16 @@
+## Config file for mailto CGI script
+##
+##
+ERRORTEMPLATE=/home/oslonett/www/adm/mailto/error.tmpl
+MAILTEMPLATE=/home/oslonett/www/adm/mailto/mailto.tmpl
+RECEIPTTEMPLATE=/home/oslonett/www/adm/mailto/receipt.tmpl
+ERRORSTYLE=/css/oslonett.css
+RECEIPTSTYLE=http://www.oslo.net/css/oslonett.css
+SENDMAIL=/usr/lib/sendmail -t
+REQUIREDFIELDS=to,subject,Tips sendt av
+ALLOWEDREFERERS=http://www.oslo.net/
+PRINTFPADDING=21
+DEFAULTFROM=www@www.oslo.net
+
+
+

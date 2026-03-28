@@ -1,0 +1,5 @@
+default		http://www.oslonett.no/eng/index.html
+#circle		http://www.oslonett.no/div/info.html	65,68,64,50
+circle  	http://www.oslonett.no/mpg/rotsphere.mpg 124,44,124,6
+rect	 	http://www.oslonett.no/eng/information.html	174,34,476,60
+

@@ -1,0 +1,4 @@
+#definere Bilde1
+rect http://www.uit.no/usr/people/guest/uit-sc10.gif 0,0 31,30
+#definere Bilde2
+rect http://www.uit.no/usr/people/guest/uit-sc10.gif 125,33 215,60

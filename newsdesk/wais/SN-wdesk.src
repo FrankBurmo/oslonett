@@ -1,0 +1,28 @@
+
+
+(:source 
+   :version  3 
+   :database-name "/local/www/newsdesk/wais/SN-wdesk"
+   :cost 0.00 
+   :cost-unit :free 
+   :maintainer "webdesk@briskeby.sn.no"
+   :keyword-list (
+                  alt
+                  border
+                  det
+                  du
+                  er
+                  href
+                  html
+                  http
+                  img
+                  sn
+                  src
+                  td
+                  www
+                  )
+   :description "Server created with freeWAIS Release 0.3 beta on Jan 29 01:59:48 1996 by webdesk@briskeby.sn.no
+The files of type URL used in the index were:
+   /local/www/newsdesk/html/960129-05.html
+"
+)

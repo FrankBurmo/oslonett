@@ -1,0 +1,220 @@
+#!/local/bin/perl5 -w
+
+
+require 5.000;
+
+# output sequence for fields
+@sequence = qw(id name institution englishname address postalcode country
+	       director telephone fax e-mail type);
+$count = 0;
+for (@sequence) {
+    $sequence{$_} = ++$count;
+}
+
+
+%short_tags =
+(
+  "collection-on-children-or-children's-rights" => "collection",
+  "country/sub-region-focus" => "focus",
+  "database-host-or-service" => "database",
+  "documentation-centre/library-computerized" => "computerized",
+  "focal-point/contact-person" => "contact",
+  "ongoing-projects-(titles)" => "projects",
+  "other-topics-of-special-interest" => "other-topics",
+  "type-of-organization" => "type",
+  "technical-description-of-equipment-&-software-protocol" => "protocol",
+  "remote-access-application-address" => "access-address",
+  "on-line-access-to-databases" => "on-line-access",
+);
+
+$new = 1;
+$count = 0;
+
+OUTER:
+while (<>) {
+   chop;
+   next if /^\s*$/; # skip blank lines
+   if ($new) {
+      $count++;
+      $id = $_;
+      $header = "";
+      $tag = undef;
+      %val = ();
+      $new = 0;
+      $headlineno = 0;
+      while ($headline = <>) {
+	 next OUTER if ++$headlineno > 3 && $headline =~ /^\s*$/;         
+         $header .= $headline;
+      }
+   } elsif (/^(\w[^:]+):\s*(.*)/) { # a new tag line
+      $tag = lc($1);
+      $val = $2;
+      $tag =~ s/^v\d+-//;
+      $tag =~ s/\(s\)/s/g;
+      $tag =~ s/\s+/-/g;
+      $tag = $short_tags{$tag} || $tag;
+      $seen{$tag} = 1;
+      if (defined $val{$tag}) {
+	  warn "$0: Line $. duplicate tag: $tag\n";
+      }
+      $val{$tag} = $val;
+   } elsif (/^RESEARCH ACTIVITIES/) {
+   } elsif (/^LIBRARY\/DOCUMENTATION ACTIVITIES/) {
+   } elsif (/^COMPUTERIZED DATABASES/) {
+   } elsif (/^____/) {
+      &out;
+      $new = 1;
+   } elsif (defined $tag) {
+      $val{$tag} .= " " unless $val{$tag} =~ /\s$/;
+      $val{$tag} .= $_;
+   } else {
+      warn "$0: Line $. ingnored: $_\n";
+   }
+}
+&out;
+exit;
+
+print STDERR "$count entries found\n";
+for (sort keys %seen) {
+    print STDERR "$_\n";
+}
+exit;
+
+sub compare
+{
+    my $va = $sequence{$a} || 999;
+    my $vb = $sequence{$b} || 999;
+    $va <=> $vb or $a cmp $b;
+}
+
+sub out
+{
+   unless (defined $id) {
+      #warn "$0: sub out called without any data present\n";
+      return;
+   }
+   &parse_header;
+   &fix_values;
+   print "\nid: $id\n";
+   foreach $tag (sort compare keys %val) {
+       $val{$tag} =~ s/\s*¨\s*/ /g;
+       $val{$tag} =~ s/\s+/ /g;
+       print "$tag: $val{$tag}\n" if length $val{$tag};
+   }
+}
+
+sub parse_header
+{
+    my @header = split(/(v\d+)(?:-\w+)?:/, $header);
+    #print join("@", @header), "\n";
+    my $v = undef;
+    my %v;
+    foreach (@header) {
+	if (/^v(\d+)$/) {
+	    $v = $1;
+	    next;
+	}
+	next unless defined $v;
+	$_ =~ s/^\s+//;
+	$_ =~ s/\s+$//;
+	next unless length $_;
+	$v{$v} = $_;
+    }
+    $val{"country"}        = $v{22} if $v{22};
+    $val{"address"}        = $v{20} if $v{20};
+    $val{"postalcode"}     = $v{21} if $v{21};
+    $val{"location"}       = $v{23} if $v{23};
+    $val{"englishname"}    = $v{10} if $v{10};
+    $val{"name"}           = $v{12} if $v{12};
+    $val{"institution"}    = $v{19} if $v{19};
+    $val{"acronym"}        = $v{13} if $v{13};
+    $val{"englishacronym"} = $v{11} if $v{11};
+}
+
+
+BEGIN {
+
+%org_types = 
+(
+ "child research institute" => 1,
+ "child research unit/project within an institution" => 2,
+ "university department wholly concerned with children" => 3,
+ "university department partially concerned with children" => 4,
+ "research policy institution/organization" => 5,
+);
+
+%service_types =
+(
+ "documentation centre open to public" => 1,
+ "documentation centre not open to public" => -1,
+ "document loan" => 2,
+ "database searches in-house" => 3,
+ "database searches on-line" => 4,
+ "database-searches on-line" => 4,
+ "bibliographic abstracts" => 5,
+ "bibliographical abstracts" => 5,
+ "photocopying" => 6,
+ "selective dissemination of information" => 7,
+ "inter-library loans" => 8,
+ "research" => 9,
+);
+
+$code = "sub fix_services {\n";
+for (keys %service_types) {
+    $ss = $service_types{$_};
+    $code .= qq{  \$val{"services"} =~ s/-\\s+$_/$ss/;\n};
+}
+$code .= "}\n";
+#print $code;
+eval $code;
+$code = undef;
+
+} # BEGIN
+
+sub fix_values
+{
+    if (defined $val{"type"}) {
+	while ($val{"type"} =~ s/^(public|private)\s*//) {
+	    $val{"public"}  = "yes" if $1 eq "public";
+	    $val{"private"} = "yes" if $1 eq "private";
+	}
+        $val = $val{"type"};
+	if (defined $org_types{$val}) {
+	    $val{"type"} = $org_types{$val};
+	}
+    }
+    if (defined $val{"services"}) {
+	# number 25
+        &fix_services;
+        $val{"services"} =~ s/(\d)\s+\[\s*fees\s*\]/$1F/g;
+        #print "services[", $val{"services"}, "]\n";
+    }
+    if (defined $val{"holdings"}) {
+	# number 20
+	$val{"holdings"} =~ s/monographs/M/;
+	$val{"holdings"} =~ s/periodicals/P/;
+	$val{"holdings"} =~ s/reports/R/;
+	$val{"holdings"} =~ s/grey\s+literature/G/;
+	$val{"holdings"} =~ s/doctoral\s+dissertations/D/;
+	$val{"holdings"} =~ s/newspapers\/clippings/N/;
+	$val{"holdings"} =~ s/videos/V/;
+	$val{"holdings"} =~ s/audios/A/;
+	$val{"holdings"} =~ s/statistical\s+data/S/;
+	#print "holdings[", $val{"holdings"}, "]\n";
+    }
+    if (defined $val{"size-of-collection"}) {
+	$val{"size-of-collection"} =~ s/\bv\d\d-//g;
+    }
+    if (defined $val{"dialogue-languages"}) {
+	$val{"dialogue-languages"} =~ s/\bv\d\d-//g;
+    }
+    if (defined $val{"database"}) {
+	$val{"database"} =~ s/\bv\d\d-//g;
+    }
+    if (defined $val{"access-hours"}) {
+	$val{"access-hours"} =~ s/\bv\d\d-//g;
+    }
+    if (defined $val{"on-line-access"}) {
+	$val{"on-line-access"} =~ s/\bv\d\d-//g;
+    }
+}

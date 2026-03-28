@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3O//DTD W3 HTML 2.0//EN">
+<!- Converted with LaTeX2HTML 0.6.4 (Tues Aug 30 1994), Oslonett version : Dec 7, 1994 by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds ->
+<P>
+<HEAD>
+<TITLE>6 CGI - Common Gateway Interface</TITLE>
+<meta name="description" value="6 CGI - Common Gateway Interface">
+<meta name="keywords" value="Komp">
+<meta name="resource-type" value="document">
+<meta name="distribution" value="global">
+</HEAD>
+<BODY><P>
+ <BR> <HR><A NAME=tex2html443 HREF="node27.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/graphics/l2h/next.gif"></A> <A NAME=tex2html441 HREF="Komp.html"><IMG ALIGN=BOTTOM ALT="up" SRC="/graphics/l2h/up.gif"></A> <A NAME=tex2html435 HREF="node25.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="/graphics/l2h/previous.gif"></A> <A NAME=tex2html445 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="/graphics/l2h/contents_motif.gif"></A> <A NAME=tex2html446 HREF="node37.html"><IMG ALIGN=BOTTOM ALT="index" SRC="/graphics/l2h/index_motif.gif"></A> <BR>
+<B> Neste:</B> <A NAME=tex2html444 HREF="node27.html">6.1 Et CGI skript</A>
+<B>Opp:</B> <A NAME=tex2html442 HREF="Komp.html">Introduksjon til World Wide </A>
+<B> Forrige:</B> <A NAME=tex2html436 HREF="node25.html">5.3 Ekstern informasjon om </A>
+<BR> <HR> <P>
+<H1><A NAME=SECTION00080000000000000000>6 CGI - Common Gateway Interface</A></H1>
+ <A NAME=CGI>&#160;</A>
+<P>
+CGI er en mekanisme som kan benyttes for å knytte vilkårlige
+tredje parts applikasjoner til World Wide Web. Dette må gjøres
+ved at det skrives en gateway, et såkalt CGI skript, som
+fungerer som en dataskyfler mellom applikasjonen og 
+WWW klienten. Dvs. - oftest er det HTTP tjeneren som først
+tar i mot returdata fra skriptet og så på vegne av skriptet
+sender det til klienten.
+<P>
+<i>CGI definerer
+grensesnittet mellom WWW klienten, HTTP tjeneren og skriptet, ikke mellom
+tredje parts applikasjonen og skriptet!</i>
+<P>
+<P><A NAME=458>&#160;</A><A NAME=CGIfig>&#160;</A><IMG ALIGN=BOTTOM SRC="_23371_figure456.gif">
+<BR><STRONG>Figur 5:</STRONG> <i>CGI - Common Gateway Interface</i><BR>
+<P>
+<P>
+Figur <A HREF="node26.html#CGIfig">5</A> viser skjematisk hvordan et HTTP server skript kan virke:
+<P>
+<OL>   <LI>  Kommunikasjonen starter med at Web klienten, f.eks. Mosaic eller Netscape, aktiverer en
+      link som skal kalle opp et server skript. Dette kan foregå vha. en <b>GET</b>
+      eller <b>POST</b> HTTP melding.
+<P>
+   <LI> Denne beskjeden går til HTTP serveren som så står for selve oppstarten av
+      skriptet. Det kan hende brukeren har sendt med data fra Web klienten som skal til
+      skriptet. Dette vil serveren ta hånd om ihht. til CGI specen. Denne
+      beskriver hvordan
+      skriptet skal motta data fra serveren samt hvordan skriptet skal sende 
+      data tilbake til serveren.
+<P>
+   <LI> Når skriptet blir kalt opp og får tilsendt data (dette kan skje i en
+      kombinasjon av kommandolinje-argumenter, environment variable og
+      standard input, <A HREF="http://hoohoo.ncsa.uiuc.edu/cgi/intro.html">se CGI specen</A>), kan det hende en tredje applikasjon skal
+      involveres, slik figuren antyder. Det er i så fall skriptets oppgave å ta hånd
+      om all denne kommunikasjonen (kanskje med et databasesystem el.). Til
+      slutt må imidlertid skriptet sende data tilbake til HTTP serveren ihht. CGI
+      specen. Figuren antyder også at skriptet kan sende data direkte tilbake til
+      Mosaic - denne muligheten skal vi foreløpig glemme.
+<P>
+   <LI> Når HTTP serveren får data tilbake fra skriptet, går dette automatisk videre
+      til Web klienten på en måte som er forståelig for denne. 
+</OL>
+<P>
+Figuren finnes også <A HREF="/IV/kurs/WWW1/gifs/CGI.gif">i full størrelse her</A>.
+<BR> <HR>
+<UL> 
+<LI> <A NAME=tex2html447 HREF="node27.html#SECTION00081000000000000000">6.1 Et CGI skript</A>
+<LI> <A NAME=tex2html448 HREF="node28.html#SECTION00082000000000000000">6.2 CGI skript og sikkerhet</A>
+<LI> <A NAME=tex2html449 HREF="node29.html#SECTION00083000000000000000">6.3 CGI demo og ekstern informasjon om CGI</A>
+</UL>
+<BR> <HR><A NAME=tex2html443 HREF="node27.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/graphics/l2h/next.gif"></A> <A NAME=tex2html441 HREF="Komp.html"><IMG ALIGN=BOTTOM ALT="up" SRC="/graphics/l2h/up.gif"></A> <A NAME=tex2html435 HREF="node25.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="/graphics/l2h/previous.gif"></A> <A NAME=tex2html445 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="/graphics/l2h/contents_motif.gif"></A> <A NAME=tex2html446 HREF="node37.html"><IMG ALIGN=BOTTOM ALT="index" SRC="/graphics/l2h/index_motif.gif"></A> <BR>
+<B> Neste:</B> <A NAME=tex2html444 HREF="node27.html">6.1 Et CGI skript</A>
+<B>Opp:</B> <A NAME=tex2html442 HREF="Komp.html">Introduksjon til World Wide </A>
+<B> Forrige:</B> <A NAME=tex2html436 HREF="node25.html">5.3 Ekstern informasjon om </A>
+<BR> <HR> <P>
+<BR> <HR>
+<P><ADDRESS>
+© Oslonett AS  15/05-95, 11:16:50
+</ADDRESS>
+</BODY>

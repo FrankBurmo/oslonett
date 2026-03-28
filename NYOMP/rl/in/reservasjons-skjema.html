@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Reservasjon av hotellrom</title>
+</head>
+<body background=gifs/bg.gif text=fed0a7 vlink=#fed0a7 link=#fed0a7 alink=#fed0a7>
+
+<center>
+<H1>Reservasjon av hotellrom</H1>
+<h2>på Inter Nor hotellene</h2></center>
+
+<form method="POST" action="/cgi-bin/mailit">
+<input type="hidden" name="mailto" value="internor@sn.no,mariann@a.sn.no">
+<input type="hidden" name="reply-to" value="internor@sn.no">
+<input type="hidden" name="bodyattr" value="bgcolor=#ffffff.gif">
+<input type="hidden" name="imgattr" value="src=/internor/gifs/inh.gif">
+<input type=hidden name="subject" value="Reservasjon av hotellrom">
+
+<hr>
+<b>Hotellinformasjon</b>
+
+<pre><b>
+ Navn på hotellet    :  <input name="Hotell" type="text" size=50>
+ By/sted             :  <input name="Sted" type="text" size=50>
+</pre></b>        
+
+<hr>
+<b>Personinformasjon</b> 
+
+<pre><b>
+ Navn                :  <input name="Navn" type="text" size=50>
+ Adresse             :  <input name="Privatadresse" type="text" size=50>
+ Postnr./sted        :  <input name="Postnr og sted"type="text" size=50>
+ Tlf.                :  <input name="Tlf.nr" type="text" size=50>
+ Email               :  <input name="Email" size="50">
+</pre></b> 
+
+<hr>
+<b>Firmainformasjon (gjelder kun ved forretningsreise)</b>
+
+<pre><b>
+ Firma               :  <input name="Firma" type="text" size=50>
+ Firmaadresse        :  <input name="Firmaadresse" type="text" size=50>
+ Postnr./sted        :  <input name="Postnr og sted"type="text" size=50>
+ Tlf.                :  <input name="Tlf.nr" type="text" size=50>
+ Kontaktperson       :  <input name="Kontaktperson" type="text" size=50>
+</pre></b> 
+
+<hr>
+<b>Spesielle ønsker (ikke-røyker, parkering, etc.):
+<p>
+<textarea NAME="Kommentarer       " rows=4 cols=50></textarea></b>
+<p>
+
+<pre><b>
+Ankomst dato             :  <input NAME="Ankomst" SIZE="20">  
+Antall dager             :  <input NAME="Antall dager" SIZE="5">
+Antall rom               :  <input NAME="Antall rom" SIZE="5">
+Antall voksne personer   :  <input NAME="Antall voksne personer" SIZE="5">
+Antall barn              :  <input NAME="Antall barn" SIZE="5">
+
+</pre></b>
+
+<p>
+
+<b>Romtype:</b>
+<select NAME="Romtype" SIZE="1">
+<option>Dobbeltrom
+<option>Enkeltrom
+<option>Suite
+</select>
+
+
+<b>Betalingsmåte:</b>
+<select NAME="Betalingsmåte" SIZE="1">
+<option>Kontant
+<option>Kredittkort
+<option>Minibank
+</select>
+
+<p>
+
+<hr>
+<center>
+<input TYPE="submit" value="Send reservasjon">
+<input TYPE="reset" value="Reset skjema">
+</center>
+<hr>
+</body>
+</html>

@@ -1,0 +1,230 @@
+#!/opt/depot/perl_5001/bin/perl
+# (C) Oslonett AS, Sep 1995 / Anders Ellefsrud, Steinar Kjærnsrød
+
+# Tar seg av h}ntering av alle filer p} dag-niv}.
+
+package Day;
+require Exporter;
+@ISA = qw(Exporter);
+@EXPORT = qw(prepare save_message);
+
+use Carp;
+use Util qw(makedir);
+
+@day = ('søndag', 'mandag', 'tirsdag',
+	'onsdag', 'torsdag', 'fredag', 'lørdag');
+@month = ('januar', 'februar', 'mars', 'april', 'mai',
+	  'juni', 'juli', 'august', 'september',
+	  'oktober', 'november', 'desember');
+
+# Klargjør directorystrukturen for denne dagen dersom
+# det ikke allerede er på plass
+sub prepare {
+    ($sec, $min, $hour, $mday, $mon, $year, $wday, $yday)
+	= localtime (time);
+    $year += 1900;
+
+    $wdaystr = $day[$wday];
+    $daydir = "$TOP/$wdaystr";
+    $daydirurl = "$W3TOP/$wdaystr";
+    $hourmin = sprintf ("%02d:%02d", $hour, $min);
+    $hourminsec = sprintf ("%02d:%02d:%02d", $hour, $min, $sec);
+    
+    if (-f "$daydir/date") {
+	open (DATE, "$daydir/date") ||
+	    &confess ("Could not read the $daydir/date file: $!");
+	$dirdate = <DATE>;
+	close (DATE);
+    } else {
+	$dirdate = 0;
+    }
+
+    if ($dirdate != $yday) {
+        print STDERR ("Removing old data from $daydir\n");
+	system "/bin/rm -fr $daydir";
+    }
+    unless (-f "$daydir/index.html") {
+        &makedir ($daydir);
+	print STDERR ("Preparing $daydir\n");
+        # Registrer hvilken dag vi jobber med n}
+        open (DATE, ">$daydir/date");
+        print DATE $yday, "\n";
+        close (DATE);
+        open (IN, "$main::HOME/lib/dag.index.html") ||
+            &confess ("Failed to copy $main::HOME/lib/dag.index.html");
+        open (OUT, ">$daydir/index.html");
+        $prevday = $day[$wday - 1 < 0 ? $#day : $wday - 1];
+        $nextday = $day[($wday + 1) % ($#day + 1)];
+        while (<IN>) {
+            s/\@DATOSTEMPEL\@/$wdaystr $mday. $month[$mon] $year/;
+            s/\@TOP@/$W3TOP/g;
+            s/\@YESTERDAY@/$prevday/g;
+            s/\@TOMORROW@/$nextday/g;
+            s/\@TODAY@/$wdaystr/g;
+            s/\@REFRESH@/$REFRESH/;
+            s/\@BODY@/$BODY/;
+            print OUT;
+        }
+        close (IN);
+        close (OUT);
+	unlink "$TOP/idag";
+	symlink $wdaystr, "$TOP/idag";
+    }
+}
+
+# Finn ut hva neste artikkel skal kalles.
+# Sideeffekter er å opprette n|dvendige filer/directories
+# dersom de ikke finnes.
+sub nextart_name {
+    local (@arts);
+    $kat = "$Article::N_type/$Article::N_subtype";
+    $katdir = "$daydir/$kat";
+    $katdirurl = "$daydirurl/$kat";
+    if (-d $katdir) {
+	opendir (DIR, $katdir) ||
+	    &confess ("Failed to read $katdir: $!");
+	@arts = sort {$a <=> $b} grep (/^[0-9]/ && do{s/\.html//}, readdir (DIR));
+	closedir (DIR);
+	$nextart = $arts[$#arts] + 1;
+    } else {
+	&makedir ($katdir);
+	&edit_index ($kat);	# #Editer dag/index.html med denne kategorien
+	&create_index ($katdir); # Opprett dag/kat/sub/index.html
+	rename ("$daydir/index.html.new", "$daydir/index.html") ||
+	    &confess ("Could not rename $daydir/index.html.new to $daydir/index.html: $!");
+	$nextart = 1;
+    }
+}
+
+# Oppdaterer "dag"/index.html for } endre en utkommentert
+# entry til aktiv html kode slik at denne kategorien kan
+# velges.
+sub edit_index {
+    local ($kat) = @_;
+    open (IN, "$daydir/index.html") ||
+	&confess ("Could not read $daydir/index.html: $!");
+    open (OUT, ">$daydir/index.html.new") ||
+	&confess ("Failed to write $daydir/index.html.new: $!");
+    $categoryname = '';
+    while (<IN>) {
+	if (s%^<! -- $kat (.*) -->$%<li><a href="$katdirurl/index.html">$1</a>%) {
+	    $categoryname = $1;	# Brukes av create_index
+	}
+	print OUT;
+    }
+    unless ($categoryname) {
+	print STDERR ("Ukjent nyhetskategori $kat, oppdater filen $HOME/lib/dag.index.html\n");
+    }
+    close (IN);
+    close (OUT);
+}
+
+# Lager en tom dag/kategori/subkategori/index.html fil
+sub create_index {
+    local ($katdir) = @_;
+    print STDERR ("Initializing $katdir/index.html\n");
+    open (IN, "$main::HOME/lib/kat.index.html") ||
+	&confess ("Could not read $main::HOME/lib/kat.index.html: $!");
+    open (OUT, ">$katdir/index.html") ||
+	&confess ("Failed to write $katdir/index.html: $!");
+    $prevday = $day[$wday - 1 < 0 ? $#day : $wday - 1];
+    $nextday = $day[($wday + 1) % ($#day + 1)];
+    while (<IN>) {
+	s/\@KAT@/$kat/g;
+	s/\@KATEGORI@/$categoryname/g;
+	s/\@DATOSTEMPEL@/$wdaystr $mday. $month[$mon] $year/g;
+	s/\@TOP@/$W3TOP/g;
+        s/\@YESTERDAY@/$prevday/g;
+        s/\@TOMORROW@/$nextday/g;
+        s/\@TODAY@/$wdaystr/g;
+        s/\@REFRESH@/$REFRESH/;
+	print OUT;
+    }
+}
+
+# Legger inn en ny artikkel i kategori/index.html filen
+sub update_kat_index {
+    local ($artno) = @_;
+    $Article::N_message =~ /<title>(.*?)</ms;
+    $art_tittel = $1;
+    return unless $art_tittel;
+    open (IN, "$katdir/index.html") ||
+        &confess ("Could not read $katdir/index.html: $!");
+    open (OUT, ">$katdir/index.html.new") ||
+        &confess ("Failed to write $katdir/index.html: $!");
+    while (<IN>) {
+        s/(Siste artikkel ankommet)[^<]*/$1 $hourmin/;
+        print OUT;
+        if (/^<ul>$/) {
+            print OUT "<li> ($hourmin): <a href=$katdirurl/$artno.html>$art_tittel</a>\n";
+        }
+    }
+    close (IN);
+    close (OUT);
+    rename ("$katdir/index.html.new", "$katdir/index.html") ||
+        &confess ("Failed to rename $katdir/index.html.new to $katdir/index.html
+: $!");
+}
+
+# Skriv en ntb-artikkel til fil med passende headere/footere lagt til.
+sub save_message {
+    local ($artno, $prevno, $prevptr);
+    $artno = &nextart_name;
+    $prevno = $artno - 1;
+    $prevptr = -f "$katdir/$prevno.html" ?
+	"\n<a href=\"$katdirurl/$prevno.html\">\n <img alt=\"[Forrige artikkel]\" src=\"$W3TOP/gifs/prev.gif\"></a>" :
+	"";
+    $toppekere = "<hr>$prevptr
+<a href=\"$katdirurl/index.html\">
+ <img alt=\"[Artikkelindeks]\" src=\"$W3TOP/gifs/up.gif\"></a>
+<! -- \@NEXT POINTER@ -->
+<a href=\"/cgi-bin/NTBsearch?dag=$wdaystr&gr=$kat\">
+ <img alt=\"[Let i artiklene]\" src=\"$W3TOP/gifs/search.gif\"></a>
+<a href=\"$W3TOP/hjelp.html\">
+ <img alt=\"[Hjelp]\" src=\"$W3TOP/gifs/help.gif\"></a>
+<hr>
+";
+    $Article::N_message =~ s%<title>((.|\n)*?)</title>%
+$&
+</head>
+$BODY
+<A HREF="/maps/header.map"><IMG SRC  = /graphics/header.gif alt="" ISMAP></A>
+
+<h1>$1</h1>$toppekere%m;
+    $Article::N_message =~ s%</body>%</pre>$toppekere
+<address>Mottatt fra NTB klokken $hourminsec</address><p><A HREF="/maps/knapper.map"><IMG SRC=/graphics/knapper.gif alt="" ISMAP></A>
+$&%m;
+    print STDERR ("Storing a message in $katdir/$artno.html\n");
+    open (ART, ">$katdir/$artno.html") ||
+	&confess ("Failed to write $katdir/$artno.html: $!");
+    print ART $Article::N_message, "\n";
+    close (ART);
+    &update_kat_index ($artno);
+    &update_next_index ($prevno, $artno) if -f "$katdir/$prevno.html";
+}
+
+sub update_next_index {
+    local ($prevno, $artno) = @_;
+    open (IN, "$katdir/$prevno.html") ||
+	&confess ("Tried to update $katdir/$prevno.html with a next pointer, but it failed: $!");
+    open (OUT, ">$katdir/$prevno.html.new") ||
+        &confess ("Could not write $katdir/$prevno.html.new: $!");
+    while (<IN>) {
+	if (/^<! -- \@NEXT POINTER@ -->$/) {
+	    print OUT "<a href=\"$katdirurl/$artno.html\">
+ <img alt=\"[Neste artikkel]\" src=\"$W3TOP/gifs/next.gif\"></a>\n";
+	} else {
+	    print OUT;
+	}
+    }
+    close (IN);
+    close (OUT);
+    rename ("$katdir/$prevno.html.new", "$katdir/$prevno.html") ||
+	&confess ("Failed to rename $katdir/$prevno.html.new to $katdir/$prevno.html");
+}
+
+# Local Variables:
+# mode:perl
+# End: 
+
+1

@@ -1,0 +1,144 @@
+#!/usr/local/bin/perl
+
+print "Content-type: text/html\n\n";
+
+#system "env";
+
+foreach (split('&', $ENV{QUERY_STRING})) {
+    ($type,$val) = split('=', $_, 2);
+    $q{$type} = $val;
+}
+
+$time = time;
+$i = 0;
+do {
+    $i++;
+    ($day,$mon,$year,$wday) = (localtime($time))[3..6]; $mon++;
+    $date = "$day/$mon/$year";
+    $datafile  = sprintf("stocks/data/oslobors-%02d%02d%02d", $year,$mon,$day);
+    $time -= (24*60*60);  # one day back
+} while (! -f $datafile && $i < 5);
+
+$ticker = $q{"ticker"};
+
+unless ($ticker =~ /^\w{2,4}$/) {
+    print "Missing ticker $ticker\n";
+    exit;
+}
+
+SEARCH:
+foreach $file (<./stocks/data/*.liste>) {
+    open(D, $file) || next;
+    while (<D>) {
+	chop;
+	next if /^\s*$/;
+	($code, $letter, $name) = split(' ', $_, 3);
+	$letter = undef; # don't need it
+	last SEARCH if $code eq $ticker;
+    }
+    close(D);
+    $name = "";
+}
+
+
+@omsatt = ();
+@kjop_salg = ();
+
+if (open(D, $datafile)) {
+   while (<D>) {
+      &offer if /^HP$ticker/o;
+      &trans if /^HT$ticker/o;
+   }
+   &present;
+} else {
+    $title = "Sorry, but...";
+    print "\n<title>$title</title><h1>$title</h1>
+           Can't open <i>$datafile</i>: $!";
+}
+
+
+sub offer
+{
+    local($name, $op, $val, $time) = unpack("x2 A4 A1 x1 A7 A4", $_);
+    if ($name eq $ticker) {
+        $val /= 100;
+        push(@kjop_salg, "$op $val $time") if $val > 0;
+    }
+}
+sub trans
+{
+    local($name, $val, $vol, $time) = unpack("x2 A4 x2 A7 A10 A4", $_);
+    if ($name eq $ticker) {
+        $val /= 100;
+        $vol = int($vol);
+        push(@omsatt, "$val $vol $time") if $val > 0;
+    }
+}
+
+sub present {
+    print "<title>Oslo Børs detaljer $ticker</title>";
+    print "<h1>";
+    print "$name -" if $name;
+    print "$ticker - $date</h2>\n";
+
+    if (@omsatt) {
+	print "<h2>Transaksjoner:</h2>\n";
+	local($n, $sumvol, $sumval, $highval, $lowval);
+        print "<pre>\n";
+        print "<b>Klokken     Kurs     Volum</b>\n";
+	foreach (@omsatt) {
+	    ($val,$vol,$time) = split(' ', $_);
+	    $n++;
+	    $sumvol += $vol;
+	    $sumval += $val;
+	    $highval = $val if !defined $highval || $val > $highval;
+	    $lowval  = $val if !defined $lowval  || $val < $lowval;
+	    $time =~ s/(\d\d)/$1:/;
+	    printf "$time %10.2f%10d\n", $val, $vol;
+	}
+	print "\n";
+	printf "<b>Sum:</b>          %12d\n", $sumvol;
+	printf "<b>Gj.snitt:</b>%7.2f\n", $sumval/$n;
+	printf "<b>Høy:</b>  %10.2f\n", $highval;
+	printf "<b>Lav:</b>  %10.2f\n", $lowval;
+        print "</pre>\n\n";
+    } else {
+        print "<h2>Aksjen er ikke omsatt idag.</h2>\n";
+    }
+    if (@kjop_salg) {
+	print "\n\n<h2>Bud kjøp/salg:</h2>\n";
+        print "<pre>\n";
+        print "<b>Klokken     Kjøp      Salg</b>\n";
+	local($nk, $sumk, $highk, $lowk, $ns, $sums, $highs, $lows);
+	foreach (@kjop_salg) {
+	    ($op, $val,$time) = split(' ', $_);
+	    $time =~ s/(\d\d)/$1:/;
+	    if ($op eq "K") {
+		$spaces =  0;
+		$nk++;
+		$sumk += $val;
+		$highk = $val if !defined $highk || $val > $highk;
+		$lowk  = $val if !defined $lowk  || $val < $lowk;
+	    } else {
+		$spaces = 10;
+		$ns++;
+		$sums += $val;
+		$highs = $val if !defined $highs || $val > $highs;
+		$lows  = $val if !defined $lows  || $val < $lows;
+	    }
+	    printf "$time %s%10.2f\n", " " x $spaces , $val;
+	}
+	print "\n";
+	print  "<b>Gj.snitt:</b>";
+	printf "%7.2f", $sumk/$nk if $nk != 0;
+	print  " " x 7 if $nk == 0;
+        printf "%10.2f", $sums/$ns if $ns != 0;
+        print  "\n";
+	printf "<b>Høy:</b>  %10.2f%10.2f\n", $highk, $highs;
+	printf "<b>Lav:</b>  %10.2f%10.2f\n", $lowk, $lows;
+
+        print "</pre>";
+    } else {
+	print "<h2>Ingen bud på aksjen idag</h2>\n";
+    }
+}

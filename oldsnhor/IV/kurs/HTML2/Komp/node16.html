@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3O//DTD W3 HTML 2.0//EN">
+<!- Converted with LaTeX2HTML 0.6.4 (Tues Aug 30 1994), Oslonett version : Dec 7, 1994 by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds ->
+<P>
+<HEAD>
+<TITLE>3 CGI - Common Gateway Interface</TITLE>
+<meta name="description" value="3 CGI - Common Gateway Interface">
+<meta name="keywords" value="Komp">
+<meta name="resource-type" value="document">
+<meta name="distribution" value="global">
+</HEAD>
+<BODY><P>
+ <BR> <HR><A NAME=tex2html358 HREF="node17.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/graphics/l2h/next.gif"></A> <A NAME=tex2html356 HREF="Komp.html"><IMG ALIGN=BOTTOM ALT="up" SRC="/graphics/l2h/up.gif"></A> <A NAME=tex2html350 HREF="node15.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="/graphics/l2h/previous.gif"></A> <A NAME=tex2html360 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="/graphics/l2h/contents_motif.gif"></A> <A NAME=tex2html361 HREF="node49.html"><IMG ALIGN=BOTTOM ALT="index" SRC="/graphics/l2h/index_motif.gif"></A> <BR>
+<B> Neste:</B> <A NAME=tex2html359 HREF="node17.html">3.1 Datakommunikasjonen i CGI</A>
+<B>Opp:</B> <A NAME=tex2html357 HREF="Komp.html">HTML fordypning</A>
+<B> Forrige:</B> <A NAME=tex2html351 HREF="node15.html">2.4 Pekere til annen </A>
+<BR> <HR> <P>
+<H1><A NAME=SECTION00050000000000000000>3 CGI - Common Gateway Interface</A></H1>
+ <A NAME=CGI>&#160;</A>
+<P>
+<blockquote>
+<hr size=2 noshade>
+<em>
+CGI -- Common Gateway Interface -- er en mekanisme som benyttes
+aktivt i forbindelse med imagemaps og forms. Det er derfor nødvendig med
+grunnleggende kjennskap til CGI før vi ser på imagemaps og forms.
+</em>
+<hr size=2 noshade>
+</blockquote>
+<P>
+CGI er en mekanisme som kan benyttes for å knytte vilkårlige
+tredje parts applikasjoner til World Wide Web. Dette må gjøres
+ved at det skrives en gateway, et såkalt CGI skript, som
+fungerer som en dataskyfler mellom applikasjonen og 
+WWW klienten. Dvs. - oftest er det HTTP tjeneren som først
+tar i mot returdata fra skriptet og så på vegne av skriptet
+sender det til klienten.
+<P>
+<A NAME=249>&#160;</A> <A NAME=250>&#160;</A>
+<i>Legg merke til at CGI definerer
+grensesnittet mellom WWW klienten, HTTP tjeneren og skriptet, ikke mellom
+tredje parts applikasjonen og skriptet!</i>
+<P>
+<P><A NAME=705>&#160;</A><A NAME=CGIfig>&#160;</A><IMG ALIGN=BOTTOM SRC="_29488_figure703.gif">
+<BR><STRONG>Figur 6:</STRONG> <i>CGI - Common Gateway Interface</i><BR>
+<P>
+<P>
+Figur <A HREF="node16.html#CGIfig">6</A> viser skjematisk hvordan et HTTP server skript kan virke:
+<P>
+<OL>   <LI>  Kommunikasjonen starter med at Web klienten, f.eks. Mosaic eller Netscape, aktiverer en
+      link som skal kalle opp et server skript. Dette kan foregå vha. en <b>GET</b>
+      eller <b>POST</b> HTTP melding.
+<P>
+   <LI> Denne beskjeden går til HTTP serveren som så står for selve oppstarten av
+      skriptet. Det kan hende brukeren har sendt med data fra Web klienten som skal til
+      skriptet. Dette vil serveren ta hånd om ihht. til CGI specen. Denne
+      beskriver hvordan
+      skriptet skal motta data fra serveren samt hvordan skriptet skal sende 
+      data tilbake til serveren. Hvordan data kommuniseres mellom klient og server (skript),
+      er bla. avhengig av om det benyttes <b>GET</b> eller <b>POST</b> metode.
+<P>
+   <LI> Når skriptet blir kalt opp og får tilsendt data (dette kan skje i en
+      kombinasjon av kommandolinje-argumenter, environment variable og
+      standard input, <A HREF="http://hoohoo.ncsa.uiuc.edu/cgi/intro.html">se CGI specen</A>), kan det hende en tredje applikasjon skal
+      involveres, slik figuren antyder. Det er i så fall skriptets oppgave å ta hånd
+      om all denne kommunikasjonen (kanskje med et databasesystem el.). Til
+      slutt må imidlertid skriptet sende data tilbake til HTTP serveren ihht. CGI
+      specen. Figuren antyder også at skriptet kan sende data direkte tilbake til
+      Web klienten, men denne muligheten skal vi foreløpig glemme. Man sparer et ledd
+      i kommunikasjonen hvis dette gjøres, men til gjengjeld blir skriptene noe mere
+      kompliserte siden de må skrive ut alle HTTP kontroll headere selv - dette gjøres
+      normalt av serveren. Slike skript omtales som NPH-skript (No Parsing of Headers).
+<P>
+<A NAME=263>&#160;</A>
+<P>
+   <LI> Når HTTP serveren får data tilbake fra skriptet, går dette automatisk videre
+      til Web klienten på en måte som er forståelig for denne. 
+</OL>
+<P>
+Figuren finnes også <A HREF="/IV/kurs/WWW1/gifs/CGI.gif">i full størrelse her</A>.
+<BR> <HR>
+<UL> 
+<LI> <A NAME=tex2html362 HREF="node17.html#SECTION00051000000000000000">3.1 Datakommunikasjonen i CGI</A>
+<UL> 
+<LI> <A NAME=tex2html363 HREF="node18.html#SECTION00051100000000000000">3.1.1 Datakoding i CGI</A>
+<LI> <A NAME=tex2html364 HREF="node19.html#SECTION00051200000000000000">3.1.2 Oversendelse av data i CGI</A>
+</UL> 
+<LI> <A NAME=tex2html365 HREF="node20.html#SECTION00052000000000000000">3.2 Et CGI skript</A>
+<LI> <A NAME=tex2html366 HREF="node21.html#SECTION00053000000000000000">3.3 CGI skript og sikkerhet</A>
+<LI> <A NAME=tex2html367 HREF="node22.html#SECTION00054000000000000000">3.4 CGI demo og ekstern informasjon om CGI</A>
+</UL>
+<BR> <HR><A NAME=tex2html358 HREF="node17.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/graphics/l2h/next.gif"></A> <A NAME=tex2html356 HREF="Komp.html"><IMG ALIGN=BOTTOM ALT="up" SRC="/graphics/l2h/up.gif"></A> <A NAME=tex2html350 HREF="node15.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="/graphics/l2h/previous.gif"></A> <A NAME=tex2html360 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="/graphics/l2h/contents_motif.gif"></A> <A NAME=tex2html361 HREF="node49.html"><IMG ALIGN=BOTTOM ALT="index" SRC="/graphics/l2h/index_motif.gif"></A> <BR>
+<B> Neste:</B> <A NAME=tex2html359 HREF="node17.html">3.1 Datakommunikasjonen i CGI</A>
+<B>Opp:</B> <A NAME=tex2html357 HREF="Komp.html">HTML fordypning</A>
+<B> Forrige:</B> <A NAME=tex2html351 HREF="node15.html">2.4 Pekere til annen </A>
+<BR> <HR> <P>
+<BR> <HR>
+<P><ADDRESS>
+© Oslonett AS og Intervett AS, 03/05-95, 23:04:38
+</ADDRESS>
+</BODY>

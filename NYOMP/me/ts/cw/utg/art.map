@@ -1,0 +1,17 @@
+default /CW/maphelp.html
+
+# Home
+rect    http://www2.oslonett.no/me/ts/cw/ 1,1 90,37
+
+# Søk
+rect    http://www.oslonett.no/cgi-bin/cwwais 231,1 292,37
+
+# Indeks
+rect    http://www2.oslonett.no/me/ts/cw/utg/index.html 105,1 199,37
+
+# Info
+rect    http://www2.oslonett.no/me/ts/cw/Om.html 314,1 380,37
+
+# Hjelp
+rect    http://www2.oslonett.no/me/ts/cw/Hjelp.html 391,1 470,37
+

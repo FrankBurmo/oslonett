@@ -1,0 +1,119 @@
+<html>
+<head>
+ <title>Oracle med datawarehouse</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+
+
+
+<a href=cw951526.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/me/ts/cw/gifs/up.gif></a> <a href=cw951528.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a> <a href=/me/ts/cw/><img align=middle alt="[CW hjemmeside]" src=/me/ts/cw/gifs/cw.gif></a>  
+<hr>
+
+
+
+<h1>Oracle med datawarehouse</h1>
+
+<h2>Lanserer Oracle7 Multidimension for GIS</h2>
+
+<blockquote><h4>
+<hr>
+Nå kommer de store databaseleverandørene med tilpasninger for datawarehouse.
+Først ut er Oracle med et tillegg som muliggjør flerdimensjonale databaser. For
+brukere betyr dette at prisen på teknologien er i ferd med å bli levelig.<hr>
+</h4></blockquote>
+<i>Anders Løvøy</i><p>Datawarehouse -- analytikernes lekegrind, er en teknologi
+som åpner nye markeder i databransjen. Hittil har nisjeleverandører vært alene
+med dedikerte databaser, men i og med at interessen for datawarehouse stiger,
+kommer gigantene til. Kort fortalt er et datawarehouse en kopi av
+produksjonsdata i en egen database med muligheter for avanserte søk og
+spørsmål.<p>
+	Først ut med eget tillegg i databasen er Oracle, som nylig lanserte sin Oracle
+7 Multidimension for GIS (Geographical Information Systems). Grunnen til at
+tillegget er GIS-spesifikt, er at Oracle ennå ikke har laget et generelt
+verktøysett. Men dette kommer innen sommeren, ifølge Bjørn Hopland fra Oracle
+Norge.<p>
+<b>	Den store fordelen til Oracle blir allikevel prisen -- rundt 14.200 kroner
+per bruker gjør Oracles tilbud uhyre billig i forhold til nisjeleverandørene,
+som kan koste flere ganger så mye i enkelte konfigurasjoner.</b><p>
+<b></b>	Alt tyder på at flere av de andre store databaseleverandørene vil komme
+med egne tillegg for flerdimensjonale databaser, noe som kan presse prisene
+ytterligere nedover.
+<h3>
+Flerdimensjonal</h3>
+I en flerdimensjonal database adresseres et sammensatt nøkkelbegrep som et felt
+i stedet for flere. I et kartsystem vil for eksempel X, Y og Z koordinatene
+lagres som et punkt og ikke enkeltkoordinater. På grunn av dette må databasen
+kjenne til betydningen av dataene i nøkkelbegrepene for å kunne bruke de
+korrekt. <p>
+	Fordelen med denne måten å lagre dataene på, er at behandlingen blir enklere.
+For å finne avstanden mellom to punkt benyttes egne funksjoner som tar to punkt
+som argumenter, og skjuler all geometrisk regning på koordinater for brukeren
+eller analytikeren.<p>
+	Derfor er det vanskelig å lage generelle flerdimensjonale databaser. Siden en
+kartdatabase inneholder spesifikk informasjon om behandling av koordinater, kan
+ikke dette uten videre brukes på et annet område.<p>
+<b>	-- Flerdimensjonale databaser er en lagringsmetode som abstraherer data,
+mener Francis D'Silva, seniorkonsulent i ISI, som har deltatt i prosjekter som
+har benyttet teknologien.</b><p>
+<b></b>	-- Når vi vet hvordan en datatype skal behandles, er det ingen grunn
+til at dette skal programmeres hver gang, mener han.<p>
+	Oracle 7 Multidimension er en database som i første omgang laget for
+GIS-systemer, og inneholder kjennskap til dimensjoner som er karakteristiske
+for kartapplikasjoner.<b></b>
+<h3>
+HHCODE</h3>
+I Oracle7 Multidimension har man løst problemet med flere dimmensjoner ved
+hjelp av en egen datatype som tillater å samle opp flere felt i ett. Denne
+datatypen heter HHCODE, og tillater å se data i en relasjonsdatabase gjennom
+brillene til en flerdimensjonal database. I bunn ligger fortsatt en helt vanlig
+Oracle 7 relasjonsdatabase.<p>
+	Kritikerene til Oracle mener at en flerdimensjonal database må baseres på en
+flerdimensjonal databasemotor, og at Oracle derfor ikke vil kunne oppnå de
+samme hastighetene som dedikerte databaser. Oracle på sin side mener at dette
+er noe de har hørt før.<p>
+<b>	-- Det samme ble sagt da vi kom med fritekstmotor og videotillegg. De
+etablerte mente at vi ikke ville klare å konkurrere på ytelse uten å ha en
+dedikert database, men det klarte vi, sier produktsjef Bjørn Hopland fra Oracle
+Norge.</b><p>
+<b></b>	Han mener at det ikke er noen grunn til at Oracle ikke skal kunne
+konkurrere på ytelse også på denne teknologien, og at en relasjonsdatabase er
+godt egnet som motor.
+<p><i>JOBBER: Oracle jobber med et generellt verktøysett for Oracle 7
+Multidimension, og dette vil være klart før sommeren, ifølge Bjørn Hopland fra
+Oracle Norge. (Foto: A. Hysing)<p>
+ABSTRAHERER: Flerdimensjonale databaser er en lagringsmetode som abstraherer
+data, mener Francis D'Silva fra ISI. (Foto: A. Løvøy)</i><pre><hr><b>
+        Datawarehouse</b><hr></pre>
+<b><i>Datawarehouse er et nytt konsept for å lage beslutningsgrunnlag ut fra
+operative data.</i></b>
+Konseptet er en videreføring av tankegangen bak LIS (Ledelses Informasjons
+System), og baserer seg på å ha en kopiert og restrukturert versjon av
+operative data liggende på en tjenermaskin. <p>
+	Hos en bedrift som har et eller flere transaksjonsbaserte klient/tjener
+system, er ofte dataene organisert etter funksjon. Dermed er de lite
+tilgjengelige for analyse og søk på tvers av undersystemer. <p>
+	I slike systemer er det dessuten lite ønskelig å belaste en produksjonsmaskin
+med tunge databasesøk og analyseoppgaver.<p>
+	For å kunne bruke dataene til analyser og ledelsesinformasjon, flyttes dataene
+over til et datawarehouse. Her blir dataene restrukturert til å gjenspeile det
+ønskede informasjonsbehovet. Et datawarehouse kan godt ta i mot data fra
+forskjellige kilder, og gjøre de tilgjengelige fra ett punkt. 
+	Den store fordelen med et datawarehouse er at eksisterende systemer ikke må
+endres når informasjonsbehovet forandrer seg. Siden dette ofte skjer fort,
+ligger nøkkelen i at endringer bare skal gjøres der informasjon produseres fra
+rådata.
+<p>
+<a href=cw951526.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/me/ts/cw/gifs/up.gif></a> <a href=cw951528.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a> 
+
+
+<pre><hr><a href=/me/ts/cw/maps/art.map><img alt="[Image map not available]" src=/me/ts/cw/gifs/artmap.gif ismap></A><hr></pre>
+<h5>
+<address>
+Artikkel automatisk generert, 21/04-95, kl. 10.13 <a href=/me/ts/cw/kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

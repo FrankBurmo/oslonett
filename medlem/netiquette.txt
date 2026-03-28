@@ -1,0 +1,50 @@
+Følgende etiske retningslinjer er utarbeidet av Uninett, men Schibsted
+Nett slutter seg fullt og helt til de prinsipper som er nedfelt her.
+                                                          - gisle h.
+
+========================================================================
+
+U N I N E T T   N O T A T             UNOT-94-007
+------------------------------------------------------------------------
+TITTEL: UNINETTs etiske retningslinjer for bruk av nettet
+------------------------------------------------------------------------
+SKREVET AV:                                               DATO: 94.08.01
+   Petter.Kongshaug@uninett.no
+GODKJENT AV:
+   styre@uninett.no
+========================================================================
+Det er gjennom årene lagt ned store ressurser fra både akademisk og 
+kommersiell side for å bygge opp den globale infrastruktur av 
+sammenkoplede datanett vi i dag opplever.  Nettverkene har blitt en 
+alt viktigere internasjonal infrastruktur for forskning og utdanning, 
+og svært mange brukere er i sitt daglige virke avhengige av at denne 
+infrastrukturen fungerer.  Driftsstabilitet og rasjonell 
+ressursutnyttelse har blitt en felles interesse og mål for brukere, 
+driftsorganisasjonene og de som skal betale.
+
+Det er allment akseptert at nettverkene skal være så åpne som mulig og 
+begrensningene minimale.  For at dette skal kunne fungere godt er det 
+nødvendig at brukerne selv oppfører seg i henhold til allment 
+aksepterte etiske standarder i deres bruk av nettet.  Mange gjør dette 
+som en selvfølge fordi de etiske standarder for bruk av datamaskiner i 
+nett ikke avviker nevneverdig fra alminnelig god oppførsel andre 
+steder i samfundet.
+
+Dårlig oppførsel eksisterer, og UNINETT anser følgende som uetisk og
+ikke akseptabelt:
+
+All bruk som med hensikt
+ (a) søker urettmessig tilgang til ressurser på nettet
+ (b) skjuler ens identitet, unntatt når slik tildekking er eksplisitt
+     tillatt
+ (c) bryter med nettenes regler for akseptabel bruk
+ (d) sløser med ressurser (mennesker, kommunikasjonskapasitet,
+     datautstyr)
+ (e) ødelegger innhold eller struktur i datalagret informasjon
+ (f) bryter andre brukeres rett til personvern
+ (g) fornærmer eller forulemper andre brukere
+
+UNINETT vil til enhver tid søke å holde disse etiske retningslinjer så
+nært opptil internasjonal praksis og standard som mulig.
+========================================================================
+

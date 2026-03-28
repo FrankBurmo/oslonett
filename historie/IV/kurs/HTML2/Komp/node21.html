@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3O//DTD W3 HTML 2.0//EN">
+<!- Converted with LaTeX2HTML 0.6.4 (Tues Aug 30 1994), Oslonett version : Dec 7, 1994 by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds ->
+<P>
+<HEAD>
+<TITLE>3.3 CGI skript og sikkerhet</TITLE>
+<meta name="description" value="3.3 CGI skript og sikkerhet">
+<meta name="keywords" value="Komp">
+<meta name="resource-type" value="document">
+<meta name="distribution" value="global">
+</HEAD>
+<BODY><P>
+ <BR> <HR><A NAME=tex2html424 HREF="node22.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/graphics/l2h/next.gif"></A> <A NAME=tex2html422 HREF="node16.html"><IMG ALIGN=BOTTOM ALT="up" SRC="/graphics/l2h/up.gif"></A> <A NAME=tex2html416 HREF="node20.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="/graphics/l2h/previous.gif"></A> <A NAME=tex2html426 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="/graphics/l2h/contents_motif.gif"></A> <A NAME=tex2html427 HREF="node49.html"><IMG ALIGN=BOTTOM ALT="index" SRC="/graphics/l2h/index_motif.gif"></A> <BR>
+<B> Neste:</B> <A NAME=tex2html425 HREF="node22.html">3.4 CGI demo og </A>
+<B>Opp:</B> <A NAME=tex2html423 HREF="node16.html">3 CGI - Common </A>
+<B> Forrige:</B> <A NAME=tex2html417 HREF="node20.html">3.2 Et CGI skript</A>
+<BR> <HR> <P>
+<H2><A NAME=SECTION00053000000000000000>3.3 CGI skript og sikkerhet</A></H2>
+<P>
+Det er svært viktig at de som administrerer en WWW server virkelig vet hva
+de gjør hvis de tillater hvem som helst på maskinen å lage CGI skript.
+Et CGI skript vil kjøres av selve WWW server programmet, og vil vanligvis
+ha samme aksessrettigheter i filsystemer osv. som selve server programmet
+har.
+<P>
+Ofte vil dette innebære at skriptene har fulle skrive- og leserettigheter
+til filer innenfor serverens filsystem, men det anbefales å la serveren kjøre
+som en bruker som ikke har skriveaksess til Web hierarkiet. I tillegg til 
+sikkerheten forbundet med filaksessen, vil det være enkelt å
+skrive skript som skriver ut forskjellig systeminformasjon. Slik informasjon
+kan godt være åpen for alle interne brukere på systemet, men allikevel er det ikke
+nødvendigvis ønskelig at slik informasjon gjøres tilgjengelig for alle på
+Internettet via Web!
+<A NAME=304>&#160;</A>
+Mao. bør Web administratoren gjøre
+en sikkerhetssjekk på alle skript som legges opp, og sørge for å opplyse alle
+som skriver skript om ansvaret som er forbundet med dette.
+<P>
+Rent praktisk er mekanismene for CGI skript i serveren noe forskjellige
+fra server til server. Det anbefales å sette seg meget godt inn i de
+konfigurasjonstekniske detaljene forbundet med dette.
+<P>
+Det er også slik at man må tenke nøye gjennom <i>hvem</i> som skal kunne få lov
+til å lage CGI skript. Tillater man vilkårlige brukere i systemet å skrive
+CGI skript, åpner man for potensielle problemer. For det første kan man
+risikere at brukere skriver skript som ikke virker slik tiltenkt, 
+og får serveren til å henge og prosesser til å bli liggende i systemet og 
+ta ressurser.
+<P>
+En mere alvorlig sak, er muligheten for at brukere med eller uten vilje
+skriver skript som ikke har god nok sikring mot feilaktig og ulovlig 
+input mottatt fra forms el.
+<P>
+<i>La oss se på flg. tenkte eksempel:</i>
+<blockquote> <BR><HR>En bruker setter opp et forms der det er meningen at folk skal få
+sende inn nyttige URLer. Han har skrevet et skript som tar i mot
+data, pakker ut og sender URLen videre til et annet program via
+kommandolinjearhumenter. Programmet 
+startes gjennom et UNIX <tt>system()</tt> kall. Dette programmet lagrer
+unna URLen og oppdaterer lister bak kulissene, mens skriptet 
+gjør andre ting og snakker med brukeren.
+<P>
+Anta så at en kløktig hacker er klar over ovenstående. Han kan nå
+sende inn en URL som ser slik ut:
+<P>
+<i>http://blabla;rm -rf &#126;</i>
+<P>
+Hva tror du skjer?
+<P>
+<BR><HR></blockquote>
+<P>
+Det er svært mange ting å tenke på når man skriver skript. En 
+tommelfingerregel er å prøve å unngå å starte opp UNIX shell
+via skriptet, direkte eller indirekte.
+<P>
+Se forøvrige peker til ekstern info om dette emnet i neste avsnitt.
+<P>
+<BR> <HR><A NAME=tex2html424 HREF="node22.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/graphics/l2h/next.gif"></A> <A NAME=tex2html422 HREF="node16.html"><IMG ALIGN=BOTTOM ALT="up" SRC="/graphics/l2h/up.gif"></A> <A NAME=tex2html416 HREF="node20.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="/graphics/l2h/previous.gif"></A> <A NAME=tex2html426 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="/graphics/l2h/contents_motif.gif"></A> <A NAME=tex2html427 HREF="node49.html"><IMG ALIGN=BOTTOM ALT="index" SRC="/graphics/l2h/index_motif.gif"></A> <BR>
+<B> Neste:</B> <A NAME=tex2html425 HREF="node22.html">3.4 CGI demo og </A>
+<B>Opp:</B> <A NAME=tex2html423 HREF="node16.html">3 CGI - Common </A>
+<B> Forrige:</B> <A NAME=tex2html417 HREF="node20.html">3.2 Et CGI skript</A>
+<BR> <HR> <P>
+<BR> <HR>
+<P><ADDRESS>
+© Oslonett AS og Intervett AS, 03/05-95, 23:04:38
+</ADDRESS>
+</BODY>

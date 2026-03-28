@@ -1,0 +1,12 @@
+default /schibsted/default.html
+#Org
+rect /schibsted/org.html 235,52 99,34 
+#home
+poly /schibsted/ 42,88 30,67 30,49 34,36 48,23 60,18 72,13 86,14 97,20 103,23 113,32 99,32 96,42 96,45 96,51 100,56 
+#Kommentar
+poly /schibsted/kv3/kommentar.html 87,65 192,65 193,53 104,52 85,65 
+#Resultat
+poly /schibsted/kv3/resultat.html 61,80 189,79 188,66 83,66 
+#Balanse
+poly /schibsted/kv3/balanse.html 34,93 122,94 122,79 59,80 31,93 
+stovner.oslonett.no% 

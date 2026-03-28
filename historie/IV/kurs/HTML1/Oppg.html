@@ -1,0 +1,192 @@
+<html>
+<head>
+ <title>Oppgaver til kurset "Introduksjon til HTML"</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body bgcolor=#ffffff>
+<h1>Oppgaver til kurset "Introduksjon til HTML"</h1>
+<img alt="" src=/historie/IV/gifs/IV.gif>
+<p>
+I dette kurset skal du gjøre en del oppgaver som går ut på å sette inn
+HTML kommandoer i en vanlig tekst fil. Du bruker den samme filen hele
+tiden, og bygger den gradvis ut med mer og mer avanserte HTML
+konstruksjoner - i arbeider etter den såkalte spiralmetoden.
+<p>
+Filen det skal jobbes på vil ligge tilgjengelig lokalt på hvert kurssted,
+men <a href="/historie/IV/kurs/HTML1/Artikler.txt">den ligger også for downloading her.</a>
+<p>
+Her ligger filen lagret som ren tekst, og du vil se at Web klienten ikke
+gjør annen formattering av denne enn det som er mulig med blanke
+tegn og linjeskift.
+<p>
+Du skal altså ta en kopi av denne filen til et område på din maskin, og
+behandle den videre med en teksteditor, f.eks. Word. Hvis du klikket på
+hyperteksten over og fikk opp filen, kan du enkelt ta en kopi av den ved
+å velge <code>Save As ..</code> i <code>File</code> menyen til Netscape.
+<p>
+Kall filen
+f.eks. <strong>oppgv.htm</strong> når du tar kopien eller downloader
+den.
+<p>
+Du skal nå gjøre flg. eksperiment før vi går over til oppgavene:
+<blockquote>
+<em>
+<hr>
+Bruk Web klienten (Netscape), gå inn i <code>File</code> menyen og velg
+<code>Open File ..</code>, og åpne filen <strong>oppgv.htm</strong> der
+du la den. Observer hva som skjer - hvordan vises filen på skjermen nå
+i forhold til forrige gang? Det ser ikke videre leselig ut?
+<hr>
+</em>
+</blockquote>
+Det som skjedde, var at du nå gjorde om filen fra en ren tekst fil til
+en HTML fil. Hvordan skjedde det, lurer du sikkert på? Svaret er at
+filendelser som <code>htm</code> og <code>html</code> er magiske for
+Web klienten - den antar at filen er en HTML fil. Det er den jo ikke
+i øyeblikket, for den inneholder jo ingen HTML tager i det hele
+tatt! Og som vi ser ignoreres linjeskift  og annen formattering fra
+tekstfilen fullstendig.
+
+<h2>Øvingsoppgaver</h2>
+
+Filen du har tatt en kopi av, er et utdrag fra en artikkelsamling
+om desktop publishing (DTP). Dokumentet består av 4-5 forskjellige
+artikler. Du skal gradvis bearbeide dette dokumentet til å
+bli en avansert og lettlest hypermedia presentasjon, det er den slett
+ikke i øyeblikket!
+<dl>
+ <dt><strong>1: Initiell seksjonering</strong>
+ <dd> Du skal starte med å bruke strukturtagene i HTML til å splitte
+      opp filen i en header del og en kropp. Header delen skal ha en
+      tittel (bruk &lt;title&gt; tagen). Helt på toppen av dokumentets
+      kropp skal du benytte &lt;h1&gt; til å gi dokumentet en synlig tittel
+      også. Totalt sett i denne øvelsen skal du ha benyttet tagene
+      &lt;html&gt;,  &lt;head&gt; &lt;body&gt; og  &lt;h1&gt;.
+
+ <dt><strong>2: Underinndelinger</strong>
+ <dd> Dokumentet ser nå litt bedre ut, men ikke mye. Du skal nå gå over 
+      dokumentet og forsøke å identifisere logiske biter som 
+      artikkeloverskrifter, underoverskrifter, titler, referanser etc.
+      og sette inn HTML tager for disse tingene. Alle steder der det 
+      er naturlig å ha et paragrafskille eller linjeskift må du sette 
+      inn dette eksplisitt. I denne øvelsen bør du i det minste 
+      ha benyttet tagene  &lt;h2&gt;,  &lt;h3&gt; &lt;p&gt;, &lt;br&gt;,  
+      &lt;p&gt; og  &lt;blockquote&gt;, men gjerne flere.
+
+ <dt><strong>3: Innsetting av logiske tager for utheving av tekst</strong>
+ <dd>Hvis du ønsker å sprite opp presentasjonen ytterligere, kan du nå
+     sette inn tager som uthever ord og uttrykk i teksten.
+
+ <dt><strong>4a: Unummererte lister</strong>
+ <dd>Du skal nå begynne å forberede en innholdsfortgnelse på toppen av
+     dokumentet, og skal bruke en av listetagene i HTML til dette. Start
+     med &lt;ul&gt; listetypen. Titlene i innholdsfortegnelsen skal være
+     artikkeltittelene. Foran innholdsfortegnelsen lager du en underoverskrift
+     med navn <strong>Innholdsfortegnelse</strong>, og velger en tag for dette.
+
+ <dt><strong>4b: Nummerert liste</strong>
+ <dd>La innholdsfortegnelsen være nummerert i stedet for unummerert.
+
+ <dt><strong>4c: Innholdsfortegnelse med kort beskrivelse av artiklene</strong>
+ <dd>Bruk &lt;dl&gt; listetypen, og utvid innholdsfortegnelsen til også å
+     inneholde et par linjer om hver artikkel, nærmest som en ingress under
+     tittelen.
+
+      
+<a name="linker">
+ <dt><strong>5a: Linker fra innholdsfortegnelsen til hver artikkel</strong>
+</a>
+ <dd>Du skal nå la titlene i innholdsfortegnelsen være en link til den
+     respektive artikkel lenger ned i dokumentet. Du må da legge inn
+     ankere i form av &lt;a name="...."&gt;  tager nede der hver artikkel
+    starter, mens du
+    i selve innholdsfortegnelsen legger inn &lt;a href="#blabla"&gt; 
+    linker til disse stedene.
+
+ <dt><strong>5b: Linker til ekstern informasjon på Internettet</strong> 
+ <dd>Flere av artiklene omtaler emner det finnes masse informasjon om
+     på Internettet. Det vil kunne være svært nyttig for en leser å
+     få tilgang til dette. Du skal derfor sette opp noen hyperlinker
+     til denne informasjonen. Her er en liste over URLer til relevant
+     informasjon:
+<hr>
+  <dl>
+  <dt> <em><a href="http://yoyo.cc.monash.edu.au/~wigs/postscript/">
+          http://yoyo.cc.monash.edu.au/~wigs/postscript/</a></em>
+   <dd>Informasjon om- og pekere til informasjon om PostScript.
+   <dt><em><a href="http://www.winternet.com/~jmg/9501.html">
+          http://www.winternet.com/~jmg/9501.html</a></em>
+   <dd>Masse nyttige tips om Quark, Illustrator, PhotoShop og Pagemaker
+   <dt><em><a href="http://www.adobe.com/Acrobat/Acrobat0.html">
+        http://www.adobe.com/Acrobat/Acrobat0.html</a></em>
+    <dd>Informasjon om Adobe Acrobat produktene
+    <dt><em><a href="http://www.adobe.com/Apps/AldusPageMaker.html">
+     http://www.adobe.com/Apps/AldusPageMaker.html</a></em>
+    <dd>Informasjon om Aldus Pagemaker   
+    <dt><em><a href="http://www.adobe.com/">
+             http://www.adobe.com</a></em> 
+    <dd>Adobes Web hjemmeside</a>
+
+  </dl>
+  <hr>
+   <dt><strong>6a: Sett inn bilder i teksten</strong>
+   <dd>Bruk &lt;img&gt; tagen og fiff opp teksten med litt clipart
+       og små bilder. Du har f.eks. tilgjengelig ikoner for
+	Adobes produkter, du har striper og forskjellige bullets
+	osv. Husk alt-opsjonen. Hvordan bør denne brukes når det
+	gjelder bilder som dette?
+	<hr>
+	Her er forresten pekere til noen steder du kan hente
+	clipart ute på nettet:
+	<ul>
+         <li> <a href="http://www.cs.purdue.edu/homes/gwp/dtp/dtp.html">
+	  DTP Internet Jumplist</a>
+         <li> <a href="http://leviathan.tamu.edu:70/1s/clipart">
+	  Clip Art Collection</a>
+         <li> <a href="http://www.cs.yale.edu/HTML/YALE/CS/HyPlans/loosemore-sandra/clipart.html">
+	  Sandra's Clip Art Server</a>
+         <li> <a href="http://akebono.stanford.edu/yahoo/Computers/Multimedia/Pictures/">Stro samling pekere til clipart i Yahoo</a>
+
+       </ul>
+       <hr>
+
+   <dt><strong>6b: Sett inn en <em>link</em> til et stort bilde
+	      vha. et ikon</strong>
+   <dd>Du skal nå sette inn et litt større bilde. Dvs. - bildet skal ikke
+	dukke opp inline siden det er såpass stort at vi ikke ønsker at
+	leseren skal vente på at det loades. Du skal derfor i stedet sette
+	opp et lite ikon inline, men. ikonet skal være en link til det store
+	bildet.
+</dl>
+
+<h2>Prosjektoppgave</h2>
+
+Hvis det blir tid, skal det utføres en litt større prosjektoppgave der all
+tekst skrives inn fra bunnen av. Du skal lage en litt større HTML presentasjon
+som gjør bruk av mest mulig av det kurset har tatt opp. Dette betyr at du
+skal forsøke å benytte tager fra de ulike kategoriene tager, men samtidig
+skal du forsøke å tenke design og brukervennlighet i det du lager.
+<p>
+Temaet for prosjektoppgaven er fritt, men to mulige forslag er
+<ol>
+  <li> Lag en presentasjon av firmaet du jobber for. Forretningsområder,
+       organisasjon, antall ansatte, beliggenhet etc.
+  <li> Lag en presentasjon av deg selv, hva du holder på med, hobbier,
+       familie etc.
+</ol>
+
+Uansett hva du velger, skal du nå prøve å dele opp presentasjonen i et par
+småfiler, og tilby enkle navigeringsmuligheter for å gå fra en fil til en
+annen.
+<p>
+Foreleser vil gå rundt og hjelpe til.
+Et utvalg av prosjektene vil bli forsøkt evaluert i plenum før kursslutt.
+
+<hr>
+<a href="/historie/IV/IV.html">
+ <img alt="Intervett home" align=middle src=/historie/IV/gifs/IV-icon.gif></a>
+<p>
+<address>Oppdatert, 26. april 1995</address>
+
+</body>
+</html>

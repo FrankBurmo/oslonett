@@ -1,0 +1,61 @@
+<HTML VERSION="2.0">
+<HEAD>
+
+<TITLE>Contribute to the european climbing repository</TITLE>
+</HEAD>
+<BODY  bgcolor=ffffff>
+<H1>Contribute to the european climbing repository</H1>
+
+<FORM METHOD="POST" ACTION="http://www.oslonett.no/cgi-bin/mailit/">
+
+<input type="hidden" name="bodyattr" value="bgcolor=#ffffff">
+<input type="hidden" name="imgattr" value="src=/graphics/cgi.gif">
+
+<!-- bytt ut det som står etter value med mailadressen til mottager -->
+<INPUT TYPE="hidden" NAME="mailto" VALUE="dagwi@oslonett.no">
+
+<!-- bytt ut det som står etter value med mailadressen til avsender -->
+<INPUT TYPE="hidden" NAME="reply-to" VALUE="dagwi@oslonett.no">
+
+<!-- bytt ut det som står etter value med mailens Subject -->
+<INPUT TYPE="hidden" NAME="subject" VALUE="Climbing repository">
+
+<!-- Dette feltet behøver ikke være med. Tar du det med, må du som -->
+<!-- value legge inn en URL til en HTML fil du vil bruke som       -->
+<!-- "kvittering" til brukeren. Utelates feltet, får du standard kvittering -->
+<INPUT TYPE="hidden" NAME="rcpt-url" VALUE="http://www.oslonett.no/sp/fjell/climbing/svar.html">
+
+<pre>
+
+<select name="cragtype">
+<option value="in">Indoor
+<option value="out" selected>Outdoor
+</select>
+
+Country               : <input name="country" size=30>
+Name of the area/gym  : <input name="area" size=60>
+Location/address      : <input name="location" size=60>
+Rocktype              : <input name="rocktype" size=60>
+Height                : <input name="height" size=5>
+Season                : <input name="season" size=15>
+Bolted                : <input name="bolted" size=>
+Camping sites         : <input name="camping" size=60>
+Topo                  : <input name="topo" size=60>
+Grades                : <input name="grades" size=60>
+Interesting routes    : <input name="routes" size=60>
+
+
+Comments
+<textarea name="comments" rows=10 cols=80></textarea>
+
+Your emailadress      : <input name="email" size=60>
+</pre>
+
+<input type="submit" value="Send">
+</forms>
+<HR>
+<P><A HREF="http://www.dtek.chalmers.se/Climbing/index.html"><IMG SRC="world_btn.gif" ALIGN="MIDDLE"></A> <A HREF="http://www.dtek.chalmers.se/Climbing/index.html">Climbing Archive</A> 
+<A HREF="index.html"><IMG SRC="europe_btn.gif" ALIGN="MIDDLE"></A> <A HREF="index.html">Climbing in Europe</A> 
+
+</BODY>
+</HTML>

@@ -1,0 +1,13 @@
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="3"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Svalestjertens larvestadium"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Auditorium 2, Kristine Bonnevies hus"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="1315"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value="kaaren@ifi.uio.no"` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="5"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Svalestjertens venner"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Blindern"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Foredrag om svalestjertens livssyklus, med vekt på larvestadiet` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?10.10"?)\s*>` with `` checked>` -->

@@ -1,0 +1,5 @@
+default http://www.aftenposten.no/nyaften/kul_und/index.htm
+rect http://www.aftenposten.no/nyaften/innhold/index.htm 0,48 69,64
+rect http://www.aftenposten.no/nyaften/info/index.htm 70,48 140,64
+rect http://www.aftenposten.no/nyaften/index.htm 141,48 308,64
+rect http://www.aftenposten.no/nyaften/info/post/index.htm 309,48 453,64

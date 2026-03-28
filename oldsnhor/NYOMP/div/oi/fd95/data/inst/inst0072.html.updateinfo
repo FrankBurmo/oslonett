@@ -1,0 +1,11 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="72"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Norsk institutt for luftforskning (NILU)"` -->
+<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value="http://www.nilu.no./nilulogo.gif"` -->
+<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value="http://www.nilu.no./"` -->
+<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Norsk institutt for luftforskning (NILU) er ett av de sentrale forskningsinstituttene i Europa når det gjelder luftforurensninger. NILU har i dag ansvaret for luftovervåkingen i Norge og i Europa. Instituttet har bygd opp et betydelig kontaktnett, og er i dag i ferd med å eksportere kunnskaper om luftforurensninger og miljø til andre deler av verden. Instituttet spiller en sentral rolle som premissleverandør for de beslutningene som tas for å bedre luftkvaliteten lokalt, regionalt og globalt. Arbeidsoppgavene knyttet til instituttets 7 avdelinger er bl.a.: Lokale luftforurensninger; trafikk, industri, byforurensning. Regionale luftforurensninger; sur nedbør, grenseoverskridende forurensning. Globale luftforurensninger; ozonlaget, klima, persistente miljøgifter. Instrumenter; utvikling, feltmålinger. Uorganiske analyser; svovel, nitrogen, tungmetaller etc... Organiske analyser; flyktige organiske forbindelser, klororganiske (dioksiner) etc.. Tromsøavdelingen; luftforurensninger i Arktis. NILU har i dag ca. 125 ansatte, som i hovedsak er spesialister innenfor temaer relatert til luftforurensninger. ` -->
+<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``` -->
+<!-- replace `<option(.*Forskningsinstitutt)` with `<option selected`` -->

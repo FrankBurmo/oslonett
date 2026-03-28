@@ -1,0 +1,196 @@
+ 95611                                     0  0   0         0
+ 95376OS                                 219  0   0         0
+ 95776GT èsavn. 1 D                      301 10 102    935000
+ 94605GT èslõkkveien 56                  220  0 244   1620000
+ 94518GT Abbedikollen 22                 301 10 291   3350000
+ 95623TT Arnulf ùverlands vei 111        301 10 160   1325000
+ 95397BB Arnulf ùverlandsv. 109          301  0 160   1400000
+ 94732FC Arnulf ùverlandsvei 83          301 10 160   1350000
+ 95052BB Aslakveien 17B                  301  0  90    775000
+ 94489ED Baldersgate 4                   301 10  40    415000
+ 95249HM Baldersgt 18 0263 Oslo          301 10  75    710000
+ 95250HM Baldersgt 18 0263 Oslo          301 10  85    800000
+ 95619OU Baldersgt. 1 B                  301 10 100         0
+ 95590GT Baldersgt. 2                    301 10  33    425000
+ 93407GT Baldersgt. 20                   301 10 104    875000
+ 95317GT Beddingen 2                     301 10  68   1600000
+ 93158GT Beddingen 26                    301 10  83         0
+ 95036OU Bekkeveien 27                   301 30 287   1490000
+ 95697GT Bergensgt. 9                    301 20 490         0
+ 93205GT BergrÜdvn. 6                    301 10 340   2250000
+ 94447TT Bestumvn. 14                    301  0 140   1300000
+ 94448TT Bestumvn. 14                    301  0 139   1200000
+ 95499GT Biermannsgt. 12 B               301 20  42    275000
+ 92422GT Bjertnesvn. 2 b                 233  0 126    750000
+ 95800OU Blakkens vei 91                 301 30 152         0
+ 94244GT Blindernvn. 2                   301 10  22    250000
+ 94342GT Bogstadvn. 53 B                 301 10  40    400000
+ 95652GT Bryggegaten 22                  301 10 138    280000
+ 95046GT Bygdõy alle 127 A               301 10  50    400000
+ 95762GT Bygdõy alle 27 B                301 10  90   1075000
+ 95063GT Bygdõy Alle 123                 301 10 100    900000
+ 95624ED Bygdõy Alle 125 A               301 10   0         0
+ 95330HM Bygdõy Alle 28                  301 10 205   1690000
+ 95816GT Bygdõy Alle 51 B                301 10 264   2200000
+ 95779GT Bygdõy Alle 61                  301 10 188   1750000
+ 95042GT BÜtstjordet 55                  219 10 210   1680000
+ 94561TT Dagaliveien 31 e                301 10  45    575000
+ 95569FC Drammensvn. 117                 301 10 105   1290000
+ 95405GT Durudveien 20 C                 219 10  44    340000
+ 95801TT Eugeniesgt. 3                   301  0  98    790000
+ 95301ED Fagerborggaten 6 B, 0360 OSLO   301 10  77    400000
+ 94666GT Fjellgaten 50                   301 20  67    525000
+ 95128GT Folke Bernadottesvei 32         301 10  62   6950000
+ 95728GT Fossveien  17                   301 20  76    635000
+ 94310GT Fossveien 17                    301 20  51    430000
+ 94736BB Fougstadgt. 39                  301  0 130    970000
+ 95766OS Fredensborgvn 21                301 10  62    400000
+ 95433FC Fredrik Stangsgt. 44            301 10 207   2400000
+ 95453GT Frognerveien 3                  301 10 252   2150000
+ 95007HM Frydenlundsgate 12              301 10 114   1350000
+ 95136OU Furulundtoppen 4                301 10 165   1890000
+ 95137OU Furulundtoppen 4                301 10 165   1790000
+ 95138OU Furulundtoppen 4                301 10 165   1790000
+ 95139OU Furulundtoppen 4                301 10 165   1790000
+ 95140OU Furulundtoppen 4                301 10 165   1890000
+ 95740ED Gabelsgate 1, 0272 OSLO         301 10 174   1800000
+ 95802GT Gml. Hovseterv. 2 C             301 10  77    765000
+ 95813BB Griffenfeldtsgt. 12A            301  0  67    500000
+ 94734FC Grindbakken 70                  301 10 152   1720000
+ 95399GT GrÜbrõdreveien 4 C              301 10 225   1900000
+ 95335FC GullerÜsvn. 22 B                301 10 212   2350000
+ 95743GT Gullkroken 5                    301 10  75    700000
+ 95790GT Gustavsgt. 4                    301 10 228   2350000
+ 94391GT Gyldenlõvesgt. 19 B             301 10 210   1725000
+ 94746TT Hagegt. 50                      301  0  90         0
+ 95618OU Halvdan Svartesgt. 18           301 10 238   2090000
+ 94277GT Hankõsundet                     134  0 800         0
+ 95637TT Harald HÜrfagresgt. 9           301  0 172   1300000
+ 95203OU Hausmannsgate 19                301 10  63    390000
+ 95096GT Haxthausensgt. 15               301 10  75    700000
+ 94498GT Haxthausensgt. 3                301 10 115   1200000
+ 95793TT Haxthausensgt. 4                301  0  75    830000
+ 92390GT Hegermannsgt. 19                301 20  88    360000
+ 95821TT Helgesensgt. 83 c               301  0  71    475000
+ 94648BB Hermann Fossgt. 19              301  0 117    950000
+ 95748BB HerregÜrdsveien 8B              301  0  40    350000
+ 95406GT HiltonÜsen 76                   219 20 183   1650000
+ 95647GT Holmenkollvn. 96                301 10 117   1075000
+ 95819GT Huitfeldtsgt. 31                301 10  48    650000
+ 95818FC Ihleholmen                      219  0   0         0
+ 95805ED Industrigaten 53, 0357 OSLO     301 10   0         0
+ 94747TT Ingeborgsgt. 8                  301  0 181         0
+ 94772FC Inkognitogt. 4                  301 10  83   1190000
+ 95732GT Ivar Knutsonsv. 11              301 30 117    800000
+ 95635ED Jacob Aalls gate 14, 0368 OSLO  301 10 131   1200000
+ 95804OU Jacob Aallsgt. 16               301 10 145         0
+ 95575FC Jarlsborgvn. 9                  301 10 224         0
+ 94455GT Jerikoveien 99 A                301 30 107    350000
+ 95629HM Jonstõllia 6                    612  0 383         0
+ 95703ED KirkegÜrdsgaten 12, 0558 OSLO   301 20   0         0
+ 94748TT KirkegÜrdsgt. 5                 301  0 181         0
+ 95497HM Kirkevn 67 B                    301 10 149   1150000
+ 95577TT Kirkevn. 127                    301  0 109   1050000
+ 95780GT Kirkevn. 41                     301 10 107    885000
+ 95423OU Kraftsgt. 1                     301 10 140    950000
+ 95661TT Kristian Kõllesvei 9            219  0 166   2900000
+ 95699OU Krokkleiva 10                   301 30 100         0
+ 95681FC Kvernvn 15                      301 10 273   3950000
+ 95132GT Lõnnhaugen alle 10              301 10 247   1850000
+ 95222TT Lõvenskioldsgt. 11 c            301  0 125    805000
+ 95774HM Lõvenskioldsgt. 14              301 10  97   1550000
+ 93080GT Lõvsangerveien 3                211  0 123    490000
+ 94674GT Landingsveien 34                301 10 111    775000
+ 95463BB Landingsvn. 86                  301  0  81    720000
+ 94532GT Laura Gundersensgt. 4 A         301 10  45    435000
+ 95792GT Lillehagvn. 83                  219 10 134   1025000
+ 94396GT Lindeberglia 36                 301 30  81    430000
+ 95181HM Linderudsletta 9 A              301 20  95    575000
+ 94077GT Linstowsgt. 4                   301 10 158    975000
+ 95167OU Lyseskrenten 56                 301 10 128   1775000
+ 95188OU Lyseskrenten 56                 301 10   0         0
+ 94725GT Mõlleplassen                    618  0  92    660000
+ 95559TT Maridalsvn. 154                 301  0  50    350000
+ 94303GT Matrosvn. 15                    136  0 239    960000
+ 95450GT Melkeveien  6                   301 10 152   2150000
+ 95507TT Micheletsvei 16 a               219  0 205   1450000
+ 95814GT Munthesgt. 25                   301 10 150   1750000
+ 94119FC Myklegardgt. 3                  301 30  95    675000
+ 95721ED Nedre SilkestrÜ 6, 0375 OSLO    301 10 113    850000
+ 93265GT Nedre Stabburv. 3               301 10 123   1550000
+ 95765GT Neuberggt.6 F                   301 10  87    915000
+ 95654GT Neubergt. 2                     301 10 169         0
+ 94533CH Niels Juelsgate 47              301 10  63    515000
+ 94651TT Niels Juelsgt. 3                301  0 164    950000
+ 95550FC Niels Juelsgt. 4                301 10  99   1395000
+ 95794FC Niels Juelsgt. 48               301 10 166   1450000
+ 94636ED Nittedalsgata 7                 301 30  61    700000
+ 95823HM Nobelsgt. 23                    301 10  43         0
+ 95820BB Nonnegt. 11                     301  0  83    650000
+ 95694GT Norderhovgt.28                  301 30  68         0
+ 95030RF Nordraaksgate 3                 301 10  97         0
+ 95329BB Observatoriegt. 14              301  0 119   1100000
+ 95763BB Odinsgt. 3                      301  0 194   1600000
+ 94287GT Olav Kyrresgt. 10               301 10  85         0
+ 94573GT Olav Kyrresgt. 10               301 10 235   1700000
+ 95622FC Olav Kyrresgt. 11 A             301 10 215   2300000
+ 95744GT Ole Vigsgt. 3                   301 10 125   1300000
+ 95807TT Ole Vigsgt. 32 e                301  0 105         0
+ 93096GT Paulus plass 1                  301 20  90    450000
+ 95032OU Pilestredet 47 A                301 10 110    550000
+ 95791GT Porfyrvn. 7 B                   301 10  80         0
+ 95428GT Rõahagan 1 C                    301 20  62    650000
+ 95810ED Rathkesgate 17, 0558 OSLO       301 10  85    550000
+ 95811HM ReverudÜsen 16 A                219  0  99         0
+ 94744TT Romsdalsgt. 5                   301  0   0         0
+ 95612FC Rosenkrantzvei 31               220  0 306   2950000
+ 95781GT Sõrkedalsvn. 26 D               301 10  95   1700000
+ 95724TT Sõrkedalsvn. 3                  301  0 107    900000
+ 94235GT Sarpsborggt. 16 D               301 20  75    600000
+ 95639ED Sarsgaten 31 J, 0562 OSLO       301 20   0         0
+ 95817HM Saturnvn. 14                    301 20 452   2400000
+ 94745TT Schweigaardsgt. 59              301  0  88         0
+ 95797TT Seljevn. 15                     233  0 199   1150000
+ 94600GT Skõyen Terrasse 27              301 10  89    725000
+ 94552FC Skovveien 5                     301 10 111   1250000
+ 95323TT Smalgangen 11                   301  0  85    850000
+ 95270RF Smalgangen 19                   301  0  77    615000
+ 94541GT Sofiesgt. 46                    301 10  70    585000
+ 95411GT Solhaugveien 75                 219 10  96    880000
+ 94622GT Solheimgt. 1 B                  301 10  60    665000
+ 95746OU Solveien 131 C                  301 30 240         0
+ 94681GT Stensgt. 35                     301 10  50         0
+ 94363GT Stenstrupsgt. 8                 301 20  81    625000
+ 95751TT Sverdrupsgt. 19                 301  0 974   2150000
+ 94009GT Sverdrupsgt. 3                  301 20  83    650000
+ 95815BB Sverigesgt. 17                  301  0  70    390000
+ 95554GT Tappen 39                       219 10  98         0
+ 95621HM Thomas Heftyesgt 52             301 10 185   1850000
+ 95383FC Thomas Heftyesgt 62             301 10 164   2000000
+ 94545GT Thomas Heftyesgt. 46            301 10 179   1600000
+ 95617FC Thomas Heftyesgt. 56 A          301 10 174   1950000
+ 93503FC Thomas Heftyesgt. 64 A          301 10 122   1350000
+ 95808ED Ths. Heftyesgt. 64A, 0267 OSLO  301 10  78    725000
+ 94348FC Trondheimsveien 199 B           301 10  84         0
+ 95758GT Trondheimsvn. 111               301 20  60    350000
+ 95248FC Tuengen Alle 6 B                301 10 169         0
+ 95795OU Tvetenveien 251                 301 30  80         0
+ 95705TT Tyribakken 20                   301  0 176   1350000
+ 95777BB Ullern Alle 71                  301  0  88   1090000
+ 95812TT Ullern GÜrdsvei 11 k            301  0  55    720000
+ 95413ED UllerngÜrdsvei 11 E, 0382 OSLO  301 10  52    640000
+ 95274ED Ullernkammen 27, 0380 OSLO      301 10 173   1460000
+ 95822ED UllevÜlsveien 19, 0165 OSLO     301 10 141   1150000
+ 93372GT UllevÜlsvn. 79                  301 20 129    850000
+ 94478FC Vallegaten 4                    301 10   0         0
+ 95152TT Vallegaten 4                    301 10 100         0
+ 94324TT Vestheimgt. 8                   301  0  37    420000
+ 94326GT Vibesgt. 1                      301 10 130   1100000
+ 95509TT Vibesgt. 19                     301  0   0         0
+ 94671FC Vibesgt. 25, 3 etg              301 10  43    725000
+ 95327TT Villa Hasselbakken              237  0   0         0
+ 95636ED Vëkerõ Terrasse 10, 0282 OSLO   301 10   0         0
+ 95799ED Welhavensgate 10, 0350 OSLO     301 10  76    750000
+ 95754FC Welhavensgt. 2 A                301 10  82    950000
+ 95026OU Westye Egebergsgt. 2 B          301 10  67    625000
+

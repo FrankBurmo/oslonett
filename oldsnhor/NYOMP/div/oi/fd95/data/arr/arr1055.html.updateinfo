@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1055"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Kommunal organisering"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Høgskolen i Telemark"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="1015 - 1500"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value="KS Telemark, Fylkeshuset, 3706 Skien. Fax 35 53 22 09"` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value="Politikere, kommunale ledere, studenter og ansatte i Høgskolen i Telemark."` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="50"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="KS Telemark/KS Forskning"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``PROGRAM 10.30: 'Politikk og administrasjon, ulike roller og deltakelse', Audun Offerdal, forsker ved Universitetet i Bergen. 11.45: 'Organisasjonsmodeller generelt og erfaringer fra Lørenskog kommune'. Inger M. Stigen, forsker ved Norsk institutt for by- og regionforskning. 13.45: Paneldebatt. I panelet: Ordfører i Tinn, Olav Ulleren, Elisabeth Nilsen, ordfører i Porsgrunn, Edvard Garmo, rådmann i Vinje og Tom Hafredal, rådmann i Bamble.` -->
+<!-- replace `<option(.*Telemark)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?11.10"?)\s*>` with `` checked>` -->

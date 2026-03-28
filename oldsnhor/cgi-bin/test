@@ -1,0 +1,19 @@
+#!/bin/sh
+
+echo "Content-type: text/plain"
+echo
+echo "ARG0: $0"
+echo "ARG1: $1"
+
+echo
+echo "Running 'env':"
+echo "--------------"
+sleep 3
+env
+
+if [  "$REQUEST_METHOD" = "POST" ]
+then
+
+        echo "-------------- STDIN -----------"
+#        cat
+fi

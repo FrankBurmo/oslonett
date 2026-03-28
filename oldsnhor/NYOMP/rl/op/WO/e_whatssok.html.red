@@ -1,0 +1,37 @@
+<html>
+<head>
+ <title>Events in Oslo</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<hr>
+<center><h1>Events in Oslo</h1></center>
+<hr size=4>
+
+<center><h2>Events 1995 - 2000</h2></center>
+
+This is an overview over meetings, conferences, trade fairs and exhibitions in Oslo in the period 1995 - 2000.<p>
+<center><b><a href="/rl/op/WO/events/word95.html">[1995]</a> <a href="/rl/op/WO/events/word96.html">[1996]</a> <a href="/rl/op/WO/events/word97.html">[1997]</a> <a href="/rl/op/WO/events/word98.html">[1998]</a> <a href="/rl/op/WO/events/word99.html">[1999]</a></b></center>
+
+
+<hr size=2>
+<A HREF="/">  <iMG ALT="[Oslonett Home]" SRC="/gifs/on/home.gif" border=0>Oslonett</A>
+<a href="/rl/op/"><img align=bottom alt="[Back Home]" src="/graphics/l2h/up.gif" hspace=6>Back home</a>
+<a href="/rl/op/pages/sightseeing.html"><img align=bottom alt="[Previous]" src=/graphics/l2h/previous.gif hspace=6>Previous Category</a>
+<a href="/rl/op/pages/entertainment.html"><img align=bottom alt="[Next]" src=/graphics/l2h/next.gif hspace=20>Next</a>
+<hr size=4>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

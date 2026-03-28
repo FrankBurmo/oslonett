@@ -1,0 +1,390 @@
+# Denne filen er database over personell på SN og brukes av WWW.  Vedlikehold
+# av databasen skjer ved å redigere i denne filen med en teksteditor.
+#
+# Forklaring av taggene:
+#
+# EN:  Etternavn
+# FN:  Fornavn
+# TI:  Tittel (Cand. Scient, Cand. Real, Sivilingeniør,...)
+# ST:  Stilling (F = Forsker)
+# UID: Unix brukernavn
+# E:   Email (Ikke nødvendig hvis UID er oppgitt)
+# KT:  Telefon (kontor)
+# MT:  Mobiltelefon
+# PT:  Privattlf
+# PA:  Privatadresse
+# AVD: Avdeling (ADM, PROFF, PRIVAT, NETT, UTV, SUPPORT)
+# KEY: Keywords (ord som gir tilslag ved søk, men som ikke vil framvises)
+#
+
+FN: Kristin
+EN: Andersen
+ST: Fakturamedarbeider
+KT: 22 82 79 05
+AVD: ADM
+UID: kristina
+
+FN: Stian W.
+EN: Arnesen
+ST: Direktør
+KT: 22 82 79 18
+AVD: NETT
+UID: stian
+
+FN: Kari
+EN: Asheim
+ST: Konsulent
+KT: 22 82 79 15
+AVD: NETT
+UID: kari
+
+FN: Rune
+EN: Bakken
+ST: Konsulent
+KT: 22 02 01 10
+AVD: SUPPORT
+UID: rbakken
+
+FN: Thorleif
+EN: Boman
+ST: Nøkkelkundeansvarlig
+KT: 22 82 79 43
+AVD: PROFF
+UID: boman
+
+FN: Axel
+EN: Borge
+ST: Konsulent
+KT: 22 82 79 25
+AVD: NETT
+UID: axel
+
+FN: Pål
+EN: Brandt-Rasmussen
+ST: Konsulent
+KT: 22 02 01 10
+AVD: SUPPORT
+UID: pbrandtr
+
+FN: Arne Olav
+EN: Bryne Jr.
+ST: Konsulent
+KT: 22 02 01 10
+AVD: SUPPORT
+UID: arno
+
+FN: Terje
+EN: Dahl
+ST: Konsulent
+KT: 22 02 01 10
+AVD: SUPPORT
+UID: tdahl
+
+FN: Gunnar
+EN: Dolva
+ST: Selger
+KT: 22 82 79 45
+AVD: PRIVAT
+UID: dolva
+
+FN: Vidar Johan
+EN: Ek
+ST: Konsulent
+KT: 22 02 01 10
+AVD: SUPPORT
+UID: vidarj
+
+FN: Anders
+EN: Ellefsrud
+ST: Konsulent
+KT: 22 82 79 19
+AVD: NETT
+UID: anders
+
+FN: John
+EN: Eriksen
+ST: Selger
+KT: 22 82 79 46
+AVD: PRIVAT
+UID: ejohn
+
+FN: Knut
+EN: Falchenberg
+ST: Direktør
+KT: 22 82 79 26
+AVD: PROFF
+UID: knutf
+
+FN: Cecilie
+EN:  Feen
+ST: Web-journalist
+KT: 22 82 79 35
+AVD: PRIVAT
+UID: cfeen
+
+FN: Erland
+EN: Flaten
+ST: Web-journalist
+AVD: PRIVAT
+UID: eflaten
+
+FN: Kaare
+EN: Frydenberg
+ST: Styreformann
+KT: 22 86 35 12
+E: Kaare.Frydenberg@aftenposten.no
+
+FN: Øystein
+EN: Gutu
+ST: Web-designer
+KT: 22 82 79 54
+AVD: PROFF
+UID: gutu
+
+FN: Gisle
+EN: Hannemyr
+ST: Direktør
+KT: 22 82 79 13
+MT: 90553659
+PT: 22712529
+AVD: UTV
+UID: gisle
+
+FN: Markus
+EN: Harboe
+ST: Markedssjef
+KT: 22 82 79 21
+AVD: PRIVAT
+UID: markush
+
+FN: Hege
+EN: Hayden
+ST: Administrasjonssjef
+KT: 22 82 79 14
+UID: hegeh
+AVD: ADM
+
+FN: Aina
+EN: Hegdalsaunet
+ST: Konsulent
+KT: 22 82 79 15
+AVD: NETT
+UID: aina
+
+FN: Hans Petter
+EN: Holen
+ST: Prosjektleder
+KT: 22 82 79 16
+AVD: NETT
+UID: hph
+
+FN: Gaute
+EN: Hongrø
+ST: Konsulent
+KT: 22 02 01 10
+AVD: SUPPORT
+UID: gahongro
+
+FN: Lars Erik
+EN: Håland
+ST: Konsulent
+KT: 22 82 79 17
+AVD: NETT
+UID: leh
+
+FN: Borgny
+EN: Jørgensen
+ST: Administrasjonssekretær
+KT: 22 82 79 22
+UID: borgny
+AVD: ADM
+
+FN: Tore Solvar
+EN: Karlsen
+ST: Administrerende direktør
+KT: 22 82 79 01
+UID: tore
+
+FN: Ketil
+EN: Kirkerud
+ST: Konsulent
+KT: 22 82 79 17
+AVD: NETT
+UID: ketilk
+
+FN: Steinar
+EN: Kjærnsrød
+ST: Avdelingsleder
+KT: 22 82 79 06
+AVD: PROFF
+UID: steinar
+
+FN: Tove Lene
+EN: Kolstad
+ST: Regnskapsansvarlig
+KT: 22 82 79 10
+UID: tove
+AVD: ADM
+
+FN: Jeyachandran
+EN: Kopinath
+ST: Web-designer
+AVD: PROFF
+UID: kopinath
+
+FN: Steing Georg
+EN: Lillemoen
+ST: Nøkkelkundeansvarlig
+KT: 22 82 79 03
+AVD: PROFF
+UID: steingl
+
+FN: Camilla
+EN: Lillevold
+ST: Salgskonsulent
+KT: 22 82 79 41
+AVD: PRIVAT
+UID: camilla
+
+FN: Ove
+EN: Malmstrøm
+ST: Konsulent
+KT: 22 02 01 10
+AVD: SUPPORT
+UID: ovema
+
+FN: Jon Inge
+EN: Moe
+ST: Konsulent
+KT: 22 02 01 10
+AVD: SUPPORT
+UID: jonmo
+
+FN: Leif Arne
+EN: Neset
+ST: Modemansvarlig
+KT: 22 02 01 10
+AVD: NETT
+UID: leifa
+
+FN: Kåre Gunnar
+EN: Nesheim
+ST: Web-designer
+KT: 22 82 79 32
+AVD: PROFF
+UID: kgn
+
+FN: Ole
+EN: Norheim
+ST: Nøkkelkundeansvarlig
+AVD: PROFF
+UID: olen
+
+FN: Gisle
+EN: Oddstad
+ST: Web-journalist
+KT: 22 82 79 27
+AVD: PRIVAT
+UID: oddstad
+
+FN: Tor-Arnt
+EN: Olsen
+ST: Konsulent
+KT: 22 82 79 47
+AVD: NETT
+UID: toro
+
+FN: Arne Petter
+EN: Omholt
+ST: Prosjektleder
+KT: 22 82 79 11
+AVD: PROFF
+UID: arneom
+
+FN: Jorun
+EN: Ruud
+ST: Gruppeleder
+KT: 22 82 79 20
+AVD: SUPPORT
+UID: jorun
+
+FN: Irene
+EN: Rødsten
+ST: Konsulent
+KT: 22 02 01 10
+AVD: SUPPORT
+UID: irene
+
+FN: Bjørn
+EN: Røgeberg
+ST: Konsulent
+KT: 22 02 01 10
+AVD: NETT
+UID: bjornrg
+
+FN: Thomas Engh
+EN: Sevaldrud
+ST: Konsulent
+KT: 22 02 01 10
+AVD: SUPPORT
+UID: thomasen
+
+FN: Camilla Terese
+EN: Sorknes
+ST: Kundekonsulent
+KT: 22 02 01 10
+UID: camillas
+AVD: ADM
+
+FN: Morten
+EN: Stensland
+ST: Direktør
+KT: 22 82 79 42
+AVD: PRIVAT
+UID: mortensl
+
+FN: Andreas Kiær
+EN: Sørensen
+ST: Konsulent
+KT: 22 02 01 10
+AVD: SUPPORT
+UID: andreass
+
+FN: Jens
+EN: Thomassen
+ST: Konsulent
+KT: 22 82 79 39
+AVD: NETT
+UID: jens
+
+FN: Kent
+EN: Vilhelmsen
+ST: Web-designer
+KT: 22 82 79 33
+AVD: PROFF
+UID: kentv
+
+FN: Dag
+EN: Wigum
+ST: Prosjektleder
+KT: 22 82 79 12
+AVD: PROFF
+UID: dagwi
+
+FN: Mariann
+EN: Ødegård
+ST: Prosjektleder
+KT: 22 82 79 09
+AVD: PROFF
+UID: mariann
+
+FN: Gisle
+EN: Aas
+ST: Programmerer
+KT: 55 59 00 19
+MT: 924 00 357
+PA: Furubotn 42, 5082 Eidsvågneset
+PT: 55 95 34 11
+AVD:UTV
+UID: aas
+

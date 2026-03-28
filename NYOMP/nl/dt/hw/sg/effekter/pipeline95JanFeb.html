@@ -1,0 +1,533 @@
+<HTML VERSION="2.0">
+<HEAD>
+<!-- WEBMAGIC VERSION NUMBER="1.0" -->
+<BODY BACKGROUND="background/yellow_stucco.gif">
+<BODY>
+<P> <IMG SRC="images/CorpID.gif" ALIGN="MIDDLE" WIDTH="151" HEIGHT="43"> <left>
+<BODY>
+<TITLE>January/February 1995 Issue of Pipeline</TITLE>
+</HEAD>
+<BODY>
+<P>
+<H2>Extending Open Inventor</H2>
+<ADDRESS>January/Febrary 1995 Issue of <A HREF="http://www-europe.sgi.com/Support/pipeline.html">Pipeline</A></ADDRESS>
+<address><A HREF="pipeline.html#DSO">Cover Artwork</a></address>
+<ADDRESS></ADDRESS>
+<PRE>
+Open Inventor is an object-oriented toolkit used for
+interactive 3D graphics. One of its powerful features is
+its ability to accommodate functionality extension through
+C++ subclassing of its existing classes. In this article,
+creating and initializing new Open Inventor classes will be
+discussed along with creating Dynamic Shared Objects (DSO)
+and creating alternate representation nodes for custom
+object portability.
+
+It is assumed that the reader is already acquainted with
+the content of the manuals Inventor Mentor and Inventor
+Toolmaker (the &quot;References&quot; section at the end of this
+article contains complete references), and is ready for
+advanced features of creating custom classes in Open
+Inventor. Both of these books are available on-line through
+Insight(1) from the Open Inventor CD-ROM. Note that the
+manual Inventor Toolmaker is only available with Open
+Inventor 2.0.1.
+
+The examples used in this article are based on the sample
+code provided in the inventor_dev.src.sample subsystem,
+which contains source code examples for the Mentor and
+Toolmaker books. Chapter 2 of the Toolmaker book contains
+examples for subclassing new nodes, including a new
+property node, a new group node, and a new shape node.
+These examples will be explored and expanded here to show
+how one can read a new custom node into a standard Open
+Inventor viewer such as SceneViewer(1) and ivview(1)
+without rebuilding the executable.
+
+</PRE>
+<H3>Initiating A New Custom Class</H3>
+<PRE>
+
+The Toolmaker book examples show how to create a new node
+and use it in a program which knows about the new node. An
+important point illustrated in the sample program
+newNodes.c++, is the fact that any new node class created
+must be initialized first before an instance of it is
+constructed. This is demonstrated in the following
+example:
+
+Widget myWindow = SoXt::init(argv[0]);
+// Initialize the new node classes 
+Glow::initClass(); 
+Pyramid::initClass(); 
+Alternate::initClass();
+
+root = SoDB::readAll(&amp;myInput);
+
+Note that Open Inventor classes are first initialized using
+the SoXt::init call. Then, the new node classes are
+initialized with the initClass calls. Finally, instances of
+the nodes can now be used. In this example, the new nodes
+are read in from an external Open Inventor file by
+SoDB::readAll.
+
+Another possible use for subclassing is to subclass another
+custom class. Keep in mind that in order for a subclass to
+be initialized, its parent class must be initialized first.
+However, this is not an issue for subclasses of Open
+Inventor nodes, since they are already initialized by the
+use of either SoDB::init, SoInteraction::init, or
+SoXt::init. But classes derived from new subclasses need to
+make sure their parents are initialized before they can be
+initialized themselves. For instance, suppose a subclass of
+the Glow node is created, called NewGlow. The initClass
+method for the NewGlow node would be:
+
+void NewGlow::initClass() 
+{ 
+// Make sure the parent class, Glow, 
+// is initialized 
+if ( Glow::getClassTypeId() == SoType::badType() ) 
+       Glow::initClass();
+// Now, the NewGlow class can be initialized 
+SO_NODE_INIT_CLASS( NewGlow, Glow, &quot;Glow&quot;); 
+}
+
+Notice the derived class NewGlow is initialized only after
+its parent class Glow is initialized.
+
+</PRE>
+<H3>Creating Dynamic Shared Object Libraries </H3>
+<PRE>
+
+Suppose a new custom node class is used in an Open Inventor
+data file that is to be read into a program such as ivview.
+Without custom Dynamic Shared Objects for this new node
+class, ivview will not recognize it and will not be able to
+render this new object.
+
+DSOs for custom nodes can be created by compiling the
+source code and linking it with all other libraries used by
+the new node. For the custom node Glow in the example
+above, the compile line for the DSO would be:
+
+% CC -shared -o Glow.so Glow.c++ or 
+
+% CC -shared -o Glow.so Glow.o
+
+Alternatively, the link editor ld(1) can be used as well,
+unless the code uses C++ templates (refer to the c++_dev
+Release Notes for more information):
+
+% CC -c Glow.c++ 
+
+% ld -shared -o Glow.so Glow.o
+
+To create a DSO for the derived class NewGlow, its parent
+class Glow must be linked with it:
+
+% CC -shared -o NewGlow.so NewGlow.c++ Glow.so or 
+
+% CC -shared -o NewGlow.so NewGlow.c++ Glow.c++ or 
+
+% CC -shared -o NewGlow.so NewGlow.c++ Glow.o
+
+Note that in the first example, special consideration must
+be taken for the operating system to find Glow.so. Refer to
+the next section for more information.
+
+If the new node also references any other library software,
+such as the audio or video libraries, those libraries must
+also be linked into the DSO.
+
+</PRE>
+<H3>Where Open Inventor Looks When Loading DSOs</H3>
+<PRE>
+
+At run-time, when Open Inventor is reading in a data file
+containing custom nodes, it will automatically look for the
+custom DSOs in a set of standard directories in a specific
+order. In version 2.0, Open Inventor would search in the
+directory pointed to by the environment variable
+LD_LIBRARY_PATH and then the standard library directories
+/usr/lib and /lib respectively.
+
+However, in Open Inventor 2.0.1 (available with IRIX 5.3),
+these directories are searched in the following order:
+
+LD_LIBRARY_PATH 
+/usr/lib 
+/lib 
+.
+/usr/local/lib/Inventor 
+/usr/lib/Inventor
+
+For security reasons, if the program is setuid or setgid
+(see chmod(1)), or if the program is being run as root, the
+order is:
+
+LD_LIBRARY_PATH 
+/usr/lib 
+/lib
+/usr/lib/Inventor
+
+It is recommended that user-created DSOs be put in the
+directory /usr/local/lib/Inventor as a convention. The
+directory /usr/lib/Inventor should be reserved for SGI
+supplied Open Inventor DSOs only. If the programmer wishes
+to place a DSO in an arbitrary location, the
+LD_LIBRARY_PATH environment variable allows the DSO to
+reside in any non-standard directory. The operating system
+will follow the LD_LIBRARY_PATH first, looking into each of
+the user-specified directories for the custom DSO. If the
+DSO has not yet been found, Open Inventor will then look
+for it in its set of standard directories.
+
+LD_LIBRARY_PATH can be set using either of the following
+csh(1) commands:
+
+% setenv LD_LIBRARY_PATH /myDir, or 
+
+% setenv LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:/myDir
+
+where myDir is the directory path to where the new DSOs 
+are located.
+
+</PRE>
+<H3>CAUTION</H3>
+<PRE>
+
+While new nodes will be located correctly using Open
+Inventor's DSO searching capability, further subclasses of
+the new nodes will not be loaded. This is due to a problem
+with building and locating DSO libraries in general.  The
+problem can be illustrated using the Glow and NewGlow
+nodes. Suppose the Glow and NewGlow DSO libraries have been
+compiled and placed in /usr/local/lib/Inventor. If a
+NewGlow node is encountered in a file, Open Inventor will
+find NewGlow.so in /usr/local/lib/Inventor. But when the
+operating system tries to load NewGlow.so, it will notice
+that there is a reference to its parent class Glow.so,
+which it must also load. Since the operating system does
+not know to look in /usr/local/lib/Inventor (it is an Open
+Inventor specific path), the load will fail.
+
+There are a few alternatives which might circumvent this
+problem. They each have their advantages and disadvan-
+tages. First, if it is certain that Glow.so will always
+reside in /usr/local/lib/Inventor, then this path can be
+built into Glow.so before linking with NewGlow.so:
+
+% ld -shared -o /usr/local/lib/Inventor/Glow.so\
+        Glow.o
+
+% CC -shared -o NewGlow.so NewGlow.c++ \
+       /usr/local/lib/Inventor/Glow.so
+
+In this case, the operating system will always open
+/usr/local/lib/Inventor/Glow.so since its path is
+&quot;hard-coded&quot; at link time.
+
+It is also possible to link the code for the parent class
+Glow.so directly into the derived class NewGlow.so by
+linking Glow.o or Glow.c++ (the object or source) instead
+of Glow.so (the DSO) into NewGlow.so:
+
+% CC -shared -o NewGlow.so NewGlow.c++ Glow.o or 
+% CC -shared -o NewGlow.so NewGlow.c++ Glow.c++
+
+Also, a DSO library can be created which will contain both
+nodes. This is done by creating one large DSO and linking
+Glow.so and NewGlow.so to it. Put the new DSO library and
+both links in the /usr/local/lib/Inventor directory. This
+works because since both NewGlow.o and Glow.o are linked
+into the large DSO during link time, the operating system
+is able to resolve symbols for both objects when
+BothNodes.so is loaded the first time. The following
+example illustrates how to create the DSO and links:
+
+% CC -shared -o BothNodes.so NewGlow.c++ Glow.c++ 
+
+% ln -s BothNodes.so Glow.so 
+
+% ln -s BothNodes.so NewGlow.so
+
+Finally, one can forgo the use of Open Inventor's searching
+capabilities, and use the LD_LIBRARY_PATH exclusively to
+find the DSOs. This just means that all of the DSOs should
+reside in the directories specified by LD_LIBRARY_PATH or
+in rld's default search paths.
+
+Keep in mind that DSO libraries for new nodes need not be
+created if there is no intention to share these new custom
+nodes among other Open Inventor applications.  Remember,
+the advantage of a DSO is its ability to allow any Open
+Inventor application to share custom nodes without
+recompiling. Hence, if no DSOs are to be created, simply
+use the initClass method for the new node classes in the
+program, and link in the compiled code during link time:
+
+% CC -o MyApp MyApp.c++ NewGlow.o Glow.o
+
+</PRE>
+<H3>Naming DSOs</H3>
+<PRE>
+
+The name of the custom DSO must match the name of the new
+class. For instance, the new node, Glow, must be called
+Glow.so. This is due to the fact that during file reading,
+when the new node is encountered, the only available key
+word Open Inventor can use to find the DSO is the name of
+the node in the file.
+
+If a DSO cannot be found for a new node that has been
+written, Open Inventor will still read in the data for the
+node, and it will be correctly written back out. But the
+node itself will not be available to the program for
+modification, and cannot be rendered or picked. If the node
+is to be rendered on the screen, it is necessary to specify
+an alternate representation for the node.
+
+</PRE>
+<H3>Alternate Representations</H3>
+<PRE>
+
+In Chapter 2 of the book Toolmaker, alternate
+representations are briefly discussed. Here, the
+implementation of the example shown in the book will be
+explored in greater depth. Briefly, an alternate
+representation is a node or scene graph containing only
+standard Open Inventor nodes which can be used in place of
+the new custom node in the event that the DSO for the new
+node is not available. When an application loads in an Open
+Inventor data file containing the new custom node, rather
+than nothing being rendered, the alternate representation
+is rendered on the screen instead. This means the object is
+pickable as well. The use of alternate representation
+results in reliable portability of custom objects across
+all Open Inventor applications.
+
+In this example, an SoMaterial node will be specified as
+the alternate representation for the Glow node.
+
+The alternate representation must be specified as a field
+of the node in the include file as an SoSFNode with the
+field name alternateRep:
+
+class Glow : public SoNode {
+
+       SO_NODE_HEADER(Glow);
+
+public: 
+
+       // Fields: 
+       SoSFColor color;        // Color of glow 
+       SoSFFloat brightness; // Amount of glow (0-1)
+
+       // This is the alternate representation. 
+       SoSFNode alternateRep;
+
+       // override the write() method to add an 
+       // alternateRep 
+       virtual void write(SoWriteAction *action);
+       ... 
+};
+
+In the source file, the alternate representation must be
+initialized in the constructor:
+
+Glow::Glow() 
+{ 
+       // Do standard constructor stuff 
+       SO_NODE_CONSTRUCTOR(Glow);
+       // Add &quot;color&quot; field to the field data. 
+       // The default value for 
+       // this field is R=G=B=1, which is white 
+       SO_NODE_ADD_FIELD(color, (1.0, 1.0, 1.0));
+
+
+       // Add &quot;brightness&quot; field to the field data. 
+       // The default // value for this field is 0. 
+       SO_NODE_ADD_FIELD(brightness, (0.0));
+
+       // Initialize the alternateRep field here. 
+       SO_NODE_ADD_FIELD(alternateRep, (NULL)); 
+       alternateRep = new SoMaterial; 
+}
+
+Finally, the write method for the Glow node must fill in
+the alternate representation before it is written. Writing
+occurs in two passes. The first pass finds all instances in
+the scene graph and the second pass actually writes out the
+graph. As an optimization, one should modify the alternate
+representation on the first pass only.
+
+void 
+Glow::write(SoWriteAction *action) 
+{ 
+       // this is first pass where all instances 
+       // are found and reference counted 
+       if (out-&gt;getStage() == SoOutput::COUNT_REFS) {
+
+               // Fill in the alternate representation 
+               SoMaterial *mtl = (SoMaterial *)\
+                       (alternateRep.getValue()); 
+               mtl-&gt;emissiveColor = color.getValue() \
+                       * brightness.getValue(); }
+
+       // Continue writing the node. The
+       // alternateRep field will be written here. 
+       SoNode::write(action); 
+}
+
+</PRE>
+<H3>Alternate Representation of a New Group Node</H3>
+<PRE>
+
+Specifying an alternate representation of a group node is
+very similar to that of a leaf node. The only difference is
+that the children of the new node must be added as children
+of the alternate representation. A group node which will
+act as the root of the alternate representation must be
+created in the constructor. This group node will remain as
+a placeholder until the node is to be written. At that
+time, the group node should populate the alternate
+representation with the children of the real node. The
+alternate representation node should not be concerned with
+keeping itself up to date with all of the modifications
+happening to the real node. Only during writing do the
+contents of the alternate representation matter.
+
+The programmer should ensure that the children of the new
+group node are instanced in the alternate representation,
+and not copied. This will cause the children to be written
+only once in their entirety. Do this by adding the children
+to the alternate representation once during the first pass
+of writing.
+
+The source code for a new Separator would be:
+
+class NewSeparator : public SoSeparator {
+       SO_NODE_HEADER(NewSeparator);
+       public: 
+
+       // Fields 
+       SoSFNode alternateRep;
+
+       // override the write() method to 
+       // add an alternateRep 
+       virtual void write(SoWriteAction *action);
+       ... 
+};
+
+NewSeparator::NewSeparator() 
+{ 
+       SO_NODE_CONSTRUCTOR(NewSeparator); 
+       SO_NODE_ADD_FIELD(alternateRep, (NULL));
+
+       alternateRep = new SoSeparator;
+       ... 
+}
+
+void 
+NewSeparator::write(SoWriteAction *action) 
+{ 
+       SoOutput *out = action-&gt;getOutput();
+
+       // this is first pass where all instances 
+       // are found and reference counted 
+       if (out-&gt;getStage() == SoOutput::COUNT_REFS) {
+
+               // add the children to the alternateRep so 
+               // they can be written 
+               // there and USE'd in the real node. 
+               ((SoSeparator *) alternateRep.getValue())\
+                       -&gt;removeAllChildren();
+
+               for (int i = 0; i &lt; getNumChildren(); ++i) 
+                       ((SoSeparator *)\
+                               alternateRep.getValue()) -&gt;\
+                               addChild(getChild(i)); }
+
+       SoSeparator::write(action); 
+}
+
+In writing the NewSeparator node this way, the file format
+for a sample node that has a cone and cube as children
+would be:
+
+NewSeparator { 
+       fields [ SFNode alternateRep ] 
+       alternateRep Separator { 
+               DEF +0 Cone {} 
+               DEF +1 Cube {} 
+       } 
+       USE +0 
+       USE +1 
+}
+
+One can see that if there was a complicated scene graph
+contained within the NewSeparator, the duplication of the
+nodes might become unwieldy.
+
+</PRE>
+<H3>A Note about Engines</H3>
+<PRE>
+
+This discussion has focused on subclassing Open Inventor
+nodes. All concepts discussed apply equally to subclassing
+engines with the exception of the alternate representation.
+Engines do not support the notion of alternate
+representation.
+
+</PRE>
+<H3>For More Examples</H3>
+<PRE>
+
+Several of the games (e.g., slotcar) on the Open Inventor
+Games CD-ROM create many new subclasses. The source code
+for these games is included on the CD-ROM and can be used
+as further examples. The Open Inventor Games CD-ROM can be
+obtained by calling 1-800-800-7441 or 1-415-390-2710 (ask
+for department D170), or through the Inventor Web page:
+
+</PRE>
+<ADDRESS>http://www.sgi.com/tech/Inventor.html</ADDRESS>
+<PRE>
+
+</PRE>
+<H3>References</H3>
+<PRE>
+
+For more information on Open Inventor and creating C++
+shared objects, please refer to the following
+documentation.
+
+Inventor Mentor: Programming Object-Oriented 3D Graphics
+With Open Inventor, Release 2, Addison-Wesley Publishing
+Company, ISBN 0-201-62495-8. Note that this book is also
+available on-line with InSight.
+
+Inventor Toolmaker: Programming Object-Oriented 3D Graphics
+with Open Inventor, Release 2, Addison-Wesley Publishing
+Company, ISBN 0-201-62493-1. Note that this book is also
+available on-line with InSight when Open Inventor is
+installed.
+
+Open Inventor and c++_dev Release Notes, available on-line
+with grelnotes(1) or relnotes(1).
+
+</PRE>
+<ADDRESS></ADDRESS>
+<PRE>
+<HR>
+
+<br>
+
+<center>
+<P><A HREF="effekter.html"><B><IMG SRC="images/topArrow.jpeg" border=0></A>
+<A HREF="techno.html"><B><IMG SRC="images/backArrow.jpeg" border=0></A>
+<BR>
+<P>
+</BODY>
+</HTML>

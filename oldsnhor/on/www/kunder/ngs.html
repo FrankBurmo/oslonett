@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>
+Eurocall Gule Sider
+</title>
+</head>
+
+
+<body bgcolor="#ffd01f">
+
+<h1>Eurocall Gule Sider</h1>
+
+<blockquote>
+<hr size=1 noshade>
+Dette er <em>andre</em> forslag til Web interfacer til Eurocalls
+Gule Sider. Forslaget fokuserer på funksjonalitet, ikke layout
+og design.
+<hr size=1 noshade>
+</blockquote>
+
+<h2>Enkelt søk</h2>
+Her kan du søke på firmanavn eller firmakategorier. Fyll ut det du ønsker i skjemaet, og trykk på "Start Søk". Hvis du vil se alle firmaene som er registrert innenfor en kategori, kan du klikke på "rullegardinen" til høyre for å velge en kategori.
+<p>
+Husk at du kan angi FLERE søketekster i skjemaet, som vist i disse <a href="gs_ex1.html"><strong>EKSEMPLENE</strong></a>.
+<p>
+<form method="POST"  action="/cgi-bin/test">
+<pre>
+Firmanavn:  <input name="firma"   size="40">   <font size=+2><strong> VIRKSOMHET: </strong></font>
+Adresse:    <input name="adresse" size="40"> <select name="kategori">  <option> Alle <option> Detalj <option> Engros <option> Agentur <option> Produksjon <option> Håndverk <option> Import <option> Eksport <option> Tjenesteydelse <option> Konsultasjon <option> Formidling <option> Shipping <option> Annet </select>
+Postnummer: <input name="postnummer" size="4">
+Poststed:   <input name="poststed" size="40">  <input type="submit" value="Start Søk"> <input type="reset" value="Slett skjema">
+</pre>
+</form>
+<h2>Avansert søk</h2>
+Her kan du kombinere forskjellige søkekriterier for å finne frem til ett eller flere firmaer. For eksempel kan man oppgi start- og slutt-postnummer, poststed eller flere virksomheter.
+
+<form method="POST"  action="/cgi-bin/test">
+<h3>Angi søkeord for bransjeområder, flere etter behov</h3>
+<pre>
+Søkeord:        <input name="søkeord" size=50>
+</pre>
+<h3>Angi geografisk avgrensning, f.eks. poststed eller ett/to postnummer</h3>
+<pre>
+Poststed:       <input name="poststed" size=50>
+<strong>FRA</strong> Postnummer: <input name="fra_postnummer" size=4> <strong>TIL</strong> Postnummer: <input name="til_postnummer" size=4>
+</pre>
+<h3>Velg firmakategorier</h3>
+
+
+</pre>
+</form>
+
+<hr size=2 noshade>
+</body>
+<address>
+<strong>(C) 1995 Schibsted Nett AS</strong>
+</address>
+</html>

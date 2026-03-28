@@ -1,0 +1,99 @@
+<html>
+<head>
+ <title>Under falskt flagg</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+
+
+
+<a href=cw950511.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/me/ts/cw/gifs/up.gif></a> <a href=cw950513.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a> <a href=/me/ts/cw/><img align=middle alt="[CW hjemmeside]" src=/me/ts/cw/gifs/cw.gif></a>  
+<hr>
+
+
+<h1>Under falskt flagg</h1>
+<h2>Hvordan
+trenge inn på <a href=/EXPO94/In/>Internet</a>?</h2>
+<blockquote><h4>
+<hr>
+Avisoppslag i Norge og USA den siste tiden har lansert IP-luring
+(IP-"spoofing") som en ny innbruddsteknikk det er umulig å forsikre seg mot.<hr>
+</h4></blockquote>
+<i>Anders Løvøy </i><p>To spoof betyr å lure, og nøkkelen ligger i at man lurer
+TCP/IP (Transport Coontrol Protocol/ <a href=/EXPO94/In/>Internet</a> Protocol), som benyttes på
+<a href=/EXPO94/In/>Internet</a>, til å tro at man er en annen. Fortrinnsvis en betrodd maskin -- en
+som har tilgang til å utføre kommandoer.<p>
+	En kan spørre seg om hvor mange sikkerhetssvakheter som kan avdekkes mot
+<a href=/EXPO94/In/>Internet</a> før markedet vil stemple nettet som useriøst og ubrukelig. Eller om
+det er slik at <a href=/EXPO94/In/>Internet</a> overlever fordi inbrudd ikke kan skje hos de som tar
+sikkerhet alvorlig. <p>
+	IP-luring som teknikk bør i alle fall ikke slå ned som noen bombe i
+sikkerhetskretser, da selve teknikken har vært kjent lenge.<p>
+	Robert T. Morris, fra AT&T Bell Laboratories, skrev en artikkel i februar 1985
+som het "A weakness in the 4.2BSD Unix TCP/IP software" som i detalj beskriver
+IP-luring, og hva innbrytere skal gjøre for å komme inn.
+<h3>
+IP-adressen</h3>
+Data sendes i IP-pakker mellom maskiner i et TCP/IP nettverk, og det første en
+inntrenger behøver er IP-adressen til en betrodd maskin. Inntrengeren må kunne
+sette inn den stjålne IP-adressen i "fra"-feltet på pakkene han sender, slik at
+den som mottar blir lurt til å tro at pakkene kommer fra den betrodde
+maskinen.<p>
+	Når svar kommer tilbake vil de gå til den betrodde maskinen, og siden
+inntrengeren ikke får se de, må han gå ut ifra hva som står der.<p>
+	For å klare dette, må han ha tilgang til en maskin på <a href=/EXPO94/In/>Internet</a> som han har
+full kontroll over, og kunne manipulere TCP/IP på maskinen.<p>
+	Når forbindelsen settes opp utveksles sekvensnummere, og her kommer en annen
+viktig funksjon til den "spesiallagde" TCP/IPen inn i bildet. Maskinen som skal
+lures vil svare med et sekvensnummer som skal benyttes senere. Dette nummeret
+må inntrengeren gjette seg til, fordi svaret går til den betrodde maskinen.
+Nummeret genereres i mange tilfeller med faste inkrementer på faste
+tidsintervaller, og en inntrenger med god programvare for gjetning, har stor
+mulighet for å treffe.
+<h3>
+Den forrådte</h3>
+Den betrodde maskinen, som er i ferd med å bli forrådt, introduserer enda et
+problem. Den vil motta svaret med et sekvensnummer som skal brukes. Dersom den
+mottar et slikt svar uten å ha sendt en forespørsel om det, vil den sende en
+pakke som stanser sambandet.<p>
+	Hvis svaret kommer til en full kø, vil derimot meldingen bli kastet. Løsningen
+ligger i kortene; inntrengeren sørger for at køen han sier han sender fra er
+full. Dette gjør han ved å bombardere køen på den betrodde maskinen med andre
+ting.<p>
+	Når inntrengeren har etablert en forbindelse, er det vanligste å utføre
+kommandoer. Gjerne kommandoer som legger inntrengeren opp på systemet med fulle
+rettigheter. Og når han har skaffet seg alle rettigheter, kan inntrengeren
+starte å skape problemer for alvor.
+<h3>
+Autentisering</h3>
+IP-luring er bare en måte inntrengere bruker for å trenge seg inn på fremmede
+systemer i en TCP/IP-verden. Det ikke triviellt å bryte seg inn på denne måten,
+noe som viser at de som gjør det virkelig vet hva de holder på med. <p>
+	Heldigvis er teknikken kjent, og det finnes medisin. Selve innbruddet skjer
+fordi en inntrenger blir autentisert som en betrodd maskin, på bakgrunn av
+IP-adressen. <p>
+	Et eksempel på en løsning som forhindrer denne typen innbrudd er en brannvegg
+som setter opp en egen forbindelse tilbake for å få utvekslet et passord, før
+en forbindelse kan settes opp. Det finnes også andre løsninger der IP-adressen
+ikke brukes til autentisering.<p>
+	Derfor blir ikke IP-luring dødsstøtet for <a href=/EXPO94/In/>Internet</a>. Med så mange tunge aktører
+inne, og med så mange brukere, spørs det om noe blir dødsstøtet for <a href=/EXPO94/In/>Internet</a>.
+Etter hvert som eventuelle nye farer dukker opp, vil nok løsningene på
+sikkerhetsfronten følge etter. <p>
+	Og så lenge det går ti år mellom en teknikk blir kjent og det dukker opp
+inntrengere som bruker den, har sikkerhetsfronten god tid.
+<p><i>GAMMEL: Spoofing er kjent tilbake fra 1985, men først nå er metoden blitt
+<p>
+<a href=cw950511.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/me/ts/cw/gifs/up.gif></a> <a href=cw950513.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a> 
+
+
+<pre><hr><a href=/me/ts/cw/maps/art.map><img alt="[Image map not available]" src=/me/ts/cw/gifs/artmap.gif ismap></A><hr></pre>
+<h5>
+<address>
+Artikkel automatisk generert, 02/02-95, kl. 15.39 <a href=/me/ts/cw/kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

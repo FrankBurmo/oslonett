@@ -1,0 +1,11 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="56"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Det medisinske fakultet, Universitetet i Trondheim."` -->
+<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value="Fakulteter ved universitetene"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Det medisinske fakultetet er organisert direkte under Kollegiet. DMF består av 5 institutter, med tilknytning til 22 sykehusavdelinger ved Regionsykehuset i Trondheim og Sør Trøndelag psykiatriske sykehus. Det medisinske fakultet gir en fullstendig medisinerutdanning, og tar hvert år opp ca. 60 studenter. Utdanningen er organisert uten noen deling mellom preklinisk og klinisk studium. Fakultetet utdanner ca. 10 doktorgradskandidater hvert år. Fakultetet gjennomfører også etter- og videreutdanning av spesialister i medisin, i samarbied med Den norske lægeforening. DMF har et betydelig forskningssamarbeid med SINTEF-UNIMED. Nøkkeltall pr. 31.12.94: 106,5 stillinger 321 studenter, 43 uteksaminerte cand. med. 10 avlagte doktorgrader` -->
+<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``DMF stiller med to boder på fellesarrangement på Nordre. Se under arrangement i Trondheim for mer info.` -->
+<!-- replace `<option(.*Angitt nedenfor)` with `<option selected`` -->

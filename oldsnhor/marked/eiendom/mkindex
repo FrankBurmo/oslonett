@@ -1,0 +1,107 @@
+#!/local/bin/perl
+
+$top   = "/local/www/marked";
+$lib   = "$top/lib";
+
+require "$lib/parse.pl";
+
+opendir(M, "$top") or die "Can't open $top: $!";
+while (1) {
+    last unless $_ = readdir(M);
+    next if /^\./;
+    next if $_ eq "bin";
+    next if $_ eq "lib";
+    next if $_ eq "man";
+    next if $_ eq "tmp";
+    next if /\.html?$/;
+    mkindex("$top/$_", $_)
+	if -d "$top/$_";
+}
+closedir(M);
+
+
+sub mkindex
+{
+    my($dir, $category) = @_;
+    print "Indexing \u$category in $dir...";
+
+    eval {require "$dir/mkhtml.pl"};
+    $mkhtml = "mkhtml::$category";
+    unless (defined &$mkhtml) {
+	print "$@" if defined $@;
+	$mkhtml = "mkhtml::common";
+    }
+    print "(&$mkhtml)\n";
+
+    my @dbmal;
+    if (open(DBMAL, "$dir/DB.mal")) {
+	my $mal = <DBMAL>;
+	chomp($mal);
+	@dbmal = split(/:/, $mal);
+	close(DBMAL);
+	open(DB, ">$dir/DB") or die "Can't open DB for writing: $!";
+    }
+
+
+    opendir(I, $dir) or die "Can't open $dir: $!";
+    my @files = readdir(I);
+    closedir(I);
+
+    open(INDEX, ">$dir/list.html") or die "Can't open list.html: $!";
+    print INDEX "<h1>Eiendomsmarkedet</h1>\n\n<ul>\n";
+    open(TABLE, ">$dir/tabell.html") or die "Can't open tabell.html: $!";
+    print TABLE "<h1>Eiendomsmarkedet</h1>\n\n<table border>\n";
+    print TABLE "<tr><th>Tittel</th><th>Hustype</th><th>Eierform</th><th>m²</th><th>Rom</th><th>Pris</th></tr>\n";
+    my $f;
+    foreach $f (@files) {
+	next unless $f =~ /^\d+$/;
+	print "\t$f\n";
+	my($e, $html, $url);
+	if (-d "$dir/$f") {
+	    $e = parse("$dir/$f/DATA");
+	    next unless defined $e;
+	    $html = &$mkhtml("$dir/$f/index.html", $e);
+	    $url = "$f/";
+	} else {
+	    $e = parse("$dir/$f");
+	    next unless defined $e;
+	    $html = &$mkhtml("$dir/$f.html", $e);
+	    $url = "$f.html";
+	}
+	my $title = $e->{title} || $e->{type} || "Eiendom";
+	print INDEX qq{<li> <a href="$url">$title</a>\n}    if $html;
+	print INDEX qq{<li> $title\n}                   unless $html;
+	print TABLE qq{<tr><td><a href="$url">$title</a></td><td>$e->{type}</td><td>$e->{eierform}</td><td>$e->{size}</td><td>$e->{rooms}</td><td>$e->{price}</td></tr>\n};
+	if (@dbmal) {
+	    my %eh = %$e;
+	    print DB join(':', $url, @eh{@dbmal}), "\n";
+	}
+    }
+    print INDEX "</ul>\n";
+    close(INDEX);
+    print TABLE "</table>\n";
+    close(TABLE);
+    close(DB);
+}
+
+# Common routine that makes ugly but valid html:
+package mkhtml;
+sub common
+{
+    my($file, $e) = @_;
+    #print "Makehtml in $file: $e\n";
+    die("$file is not a HTML file name") unless $file =~ /\.html?$/;
+    open(HTML, ">$file") or die "Can't open $file: $!";
+    my $title = $e->{title} || "No title";
+    print HTML "<title>$title</title>\n";
+    print HTML "<body><h1>$title</h1>\n";
+    print HTML "<pre>\n";
+    foreach (sort keys %{$e}) {
+	next if $_ eq "title";
+	print HTML "$_: $e->{$_}\n";
+    }
+    print HTML "</pre>\n";
+    print HTML "</body>\n";
+    close(HTML);
+    $file;
+}

@@ -1,0 +1,61 @@
+<html>
+<head>
+  <title>EuroCall Gule Sider - rettinger til databasen for firma @FIRMA@</title>
+</head>
+<body bgcolor="#ffffff">
+
+<h1><img alt="EuroCall Gule Sider" src="gifs/guleeurocall_450.gif"><p>
+ rettinger til databasen for firma : <em>@FIRMA@</em></h1>
+
+<blockquote>
+<hr size=1 noshade>
+</em>
+NB! Alle endringer som sendes inn vil bli lest og sjekket opp av EuroCall,
+og etter hvert vil ny informasjon bli lagt inn i EuroCalls database. Det
+kan dog ta noe tid før disse endringene blir synlige i Internett versjonen
+av databasen.
+</em>
+<hr size=1 noshade>
+</blockquote>
+
+<FORM METHOD="POST" ACTION="http://www.oslonett.no/cgi-bin/mailit/">
+
+<input type="hidden" name="bodyattr" value="bgcolor=#ffffff">
+<input type="hidden" name="imgattr" value="src=/gs/gifs/ec.gif">
+
+<input type="hidden" name="mailto" value="eurocall@oslonett.no,steinar@oslonett.no">
+<input type="hidden" name="reply-to" value="eurocall@oslonett.no">
+<input type="hidden" name="subject" value="Retting til Gule Sider: @FIRMA@">
+<input type="hidden" name="firmanr" value="@FIRMANR@">
+<input type="hidden" name="rcpt-url" value="http://www.oslonett.no/gs/kvitt.html">
+
+<h2>Endringer:</h2>
+Bruk nedenstående felt og skriv inn alle endringer, enten det dreier seg om
+ny adresse, nytt firmanavn, nye telefonnummer samt annen informasjon om firmaet.
+<br>
+<textarea name="Diverse" rows=15 cols=65>
+</textarea>
+
+<h2>Adresseinformasjon:</h2>
+Skriv inn hvilket firma det gjelder, samt ditt navn og et telefonnummer
+du kan kontaktes på. Du vil bli oppringt av EuroCall for autorisering
+av endringene:
+<pre>
+Firmaet det gjelder   : <input name="Firma" value="@FIRMA@" size=40>
+Ditt navn             : <input name="Navn" size=40>
+Din evt. email        : <input name="Email" size=40>
+Telefon 1             : <input name="Tlf1" size=12> Telefon 2 : <input name="Tlf2" size=12>
+</pre>
+<input type="submit" value="Send inn endringen">
+</form>
+
+<hr align=left width=20% size=1 noshade>
+
+<address>
+EuroCalls Gule Sider på Internett er et tilbud til deg fra
+<br>
+<pre><a href="/"><img src="/gifs/on/oslonett-i.gif" alt="Schibsted Nett" border=0></a>           <a href="ec.html"><img alt="EuroCall" border="0" src="gifs/guleeurocall_150.gif"></a></pre>
+© 1995, Schibsted Nett AS og EuroCall Norge AS.
+</address>
+</body>
+</html>

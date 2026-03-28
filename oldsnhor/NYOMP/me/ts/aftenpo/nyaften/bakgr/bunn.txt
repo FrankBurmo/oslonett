@@ -1,0 +1,12 @@
+<!------------------ KNAPPERAD + tekstversjon--------------->
+<p align="center">
+<a href="../../banner/bakgr_ub.map">
+<img src="../../banner/bakgr_ub.gif" ISMAP 
+	border=0 
+	width=454 height=17></a><br>
+<br>
+<font size="-1">
+<a href="../../innhold/index.htm">[Innhold]</a> <a href="../../info/index.htm">[Info]</a> <a href="../../index.htm">[Aftenposten hjemmeside]</a> <a href="../index.htm">[Bakgrunn/Kommentar hovedside]</a>
+</p>
+</body>
+</html>

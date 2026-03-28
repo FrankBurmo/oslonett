@@ -1,0 +1,9 @@
+overskrift: Re: leserbrev-eksempel: smtp
+leserbrev: "kgn" skriver (29.9.95 18:25:30): <br> <br> &gt; An important feature of SMTP is its capability to relay mail across <br> &gt; transport service environments. A transport service provides an <br> &gt; interprocess communication environment (IPCE). An IPCE may cover one <br> &gt; network, several networks, or a subset of a network. It is important <br> &gt; to realize that transport systems (or IPCEs) are not one-to-one with <br> &gt; networks. A process can communicate directly with another process <br> &gt; through any mutually known IPCE. Mail is an application or use of <br> &gt; interprocess communication. Mail can be communicated between <br> &gt; processes in different IPCEs by relaying through a process connected <br> &gt; to two (or more) IPCEs. More specifically, mail can be relayed <br> &gt; between hosts on different transport systems by a host on both <br> &gt; transport systems. <br> <br> Dette ble vel litt for teknisk for gjennomsnittsleseren av "GOAL"?! :-)
+navn: xyzzy newbee
+publiseres: ja,mail
+navn: xyzzy newbee
+regdato: 29.9.95 18:30:02
+revdato: 29.9.95 18:30:36
+file: /home/frogner/www/me/ts/goal/leserbrev/intern/brev00039.txt
+ref: /home/frogner/www/me/ts/goal/leserbrev/intern/brev00038.txt

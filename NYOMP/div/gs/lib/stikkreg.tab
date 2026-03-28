@@ -1,0 +1,5 @@
+0 firma		char(6) #references firma(nr)
+1 ord		int     #references stikkord(nr)
+
+INDEX firma
+INDEX ord

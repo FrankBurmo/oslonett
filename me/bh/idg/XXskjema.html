@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>IDG Bookshop - bestillingsskjema for boken/produktet xxxx</title>
+  <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+<img alt="" src=/me/bh/idg/IDG.gif>
+<h1>IDG Bookshop - bestillingsskjema for boken/produktet xxxx</h1>
+<p>
+I dette skjemaet er tittel på det du bestiller fylt inn automatisk. Det finnes også et
+<a href=/me/bh/idg/bestskjema.html>annet skjema</a> der du kan angi flere bøker samtidig.
+<hr>
+<a href="/me/bh/idg/oversikt.html">Informasjon om bøker med pris og etc.</a>
+<hr> 
+<form method=POST action="http://www.oslonett.no/cgi-bin/IDG-query">
+<input type=hidden name=mailto value="Roger.Haug@ccmail.telemax.no,marketplace@oslonett.no">
+<input type=hidden name=subject value="Bestilling av bøker fra IDG Bookshop">
+
+<h3>Boktittel</h3>
+<input name=Boktittel value="xxxx" MAXLENGTH=60 SIZE=60> Antall : <input name=Antall value=1 SIZE=2 MALENGTH=2>
+<p>
+
+Fyll så inn aktuelle felter under og trykk til slutt på knappen for
+effektuering av bestilling.
+<h3>Kundeinformasjon</h3>
+<pre>
+Kundenavn   : <INPUT TYPE=text NAME=Kunde MAXLENGTH=65 SIZE=65>
+Adresse     : <INPUT TYPE=TEXT NAME=Adresse MAXLENGTH=65 SIZE=65>
+Postnummer  : <INPUT TYPE=TEXT NAME=Postnummer MAXLENGTH=5 SIZE=5> Poststed : <INPUT TYPE=text NAME=Poststed MAXLENGTH=30 SIZE=30>
+
+Email       : <INPUT TYPE=TEXT NAME=Email MAXLENGTH=50 SIZE=50>
+Visanummer  : <INPUT TYPE=TEXT NAME=Visanummer MAXLENGTH=50 SIZE=50> (NB! Kan være usikkert)
+</pre>
+<h3>Diverse</h3>
+Fyll inn ytterligere opplysninger her hvis du har behov for det.
+<p>
+<TEXTAREA NAME=Diverse ROWS=6 COLS=65></TEXTAREA>
+<pre>
+<hr>
+<input type=submit value="Effektuering av bestilling">                       <input type=reset value="Reset bestillingsskjemaet">
+<hr>
+</pre>
+</form>
+
+<a href="/">
+  <img alt="[Oslonett Home]" src="/graphics/home.gif"></a>
+<a href="/">
+  <img alt="[Oslonett Marketplace]" src="/graphics/market.gif"></a>
+<a href="/me/bh/idg/">
+  <img alt="[IDG Home]" src="/me/bh/idg/IDG.gif"></a>
+
+</body>  
+</html>

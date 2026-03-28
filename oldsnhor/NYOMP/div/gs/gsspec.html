@@ -1,0 +1,91 @@
+Her er en grov spesifikasjon av hva som skal være funksjonalitet i
+Web versjonen av Eurocalls gule sider. Dette er beregnet på den/de som
+skal designe backend datalagring og søkeskript.
+
+Denne spesifikasjonen forklarer derfor 1) hva slags søk som skal
+kunne gjøres og 2) hvordan resultatene fra slike søk skal vises.
+
+Det sies ikke noe her om hvordan funksjonaliteten skal tilbys gjennom
+brukergrensesnittet (HTML skjemaer). Her kan man tenke seg flere
+skjemaer med varierende grad av kompleksitet rundt hva som kan angis.
+Se http://www.oslonett.no/on/www/kunder/gs.html og
+http://www.oslonett.no/on/www/kunder/gs1.html for to eksempler.
+
+
+Det er to hovedting en bruker vil kunne ønske seg ved bruk av katalogen,
+og det er "søking" og "blaing". Med "blaing" menes at man nærmest blar
+tilfeldig i katalogen omtrent som en telefonkatalog eller den
+ekte Gule Sider katalogen. Når man blar, ønsker man bare å se hva som
+finnes, om man støter på noe morsomt osv. Man er ikke på jakt etter
+spesielle ting.
+
+Under søking derimot, vil man bruke katalogen for å finne bestemt informasjon.
+Her er det igjen to - 2 - ting som er aktuelt, nemlig
+
+ 1. Finne informasjon om ett bestemt firma som man kjenner navnet på eller
+    deler av navnet på
+
+ 2. Finne informasjon om hvilke firmaer som tilbyr en eller annen tjeneste,
+    evt. begrenset til en bestemt del av Norge
+
+1. Blaing
+
+Datagrunnlaget for GS er for ustrukturert til at man kan tenke seg at vi
+legger ut et kataloghierarki ala Kvasir. Tjenestekategoriene er nemlig
+bare angitt med fritekst søkeord.
+
+Dermed må nesten all HTML kode lages on-the-fly. Dette betyr at når man
+skal "bla" i katalogen, så man på en eller annen måte angi hvor man
+skal starte blaing.
+
+En måte, er å la systemet bla for deg. Det tilsvarer at man lager et
+slideshow som i Kvasir.
+
+En annen måte, er at man bruker søkeskriptet og angir f.eks. en
+tjenestekategori (bla i spesiell tjenestelverandører) eller bare
+en bokstav i alfabetet for å bla i firmaer alfabetisk på tvers
+av tjenestekategorier.
+
+Har man angitt en tjenestekategori det skal blas i, bør det tas høyde
+for at man viser fram firmaene i) alfabetisk eller ii) sortert etter
+geografi (poststed(postnummer) funksjonen). Passende default er
+alfabetisk.
+
+Blar man uavhengig av tjenestekategori, kan man derimot velge å sortere
+listen på i) tjenestekategori eller ii) alfabetisk her og. Passende
+default er alfabetisk.
+
+2. Firmasøk
+
+Se HTML filene gs.html og gs1.html.
+
+3. Tjenestesøk
+
+Se HTML filene gs.html og gs1.html.
+
+###
+
+For alle typer "blaing" og søk, bør man ha en felles framvisningsrutine som
+kun viser N og N firmaer på skjermen, med en "Neste N" knapp nederst.
+(se hvordan dette er gjort i InfoSeek). Det som vises fram, er litt
+avhengig av hvilket søkemodus/blamodus man er i, men firmanavn
+og tjenestekategori og postnr/poststed som et minste default f.eks.
+Firmanavn bør være en link som åpner all informasjon om firmaet.
+Det skal tas høyde for to ting i framvisningsrutinene:
+
+ - annonser:    noen av firmaene som vises kan ha betalt for å få
+                en bedre representasjon av seg selv. her kan det være
+                aktuelt med både en logo og/eller en utheving av et
+                navn med link til ekstern URL (se under)
+
+ - ekstern URL: et firma kan ha en ekstern presentasjon av seg selv
+                utenfor GS. Det bør derfor være et felt i basen for
+                lagring av en slik xtern URL. I framvisningen bør det
+                være en liten knapp/ikon el. som linker dette.
+                Men - selv om en xtern URL er lagret, er det ikke sikkert
+                at man skal bry seg om det! Grunnen er at man skal kunne
+                ta betalt for en slik ekstern link. Derfor må det lagres
+                en logisk verdi som sier om linken skal aktiveres eller
+                ikke. Grunnen til at dette skal være uavhengig av selve
+                URLen, er at en annonsør kan komme igjen senere.
+

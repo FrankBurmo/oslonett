@@ -1,0 +1,216 @@
+BANK
+BSK ,Bergens Skillingsbk. ,300250	
+BNB ,BNbank ,513940
+CKR ,Chr. Bank og Kred. ,302553
+DNB ,Den norske Bank ,300200
+FOK ,Fokus Bank ,302560
+ISB ,Ind. & Skipsbanken ,300500
+NBK ,Nordlandsbanken ,301400
+NOK ,Norgeskreditt P ,302800	
++
+DETALJHANDEL
+CTG ,C. Tybring-Gjedde ,572440	
+EKJ ,Elkjøp ,392105
+GRE ,Gresvig ,304640
++
+EIENDOM
+AVA ,Avantor ,304970
+GHO ,Grand Hotel ,425320	
+NYD ,Nydalens Compagn A ,513100
+OLT ,Olav Thon Eiendom ,563885
+SSI ,Steen & Strøm Invest ,304620
++
+ENTREP
+EEG ,Eeg-Henriksen ,392102
+SEL ,Selmer ,304930
+VEI ,Veidekke ,580680
++
+FORSIKRING
+PRF ,Protector Forsikring ,302980
+UNS ,UNI Storebrand ,305360
+UNSP ,UNI Storebrand Pref ,305368
+VIT ,Vital Forsikring ,304400
++
+INDUSTRI
+AKE ,Aker A ,351400
+AKEB ,Aker B ,351401
+STK ,Alcatel STK ,548720
+BIL ,Bilspedition B ,365991
+BLO ,Blom ,367910
+DYN ,Dyno ,392101
+EKO ,Ekornes ,303530
+GOD ,Goodtech ,491360
+HNA ,Hafslund Nycomed A ,430640
+HNB ,Hafslund Nycomed B ,430641
+KVE ,Kverneland ,467700
+KVI ,Kværner A ,468440
+KVIB ,Kværner B ,468441
+MAG ,Maritime Group ,479990
+NHY ,Norsk Hydro ,505260
+POR ,Porsgrunds Porselen ,523040
+PRO ,Pronova ,537450
+RAU ,Raufoss ,525770
+SAT ,Sagatex ,336030
+SCI ,Scana Industrier ,305330
+UTO ,Unitor ,577200
++
+INVEST
+AFK ,Arendals Fossekom. ,357280
+CBJ ,Chr. Bjelland ,305320
+DNO ,D.N.O. ,392100
+FIB ,Fiba ,302190
+IIR ,Industriinvestor ,509851
+NOV ,Norsk Vekst ,304830
+ORK ,Orkla A ,373380
+ORKB ,Orkla B ,373381
+RIE ,Rieber & Søn ,495110
+RIEB ,Rieber & Søn B ,495111
+SIN ,Sinus Industrier ,304170
+SKI ,Skiens Aktiemølle ,541800
++
+IT
+MED ,Merkantildata ,482250
+MSG ,Micro Software Group ,305040
+TAD ,Tandberg Data ,562110
++
+LUFTFART
+BRA ,Braathens SAFE ,304470
+DNL ,D.N.L. B ,392001
+HES ,Helikopter Service ,437890
++
+MEDIA
+AAV ,Adresseavisen ,350280
+GYL ,Gyldendal ,428820
+SCH ,Schibsted ,302890
++
+METALL
+BJF ,Bjølvefossen ,366660
+ELK ,Elkem ,392104
+FSL ,Fesil ,304690
+SYD ,Sydvaranger ,559720
++
+OFFSHORE
+AWS ,Awilco ,308310
+AWSB ,Awilco B ,308311
+SFJ ,Det Søndenfjeldske ,314360
+DUA ,Dual Invest ,328500
+DUAB ,Dual Invest B ,328501
+FAR ,Farstad Shipping ,321530
+PGS ,Petr. Geo-Services ,422500
+SAG ,Saga A ,532720
+SAGB ,Saga B ,532727
+SME ,Smedvig ,339020
+TOD ,Transocean ,306350
++
+SHIPPING-BULK
+BEL ,Belships Co. ,309410
+BET ,Benor Tankers ,BMG0992J101
+BEA ,Bergesen d.y. A ,310210
+BEB ,Bergesen d.y. B ,310211
+BSH ,Bona Shipholding ,BMG1224A108
+EID ,Eidsiva ,314690
+FOT ,First Olsen Tankers ,BMG58206106
+HAV ,Havtor ,320080
+MSL ,Mosvold Shipping ,BMG629021O46
+MET ,Mercur Tankers ,305430
+NOS ,Nomadic Shipping ,311720
+NAS ,Nordic American Sh. ,304240
+PBB ,Pacific Basin Bulk Sh ,BMG68437121
+IMS ,I. M. Skaugen ,318230
+SPT ,Skaugen Petrotrans ,302310
+SMT ,Smedvig Tankships ,BMG8226B109
+SOL ,Solvang ,339000
+SPA ,Stolt Partner ,LU004975421
+WBS ,Western Bulk Ship. ,304290
++
+SHIPPING-OTHER
+ACS ,Actinor Shipping ,302860
+BON ,Bonheur ,311060
+BOR ,Borgestad ,311170
+BORB ,Borgestad B ,311171
+COL ,Color Line ,301470
+GRO ,Ganger Rolf ,317220
+IVH ,Ivar Holding ,3053704
+JIN ,Jinhui Shipping ,BMG5137R108
+LSL ,Larvik Scandi Line ,304750
+LHO ,Leif Høegh ,445690
+LOI ,Loki ,308870
+NCL, NCL Holding,331870
+NTH ,Nordstrøm & Thulin B ,SE109985
+STO ,Storli A ,339990
+STOB ,Storli B ,339991
+WWI ,Wilhelmsen ,347140
+WWIB ,Wilhelmsen B ,347141
++
+TEKNOLOGI
+KOG ,Kongsberg Gruppen ,304330
+NER ,Nera ,305070
+SMD ,Simrad ,539640
+SMDB ,Simrad B ,539641
+OPT ,Simrad Optronics ,539620
+STE ,Stentofon ,552580
+TAA ,Tandberg ,562085
+TOM ,Tomra Systems ,566890
++
+SKOG
+HUN ,Hunsfos ,444920
+MOE ,Moelven Industrier ,484540
+NSG ,Norske Skog A ,413563
+NSGB ,Norske Skog B ,413561
+REN ,Rena Karton ,526960
++
+SMB1
+ADE ,Adelsten A ,303180
+ADEB ,Adelsten B ,303181
+APL, Alphatron, 305474
+ARK ,ARK ,304450
+ACL ,Atlantic Container Line ,SE000024540
+AXI ,Axis Biochemicals ,304540
+BNR ,Bergen Nord. Rutel. ,309960
+BRO ,Brøvig Offshore ,301590
+BOH ,Bøhler-Gruppen ,304490
+STF ,DS Storfjeld ,339880
+EAB ,Eiend. Aker Brygge ,350900
+FOS ,Fosen Trafikklag ,316890
+FOU ,Fountain Oil Inc. ,US35075K1016
+HSD ,Hard. Sunnhord. DS ,319420
+HIT ,Hitec ,304740
+HAG ,HÅG ,447450
+IBY ,Industribygningen ,305310
+JOT ,Jøtul ,304780
+KEN ,Kenor ,457810
+KOA ,Kongsberg Automotive ,303310
+KDP ,Kristiansand Dyrep. ,303330
++
+SMB2
+LEG ,Legra ,305230
+MIF ,Maritime Inv. Fund ,BMG58206106
+MUS ,MultiSoft ,305010
+NAM ,Namsos Trafikk. ,489510
+ORC ,Oslo Reinsurance Co. ,305190
+RIC ,Rica Hotell ,304520
+RIN ,Ring-Master ,304260
+SNT ,Santech ,305350
+SLA ,SE Labels ,559890
+STX ,Seatex ,304500
+SEN ,SensoNor ,537950
+SKF ,Skipskredittforeningen ,305110
+SPC ,SpecTec ,305440
+STA ,Stavanger Aftenblad ,549360
+SYS ,Sysdeco Group ,559870
+TES ,Tschudi & Eitzen Shipping ,347300
+TTS ,TTS Technology ,304940
+VVL ,Voss Veksel ,302500
++
+GRUNNFONDSBEVIS
+EIRG ,Eiker Sparebank ,622200
+SASG ,Sandefjordbanken ,600020
+SADG ,Sandnes Sparebank ,600100
+SANG ,Sandsvær Sparebank ,600010
+MING ,Sp.b. Midt-Norge ,639030
+MORG ,Sparebanken Møre ,639000
+SNOG ,Sparebanken NOR ,639010
+NONG ,Sp.b. Nord-Norge ,600080
+ROGG ,Sparebanken Rogaland ,600000
+SVEG ,Sparebanken Vest ,600090
++

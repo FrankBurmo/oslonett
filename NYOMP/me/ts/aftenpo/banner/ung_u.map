@@ -1,0 +1,6 @@
+default http://www.aftenposten.no/ungskole/index.htm
+rect http://www.aftenposten.no/innhold/index.htm 0,48 69,64
+rect http://www.aftenposten.no/info/index.htm 70,48 140,64
+rect http://www.aftenposten.no/index.htm 141,48 308,64
+rect http://www.aftenposten.no/ungskole/index.htm 309,48 453,64
+

@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1097"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="LOS-konferanse"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Rainbow Apartment, Wergelandsveien 5"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Hele dagen"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value="Særskilt inviterte"` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="3"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Norges forskningsråd"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Konferanse` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?10.10"?)\s*>` with `` checked>` -->

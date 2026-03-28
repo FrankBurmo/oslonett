@@ -1,0 +1,195 @@
+<html>
+<head>
+ <title>Konfigurasjonsstyring -- et "overmodent" tema? </title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body bgcolor="#ffffff">
+
+
+
+<a href=cw954111.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/me/ts/cw/gifs/up.gif></a> <a href=cw954113.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a> <a href=/me/ts/cw/CW.html><img align=middle alt="[CW hjemmeside]" src=/me/ts/cw/gifs/cw.gif></a>  
+<hr>
+
+
+
+<h1>Konfigurasjonsstyring -- et "overmodent" tema? </h1>
+
+<blockquote><h4>
+<hr>
+Utvikling og vedlikehold av applikasjoner i heterogene miljøer er komplisert og
+risikofylt. Denne kronikken ser på viktige sider i en optimal strategi for
+konfigurasjonsstyring.<hr>
+</h4></blockquote>
+Brukere av IT krever stadig mer komplekse applikasjoner. Skrevet i fundamentalt
+ulike verktøy, skal de kunne utveksle data. Nye verktøy, med angivelige mye
+bedre egenskaper, introduseres hyppig. Framskritt i plattform-teknologi og
+endrede forretningskrav gjør det påkrevd å kunne flytte applikasjoner til nye
+maskintyper og operativsystem. Samtidig ser vi at det er svært vanskelig å
+estimere riktig ressursbehov for å implementere nye moduler eller endringer.<p>
+	For bedre å kunne håndtere høykomplekse applikasjoner finnes i dag mange gode
+hjelpemidler. Analyse-/design-metoder og verktøy gjør det langt lettere å holde
+høy kvalitet på applikasjoner, hvis vi har vett nok til å benytte oss av dem.
+Bruk av strukturerte test-metodikker og automatiserte test-verktøy gjør at vi
+kan vite mer om kvaliteten på del-applikasjoner vi slipper fra oss. Men mye av
+dette vil være bortkastet uten at vi samtidig lager en plan for hvordan vi vil
+styre konfigurasjonen(samlingen) av moduler. Velger vi i tillegg å benytte oss
+av moderne verktøy for konfigurasjon av programvare (SCM-verktøy), som f.eks.
+CCC/Harvest, PVCS, ClearCase, SourceCodeManager,<b><i> </i></b>Endevor,  etc.
+vil mye av administrative oppgaver kunne forenkles og kvaliteten på de
+applikasjoner vi slipper ut til brukerne, vil øke. <p>
+	Beslutningen om å ta inn et moderne SCM-verktøy i en organisasjon er ofte
+overmoden når den kommer. F.eks. i typiske Unix-miljø har man gjerne benyttet
+verktøy for ren versjonshåndtering av filer som RCS eller SCCS. Dette har
+fungert bra for mindre applikasjoner, mens applikasjoner som har vokst over tid
+gjerne har fått driftsansvarlige til gradvis å bygge opp svært komplekse skript
+for håndtering av versjoner i tillegg til omfattende manuelle rutiner for
+håndtering av endringer og kvalitetssikring. <p>
+	Lokalt produserte verktøy har lenge vært nødvendig fordi det ikke er så lenge
+siden gode SCM-verktøy kom på markedet.  Mange av disse lokale hjelpeverktøyene
+har representert konfigurasjonsstyring på svært avansert nivå, uten at man
+alltid har vært bevisst at man egentlig satt og utviklet et verktøy som lå
+utenfor den applikasjonen man skulle lage.<p>
+	I enkelte organisasjoner kan bevisstheten om betydningen av
+konfigurasjonsstyring og SCM-verktøy være svak. Det er viktig å forstå at
+konfigurasjonsstyring i dag ikke er en aktivitet på siden av en
+utviklingsavdelings hovedoppgaver, men en kjerneaktivitet i all profesjonell
+systemutvikling.<p>
+Skal man kunne bedrive konfigurasjonsstyring på profesjonelt vis, er det viktig
+å forstå hvilke elementer som inngår, dvs. styring av komponenter,
+applikasjoner, miljødata, alle endringer, prosessene som skal gjennomløpes for
+komponentene i ulike faser, og ikke minst innvirkningen dette skal ha for
+prosjektstyringen.<p>
+	La oss gå dypere inn på hvert av elementene i konfigurasjonstyring. Med
+komponenter mener vi alle filer og logiske deler som inngår i enn applikasjon.
+Dvs. både dokumentasjon, kildekode, biblioteker og ulike binærfiler. Styring av
+komponenter er først og fremst håndtering av versjoner av filer. Ideelt bør man
+ta kopi av alle versjoner som kan ha nytteverdi, men dette vil raskt gi
+astronomiske diskbehov. 	Derfor må det finnes en form for "delta"-teknologi som
+i alle fall tar vare på forskjellene. Dessuten må man ta vare på historikk-data
+som forteller hvem som har utført endringen, hva som er gjort, når og hvorfor.
+Gårsdagens versjonshåndterings-verktøy merker gjerne filene ved at disse
+dataene legges inn i selve kildefilene. Dette fungerer fint når vi holder oss
+til kode-/tekst-filer. <p>
+	I dag trenger man å kunne versjonshåndtere også binærfiler som objekt-kode,
+ikoner, bilder etc. Informasjon som gjelder versjonshåndteringen må derfor
+plasseres andre steder. <p>
+	Å vite hvilken versjon man jobber med har liten verdi dersom man ikke er
+sikret mot at andre kan overskrive din modul. Alle SCM-verktøy har derfor mer
+eller mindre avanserte check in-/out-mekanismer. Skal man versjonshåndtere en
+applikasjon er det nødvendig at alle komponenter kan håndteres som filer. Det
+er ikke mulig med alle utviklingsverktøy og man må da ofte lage egne programmer
+for å kunne ta komponenter ut på filer og tilbake til opprinnelsesstedet ved
+behov. Dette er unødig heft og spørsmålet er om man heller ikke konsekvent bør
+holde seg unna utviklingsverktøy som ikke tillater versjonshåndtering av alle
+objekter direkte.<p>
+	Med applikasjon mener vi alt som inngår som en del av en applikasjon. Dvs.
+analyse og design-dokumentasjon, biblioteker, objektfiler, testresultat,
+ikoner, eksekverbare moduler, bilder etc. Hver unike sammensetting må kunne
+tildeles sitt unike versjonsnummer. Det må være mulig å kunne gjenskape en
+tidligere versjon av en applikasjon så lenge man bare har det nøyaktige
+versjonsnummeret. Men det hjelper fint lite om det er teoretisk mulig, hvis det
+er forbundet med mye tid og arbeid å få fram en tidligere versjon. Et
+ufravikelig krav for moderne SCM-verktøy er derfor at de må kunne gjenskape
+tidligere versjoner raskt.<p>
+	Endringsstyring har mange navn:  Problemhåndtering, feilhåndtering etc.
+Viktig her er å ha en strukturert og planlagt saksgang for å håndtere alle
+ønsker om endringer i applikasjoner. Det betyr at man må kunne håndtere også
+endringer i kravspesifikasjoner på en ryddig måte. Framgangsmåten for å avklare
+hva som ønskes, om det skal gjøres og hvordan det skal gjøres, fastlegges.
+Videre må det også være en klar måte å håndtere evalueringer av om det ønskede
+resultat er oppnådd og melding om endringen. <p>
+	Ofte er det forbundet med høy risiko å endre i en modul. Det betyr at det må
+finnes måter å foreta konsekvensanalyser på. Slurv ved oppdateringer av analyse
+og design-dokumentasjon kan få kostbare følger. Endres det i en modul må det
+ofte skje noe i flere andre. Dette betyr at endringsstyringen må håndtere
+"pakker" av endringer. Disse pakkene kan ha egne livsløps-sykluser som er ulike
+de som gjelder for enkeltmoduler.<p>
+	Generelt håndteres en endring etter tre dimensjoner: Den første beskriver type
+endring, ønske, krav, feil etc. Den andre dimensjonen beskriver produksjonen av
+arbeidsordre: Problem beskrevet, vurdering gjort, konklusjon klar, etc. Den
+tredje dimensjonen beskriver utførelsen av arbeidsordren, ikke klar, kan
+påbegynnes, klar for test, utført og klar for test, og til slutt godkjent.
+Mange miljøer har utviklet sine egne prosesser for endringshåndtering før det
+første SCM-verktøy så dagens lys. Skal de ta i bruk et SCM-verktøy må
+betingelsen være at allerede innarbeidete prosesser kan implementeres i
+verktøyet.<p>
+	En applikasjon gjennomløper ulike prosesser på vei fra en fase til en annen.
+Ofte vil også en applikasjons ulike deler måtte ha egne utviklings-prosesser.
+Eksempelvis vil programmoduler som gjelder sikkerhet ha helt andre
+evalueringskriterier enn f.eks. et som gjelder bildebehandling. Et moderne
+SCM-verktøy må sikre prosess styring som tilbyr enkel tilpasning til ulike
+bruker/utvikler grupper. Prosess-styringen må gjenspeile organisasjonens måte å
+gjøre tingene på, som de er i dag. Samtidig må verktøyet være så smidig at
+konfigurasjonsstyringen ikke blir en flaskehals ved endringer i organisasjonens
+håndtering av applikasjoner. Det er nettopp dette som ofte blir problemet ved
+egenutviklede SCM-verktøy. <p>
+	Et moderne SCM-verktøy skal altså både muliggjøre at en organisasjon kan
+benytte den prosessgangen man har innarbeidet i dag, og muliggjøre endringer
+uten omfattende tilpasninger. I dagens verden, hvor åpenhet er kravet, er det
+også nødvendig at et SCM-verktøy kan tilpasses endringer både i applikasjonens
+arkitektur samt endringer i plattform-arkitektur.<p>
+	Lite fokusert av leverandørene av SCM-verktøy, men svært viktig, er den nytte
+en prosjektleder kan ha av et SCM-verktøy som et styringsverktøy. En
+nøkkelfaktor for at en prosjektleder skal lykkes i å bringe et prosjekt i havn
+er at han/hun forstår å benytte seg av SW-metrikker. Dette er måledata som
+forteller reell tilstand til applikasjonen.  I ettertid kan man ofte se i
+problem-prosjekter at informasjon som har vært tilgjengelig i
+utviklingsmiljøet, ikke har blitt benyttet av prosjektledelsen. Årsaken til
+dette er at kunnskapen om SW-metrikker og hva de betyr, og ikke minst bør bety,
+er lite utbredt. 	Et moderne SCM-verktøy har mange ulike rapporter, og ofte vil
+man ha nytte av å legge til sine egne. Disse kan så benyttes til å identifisere
+problemområder i applikasjonen. Eksempelvis kan man identifisere del-områder
+med "påfallende" lite feil, eller med "påfallende" mye feil. Dvs. at testing
+ikke er gjennomført godt nok, eller at det er nødvendig med redesign av
+del-applikasjonen.  Antallet moduler som det arbeides med er en god indikator
+på framdrift. Var 90 prosent av alle moduler ute til retting i forrige uke er
+applikasjonen neppe 90 prosent ferdig selv om planen sier det. Man kan også se
+på hvordan programmerere jobber. Enkelte programmerere kan arbeide med svært
+mange moduler samtidig, mens andre sitter lang tid med en eneste. Dette betyr
+gjerne behov for redesign eller fordeling av oppgavene på flere. Store
+variasjoner i størrelsen på moduler indikerer problemer på samme måte som
+moduler med ekstremt mange endringsønsker/feil.  Det er SW-metrikkene som er
+fakta, ikke utsagn som gir uttrykk for håp.<p>
+	Hvis man finner at man må skaffe seg et helt nytt SCM-verktøy bør man se litt
+framover. Verktøyet må basere seg på et nøytral GUI. Det må kunne integreres
+med alle plattformer du har i dag, og alle ledende plattformer i markedet.
+Verktøyet må kunne integreres med det verktøyet du benytter for
+systemadministrasjon i dag, eller med de som er aktuelle å anskaffe. Verktøyet
+må ha lav startterskel og ha lagt vekt på brukervennlighet. Det bør benytte
+almen terminologi og ha minst mulig terminologi som er spesifikk for
+verktøyleverandøren. Verktøyet kunne benyttes selv om bare deler av en
+applikasjon er tatt inn under konfigurasjonsstyring.<p>
+	Ved utviklingen av store applikasjoner er det ofte ikke til å unngå at man får
+behov for å gjøre endringer i "tidligere" versjoner. Dette samtidig med at man
+arbeider med nyere versjoner. Fenomenet kalles gjerne parallell utvikling. Skal
+dette bli vellykket må SCM-verktøyet ha innbygget flettemekanismer for
+samkjøring i en framtidig versjon. <p>
+	Introduksjonen av et SCM-verktøy i et høykomplekst miljø kan være krevende.
+Essensielt her er at man har valgt et verktøy som dekker de elementene i
+konfugurasjonstyring man trenger. Mens noen SCM-verktøy ikke er annet en vanlig
+filversjonering, har andre avanserte mekanismer for håndtering prosesstyring.
+God leverandørstøtte fra verktøyleverandøren er en forutsetning for miljøer med
+virksomhetskritiske applikasjoner. <p>
+	Et godt SCM-verktøy som rammeverk for alle aktiviteter som inngår i
+systemutvikling og vedlikehold er helt nødvendig i dagens stadig mer heterogene
+IT-verden. <p>
+<p>
+Senior konsulent Per-Helge Aurdal<p>
+IDC Integrert Data Consult
+<p><i>Et godt SCM-verktøy som rammeverk for alle aktiviteter som inngår i
+systemutvikling og vedlikehold er helt nødvendig i dagens stadig mer heterogene
+IT-verden, skriver Per-Helge Aurdal. </i>
+<p>
+<a href=cw954111.html><img align=middle alt="[Forrige artikkel]" src=/CW/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/CW/gifs/up.gif></a> <a href=cw954113.html><img alt="[Neste artikkel]" align=middle src=/CW/gifs/next.gif></a> 
+
+
+<pre><hr><a href=/cgi-bin/imagemap/CWartmap><img alt="[Image map not available]" src=/CW/gifs/artmap.gif ismap></A><hr></pre>
+<h5>
+<address>
+Artikkel automatisk generert, 02/11-95, kl. 20.54 <a href=/CW/kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

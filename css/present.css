@@ -1,0 +1,15 @@
+
+     
+	     BODY {
+        font: 30px Gill Sans, sans-serif;
+        color: black;
+        background: yellow;
+      }
+
+      H1, H2 {
+       page-break-before: always;
+     }
+
+     DIV.projection { display: block }
+     DIV.screen { display: none }
+   

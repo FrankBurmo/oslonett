@@ -1,0 +1,92 @@
+<html>
+<head>
+ <title>Ny Microsoft-standard</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+
+<p>
+
+<pre>
+<a href=cw943536.html><img align=middle alt="[Forrige artikkel]" src=../../gifs/prev.gif></a>               <a href=../../><img align=middle alt="[CW hjemmeside]" src=../../gifs/cw.gif></a>              <a href=cw943538.html><img alt="[Neste artikkel]" align=middle src=../../gifs/next.gif></a>
+<hr>
+</pre>
+
+<h1>Ny Microsoft-standard</h1>
+
+<b><i>Visual Basic har oppnådd en enorm popularitet i løpet av kort tid. Men
+ikke før VBX-tilleggene har blitt en standard, lanserer <a href=http://www.microsoft.com>Microsoft</a> OCX, en ny
+type tillegg. </i></b>
+Visual Basic var det første utviklingsverktøyet for Windows som brukte VBXer
+(Visual Basic Extentions). <a href=http://www.microsoft.com>Microsoft</a> selv hadde knapt ventet seg at VBXene
+skulle bli så populære som de ble. Selskapet har klart å skape et nytt
+forretningsområde innen programmering. Objektleverandører lager ikke vanlig
+programmer eller utviklingsverktøy, men ferdige moduler for vanlige
+utviklere.<p>
+	Alle utviklere streber etter gjenbruk av kode samtidig som man ønsker seg
+muligheten for å kjøpe objekter som hyllevarer pakket i cellofanplast. Etter
+min mening ble dette først realisert med Visual Basic og bruken av VBXer.<p>
+	OLE Custom Extentions (OCX), den neste generasjon av VBXer, foreligger nå fra
+<a href=http://www.microsoft.com>Microsoft</a>. VBXene er i stor grad forbeholdt utviklingsverktøyene som Visual
+Basic, Borland C++, Visual C++. De kan bare kjøres på Windows 3.x, i prinsippet
+16-bits-programmer. <p>
+	Ettersom programvare-produsentene vil oppnå 32-bits nirvana, har <a href=http://www.microsoft.com>Microsoft</a>
+gjort en del kirurgiske inngrep i spesifikasjonen på VBXene. Det ble tatt
+utgangspunkt i OLE spesifikasjonen og man laget objekter basert på OLE. Disse
+objektene har fått navnet OCXer. <p>
+	OCXer kan både brukes som 16- og 32-bits objekter basert på samme kildekode.
+Utvikleren skal også, når standard applikasjonene støtter dette, bruke de samme
+objektene fra vanlige program som <a href=http://www.microsoft.com>Microsoft</a> Word og Lotus 1-2-3. <p>
+	Med OCXene utvider man bruksverdien i objektene utover standard
+utviklingsverktøy. Dette medfører bedre gjenbruk av den generelle koden som
+brukes i objektet.
+<b><i>Tre elementer	</i></b>
+OCXene har tre elementer innebygget som kan programmeres av utvikleren. Den
+første er Property, en type navngitte verdier i et OCX objekt. For eksempel
+bestemmer Properties hvordan objektet skal oppføre seg på bakgrunn av verdier
+som utvikleren setter. Dette kan sammenlignes med Property Pages i Visual
+Basic.<p>
+	De fire typene Properites for OCXene er stock, ambient, extended og custom. De
+tre første er standard verdier som kontrolleres av objektet. Utvikleren
+bestemmer selv hvilke som skal være med i objektet. Custom Properties utvikles
+av utviklerne selv.<p>
+	Events (hendelser) er den andre typen element i OCXer som utviklere kan
+programmere. Hendelsene blir utløst som en respons på for eksempel et musklikk.
+Her har utvikleren frihet til å utløse alle Windows-hendelser. Objektet
+konverterer disse hendelsene til notifications-meldinger og sender dem videre.
+På lik linje som med Properties så finnes det også default events som man kan
+benytte.<p>
+	Methods er den siste typen programmerbare muligheten i en OCX. Dette er
+funksjoner i objektet som kan bli kallet fra ekstern kode. Metodene er nye i
+OCXene, det finnes tre standard-metoder og en mulighet for egenutviklig av
+metoder i objektene.
+<b><i>Bruk</i></b>
+<a href=http://www.microsoft.com>Microsoft</a> er som vanlig først ute med å bruke OCX -- selskapet har lagt inn
+teknologien i sine egne utviklingsprodukter. I dag støttes utvikling av disse
+objektene i <a href=http://www.microsoft.com>Microsoft</a> Visual C ++ 2.0 (VC++ ). Den leveres på en CD med Visual
+C++ 1.51, Visual C++ 2.0 (for 32 -bits utvikling, Windows NT 3.5 og Windows 95)
+og OCX SDK (Software Development Kit). <p>
+	Selvfølgelig måtte det bli enda en ny SDK. SDK-pakken har både versjoner for
+16- og 32-bits utviklings av OCX-objekter. Pakken er et påbygg på <a href=http://www.microsoft.com>Microsoft</a>
+Foundation Classes (MFC).<p>
+	Utviklingen av en OCX begynner visuelt i "Property Wizard". Wizarden genererer
+all nødvendig kode som trengs for å lage et OCX-objekt. Etter at
+husholdningsarbeidet er utført bruker man Class Wizard og AppStudio for videre
+utvikling.<p>
+	Jeg ble imponert over hvor enkelt det er å lage OCX-objekter med de nye
+verktøyene. Når jeg utviklet VBXer så bannet jeg <a href=http://www.microsoft.com>Microsoft</a> opp og i mente for
+dårlig dokumentering av VBX-formatet. Nå er dokumentasjonen langt bedre og det
+følger med kildekode for påbygget til MFC.
+
+<pre>
+<hr>   <a href=../../maps/art.map><img alt="[Image map not available]" src=../../gifs/artmap.gif ismap></A><hr>
+</pre>
+<h5>
+<address>
+Artikkel automatisk generert, 11/11-94, kl. 16.59 <a href=../../kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

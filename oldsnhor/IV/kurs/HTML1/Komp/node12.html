@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3O//DTD W3 HTML 2.0//EN">
+<!Converted with LaTeX2HTML 95 (Thu Jan 19 1995) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds >
+<HEAD>
+<TITLE>2.2.4 Lister</TITLE>
+</HEAD>
+<BODY>
+<meta name="description" value="2.2.4 Lister">
+<meta name="keywords" value="Komp">
+<meta name="resource-type" value="document">
+<meta name="distribution" value="global">
+<P>
+ <BR> <HR><A NAME=tex2html380 HREF="node13.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/graphics/l2h/next_motif.gif"></A>   <A NAME=tex2html378 HREF="node8.html"><IMG ALIGN=BOTTOM ALT="up" SRC="/graphics/l2h/up_motif.gif"></A>   <A NAME=tex2html372 HREF="node11.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="/graphics/l2h/previous_motif.gif"></A>   <A NAME=tex2html382 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="/graphics/l2h/contents_motif.gif"></A>   <A NAME=tex2html383 HREF="node43.html"><IMG ALIGN=BOTTOM ALT="index" SRC="/graphics/l2h/index_motif.gif"></A>   <BR>
+<B> Next:</B> <A NAME=tex2html381 HREF="node13.html">2.2.5 Logiske tager</A>
+<B>Up:</B> <A NAME=tex2html379 HREF="node8.html">2.2 Gjennomgang av de </A>
+<B> Previous:</B> <A NAME=tex2html373 HREF="node11.html">2.2.3 Strukturelle tager</A>
+<BR> <HR> <P>
+<H3><A NAME=SECTION00042400000000000000>2.2.4 Lister</A></H3>
+<P>
+HTML har flere listetager, og tillater også nestede lister, dvs. lister 
+inne i andre lister.
+<DL >  <tt> &lt;ul&gt;</tt>
+<tt> &lt;li&gt;</tt>
+ .. <tt> &lt;/ul&gt;</tt>
+
+Unordered list -- dvs. en unummerert liste. Hvert element i listen angis
+med <tt> &lt;li&gt;</tt>
+  -- ``List Item'' -- tagen. De fleste Web browsere vil benytte en eller annen form
+for ``bullet'' foran hvert element i listen. Netscape Communications har 
+foreslått HTML utvidelser der man som opsjon til <tt> &lt;ul&gt;</tt>
+ kan angi hva slags
+type bullet man vil bruke.ul
+<P>
+  <tt> &lt;ol&gt;</tt>
+<tt> &lt;li&gt;</tt>
+ .. <tt> &lt;/ol&gt;</tt>
+
+Ordered list -- en nummerert liste. Brukes akkurat som <tt> &lt;ul&gt;</tt>
+ tagen. I foreslåtte HTML utvidelser er det mulig å angi hva slags nummerering man ønsker å benytte i listen.ol
+<P>
+ <tt> &lt;dl&gt;</tt>
+<tt> &lt;dt&gt;</tt>
+..<tt> &lt;dd&gt;</tt>
+..<tt> &lt;dt&gt;</tt>
+..<tt> &lt;dd&gt;</tt>
+.. .. <tt> &lt;/dl&gt;</tt>
+
+Description list. Her brukes <tt> &lt;dt&gt;</tt>
+ for å angi en tittellinje for hvert 
+element i listen, mens <tt> &lt;dd&gt;</tt>
+ brukes for å angi ``data'' for dette elementet.
+Den listen du nå leser kunne f.eks. vært satt vha. en definition-list.
+<P>
+<tt> &lt;dl&gt;</tt>
+ har opsjonen <tt> &quot;compact&quot;</tt> som kan brukes for å angi en mere kompakt
+presentasjon, men det er ikke alle browsere som reagerer på denne.dl
+<P>
+  <tt> &lt;menu&gt;</tt>
+<tt> &lt;li&gt;</tt>
+ .. <tt> &lt;/menu&gt;</tt>
+
+Denne liste typen vil oftest ikke bli vist annerledes enn en
+<tt> &lt;ul&gt;</tt>
+ liste, men dette er avhengig av browser implementasjonen.menu
+<P>
+  <tt> &lt;dir&gt;</tt>
+<tt> &lt;li&gt;</tt>
+ .. <tt> &lt;/dir&gt;</tt>
+
+Directory. Enda en type liste, men som heller ikke vil noe annet utseende
+enn enn <tt> &lt;ul&gt;</tt>
+ liste. Det er imidlertid meningen at en browser skal kunne
+vise elemenetene i listen i flere kolonner, men dette er stort sett ikke
+implementert.dir
+<P>
+ </DL><BR> <HR>
+<P><ADDRESS>
+© Oslonett AS / Intervett, 20/09-95, 19:53:00
+</ADDRESS>
+</BODY>

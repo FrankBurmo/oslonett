@@ -1,0 +1,154 @@
+----( 12. SLIP )---------------------------------------------------------------
+
+12.1: Hva er forskjellen på en SLIP-konto og den adgangen jeg har
+      gjennom Oslonett Aksess?  Jeg har jo adgang til de samme
+      programmene (telnet, osv.) i begge tilfelle?
+
+>>>>: Når du bruker en Aksess-konto gjør du bruk av Internet ved at
+      du kjører en såk. terminalemulator (f.eks. OnTerm) på din egen
+      datamaskin, og bruker denne til å ringe opp, logge inn og
+      starte telnet på _vår_ maskin.
+
+      Med SLIP skal du ha de Internet-programmene du ønsker å bruke
+      (telnet, osv.) installert på _din_ egen maskin og kommer direkte
+      ut på nettet uten å logge inn på vår maskin først.
+
+      Skillet mellom de to tilknytningformene er imidlertid ikke så
+      klart dersom man trekker "SLIP-emulatorer" som OnTerm/remsock og
+      TIA inn i diskusjonen.
+
+
+12.2: Hva er en SLIP-emulator?
+
+      Det er en løsning som langt på vei gir deg de samme mulighetene
+      som SLIP, men som kan brukes uten en egen SLIP-konto.  Du logger
+      da Oslonett Aksess på vanlig måte og starter deretter opp
+      SLIP-emukatoren.  Deretter kan du aktivisere programmer på din
+      datamaskin som vanligvis krever SLIP.
+
+      En SLIP-emulator gir deg "nesten" de samme mulighetene som
+      "ekte" SLIP.  Men du får ikke tildelt noen egen IP-adresse og
+      kan derfor ikke ha en MX-record (for å motta mail), eller
+      bruke NNTP for å hente news.  En annne ulempe sammenlignet
+      med "ekte" SLIP er at noen (få) programmer (som f.eks. ping)
+      ikke støttes av vår SLIP-emulator TIA.
+
+      Mer informasjon om hvordan du bruker TIA finner du i gopher,
+      i katalogen:
+        Informasjonsarkiv («online» litteratur og brukerveiledninger)/
+          Om bruk av Oslonett Internet Aksess og Internet generelt/
+            Dokumentasjon vedr. The Internet Adapter (TIA)/
+
+
+12.3: Hva må til for å bruke "ekte" SLIP eller PPP?
+
+>>>>: Du trenger en egen SLIP-konto.  Denne er dyrere enn en indirekte
+      oppringt konto som Oslonett Aksess. Du finner priser på SLIP og
+      andre tjenester i gopher:
+
+          Om Oslonett A/S/
+             Oslonett SLIP: Oppringt tilknytning via SLIP/PPP.
+
+      Du trenger dessuten programmer (klientutgaver) av alle de tjenester
+      du ønsker å bruke (ftp, telnet, netscape, archie, gopher, osv.).
+      Disse må du installere på din egen maskin.
+
+
+12.4: Hvor finner jeg disse programmene?
+
+>>>>: Mesteparten av dette finnes som gratis s/w på nettet, men den
+      enkleste måten å få samlet alt man trenger for SLIP på er å
+      kjøpe en pakkeløsning ala "AIR-series", "Internet in a box"
+      (selges bl.a. av Datametrix) eller "Chameleon" (selges bl.a. av
+      Multix A/S). Disse pakkeløsningene koster fra kr. 1900 og
+      oppover. En del operativssystemer som OS/2-Warp, Windows/NT
+      og Unix blir levert med en del programvare som kan brukes i
+      samband med en SLIP-tilkytning.
+
+
+12.5: Hva slags brukergrensesnitt får man med SLIP?
+
+>>>>: SLIP innebærer at _din_ maskin er direkte tilkoblet Internet, og
+      du trenger ikke logge på Oslonetts maskin i det hele tatt for å
+      gjøre bruk av tjenester på nettet.
+
+      Hva slags grensesnitt du får er derfor helt og fullt avhengig av
+      den softwaren du installerer på din egen maskin. Stort sett er
+      de SLIP-programpakkene som selges for MS-Windows og Macintosh i
+      basert på et grafisk brukergrensesnitt.
+
+
+12.6: Hva innebærer en SLIP-konto mht. til elektronisk post?
+
+>>>>: En SLIP-konto gir deg anledning til å ha din postboks på
+      din egen maskin i stedet for på Oslonett.
+
+      Dersom du vil ha elektronisk postboks på egen maskin må du
+      etablere en MX-record hos Oslonett for mellomlagring av post
+      (siden din egen maskin bare vil kunne nås fra nettet når du
+      kobler deg opp).
+
+      Alternativt kan du fortsette å lese ha din postboks på
+      Oslonetts maskin knyttet til din Aksess-konto. Selv om du
+      oppgraderer til SLIP-tilknytning beholder du nemlig din konto
+      på Oslonett Aksess og kan telnette til Aksess for å lese post
+      og også bruke andre tjenester som tilbys av Aksess.
+
+
+12.7: Hva er fordelene med å velge "ekte" SLIP/PPP framfor løsninger
+      basert på SLIP-emulering (TIA eller OnTerm/remsock)?
+
+>>>>: TIA/OnTerm/remsock støtter ikke nødvendigvis samtlige
+      IP-baserte tjenester (selv om lista er blitt ganske lang
+      etterhvert) -- mens SLIP og PPP i prinsippet skal gjøre det.
+
+      "Ekte" SLIP (og i enda sterkere grad PPP) er mer robust
+      i forhold til overføringsfeil enn løsninger basert på
+      emulatorer.
+
+      Dersom du skal hente news til din maskin eller ha egen
+      MX-record for mail trenger du en "ekte" SLIP-konto.
+
+
+12.8: Hva er forskjellen på SLIP, CSLIP og PPP?
+
+>>>>: Grovt sett er dette alternative løsninger på samme problem:
+      Hvordan sender man IP (Internet Protocol) datapakker over
+      asynkrone serielle linjer (f.eks. telefonlinjer)?
+
+      SLIP står for "Serial Line IP".  SLIP er beskrevet i RFC 1055
+      (1988-01-06).  Den fulle tittelen er "Nonstandard for transmission
+      of IP datagrams over serial lines: SLIP".  CSLIP er bare en
+      variant av SLIP som benytter såkalt "TCP header compression".
+
+      PPP (RFC 1171) er "The Point-to-Point Protocol for the
+      Transmission of Multi-Protocol Datagrams Over Point-to-Point
+      Links" (1990-07-24).
+
+      PPP er altså en nyere standard, og den er mer generell, da den
+      tillater flere protokoller enn bare IP. (Oslonetts PPP tilbud
+      gjelder kun IP over PPP).
+
+      PPP inneholder en forhandlingsfase der det forhandles om hvilken
+      protokoll som skal benyttes, om det skal benyttes TCP header
+      compression og andre finurligheter. PPP er også mer robust mht.
+      kommunikasjonsfeil o.l.  SLIP/CSLIP er bare en rimelig "rå"
+      innkapsling av IP pakker over en seriell forbindelse.
+
+      Litt avhengig av hva slags programvare man benytter i PC-enden er
+      SLIP noe mindre effektivt enn PPP, mens CSLIP som regel er litt
+      raskere enn PPP.
+
+
+----( 13. IRC )----------------------------------------------------------------
+
+13.1: Hvilke irc-tjenere bør jeg koble meg opp mot?
+
+      Du bør alltid koble deg opp mot de som ligger nærmest.  De to som
+      kan anbefales i Norge er:
+      - mimir.ifi.uio.no
+      - irc.uib.no
+
+===============================================================================
+..EOF
+.

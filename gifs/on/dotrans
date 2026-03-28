@@ -1,0 +1,17 @@
+#!/bin/sh
+size=$1
+
+LIST="aksess diverse ip kjop konsulent kurs media naeringsliv oslonett reiseliv sport underh www org"
+
+TMPFIL=$$
+echo -n "Headere gjøres transparente i #efeff7 ..."
+for fil in $LIST
+do
+  giftrans -t '#efeff7' $fil-h.gif > $TMPFIL
+  mv $TMPFIL $fil-h.gif
+  chmod a+rx $fil-h.gif
+done
+
+echo "done"
+  
+ 

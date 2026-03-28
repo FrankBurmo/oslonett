@@ -1,0 +1,77 @@
+	GENERERING AV EN NY UTGAVE AV CW-WWW:
+  ---------------------------------------------------
+0. Konverter Word-dokumenter til RTF på PC:
+   a) kopier ZIP-fil til harddisk, f.eks. c:\tmp\cw
+   b) pakk ut DOC-filene: pkunzip cwXXYY.zip
+   c) start _norsk_ Microsoft Word 6.0 (NB! ikke Word 2.0, ikke
+      engelsk versjon (makroen forutsetter norske knappetekster!)
+   d) Velg Verktøy->Makroer->Satsvis konvertering
+   e) Velg konvertering fra Word-dok. til rikt tekstformat
+   f) Pakk alle rtf-filene på harddisken pkzip rtfXXYY *.rtf
+   g) ftp zip-filen til stovner
+
+NB! Hvis makro for satsvis konvertering ikke er installert på maskinen
+kan denne ftp'es eller kopieres på annet vis fra
+frogner:/local/www/me/ts/cw/lib/konvert.dot. Denne skal kopieres til
+PC'ens directory \msoffice\winword\oppstart\ (evt. startup eller
+lignende).
+
+1. Gå til ~homedir/cw (eller lignende, gjerne på stovner.oslonett.no)
+
+2. Lag et nytt utgavedirectory hvis det ikke er der, nr38, nr39 osv.
+   (men navnene er ikke viktige)
+
+3. Legg opp tilhørende ZIP-filen på dette området og pakk ut
+   (unix% unzip rtfXXYY)
+
+4. Fix "hull" i filsekvensen og oversett til 1. fase HTML:
+
+	stovner.oslonett.no% ../bin/trans
+
+   Hvis oversetteren klager over for mange udefinerte makroer, bør
+   html-trans filen editeres og trans kjøres på nytt.
+
+5. Alle filene skal begynne med <h1>..</h1>. "trans"-programmet 
+   bytter ut evt. <h3>..</h3> el.lign i starten med <h1>..</h1>
+   men klarer ikke alle rare kombinasjoner. Når programmet er ferdig
+   skriver det ut en oppsummering som viser hvilke av filene som
+   ikke ble rettet automatisk. Disse er angitt med ERROR + en liten
+   forklaring etter seg og _må_ _rettes_ _manuelt_.
+   NB! <h1>..</h1> skal stå på samme linje. Legg deretter på 
+   SN-headere, sett inn linker etc. med programmet "doit":
+
+	stovner.oslonett.no% ../bin/doit
+
+  Ved klager på "Fant ikke <h1>", m} det legges inn 
+  <h1> i de aktuelle *.html.bak(!!) filene, og så
+
+	stovner.oslonett.no% ../bin/rewind; ../bin/doit
+
+6. Lag seksjonsindeks etter mal på ../lib/sek-index-mal.html, plasser
+   filen på /local/www/me/ts/cw/utg/XXYY/ sammen med de andre
+   html-filene.  Bruk finntitler til å finne URL til dokumenter med
+   tittel som match'er innlest regexp: 
+
+    stovner.oslonett.no% ../bin/finntitler *.html
+
+7. Endre referansen cwXXYY00.html til cwXXYY<siste nr>.html i filen 
+   cwXXYY01.html og cwXXYY<siste + 1>.html til cwXXYY01.html i filen
+   cwXXYY<siste nr.>. (La artiklene referere hverandre syklisk.)
+
+8. Lag nytt directory /local/www/me/ts/cw/utg/9547/ el. tilsvarende
+   på frogner. Kopier filene til det nye directory'et (med ftp, f.eks).
+   Kjør deretter "mkartindex" for å lage art-index.html:
+
+    stovner.oslonett.no% ../../bin/mkartindex 9505 "nr. 5, 3. februar 1995"
+
+9. Fjern link'ene ~www/me/ts/cw/utg/current.html
+   (som peker til XXYY/art-index.html)
+   Lag ny sym-link: ln -s ~www/me/ts/cw/utg/XXYY/sek-index.html
+
+10. Husk å oppdatere ...
+    http://www.oslonett.no/me/ts/cw/utg/index.html (alle CW-utgaver)
+
+11. Husk at CW skal være sperret til fredag morgen.
+
+
+DET VAR DET HELE!

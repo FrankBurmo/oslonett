@@ -1,0 +1,45 @@
+	GENERERING AV EN NY UTGAVE AV CW-WWW:
+  ---------------------------------------------------
+
+1. Gå til ~kgn/cw (på frogner.oslonett.no)
+
+2. Lag et nytt utgavedirectory hvis det ikke er der, nr38, nr39 osv.
+   (men navnene er ikke viktige)
+
+3. Legg opp tilhørende RTF filer og en html-trans fil på dette 
+   området og gjør cd til området
+
+4. Fix "hull" i filsekvensen og oversett til 1. fase HTML:
+
+	frogner.oslonett.no% ../bin/trans
+
+   Hvis oversetteren klager over for mange udefinerte makroer, bør
+   html-trans filen editeres og trans kjøres på nytt.
+
+5. Legg på Oslonett headere, sett inn linker etc:
+
+	frogner.oslonett.no% ../bin/doit
+
+  Ved klager på "Fant ikke <h1>", m} det legges inn 
+  <h1> i de aktuelle *.html.bak(!!) filene, og så
+
+	frogner.oslonett.no% ../bin/rewind; ../bin/doit
+
+6. Kopier til ../CW/utg/.., f.eks. :
+
+    frogner.oslonett.no% ../../bin/mkartindex 9505 "nr. 5, 3. februar 1995"
+
+7. Lag seksjonsindeks etter mal på ../lib/sek-index-mal.html. Bruk
+   ../bin/finntitler til å finne URL til dokumenter med tittel som match'er
+   innlest regexp.
+
+8. Fjern link'en ~www/CW/utg/current.html (som peker til nrXX/art-index.html)
+   Lag ny sym-link: ln -s ~www/CW/utg/nrXX/sek-index.html ~www/CW/utg/current.html
+
+9. Husk å oppdatere ...
+   http://www.oslonett.no/CW/utg/index.html (liste over alle CW-utgaver) og...
+   http://www.oslonett.no/html/WhatsNew.no.html ("What's New?")
+
+
+
+DET VAR DET HELE!

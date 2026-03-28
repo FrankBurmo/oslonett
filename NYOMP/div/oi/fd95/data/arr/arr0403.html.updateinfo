@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="403"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Bonderørsla og draumen om nasjonal samling"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Høgskolen i Telemark - Bø"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="kl. 1730 - 1900"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="8"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Høgskolen i Telemark"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Høgskolen i Telemark - Bø"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``v/førsteamanuensis Olav Rovde. Han har nå skrevet Norges Bondelags historie. ` -->
+<!-- replace `<option(.*Telemark)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?13.10"?)\s*>` with `` checked>` -->

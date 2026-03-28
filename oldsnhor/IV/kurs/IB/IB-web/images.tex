@@ -1,0 +1,181 @@
+\batchmode
+\documentstyle[psfig,html,titlepage,A4,norsk,fancybox,fix,shadow,isolatin,progtext]{article}
+\makeatletter
+\setlength{\parskip}{0.3cm}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.1}
+\addtolength{\fboxsep}{0.3cm}
+\setlength{\parindent}{0cm}
+
+\makeatletter
+\def\l@subsection{\@dottedtocline{2}{1.5em}{2.8em}}
+\def\l@subsubsection{\@dottedtocline{3}{4.3em}{3.7em}}
+\makeatother
+\setcounter{totalnumber}{6}
+
+
+\title{ \Huge\bf Internet for business  \\ 
+\vspace{1cm}
+\large\rm Introduksjon til Internet for business brukere
+      }
+
+\author{\begin{tabular}{|c|c|} \hline 
+    \bf Oslonett A/S & \bf Intervett A/S \\  \hline Steinar Kjærnsrød& Knut Jørstad
+  \\  \tt steinar@oslonett.no& \tt intervett@oslonett.no \\  \hline
+\end{tabular}
+}
+\makeindex
+
+
+\newcommand{\href}{\htmladdnormallink}
+
+\newcommand {\merk}[1]{ {\bf \em #1}}
+
+\newcommand {\email}[1]{ {\it \em #1}}
+
+\newcommand {\prog}[1]{ {\tt \em #1}}
+
+\newcommand {\post}[1]{ {\it \em #1}}
+
+\newcommand {\bok}[1]{ {\bf \em #1}}
+
+\newcommand {\ffig}[3]
+{
+\begin{figure}[ht]
+ \begin{center}
+ \ovalbox{\footnotesize
+   \begin{minipage}{.9\textwidth}
+    \VerbatimInput{#1}
+   \end{minipage}
+        }
+   \caption{\it #2}\label{#3}
+ \end{center}
+\end{figure}
+}
+
+\newcommand {\fig}[3]
+{
+\begin{figure}[t]
+\centerline{\doublebox{\psfig{figure=#1,width=10cm}}}
+\caption{\it #2}
+\label{#3}
+\end{figure}
+}
+
+\newcommand {\ord}[2]
+{ 
+\item[\sl #1 ] #2
+
+\index{\it #1}
+
+}
+
+\makeatother
+\newenvironment{tex2html_wrap}{}{}
+\begin{document}
+\pagestyle{empty}
+\setcounter{totalnumber}{6}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\newpage
+
+{\samepage \clearpage \begin{tabular}{|l|l|}
+\hline
+\bf Domene & \bf Type organisasjon \\ 
+\hline\hline
+org & Ikke-kommersiell organisasjon \\ 
+com & Kommersielt firma \\ 
+gov & Regjering, forvaltning \\ 
+edu & Educational. Universiteter, skoler \\ 
+net & Nettorganisasjon, nettilbyder \\ 
+"landkode" & F.eks. {\bf no}. Brukes utenfor USA\\ 
+\hline
+\end{tabular}
+}
+
+
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+
+\end{document}

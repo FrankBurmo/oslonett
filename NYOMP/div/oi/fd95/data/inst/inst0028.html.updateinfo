@@ -1,0 +1,11 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="28"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Agderforskning"` -->
+<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Agderforskning er en regional forskningsstiftelse som arbeider med regionale, nasjonale og internasjonale spørsmål. Agderforskning har kontorer i Kristiansand og Grimstad. Rundt 60 ansatte med ulike kvalifikasjoner arbeider innen områdene samfunnsanalyse, bedriftsutvikling, informasjonsteknologi, miljø og ressursforvaltning, kjemiske analyser samt internasjonal økonomi og skipsfart. Agderforskning utfører forskning og utviklingsarbeid for bedrifter, stat og kommune, private stiftelser og organisasjoner, forskningsrådet og internasjonale oppdragsgivere. ` -->
+<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``Agderforskning arrangerer en fagkonferanse 9. oktober 1995.` -->
+<!-- replace `<option(.*Forskningsinstitutt)` with `<option selected`` -->

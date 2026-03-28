@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1010"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Lørdagsuniversitetet - Språket: Hjernens speil"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Den Nationale Scene"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="KL 12.00-14.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="13"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Universitetet i Bergen"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Bergen"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Populærvitenskapelige foredrag ved Den Nationale Scene. Arrangementet er et samarbeid mellom Universitetet i Bergen og Den Nationale Scene. Lørdagsuniversitetet1995 er viet Hjernens År og har fått hovedtittel: Hjernen: Vårt eget univers. ` -->
+<!-- replace `<option(.*Hordaland)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?07.10"?)\s*>` with `` checked>` -->

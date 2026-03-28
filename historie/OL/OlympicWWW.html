@@ -1,0 +1,182 @@
+<html>
+<head>
+  <title>The Olympic WWW server - a summary of the project</title>
+  <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+<h1><img alt="[WWW Meets The 1994 Olympics]" src=gifs/ow.gif></h1>
+
+<h4>
+<hr>
+This report is a short summary of the project <b>«WWW Meets The 1994 Olympics»</b>,
+courtesy <a href="/html/English.html">Oslonett, Inc.</a>, <a href="/html/adv/SD/SD.html">Skrivervik Data A/S</a>, <a href="http://www.sun.com">Sun Microsystems</a> and Norsk Telegrambyrå 
+<hr>
+</h4>
+<h2>Background</h2>
+The day before the Winter Olympics at Lillehammer started, February 11, 1994,
+Oslonett Inc. started to prepare a WWW based service for Olympic results and 
+information. The reason we didn't start earlier, was that we waited for a
+"go" from Skrivervik Data - the Norwegian Sun vendor. We had asked them to
+sponsor this effort by paying the Norwegian news wire NTB to let us hook
+into their electronic news feed subscribed to by the University of Oslo.
+<p>
+Skrivervik's upside of this, would be to have their company icon at the
+bottom of some of the pages, together with the Oslonett logo and Sun
+Microsystem's logo (they sponsored a SPARCstation 10 to run the server).
+
+<h2>Implementation</h2>
+
+After we received the "go", one of us started to design a layout for
+the server, while others started to program some Perl scripts to
+translate the wire news to HTML files according to the designers 
+choice.
+<p>
+Our original plan was to get results only, not background information.
+In this way, it would be rather trivial to automatically translate event
+names, country names and a number of other commonly used terms from
+Norwegian to English.
+<p>
+However, it turned out that the wire service didn't tag their news
+messages properly, so other messages were often intermixed with the
+results. Those messages were still related to the Olympics though, but this
+caused a number of funny translations and HTML pages where 90% of the
+text was in Norwegian and the rest of it in some quasi English. We
+received a number of emails suggesting that we ought to attend some
+K-12 level English courses ...
+<p>
+Also, since the wire news messages were typed in by journalists and
+originally meant for use by newspapers and magazines only, the 
+formatting and layout were not paid attention to at all. It was 
+very difficult to assemble these things in the Perl scripts and
+do the formatting here, so it was necessary to do some post-editing
+manually on nearly every results page. A couple of people in Oslonett
+did a good job with this!
+
+<h2>Images</h2>
+
+After some days, we started to grab images from the Norwegian TV channel
+NRK. An
+Indy SGI workstation had a live video input source from a VCR we used as
+a tuner, and it was easy to do screen captures. The quality
+was not very impressing though. In fact, we got some times better
+quality captures by grabbing the frames we distributed by MBONE
+software to people without video input cards (due to lower frame rate).
+<p>
+We built up translation tables used by the Perl scripts, which were
+used to substitute names of athlets with HTML hyperlinks to pictures
+of the same athlets! After some days, we had a huge image archive
+(345 images now), and this became wildly popular. I received mails
+from girls who wanted me to capture <a href="/historie/OL/gifs/jansen.gif">Dan Jansen</a> and <a href="/historie/OL/gifs/koss-close.gif">Johan Olav Koss</a>,
+from people with relatives among the athlets etc.
+
+<h2>The responses from the Net</h2>
+
+The service was announced in the USENET groups <a href="news:rec.sport.olympics">rec.sport.olympics</a> and
+<a href="news:comp.infosystems.www">comp.infosystems.www</a> as well as in <a href="http://www.ncsa.uiuc.edu/SDG/Software/Mosaic/Docs/whats-new.html">NCSA What's New</a> list. It was very
+exciting to sit by and watch an increasing number of connections coming 
+in from all over the world. 
+<p>
+After a day or two, it became clear that the network connection (64k) to our
+machine suffered from severe congestion due to our service. This was bad,
+since this line was shared by a number of commercial Norwegian IP
+customers. We got the line upgraded to 128k quickly (the clue was to
+mention the word "Olympics" to the Norwegian PTT), and this helped to
+some extent, but the load continued to build up, so we decided to
+set up a <a href="http://www.sun.com/historie/OL/OL94-mirror.html">mirror service at Sun Microsystems</a> in Mountain View.
+<p>
+Some statistics sampled at February 27 1994:
+<pre>
+     # CONNECTIONS to the Norwegian server                   : ~810.000
+     # CONNECTIONS to the Sun server                         :  505.532
+
+     # DIFFERENT computers connected to the Norwegian server :   17.774
+     # DIFFERENT computers connected to the Sun server       :   13.355
+
+     # top-level domains connected to the Norwegian server   :   51
+     # top-level domains connected to the Sun server         :   49
+</pre>
+At the time of these statistics, there are 64 countries with Internet
+connections in the world. We find 42 of them in <a href=/logs/loglist.html>our WWW logs</a>. Those we 
+*DON'T FIND*, are
+<h4>
+<hr>
+EGYPT, TUNISIA, ANTARCTICA, ISRAEL, INDIA, KUWAIT, FIJI, BULGARIA,
+CYPRUS, LIECHTENSTEIN, UKRAINE, COSTA RICA, NICARAGUA, PUERTO RICO,
+ARGENTINA, CHILE, ECUADOR, PERU, VENEZUELA.
+<hr>
+</h4>
+Needless to say, the service was extremely popular, and we received 
+a number of nice emails from people all over the world. From many of
+them, our service became their main news service for the Olympics.
+At many places, the coverage by traditional media was ~nil, while
+at other places the coverage was poor and the signal/noise ratio
+extremely low due to ads and interruptions for commercials etc. Do
+you know that CBS is called Cannot Broadcast Sports?
+
+<h2>IBM's threats</h2>
+
+You probably all know that IBM was one of the main Olympic sponsors
+and responsible for the information systems and the results service 
+at Lillehammer. But you probably don't know that they issued threats to
+stop us distribute the results to the Internet? 
+<p>
+They didn't like that Skrivervik Data and Sun Microsystems were mentioned
+in the results pages, and claimed exclusive rights to distribute the
+results. They didn't like that IBM wasn't mentioned in the HTML files
+either. Ridiculous of course, because the news wire NTB had bought into
+the information systems initially for the purpose of distributing the
+information to newspapers and magazines etc. Do you see IBM's name and logo 
+under each results table in your local newspaper? Of course not, and we think
+it is feasible to compare our service to that of a regular newspaper.
+<p>
+Anyway, IBM's attorneys fired threats to NTB, and said that NTB would be
+locked out from the information systems if we continued to distribute
+the results with a) without mentioning IBM or b) with SUN and Skrivervik
+still mentioned in the HTML pages. The end of it was that we had to remove
+all references to Skrivervik and Sun. It was apparently OK to mention
+Oslonett - we are not big enough to steal the glamour from IBM of course ..
+<p>
+A couple of days ago, there was a meeting here in Oslo arranged by 
+<a href=/html/adv/DND/DND.html>DND</a> - an organization for professional computer scientists. The title
+for the meeting was "Behind the scene of the Olympics" and IBM was
+invited to talk about their information systems. We asked DND to 
+get a time-slot to speak about our WWW service. They agreed, but guess what - IBM
+refused ...
+
+<h2>Some after-thought</h2>
+
+We enjoyed doing this, and hope to offer similar services to the Net
+again. Reflecting about the whole thing, a number of interesting aspects
+with our service come to our minds. For one thing, this service fully
+demonstrates the power of the Internet, Internet based information systems
+and World Wide Web in special. Secondly, it becomes clear that WWW as
+a media is far more effective and functional than traditional media in some
+situations. You all know the benefits - the hypermedia concepts, the ability 
+to manipulate the information electronically (save, browse, search, ..) and
+not to forget the fact that you reach ~20million people instantaneously with
+"free" information not distorted by whatever traditional media decide
+you must receive in addition to the information you want!
+<p>
+Hence find it as no surprise that traditional media in some sense
+"fear" the competition. Sadly enough, many of them seem to ignore the fact that
+electronic media has come here to stay, and that it is possible to combine
+elements of new and traditional media. Stay tuned to the Internet and the world
+of World Wide Web, and you are guaranteed to see <a href=/wc94/index.html>examples of this</a> in the near
+future.
+<hr>
+The Olympic Team in Oslonett wish to thank you all for using our service
+and for all the feedback we received.
+<pre>
+  <a href=/html/profiles/steinar.html>Steinar Kjærnsrød</a>  <a href=http://www.ifi.uio.no/~henning>Henning Maagerud</a>     <a href=/html/profiles/leifa.html>Leif Arne Neset</a>  
+  Project Leader     Screen Capturing     Post Editing
+  HTML Layout
+
+<img border="1" src="/historie/OL/gifs/gutta-small.gif">
+
+          <a href=/html/profiles/anders.html>Anders Ellefsrud</a>           <a href=/html/profiles/kjell.html>Kjell Øystein Arisland</a>  
+          PERL Programmer            Post Editing
+                                     News Translator
+</pre>
+<!--#include virtual="/historie/OL/footer.html" -->
+</body>  
+</html>

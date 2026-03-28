@@ -1,0 +1,22 @@
+default http://www.kit.kommorg.no/ 
+
+#administrerende direktør
+rect http://www.kit.kommorg.no/html/komorg/KS/ks-adm/ledelse/thorsdal.html 55,10   162,38
+
+#informasjonstjenesten
+rect http://www.kit.kommorg.no/html/komorg/KS/ks-adm/info-tj/info-tj.html  175,57   260,86
+
+#stab
+rect http://www.kit.kommorg.no/html/komorg/KS/ks-adm/stab.html  278,55  323,80
+
+#fylkessekretariatet
+rect http://www.kit.kommorg.no/html/komorg/KS/ks-adm/fylksekr.html  264,97  370,118
+
+#arbeidsgivervirksomheten
+rect http://www.kit.kommorg.no/html/komorg/KS/ks-adm/ksarbeid.html  14,110  103,139
+
+#kommunalpolitisk virksomhet
+rect http://www.kit.kommorg.no/html/komorg/KS/ks-adm/kom-pol.html  107,109  216,141
+
+#administrasjonssjef
+rect http://www.kit.kommorg.no/html/komorg/KS/ks-adm/ksintern.html  200,155  322,178

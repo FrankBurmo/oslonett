@@ -1,0 +1,116 @@
+<html>
+<head>
+ <title>Yessir, that's my baby</title>
+ <link rev=made href="mailto:webmaster@oslonett.no">
+</head>
+<body>
+
+
+
+<a href=cw952716.html><img align=middle alt="[Forrige artikkel]" src=/me/ts/cw/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/me/ts/cw/gifs/up.gif></a> <a href=cw952718.html><img alt="[Neste artikkel]" align=middle src=/me/ts/cw/gifs/next.gif></a> <a href=/me/ts/cw/CW.html><img align=middle alt="[CW hjemmeside]" src=/me/ts/cw/gifs/cw.gif></a>  
+<hr>
+
+
+
+<h1>Yessir, that's my baby</h1>
+
+Peters Plass<p>
+
+<b>Den enorme populariteten til "grafiske" utviklingsverktøy som Visual BASIC
+og PowerBuilder får det til å se enkelt ut å bygge klient/tjener systemer. Men
+det er lett å bli lurt fordi disse verktøy "skalerer" dårlig.</b><p>
+<b></b><p>
+nn Folk er mer opptatt av brukerdialogen enn av innmaten til systemene. Er det
+Windows, så er det bra. Det minner om familien som kjøpte leilighet fordi
+verandaen var så flott. De måtte bruke mye penger for å få en bolig som også
+var bra om vinteren. Ta noen ivrige brukere som har et problem å løse og ingen
+tid å miste. Legg til et fjerdegenerasjons verktøy og et par unge
+programmerere. Rør rundt og la mixen stå litt. Hva får du da? Et system som
+ikke lar seg utvide og er kostbart å vedlikeholde. Om to år vil det bli
+vanskelig å forklare brukerne hvorfor systemet er blitt så rynkete og hvorfor
+alle PCene må skiftes ut. Saken er nemlig at disse populære klient/tjener
+verktøy er glimrende til å snekre sammen enkle systemer for arbeidsgrupper, men
+er ikke eslet til større applikasjoner som skal leve noen år. Alt går bra
+inntil det oppstår et ønske om at applikasjonen, som virker kjempebra for 5
+brukere, skal tas i bruk av 25 eller 50 til. Da dukker problemene opp som troll
+av eske.<p>
+<p>
+nn Det finnes en enhet for utviklingsarbeid som heter en <i>baby</i>. Det er
+tre programmerere i tre måneder eller ni månedsverk. En applikasjon som krever
+mer enn en baby er antagelig for stor for å bli utviklet med et
+førstegenerasjons verktøy. Problemene har ikke bare med antall brukere å gjøre.
+Andre ting å passe på er antallet skjermbilder, rapporter og databasetabeller,
+antallet systemer som den nyutviklede applikasjonen skal kommunisere med,
+antallet utviklere som skal arbeide samtidig og ikke minst systemets planlagte
+levetid. Kompleksitet er ordet. Legg til at disse verktøy pleier å arbeide
+interpretativt (dvs. langsomt) istedenfor å kompilere programmene først - og du
+har bildet.<p>
+<p>
+nn Førstegenerasjons verktøy, som Visual BASIC 3.0, PowerBuilder 4.0 og
+SQLWindows 5.0, er laget slik at selve applikasjonen blir utført i sin helhet
+på brukernes PCer. Bare databasen er plassert på tjenermaskinen som klientene
+sender SQL-kall til. Klientene, dvs. PCene, må være ganske kraftige - ellers
+vil systemet gå for sakte. Etter en tids bruk pleier systemer å vokse, og da
+øker kravene på PCene. Dessuten må databasen være konstruert slik at den raskt
+kan betjene brukerne. Det er lett å se at hvis både applikasjonen vokser og
+antallet klienter øker, kan skjulte problemer åpenbare seg.<p>
+<p>
+nn Slik ser den fremherskende, såkalte <i>tonivå</i> arkitekturen ut. Det
+finnes også en variant 2,5. Den er slik at en del av behandlingslogikken blir
+plassert i databasen ved hjelp av såkalte <i>lagrede prosedyrer </i>og<i>
+triggere</i>. Disse er programsnutter som kan brukes f.eks. til å kontrollere
+input eller gjøre utregninger innen data blir oversendt til klientene. Fordelen
+er at disse prosedyrene tar plass bare ett sted istedenfor i alle PCene og at
+trafikken til og fra databasen blir mindre. Ulempene er at det er begrensinger
+på hva vi kan uttrykke og at det ikke finnes noen standarder for lagrede
+prosedyrer, dvs. at løsningen blir proprietær. <p>
+<p>
+nn Klient/tjener løsninger skal være fleksible. Arkitekturen som skaper full
+fleksibilitet har tre nivåer. Applikasjonen blir delt i to og databasen utgjør
+det tredje. Den ene delen av applikasjonen, den nærmest brukerdialogen, blir
+plassert på klientene, den andre delen, den som er felles, på tjenermaskinene.
+De to delene kommuniserer gjennom å sende meldinger til hverandre. Vokser
+applikasjonen ut over klientenes grenser, kan fordelingen endres slik at større
+deler blir utført på tjenermaskinen. Det er viktig at fordelingen mellom klient
+og tjener ikke skal være statisk, men skal kunne endres "dynamisk", dvs. etter
+behov og uten kostbar omprogrammering. Må vi anvende ett utviklingsverktøy for
+å skrive programmene som skal kjøres på klientene (f.eks. PowerBuilder) og et
+annet for tjenerprogrammene, har vi ikke denne fleksibiliteten. Det er derfor
+førstegenerasjons verktøy, som utelukkende er rettet mot brukerdialog,
+klientlogikk og datatilgang, ofte kommer til kort. <p>
+<p>
+nn Hvor finner vi annengenerasjons verktøy? Noen har vi brukt lenge, f.eks.
+Progress og Focus. Begge disse er kommet med versjoner som understøtter Windows
+i klientene. Oracle har lansert sin Developer 2000. SAS Institute har sin AF
+(Application Facility). Andre produkter er JAM fra JYACC, Axiant fra Cognos
+(som har laget Powerhouse), Uniface og Forte. Alle disse gjør det mulig å dele
+applikasjonen dynamisk, etter behov, de understøtter flere ulike brukerdialoger
+(f.eks. Windows, <a href="http://www.cs.uit.no/OS2/">OS&#47;2</a>, Unix Motif, men også tegnbasert), de tilbyr valg mellom
+flere databaser og kraftige verktøy for systemadministrasjon. <p>
+<p>
+nn Gartner Group anbefaler å bruke trenivå-arkitektur hvis systemet skal bestå
+av mer enn 20 programmer eller skal hente data fra minst 2 ulike eksterne
+datakilder eller skal håndtere over 10.000 transaksjoner pr dag. Andre
+varselsignaler som bør tas alvorlig under planleggingen er utstrakt
+kommunikasjon med andre applikasjoner, sannsynligheten for mange forandringer i
+systemets levetid og om antallet brukere kan bli stort. Suksess skaper sin egen
+etterspørsel. Har du laget et system som fem brukere skryter av, får du snart
+et helt kobbel etter deg. Datasystemer er organiske, de vokser og forandrer
+fasong. Skal vi unngå å lage problemer for oss selv, må vi planlegge slik at
+applikasjonene lar seg utvide.<p>
+<p>
+<i>Du treffer meg på <a href=mailto:hidas@oslonett.no>hidas@oslonett.no</a></i><p>
+<p>
+<a href=cw952716.html><img align=middle alt="[Forrige artikkel]" src=/CW/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/CW/gifs/up.gif></a> <a href=cw952718.html><img alt="[Neste artikkel]" align=middle src=/CW/gifs/next.gif></a> 
+
+
+<pre><hr><a href=/cgi-bin/imagemap/CWartmap><img alt="[Image map not available]" src=/CW/gifs/artmap.gif ismap></A><hr></pre>
+<h5>
+<address>
+Artikkel automatisk generert, 20/07-95, kl. 18.34 <a href=/CW/kommentarer.html>
+                             cw@oslonett.no</a>
+</address>
+</h5>
+</body>
+</html>
+

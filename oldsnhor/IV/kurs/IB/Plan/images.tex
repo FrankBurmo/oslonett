@@ -1,0 +1,36 @@
+\batchmode
+\documentstyle[12pt,psfig,html,pstricks,titlepage,A4,norsk,fix,shadow,isolatin,progtext]{article}
+\makeatletter
+\setlength{\parskip}{0.2cm}
+\setlength{\parindent}{0cm}
+\addtolength{\textheight}{2.5cm}
+\topmargin -1.7cm
+\input{colordvi} 
+\input{colordvi}
+
+
+\makeatother
+\newenvironment{tex2html_wrap}{}{}
+\begin{document}
+\pagestyle{empty}
+\newpage
+
+{\samepage \clearpage \psfig{figure=na.eps,width=10cm}
+}
+
+
+\newpage
+
+{\samepage \clearpage \psfig{figure=logo.eps,height=1.5cm}
+}
+
+
+\newpage
+
+{\samepage \clearpage \psfig{figure=iv.eps,height=1.5cm}
+}
+
+
+\stepcounter{section}
+
+\end{document}

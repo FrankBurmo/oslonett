@@ -1,0 +1,64 @@
+Bank
+CBA ,Chr. Bank og Kr. A-aksjer
+CBAF,Chr. Bank og Kr. Frie aksjer
+DNBF,Den norske Bank Frie A-aksjer
+FOKT,Fokus Bank Kj|psretter 1,45:1.
+ISBS,IS-Banken Tegn.retter (9/1-95)
+VBY ,Vestenfjelske Bykreditt
+Forsikring
+SKG ,Skandia
+UNSF,UNI Storebrand Frie ord.aksjer
+UNPF,UNI Storebrand Frie pref.aksj.
+VITF,Vital Forsikring Frie A-aksjer
+Industri, handel og finans
+AKEF,Aker Frie A-aksjer
+CHB ,Chr. Bjelland & Co.
+ELKF,Elkem Frie A-aksjer
+HNAF,Hafslund Nycomed Frie A-aksjer
+HUNS,Hunsfos Tegn.retter (1:3,5)(1.
+ICI ,ICI Ltd. ord
+KAN ,Kaldnes
+KANN,Kaldnes "Nye" aksjer
+KVES,Kverneland Tegn.rett. (1:10)(.
+KVIF,Kv{rner Frie A-aksjer
+MOET,Moelven Kj|psretter(1:6)(27/0.
+MOEN,Moelven Nye aksjer
+NOE ,Nora Eiendom
+NFT ,Norsk Forsvarsteknologi
+NSI ,Norske Skogindustrier A-aksjer
+NSIB,Norske Skogindustrier B-aksjer
+NSIF,Norske Skogindustrier Frie A-.
+ORKF,Orkla Frie A-aksjer
+RENT,Rena Tegningsretter(5:8)(16/1.
+SAGK,Saga Petroleum A konverterte
+SAGL,Saga Petroleum B konverterte
+SAGF,Saga Petroleum Frie A-aksjer
+STEJ,Stentofon Tegn.retter
+STET,Stentofon tegn.retter
+STES,Stentofon tegn.retter (1:7)(2.
+Skip
+ARD ,Arcade Drilling
+AWST,Awilco Tegn.retter (5:8)
+AWSS,Awilco Tegn.retter (5:8)
+MOS ,Mosvold Shipping A-aksjer
+MOSB,Mosvold Shipping B-aksjer
+PBBN,Pacific Basin Bulk m/warrants
+UGL ,Ugland International
+VART,Vard Tegn.retter (3:7)(2/5-95)
+WWIN,W. Wilhelmsen Nye B-aksjer
+WIR ,Wilrig
+SMB
+AXIS,Axis Tegn.retter (1:8,38)
+AXIT,Axis Tegn.retter (2:5)(4/5-95)
+GYS ,Gyda Shipping
+IBYT,Industribygningen Tegn.retter.
+LIV ,LIVA Bil
+OHA ,Oslo Havnelager
+PEP ,Peppe's Pizza
+SKR ,Skrivervik Data
+SYE ,System Etikettering
+Grunnfondbevis
+MORK,Sp.M|re Nye Grunnfondsbevis
+SNOK,Sp.Nor Konv. gr.fondsbevis
+MORS,Spb. M|re gr.f. tegn.retter
+Obligasjoner

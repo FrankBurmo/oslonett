@@ -1,0 +1,51 @@
+# LaTeX2HTML 0.5.3 (Wed Jan 26 1994)
+# Associate image original text (scrambled) with physical files.
+
+$key = q/{}$1over2${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap1004.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}special<<927>>colorpushBlack<<927>>{}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap1012.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}$^<<776>>mbox<<365>>normalshapescriptsize3<<365>><<776>>${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap992.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}$lnot${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap984.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}$pm${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap988.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}fbox<<793>>psfig<<482>>figure=matrix.ps,width=13cm<<482>><<793>>{}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap1020.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}$^<<775>>mbox<<361>>normalshapescriptsize2<<361>><<775>>${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap990.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}$cdot${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap996.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}$div${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap1010.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}$m@thmathchar"ms${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap978.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}$mu${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap994.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}special<<928>>colorpop<<928>>{}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap1014.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}$scriptstyle${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap974.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}TeX{}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap1022.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}$3over4${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap1006.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}$times${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap1008.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}$^<<353>>circ<<353>>${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap986.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}psfig<<445>>figure=logo.eps,width=6cm<<445>>{}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap1018.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}$^<<768>>mbox<<333>>normalshapescriptsizea<<333>><<768>>${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap982.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}$^<<780>>mbox<<389>>normalshapescriptsize1<<389>><<780>>${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap998.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}$^<<782>>mbox<<393>>normalshapescriptsizeo<<393>><<782>>${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap1000.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}$1over4${}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap1002.gif>[IMAGE tex2html_wrap]</A>'; 
+$key = q/{}psfig<<441>>figure=uninett.logo.eps,width=6cm<<441>>{}/;
+$cached_env_img{$key} ='<A NAME=tex2html1 HREF=_1267_tex2html_wrap1016.gif>[IMAGE tex2html_wrap]</A>'; 
+
+1;

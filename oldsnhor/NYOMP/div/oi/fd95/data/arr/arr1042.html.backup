@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1042"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Helseøkonomi. v/ professor i offentlig ledelse Jan Grund."` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Gerson Kommissars Auditorium ved Handelsøyskolen BI, Elias Smithsvei 15, Sandvika."` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="1830"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value="Ingen påmelding nødvendig"` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value="Gratis"` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value="Allmenheten, media samt andre forskningsmiljøer."` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="46"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="BI Stiftelsen"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Sandvika"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with `` ; sykehuskøene, polikernes vonde drøm, og pasientenes mareritt. Finnes det en realistisk løsning? Professor i offentlig ledelse, Jan Grund, vil bbelyse hva som kan gjøres for helseøkonomien i Norge.` -->
+<!-- replace `<option(.*Akershus)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?09.10"?)\s*>` with `` checked>` -->

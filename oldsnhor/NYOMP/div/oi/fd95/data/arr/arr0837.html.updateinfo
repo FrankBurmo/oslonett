@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="837"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="1001 natt - et eventyrball"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Holmenkollen Park Hotel"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Lørdag kveld"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="31"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Universitetet i Oslo"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Holmenkollen Park Hotel"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Studentforeningen Tårnseilerne inviterer alle til ball i Holmenkollen Park Hotel. Avgang kl. 17.56 fra Majorstuen stasjon med egne T-bane vogner. Dansekurs arrangeres onsdag 4. og 11. oktober og torsdag 5. og 12. oktober kl. 19.00 i Vilhelm Bjerknes' hus` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?14.10"?)\s*>` with `` checked>` -->

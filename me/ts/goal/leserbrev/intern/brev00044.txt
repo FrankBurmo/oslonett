@@ -1,0 +1,9 @@
+overskrift: Re: leserbrev-eksempel: smtp
+leserbrev: Ny oppfølger, 3. nivå
+navn: kgn
+publiseres: ja,mail
+navn: kgn
+regdato: 29.9.95 18:35:10
+revdato: 29.9.95 18:35:36
+file: /home/frogner/www/me/ts/goal/leserbrev/intern/brev00044.txt
+ref: /home/frogner/www/me/ts/goal/leserbrev/intern/brev00040.txt

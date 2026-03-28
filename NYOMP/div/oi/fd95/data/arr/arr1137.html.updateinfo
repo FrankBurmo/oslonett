@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1137"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Forskningsmartna i Trondheim "` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Midtbyen og Nordre gate, Trondheims 'Karl Johan'"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="11-18"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value="Helén Eliassen, telefon 73 59 53 22"` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value="Kontakt Helen Eliassen for mer info"` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value="Byens befolkning og kollegamiljø"` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="15"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Universitetet i Trondheim"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Trondheim"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Forskningsmartna på Nordre Fellesarrangement med smakebiter fra et vidt spekter av forskningsmiljøer i Trondheim. TEMA: Miljøforskning i vid forstand ` -->
+<!-- replace `<option(.*Sør-Trøndelag)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?12.10"?)\s*>` with `` checked>` -->

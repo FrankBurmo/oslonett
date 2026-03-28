@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1142"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Forskning på Storhove i Lillehammer"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Høgskolen i Lillehammer på Storhove"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Kl. 12-16"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="70"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Høgskolen på Lillehammer"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``ØF presenterer utsnitt fra oppdragsforskning. HiL presenterer et utsnitt av forskningsaktivitet i høgskolemiljøet. Tema: Fra fokus på Lillehammer til Norge i Europa. Foredragstitler: Den Europeieske historie formes, Geografien endres, Europeeren reiser med gondol til fjellnorge, Fra stubbe til marked, Rema/ Rimi effekten i trelast'nringen, fra Europa til Hollywood, Film bare handelsvare? Formidling ved hjelp av elektroniske bildemedier vektlegges.` -->
+<!-- replace `<option(.*Oppland)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?14.10"?)\s*>` with `` checked>` -->

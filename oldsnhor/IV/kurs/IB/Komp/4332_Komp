@@ -1,0 +1,3326 @@
+%\documentstyle[A4,norsk,fancybox,pstimes,ifipsfonts,psfig,fix,shadow,isolatin,html,pstricks,titlepage,progtext]{article}
+\documentstyle[psfig,html,titlepage,A4,norsk,fancybox,fix,shadow,isolatin,progtext]{article}
+%\input{colordvi} \psset{fillstyle=solid,fillcolor=lightgray}
+\setlength{\parskip}{0.3cm}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.1}
+\addtolength{\fboxsep}{0.3cm}
+\setlength{\parindent}{0cm}
+
+\makeatletter
+\def\l@subsection{\@dottedtocline{2}{1.5em}{2.8em}}
+\def\l@subsubsection{\@dottedtocline{3}{4.3em}{3.7em}}
+\makeatother
+\setcounter{totalnumber}{6}
+
+%
+%Tittel på første side, ikke sidenummer
+%
+
+\title{ \Huge\bf Internet for business  \\
+\vspace{1cm}
+\large\rm Introduksjon til Internet for business brukere
+      }
+% For 1 forfatter bruk neste \author, for 2, bruk neste etter der
+%
+% 1 forfatter 
+%
+%\author{\LARGE \bf
+%\copyright Intervett AS \\
+%Steinar Kjærnsrød \\
+%\tt steinar@oslonett.no
+%}
+
+% 2 forfattere
+\author{\begin{tabular}{|c|c|} \hline 
+    \bf Oslonett AS & \bf Intervett AS \\ \hline Steinar Kjærnsrød& Knut Jørstad
+  \\ \tt steinar@oslonett.no& \tt intervett@oslonett.no \\ \hline
+\end{tabular}
+}
+\makeindex
+
+\begin{document}
+
+
+\begin{rawhtml}
+<center><H1><img alt="Internet for business" src=/IV/gifs/IB.gif></H1></center>
+<p>
+<pre><center><img align=middle alt="Oslonett AS"  src=/gifs/on/oslonett-i.gif>     <img align=middle alt="Intervett AS" src=/IV/gifs/iv.gif></center></pre>
+<BR clear=all> 
+<hr size=4>
+\end{rawhtml}
+
+\newcommand{\href}{\htmladdnormallink}
+\newcommand {\merk}[1]{ {\bf \em #1}} 
+\newcommand {\email}[1]{ {\it \em #1}} 
+\newcommand {\prog}[1]{ {\tt \em #1}} 
+\newcommand {\post}[1]{ {\it \em #1}} 
+\newcommand {\bok}[1]{ {\bf \em #1}} 
+
+\newcommand {\ffig}[3]
+{
+\begin{figure}[ht]
+ \begin{center}
+ \ovalbox{\footnotesize
+   \begin{minipage}{.9\textwidth}
+    \VerbatimInput{#1}
+   \end{minipage}
+        }
+   \caption{\it #2}\label{#3}
+ \end{center}
+\end{figure}
+}
+
+\newcommand {\fig}[3]
+{
+\begin{figure}[t]
+\centerline{\doublebox{\psfig{figure=#1,width=10cm}}}
+\caption{\it #2}
+\label{#3}
+\end{figure}
+}
+
+\newcommand {\ord}[2]
+{ 
+\item[\sl #1 ] #2
+
+\index{#1}
+
+}
+
+
+\begin{latexonly}
+\bibliographystyle{alpha}
+\begin{titlepage}
+\begin{center}
+  \shparbox{15cm}{
+\begin{minipage}[c]{14cm}{ \maketitle \vbox{}}
+\end{minipage}
+}
+\end{center}
+
+
+\thispagestyle{empty}
+\vspace{2cm}
+\centerline{\psfig{figure=logo.eps,height=2cm}\hfill \psfig{figure=iv.eps,height=2cm}}
+
+\end{titlepage}
+
+\newpage
+\end{latexonly}
+
+
+
+
+
+\pagestyle{headings} 
+
+\setlength{\parskip}{0cm}
+\pagenumbering{roman}
+\tableofcontents
+
+
+\newpage
+\pagenumbering{arabic}
+\setlength{\parskip}{0.3cm}
+\section*{Forord}
+\index{Oslonett}
+Dette kompendiet består av utfyllende stoff til kurset \merk{Internet for business} som holdes i regi av Intervett AS og Oslonett AS.
+Kompendiet består av to hoveddeler. Første del er en lett teknisk og praktisk 
+introduksjon til hva Internettet er, hva slags tjenester som finnes og
+hva som evt. er utfordringer og begrensninger forbundet med bruk av de ulike
+tjenestene. Annen del av kompendiet tar for seg hvordan Internettet kan brukes som et
+strategisk virkemiddel for å fremme bedriftens forretningsstrategi. Denne delen
+er igjen delt i tre underbolker, der den første av disse ser på Internet i lys
+av generell samfunnsutvikling mens den andre underbolken tar opp hvordan
+Internet kan brukes kommersielt for salg, kjøp og markedsføring av varer
+og tjenester. Den siste underbolken viser en del eksempler på slike
+tjenester.
+
+Annen hoveddel forutsetter kjennskap til materialet i første del.
+
+Når det gjelder øvrige forutsetninger og bakgrunnskunnskaper for deltagerne, er det
+nødvendig med god forståelse for engelsk skriftlig i forbindelse med de praktiske
+øvelsene. Ellers forutsettes det stort sett ingenting, men det vil være
+en fordel om deltagerne har brukt PCer eller arbeidsstasjoner tidligere.
+
+Bidragsytere til dette kompendiet har vært Steinar Kjærnsrød (Oslonett)
+og Knut Jørstad (Intervett). Forfatterne retter en stor takk til Kjell Øystein Arisland, Mariann Ødegård og Tore Karlsen (alle Oslonett) som har bidratt med konstruktiv
+kritikk.
+
+\section*{Konvensjoner brukt i dette kompendiet}
+Dette kompendiet bruker en del typografiske og layoutmessige
+konvensjoner for å lette leseligheten.
+\begin{itemize}
+\item {\sl Bruk av Internet ``informasjonsadresser'' i teksten}
+
+En Internet informasjonsadresse, eller såkalt URL\footnote{Uniform Resource Locator},
+er en adresse man kan bruke i forskjellige programmer som benyttes
+for å finne og lese informasjon på nettet. Dette kompendiet vil liste opp
+en lang rekke URLer slik at studentene kan prøve disse under selvøvelsene
+i kurset.
+\index{URL}
+I dokumentet vil slike URLer bli vist i form av en fotnote, eksempelvis
+\href{URLen som peker ut Oslonetts sentrale World Wide Web server}{http://www.oslonett.no/}. Dette kompendiet vil etter hvert foreligge i en online versjon,
+og der vil disse URLene v\ae re aktive linker slik at de kan klikkes for
+\aa\ knytte seg opp mot informasjonen de peker ut.
+
+
+\end{itemize}
+
+\section*{Introduksjon til Del 1}
+Dette er et kurs som primært dreier seg om hvordan og hvorfor man kan
+benytte Internet som et strategisk virkemiddel innenfor en bedrifts
+forretningsområder, og ikke et "datakurs" i vanlig forstand.
+
+Intervett og Oslonett mener dog at Internett for de fleste representerer
+noe helt nytt, og at det derfor er viktig å vite litt om hva Internet er og
+ikke er sett fra et mer teknisk ståsted. Slik viten vil være nyttig for å
+forstå kulturen rundt Internet, og forståelse for denne kulturen er
+igjen avgjørende for å kunne bruket mediet mest mulig effektivt og
+riktig.
+
+Bortsett fra en historisk oversikt over Internet og en introduksjon
+til tjenestene, inneholder denne delen også en oversikt over
+hvordan man kan knytte seg til nettet samt litt om Internet i Norge.
+
+\newpage
+\section{Internet historikk} \label{intro}
+ Internet er et "gammelt" nettverk - det så dagens lys allerede på 
+slutten av 60-tallet,  og ble den gang laget som et rent pakkesvitsjet 
+militært nettverk som skulle være en  slags kommunikasjonsbackup i tilfelle 
+atomkrig. Sentrale aktører den gang, var bla. DoD (Department of Defense), 
+MIT og RAND Corporation. Nettet ble dengang kalt ARPANET.
+
+\index{MIT} \index{RAND} \index{Arpanet}
+ARPANET ble raskt populært blandt forskerne som utviklet det, og de populære
+tjenestene  ble utviklet seg til å bli elektronisk post og dataoverførsel, 
+framfor de andre kommunikasjonstjenestene det egentlig var tiltenkt.
+
+Flere institusjoner koplet seg etter hvert til - også i utlandet. 
+Arpanettet (og etter hvert Internettet) er altså i virkeligheten et nettverk 
+bestående av en mengde delnettverk. Det som binder nettverkene sammen, 
+er de såkalte TCP/IP protokollene og routerne.
+
+\index{TCP/IP} \index{Router}
+
+Routerne er uten tvil Internettets viktigste brikker, og bestemmer hvordan 
+trafikk skal sendes gjennom de ulike delene av nettet. 
+
+I 1983 ble den miltære 
+sektoren skilt ut i et eget nett, MILNET, og i 1989 opphørte ARPANET formelt, 
+og Internet overtok.
+Omtrent samtidig ble NSF (National Science Foundation) gitt ansvaret for 
+å drive og bygge ut infrastrukturen i Amerika, og dette førte blandt annet 
+til bedre konnektivitet og raskere linjer mellom øst- og vestkysten, 
+men også bedre internasjonal  konnektivitet. Tilsvarende satsinger ble gjort i andre land (\href{Uninett}{http://www.uninett.no/} i Norge ble stiftet i 1987 og er i dag et A/S eid av KUF).
+
+\subsection{Kommersielle aktører får innpass}
+NSF og andre regionale tilbydere i USA hadde alle relativt strenge regler 
+mht. hva slags  trafikk det var lov å sende over linjene. 
+I utgangspunktet var det kun snakk om  ikke-kommersiell trafikk. Behovet 
+for kommersielle tilbydere ble etter hvert   påtrengende, og det ble derfor 
+åpnet for kommersielle å knytte seg til Internettet. I dag har snart 
+kommersiell sektor tatt igjen FoU sektoren i Internettet, og veksten er
+formidabel og interessen voldsom verden over! Organisasjonen \href{CIX}{http://www.cix.org} 
+(Commercial Internet  Exchange) knytter sammen de fleste av disse tilbyderne 
+verden over.
+
+\subsection{Eierforhold og ansvar for drift av nettet}
+Noe av det mest forvirrende for mange, er at ingen eier eller har 
+totalansvaret for driften av Internet. Derimot kan man snakke om "deleiere" 
+og "delansvar". En Internet tilbyder eier oftest sin egen infrastruktur 
+(eller leier den), og man kan si at  tilbyderen eier sin lille del av 
+Internettet, og har ansvaret for driften av sitt nett fram til dette 
+nettets kontaktflate mot resten av Internettet (dette består som oftest
+av en eller flere routere). 
+
+Men det er klart at et så stort og omspennende nett må koordineres, og det
+finnes et ganske \href{infløkt apparat}{http://intervett.oslonett.no/IV/gifs/Internet-boards.gif} med forskjellige komiteer og standardiserings\-organisasjoner involvert. Svært mye koordineres indirekte gjennom {\bf \href{The Internet Society}{http://www.isoc.org/}}, en ideell interesseorganisasjon for
+utviklingen av Internet. 
+
+\subsection{Utbredelse og demografi i dag}
+\fig{matrix.ps}{Internet utbredelse pr. oktober 1994}{matrix}
+
+Som figur \ref{matrix} viser, er så godt som alle land i verden
+tilkoplet Internet, og av de som ikke er tilkoplet har de fleste mulighet
+til i hvert fall å utveksle elektronisk post med Internet.
+\begin{rawhtml}
+<h4>
+<hr size=3>
+Du kan klikke <a href=http://www.oslonett.no/EXPO94/gifs/matrix.gif>her</a> for å se figuren i full målestokk!
+<hr size=3>
+</h4>
+\end{rawhtml}
+
+Vi kan med rette mao. snakke om et virkelig globalt nett, og 
+\href{veksten er dessuten fortsatt enorm}{http://www.oslonett.no/EXPO94/gifs/nettvekst.gif}.
+
+Det kan være nyttig å se på ``hvem'' og ``hva'' som er tilkoplet nettet, og
+dette kan greiest gjøres ved å se på hvordan Internettet er delt inn
+rent administrativt i såkalte {\it domener}.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\bf Domene & \bf Type organisasjon \\
+\hline\hline
+org & Ikke-kommersiell organisasjon \\
+com & Kommersielt firma \\
+gov & Regjering, forvaltning \\
+edu & Educational. Universiteter, skoler \\
+net & Nettorganisasjon, nettilbyder \\
+"landkode" & F.eks. {\bf no}. Brukes utenfor USA\\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item {\bf org}
+
+Under denne hatten finnes f.eks. organisasjoner som \href{Verdensbanken}{http://www.worldbank.org/} og \href{FN}{gopher://nywork1.undp.org/1}. Det finnes
+en ganske komplett liste over slike organisasjoner \href{tilgjengelig i World Wide
+Web}{http://www.directory.net/dir/organization.html}.
+
+\item {\bf com}
+
+Dette domenet er sterkt voksende og representerer de kommersielle
+akt\o rene i Internet, dvs. helt vanlige firmaer. Dog er dette domenet
+stort sett bare brukt i USA og noen andre land, mens kommersielle
+firmaer i resten av verden befinner seg under det enkelte landsdomene,
+som f.eks {\bf no} her i Norge.
+
+Eksempler p\aa\ store kommersielle firmaer i {\bf com} domenet, er
+\href{IBM}{http://www.ibm.com/},  \href{Microsoft}{http://www.microsoft.com/}, \href{Digital}{http://www.dec.com/},
+\href{Sun Microsystems}{http://www.sun.com/} og \href{Silicon Graphics}{http://www.sgi.com/}. Dette
+var datafirmaer, men vi finner ogs\aa\ firmaer som
+\href{Bank of America}{http://www.bankamerica.com/}, \href{Dun \& Bradstreet}{http://www.dbisna.com/} (reklame) og \href{Mason-McDuffie}{http://www.fractals.com/mmcd/html/mmcd\_intro.html} (eiendomsmegling).
+
+En \href{fyldig liste over flere}{http://www.directory.net/} finnes i WWW.
+\item {\bf gov}
+
+Institusjoner innenfor dette domenet er stort sett amerikanske statlige
+organisasjoner, som f.eks. \href{NASA}{http://http://www.larc.nasa.gov/larc.html} og \href{National Institue of Health}{http://www.nih.gov/} -- og
+ikke \aa\ forglemme det \href{Hvite Hus}{http://www.whitehouse.gov} selv.
+\href{En mer komplett liste}{http://www.directory.net/dir/government.html} ligger ogs\aa\ her i Web.
+
+\item {\bf edu}
+``edu'' står her for ``education''. I EDU domenet ligger alle skoler,
+universiteter og andre undervisningstitusjoner, men det er også her
+stort sett bare USA som bruker dette domenet. Se f.eks.
+\href{http://www.wisc.edu}{University of Wisconsin} og \href{Massachusets Institute of Technology}{http://web.mit.edu}.
+
+EDU domenet er i øyeblikket det domenet med flest registrerte maskiner,
+men COM domenet er det raskest voksende.
+\item {\bf net}
+
+I dette domenet finnes kommersielle leverandører av nettjenester,
+fortrinnsvis Internet tjenester. Se f.eks. \href{UUnet}{http://www.uu.net/} og \href{CERFnet}{http://www.cerf.net/}.
+
+\item {\bf "landkode"}
+
+Hele verden bortsett fra USA bruker såkalte ISO landskoder som toppdomener,
+f.eks. no (Norge), se (Sverige), dk (Danmark),  fi (Finland), uk (England),
+au (Australia) og de (Tyskland) for å nevne noen.
+\end{itemize}
+
+\clearpage
+\newpage
+\section{Grunnleggende tjenester}\label{tjenester}
+Internettet er i dag en sydende og verdensomspennende informasjonsbank
+der informasjon flyter på tvers av alle mulige organisatoriske
+og geografiske skillelinjer. En bruker av Internettet behøver ikke
+nødvendigvis forholde seg til hva slags grunnleggende bæretjenester
+som ligger i bånn av denne informasjonsutvekslingen, han eller hun
+vil allikevel bare bruke et eller annet dataprogram for å aksessere
+tjenestene.
+
+Men i et kurs som dette er det allikevel nyttig å se på hva slags
+grunnleggende informasjonstjenester som benyttes, og vi gjennomg\aa r derfor
+de viktigste her.
+\subsection{Elektronisk post -- Email}
+ \index{email}
+\index{epost}
+\index{elektronisk post}
+Elektronisk post, eller {\it epost} og {\it email} som man gjerne også kaller det, er
+en av de aller eldste tjenestene i Internettet, og er fortsatt i dag en 
+av de mest brukte. 
+
+Selv om de fleste nok ikke har brukt epost på Internettet, har sikkert mange
+brukt bedriftsinterne epost systemer, og som sådan er sikkert 
+tjenesten kjent for mange. Vi gjør allikevel en rask gjennomgang
+av tjenesten her.
+
+Epost minner om vanlig brevpost når det gjelder hvordan et brev
+forflytter seg fra avsender til mottager og hvilke ledd det er
+innom underveis. De enkelte fasene er:
+\begin{itemize}
+\item {\sl Skriving av innhold}
+
+Innholdet skrives vha. en separat tekstbehandler eller vha. det
+postprogrammet man benytter, det er ikke noe spesielt mystisk over
+denne fasen. Noen postprogrammer har imidlertid muligheter til
+å sende annet enn bare tekst - f.eks. lyd, bilde og video. Dette
+har selvsagt bare noen hensikt hvis mottager har anledning til å behandle
+disse datatypene fornuftig.
+
+
+\item {\sl Adressering}
+
+Etter at brevet er skrevet, må det adresseres. Akkurat som med vanlig
+post, må man når det gjelder elektronisk post også kjenne adressene
+til de man vil brevveksle med. Men så kommer man til en viktig
+forskjell når det gjelder elektronisk post  i forhold til vanlig post.
+Vanlige postadresser er (heldigvis) slik at adressen til en og samme
+person ser lik ut over hele verden, og fra alle verdens postsystemer.
+Slik er det dessverre ikke når det gjelder elektronisk post. Her
+er dessverre nemlig adressene avhengig av selve postsystemene avsender og
+mottager befinner seg innenfor, samt selve ombæringstjenesten!
+
+Mao. vil din postadresse kunne se forskjellig ut for to forskjellige
+avsendere -- enten fordi de befinner seg i to forskjellige ``postverdener''
+og/eller fordi brevet på veien fram til deg må innom forskjellige
+ombæringssystemer.
+
+F.eks. er 
+
+\centerline{\post{steinar@oslonett.no}}
+
+ og 
+
+\centerline{\post{dd.rfc-822=steinar(a)oslonett.no;P=internet;A=telemax;C=no}}
+
+begge den samme fysiske postadressen, men sett fra to forskjellige postsystemer.
+
+Denne adresseproblematikken er kanskje en av de største skjærene i sjøen
+når det gjelder effektiv bruk av elektronisk post, men også et område
+det arbeides mye med.
+
+Det finnes også en del muligheter for å få hjelp online, \href{TelePost Communication}{http://www.telepost.no/Welcome.html}
+i Norge har f.eks. kataloger online som hjelper en på vei.
+\index{Telepost Communication}
+
+\item {\sl Frankering og posting}
+
+Etter at både innhold er skrevet og adresse er påført brevet, må det postes.
+Postprogrammet man bruker har da alltid en mekanisme for å ``dumpe brevet
+i postkassen''. 
+
+\item {\sl Henting til postkontor}
+
+Det som faktisk skjer etter dette, er at brevet stort sett umiddelbart
+oversendes til det ``lokale postkontoret'' for evt. videre ombæring.
+Denne oversendelsen skjer gjerne vha. lokalnettet i bedriften.
+
+\item {\sl Sortering}
+
+På det ``lokale postkontoret'' avgjøres det om brevet skal ut i verden
+eller bare til en mottaker innenfor institusjonen. Dette ``lokale
+postkontoret'' er rent fysisk bare et dataprogram som kjører på en bestemt
+maskin i lokalnettet.
+
+\item {\sl Ombæring}
+
+I begge tilfeller bringes brevet nå ut til mottaker. Skal brevet ut
+i verden, vil programvaren sørge for å ``stemple'' brevet nødvendig
+for å sende det i riktig retning.
+
+På sin vei videre til mottakeren er det nå nettet (Internettet) og de
+underliggende adresser\-ingsmekanismene som tar hånd om videreformidlingen
+av brevet. På veien fram kan det godt hende brevet er innom andre
+``postkontor'' ute i verden. Disse vil kunne legge på ytterligere
+``stempel'' for å sørge for at brevet går videre i riktig retning.
+
+\item {\sl Mottak}
+
+Til syvende og sist vil brevet havne hos mottaker, og faktisk kan det
+gå utrolig raskt. Sending av elektronisk post mellom to adressater som
+er på Internettet vil stort sett bare ta 10-30 sekunder! 
+Mottaker vil kunne se at nye brev er kommet ved forskjellige symboler
+eller lydsignaler, og vil også få opp liste over nye brev når postprogrammet
+startes opp.
+\end{itemize}
+
+\subsubsection{Bruksområder}
+Elektronisk post kan brukes til det vi bruker vanlig post til
+og mye mer. Særlig vil det i framtiden kunne bli viktig å kunne poste
+sammensatte dokumenter som består av både tekst, lyd, bilder og video.
+De åpenbare fordelene i forhold til vanlig post er:
+\begin{itemize}
+\item {\sl Det er raskt}
+
+``Tid er penger'' heter det, og dette er selvsagt riktig i mange
+tilfeller. Muligheten til å sende et elektronisk brev mellom to
+forretningspartnere i forskjellige land så raskt som mulig, vil kunne 
+være et meget viktig forretningsfortrinn.
+
+\item {\sl Det er effektivt}
+
+Her kommer man f.eks. inn på elektroniske søke- og arkiveringsfunksjoner som
+kan koples sammen med postsystemene. Dette er selvsagt mye mer effektivt enn
+manuelle journalsystemer. 
+
+Forretningspartnere som befinner seg i forskjellige tidssoner vil ofte
+måtte avtale telefonsamtaler på tidspunkter som blir upraktiske for
+den ene parten. Bruker man i stedet elektronisk post, behøver ikke avsender
+og mottager være til stede samtidig.
+\end{itemize}
+
+\subsubsection{Programmer for å aksessere tjenesten}
+
+Det finnes et vell av programmer for å bruke elektronisk post i dag. Det som
+først og fremst skiller de enkelte programmene fra hverandre, er:
+\begin{itemize}
+\item {\sl Maskinplattform}
+
+Noen programmer finnes bare for noen maskintyper, f.eks. Macintosh, PC/Windows
+eller UNIX.
+
+\item {\sl Mulighetene for utveksling av post med andre postsystemer}
+
+Denne egenskapen er meget viktig. Har bedriften koplinger til et WAN\footnote{Wide Area Network}, f.eks. Internet, vil det være ønskelig at bedriftens interne
+postsystem kan utveksle post transparent med postsystemer utenfor bedriften.
+
+\fig{exmh.eps}{Eksempel på et UNIX postsystem}{exmh}
+
+\item {\sl Mulighetene for sending av annet enn ``ren tekst''}
+
+Det er ikke bare lyd og bilde som faller innenfor denne kategorien, men også
+dokumenter fra tekstbehandlere som f.eks. \prog{Word} og \prog{WordPerfect}. 
+Postprogrammene omtaler gjerne slike tillegg som \merk{vedlegg} eller
+``attachments''. Og selv om et program har mulighet for å sende vedlegg
+på et eller annet format, må dessuten postombæringssystemet ha mulighet
+til å transportere dette og selvsagt mottakeren mulighet til å ta det
+i mot. Det er ikke alltid dette er tilfelle, og derfor eksisterer det
+en jungel av produkter og systemer som er delvis inkompatible.
+\end{itemize}
+
+Figur \ref{exmh} viser et eksempel på postsystemet MH under UNIX.
+\subsubsection{Sammenkopling av postsystemer -- ``mailgateways''}
+
+Det at det eksisterer flere typer postsystemer, skaper selvsagt et
+behov for  å kunne utveksle post  på tvers av disse systemene.
+Eksempelvis bruker Internettet en poststandard som kalles
+\merk{SMTP}\footnote{Simple Mail Transfer Protocol}, mens det
+innenfor offentlig sektor i Norge og andre land er vanlig
+å bruke såkalte \merk{X.400} baserte postsystemer.  I tillegg finnes
+proprietære standarder som f.eks. VIM\footnote{Vendor Independent Messaging}
+og EMS\footnote{Enterprise Messaging System} som er mye utbredt innenfor
+PC nettverk.
+\index{EMS} \index{VIM} \index{SMTP} \index{X.400}
+Det finnes i dag produkter som kan oversette mellom adresseformatene
+for ulike postsystemer. Slike egenskaper er sjelden innebygget
+i programmene man bruker for å lese eller skrive elektronisk
+post, men derimot en del av ``postkontoret'' i lokalnettet.
+Ofte omtales denne tilleggsfunksjonaliten som ``mailgateway''.
+\index{``mailgateway''}
+\index{Telepost Communication}
+TelePost Communication driver f.eks. en mailgateway som gjør det
+mulig å sende post mellom deres X.400 system og Internettet.
+
+\subsection{Diskusjonsgrupper - ``News''}
+ \index{``News''}
+\index{USENET}
+\index{Netnews}
+Denne tjenesten har mange navn, og ``USENET News'', ``News'' og ``Netnews''
+er noen av dem. Vi skal bare omtale dette som \merk{News}.
+
+News er også en av de eldste- og i dag kanskje den mest populære tjenesten
+på Internettet (målt i generert trafikkmengde).
+
+News er egentlig bare en litt annerledes form for elektronisk post, for man sender til
+og leser fra {\it diskusjonsgrupper} i stedet for individuelle personer
+eller grupper av personer.
+
+Navnet USENET er satt sammen av ordene User's Net, men dette er ikke noe
+fysisk nettverk slik Internettet er det, men derimot et åpent logisk
+informasjonsnett der informasjonen distribueres til mange forskjellige 
+fysiske nettverk.
+
+Selv om News er mest utbredt på Internettet, sendes diskusjonsgruppene
+f.eks. inn i andre typer systemer som  BBSer\footnote{Bulletin Board System}
+\index{BBS}, online tjenester som CompuServe og America Online og til
+andre fysiske nettverk som f.eks. BITNET.
+
+Det finnes diskusjonsgrupper for alt mellom himmel og jord (bokstavelig talt!),
+og garantert grupper av interesse for nesten hvilket som helst
+fagområde og forretningsområde.
+
+Gruppene er inndelt i store hierarkier, der de viktigste for oss er
+\begin{quote}
+\begin{tabular}{lll}
+alt & : & (alternative) grupper av mer useriøs art. \\
+biz  & : & (business) Kommersielle postinger, reklame etc. \\
+comp & : & (computers) Her er det massevis av underkategorier. \\
+misc & : & (miscellaneous) Diverse grupper som ikke passer andre steder \\
+news & : & Grupper som omhandler selve News. Spørsmål/svar, skikk og bruk etc. \\
+rec &  : & (recreational) Her finner man hobbygruppene. Den hobbyen som ikke \\
+    &    & har sin egen gruppe her, må være ganske spesiell .. \\
+sci &  : & (science) Vitenskapelige- og populærvitenskapelige grupper \\
+soc &  : & (social) Samfunnsmessige problemstillinger \\
+talk & : & Filosofi, politikk, religion, miljøvern etc.\\
+no  & : & Norsk hierarki med News grupper \\
+\end{tabular}
+\end{quote}
+
+\subsubsection{Bruksområder}
+
+News er et verdensomspennende og helt åpent forum for kommunikasjon 
+mellom mennesker. Det i seg selv er en ganske unik ting og kan brukes
+til mye. Under kriser som f.eks. Gulfkrigen og opptøyene i Kina, ble
+News brukt som et medium til raskt å bringe informasjon direkte fra
+begivenhetenes kjerne ut til folk. Denne informasjonen kom fra den
+jevne mann i gata, og var selvsagt kjemisk fri for sensur og
+redaksjonell påvirkning fra journalister etc.
+
+News kan brukes til hygge og adspredelse såvel som til nytte, og dette
+er avspeilet gjennom det enorme utvalget grupper som eksisterer. Figur
+\ref{newseks} viser et utvalg grupper fra de store News hierarkiene.
+
+\ffig{newsdemo}{Eksempler p\aa\ News grupper}{newseks}
+
+\fig{newusers.eps}{News gruppen news.announce.newusers}{newusers}
+
+Konsentrerer vi oss om nytten, er det vel særlig to ting News er
+velegnet til:
+
+\begin{itemize}
+
+\item {\sl Effektiv måte å få svar på spørsmål}
+
+De tekniske gruppene leses av folk fra hele verden, og felles for de
+fleste av disse personene er at de er interessert i emnet gruppen 
+omhandler, og mange
+av dem har derfor inngående kjennskap til ting. Sender man inn
+et spørsmål til en slik gruppe, vil man som regel få svar i
+løpet av meget kort tid. Svaret kan man få sendt som vanlig
+elektronisk post, eller i form av et innlegg i gruppen slik
+at også andre kan lese svaret.
+
+Den raske responsen vil kunne være meget verdifull, på samme måte
+som med bruk av elektronisk post.
+
+\item {\sl Bruk av News som en ren elektronisk avis}
+
+I en del av gruppene pågår det ikke diskusjoner, det postes kun
+informative meldinger, omtrent som på en oppslagstavle.
+Eksempler på slike grupper er f.eks. news.announce.conferences
+og comp.internet.net-happenings og comp.infosystems.announce.
+
+Atter andre grupper, eller evt. hierarkier av grupper, består
+av seksjoner omtrent som i en avis, og en del av disse har også
+sitt opphav i en avis. F.eks. driver firmaet \href{Clarinet}{http://www.clarinet.com} en elektronisk
+nyhetstjeneste man kan abonnere på via Internettet og News, og
+NTB i Norge driver en liknende tjeneste, men den er foreløpig
+bare tilgjengelig for FoU brukere og forvaltningen.
+
+\end{itemize}
+
+\subsubsection{Skikk og bruk i forbindelse med News}
+
+For at News mediet skal være et effektivt kommunikasjonsmedium med
+et bra signal/støy forhold, krever det at alle deltagerne følger
+en del konvensjoner for hvordan man bruker mediet. 
+
+Dette dreier seg bla. om å gjøre alt for å holde diskusjonen innen en
+gruppe innenfor charteret for gruppen, og det dreier seg om å skrive
+klart og tydelig og ikke bruke unødig mye plass på å si lite, gjenta
+det andre har sagt osv.
+
+Slike konvensjoner er selvsagt viktigst i de seriøse gruppene. For
+grupper innenfor \merk{alt} hierarkiet er man slappere når det
+gjelder dette.
+
+For News som helhet hersker det dessuten en såkalt
+Acceptable Use Policy, ofte bare forkortet AUP. Det viktigste rundt
+dette, er at man ikke tillater kommersielle postinger og reklame,
+unntatt i noen få grupper som er satt opp for dette. Dette gjelder
+først og fremst grupper innenfor \merk{biz} hierarkiet.
+
+Alt rundt skikk og bruk og AUPer finner man i News gruppen
+\href{news.announce.newusers}{news:news.announce.newusers} som alle nye brukere anbefales å lese.
+\index{AUP}
+
+{\it Hvem er det så som bestemmer alt dette og slår ned på misbruk
+og uvettig bruk?}
+
+Svaret er alle og ingen. News er et brukerstyrt medium uten noen
+sentral administrasjon. Trår man over streken, blir man som regel høflig
+forklart hva man har gjort ``feil'' av en eller flere personer.
+
+Ofte er dette personer som frivillig har påtatt seg å være en slags
+administrator for gruppen. Det er da oftest den eller de samme personene
+som setter opp et \merk{Frequently Asked Questions} (FAQ) dokument for gruppen.
+
+\index{FAQ}
+
+Dette dokumentet vedlikeholdes og postes med jevne mellomrom i gruppen, og
+har det formålet å vise leserne hva som er charteret for gruppen, og
+ellers liste opp en del vanlige spørsmål og svar som det viser seg mange
+er opptatt av. 
+
+Listen over News grupper med egen FAQ postes jevnlig til
+\href{news.answers}{news:news.answers} og man kan ellers \href{aksessere den gjennom World Wide Web}
+{http://www.cis.ohio-state.edu/hypertext/faq/usenet/top.html}.
+
+Tross god selvjustis, skjer det fra tid til annen grove overtramp p\aa\
+USENET n\aa r det gjelder skikk og bruk. Den siste saken er den s\aa kalte 
+\href{``Canter and Siegel'' saken}{http://www.futurenet.co.uk/netmag/Features/CnS/CnS.html}. Dette advokatfirmaet var kunde hos Internet 
+leverand\o ren Indirect, og br\o t en rekke USENET regler da de v\aa ren
+1994 postet reklame for et sk. ``Green Card Lottery'' til samtlige
+av verdens News grupper! Dette f\o rte bokstavelig talt til storm 
+p\aa\ USENET, og advokatfirmaet ble sparket ut som kunde fra Indirect
+og fikk dessuten en masse brev fra indignerte brukere verden over. 
+I Internet sammenheng er antagelig n\aa\ firmaet ``d\o dt'', ingen
+vil ha noe med dem \aa\ gj\o re.
+
+\index{Canter \& Siegel}
+
+\subsubsection{Programmer for å aksessere tjenesten}
+
+\fig{netnews.eps}{Bruk av programmet netscape som News leser}{netnews}
+
+Det finnes et vell av programmer for å aksessere News, dvs. lese og poste 
+innlegg, og hver person har gjerne en spesiell favoritt. Med inntoget
+av World Wide Web (se avsnitt \ref{WWW}), har det imidlertid dukket opp en del
+kombinasjonsprogrammer for å aksessere Internet, og programmet
+\prog{netscape} som vist i figur \ref{netnews} er nettopp et slikt
+program. Det er dette programmet vi kommer til å benytte på
+Intervett kursene under demoer og øvelser.
+
+
+\subsection{Dokument- og filoverføring -- FTP}
+ Elektronisk post og filoverførsel var de to første tjenestene som dukket
+opp, og er sammen med News fortsatt blandt de mest brukte, målt i generert
+trafikk på nettet.
+
+Internettets filoverføringssystem kalles FTP - File Transfer Protocol,
+og FTP-programmene kan altså brukes for å flytte filer i begge 
+retninger mellom to vilkårlige maskiner på Internettet.
+
+Personen som starter filoverførselsprogrammet må da selvsagt sitte
+på en maskin på Internettet, og på maskinen man kopler seg opp mot
+må vedkommende enten ha en personlig konto eller bruke den såkalte
+``anonymous ftp'' mekanismen.  \index{FTP}
+
+Konvensjonen for bruk av denne mekanismen er at man logger seg inn med
+navnet \merk{anonymous} og oppgir sin email adresse som passord. I figur
+\ref{FTP} skrev jeg derfor \email{steinar@oslonett.no} når maskinen spør etter
+passord.
+
+\ffig{ftp}{Eksempel på filoverføring -- FTP}{FTP}
+
+I eksempelet i figur \ref{FTP} har vi koplet oss opp mot et av de største
+anonymous ftp arkivene i verden, ved \href{UUNET i Virgina}{ftp://ftp.uu.net}. 
+
+
+Det som ligger i slike arkiv, er vanligvis gratisprogramvare, dokumentasjon,
+rapporter, informasjon om organisasjonen som driver arkivet osv.
+\index{FTP; anonymous}
+Nesten alle litt store organisasjoner som er tilkoplet Internet vil drive
+et åpent FTP arkiv, da dette er en meget effektiv måte og legge ut informasjon
+på til kunder og samarbeidspartnere og andre interesserte. Se f.eks.
+p\aa\ FTP arkivet til \href{Microsoft}{ftp://ftp.microsoft.com} og 
+\href{Novell}{ftp://ftp.novell.com}.
+
+\subsubsection{FTP vs. elektronisk post} 
+
+{\it Når skal man så bruke FTP og når skal man bruke epost?}
+
+Man kan jo bruke både elektronisk post og filoverførsel til å sende et 
+dokument til en annen person. Fordelen med elektronisk post, er at man
+kan sende ting direkte til en persons elektroniske postadresse og trenger
+ikke bekymre seg om hvor personen rent fysisk er, hvilken datamaskin
+hun sitter ved osv. Med filoverførsel må man kjenne navnet på maskinen 
+personen bruker, og man må også ha tilgang til å legge ned informasjon
+der vha. FTP -- enten vha. anonymous mekanismen, eller gjennom at man
+har en konto på vedkommende maskin. Ulempen med epost, er bla. annet at
+ikke alle epost systemer har muligheter til å transportere alle
+typer data, mens dette aldri er et problem når det gjelder FTP.
+
+\subsubsection{Programmer for å aksessere tjenesten}
+\fig{ftp-netscape.eps}{Eksempel på bruk av FTP gjennom World Wide Web}{ftpwww}
+I likhet med for News og elektronisk post, finnes det også her et dryss
+av programmer for å bruke FTP. Eksempelet i figur \ref{FTP} viser det
+vanlige FTP programmet på en UNIX maskin, men for f.eks. en Macintosh
+eller Windows maskin finnes det FTP programmer med grafisk grensesnitt
+slik at man kan klikke seg fram og tilbake i arkivet etter at man er oppkoplet.
+
+Med inntoget av World Wide Web rammeverket (se avsnitt \ref{WWW}) er det også
+mange som foretrekker å bruke WWW programmer for å gjøre FTP. Dette ser vi
+et eksempel på i figur \ref{ftpwww}, dedr vi er koplet opp mot det samme
+arkivet som i figur \ref{FTP}.
+
+\subsection{Fjerninnlogging -- Telnet}
+  {\it Telnet} er navnet på Internettes protokoll for å ``logge seg inn''
+på en maskin over nettet. Dette bruker man til to forskjellige typer ting:
+
+\begin{itemize}
+\item {\sl Fjerninnlogging for å gjøre interaktivt arbeide}
+
+I et stort lokalnett eller WAN\footnote{Wide Area Network} basert
+på TCP/IP er dette meget vanlig. Man bruker da Telnet for å knytte
+seg opp mot en annen maskin i nettet for å gjøre interaktivt arbeide
+på denne maskinen. Dette kan man også gjøre på kryss og tvers i
+Internettet hvis man har aksess til andre maskiner i verden.
+
+Når medarbeidere i en organisasjon er ute og reiser, vil man f.eks.
+kunne bruke Telnet fra Internet aksess punkter ute i verden for
+å nå maskinene hjemme.
+
+\item {\sl Telnet brukt som bæretjeneste for nettbasert tilgang til tjenester}
+
+\ffig{telnet}{Eksempel på Telnet som bæretjeneste}{cdnow}
+
+
+Minst like viktig som det å bruke Telnet til interaktivt arbeide over
+nettet, er muligheten til å bruke Telnet som en {\it bæretjeneste} 
+for en annen tjeneste som kjører på maskinen i andre enden av tråden.
+
+Det finnes mange eksempler på dette. Noen av tjenestene trenger man
+et brukernavn og passord for å bruke, mens andre er helt åpne.
+Se f.eks. figur \ref{cdnow} for eksempel på hvordan Telnet brukes
+for å komme i kontakt med en CD butikk i USA. Den samme butikken
+har også en World Wide Web inngang, demonstrert i figur \ref{cdnow2}. 
+\end{itemize}
+\subsubsection{Programmer for å aksessere tjenesten}
+
+For Telnet finnes det også et godt utvalg av programmer for  å
+bruke tjenesten. Slike programmer er nesten alltid inkludert i
+TCP/IP pakker og Internet aksess pakker.
+
+
+\subsection{Informasjonssøk- og publiseringstjenester}
+De fire tjenestene vi har sett på til nå er  de fire eldste
+grunntjenestene i Internet. Et av problemene rundt å bruke Internet og 
+f.eks. FTP og Telnet, var lenge det at det var meget vanskelig å få oversikt 
+over all informasjonen som var tilgjengelig på nettet. Det fantes ingen
+mekanismer for å ``huske'' ting og steder man fant informasjon, og heller
+ingen mekanismer for å søke seg fram til informasjonen.
+
+I tillegg kom at de forskjellige programmene man brukte hadde kryptiske
+grensesnitt, og grensesnittene var dessuten forskjellig fra
+program til program.
+
+Vi kan derfor i noen grad snakke om Internettets informasjonsparadoks:
+\begin{quote}
+{\sl
+``Internettet er et arnested for åpen informasjonsutveksling på tvers 
+av politiske, organisatoriske og geografiske skillelinjer, men problemet er
+å få oversikt over den store og tiltagende informasjonsmengden''
+}
+\end{quote}
+
+\index{metainformasjon}
+
+Det er derfor behov for hjelpemidler som støtter det vi kan kalle
+{\it metainformasjon} -- dvs. ``informasjon om informasjon''.
+
+Krav til mer moderne informasjonssystemer kan f.eks. være:
+
+\begin{itemize}
+\item Transparent og enhetlig tilgang til all informasjon, uavhengig av
+type og beliggenhet
+\item Søkemekanismer under lokaliserings og navigeringsfasene
+\item Enkle muligheter for ``videreforedling'' som f.eks. lokal utskrift, elektronisk post, lokal arkivering av innhold og ikke minst -- lokal arkivering av metainformasjonen
+
+\end{itemize}
+Det var dermed et stort marked for bedre hjelpemidler, og på slutten av
+80 tallet dukket de første mer moderne informasjonsrammeverkene opp på
+Internettet. 
+ \subsubsection{Lokalisering av dokumenter og programmer - ARCHIE}
+ARCHIE er et klient/tjener basert system som gjør det mulig å lete
+i ``anonymous ftp'' arkiv over hele verden uten å kople seg opp til arkivene.
+
+Dette er mulig ved at tjener-delen av ARCHIE har en beskrivelse av de
+forskjellige arkivene, mens klient-delen kun snakker med disse 
+ARCHIE databasevertene (tjenerne). ARCHIE tjenerne bygger opp indekser over
+de forskjellige FTP serverne med faste mellomrom, og kan også utveksle
+slik informasjon med andre ARCHIE tjenere.
+
+Vha. ARCHIE klienten (det programmet man bruker for å lete) kan man
+så søke etter ord og uttrykk, fil- og dokumentnavn etc., og vil
+få tilbake en liste over FTP arkiver som har dokumenter som matcher
+det man søker etter. De fleste ARCHIE klientene har dessuten en
+mulighet for å downloade fra listen over klaff, slik at man ikke
+behøver å starte FTP for dette.
+
+Figur \ref{archie} viser et eksempel på dette.
+
+\fig{xarchie.eps}{Bruk av archie for å lete etter filer}{archie}
+\index{Archie}
+
+ \subsubsection{GOPHER - distribuert menybasert informasjonstjeneste}
+GOPHER ble funnet opp ved University of Minnesota, og var det første
+interaktive og heldistribuerte Internet informasjonssystemet, mao. 
+et system beregnet på å finne fram og lese informasjon der den befinner
+seg og fra der {\it du} befinner deg.
+
+En Gopher tjener består av en samling ``dokumenter'' og en samling
+menyer. Fra  menyene pekes det ut dokumenter (og evt. bilder)., men
+det kan også pekes til menyer i Gopher tjenere andre steder i verden.
+På denne måten kan Gopher binde sammen informasjon på kryss og
+tvers i Internettet.
+
+Det finnes tusenvis av Gopher tjenere ute i nettet -- både på
+universiteter, offentlige organisasjoner og i kommersielle firmaer.
+
+Det er laget et eget system for å søke i det såkalte ``Gopher space''.
+Systemet kalles \href{Veronica}{http://www.oslonett.no/html/Veronica.html}, og består også av en rekke tjenere rundt i
+verden. 
+\index{Gopher} \index{Veronica} \index{Gopher;Veronica}
+\ffig{GOPHER}{Bruk av gopher}{Gopher}
+
+ \subsubsection{WAIS - distribuert databasesøk}
+\index{WAIS}
+WAIS står for Wide Area Information Servers, og er et klient/tjener basert
+oppslags- og søkesystem på Internettet. 
+
+En WAIS tjener betjener en eller flere indekser, eller databaser om vi vil.
+Databasene inneholder en søkbar liste over innholdet av dokumenter av ulike 
+typer. De inneholder altså ikke dokumentene selv, men informasjon om hva
+dokumentene inneholder samt informasjon om hvordan man kan få tak i
+dokumentene.
+
+En WAIS klient brukes for å aksessere databasene og søke i dem, og til
+syvende og sist få tak i dokumentene man fant når man søker. For å kunne
+gjøre dette, trenger WAIS klienten en beskrivelse av alle databaser som
+finnes og informasjon om hvordan man aksesserer hver enkelt database (dette
+betyr bla. informasjon om hvilken maskin på Internettet som betjener basen
+samt hvilket TCP portnummer WAIS tjeneren lytter på).
+
+Disse databasebeskrivelsene er svært korte filer, og det er vanlig å legge
+opp disse på den maskinen man skal bruke WAIS klienten fra. Siden nye WAIS
+databaser dukker opp rundt i verden og gamle flyttes eller endres, må man
+sørge for å hente oppdaterte databasebeskrivelser fra tid til annen.
+
+
+Heldigvis finnes det et autorisert sted for å hente denne "listen", nemlig
+maskinen cnidr.org (CNIDR står for Center for Network Information Discovery
+Retrieval (tools)). Men fortsatt kan det være ubekvemt for alle og enhver
+å gjøre dette fra tid til annen. Man har derfor gjort en lur ting - man har
+laget 1 WAIS database som inneholder denne listen. Dette betyr at man først
+kan bruke WAIS klienten sin mot denne spesielle databasen. Det man søker
+etter da, er da navnet på WAIS databaser som inneholder relevant info om det
+man egentlig skal søke etter(!), på dette tidspunktet søker man altså ikke etter 
+dokumentene selv.
+
+Når man så får returnert en liste over WAIS baser som er aktuelle for det
+man er interessert i, velger man så ut hvilke(n) av disse man faktisk vil
+henvende seg til i neste omgang. Dette er altså en 2-nivås prosess.
+
+\begin{enumerate}
+\item {\bf Hva slags WAIS baser finnes}
+
+Svært ofte ligger forskningsrapporter og tekniske dokumenter lagt ut
+i WAIS baser, men også mye annet. Bla. er det vanlig å la de store
+USENET gruppene arkiveres i WAIS baser fordi det da er effektivt å
+søke i dem.
+
+\item{\bf Kommersielle interesser rundt WAIS}
+
+WAIS er en av de Internet tjenestene som ble laget med kommersielle mål
+for øyet fra første stund. Initiativtakerne var bla. firmaene
+Dow Jones, Thinking Machines og Apple Computers. På det tidspunkt (1990)
+fantes det liten kunnskap og aktivitet rundt betalingssystemer og 
+betalingstjenester på Internet, men dette feltet er det voldsom aktivitet
+på nå.
+
+For kort tid siden ble således firmaet \href{WAIS, Inc.}{http://www.wais.com/} dannet for å rendyrke
+tankene som ligger bak WAIS.
+\end{enumerate}
+
+
+\subsubsection{World Wide Web (WWW) - distribuert hypermedia}
+ 
+\label{WWW}
+\href{World Wide Web}{http://sunsite.unc.edu/boutell/faq/www\_faq.html} -- ofte bare forkortet \merk{WWW} eller \merk{Web} -- er det desidert viktigste informasjonssystemet som har dukket
+opp på Internettet de siste årene, og får sammen med WWW programmet \prog{NCSA Mosaic} ofte store deler av æren for den
+enorme kommersielle interessen for Internet man nå ser over hele verden.
+
+WWW gjør det nemlig svært enkelt å bruke Internettet, og det er særlig fasene
+vi kan kalle informasjonspublisering, informasjonssøk og informasjonslesing 
+som blir en lek vha. World Wide Web.
+
+WWW bygger på hypertekst prinsipper, men har videreført det tradisjonelle
+hypertekst konseptet til det vi kan kalle ``distribuert hypermedia''.
+
+\fig{hyper.ps}{Hypertekst prinsippene i World Wide Web}{WWW_hyper}
+
+Til forskjell fra vanlig sekvensiell tekst slik vi kjenner det fra
+en bok eller avis, har hypertekst såkalte {\it linker}  i seg som
+gjør det mulig å hoppe til andre steder i teksten, evt. til andre
+dokumenter.
+
+Innenfor WWW kan du også gjøre dette, men her kan dokumentene befinne
+seg på en annen maskin i Internettet! Og det behøver ikke bare dreie seg
+om ``dokumenter'' i snever forstand -- WWW favner nemlig også lyd, bilde
+og digital video.
+
+Og som om det ikke skulle være nok med det -- de fleste andre rammeverkene
+vi har drøftet i dette kurset dekkes også av WWW. Dette betyr bla. at
+``linkene'' våre like gjerne kan være til Gopher tjenere, FTP tjenere,
+WAIS databaser, News grupper og Telnet forbindelser som til andre
+{\bf HTML} dokumenter. 
+
+HTML (Hypertext Markup Language) er kodespråket som benyttes for å 
+kode Web dokumenter, og mekanismen for å overføre dokumentene fra en
+Web server til en Web browser (klient) kalles HTTP (Hypertext Transfer Protocol).
+
+Disse meget kraftige egenskapene til World Wide Web gjør det til et
+fleksibelt og kraftig verktøy for å knytte sammen omtrent all
+mulig informasjon som finnes på Internettet.
+
+\fig{www-arch.ps}{Multiprotokoll egenskapene til World Wide Web}{wwwarch}
+\index{HTML} \index{HTTP}
+\index{World Wide Web}
+\index{WWW}
+\subsubsection{Eksempler på informasjonstjenester basert på WWW}
+WWW har aksellerert utviklingen av mange nyttige tjenester på
+Internettet, og den beste måte å orientere seg på, er selvsagt
+å prøve World Wide Web \aa\  vandre omkring (``surfe'') og se hva som finnes!
+Her er noen eksempler:
+
+\begin{itemize}
+
+\item{\sl Elektroniske aviser}
+
+\href{Flere aviser over hele verden}{http://marketplace.com/e-papers.list.www/e-papers.internet.html} eksperimenterer med Web utgaver av
+aviser og andre publikasjoner. I Norge gjør f.eks. \href{Computerworld}{http://www.oslonett.no/CW/CW.html} 
+\fig{cw.ps}{Computerworld Norge i  World Wide Web}{cw-www}
+dette i samarbeid med Oslonett AS. Det finnes flere slike \href{ over
+elektronisk publiserte aviser}{http://www.jou.ufl.edu/commres/daily.htm}er listene delvis overlapper hverandre.
+\item{\sl Elektroniske museer}
+
+Museer er meget velegnet for opplegg på Internettet. Det finnes da
+også \href{utallige eksempler}{http://www.comlab.ox.ac.uk/archive/other/museums.html} på dette, og Library of Congress i USA har
+vært foregangsfigurer på dette området.
+
+\item{\sl Live formidling av store begivenheter}
+
+Oslonett AS stod for den f\o rste store live formidlingen gjennom
+WWW, da vi under \href{OL p\aa\ Lillehammer}{http://ol.oslonett.no/OL/OL94.html} sendte resultater og bilder
+fortløpende ut på Internettet. Tjenesten fikk store oppslag
+verden over, og for mange mennesker ble dette den viktigste og
+beste dekningen av OL de hadde tilgjengelig.
+
+Siden er det gjort flere liknende live formidlinger, bla. av 
+\href{fotball VM}{http://www.oslonett.no/wc94/index.html}, \href{Holmenkollen Skifestival -95}{http://www.oslonett.no/Skif/HKS.html} og den svenske og \href{norske EU avstemningen}{http://www.oslonett.no/EU/EU.html} h\o sten 1994.
+
+
+
+\item{\sl Offentlig informasjon}
+
+Her er også USA foregangsfigurer, og det er flere prosjekter på statlig
+såvel som regionalt nivå hvor forvaltningen bruker Internettet og Web
+som et middel for å kommunisere med borgerne. Norge er dessverre
+håpløst etter, også sammenliknet med land vi bør kunne sammenlikne
+oss med (f.eks. Sverige).
+
+Det første store prosjektet i denne sammenheng, var 
+\href{byen Paolo Alto}{http://www.city.palo-alto.ca.us/home.html} i California 
+som i dag ligger med nærmest hele forvaltningsapparatet
+på Internettet.
+\fig{paolo.ps}{Paolo Alto -- en hel by på Internettet}{paolo}
+\item{\sl Online shopping, markedsplasser og reklametavler}
+
+\fig{cdnow.eps}{Eksempel på online shopping via WWW}{cdnow2}
+
+Dette er kanskje det mest markante nye markedssegmentet på Internettet
+i dag. Firmaer med nok kompetanse rundt WWW teknologien setter gjerne
+opp tjenesten internt (egen WWW server), men det vanligste er å gå
+til spesialister på dette. Man kan si at man leier seg elektronisk
+kontorplass.
+
+Det finnes i dag et haugetalls elektroniske markedsplasser basert
+på Web teknologi på nettet, og man finner lett fram til disse når
+man er ute og cruiser.
+
+I Norge har vi  Oslonetts \href{``Oslonett Markedsplassen''}{http://www.oslonett.no/html/adv/ON-market.html} og Telepost Communications \href{Scandinavia Online}{http://web.telepost.no/}
+
+\fig{omp.ps}{Oslonett Markedsplassen -- informasjon, kjøp og salg gjennom WWW}{omp}
+
+\end{itemize}
+\subsubsection{Programmer for å aksessere tjenesten}
+Det finnes i dag et knippe med programmer for å bruke World Wide Web, men det som kanskje
+er mest kjent er \merk{NCSA Mosaic}. Dette regnes samtidig som programmet som for alvor
+fikk interessen for Internet i gang verden over. Mosaic var gratis, men et meget kraftig
+og brukervennlig program og spredde seg over verden som en farsott. I dag har det kommet
+mange nye kommersielle WWW programmer til, og det nyeste og mest kjente er nok \merk{Netscape}
+fra firmaet \href{Netscape Communications}{http://www.mcom.com}
+
+
+
+\clearpage
+\newpage
+\section{Internet tilknytningsformer}
+ Det er mange forskjellige måter man kan kople seg opp til Internettet på,
+men vi skiller i hovedsak mellom et \merk{fast samband} og et \merk{oppringt samband}.
+
+\subsection{Fast samband}
+
+Et fast samband vil være basert på faste linjer fra Telenor. Mellom
+tilbyders infrastruktur og kundens nett knyttes telelinjen sammen med
+to såkalte {\it rutere}, slik figur \ref{fast} viser. Figuren viser det
+ikke, men i tillegg til de to ruterne vil det stå et modem mellom
+telelinjen og hver ruter. Dette er spesialmodemer som vanligvis
+levereres av Telenor som en del av et slikt fast linje abonnement.
+
+
+\fig{IP-fast.eps}{Internet tilknytning basert på fast samband fra Telenor}{fast}
+
+Med en slik tilknytning er kunden et fullverdig medlem av Internettet
+og har altså en fast TCP/IP forbindelse døgnet rundt. Behovet for båndbredde
+vil avgjøre hvor rask rask linje kunden abonnerer på. Vanlige båndbredder
+kan være 19.2Kbps, 28.8 Kbps, 64 Kbps, 128 Kbps og 2Mbs.
+
+
+\subsection{TCP/IP over ISDN}
+
+\fig{ISDN.eps}{Internet tilkknytning over ISDN}{isdn}
+I den senere tid har det kommet løsninger som gjør det mulig å route
+TCP/IP over ISDN samband. Konfigurasjonene her minner om et
+oppringt samband, men det er ikke analoge modem i hver ende. I kundens
+ende vil det kunne være en PC eller arbeidsstasjon med ISDN terminaladapter
+eller et ISDN kort -- evt. en ruter med en ISDN linje inn og f.eks. et
+vanlig lokalnett basert på Token Ring el. Ethernet i andre enden.
+I tilbyderenden ser det mer eller mindre ut som ved 
+et fast samband, siden det vanligvis her vil stå en ruter med et ISDN
+kort.
+
+Et ISDN samband vil gi hastigheter fra 64 kbps og oppover, og vil kunne være 
+et meget prisgunstig alternativ til et fast samband for de som ønsker
+høy båndbredde, men ikke er avhengig av 24 timers tilgang. En annen fordel
+med ISDN sambandet, er at det kan brukes til andre ting -- f.eks. 
+telefontjenester samt videokonferanser etc.
+
+\index{ISDN} \index{Token Ring} \index{Ethernet}
+
+\subsection{Oppringt TCP/IP samband -- SLIP/PPP}
+
+Dette er en enklere form for samband. De to ruterne i figur \ref{fast} er
+her byttet ut med to raske analoge modem, og man kjører så seriell TCP/IP
+protokoll over sambandet. Det finnes to serielle TCP/IP protokoller -- SLIP\footnote{Serial Line IP}
+og PPP\footnote{Point to Point Protocol}. I tilbyderenden må man i tillegg
+til modemet dessuten ha utstyr som gjør det mulig å route kundens trafikk
+til og fra Internettet. Dette dreier seg stort sett bare om programvare.
+
+I det øyeblikk kunden er oppkoplet, er man også et ganske så fullverdig medlem
+av Internettet, men altså bare mens man faktisk er oppkoplet. 
+
+Med dagens modemteknologi kan man realisere oppringte TCP/IP samband med
+hastigheter rundt 28.8 kbps.
+
+\index{SLIP} \index{PPP} \index{TCP/IP}
+
+
+\subsection{Internett aksess via oppringt vertsmaskin}
+
+I dette tilfellet er det også to modemer som knytter kunden til Internettet
+via en telelinje. Men den viktige forskjellen her, er at det ikke går
+TCP/IP trafikk mellom kunden og tilbyderen, bare fra tilbyderen og videre
+ut på Internettet. 
+
+Denne tilknytningsformen er skissert i figur \ref{aksess}.
+
+Ved en oppringt vertsmaskintjeneste benytter man samme type modemteknologi 
+som ved SLIP og PPP, og oppnår altså hastigheter opp til ca. 28.8 kbps.
+
+Den store fuksjonelle forskjellen på oppringt vertsmaskin og oppringt
+TCP/IP, er den at man med oppringt TCP/IP har tilgang til tjenestene
+direkte på egen PC. Det betyr at man kan ``shoppe'' Internet programmer
+mer eller mindre fritt og kjøre lokalt på PCen. Ved Internet aksess
+gjennom oppringt vertsmaskin er man (stort sett) henvist kun til det
+tilbudet denne tilbyderen har tilrettelagt på vertsmaskinen. Til 
+gjengjeld kommer man til dekket bord, og slipper problematikk rundt drift
+av TCP/IP tjenestene lokalt på sitt private utstyr.
+
+\fig{Oppringt.eps}{Oppringt samband mot vertsmaskin på Internettet}{aksess}
+
+
+\subsection{Sikkerhetsvurderinger ved Internet tilknytning}
+
+
+\fig{firewall.eps}{Eksempel på en mulig "brannvegg" mot Internettet}{firewall}
+
+Internettet er et såkalt åpent datanett, dvs. et nettverk der man må anta 
+at all datakommunikasjon foregår på åpne linjer, ala det offentlige
+telenettet. Med ``åpne linjer'', menes her at selve trafikken ikke er kodet
+på noe som helst vis.
+
+\index{brannvegg}
+\index{sikkerhet}
+Dette betyr for det første at trafikk kan avlyttes. Det betyr også at "alle
+kan snakke med alle" prinsippet gjelder så fremt  man ikke innfører sperrer og
+begrensninger.
+
+At "alle kan snakke med alle", betyr igjen at en bedrift som knytter seg
+til Internettet kan risikere å blottlegge bedriftens interne datasystemer
+for hele Internettet. Hvis sikkerheten i bedriftens interne nett er god,
+hadde ikke dette behøvd å bety så mye, men all erfaring viser at dette
+er unntaket snarere enn regelen!
+
+I dag finnes det imidlertid kraftige løsninger for å kople bedriftsinterne nett
+opp mot Internettet -- uten at man dermed blottlegger maskiner og informasjon
+i disse lokalnettene. Disse løsningene baserer seg på såkalte \merk{brannveggmaskiner}.
+
+Ideen bak dette, er at man sørger for at all trafikk inn og ut av bedriften
+går gjennom, eller kontrolleres av brannveggmaskinen. Denne maskinen
+har installert spesialprogramvare for å gjøre slik aksesskontroll.
+
+Brannveggmaskinene vil noen ganger operere i nært samarbeid med en eller flere
+rutere som også har mulighet for å filterere trafikk basert på såkalte
+aksesslister i ruteren, men andre ganger ligger disse filtreringsfunksjonene
+i selve brannveggen.
+
+Det er svært mange muligheter og kombinasjoner når det gjelder oppsett av
+brannveggen og ruteren. Noen ganger kan man til og med bruke flere rutere
+og flere brannvegger som virker sammen og implementerer ulike nivåer
+av ``sluser'' mellom bedriftsnettet og Internettet.
+
+Uten at man tråkker bedriftens interne driftsavdeling på tærne(!), må det
+kunne sies at oppsett, drift og konfigurasjon av brannveggløsninger bør 
+overlates til eksperter på dette området! Slike konsulentfrimaer vil
+vanligvis anbefale anskaffelse av en kommersiell brannveggløsning. Eksempler
+på tre gode slike produkter, er \href{Gauntlet}{http://www.tis.com/Home/NetworkSecurity/Gauntlet/Gauntlet.html} fra \href{Trusted Information Systems}{http://www.tis.com/}, \href{JANUS}{http://www.border.com/} fra Border Network Technologies samt \href{Firewall-1}{http://www2.checkpoint.com:8000/firewall-1.html} fra \href{Checkpoint}{http://www.checkpoint.com/}.
+
+
+
+En ganske enkel brannveggløsning er antydet i figur \ref{firewall}.
+
+
+
+
+
+
+
+\clearpage
+\newpage
+\section{Internet i Norge}
+ Internet i Norge var i mange år ensbetydende med å være knyttet til Uninett, 
+dvs. det  landsdekkende nettet av universiteter og høgskoler i Norge. 
+Tilgang til Uninett (og dermed Internet) var forbeholdt forsknings- 
+og undervisningssektoren og noen få firmaer som kunne vise til FoU relatert 
+virksomhet. 
+          
+Uninett fikk etter hvert flere slike firmakunder, og noen lå nok litt i 
+gråsonen. Når samtidig interessen for Internet begynte å vokse ute i 
+bedriftsmarkedet, ga dette i 1993 støtet til kommersielt Internet i Norge.
+     
+I dag tilbyr flg.  organisasjoner full kommersiell Internet tilgang 
+i form av en fast tilknytning for bedrifter:
+
+\begin{itemize}
+ \item \href{Datametrix}{http://www.datametrix.no/}
+ \item \href{Drammensnett}{http://www.drammensnett.no/}
+ \item \href{EUnet Norge}{http://www.eunet.no/}
+ \item \href{MoNet (Mo i Rana)}{http://www.monet.no/}
+ \item \href{Oslonett AS}{http://www.oslonett.no/}
+ \item \href{Telepost Communication}{http://www.telepost.no/}
+
+\end{itemize}
+      
+Med unntak av Oslonett, leverer de  ovenstående først og fremst faste fysiske linjer helt fram 
+til kunden fra et passende regionalt tilknytningspunkt, og i noen grad
+også oppringte samband basert på SLIP (Serial Line IP) og PPP (Point to Point Protocol).
+
+I tillegg er det firmaer i Norge som leverer Internet tilgang basert på 
+et oppringt (evt. ISDN) samband mot en vertsmaskin. De viktigste 
+leverandørene av slike tjenester,  er
+
+\begin{itemize}
+ \item \href{Nano-Data (Telemark)}{http://www.nano.no/}
+ \item \href{Powertech Information Systems}{http://www.powertech.no/}
+ \item \href{Vestnett}{http://www.vestnett.no/}
+\end{itemize}
+
+UNINETT vedlikeholder den komplette \href{listen over norske Internet
+leverandører}{gopher://gopher.uninett.no//UNINETT\%20informasjonstjener/uninett/tilknyting/kommers.internet}.
+
+\subsection{Norske firmaer og institusjoner på nettet}
+
+Flere og flere bedrifter ser i dag nytten av å ha en Internet tilknytning.
+Tar man også med alle de som  koplet opp gjennom en oppringt vertsmaskin,
+blir denne listen meget lang, og den vokser raskt. Interesserte bør
+sjekke opp listen via 
+\href{Uninetts gopher server}{gopher://drs.uninett.no/11/uninettdb/}.
+
+Interessen og veksten i Norge når det gjelder Internet tilknytning er
+nesten like stor som i Amerika, og vi finner dessuten et meget
+bredt spekter av forretningsområder representert.
+
+Det går nesten ikke en uke uten at man kan lese eller høre noe om
+Internet i media, og nå er det langt fra bare tekniske blader ol.
+som tar opp emnet. Siste skudd på stammen er for tiden NRKs 
+World Wide Web satsing gjennom programmet \href{Rondo}{http://www.oslonett.no/rondo.html} sin Web tjeneste
+hos Oslonett AS.
+
+En god oversikt over hva som finnes på Internettet i Norge (og resten av
+Norden), vil man få ved å kople seg til Oslonetts tjeneste {\bf 
+\href{Kvasir}{http://kvasir.oslonett.no/kvasir/}}.
+Kvasir er en slags ``gule sider'' for Internettet i Norge og Norden.
+
+\index{Kvasir} \index{Rondo}
+
+Verdt å legge merke til, er det at det offentlige også har begynt
+å få øynene opp for Internet. Det pågår aktiviteter for å se på
+hvordan Internet baserte informasjonsjenester (i praksis World Wide Web)
+kan brukes internt i forvaltningen, men ikke minst også som en
+infrastruktur for formidling av offentlig informasjon.
+
+
+
+
+
+
+
+  \newpage
+\section{Samfunnsutviklingen og Internet}
+
+
+\subsection{Trender og tendenser som er sammenfallende med generell samfunnsutvikling}
+For de som ønsker å ta i bruk Internet som et profesjonelt verktøy, ligger grunnlaget for
+hvorvidt det skal bli vellykket mer på feltet samfunnsforståelse enn på teknologisk forståelse.
+
+Fremveksten av Internet som fenomen føyer seg bare inn i den lange rekken av teknologiske
+løsninger som faller på plass (tilsynelatende tilfeldig) når menneskene synes å trenge nettopp
+dette produktet. I et slikt perspektiv vil fremveksten av Internet nettopp passe menneskene i
+den industrialiserte verden i det øyeblikket mengden informasjon som kreves for å være godt
+orientert, langt overskrider de mengder informasjon et menneske er i stand til å lagre (med
+lagre her menes både fysisk og åndelig lagring).
+
+For alle oss som er født og oppvokst med et klart imperativ fra våre foreldre; gå ut og skaff
+deg all den informasjon som er mulig og som vi ikke fikk, vi har vel lenge følt endel problemer
+ved et slikt pålegg. Slike imperativ har vel det siste tiåret vært på nippet til å kunne knuse
+mange informasjonssøkere i en slags informasjonsbulimi, med både resignasjon og sterke
+avgrensninger i retning av spesialisering som resultat. For endel yrkesgrupper har dette i hele
+den Taylorianske \index{Taylor}ånd, vært akseptert og i tillegg nødvendig for å ivareta
+komplekse funksjoner med tilstrekkelig kvalitet. For andre yrkesgrupper har en slik
+spesialisering gitt en mer kastrat form, hvor kvaliteten på det som utføres eller besluttes synker
+drastisk ved redusert totaloversikt.
+
+Det morsomme med Internet er at det har like stor verdi både i forhold til spesialkunnskap og
+generell kunnskap, tiltross for så ulike problemstillinger.
+
+Det er dette horisontale og vertikale informasjonsnivået ivaretatt i ett medium, som gir de
+virkelig store perspektiver på hva Internet vil bety for fremtidens samfunn. Men det tar tid å
+tilvenne seg en slik måte å tenke på, kanskje spesielt for den gruppen som vi ovenfor beskriver
+som generalistene. De som bare søker dybdeinformasjon og som ønsker å fortsette med det,
+har en kort vei til direkte nytte av Internet og har små muligheter for å gjøre feil i tilknytning til
+satsing på og bruk av Internet. For de som ønsker å nå et nytt nivå av oversikt som det
+tidligere ikke har vært mulig å inneha må bruke mer tid i planleggingen av
+informasjonstilfanget. Til dette har det allerede kommet såkalte ISL (Informasjons Strategi for
+Ledere) \index{ISL}verktøy. Dette er programmer som tar sikte på å angi visse modeller
+hvormed de mer enn 400 terrabyte med informasjon kan bearbeides.
+
+For at de som tilhører den gruppen som søker vesentlig horisontalt i informasjonsstrukturen,
+men med fordypende avstikkere har vi nedenfor berørt noen av de elementene som vil påvirke
+bedriftsbeslutninger eller offentlig administrasjoners tenkemåter i den videre bruken av
+Internet.
+
+\subsubsection{ Postmodernismen og dens innvirkning på kjøpestrukturen}
+
+Postmodernismen er ikke lett å definere, men beskriver ofte det mangfold av livsingredienser
+som mennesker i den vestlige verden etterhvert (dvs. spesielt de siste 20 år) forsøker å få livet
+til å kunne romme. I tillegg bryter postmodernismen med de tidligere sosiale klasseinndelinger (
+i 3 hovedklasser)som stort sett styrte våre handlingsmønstre. Dette gjør at man kan se en
+høyrepolitiker med skinnjakke i en TV-debatt, mens arbeiderungdommen er i Hemsedal for å
+kjøre slalåm.
+
+Det finnes uenighet blant sosiologer om  postmodernismens betydning  for
+samfunnsutviklingen. Det det ikke hersker noen tvil om er at all vår konsumkultur etterhvert er
+sterkt påvirket av postmodernismen. Det er også et sikkert kjennetegn  at en postmodernist har
+problemer med å kunne ta avgjørelser som er bindende for lang tid fremover.
+
+Forståelse av hvorfor fremveksten av Internet er et resultat av postmodernismen samtidig
+som det postmoderne finner sitt medium i Internet, kan man oppnå gjennom et utdrag fra en
+artikkel av sosiologen Zygmunt Baumann \index{Baumann}.
+
+" Postmodernitet er punktet der moderne oppløsning av bundne identiteter når sin
+fullstendiggjørelse: det er nå alt for lett å velge identitet, men ikke lettere å holde fast på den.
+I det øyeblikk frigjøringen når sin endelige triumf, tilintetgjør den målet. Jo friere et valg er,
+dess mindre kjennes det som et valg. Valget mangler vekt og soliditet. Det kan tilbakekalles på
+kort varsel eller uten varsel - og forplikter ingen, velgeren inkludert. Det etterlater seg ingen
+varige spor, det gir hverken rettigheter eller ansvar, og dets konsekvenser kan forkastes eller
+desavoueres etter for-godt-befinnende så snart de kjennes ubehagelige eller slutter å
+tilfredstille. Friheten slår tilbake som vilkårlighet; den lovpriste evne til å 'sette ting i gang' har
+gitt postmoderne søkere av identitet en Sisyfos' krefter. Postmodernitet er en tilstand av
+vilkårlighet fra det øyeblikk man er klar over at den er uopprettelig. Ingenting er umulig, enn si
+utenkbart. Alt som er, er provisorisk. Ingenting som har vært, binder det som er, mens det som
+er, bare har et svakt grep på fremtiden.
+
+Vilkårligheten behøver ikke nødvendigvis å erfares som maktesløshet. Tvertimot: den kan
+godt være - og er ofte - opplevd som allmakt, (selv om noen ville si, ikke uten grunn, at det
+ligner et lunefullt barns allmakt, når det har fått et ' Lag - Gud - selv -byggesett' i julegave). Alt
+kan gjøres, alt kan gjøres om. Vilkårligheten som livsstil kan oppleves som en tilstand av
+uopphørlig ny-begynnelse og ny i gangsettelse. Nederlag i gårsdagens spill betyr ikke at en har
+mindre sjanser til å lykkes i spillet som starter i morgen, like lite som gårsdagens gevinst sikrer
+seier i dag. Å tenke på storslagne, livslange prosjekter kan være tåpelig, men dagens oppgaver
+kan etterhvert behandles med større letthet. Mens man er opptatt av idiotsikre oppskrifter for å
+løse små kriser og for å få små ting til å skje, kan man glemme å bekymre seg om de store
+kriser - og bagatellisere de små sjanser som gis til å holde fast ved det som allerede er laget.
+
+Det postmoderne liv leves i en by hvor trafikken får nye ruter og gatenavn forandres uten
+varsel. Tilgjengelige kart er ingen garanti for at huset man søker, vil være der ved turens slutt,
+eller for at ruten fremdeles leder en i den retning man hadde lyst til å gå. Fortvilelsen som
+følger, er allikevel grunnløs, da de stadige forandringer i byens attraksjoner gjør det
+usannsynlig at interessen for bestemmelsesstedet vil vare lenger enn selve turen. I en slik by er
+det mest fornuftige ikke å planlegge lange tidkrevende reiser. Jo kortere turen er, dess større er
+sjansen til å gjennomføre den, og dess mindre er risikoen for skuffelse ved veis ende. Et
+fornuftig menneske vil unngå varige forpliktelser og vidt-streifende ekspedisjoner. Å være
+rasjonell i den postmoderne \index{postmoderne} \label{postmoderne}verden, betyr å være en
+omstreifer eller turist, eller å oppføre seg som en av delene."
+
+Vi tror ikke at man i forbindelse med et introduksjonskurs til Internet vil se disse
+sammenhengene umiddelbart. Vårt mål ved å åpne for slike perspektiver er at de kjennes
+nødvendig for å kunne delta i den fremtiden som ligger i dette mediet. Det har ingen hensikt å
+legge om sine brosjyrer fra hardkopier til Internetversjoner, fordi man som en feit, liten,
+sigarrøykende kremmer tror at dette er lurt. Internet er på en måte det første mediet som både
+forplikter i engasjement og forståelse og samtidig er fullstendig uforpliktende. Greier man ikke
+å forholde seg til disse dimensjonene så vil en 'omlegging' til Internet høyst være en kortvarig
+suksess. Eller uttrykt på en annen måte; den spesialisering og distanse som f.eks. har foregått i
+den industrielle epokes massekommunikasjon, har gjort det både mulig, nødvendig og ønskelig
+å sette bort all form for annonsering til spesialister. Vi tror ikke at det er mulig å bestille det
+samme på Internet, man må på en helt annen måte være endel av denne 'byen i evig forandring '
+for å kunne delta.
+
+Dessuten tror vi at når man står på terskelen til å skulle arbeide med Internet, så er det på tide
+at man får litt mer seriøs bakgrunnsinformasjon om 'sjelen' i Internettet. Flere norske aviser har
+hatt en meget skremmende tendens til å beskrive Internet som en eneste stor pornoklubb, hvor
+det finnes animerte bilder av Diana naken. Ved stadig gjentakelse av så infantile, tabloide
+standpunkter så kan det gi en opplysningstrengende allmennhet et ganske skakt inntrykk av
+virkeligheten.
+
+
+\subsubsection{ Sosiologiske forskyvninger / forholdet til fremveksten av symboanalytikeren}Det har  i de 13 årene siden PC-en ble lansert ikke fremkommet det helt store klasseskillet
+som en følge av kjennskap til data eller ikke. Dette har sammenheng med at tiltross for at
+produktivitetsøkningen gjennom PC-bruk har vært tilstede så har de store gevinstene hittil
+uteblitt. Men det er mange som hevder at det er først ved fremveksten av Internet at disse
+gevinstene vil kunne hentes i fullt monn og skillene vil få betydning.
+
+Robert Reich er professor ved Harvard. Han er i tillegg Clintons arbeidsmarkeds-minister.
+Han skriver i sin 'Arbeidsmarked foran 2000-tallet' (SNS forlag 1994) om fremveksten av en
+ny type samfunnsdeltakere (samfunnsklasse er litt foreldet i denne sammenheng) som han
+kaller, 'symbolanalytikerne', \index{symbolanalytikere}en høyutdannet klasse av internasjonalt
+standardiserte mennesker. Dette er den gruppen som skal lede den nye typen 'virtuelle
+bedrifter', hvor selskapet inneholder minimal substans, men hvor en hjernetrust utnytter sine
+opparbeidede nettverk av andre symbolanalytikere til å gjennomføre bestemte idéer eller
+prosjekter.
+
+Dette gjør at arbeidets form kommer til å endres for svært mange mennesker. Vi har
+behandlet de mer organisatoriske endringene i  kapitlet om virtuell organisasjon  .
+\label{virtuell organisasjon}
+Det er mange som hevder at en slik utvikling vil skape et enda større klasseskille, hvor
+fremtidens arbeidsløshet bare vil øke. Man kan ikke oppgradere en hel befolkning til
+symbolanalytikere. \label{symbolanalytikere} Tendensen er der allerede, noen jobber mer enn
+noen gang (når dette skrives på en søndag kveld kl. 2145, kan jeg med utsikt til et atrium i
+Forskningsparken telle 9 personer som er på jobb), mens andre går arbeidsløse. I USA har man
+løst sitt arbeidsløshetsproblem ved at de arbeidsløse gjennom senkede lønninger (fjerning av
+minstelønnstariffer) løser praktiske oppgaver for symbolanalytikerne. Den sterkeste årsaken til
+at man i Norge kan begrense slike effekter er det som Gudmund Hernes kaller "the quality of
+equality". I vårt samfunn i form av at veldig høy andel av befolkningen får utdanning.
+
+Det er klart at flere former for omsetning av varer og tjenester vil endre form som en følge av
+at denne gruppen av symbolanalytikere i flere land allerede utgjør meget signifikante markeder.
+Dette kan som sluttkommentar knyttes til den pussige observasjon vi har gjort at når vi snakker
+om Internet som markedsplass og profesjonelt verktøy, så er alle som hører om dette så
+fryktelig ivrige etter å fortelle oss hvor mange som ikke er på Internet. Dette er hva vi vil kalle
+en klassisk 'hang up' i industrielle tankemodeller. Vårt motto er, gi blaffen i hvem som ikke er
+på nettet og konsentrer dere om de som er der . De som er der er uten opplæringsproblem i
+forhold til f.eks direktebookinger m.m. Det er helt klart at det er lenge til tante Gunda i
+Groruddalen er på nettet, men hva så for oss som er der?
+
+
+
+
+\subsubsection{ Økt globalisering uavhengig av Internet}
+
+Globaliseringen som utviklingstrekk har hittil pågått, og i stor hastighet, helt uten drahjelp
+eller annen påvirkning av Internet. Også innenfor dette utviklingstrekket ved samfunnene kan
+man bruke tesen som for informasjonsstrømmen ovenfor, at uten økt globalisering ville ikke
+Internet vært interessant og uten Internet ville ikke nye stadier av 'den globale landsby' vært
+oppnåelig.
+
+I forhold til næringsutøvelse på Internet er det interessant først å se på faktisk antatt utvikling
+( i tall ) deretter å bruke en mer kognitiv forståelse av hvilke retning globaliseringen vil anta.
+Naisbitt hevder i sin Global Paradox; \index{Naisbitt}
+\index{Naisbitt; Global Paradox, 1994} at Internet
+veksten forventes å fortsette i følgende takt, 300 mill. brukere i 1999, 750 mill. i 2000, 1.5
+milliarder i 2001. Altså med en nesten uinskrenket eksponensiell form.
+
+( I parantes kan vi i denne sammenheng også nevne at Norge har høyere antall host-maskiner
+enn noe annet land, med 5 pr. 1.000 personer, USA har 3,8 pr. 1.000, Australia 3,7, Sveits 3,4,
+Finland 3,2).
+
+Grunnlaget for en økt globalisering er således hva angår oppkoblinger og 'isenkram' tilstede
+og vil uansett foregå i en slik takt at oppkobling til Internet vil være vitalt for enhver bedrift i et
+2-3 års perspektiv.
+
+Hvilke geopolitiske samfunnstrekk som så vil prege utviklingen krever litt andre
+angrepsvinkler enn tidsforskjøvet empiri. Et sentralt trekk i utviklingen er hvilke rolle Asia vil
+spille. Som et ledd i den økte globaliseringen som har pågått (her i perspektivet, etter den
+annen verdenskrig), har en markant endring sosialøkonomisk sett, ligget i at kapital er gjort
+flyttbar. Dette har gjort at all arbeidskraftintensiv produksjon flyttes dit hvor arbeidskraft er
+billigst. Dette betyr også, noe som etter vår mening er sterkt undervurdert i all tenkning
+omkring disse spørsmål, at alle økonomiske teorier om utnyttelse av komparative
+(produksjonsmessige) fortrinn (f.eks. Ricardo) er kullkastet, fordi disse  forutsetter at kapital
+ikke er flyttbar, men lokal. Michael E. Porter innfører i sin bok (Competitive Advantage of
+Nations, the Free Press, 1990) et tilleggselement i form av hva han kaller kompetitive
+(konkurransemessige) fortrinn.
+
+Utfra en sammenholding av forskjellige slike trekk kan man sterkt forenklet si; at vi i dag
+produserer en økende andel av konsumvarer i land hvor arbeidskraften er billig, mens
+grunnlaget for produktene både skapes og tilrettelegges og konsumeres i vesten + Japan. For
+joggeskoproduksjon sitter alle med ansvar for design og livsstilsvurderinger, samt
+imagevurdererne som 'symbolanalytikere' i vestens designmetropoler, og tar for denne delen av
+produksjonen ut opptil 90 % av verdiskapningen. Produsentlandet får for resten av
+produksjonen ca. 10 %.
+
+Det store spørsmålet er om Internet kan tenkes å rokke ved endel slike produksjonsmønstre.
+Flere land f.eks. Sør - Korea er nå ute etter å ta styringen i forholdet til disse 'vestens
+luksusfunksjoner' som det kalles i Business Weeks artikkel om 'Europe and The Push East',
+7.november 1994.
+
+Det man kan se tendenser til er at symbolanalytikernes verdensbilde er så internasjonalt at det
+ikke ligger de samme referanser til 'dem og oss', som de forgangne proprietære kapitalister har
+hatt som et skille mellom øst og vest. Parret med kybersamfunnets
+\label{kybersamfunnet}hjelpende ånd, vil dette bety at Asia på en helt annen måte kan komme i
+posisjon i forhold til både produksjonsmidlene og verdiskapningen via Internet. Dette vil gi
+vesten som Eurosentrisk sivilisasjon det endelige støtet.
+
+Dette faller sammen med det som sosiologer som R. H. Brown \index{ Brown, Richard H. }og F. Feher \index{Feher, F.} ser fra sitt fag sitt ståsted. " The goals and values that have been
+central to Western civilization can no longer be considered universal, and the associated
+'project of modernity' is unfinished because its completion would be disasterous, even if
+possible, particularly on the current Euro-American model. Thus the advent of the
+'postmodern' may be a code- word for the emergence of a 'post-Western' era", bemerker
+Brown. Fehen kommenterer det slik: " True to the spirit of declining worlds, which learn to
+relativize their deities in the face of imported foreign gods, 'Europe' humbly inserts itself and its
+culture in yet another postmodernist innovation, in a 'wider context' of all cultures which are
+supposedly all equivalent.(1987:44)
+
+" Thus, the preoccupation with the postmodern may be a symptom not so much of the
+exhaustion of the modern, as of a belated recognition of its geo-political relocation, the shift of
+its creative momentum away from the west".
+
+Således kan det synes som om spenningen om den totale virkningen av Internet i stor grad vil
+dreie seg om produksjonsforhold som ligger utenfor Internet (f.eks. asiatisk vareproduksjon),
+men hvor nettverket vil fungere som en katalysator for store samfunnsmessige omveltninger
+(økonomisk rivalisering mellom Asia og vesten).
+
+Uansett synes det klart at det er den europeiske og amerikanske kulturen som vil fylle
+softwareinnholdet på Internet. Blant annet vil vel engelsk som felles arbeidsspråk bli en
+standard for hele kloden.
+
+
+\subsection{Trekk ved cybersociety som grunnlag for forretningsmessig forståelse}
+
+Det har i hele fremveksten av TV som medium vært klart at det for mange har fremstått
+som passiviserende. Veldig mye av den fremveksten av såkalte BBS \index{BBS}grupper og
+deretter Internet har fått, kan sees som en reaksjon på ' vi morer oss til døde'-syndromet som
+Neil Postman \index{Postman, Neil}, beskrev allerede
+på 1970 tallet. Dette fra få til mange begrepet som all informasjons- og  underholdningsindustri
+har hatt som filosofi, men som gjennom Internet kan komme til å rakne.
+
+For å kunne drive forretningsvirksomhet eller annen profesjonell tilknytning til nettet, så er
+det derfor viktig å rette opp endel åpenbare misforståelser i forhold til at kybersamfunnet
+forbindes med en introvert aktivitet som er kaldere enn TV verdens.
+
+
+
+\subsubsection{ Kulturforholdene / delaktighet / interaktivitet}
+Endel kulturkommentatorer lever med et inntrykk av at kybersamfunnet lever med en masse
+ikke sosialiserende sinn, med likegyldighet overfor omverdenen.
+
+Dette er en fullstendig villedelse som er oppstått med basis i at man antar i stedet for å vite!
+
+En av de mest kjente kyberfelleskap er the Well i San Fransisco-området. Denne såkalte
+BBS ble berømt fordi en av pionéerene Howard Rheingold, skrev en bok om slike
+kyberfelleskap. ("Virtual Communities: Finding connection in a computerized world"). Howard
+Rheingold \index{virtual communities}konstaterer at der det finnes nettverksteknologi der
+oppstår det uten unntak varme datafelleskap. Et fungerende sivilt samfunn ble gjennopprettet
+med kybersamfunnet som fundament gjennom the Well, i et ellers svært rotløst miljø. Man
+konstaterte at menneskene brydde seg mye mer om hverandre innen the Well enn IRL ( In Real
+Life)\index{IRL} \label{IRL}. I boken forteller han hvordan menneskene som deltok i the Well
+samler inn penger til hverandre i tilknytning til operasjoner, man fikk hjelp i tilknytning til
+jordskjelvkatastrofer og støtter hverandre gjennom vanskeligheter.
+
+Det ser altså ut til at tvert i mot hva man skulle tro, er datanettene det som gir mulighet til
+en varmere kontakt mellom mennesker.
+\index{BBS;The Well}
+
+I de senere år har mange BBS'er tilsluttet seg Internet. The Well beskriver seg nå som en
+liten by med en påkjøringsmulighet til infomotorveien. I motsetning til det geografisk isolerte
+byfelleskap's begrensninger blir datafelleskapet alltid åpent for nye inntrykk.
+(se ellers Oscar Swartz, Dagens Nyheter 20. november 1994, eller kontakt
+oscar@bahnhof.se, for mer stoff om dette temaet.)
+
+Det er slik at Internettet allerede frembyr helt andre muligheter til egenaktivitet enn de
+tidligere underholdningsmedier har gjort. Her kan man søke informasjonen i en interaktiv
+prosess hvor man f.eks. stopper filmen om pyramidene i Egypt for så å bla seg ned i forskjellig
+informasjon og rapporter om arkeologi hvoretter man kan lese til man har fått dekket sitt
+behov.
+
+\subsubsection{Internet kan også beskrives som; frihet, likhet og dårskap}
+I tillegg til å bli svært dominerende og dessuten fostre en masse betydningsløse kjendiser, så
+har TV som nevnt alltid hatt det preget at det lages av noen få for de mange. De produserende
+noen har en tendens til å skulle misjonere sitt budskap overfor de som skal motta. Dermed har
+de som har et budskap uansett måttet senke seg ned på de rene massekommuniserende
+oppmerksomhetsjegerne (markedsførernes) nivå for kommunikasjon. Dette har gjort den
+tilsynelatende konflikten hvor seriøse budbringere, for sakens skyld må endre sitt format til et
+som når frem i stadig høyere støynivåer, som igjen gjør at noen må snakke høyere osv.
+continum.
+
+Dette er en holdning som  man på Internet er komplett fritatt for (foreløpig?). Vi som
+brukere synes ihvertfall at dette er veldig godt, da man kan bruke sin tid på det man
+interesserer seg for og styre sin strøm av påvirkninger gjennom filtre som man selv har
+bestemt.
+
+TV som medium har også den ulempen at den uansett hvordan produksjonene har foregått
+vil fremstå med en sosial slagside. Vi kan uttrykke det slik; TV=upper class domaine, Internet=
+public domaine. Dette gjør at man utmerket godt kan få en bevisstgjøring blant grupper som
+presumptivt ikke skulle være de første på nettet, som vil aksellrere deres tilslutning til et
+medium som ikke 'peker nese' av dem. Det kan godt være at det ville være bedre kulturarbeid å
+distribuere PC-er med nettkort, til ungdommer i forstedene, enn at velmenende kulturarbeidere
+sendes ut og forsøker å engasjere ungdommene med døende kunstformer som teater?
+
+Vi ser til forferdelse at enkelte lettbente fremtidssynsere med dette kan føre bevis for at
+avisene blir skreddersydde, slik at man bare vil ha akkurat det stoffet som interesserer. Vi tror
+dette er en forhastet slutning. Det er klart at det samfunnsorienterende menneske vet utmerket
+godt hvilken verdi det ligger i å lese 'på kryss'. Ellers vil man fremstå som en sosial analfabet.
+Men det man kanskje kan tenke seg er at når man ikke skal søke jobb eller kjøpe bil eller hus,
+så er 75 \% av Aftenposten komplett unødvendig. (Her unntas dens varmeisolerende og godt
+kjente tørke-våte-sko egenskaper, som for Aftenpostens vedkommende aldri vil bli trukket i
+tvil av det turelskende norske folk). Likevel er det kanskje noen som spør seg, om det er
+nødvendig at vi skal avvirke en hel regnskog i året for at Nagell-Erichsen, skal få enda en
+milliard på sin konto. Slike spørsmål vil nok dukke opp parallelt med Internet-mediets
+fremvekst, men at den kryss-rapporterende avis vil forsvinne, aldri!
+
+
+
+\subsubsection{ Er anonymitet alltid uønsket, eller finnes det fordeler ved anonymitet slik Internet gir det?}
+
+I et samfunn hvor vi er gjort til kollektive kikkere av en passiviserende
+underholdningsindustri kan man si at mange mennesker vil foretrekke anonymitet og sine
+trygge omgivelser i forhold til å benytte sin stemme til dekning av et uttryksbehov. Som
+eksempel kan vi bruke Gro's fremferd på en filétfabrikk hvor hun omringet av et lass mediefolk,
+velger seg et offer i en 18 årig blek jente, som plutselig blir spurt om en mening. I denne
+situasjonen hvor alle vulgærelementene i tilknytning til både anakronisme og nyhetsdekning og
+en dæsj underholdning har fått sitt, kan man se en jente som ville være glad over å kunne bruke
+retten til å utrykke seg på Internettets e-mail i stedet. Dersom hun hadde noe å si så kunne jo
+statsministeren svare henne. Selvfølgelig er det en PR gimmick når det hvite hus har lagt seg ut
+med en egen home-page på Internet. Men det er likevel en viktig symboleffekt i dette, alle
+borgere kan gi uttrykk for sitt og alle skal få svar, man trenger ikke en gang andre medier til å
+publisere det, fordi det i bunn og grunn er en privatsak (dersom det ikke er slik at saken faktisk
+er av allmenn interesse).
+
+Det er ikke noe feil ved å være anonym, bare de som skal vite om deg vet det!
+
+Det er slike kulturelle konflikter som de pionére Internetterne er redd for at vulgærmedier
+og en for grådig og ukulturell handelsstand skal ødelegge. Det er langt skjørere kontaktpunkter
+og mer menneskelig forståelse i kybersamfunnet enn det deler av samfunnet utenfor har
+forstått.
+
+Vi må etter å ha vært med i diverse nyhets-grupper si at det  virkelig er et spesielt miljø når
+de store 'kanonene' innenfor sine fagfelt virkelig er med å leser sine nyhetsgruppers post
+(hvilket for enkelte grupper kan være svært tidkrevende) og ikke minst at de svarer, på
+spørsmål fra alle innen gruppen. Chris Locke er f.eks. en konstruktør-guru for
+markedsføringsmall's på nettet. Han er omtalt i datablader som en av de som virkelig kan ta
+skyhøye honorarer i bransjen. I vår nyhetsgruppe er han på lufta med svar, polemikk og
+konsultasjoner flere ganger i uken. Han er endel av gjengen som interesserer seg for det samme
+feltet. Alle 'anonyme-kvardagshelter' kan være med i samme gruppe.
+
+
+
+
+\subsubsection{Samfunnet oppleves etterhvert som en sammensvergelse mot det varige}
+
+Som et grunnlag for å kunne forstå de mer filosofiske tilnærmingene til en forståelse av
+Internet må man betrakte vår kultur sitt etterhvert noe flyktige forhold til det varige. Internet
+kan i praktisk bruk være et hjelpemiddel til å kunne forholde seg til et slikt samfunn med hurtig
+normoppløsning, selvom Internet ikke vil løse noen av de grunnleggende frustrasjoner man
+eventuelt måtte føle i forholdet til en slik verden. Ved å se på sosiologen Zygmunt Baumanns
+betraktning av forholdene kan det også klargjøre litt av vårt poeng for hvordan Internet kan
+lindre, men ikke løse forholdet til omverdenen.
+
+" I våre dager virker det som om alt er med i en sammensvergelse mot fjerne mål, livslange
+prosjekter, varige forpliktelser, evige forbund, uforanderlige identiteter. Det er umulig for et
+menneske å bygge varige håp om jobb, eller yrke, ikke en gang på egne ferdigheter; en kan
+vedde på at om ikke så lenge, vil jobben forsvinne, profesjonen forandre seg til det
+ugjenkjennelige, ferdighetene ikke lenger være etterspurt. Spør deres studenter fra i fjor, og de
+vil fortelle Dem at etterspørselen etter ferdigheter varer kortere enn den tid som trengs for å
+tilegne seg dem. En kan heller ikke bygge fremtiden på partnerskap eller familie; i en æra
+preget av Anthony Giddens' "sammenløpende kjærlighet", varer ikke samhold lengre enn
+tilfredsstillelsen hos den ene av partene. Allerede fra starten gjelder forpliktelsene 'kun inntil
+nærmere beskjed er gitt', og dagens sterke hengivenhet kan kanskje bare forsterke
+morgendagens frustrasjoner.
+
+Tøylesløs inflasjon, lunefulle valutakurser, flyktige formuer fra investeringer, er sammen om
+å gjøre at hver time i livet leves under et usikkert varsel, og at til at 'kontroll over fremtiden'
+flyttes fra beregnelighetens sfære til en sfære preget av sjansespill og magi. Moter som i dag
+ettertraktes av mange og beundres av alle, vil bli gjenstand for latter innen dagen er omme.
+Gårsdagens drømmer vil bli morgendagens mareritt, ting som har vært ettertraktet vil raskt
+miste sin forføreriske makt, dagens stolte eiendeler vil bli søppel lenge før de er ubrukelig eller
+har tapt sin stas, trygge tilholdssteder vil bli arena for de mest skremmende farer, sunn mat vil
+gjennoppstå som gift, hardt tilegnede teknikker for å oppnå det gode liv, vil bringe dødstrusler,
+og selv den tryggeste visdom vil bli avslørt som uvitenhet eller fordom."
+Dersom vi godtar deler av en slik beskrivelse av det samfunnet vi er en del av, begynner vi å
+øyne noen av de dimensjoner som bruken av Internet kan gi. Sentrale stikkord for å kunne
+forholde seg til slike samtidsforhold er; dynamikk, oversikt, tilgjengelighet og ikke minst et mer
+avslappet forhold til fysiske eiendomsforhold enten det gjelder forbruksartikler eller
+informasjon (f.eks. bøker).
+
+Som vi også har behandlet annetsteds i dette kompendiet så er Internet svært godt skikket
+til å ivareta alle disse forutsetninger for å lykkes (eller lindre nåtidsmenneskets smerte).
+
+{\bf Dynamikken} er ivaretatt gjennom alltid oppgradert informasjon. Jeg merker etter et års
+bruk av Internet at man dersom man søker tidsriktig informasjon så er 3 måneder gammel
+informasjon så gammel at man ikke gidder lese det. Mens man derimot innenfor statiske felter
+gjerne leser 'gjennom tilfeldig tilgang' det som ser mest interessant ut, akkurat som ved bruk av
+bøker.
+
+{\bf Oversikten} er ikke naturgitt gjennom Internet heller, med sine 400 terrabyte (høsten 1994)
+med informasjon, men det er uansett det eneste stedet hvor en viss oversikt kan skaffes dersom
+man legger endel arbeid i det, f.eks. ved abbonnementer og en aktiv bruk av hotlist.
+
+{\bf Tilgjengelighet} har vært en av Internet sterkeste sider. Med en nærmest anarkistisk
+grunnholdning så har all informasjon vært gjort til 'public domain' \index{Public Domain}dvs.
+fritt tilgjengelig. Den kommersialisering som Internet gjennomgår vil fortsette og fremtiden vil
+nok selektere brukerne i langt større grad enn i de pionérårene som er tilbakelagt. Men uansett
+så vil det være det eneste stedet, kostnadsvurdert eller ikke, hvor man har en slik
+tilgjengelighet til informasjon, uavhengig av bosted. Ingen land behøver slik sett ikke være
+usentrale i forhold til informasjon ei heller noen deler av et land. Sentralitet i forhold til
+informasjonstilgjengelighet vil således bli (og er allerede) opphevet. Således vil f.eks.
+fremtidens konkurransefortrinn utelukkende måtte bygges på hvem som vil kunne nyttigjøre
+seg informasjonen best og ikke hvor denne er tilgjengelig. Man opphever således ett av perifere
+land /distrikters problem, men likevel det minst viktige. Den som kan nyttiggjøre seg
+informasjon vil og har alltid vært den best skikkede til å tilegne seg den. Det er derfor viktig å
+advare mot overdrevne forestillinger mot at ethvert lokalsamfunn gjennom Internet nå vil
+kunne blomstre fordi likheten i tilgang på informasjon, samtidig,  nå er gjort absolutt. Et
+ressursfattig samfunn /område har ingen nytte av denne informasjonen.
+
+Kybersamfunnet  åpner for en økt bofrihet, men denne er som sådan en overlevning av en
+illusjon, fordi bruken av et kybersamfunn som et andre hjem, ansporer til økt kontakt og felles
+miljøutveksling mellom likesinnede. Tesene om at jo mer 'high tech' et samfunn har desto større
+behov for 'high touch' (høy kontaktflate mellom mennesker) har hittil bekreftet sin berettigelse.
+(Naisbitt: Megatrends, 1985)
+
+Skillet mellom områder som vinner og taper i kampen om bosetting i fremtiden vil nok
+heller stå mellom hvem som klarer å skape et fruktbart miljø for bruken av det kollektive rom
+som kontaktflate mellom mennesker, enn mellom hvem som har mest kunnskap om Internet.
+
+Når det gjelder for våre vestlige kulturer å kunne oppnå  et mer avslappet forhold til{\bf fysiske
+eiendomsforhold} enten det gjelder forbruksartikler eller informasjon (f.eks. bøker), så tror vi
+at Internet kan bidra til store forbedringer.
+
+Det er viktig for bedrifter som skal drive forretning gjennom Internet at det vil komme helt
+nye idéer for at man behøver å ha alt innenfor sin egen sfære, hjem eller bedrift.
+
+Vi merker gjennom vår bruk av Internet flere klart endrede vaner i forholdet til det å måtte
+eie noe for at du skal kunne nyttiggjøre deg det. Det kopimaskinen ikke har greid å redusere av
+opphavsrett tar Internet seg av. Altså utfra vår kulturelle oppvekst er slike tanker uhyrlige, men
+det synes klart at man vil tjene mye på å forberede seg mentalt på en utvikling hvor ikke
+nødvendigvis alle produkter vi i dag kjenner er kommersialiserbare. ( Den videre diskurs rundt
+disse forhold vil bli behandlet i kap. 4.5. Hva er kommersielt i fremtiden ?).
+
+I tilknytning til dette punktet er det som er viktig å merke seg at dette vil  påvirke
+forbruksstrukturen. F.eks så vil bruken av Internet i forholdet til brosjyresøk i forhold til kjøp
+av produkter, føre til en total omlegging av papirforbruket i den industrialiserte verden. Bare i
+England trykkes det 120 mill. turistbrosjyrer hvert år (Sisman, Green Flag International), på
+verdensbasis en middels regnskog bare på turistbrosjyrer. Tilgjengelighet av kunstverk har
+lenge eksistert i reproduksjoner. Gjennom Internet og LCD skjermer på veggen, anses det som
+den høyeste mote blant New York sosieteten å bestille originale kunstverk hjem, som byttes av
+kunsteren hver dag, eller hver 14.dag etter ønske. (Hvordan skal de kontrollere at ikke
+kunsteren også samtidig har levert til en tilsvarende kunde i Hong Kong? eller til fire millioner
+mennesker i Norge?) For første gang i den visuelle kunst's historie vil det ikke lenger kunne
+påvises noe skille mellom kopi og orginal. Dette gjør at man må forholde seg til andre
+holdninger til eiendomsinteressen som er forbundet med endel forbruksgjenstander.
+
+
+\subsection{Trekk ved endringer i næringslivet i forhold til samfunnet}
+
+\subsubsection{ Den virtuelle organisasjonen vil ha lite eller ingen substans}
+For å kunne beskrive den virtuelle organisasjon trenger vi noen grunnleggende definisjoner.
+Det fremste kjennetegnet på den virtuelle organisasjon er at den produserer tjenester eller
+jobber innenfor en nettverksorganisasjon som gjør at den ikke trenger produksjonsmidlene i sin
+organisasjon. F.eks. et designfirma for nye joggesko.
+
+Det man derimot trenger å betjene seg av er et betydelig nettverk. Dette betyr ikke at det
+nødvendigvis er en vellregissert frimurerorden man snakker om, men rett og slett en ny form
+for organisering av bedrifter som langt mindre og spesialiserte bedrifter.
+
+Et annet tydelig trekk (og for de fleste av oss et sympatisk trekk) er at den virtuelle
+bedriften bare forholder seg til reélle verdiskapere i verdikjeden. Den honorære grosserer er
+ikke lenger på laget. Det betyr ikke at ikke f.eks distribusjon kan være en verdifull del av
+verdikjeden, men det kan tyde på at dersom salg over Internet kommer i gang for alvor, så vil
+en del av distributør leddene innenfor forskjellige bransjer gå svært harde tider i møte. F.eks vil
+det innenfor reiselivet være fullt mulig å fjerne det såkalte agentleddet, det vil si det
+katalogproduserende mellomleddet, som produsenten over Internet tilfulle kan utføre i egen
+regi.
+
+Gjennom fremveksten av den virtuelle organisasjonen så vil våre samfunn omdannes til en
+mengde små enkelt foretak som er nødt til å ta en større del av ansvaret for sin egen situasjon.
+Virtuelle organisasjoner vil ikke ha ansatte (kun  unntaksvis). Dette bør være et viktig signal
+for å tilpasse det vell av tjenester som det vil være 'off-spring' til. Samtidig som de rene
+servicefunksjoner som tidliger var de såkalte stabsfunksjoner vil bli en fortsatt vekstbransje
+forutsatt fremveksten av den virtuelle bedrift.
+
+
+\subsubsection{ Nye etiske spilleregler}
+
+De fleste praktiske  råd vi kan gi i forholdet til etiske spilleregler ved ferdsel på nettet er gitt
+i  kjøreregler for annonsering på nettet.\label{kjøreregler for annonsering på nettet}
+
+Det vi ønsker å kommentere litt her er endel kanskje ikke helt åpenbare ting som slår oss at
+det kan være nyttig å vite mer i den holdningsskapende funksjonen før man entrer nettet.
+
+Internet er et strukturet anarki. Dette medfører at mens noen roper på Internet poltiets
+herkomst så roper andre at det viktigste er å beholde friheten nettopp fra samfunnets
+kontrollerende organer. Dette kan sikert virke uvant, men med litt trening så tror jeg de fleste
+nordmenn vil passe meget godt med slike rammebetingelser. Dessuten så tror jeg ikke at man
+vil finne en slik åpen struktur som besværlig i forhold til å gjøre forretninger på nettet.
+
+Det finnes ingen kjente sosiale normer hvoretter man kan gjøre inntrykk på noen på
+Internet. Denne situasjonen er en av de første kjente tilfeller av dette i menneskehetens historie.
+Man har sin adresse med sin @ og det er det. Det er klart at det vil dannes kjente og ukjente
+personer innen Internet, men i høyden kjendiser av forrige århundres noe mer lokale og
+derigjennom antakelige noe mer holdbare fremferd. Dette har villede enkelte kommersielle
+prosjekter i startfasen ved bruk av the killer application Mosaic, som for første gang åpnet
+nettet for bruk av grafikk og bilder. Noen geskjeftige forretningsmenn trodde dermed at den
+mest prangende og påkostede homepage ville gi umiddelbar henrykkelse hos Internet brukerne.
+Dette ble Meckler Web prosjektet  som aldri greide å ta markedet fra GNN (Global Network
+Navigator) som er en langt mer nøktern og fungerende søkestasjon i WWW. Disse gjorde etter
+kundenes vurdering en bedre jobb med anknytning til annen interessant informasjon, som er
+deres funksjon på nettet og Meckler Web ble nedlagt i begynnelsen av november 1994. (Det
+fantes også andre årsaker til sammenbruddet, men også disse lå i grenseoppgangen mellom
+Internet-kulturen og den rendyrkede amerikanske kommersialismen.
+
+
+
+\subsubsection{Fordism and beyond}\label{ford}
+
+Vi har tidligere nevnt elementer som påvirker kjøpestrukturen, slik som postmodernismen. I
+tillegg er Internet det første reélle globale marked verden har sett. Dette gjør at
+nisjeproduksjon blir muliggjort innenfor felter hvor det tidligere ikke var tenkelig. Dette vil
+etter vår mening åpne helt nye perspektiver for geografisk uavhengig produksjon, i tillegg vil
+det åpne muligheter for langt mindre bedriftsenheter.
+
+I forhold til den industrielle epoke hvor samlebåndene tok kontrollen over arbeiderne og
+lange produksjonslinjer gjorde kunden til minimalt valgfri; 'alle kan få hvilken farge på Forden
+bare de velger sort' epoken er over.
+
+Vi tror at en slik utvikling vil føre til en 'reskilling' av arbeidstakere, hvor det ville måtte
+legges inn helt andre kvaliteter i deres arbeid for å produsere for fremtidens markeder.
+Stor er derfor vår forbauselse over at Harward professor Warren McFarlan uttrykker stor
+skepsis ved at Internet vil bidra til at industriarbeidsplasser fjernes.
+
+Vi tror ikke at alle mennesker kan utvikles til å bli de såkalte symbolanalytikerne, men vi
+tror fullt og helt på at de bedrifter som skal produsere for det markedet som Internet vil utgjøre
+vil kreve en helt annen type arbeider, med langt høyere bredde i kvalitetene enn den industrielle
+Ford-epoken har tillatt eller nyttiggjort seg.
+
+Det vil nok aldri bli så vilt som det var i de grunnleggende årene hos Apple, hvor Steve Jobs
+ledet ansettelsesprosedyrene på følgende måte. Når de håpefulle søkerne ankom i sine
+stivpyntede gevanter og med CV og eksamenspapirer under armen, så sa Jobs kontant, det står
+et flipperspill ute i gangen gå ut å spill på det. Hvis du synes at du vant så gå å finne deg noe å
+gjøre og så snakkes vi senere. På forespørsel om hvorfor han benyttet en slik metode svarte
+han, at de som ikke klarer å forholde seg til en slik omstilling av sine forventninger som det de
+møter ved en slik mottakelse, har ingenting i en slik bedrift å gjøre og de innser det selv og
+avskriver bedriften som useriøs og forsvinner igjen. (Nå må det til denne historien tilføes at det
+etter en meget vellykket günderfase, så var det nødvendig med en viss bedriftsøkonomisk
+opprydding i selskapet, men aldri har noen trukket i tvil at de skapte resultater som ingen har
+sett maken til og ingen har en slik kultur bevart over så lang tid. Ansettelse i Apple er selv i
+dag en livsstil mer enn en jobb).
+
+Men det synes klart at bedrifter som ikke bygger om til nettverksorganiseringer og sørger
+for at arbeidernes viktigste forutsetninger i fremtiden er deres hode, har mye å frykte allerede
+mot slutten av århundret.
+
+\subsubsection{ Opphavsrettslige spørsmål}
+
+Dette er et felt hvor Internet fortsatt er under utforming. Det vil derfor for oss være det
+viktigste at vi følger denne utviklingen nøye og at vi rapporterer tilbake til dette kompendium i
+sin online versjon hva som kommer av nye utspill. Av litteratur som behandler dette temaet er '
+Den digitale revolusjonen' av Håkon Gundersen svært utfyllende. Dette er en rapport fra
+forprosjektet "Sysselsetting, opphavsrett og ny teknologi" utgitt av KUF, 15.august 1994.
+
+Sånn allment sett som en tilleggskommentar kan vi si at det oppleves også innenfor dette
+feltet stor grad av conduite og høflighet, hvor man spør om bruk er OK, og hvor man kan
+forusette at materialet eller bilder ikke brukes for videre salg m.m.
+
+Det er klart at det vil oppstå misbruk og det er også klart at endel mennesker må endre sine
+verdensbilder hva angår forholdet til opphavsrett. Man kan nemlig tjene mer på en utgivelse på
+Internet om man tar fem øre pr. lest kopi, enn man gjør ved en distribusjon for det norske
+markedet med 13,5\% i royalties.
+
+I tillegg er det jo svært positivt at man kan gi ut hva man vil utfra sitt eget uttrykksbehov,
+men det er klart at etterhvert som det blir 40 millioner forfattere så vil forlagsfunksjonen
+nødvendigvis bli like viktig. Man vil betale noen for å velge ut for oss hva man skal lese ikke
+nødvendigvis for at de skal trykke det. Altså en rendyrket drømmefunksjon for et forlag,
+likevel ser de Internet som en stor trussel, til og med mot ytringsfriheten !
+
+Men Internetternes lett slentrende anarki er likevel den beste leveregel dersom man er svært
+opptatt av å beskytte sine produksjoner. ' Hvis du er så helvetes redd for tinga dine så hold deg
+til helvete hjemme'.
+
+
+\subsection{ Bedriftsinterne endringer -- strategiske vurderinger i forholdet til Internet}
+I denne delen av kompendiet skal vi drøfte bedrifers behov for å forholde seg til Internet.
+Dette er ikke på noen måte skrevet for å konkludere med at alle på liv og død må koble seg
+opp på nettet med en gang. Vi tror at svaret på detter er så sammensatt  at det for endel
+bedrifter vil være god tid til å lære å forholde seg til Internet, mens det for andre allerede er for
+sent i løpet av første halvår 1995.
+
+Det er særlig tre faktorer knyttet til næringslivet som ligger som en overordnet premiss for
+næringslivets bruk av Internet. Disse faktorene har hittil kanskje druknet noe til fordel for en
+fokusering på den barnlige glede man får gjennom at Internet kan levere en mengde ny
+informasjon.
+
+For næringslivets nyttiggjøring av Internet i en helhetlig strategi er det nødvendig å kjenne
+forholdene rundt følgende:
+
+\begin{enumerate}
+\item En teknologisk utvikling som har gjort produksjonsmidlene desentraliserbare
+
+ Det er ikke
+lenger noen nødvendig synergieffekt gjennom stordriftsfordeler på kostnadssiden, fordi
+produksjonsmidlene koster mindre, med en økt ytelse. Dette gjør at den industrielle epoke står
+innenfor overgangen til en postindustriell epoke hvor fragmentert produksjon er fremtredende.
+F.eks. innenfor klesproduksjon så vil det kun være år før man kan sy i skreddersøm på
+bakrommet av butikken ( på en cymaskin), etter at en tomograflignende maskin har registrert
+alle dine vitale mål. Snittet og stoffene kan man velge på en PC- som er online til Gino Versace
+og tøylageret. Ventetiden til ferdigstilling vil således bare avhenge av hvor lang tid det tar å
+frakte stoffet til butikken. Der hvor stoffet forefinnes f.eks. ved dongeriplagg, så vil man kunne
+få produktet levert etter en halvtime. Selvom konfeksjonsprodusentene i samarbeid med
+moteskaperne snart har skapt oss alle i et bilde hvor vi passer i konfekjon alle sammen, så er
+det vel grunn til å anta at endel mennesker veldig raskt vil forlate konfeksjon når skreddersøm
+blir mulig til samme pris og med umiddelbar levering. Mens jeg tror at
+aluminiumsproduksjonen vil fortsette under samme forhold som nå, da kjøkkenproduksjon av
+aluminium så vidt meg bekjent kan ha et par andre sider som ikke er forenlige, bl.a. vil det
+kreve veldig sterke sikringer.
+Med slike endrede teknologiske forhold vil også alle tidligere benyttede organisasjonsformer
+være noe passé. Taylorismen får i en slik utvikling sin avløsning av nettverksorganisering. Et
+viktig missing link i forholdet til utvikling av globale nettverksorganisasjoner har vært
+mangelen av et desentralisert nettverkssystem. Dette er Internet.
+\item Økt globalisering og derigjennom en økt omskiftelighet i forhold til en rekke ukjente
+faktorer, f.eks. Japanske børsutvikling
+
+Dette er en av de mest markante trekk i næringslivets utvikling de seneste 20 årene. Når
+bankkrakket skjedde i 1929 så fikk man en nedgang med påfølgende arbeidsledighet utover i
+1930 årene. Etter 'black monday' i 1987 så rammet dette Oslo Børs på tirsdag. (Selvom
+forklaringen til årsakene er mer sammensatt, så er det her kun ment å illustrere tidsfaktoren).
+Siden dengang har de største bedriftene tatt dette med risk management i en globalisert
+økonomi alvorlig, men hva med småbedriftene?
+
+\item Økt utdanning i den vestlige verden
+
+ I forhold til å fortsette en industriell produksjon så
+har vi diskutert dette under punkt \ref{ford} ovenfor. Men det er klart at bedriftens muligheter til å
+overleve i fremtiden går gjennom en vesentlig vekt på bedriftens IT-strategi og forholdet til den
+'deskilling' av ansatte som industriell tankegang har vært preget av.
+\end{enumerate}
+
+\subsubsection{ Behovet av en komplett IT-strategi}
+
+Alle vi som har vært næringsutøvere siden PC-ene ble introdusert i 1982, har vel sittet med
+en følelse av at dette har betydd noen store steg fremover innefor endel enkle operasjoner
+(f.eks. tekstbehandling og konstruksjonstegning). Mens på en rekke andre områder så har det
+hele dreiet seg om kjøp av utstyr som man et halvår senere kan kjøpe til halv pris og printere
+som er så vanskelige å konfigurere at man med 4 personer trenger en halv dag for at den skal
+skrive noe annet enn krypterte meldinger. (Det er så man nesten kunne være fristet til å innføre
+en ny måleenhet i tillegg til den i preindustriell epokes viktige hestekraft, så kunne man
+utmerket godt i dataverden snakke om printeroppkoblingskraft). Dette uttrykket kunne stå
+som symbolenhet på den manglende standardisering som har vært oss brukere til del i
+pionérfasene.
+
+ Dette gjør også at bedriften hele tiden har måttet forholde seg til tekniske forhold
+rundt en teknologi som egentlig ikke bedriften skal forholde seg til. Derfor har en god del av
+de investeringene som har vært gjort vært elendig utnyttet og elendig utnyttbare. 
+
+F.eks. i
+forhold til telefaks så ser man hvilke problemer dataindustrien har skapt for sine brukere.
+Faksen brukes i dag av alle, fordi man ikke forholder seg til teknologi, men til noe som alle kan
+bruke. Den har helt siden lanseringen hatt noenlunde samme funksjoner hvilket har gjort at den
+raskt falt i pris og siden har vært utelukkende det man kaller billig.
+
+Er det så noen forbedringer i vente? Noe av det mest positive ved Internet er at man her for
+første gang ser at noe innenfor IT-teknologien også er utviklet til veis ende. Dette gjelder
+spesielt forholdet til dynamisk informasjon. Endringene av dynamisk informasjon skjer på
+Internettet umiddelbart. Sålenge vi i IRL ikke har noen annen definisjon som er raskere enn
+umiddelbart, så kan det heller ikke komme noe medium som forbedrer dette. Vi har altså nådd
+et stadium som ikke kan forbedres. (Selvom det er selvsagt må det tilføyes at hastigheten på
+oppgradering av dynamisk informasjon selvfølgelig er betinget av at de som forvalter
+informasjonen faktisk gjør det).
+
+Innenfor flere andre felter vil det eneste dynamiske være utviklingen selv. Vi kan ikke si noe
+om annet enn at mye av den utviklingen innenfor IT-verdenen vil være en kamp mellom
+produsenter og distributører også i fremtiden.
+
+På bakgrunn av de følelsene av at man mange ganger (i dansen rundt printerne) føler seg
+lurt, er det iverksatt flere undersøkelser av om det finnes fellestrekk blant de bedrifter som
+nyttiggjør seg IT-teknologien med suksess.
+
+Andersen consulting har i samarbeid med det engelske konsulentselskapet PIMS Europe
+gjort en undersøkelse hvor de har analysert 25 virksomheter i USA og Europa. Produktivitet
+og den opplevde kvalitet i virksomheten sett fra kundens side var hovedkriteriene.
+Tre av virksomhetene var norske, en mediabedrift, et sykehus og en industribedrift.
+
+Fire tendenser avtegner seg i undersøkelsen:
+\begin{enumerate}
+\item IT-investeringer som er knyttet til reengineringsprosesser fører til høyest produktivitet
+\item Fastsettelse av størrelsen på IT-investeringene som en relativ andel av omsetningen har
+ingen sammenheng med hvilken avkastning eller nytte organisasjonen har av disse
+investeringene.
+\item Bevisst bruk av metoder og teknikker i endringsledelse øker verdien av IT-
+investeringene.
+\item IT-investeringer knyttet til forretningsmessige målsetninger gir best resultat
+
+\end{enumerate}
+
+Bjørn Boberg i Andersen Consulting, som har ledet den norske delen av undersøkelsen,
+nevner i tillegg at, undersøkelsen viser tydelig at der virksomheten bare har investert i
+videreutvikling og oppgradering av eksisterende rutiner og systemer, har verdiskapningen vært
+liten. Men der man har gjort investeringer med klare målsettinger som støtter bedriftens
+forretningsmessige strategi, har de investerte IT-kronene gitt god avkastning.
+Undersøkelsen viser også at investeringer som er direkte knyttet opp til konkrete
+forretningsmessige mål faktisk kan minske virksomhetenes produktivitet. Som et eksempel på
+dett konkluderer undersøkelsen med følgende: Virksomheter som brukte mer enn 25 \% av sine
+IT-investeringer til infrastruktur uten forretningsmessig forankring, hadde 53 % lavere
+produktivitet enn de som brukte mindre enn 5 \% til slike formål.
+
+
+
+\subsubsection{ Simuleringsverktøy}
+
+Bruken av den oppgraderte informasjon som til enhver tid finnes på nettet og som kan lastes
+ned automatisk i bedriftens informasjonstilgang, vil kunne benyttes svært aktivt innenfor feltet
+simulering, som verktøy for riktigst mulig beslutningsgrunnlag. Den tilgangen man har gjennom
+Internet gjør det faktisk mulig å bygge simuleringsverktøy for alt fra enkle budsjetter i Excel
+som automatisk oppgraderes m.h.p. valutakursutviklingen  eller råvarepriser, til spillteoribaser
+med en kompleksitet som man tidligere ikke har kunnet forholde seg til.
+
+Alle disse mulige verktøyene er i dag generelt lite utviklet i næringslivet. De er likevel
+eksempler på hvor Internet best vil kunne komme til nytte i stadig hurtigere skiftende
+omgivelser. Jeg tror for mange bedrifter at dette vil være et viktigere bidrag til
+overlevelsesevnen enn hvorvidt de skal annonsere på Internet eller ikke.
+Det er klart at en desentralisering av systemer som gjør at SMB bedrifter kan beherske de
+samme styringsverktøy som store bedrifter uten å måtte ha tilsvarende økonomisk eller
+teknologisk fagkunnskap i bedriften, hvilket de svært ofte ikke har, vil kunne gjøre selv små
+bedrifter i stand til å forholde seg til forandringer.
+
+Slike strategiske styringsverktøy vil sammen med langt mer nettverksorganisatorisk
+samarbeid være en viktig bidragsyter til at en liten bedrift skal kunne leve av nisjeproduksjon
+av kun ett produkt. Problemet med en slik strategi i den industrielle epoke har vært at alle
+bedrifter som er avhengig av ett produkt vil være mest sårbar overfor endringer. For å kunne
+holde seg lønnsom over tid må man ha en størrelse som tillater en tilnærmet normalfordeling
+mellom prosjekter som 'går i bøtta', mens andre blir realisert, . Hvor mange norske bedrifter har
+en slik fordeling at de kaster 80 % av sine prosjekter mens de lever svært godt av de resterende
+20 % som realiseres?
+
+De bedrifter som legger inn sin orienteringsevne i forhold til å skaffe seg gode simulerings-
+styringsverktøy i dag vil definitivt være best skikket til den omskiftningstakt som kommer i de
+nærmeste årene. Bare tenk på hva som skjer når driftige asiater (f.eks. satser Kina i øyeblikket
+mye på Internet), begynner å tilby sine produkter direkte på Internet. Deres produksjon har
+hittil vært hemmet at den hele tiden har skjedd i vestens regi, hvilket har 'frarøvet' dem mer enn
+90 \% av verdiskapningen for enkelte produkter, f.eks. joggesko produksjon. Hvordan skal
+vesten møte denne utfordringen?
+
+
+\subsubsection{ Kampen om tilleggsytelsene fra softwareprodusenter, vil fortsette i de neste årene}
+
+
+Både IBM med sitt Warp program og i Microsofts Windows 95, som presenteres i februar /
+mars 1995, vil det ligge direkte aksess til Internet. I tillegg vil kjøperne av programmet få
+tilgang til egenutviklede baser som er forbeholdt dem. Dette vil føre den evige IT-
+problematikken videre, men denne gang med en fri software ytelse som Internet som
+hovedaktør. Skal jeg velge IBM, Mac, eller Microsoft vil være problemer som
+beslutningstakere vil måtte slite med også i årene som kommer.
+
+Vi skal ikke i denne presentasjonen føre noen inngående diskusjon om hva som vil bli
+løsningen på slike problemstillinger, da det ennå i noen måneder synes å være for stor
+usikkerhet om endel av basis for bedriftenes fremstøt mot Internet. Vi kan imidlertid si litt om
+hva som synes å være den grunnleggende strategien fra de nevnte aktørene.
+
+Microsoft vet at de var for sene til å gjøre et fremstøt, i forhold til kontroll av Internet i sin
+nåværende form. (Nettets struktur og anarkistiske grunnholdning vanskeliggjorde dette
+ytterligere). Det som Microsoft nå ser ut til å konsentrere seg om er at de skal bli sentrale i
+utbyggingen av ' the superhighway' dvs. nettet som vil kunne forsyne USA med inntil 150 mbps
+og som dermed muliggjør bl.a. 'video on demand'. Tiltross for Bill Gates posisjon er det
+fortsatt uklart hvor dominerende denne kontrollen vil bli. Det er i tillegg vanskelig å vurdere
+hvorvidt andre teknologiske løsninger (bl.a. pegging og satelitt vil påvirke denne utviklingen). I
+tillegg kompliseres bildet ved at man allerede er inne i en postpolitisk periode hvor Internettets
+brukere utgjør en maktfaktor. Hvor stor grad av kontroll over hva som skal distribueres over
+dette nettet vil Internet brukere finne seg i ? Strategien om en verdensomspennede kontroll
+over dette nettet smaker litt av stormannsgalskap og av markedsmeesig myopia. Det er som
+man tenker at dette skal bli som jernbaneutbyggingen, den som behersker skinnegangen,
+bestemmer hvem som skal få kjøre tog der. Dette er det eneste man med sikkerhet kan si; at
+slik vil det ikke bli.
+
+IBM / Apple / Motorola har i sin Warp strategi tatt sikte på en mer 'jordnær' løsning hvor
+man tar sikte på å bygge opp tilleggsytelser som er eksklusive for deres brukere. Dette vil bety
+en kamp om rettigheter til å sikre seg eksklusive avtaler med de interessante medier, f.eks.
+nyhetsbyråer for kjøp av eksklusive rettigheter til deres nyhetsformidling. Altså en ren
+vidreformidling av betal-TV i en utvidet form. I tillegg vil det gradvis utvikles hjelpe- og
+støtteprogrammer for programmets brukere, f.eks. sjekklister og tilleggsopplysninger for å
+kunne redusere bedriftens kostnader for å oppfylle ISO krav. Innenfor dette feltet vil det jo
+være samme utvikling som vi har beskrevet også innenfor Internet, hvor tjenester og ytelser blir
+belastet med en debitering.
+
+Vårt råd i en slik valgsituasjon er imidlertid klar: Kom dere opp på nettet, det vil uansett
+ikke kunne bli noen blindgater mer, slik kampen mellom DOS /Unix og Wordperfect og Word
+har vært. Eller som vi sier på nettet; the Web has won - who want to loose?
+
+  \newpage
+\section{Internet og forholdet til kommersielle muligheter}
+
+\subsection{Innledning}
+
+\subsection{ Markedføring via Internet; egenskaper som annonse-medium og produkter som passer til slik markedsføring}
+
+De svakheter som gjelder for omsetning av varer og tjenester direkte via Internet er fortsatt
+betydelige og vil påvirke hva det er aktuelt å kunne omsette og derved også markedsføre.
+
+\subsubsection{Internettets svakheter i forhold til kommersiell omsetning pr. oktober 1994}
+
+\begin{enumerate}
+\item Stor usikkert ved å sende  den nødvendig informasjon for en økonomisk transaksjon 'i
+åpenhet'. Her arbeides det på spreng med flere metoder som antas å løse problemene innenfor
+perspektivet av ett år fra høsten 1994. Noen nye progammer er allerede klare.
+
+\item Identifikasjon av kjøper og selger. Manglende identifikasjon av hvem kjøperen er har vært
+påaktet en stund, selvom de som selger produkter rapporterer at dette ikke er noe stort
+problem, så er jo dette knyttet til et forhold hvor man skal sende produktet til en post adresse.
+Hvordan kan du vite at den du kjøper din nye Mercedes av er en autorisert forhandler og ikke
+en 14-åring som akkurat har fått seg modem og konto i Sveits.
+\end{enumerate}
+
+Disse to punktene gir som resultat at man pr. i dag ikke engang er på samme nivå for
+betalingsformidling, som f.eks. ved bruk av kredittkort som ved kupongannonser i et ukeblad.
+
+\subsubsection{Internettets kjennetegn som annonsemedium}
+
+Sammenliknet med tradisjonelle medier som radio, TV (inkl. tekst-TV) og aviser,
+har Internettet en del unike egenskaper som både informasjonstilbyder og
+konsument vil sette pris på.
+
+\begin{enumerate}
+\item	    Et virkelig globalt marked
+
+Internettet er en av verdens største og raskest voksende globale markedsplasser, og i tillegg en
+ideell målgruppe for mange annonsører: Brukerne er for det meste ganske unge, godt utdannet,
+relativt kjøpesterke  og meget motiverte. Imidlertid er ikke Internettet det man vil kalle et
+«massemarked», men snarere en samling virtuelle samfunn med hver sin  egenart. Utfordringen
+for annonsører, er å finne metoder som når interessante målgrupper disse på en enhetlig måte.
+
+\item	   «Content-based advertising»
+
+Tradisjonell reklame har stort sett bare ett formål - nemlig å tiltrekke seg leserens
+oppmerksomhet så ofte som mulig, og å vekke assosiasjoner. Virkemidlene for å oppnå dette
+er ulike, alt avhengig av mediets egenskaper, men uansett kommer selve produktets egenskaper
+ofte fullstendig i  skyggen. I tillegg er plassen (aviser) og tiden (radio og TV) dyrbar, så her
+gjelder det å få frem budskapet mest mulig effektivt og raskt. Det er de visuelle eller
+audiovisuelle virkemidlene samt gjentagelsens makt som  skal selge produktet.
+
+Disse begrensningene eksisterer i svært liten grad på Internettet. Her har man mulighet til å
+tilby mer komplett og strukturert informasjon, ikke bare blikkfang. Fortsatt er det selvsagt
+mulige å bruke virkemidler for å tiltrekke seg en leser, men etter at leseren «er på kroken», har
+man helt andre muligheter til å tilby verdifull informasjon om de produktene man skal forsøke å
+selge.
+
+\item	    Aktiv vs. passiv reklame
+
+I vanlige medier blir man overlesset med  reklame og annen informasjon man ikke er interessert
+i. Dette har man sett tendenser til på Internettet gjennom sk. «spamming» (massedistribusjon)
+av News grupper, men generelt er det slik at man som konsument aktivt må oppsøke
+informasjonen.
+
+Det å finne fram til informasjon, det være seg reklame eller andre ting på Internettet, kan i seg
+selv være et problem, men generelt er det en god ting at man selv må oppsøke informasjonen,
+evt. angi hva slags informasjon man er på jakt etter til intelligente agenter.
+
+\item	    Bedre «treffrater»
+
+Innenfor reklame og seerundersøkelser opererer man med «hit-rates», dvs. prosentvis hvor
+mange reklamen vekker interesse hos i forhold til de som ser reklamen. Prosenttallene her er
+lave, men til gjengjeld kan totalvolumet være stort. Siden man på Internettet selv må oppsøke
+informasjonen, vil en annonsør vite at de som kopler seg opp er genuint interessert, eller i det
+minste nysgjerrige. Dette betyr at man som    annonsør kan konsentrere seg ytterligere om å gi
+god og saklig informasjon, ikke bare vekke oppmerksomhet!
+
+\item	    Interaksjon
+
+Det eneste reklamemediet som i dag tilbyr en viss interaksjon med brukeren, er tekst-TV.
+Denne interaksjonen er dog meget sparsom og svært tungvint. I de andre mediene er man
+fullstendig prisgitt annonsøren og det vedkommende på forhånd har bestemt at man skal få se
+og høre.
+
+På Internettet, og f.eks. vha. rammeverk som World Wide Web, eksisterer ikke slike sperrer.
+Man kan få til ulike grader av interaksjon, og poenget med interaksjonen vil være at brukeren
+til enhver tid bestemmer. Dette krever selvsagt at informasjonen er lagt ut slik at interaksjon er
+mulig.
+
+\item	    Oppdatert informasjon til enhver tid
+
+I tradisjonell reklamesammenheng er ikke dette det store poenget (siden reklamen først og
+fremst tjener som blikkfang), men når det gjelder f.eks. distribusjon av brosjyrer og kataloger
+blir dette derimot meget viktig.
+
+Legger man en katalog eller brosjyre ut på Internettet vha. World Wide Web, har man alle
+muligheter til å holde denne oppdatert til enhver tid.
+
+\item	    Reduserte brosjyrekostnader og billigere produkter
+
+I tillegg til det å holde produktkatalogene sine oppdatert, vil man kunne spare store penger på
+å redusere, evt. helt fjerne, utgifter til trykking og distribusjon. Dette vil til slutt kunne gi en
+forbrukergevinst, ved at de aktuelle produktene kan selges billigere.
+
+En undersøkelse i USA viser f.eks. at en tenkt direct-mail kampanje til 250.000 mennesker vil
+koste i området \$390.000, mens utvikling og ett års driftkostnader for en sofistikert Internet
+server som vil inneholde den samme informasjonen, selv medregnet 'isenkram' investeringen, vil
+koste under det halve. Samtidig en slik brosjyre ha en prospektiv målgruppe på 20 millioner
+mennesker!
+\end{enumerate}
+
+\subsubsection{Hva kjennetegner produkter som er spesielt velegnet for salg på Internet?}
+
+\begin{enumerate}
+\item Tjenester
+
+Tjenestesalg er det som i første rekke har spesielle fortrinn over Internet. Spesielt fordi flere av
+tjenestene i det postmoderne samfunn dekker så små nisjer at disse innenfor rammen av
+massekommunikasjon innenfor tradisjonell markedføring ville være utenkelig å betjene.
+(betjene vil i denne sammenheng si bekjentgjøre). Spesielt vil dannelser av nettverk på tvers av
+landegrenser få helt nye muligheter og gjøre det mulig å rendyrke spisskompetanse i enkelte
+miljøer som ellers ville ha vært for små, f.eks. Norge. Slike nettverk finnes allerede på nettet og
+noen av dem er godt synlig tiltross for at de er små bedrifter.
+
+\item Høy interraksjon mellom kunde og leverandør.
+
+Det snakkes om Internet som mediet som kan skape en periode hvor "the customer driven
+company"2) blir en realitet. Internet er allerede et medium hvor dialogen om bedriftens tanker
+og produkter diskuteres med kunden på et åpent nett! Dette vil bl.a. kunne føre til at endel
+virksomhet hvis eneste budskap til verden er at de har til hensikt å tjene penger, kan oppleve at
+dette budskapet er i snaueste laget. Det viser seg at bedrifter som har en klar misjon og visjon
+og som er preget av engasjement for sitt produkt er de eneste som så langt kan vise gode
+resultater på Internet.
+Det vil nok oppleves som hardt når det under den offisielle turistinformasjonen for London er
+laget en egen brukernes liste med; "bad reputated Hotels" , hvor man kan lese klagerens
+innvendinger mot det hotellet han fraråder. I parentes bemerket er det modig gjort av London
+Tourisboard å åpne for en slik dialog. Slikt mot er ofte nødvendig for de produkter som skal
+selges over Internet.
+
+\item Produktene som markedsføres er knyttet til store mengder dynamisk informasjon.
+
+Internettets store styrke ligger i muligheten til en umiddelbar respons på oppgradering av
+dynamisk informasjon. Alle bedrifter har noe av dette f.eks. variable priser i pakt med
+kursutvikling på valuta. Men det er bedrifter som har ekstremt mye dynamisk informasjon og
+som med f.eks. et stort globalt forhandlernett på tusener av anknytningspunkter, opplever
+opptil års treghet i distribusjon av korrekt oppdatert informasjon. F.eks. så har flere
+bilprodusenter og produsenter av komplisert teknisk utstyr allerede en tid lagt ut alle delelister
+og tilhørende bilder på sitt nett, beregnet på forhandlere og verksteder.
+
+\item Ytelsen er elektronisk (f.eks. CD'er, bøker)
+
+Automatisk overføring av informasjon som er elektronisk lagret har ikke skutt fart ennå, p.g.a.
+de forhold som er nevnt innledningsvis, i forhold til betalingsformidlingen. Men de som satser
+på dette er allerede klare med teknologien, selvom det fortsatt vil være 'tungt', ja på grensen til
+økonomisk uhensiktsmessig å laste CD-mengder med data over nettet. Markedsføringen av
+slike produkter vil ha den enorme fordelen at potensielle kunder kan teste deler av produktet
+hjemme og f.eks. slippe å stå i en svett platebar i selskap med tyggegummibefengte
+(h)øretelefoner. Den andre åpenbare fordel er lagerholdet. En god platebutikk i dag kan ha
+opptil 2.000 titler på lager. En svært god bokforretning (Tanum, Norli) har ca. 15.000 bøker.
+'Music now' som det er henvist til på annen plass i dette dokumentet har 140.000 platetitler,
+'New bookstore' har 280.000 boktitler.
+
+\item Internet er ypperlig der det er mange mellomledd og disse samtidig er 'i veien' for
+direkte kommunikasjon med kunden.
+
+I svært mange bransjer er det et problem i forhold til global handel at distribusjonsveiene for
+varene nødvendigvis får mange ledd. Dette gjør at det ofte også står mange nivåer i veien for
+en dialog med kunden. Dette har vært en akseptabel form i tilknytning til masseproduksjon til
+et massemarked. Etterhvert som massemarkedene svinner og fragmenteres så vil Internet være
+der som sendt fra himmelen for de produkter som ønsker en global markedsføring av et lokalt
+produkt. Internet vil gjøre 1)Naisbitt's "  think globally- act locally"-teser virkelig aktuelle i
+årene som kommer.
+\end{enumerate}
+
+\subsection{De mest markante metode-endringer ved markedføring via Internet}
+
+\subsubsection{ Vil bruken av Internet føre til markedsføringens store paradigmeskifte?}
+
+Dette spørsmålet er det i øyeblikket ikke mulig å gi noe entydig svar på. Det som er mulig er å
+se nærmere på hvilke endringer som er betydelige og som fremstår som kommende endringer i
+tilnærmingen til markedet, ved bruk av Internet.
+
+\begin{enumerate}
+\item Informasjon 'at hand when needed'.
+
+Med den flom av informasjon som ethvert menneske i den industrialiserte verden blir utsatt for
+så blir det vanskelig å lagre produkt informasjon til påkommende tilfelle. Internet er således et
+fantastisk medium, hvor man er helt trygg på at denne informasjonen alltid finnes. Dette er en
+av de viktigste grunner til at stadig flere ønsker å samle sin informasjon gjennom Internet.
+
+\item Kundestyrte bedrifter
+
+Det at man som kunde søker informasjon når man trenger det, gjør at mye av superlativbruken
+ikke lenger er nødvendig. Dette kan være et forbigående fenomen som vil endres når kampen
+om å synes tiltar på nettet. Dette gjør foreløpig bruken enklere og gir en klar følelse av en mer
+troverdig kommunikasjon, noe som overfor de brukergrupper det her er snakk om antakelig
+virker mer salgsstimulerende enn muzak har gjort.
+
+Ved at kunden selv søker opplysningene vil det kunne oppstå helt nye former for
+salgskommunikasjon. F.eks. så er det rundt Arctic Adventours sin brosjyre i ferd med å dannes
+diskusjonsgrupper hvor de som er spesielt opptatt av hvalforskning eller telemarkskikjøring blir
+oppfordret til å delta. En av effektene er at én kunde med en idé kan skape 'spin off' for nye
+produkter som han selv ønsker å finne kunder til.
+
+\item Bedriftsenhetenes størrelse blir mindre interessant enn produktets kvaliteter?
+
+I motsetning til et av de viktigste grunnlag for industriell produksjon, nemlig at lave priser
+kommer som et resultat av synergieffekter ved masseproduksjon, så fremstår Internet som
+skreddersydd for de produkter som åpnr for individuell tilpasning og småskalaproduksjon.
+Dette blir mulig fordi man i motsetning til tidligere nå kan produsere i enda smalere nisjer, fordi
+man kan kommunisere med hele verden som marked umiddelbart ved lansering.
+
+\item Vil merkevarer forsvinne?
+
+Det er lite grunnlag for å hevde dette innenfor de tradisjonelle konsumvarer (f.eks. Pepsi). Men
+når det gjelder endel tjenester som er produsert f.eks. i en nettverksstruktur så vil slike
+produkter satt sammen av toppeksperter innenfor sitt felt i flere land, kunne fremstå som ett
+produkt. Dette vil f.eks. innenfor konsulenttjenester kunne fremstå som et bedre produkt enn
+noe som er produsert av en kjede, f.eks. Ogilvy \& Mather i ett land. (Men her må tilføyes at
+også kjedenes muligheter til å oppnå disse effekter av Internet er like gode).
+For endel slike tjenester ser en allerede at konstellasjoner som gjøres på nettet er mer opptatt
+av hvilke funksjoner navnet signaliserer enn hvem som grunnla det.
+
+\end{enumerate}
+
+\subsubsection{ Viktige problemstillinger og avgrensninger}
+
+\begin{enumerate}
+\item PR vs. markedsføring
+
+Av de markerte endringer som skjer i tilknytning til fremveksten av markedføring via Internet
+er at skillet mellom hva som er PR og hva som er markedsføring viskes ut. Dette skyldes at
+mye av den type kommunikasjon som må foregå med kunden på Internet til forveksling ligner
+det som kan kalles 'corporate presence'. Det blir viktigere å gi sann og korrekt informasjon enn
+det som har vært vanlig i annonser.
+
+\item Enkeltprodukt vs. produktgruppe
+
+Innenfor enkelte konsumvarer vil det være lite interessant å benytte Internet som
+annonsemedium, fordi kunden vil ha glede av å kunne sammenligne de forskjellige tilbydere
+sine produkter (dvs. det behovet som en sportsforretning gjør med joggesko i dag.) Det er
+derfor forventet at det vil dannes egne salgsområder som samler og linker all informasjon og
+forbrukertester som er gjort om joggesko.
+
+Når det gjelder f.eks. dagligvarer så er det ikke forventet at Internet vil få noen funksjon får
+EDI systemer er vidreutviklet. Det vil altså si, når du har strekkoder på kjøkkenet som du
+benytter på varer som er i ferd med å tømmes, hvorved du aktiviserer en bestilling.
+
+\item Brukernes høye utdanningsnivå og tilgang på maskinvare, begrenser breddesegmentene
+
+Det vil ennå ta lang tid før det er aktuelt å annonsere produkter beregnet på breddesegmentene
+eller på sosialgruppe 3 på Internet. F.eks. så ville nok annonse for Se \& Hør og et tilbud om
+online aksess til alle tidligere utgivelser ha liten verdi.
+
+\item Produsentens fysisk beliggenhet er uinteressant, men konsumvarer kan ikkeinspiseres
+
+Fordelen med annonsering på Internet er at du kan nå et globalt marked, ulempen er at det ikke
+blir mulig å prøve varen først. Dette er et dilemma dersom produsenter tilbyr produkter
+billigere på nettet enn gjennom forhandlere. Dette fører til at kunden går og prøver produktet
+hos forhandleren før man bestiller det på Internet. For endel bransjer f.eks. reiseliv er ikke
+fraværet av mulighet for testing før kjøp noe nytt og man ser således at dette er bedre tilpasset
+enn f.eks. bilkjøp.
+
+\end{enumerate}
+
+\subsubsection{ Metodeendringer ved bruk av Internet i markedsføring}
+\begin{enumerate}
+\item Dialogmarkedsføring skyter fart.
+
+Bakgrunnen for en slik påstand tar utgangspunkt i flere forhold som er sammenfallende. For
+det første er brukerne av Internet både intelligente og aktive og har stort engasjement (faktisk
+også endel av det ideélt overfor produkter de liker). Dette danner selvfølgelig grunnlaget for
+økt dialog.
+Dessuten er e-mail en høyeffektiv kommunikasjonsmodell, hvor man måler opptil 30-40\%
+effektivitetsøkning i tilknytning til svar på forespørsler. (Nevnes her må også mulighetene som
+bedriften har til å sette opp såkalte FAQ's (frequently asked questions), som reduserer
+bedriftens arbeid med henvendelser kraftig.
+Ved at det er kunden som søker kontakten er selvfølgelig grunnlaget for å kunne bruke tid på
+kunden relevant i salgsøyemed.
+
+\item Nettverkssammenslutninger blir mer interessant.
+
+Grupper av produsenter vil måtte slå seg sammen for å kunne representere den helhet som
+kunden søker. F.eks. slik endel turprodusenter i forskjellige land nå er i ferd med å gjøre under
+Adventure Network. Her vil man finne det mangfoldet av tilbud som man vanligvis finner i en
+spesialisert agent sin katalog. Produsentene behøver likevel ikke annet formelt samarbeid enn
+like vilkår og en felles prispolitikk og vissheten om ett enhetlig produkt (kvalitet). Resten
+gjøres bare ved at brosjyrene fra en felles 'homepage' linkes til hverandre selvom de ligger helt
+forskjellige steder på nettet.
+Det vil nok også etterhvert være rimelig uinteressant for en joggesko produsent å selge
+joggesko over Internet. Det som er antatt vil skje 3)  er at alle joggeskoprodusenter vil linke sin
+informasjon sammen slik at kunden kan finne alt under ett oppslag. Her vil det også bli linker
+til uhildete tester gjort av forbrukermagasin m.m.
+
+\item Strategiske allianser med andre produktgrupper eller andre med tangentielle
+interesser blir mer interessant.
+
+Med de store mengder av data som er samlet på nettet er det helt utrolige kombinasjoner som
+blir mulig for slike referanser. F.eks. så har WWF en stor informasjonsbrosjyre om Arktisk
+dyreliv lagt ut på nettet. De ønsker å gjøre en link til de tilbudte hval-safaris i Arctic
+Adventours brosjyre (og andre tilbydere av hvalsafari i verden) slik at de som er blitt
+nyskjerrige på hval etter å ha lest WWF's orientering, direkte kan finne ut hvordan de kan reise
+ut for å studere dyrene.
+
+\item 'Penetration' strategier kan endres - " First we take Manhattan then we take
+Berlevåg".
+
+Et norsk produkt kan nå f.eks.USA ved direkte markedsføring. Det som avgjør salget er om
+kunden ønsker produktet. Tidligere har dette vært et spøsmål om kostnader spesielt til
+massekommunikasjon noe som har gjort små produkter vanskelige å eksportere. Således finnes
+det grunn til å hevde at markedet nå er 'the king' og ikke et agentledd som tidligere har gjort
+utvalg av produkter for konsumentene. I mange bransjer har agentleddet vært den som virkelig
+bestemmer hva publikum skal få tilgang til. F.eks. så har forlagsbransjen, avisbransjen,
+reiselivsbransjen vært preget av at de velger ut for publikum det som skal tilbys. Dette kan bli
+kullkastet ved fremtidig markedsføring på Internet. Terskelen for hvem som kan tilby sitt
+produkt er senket vesentlig. Ønsker du å gi ut en bok så trenger du ingen forlegger du kan
+legge den ut på Internet. (Det forhold at informasjonsmengden gjør at produkter uten
+markedsføring kan drukne i all annen informasjon behandles nedenfor).
+
+\item Den viktigste funksjonen ved markedsføring via nettet er 'Mark-e-thing'. (Dvs.
+linking og merkelapper der hvor kundene vil søke etter dine produkter).
+
+Det er viktig å merke seg at kampen om oppmerksomhet i fremtiden vil stå om å få lagt igjen
+henvisninger og merkelapper på flest mulige steder ute på nettet. Dette er en tidkrevende jobb
+som krever god kjennskap til navigering på nettet. Slik linking er noe man allerede ser stort
+behov for og som spås å bli den store vekstbransjen innenfor kommersiell bruk av Internet.
+Uten å investere i denne funksjonen kan man like godt la være å annonsere på nettet.
+
+\end{enumerate}
+
+\subsubsection{Gode råd for markedsføring på nettet}
+
+I henhold til de endringer vi har påpekt i metoder og måten å tenke på, kan vi sette opp endel
+enkle regler for hva man bør etterstrebe når man skal starte med markedføring over Internet 1) .
+
+\begin{enumerate}
+
+\item Konsentrer på kjøttet ikke staffasjen
+
+Husk at Internet i dag er kjennetegnet ved aktive, interesserte brukere, som ønsker nok
+informasjon til å kunne ta en 'informert beslutning'. Fordelen ved Internet og hypertekst er at
+du kan lagre hvor mye tekst du vil på forskjellige nivåer uten at dette behøver å bli kjedelig for
+kunden.
+
+\item Sikt høyt
+
+Internet som medium kan bidra til at bedrifter som undervurderer sine kunder vil forsvinne.
+Kundene er ikke dumme og heller ikke lettlurte hvalper.
+
+\item Vær reéllt interaktiv
+
+Det gis råd fra amerika om ikke å bruke for mye video. Video er passiv og ikke aktiv, slik man
+ønsker at kommunikasjonsprosessene på Internet skal være. (Jeg tror vel at video ikke er like
+utbrukt i Norge som har hatt et mer avslappet TV-medium). Men jeg tror det er viktig av
+annonsører å konsentrere seg om å bygge opp logiske strukturer i sitt materiell. Dette vil svært
+ofte si gjennomtenkte hierarkier. Eller sagt på en folkelig måte sats på ting som induserer muse
+klikk, jo flere jo bedre.
+
+\item Behandle kunden som en konge
+
+Siden Internet sjelden vil gi mer enn én sjanse til å gjøre deg til kunde, så må bedriften ta
+hensyn til dette. Rask oppfølging på henvendelser osv. blir betraktet som en selvfølge dersom
+man legger noe inn på nettet. Dessuten vil etterhvert kunden bli reéllt konge da det ikke lenger
+vil være noen begrensninger i hvilke produkter han skal bestille. (F.eks. nett-'bokhandler' med
+opptil 300.000 titler setter svært små begrensninger i kundens valgmuligheter).
+
+\item Vis engasjement og entusiasme. Nettet er fullt av pasjonert engasjement.
+
+Selvom mange som aldri har vært på nettet betrakter Internet som en kald og futuristisk verden
+uten human touch, så er faktisk nettet fullt av pasjonert engasjement. Dersom du entrer nettet
+skal du tenke nøye gjennom din bedrifts misjon og visjon. Dersom du er usikker vil du lettere
+fremstå som kjedelig. På nettet må du nok ha tro på det du gjør kombinert med en trygghet
+som gjør at du også kan ha det litt moro. Du kan ikke kjede noen til å kjøpe seg noe på
+Internettet!
+\end{enumerate}
+
+
+\subsubsection{ Kjøreregler for annonsering på nettet}
+
+
+Det finnes endel kjøreregler for som det kan være svært viktig å kjenne før man starter en
+annonsering på Internet 2). Vi skal ikke her gå i dybden på hva som skjer dersom man ikke
+følger disse grunngitte reglene, men henvise til at flere firmaer gjennom overtramp har blitt
+skjøvet ut av nettet og faktisk også fått sitt selskap svært desimert. ( Jfr. referanser til Green
+Card saken fra februar 1994, hvor massedistribusjon av e-mail som reklame ga voldsomme
+reaksjoner fra hele Internet verden. Det ble bl.a. laget programmer som ødelegger alt som dette
+advokatkontoret prøver å sende ut på nettet, ett program som sendte kontinuerlig faks til
+firmaet osv.)
+
+\begin{enumerate}
+\item Påtrengende e-mail er uønsket.
+
+Ingen ønsker en melding de ikke har bedt om å få, eller mer presist, ønsker å få. Hvis for
+eksempel en bruker spør etter informasjon fra et firma som selger skiutstyr, så kan firmaer
+innenfor dette produktspekteret sende vedkommende relevant informasjon. De kan tilby
+brukeren en oppføring i bedriftens 'list server', men en forespørsel skal ikke under noen
+omstendighet føre til et automatisk abbonnement på informasjon fra firmaet.
+
+\item Internet brukerdata skal ikke selges videre uten etter tillatelse fra brukeren.
+
+Til forskjell fra kommersielle salg ellers hvor det er blitt vanlig at datalister som er generert
+gjennom interaksjon med kunden blir solgt videre til markedførings selskaper, så skal
+Internetdata forbli i firmaet som fikk dem oppgitt. I skieksemplet betyr dette at selvom jeg har
+bedt om informasjon via Internet så skal 'de facto' ikke skiprodusenten selge mine data til f.eks.
+SAAB, som kanskje er interessert i å nå frem til ski entusiaster.
+
+\item Annonsering er bare tillatt i de dertil hørende medier (f.eks. markedsplassene se
+dette).
+
+Det hittil mest utbredde misbruk av annonseregler for Internet har særlig vært 'off-topic'
+produkter er postet til newsgroups og dermed krysspostet til hundrevis av andre grupper og
+deres abbonnenter. De som poster 'off-topics' kommersielle tilbud, blir som regel først gitt en
+advarsel, deretter ofte filtrert ut ved all senere aksess til nettet.
+
+\item Promotion og direktesalg er tillatt, men bare under følgende forhold.
+
+Det er tillatt å promotere sine varer på tillatte steder eller 'own domains', men brukerne må bli
+gitt innsyn i hvilke regler som gjelder før de slutter seg til eller kjøper noe. Ved aktiv
+promotion bør man respektere de samme retningslinjer som for e-mail og nyhetsgrupper.
+Viktigst av alt er å la kunden selv søke informasjonen.
+
+\item Forbruker undersøkelser (markedsundersøkelser) er tillatt når brukeren godkjenner
+det.
+
+Det er fritt å gjøre forbrukerundersøkelser så lenge respondenten har grei og åpen tilgang til
+alle forhold rundt det å delta i undersøkelsen.
+
+\item Kommunikasjonssoftware må ikke inneholde skjulte funksjoner.
+
+For noen år siden ble en online sevice-tilbyder beskyldt for å bruke en software som scannet
+brukerens harddisk for adresser. Disse ble så brukt i oppsett av adresselister for mailing. Nå
+som flere firmaer med server applikasjoner kobler seg opp på nettet så øker slike farer for dem,
+dersom de ikke ivaretar dette via såkalte firewalls og annen sikring.
+\end{enumerate}
+
+\subsection{ Omsetningsformer på Internet; eller supermarked, nærbutikker og grossister i skjønn forening}\footnote{dette avsnittet bygger på \cite{UNI}}
+
+De elektroniske markedsplassene man finner i dag kan plasseres inn
+i forskjellige kategorier:
+
+\begin{itemize}
+\item{\sl  Kjøpesentre / Malls}
+
+Dette er typisk store dedikerte kommersielle Internet Web servere som f.eks.
+\href{The Internet Shopping Network}{http://www.internet.net}, 
+\href{MecklerWeb}{http://www.mecklerweb.com} og 
+\href{Marketplace.Com}{http://marketplace.com/}.
+
+\item{\sl Home-Page servere}
+
+En Home-Page server, er en Internet server der bedrifter tilbys
+en plass for å annonsere for sine produkter. \href{Oslonett Markedsplassen}{http
+://www.oslonett.no/html/adv/ON-market.html}
+ er et slikt
+eksempel.
+
+\item{\sl Enkeltbedrifter}
+
+Det er enkeltbedrifter som har satt opp en elektronisk markedsplass
+eksklusivt for bedriftens produkter og tjenester. Som regel begrenser dette seg
+til annonsering, men det er også tilfeller hvor enkeltbedrifter gjør
+direkte salg til kundene gjennom sin markedsplass. 
+Figur \ref{cdnow2} viser et slikt eksempel -- her er det en butikk som selger CDer vha. Internettet.
+
+\end{itemize}
+Ser vi på hva slags type bedrifter som presenterer seg innenfor de ulike
+kategoriene, vil vi innenfor en varetype se at man kan finne både produksjonsled
+det, grossisten
+såvel som detaljisten og nærbutikkene. 
+
+Det man nemlig skal legge merke til, er at Internettet åpner for nye
+kunde-leverandør og leverandør-leverandør forhold og at
+tradisjonelle forhold til en viss grad kan overflødiggjøres.
+
+Typisk vil man se at mellomleddene kan bli de tapende partene, og
+eksempelvis ser man at produsenter og grossister i stor grad kan
+gå i direkte aksjon med kundene.
+
+
+\subsection{ Elektroniske markedsplasser -- noen eksempler, erfaringer og spådommer}
+
+
+Det kryr nå av de ulike typene elektroniske markedsplasser på nettet, men mange
+av disse vil ganske sikkert forsvinne etter hvert, og annonsører og konsumenter
+vil samle seg om noen få.
+
+En konsument vil trekkes til de store stedene og/eller steder som har fortrinn
+når det gjelder alt rundt enkel aksess av informasjonen og evt. bestilling av
+produkter.
+
+Det samme vil selvsagt en annonsør - de vil «leie seg inn» der de får best
+fokusering og der de blir mest synlige. Dette er ikke nødvendigvis bare de
+store stedene, og kanskje til og med snarere tvert i mot noen ganger (de ønsker
+ikke å bli borte i vrimmelen).
+
+\subsubsection{ Global Network Navigator}
+\href{Global Network Navigator}{http://src.doc.ic.ac.uk/gnn/GNNhome.html}, en tjeneste fra O'Reilly \& Associates, var den første
+virkelig store markedsplassen på nettet basert på World Wide Web. GNN satte en
+mal for andre liknende tjenester og viste verden på en effektiv måte hvordan
+Internet kunne brukes av firmaer som ønsker å spre informasjon om produkter og
+tjenester.
+
+I dag er GNN noe langt mere enn bare en markedsplass, det er et stort og åpent
+informasjonssystem for Internettet, og kan best karakteriseres som en enorm
+elektronisk og interaktiv avis.
+
+
+\subsubsection{ Oslonett Markedsplassen}
+
+«Oslonett Markedsplassen» - en åpen elektronisk annonsetjeneste i regi av
+Oslonett A/S, var nesten like tidlig ute som GNN, men kjørte helt til tidlig
+1994 som en ren pilottjeneste. Tjenesten er i dag fullt operativ, og har ca. 25
+annonsører innenfor forskjellige bransjer, men de fleste innenfor IT-markedet.
+
+Dog finnes spesielle annonsører som f.eks. \href{Brønnøysundregistrene}{http://w
+ww.oslonett.no/home/br-info/}, \href{Norges Forskningsråd}{http://www.oslonett.n
+o/html/adv/NFR/NFR.html}, 
+\href{TONO}{http://www.oslonett.no/home/tono/} og \href{«Nei til EU»}{http://www
+.oslonett.no/nteu/index.html}.
+
+Tjenesten ble nominert til «Best Commercial Service» i den uformelle
+konkurransen «Best of the Web-94». Nomineringen var for utlegget av \href{katalogen
+til turoperatøren Arctic Adventours}{http://www.oslonett.no/html/adv/AA/AA.html} (dessverre nådde vi ikke opp - vi
+konkurrerte med Sun, Digital og Silicon Graphics).
+
+Totalt sett har Oslonetts Web server rundt 400.000 HTTP oppslag i uken, og de fleste
+oppslagene er til informasjon innenfor OMP.
+
+Det er en del interessante erfaringer vi og våre annonsører har gjort under
+veis, og vi skal fort ta de viktigste:
+
+\begin{enumerate}
+\item Det tar lang tid å få gjort folk oppmerksomme på mulighetene
+
+Dette er ikke uventet, men viktig å være klar over når man skal forespeile
+nye kunder hvor ofte informasjonen de legger ut kommer til å bli lest.
+
+\item .. men det virker og det er billig og effektivt!
+
+En del annonsører var til å begynne med skeptiske, men de ser nå at de får
+kontakt med mange interessante kunder gjennom Internettet. Arctic
+Adventours, som riktignok er en annonsør med internasjonal målgruppe, har
+solgt flere turer gjennom OMP og ikke minst knyttet mange verdifulle
+kontakter gjennom Internettet. Turoperatører som vanligvis selger gjennom agentledd kunne
+nå markedet direkte gjennom Internet. Dette vil gjøre det mulig å selge produktene inntil 30\%
+billigere.
+
+\item Folk er kritiske til bestilling og kjøp gjennom Internettet
+
+Innenfor OMP er det annonsører som gjør direkte salg gjennom interaktive
+skjemaer. Det er gjort flere salg gjennom dette systemet, men generelt er
+folk kritiske til å skrive inn sitt navn og adresse og bestille et
+produkt. Det må gjøres en del arbeide med å opplyse om disse mulighetene
+og sikkerhetsaspektene forbundet med dette.
+\end{enumerate}
+
+
+\subsection{``Missing links'' i forholdet til kjøp og salg over Internet}
+Det er fortsatt en del brikker som må på plass for at kjøp og salg av
+varer og tjenester over Internettet skal kunne lansereres som en storskala
+tjeneste. Det er på ingen måte uoverkommelige tekniske hindringer i veien for å 
+få
+på plass noe av dette, men snarere et spørsmål om å bli enige om rammeverk,
+standarder og konvensjoner på flere områder.
+\subsubsection{Kryptering, autentisering, transaksjonskontroll}
+En av de aller viktigste tingene å få på plass, er mulighetene for å gjøre krypt
+ering og
+autentisering gjennom World Wide Web. Dette arbeides det med på flere fronter,
+og firmaer som f.eks. \href{Quadralay}{http://www.quadralay.com} i Texas og
+\href{Enterprise Integration Technologies}{http://www.eit.com} i California arbeider 
+begge aktivt med slike ting. Kanskje det mest illustrerende signalet på behovet 
+for slik
+funksjonalitet, 
+er den enorme interessen finansgiganter har viet \href{EITs}{http://www.eit.com}
+ demonstrasjon av
+\href{CommerceNet}{http://www.commerce.net}. Store firmaer som \href{Bank of America}{http://www.bankamerica.com}, \href{VISA}{http://www.visa.com/visa/Future.html} og Citicorp
+har alle sagt at de er i ferd med å se på mulighetene for å drive bankvirksomhet
+,
+kredittkortvirksomhet og finansielle transaksjoner via Internettet. 
+
+\subsubsection{«Digital Cash»}
+Parallellt, og nært beslektet med ovenstående aktiviteter, er det flere som
+ser på muligheten for å bruke «digitale penger» som betalingsmiddel på
+nettet, og også på hvordan man kan lage «banksystemer» som autorisasjonsinstanser
+for transaksjonene som må gjøres. Interesserte bør f.eks. se på aktivitetene som
+gjøres av firmaene \href{DigiCash}{http://www.digicash.com/} og \href{First Virtual Holdings}{http://www.fv.com/}.
+
+UNINETT i Norge driver noe de kaller \href{Bank-prosjektet}{http://domen.uninett.no/~hta/uninett/bank/status.html}.
+Meningen er å finne fram til et transaksjonssystem for penger i det norske
+Internettet. Den teknologien som etter hvert blir foreslått, vil trolig bygge
+på andre aktiviteter andre steder i verden.
+
+\subsubsection{Bedre søkemuligheter og sentrale annonsørregistre}
+Dette gjelder generelt for det å finne fram på Internettet, ikke bare elektronis
+ke markedsplasser.
+Dog er det ekstremt viktig for en kommersiell annonsør å vite at {\it alle} potensielle
+«lesere» vet hvordan man finner informasjonen.
+
+Situasjonen i dag, er at det finnes \href{mange søkesystemer}{http://intervett.oslonet
+t.no/IV/Sok.html} og mange forskjellige
+annonsørregistre, eller \href{«Internettets gule sider»}{http://www.oslonett.no/
+EXPO94/In/komm.html} om man vil. Når man skal finne fram, må
+man prøve mange forskjellige steder for å få et så stort informasjonstilfang som
+mulig.
+
+Denne situasjonen er i ferd med å bedre seg -- både når det gjelder søkeregistre
+og «gule sider», men fortsatt gjenstår det å gjøre mye samordning. 
+\subsubsection{Speiling av tjenester}
+
+Etter hvert som det dukker opp sentraliserte tjenester som søkesystemer og 
+annonsørregistre, vil det bli behov for å speile slike tjenester for å spre
+nettrafikken. For eksisterende populære tjenester, f.eks. Global Network
+Navigator, finnes det speiltjenere rundt i verden, men dette er basert
+på halvautomatiske metoder.
+
+Det arbeides også med å bake speiltjenester inn i som en integrert del av
+en Web server -- dvs. Web serveren vet hvilke speiltjenere den har, og kan
+sende forespørsler til en passende av disse når trafikken er stor. 
+
+
+
+
+  \newpage
+\section{Eksempler fra bedriftsområder som allerede er på nettet}
+
+\begin{itemize}
+\item Computerworld som eksempel på skreddersydd informasjon til abonnenter
+
+\item Spesialiserte nyhetsbaser, f.eks. EU-resultatservice, digital radio over Internet, MBONE
+
+\item Skreddersøm for skreven informasjon
+
+\item  Hyperlinker  som medium
+
+\item Prosjekt Computerworld i World Wide Web
+
+\end{itemize}
+
+\subsection{Nye omsetningsformer i reiselivet (utgangspunkt i Arctic Adventours erfaringer)}
+
+\subsubsection{ Spesielle forhold i en bransje som reiseliv}
+Tidligere satte vi opp hva som kjennetegner produkter som er spesielt egnet for salg på
+Internet. Reiselivsbransjen er i henhold til disse kriteriene meget velegnet for markedsføring på
+Internet. Spesielt ser man i dag muligheter til å knytte sammen så mye informasjon som mulig
+om et enkelt land under egne destinasjonsservice på nettet. Disse har mange fordeler fremfor
+en distribusjon av CD-er som i noen grad har vært forsøkt. 
+
+Den største fordelen ligger i at den
+kan ivareta også dynamiske data (f.eks. rutetider). En annen stor fordel er at man kan starte
+med det man har og så bygge det gradvis ut, istedetfor et produkt som må fullutvikles før det
+kan presenteres for publikum.
+I tillegg til de faktorer som er nevnt foran, skal vi se på noen bransjespesifikke faktorer.
+
+\begin{enumerate}
+\item Effekter i business til business markedsføring:
+
+{\bf  EDI - relaterte momenter}\\
+
+ \begin{enumerate}
+\item Availability. Det er et problem at kunnskapen om tilgjengelighet på de enkelte
+produkter er vanskelig å nå. Med unntak av opplysninger om flyseter krever tilgjengelighet
+f.eks. for en amerikaner som ønsker å leie en rorbu i Lofoten en nesten uoverstigelig
+søkeprosess. Internet kan demokratisere mulighetene for selv små bedrifter til å kunne oppgi
+tilgjengeligheten av sine produkter direkte. (Se f.eks. felles hotellreservasjons system for San
+Fransisco på Internet. (vedlagt)
+
+\item Reiselivet har mye (nesten bare) dynamiske data. Det er i dag altfor meget av de data som
+foreligger fra de enkelte bedrifter som er ukorrekte i det øyeblikk de skal benyttes.
+
+\end{enumerate}
+
+{\bf  Antallet mellomledd}
+
+Det har i reiselivsnæringen vært kamp mellom forskjellige salgs og mellomledd de siste 15
+årene (f.eks. flyselskapenes kamp for å knekke reisebyråene). Internet vil kunne gjøre det mulig
+for produsentene å komme i direkte dialog med kunden. Gjennom dette kan man få
+prisreduksjoner på fra 20-35% på visse produkter.
+
+{\bf Raskere behovsregistrering}
+
+Man kan i bedriftene følge med i hva kundene faktisk leser og har interesse for umiddelbart,
+uten å måtte iverksette omfattende undersøkelser. Fordi tendenser skifter raskere enn før er
+dette behovet stort i næringen i dag.
+
+Det vil i fremtiden være mulig å bygge opp produkter på basis av 'build up on request'
+som kan bli en komplett og direkte 'skreddersøms-turproduksjon'. Dette kan skje ved at
+enkeltpersoner annonserer sine ønsker og at andre som har samme interesse, melder seg på
+nettet. 
+
+Turoperatøren eller reisebyråets oppgave blir, når rute og produktønsker er spesifisert å
+utføre fagdelen; kalkyle, reservasjoner og samle påmeldinger.
+
+
+\item Påvirkning av Business til kunde markedføring:
+
+{\bf  Spesielle forhold som gjør salg av reiselivsprodukter godt egnet for Internet}
+
+Et stort problem ved salg av reiselivsprodukter har vært at man ikke kan prøve produktet.
+I tillegg befinner man seg i en annen kultur enn den kulturen produktet representerer.
+Begge disse faktorer bidrar til behov for en viss standardisering ( f.eks. hotellkvalitet) og
+normkodekser (f.eks. fravær av kannibalisme). Derfor er f.eks. Internet's mulighet til nesten
+ubegrensede billedlagre (og etterhvert også multimediafunksjoner) svært meningsfyllte i
+markedføringen. Økt trygghet gir også bedret kjøpevilje.
+
+
+{\bf Stort dialogbehov}
+
+\begin{enumerate}
+\item Dette behovet er i tillegg interaktivt, dvs. at det videreutvikles på basis av informantens evne
+til å lese kundens behov. Det er dessuten kundens tidligere kunnskapsnivå om destinasjonen
+som avgjør på hvilket nivå han trenger informasjon. Dette behovet kan ikke dekkes av dagens
+brosjyrer.
+
+\item Dessuten er det et behov for at informasjonen er 'at hand when needed'.
+\item I Internet kan oppbyggingen av Frequent Asked Questions (FAQ) løsninger gi store
+administrative besparelser.
+\item Det er også et stort behov for bedret 'on place info' som kan løses bedre gjennom
+Internet enn ved dagens lokaloppbygde databaseløsninger.
+
+{\bf Økt fleksibilitet i produksjonen}
+
+'Tailored' produkter (f.eks. fotosafari til Serengeti) har hittil vært kjennetegnet ved svært høye
+priser for administrasjon. Internet gir en lav terskel for produsentens aksess til markedet. Dette
+gjør at småprodusenter vil kunne ha en direkte dialog med kunden. Dette vil kunne redusere
+kostnadene ved slik 'skreddersøm' (som nevnt annet sted med mellom 20-35\%) og dermed øke
+den personlige valgfrihet for kundenes reiser, noe man allerede vet er sterkt ønsket i markedet.
+\end{enumerate}
+\end{enumerate}
+%\subsubsection{ Fremtidens reiselivssalg, gjennom NTIN og f.eks. PC-Travel}
+\subsubsection{ Kjøper man produkter til kr. 13.000,- over Internet? }
+\begin{enumerate}
+\item {\sl Bakgrunn}
+
+Arctic Adventours a.s. ble startet i 1984 primært med produksjon av aktive adventure reiser til
+Svalbard og NordNorge. Selskapet solgte i 1990 ca. 500 turer til Svalbard og drev sitt eget
+fartøy i en 36 passasjerers båt kalt 'Arctic Explorer'. Selskapet ble etter 1990 sesongen solgt til
+en større turoperatør. Grunnleggeren av Arctic Adventours, Knut Jørstad, kjøpte i 1991 en ny
+båt for plass til 8 passasjerer for å utvikle et nytt småskalaprodukt med økt vekt på
+kunnskapsformidling og turdeltakeres delaktighet i produktet.
+
+Dette produktet ble lagt inn som et pilotprosjekt hos Oslonett i tilknytning til den beskrevne
+\href{Oslonett Markedsplassen}{http://www.oslonett.no/html/adv/ON-market.html}. 
+\href{Brosjyren}{http://www.oslonett.no/html/adv/AA/AA.html} ble lagt ut på nettet den 14.Januar 1994, med en logisk struktur som gir kunden
+muligheter til å søke innenfor tema, destinasjon og ekspedisjonstype. Brosjyren er knyttet opp
+til ca. 15 dias i full oppløselig kvalitet. Det er i tillegg gjort hyperlink til forskjellige andre
+informasjonsmateriell som er relevant (f.eks. UiTromsø's presentasjon av byen).
+
+\fig{AA.eps}{Arctic Adventours' World Wide Web brosjyre}{AA}
+
+\item{\sl Erfaringer}
+
+For å svare på det spørsmålet som alle ønsker svar på: jada, brosjyren er ikke bare fin, den
+selger også.
+Det har vært uventet mye kontakt som er skapt av denne brosjyren. Dette har selvfølgelig
+sammenheng med at vi var den første turoperatør til å legge ut en kommersiell brosjyre. Denne
+effekten vil ikke i samme grad eksistere for brosjyre nr. 101. I tillegg ble brosjyren som tidliger
+nevnt nominert til "Best Commercial Service" i konkurransen "Best of the Web-94". 
+
+Dette
+bidro til en voldsom interesse for oppslag på brosjyren, men mange av disse mer av typen som
+ikke var spesifikt interessert av produktet, men hvordan Oslonett hadde løst applikasjonene og
+strukturen. (Uansett om de ikke var direkte målgruppe, så er det klart at dette er god PR for
+firmaet og senere produktlanseringer).
+
+\begin{itemize}
+\item{\sl Statistikk}
+
+Brosjyren har så langt nådd ca. 12.000 personer siden starten. Antallet oppslag (dvs. antall
+sider /eller bilder som er betraktet / lest er ca. 1500 pr. uke, dvs. ca. 67.500. Det vil si at vi vil
+nå ca. 16.000 personer og mer enn 80.000 oppslag i løpet av det første året.
+Av dette ble det booket 4 plasser til Svallbard i 1994. Dette produktet har en pris på ca. kr.
+13.000,- i utsalg. I tillegg var interessen for hvalsafarier stort, men her hadde ikke 'Arctic
+Explorer' mer kapasitet i 1994, og produktet var altså utsolgt fra starten. Antallet bookinger
+her ville ha vært 11-12 deltakere.
+
+Til tross for at 1995 brosjyren ennå ikke er lagt ut, så er det nå registrert 2 bookinger for
+skiprogrammer i Mars/April-1995.
+Oslonett sender hver uke ut en statistikk over registrert aktivitet rundt brosjyren, som gir
+meget verdifull informasjon om hva det er kundene reéllt leser.
+
+\item{\sl Kommentarer}
+
+Det er svært vanskelig å ha noen sikker formening om hvorvidt denne interessen for brosjyren
+som må sies å være enorm, vil fortsette eller stabilisere seg. På den ene siden så vil den miste
+noe av nyhetens interesse, men dette synes å bli kompensert gjennom at brosjyren nå har
+'merkelapper' på mange av de virkelig interessante markedsplassene rundt i verden. Bl.a. i
+MecklerWeb, den hittil 'hippeste' satsing på presentasjon av kommersielle produkter på
+Internet, er den henvist til som det beste eksemplet de har sett innenfor Internet og har direkte
+link fra dette for oss varmende utsagnet. Hva slike forskjellige linker vil bety er det vanskelig
+ennå å si noe om, men det synes som vi faktisk har en jevn økning i antall oppslag.
+
+Dessuten er det klart at AA's produkter treffer midt i sin målgruppe ved annonsering på nettet.
+Dette forholdet betyr ikke at alle produkter i samme grad ville oppnådd tilsvarende effekt av
+slik markedsføring.
+\end{itemize}
+
+\item{\sl Vurdering av markedføringen via Internet}
+
+\begin{description}
+\item[1] Kontaktpris:
+
+Den pris som brosjyren reéllt har kostet er utvikling, scanning og produksjon. Sammen med
+leie på Oslonett's markedsplassen (kr. 7.800,- for ett år), betyr dette en totalkostnad på ca. kr.
+20.000,-. Dette betyr en kontaktpris som ligger på minimum 1/15-del av hva en tilsvarende
+brosjyre i det samme antall ville ha kostet å produsere. Bare porto for en slik distribusjon ville
+ha vært kr. 88.000,-.  I tillegg til kr. 50.000,- for konvolutter.
+(I tillegg må det nevnes at dette i virkeligheten også er svært miljøvennelig. Det produseres
+bare i Storbrittania i dag ca. 120 millioner turistbrosjyrer pr. år.)
+
+Det man kan innvende at ved en tradisjonell papirbrosjyre distribusjon i denne dimensjonen så
+ville man ha solgt mer enn 20 reiser. Dette er riktig, så man kan si at i forhold til antallet 'look-
+ups' så selger man forholdvis mindre enn ved en distribuert brosjyre.
+
+\item[2] Langsiktige effekter:
+
+Den viktigste effekten er at man kan løse nettopp det som er små reiselivsprodukters store
+problem, man kan ha råd til å 'stå i markedet' tilstrekkelig lenge til at produktet begynner å
+selge. Alle som har markedsført reiselivsprodukter vet at dette er et av de virkelig vanskelige
+problemer å løse. En markedføringskostnad på kr. 20.000,- pr. år målt opp mot kr. 500.000,-
+pr.år ved egen distribusjon av papirbrosjyre senker terskelen for hvem som kan markedsføre
+seg direkte (dvs. uten bruk av agentleddene).
+
+I tillegg må jeg si at jeg tror den 'entusiasme' eller 'lidenskap' som mange 'Internettere' legger
+for dagen gir et helt unikt grunnlag for småprodusenter til å etablere en relasjonsmarkedsføring
+som tidligere ikke har vært mulig.
+
+
+
+\item[3] Utilsiktede effekter:
+
+Disse har det vært mange av på nettet. Alle har for vår del vært positive. F.eks. så ønsker nå
+WWF å bygge en link fra sin havpattedyr brosjyre opp mot alle som driver med hvalsafaris.
+Dermed vil de ha en direkte link til AA's programmer for hvalsafari i NordNorge.
+Flere slike
+henvendelser e gjort fra forskjelligste anknytningspunkter f.eks. Lonely Planet's interaktive
+reisehåndbøker.
+Det eneste problemet har vært at sålenge Norge ikke har noen felles presentasjon av sin
+informasjon på Internettet, så har det vært endel spørsmål i tilknytning til Norge som
+besøksmål generelt. Men som 'lidenskapelig  Internetter' så svarer man så godt man kan på
+disse også, det ligger i Internettets kodeks for oppførsel.
+\end{description}
+
+\item{\sl Nye former for produksjon og salg}
+
+{\bf ``Tilfellet Den Italienske Astrofysiker''}
+
+Som nevnt ovenfor åpner Internet for nye former for
+relasjonsmarkedsføring som ingen medium tidligere har kunnet tilby.
+Det er i øyeblikket en kunde som var med på en av 'Arctic Explorer' sine - seiling i
+kombinasjon med skiturer - programmer i 1994. Vedkommende er astrofysiker i Padua i Italia.
+Han fikk spesiell interesse for et eget område vi besøkte. Han har nå til hensikt å markedføre en
+egen tur med 'Arctic Explorer' til dette stedet, for å kunne vende tilbake dit. Han har nå scannet
+inn mer enn 30 bilder fra turen som ligger på hans server i Padua. Han har skrevet en tekst om
+hvilke innhold og 'topics' for denne turen. Det eneste AA har gjort er å godkjenne en linking til
+avgangen i vårt eget program, så får vi se..... . Den som undervurderer sine kunder kan fort
+finne det vanskelig å operere på Internet, men du verden så moro det er for de som liker dette.
+
+Internet vil såvidt vi kan vurdere etter ett års 'samliv' med dette mediet, komme til å tilby en
+revolusjon innenfor produksjon av feriereiser og presentasjonen av underlagsmaterialet i
+tilknytning til disse. F.eks. så vil de såkalte F.I.T. produksjoner (Foreigners Independent Tours
+) først nå gjennom Internet begynne å bli virkelig sofistikerte. Vanskelighetene rundt det å reise
+på egenhånd i forhold til bestillingene vil i de nærmeste årene bli eliminert (jeg ser her bort fra
+at dette i enkelte områder kan være lite ønskelig av helt andre grunner).
+Men det vil tiltross for senkede brukergrensesnitt være ennå noen år før de store
+breddesegentene vil delta i en slik form for kjøp av feriereiser. Men de som tror det aldri vil
+skje tror jeg undervurderer de kommende generasjoners evne til å orientere seg på nettet.
+
+Nettverksarbeidet er også tidligere nevnt. Men AA er i sammen med flere kolleger i tilsvarende
+selskaper rundt i verden, blitt enige om å sette opp et Adventure Network, hvor vi
+markedsfører alle deltakernes produkter samlet. Dette betyr at vi som sådan fremstår med det
+samme produkt som ellers kun kan skapes gjennom bruk av en agent, som en
+katalogproduserende enhet. Mens det eneste vi trenger er en felles home-page og resten gjøres
+med hypertekst.
+
+
+
+
+
+\end{enumerate}
+
+
+
+
+
+
+
+\newpage
+\section{Appendiks}
+
+\subsection{Kilder}
+Den viktigste kilden til dette kurset har v\ae rt og vil for all framtid 
+fortsette \aa\ v\ae re Internettet selv. Denne kilden er dynamisk og 
+ut\o mmelig, men den kan ikke h\o stes fra annet enn ved \aa\ bruke 
+nettet. 
+
+I tillegg til Internettet, selv har forfatterne hatt stor glede av 
+noen publikasjoner, og de viktigste er Internet World\cite{IW} og 
+Open Systems Today\cite{OST}.
+
+En del av stoffet i annen del er dessuten inspirert av \cite{UNI}.
+
+
+\subsection{Ordliste}
+ Når man bruker Internettet vil man etter hvert støte på en mengde ord
+og uttrykk, både norsk og engelske. Noen av uttrykkene er tekniske
+betegnelser, men svært mye er forkortelser og det vi vel må kalle
+``Internet slang''. Særlig vil man støte på disse når man leser
+News. Ordlisten her viser de viktigste av disse begrepene.
+\begin{itemize}
+\ord{ATM}{Forkortelse for Asynchronous Transfer Mode -- en datakommunikasjonsstandard
+for høyhastighetsnettverk, gir hastigheter opptil 155Mb/s.}
+\ord{ASAP}{Forkortelse for As Soon As Possible}
+\ord{BTW}{Forkortelse for By The Way}
+\ord{FAQ}{Dette er en forkortelse for Frequently Asked Questions, og er et begrep
+alle som bruker Internettet  før eller siden vil støte på. En FAQ (uttales
+bare "fakk" på norsk) er ofte knyttet til en eller annen mye brukt
+tjeneste på nettet, og er rett og slett en samling vanlige spørsmål
+med tilhørende svar for denne tjenesten. Store News grupper har som oftest
+en FAQ. Her er f.eks.  \href{en samling FAQs for mange News grupper}{http://www.cis.ohio-state.edu/hypertext/faq/usenet/top.html}.}
+
+\ord{Flame}{Dette engelske ordet ser man svært ofte brukt i News, f.eks. ser
+man uttrykk som [FLAME ON]. Med dette indikerer den som skriver at man er
+sint eller indignert og at det etterfølgende er skrevet mens man er i denne
+tilstanden. Man slår så gjerne av denne tilstanden igjen med [FLAME OFF]!}
+
+\ord{FTP}{Forkortelse for File Transfer Protocol -- Internettets protokoll
+for filoverførsel}
+\ord{HTML}{Hypertext Markup Language -- språket som brukes for å kode
+Web dokumenter.}
+\ord{IAB}{Forkortelse for Internet Architecture Board}
+\ord{IANA}{Forkortelse for Internet Assigned Numbers Authority}
+\ord{IESG}{Forkortelse for Internet Engineering Steering Group}
+\ord{IETF}{Forkortelse for \href{Internet Engineering Task Force}{http://www.ietf.cnri.reston.va.us/}}
+\ord{IMHO}{Forkortelse for In My Humble Opinion}
+\ord{IRSG}{Forkortelse for Internet Research Steering Group}
+\ord{IRTF}{Forkortelse for Internet Research Task Force}
+\ord{ISDN}{Forkortelse for Integrated Services Digital Network. Internasjonal kommunikasjonsstandard for
+integrering av tale og datatrafikk på samme telelinje. «Vanlig» ISDN  
+realiserer  hastigheter mellom 64 kbps og 2 Mbps ved ulike former for multipleksing
+av trafikken.}
+
+\ord{klient}{Bortsett fra vanlige betydninger av ordet, brukes dette ofte
+som en betegnelse på et program for å aksessere en Internet tjeneste. Man
+snakker således ofte om en ``WWW klient'', en ``Gopher klient'', en ``FTP klient'' osv. Uttrykket stammer fra begrepet ``klient/tjener'' eller ``client/server''.}
+\ord{LAN}{ Forkortelse  for Local Area Network. Betegnelsen
+sier noe om et lokalnetts  fysiske  utstrekning,
+et  LAN  behøver  f.eks.  ikke bare bestå av ett
+Ethernett, men kan bestå av flere  sammenkoplete
+nett.  Fysisk  utstrekning  begrenser seg f.eks.
+til en bygning eller nettene som er knyttet sammen 
+på et svært begrenset geografisk område.}
+
+\ord{MAN}{Forkortelse  for  Metropolitan  Area Network. Et
+nettverk sammenknyttet av flere LAN, og altså et
+nettverk som dekker et større geografisk område.
+Ofte bundet sammen vha. hurtige telelinjer eller
+fiber eller satelittlinker.}
+
+\ord{MIME}{Forkortelse  for  Multipurpose   Internet   Mail
+               Extensions,  definert  i  dokumentene RFC1341 og
+               RFC1342.  Spesifikasjoner  som  skal  gjøre  det
+               mulig  å  utveksle  grafikk, lyd, video og tekst
+               kodet i forskjellige tegnsett som vanlig  Internet elektronisk post basert på SMTP.
+
+               SMTP er en 7bits protokoll, og gjør det dermed i
+               utgangspunktet umulig  å  utveksle  binære  data
+               eller   sende  brev  i  8bits  tegnsett,  f.eks.
+               Latin1.  MIME spesifikasjonene gjør det mulig  å
+               kode   innholdet   som  7bits  informasjon,  men
+               allikevel pakke det korrekt opp i mottagerenden.}
+
+\ord{Router}{En «nettverksboks» for å kople sammen flere segmenter
+ av et lokalnett.   I  motsetning  til  en
+               bro,  er  en  router intelligent og filtrerer og
+               router pakker på bakgrunn av adresseformatet som
+               benyttes på nettnivå (nivå 3 i OSI-modellen). De
+               kraftigste routerne kan gjøre  protokollkonvertering  og  kjenner de fleste vanlige protokoller
+               for lokalnett.
+}
+
+\ord{SMTP}{Simple Mail Transfer Protocol. Standard Internet
+               protokoll  for  hvordan  elektronisk  post   kan
+               utveksles mellom to maskiner.
+
+}
+
+\ord{TCP/IP}{Forkortelse for Transmission Control Protocol/Internet Protocol.
+               Egentlig to protokoller (på hhv. transportlag og
+               nettlag i OSI modellen), men vanlig brukt betegnelse på
+ hele protokollstakken som benytter  IP,
+               f.eks.   protokoller  som  FTP,  Telnet, SMTP og
+               UDP.}
+
+\ord{Telnet}{Standard Internet protokoll  for fjern-login.}
+
+\ord{URL}{Forkortelse for Uniform Resource Locator. Dette er rett og
+slett adressene som brukes på Internettet for å kople et program opp
+mot en informasjonsressurs et sted. Et eksempel på en slik URL er
+\href{adressen vi bruker i dette kurset for å kople oss mot demosiden
+for Intervett}{http://www.oslonett.no/IV/IV.html}}
+
+\ord{WAN}{Forkortelse for Wide Area Network. Dette er en sammenkopling
+av LAN }
+\end{itemize}
+
+
+
+ \begin{theindex}
+
+
+\item ``News'', 9
+\item ``mailgateway'', 9
+
+  \indexspace
+
+\item  Brown, Richard H. , 35
+
+  \indexspace
+
+\item Archie, 17
+\item Arpanet, 3
+\item ASAP, 62
+\item ATM, 62
+\item AUP, 12
+
+  \indexspace
+
+\item Baumann, 33
+\item BBS, 9, 36
+  \subitem The Well, 36
+\item brannvegg, 28
+\item BTW, 62
+
+  \indexspace
+
+\item Canter \& Siegel, 12
+
+  \indexspace
+
+\item elektronisk post, 6
+\item email, 6
+\item EMS, 9
+\item epost, 6
+\item Ethernet, 26
+
+  \indexspace
+
+\item FAQ, 12, 62
+\item Feher, F., 35
+\item Flame, 62
+\item FTP, 12, 62
+  \subitem  anonymous, 13
+
+  \indexspace
+
+\item Gopher, 18
+  \subitem Veronica, 18
+
+  \indexspace
+
+\item HTML, 21, 62
+\item HTTP, 21
+
+  \indexspace
+
+\item IAB, 62
+\item IANA, 62
+\item IESG, 62
+\item IETF, 62
+\item IMHO, 62
+\item IRL, 36
+\item IRSG, 62
+\item IRTF, 63
+\item ISDN, 26, 63
+\item ISL, 32
+
+  \indexspace
+
+\item klient, 63
+\item Kvasir, 31
+
+  \indexspace
+
+\item LAN, 63
+
+  \indexspace
+
+\item MAN, 63
+\item metainformasjon, 17
+\item MIME, 63
+\item MIT, 3
+\item Mosaic, 65
+
+  \indexspace
+
+\item Naisbitt, 34
+  \subitem  Global Paradox, 1994, 34
+\item Netnews, 9
+\item Netscape, 65
+\item Norwegian Library House, 65
+
+  \indexspace
+
+\item Oslonett, 1, 65
+  \subitem  Oslonett Markedsplassen, 65
+
+  \indexspace
+
+\item Postman, Neil, 36
+\item postmoderne, 33
+\item PPP, 26
+\item Public Domain, 39
+
+  \indexspace
+
+\item RAND, 3
+\item Rondo, 31
+\item Router, 3, 63
+
+  \indexspace
+
+\item sikkerhet, 28
+\item SLIP, 26
+\item SMTP, 9, 63
+\item symbolanalytikere, 34
+
+  \indexspace
+
+\item Taylor, 32
+\item TCP/IP, 3, 26, 63
+\item Telepost Communication, 6, 9
+\item Telnet, 63
+\item Token Ring, 26
+
+  \indexspace
+
+\item URL, 1, 63
+\item USENET, 9
+
+  \indexspace
+
+\item Veronica, 18
+\item VIM, 9
+\item virtual communities, 36
+
+  \indexspace
+
+\item WAIS, 19
+\item WAN, 63
+\item World Wide Web, 21
+\item WWW, 21
+
+  \indexspace
+
+\item X.400, 9
+
+\end{theindex}
+
+\subsection{Anbefalt fordypningsstoff}
+I kjølvannet av den enorme interessen for Internet, har det dukket opp
+mange bøker om forskjellige sider ved Internet. Svært mange av bøkene
+er rett og slett rettesnorer for hvordan man kan og bør gå fram for å
+finne informasjon og ellers være gode borgere av Internet samfunnet,
+mens andre bøker fokuserer på organisasjonsmessige og samfunnsmessige
+forhold rundt bruk av Internet.
+
+Bøkene i bibliografien under er brukt som referanser i dette kompendiet,
+og derfor også en del av et mulig fordypningsstoff.
+
+Ønsker man en grei innføring på norsk, er absolutt \cite{BRUK} å
+anbefale.
+
+Ellers drister vi oss til å anbefale de to bøkene ``The Whole Internet 
+Catalog'' \cite{WIC} og ``More Internet for Dummies'' \cite{MORE}. Den
+første er først og fremst et oppslagsverk over ressurser på nettet,
+mens den andre er en lærebok i hvordan man finner fram og bruker
+forskjellige tjenester.
+
+En annen ``gule sider katalog'' for Internettet er ``The Internet
+Yellow Pages'' \cite{YP} -- en emneindeks for likt og ulikt på nettet.
+Faren med en slik bok, er selvsagt at den er uoppdatert i det øyeblikk
+den er utgitt. Den kan være grei for å orientere seg om hva som finnes,
+men slike emneindekser bør brukes i form av online ressurser, ikke trykte!
+
+En ganske ny og god bok, er ``The Internet Business Guide'' \cite{TIBG}. Som navnet
+antyder, fokuserer denne på den forretningsmessige siden av det å bruke
+Internet.
+
+Ellers finnes det muligheter for å studere beskrivelse av flere av bøkene
+og magasinene online. På Oslonett Markedsplassen er det flere annonsører som
+\index{Oslonett; Oslonett Markedsplassen}
+publiserer lister over Internet bøker, se f.eks
+\index{Norwegian Library House}
+\href{Norwegian Library House}{http://www.oslonett.no/html/adv/NLH/NLH.html}
+og \href{IDG Bookshop}{http://www.oslonett.no/html/adv/IDG/IDG.html}.
+Det meget gode magasinet ``Internet World'' \cite{IW} legges hver måned ut
+i Meckler Medias Web server \href{MeclerWeb}{http://www.mecklerweb.com/mags/iw/iwhome.htm}, og her vil man finne mye interessant lesing.
+
+Som ellers når det gjelder Internet, er imidlertid den beste måten
+å lære på å bruke nettet aktivt. Start med et World Wide Web program
+som f.eks. \prog{Netscape} eller \prog{Mosaic}, og let deg fram  på nettet. Du
+vil stadig finne ny og nyttig informasjon og nye måter og nye steder
+det er verdt å besøke.
+\index{Netscape}
+\index{Mosaic}
+\bibliography{biblio}
+\subsection{Informasjon om Intervett AS}
+Intervett AS har som forretningside å arrangere Internet kurs
+for norsk næringsliv, og er administrativt ansvarlig for gjennomføringen
+av kursene.
+
+\subsection{Informasjon om Oslonett AS}
+\index{Oslonett}
+Oslonett er et konsulentselskap med utspring i forskningsmiljøet
+i Gaustadbekkdalen i Oslo, og er i dag landets ledende miljø på
+Internet, Internet tjenester, UNIX og TCP/IP. 
+
+Oslonett ble  internasjonalt kjent da de distribuerte
+resultater fra Lillehammer OL til Internettet, og gjorde det
+samme med EU avstemningen i Norge,
+
+Oslonett er dessuten  en norsk Internet tilbyder, og kan tilby
+bedrifter og privatpersoner alle former for Internet tilgang,
+inkludert oppringt aksess, SLIP, PPP, faste linjer, Frame Relay
+og ISDN. Selskapet tilbyr dessuten en lang rekke konsulenttjenester
+i tilknytning til Internet, inkludert oppsett av brannveggløsninger
+og oppsett av World Wide Web baserte tjenester.
+
+Oslonett driver selv en elektronisk markedsplass basert på
+World Wide Web teknologi -- \href{Oslonett Markedsplassen}{http://www.oslonett.no/html/adv/ON-market.html}.
+Oslonett er faglig og pedagogisk ansvarlig for Intervett kursene,
+og står for både kursutvikling og forelesninger.
+
+\setlength{\parskip}{0cm}
+\listoffigures
+
+\section*{Til slutt ..}
+
+Dette kompendiet er versjon 1.0 og kommer til å bli gitt ut i mange nye utgaver. Som
+deltager på et Intervett kurs, vil du være garantert tilgang til nyeste versjon av
+kompendiet når som helst. Det krever bare at du har Internett tilgang og World Wide
+Web aksess. Da vil du finne all nødvendig informasjon om dette i \href{Intervetts
+WWW hjemmeside}{http://intervett.oslonett.no/IV/IV.html}.
+
+
+\vspace{0.6cm}
+{\it Vi ses på Internet!}
+\vspace{0.6cm}
+
+Oslo, \today
+
+\vspace{1cm}
+\centerline{\bf \hfill Steinar Kjærnsrød \hfill Knut Jørstad \hfill}
+\end{document}

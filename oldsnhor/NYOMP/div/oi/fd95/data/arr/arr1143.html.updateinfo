@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1143"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Åpen dag"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="NILU/IFE's lokaler på Kjeller"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="1000-1500"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="72"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Norsk institutt for luftforskning (NILU)"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Kjeller"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Omvisning, demonstrasjon av samfunnsorienterte forskningsoppgaver. 'Åpen dag' er koordinert og samkjørt med IFEs arrangement. På NILU vil vi vise hvordan NILU overvåker lufta, målinger og analyser, samt demonstrasjon av hva ozonlaget er. ` -->
+<!-- replace `<option(.*Akershus)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?14.10"?)\s*>` with `` checked>` -->

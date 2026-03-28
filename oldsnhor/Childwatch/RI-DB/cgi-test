@@ -1,0 +1,6 @@
+#!/local/bin/perl
+
+$ENV{QUERY_STRING} = "country=Finland";
+
+exec "cw-search.cgi";
+die "Can't run cw-search.cgi";

@@ -1,0 +1,38 @@
+#
+# image map file for smi features menu in the main window
+#
+default http://www2.oslonett.no/sp/fvm/sites/no.Sched.html
+
+# Detroit, Michigan
+rect http://www2.oslonett.no/sp/fvm/sites/detroit.schedule.html 378,145 441, 162
+
+# Orlando, Florida
+rect http://www2.oslonett.no/sp/fvm/sites/orlando.schedule.html 407,314 488,339
+
+
+# Washington D.C.
+rect http://www2.oslonett.no/sp/fvm/sites/washDC.schedule.html 439,193 556,225
+
+
+# Boston, Massachusetts
+rect http://www2.oslonett.no/sp/fvm/sites/boston.schedule.html 480,140 560,158
+
+
+# Chicago, Illinois
+rect http://www2.oslonett.no/sp/fvm/sites/chi.schedule.html 271,163 355,185
+
+
+# Dallas, Texas
+rect http://www2.oslonett.no/sp/fvm/sites/dallas.schedule.html 244,285 317,309
+
+
+# Los Angeles, CA
+rect http://www2.oslonett.no/sp/fvm/sites/la.schedule.html 31,229 135,249
+
+
+#San Francisco, California
+rect http://www2.oslonett.no/sp/fvm/sites/sf.schedule.html 9,181 124,201
+
+
+# New York/New Jersey
+rect http://www2.oslonett.no/sp/fvm/sites/ny.schedule.html 464,159 545,181

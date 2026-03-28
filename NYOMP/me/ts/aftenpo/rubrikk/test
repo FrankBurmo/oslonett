@@ -1,0 +1,6 @@
+
+@sorta = @a[sort bykat $[..#a];
+
+sub bykat {
+$c[$a] <==> $c[$b];
+}

@@ -1,0 +1,6 @@
+default http://www.sn.no/infobox
+
+rect http://www.sn.no/infobox/side1.html   92,9   256,74
+rect http://www.sn.no/infobox/side5.html   92,83  268,147
+rect http://www.sn.no/infobox/side3.html   273,9  453,74
+rect http://www.sn.no/infobox/side2.html   273,83 453,147

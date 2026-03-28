@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="1109"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Forskning - Godt stoff for media?"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Nordlandsforskning, Høgskolen i Bodø"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="Kl. 1600"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="60"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Nordlandsforskning"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Nordlandsforskning, Høgskolen i Bodø"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Hvilken redaksjonelle linje ligger bak Dagens Næringslivs interesse for forskningsstoff? v/Red. Dagens Næringsliv Eksempler på bruk av forskningsstoff i en regionavis v/Journalist Eva Eriksen, Stavanger Aftenblad Mellom barken og veden? Forskningsproduksjon i utkantene, hvordan få dette fram i riksmedia? v/Distriktssjef Einar Haalien, NRK-Nordland Et tidsskrift bedre egnet for presentasjon av forskningsstoff? v/ Styreformann/ansvarlig redaktør Finn Bjrønar Hansen, Næring i Nord` -->
+<!-- replace `<option(.*Nordland)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?10.10"?)\s*>` with `` checked>` -->

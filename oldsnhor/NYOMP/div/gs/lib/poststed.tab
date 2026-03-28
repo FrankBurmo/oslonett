@@ -1,0 +1,5 @@
+0 nr		numeric(4,0) primary key
+1 navn		varchar not null
+
+INDEX navn
+

@@ -1,0 +1,15 @@
+<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-arr.cgi og brukes dersom  -->
+<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
+<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="7"` -->
+<!-- replace `(name\s*=\s*"?Arrangement"?)` with `` value="Åpent hus på AFI"` -->
+<!-- replace `(name\s*=\s*"?Sted"?)` with `` value="Stensberggt. 29, Oslo (vis a vis Forskningsrådet)"` -->
+<!-- replace `(name\s*=\s*"?Klokkeslett"?)` with `` value="10.30-15.00"` -->
+<!-- replace `(name\s*=\s*"?Kontakt"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Pris"?)` with `` value=""` -->
+<!-- replace `(name\s*=\s*"?Maalgruppe"?)` with `` value="venner, kolleger, brukere, presse- og ellers alle som måtte være interessert i hva vi driver med"` -->
+<!-- replace `(name\s*=\s*"?Instnummer"?)` with `` value="11"` -->
+<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="Arbeidsforskningsinstituttet"` -->
+<!-- replace `(name\s*=\s*"?Beliggenhet"?)` with `` value="Stensberggt. 29"` -->
+<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``ÅPENT HUS PÅ AFI Program for dagen: kl. 11.00-11.10: VELKOMMEN TIL AFI, v/Robert Salomon, AFIs direktør kl. 11.10-12.00: FORSKNING - EN JÅLETE VIRKSOMHET? v/forsker Tian Sørhaug. Sørhaug er sosialantropolog og tidligere instituttleder ved AFI kl. 12.00- : ÅPENT HUS i alle våre tre etasjer kl. 14.00-15.00: ORGANISERING OG ERFARING FRA UTVIKLINGSARBEID BLANT FATTIGE KVINNER I INDIA v/Dr. Rukmini Rao.Dr. Rao arbeider ved Deccan Development Society i Hyderabad, India. Dr.Rao er samfunnsforsker og startet tidlig på 1970-tallet sitt arbeid med reformer og utviklingsprosjekter i India, først i industrien og så i økende grad på landsbygda. Hennes utgangspunkt har vært å hjelpe de fattigste industriarbeiderne og landsbybefolkningen til å bedre sine kår. Hun er en meget uredd og sterk forkjemper for kvinners rettigheter i India og er velkjent og respektert både som forsker og aktivist i India og internasjonalt. SERVERING av snacks, mineralvann, kaffe/te etc. For evt. spørsmål, kontakt informasjonskonsulent Torill Eide` -->
+<!-- replace `<option(.*Oslo)` with `<option selected`` -->
+<!-- replace `(name\s*=\s*"?Dato"?\s+value\s*=\s*"?09.10"?)\s*>` with `` checked>` -->
