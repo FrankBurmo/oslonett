@@ -1,0 +1,155 @@
+Åsdata, BB-21
+3M Norge A/S, CA-21
+AGS Gruppen AS, Horten, BB-40
+AMP Norge A/S, CA-17, Rutere, Hub'er, Broer, ATM,ISDN, Frame Relay, svitsjer, nettverksadministrasjon, nettverkskort, lokalnett, multiplexere, kablingssystemer
+AT & T Global Information Solutions A/S, BB-11
+Aagaard Musikk, BB-35
+Acto Informasjonssystemer A/S, BB-20, Dokumentbehandling, elektronisk post/gruppevare, kommunikasjonsprogrammer, tekstbehandling
+Acucobol Scandinavia AB, BB-22
+Admi Systemer AS, CB-15, Fakturering, konsulenttjenester, kurs og opplæring, lagerstyring, lønn- og personaladm. ordrestyring/-regnskap, planlegging, prosjektstyring, salgstøtte/-styring, statistikk, tekstbehandling, tidsregistrering, økonomi & regnskap, finans, revisorer, EDB kurs, EDB rådgivning, 
+Akademika, BB-19, CD-ROM titler, bøker
+Aladdin Software A/S, CA-05, Bildebehandling, databaser, dokumentbehandling, grafikk/tegn/male/skisse/presentasjon, konsulenttjenester, kurs og opplæring, publishing (DTP), tekstbehandling, utviklingsverktøy
+Alcadon AS, CA-18, Rutere, Hub'er, Broer, ATM,ISDN, Frame Relay, svitsjer, kablingssystemer
+Ambrasoft, CA-29
+Andresen Data, GA-20
+Autodesk AB, BB-11
+Av Teknikk AS, CA-38, Grafikk/tegn/male/skisse/presentasjon, konsulenttjenester, kurs og opplæring, opplæring/undervisning, interaktive, lyd/musikk-utstyr, lydkort, CD-ROM titler,LCD projectorer, tale-, data- og billedkommunikasjon, reklame/salg/markedsføring
+BJ Electronics Software, CB-23, Opplæring/undervisning, CD-ROM titler
+Baltic Business Software AS, GA-07, Systemprogramvare, nettverksadministrasjon
+Bergman Systems A/S, BB-14
+Bergstrøm Trading A/S, Dennis, CA-27
+Bexab Norge A/S, CB-31
+Boole & Babbage, CB-08
+CADpoint AS, BB-11
+CMS A/S, CB-16 CB-07, Laserskrivere, UPS-systemer
+CS Systems, CA-01, Tastatur/mus, Industri-PC, koblingssystemer, lokalnett, bablingssystemer, monitorer, UPS-systemer, fysisk sikring, kabelavhengig overførinsteknikk og kabelsystemer, ETSI-skap, bygg og anlegg, drift og vedlikehold, engros-handel, media, forsikring, forskning og undervisning, ingeniører, institusjoner og offentlig virksomhet, finans, produksjon, datamøbler
+Cardel AB, CB-32, Datamøbler
+Computer Associates  A/S, BB-02, Beslutningsstøttesystemer, databaser, innkjøpssystemer, lagerstyring, lønn- og personaladm., prosjektstyring, systemprogramvare, utviklingsverktøy, økonomi & regnskap, material- og produksjonsstyringssystemer, MA/MPS, nettverksadministrasjon, databasetjenester, backup-systemer, adgangskontroll
+Computer Associates  A/S, BB-02
+Connect AS, BB-08
+Connecta Kontorsyst. AS, BB-28
+Cosima Top Systems as, CB-05, Databaser, fakturering, innkjøpssystemer, kommunikasjonsprogrammer, konsulenttjenester, kurs og opplæring, lagerstyring, oredrestyreing/-regnskap, salgstøtte/-styring, utviklingsverktøy, økonomi & regnskap, nettverksoperativsystemer, nettverkskort, kommunikasjonskort, foreninger
+CreditInform AS, GA-01
+Danyko A/S, BA-25, Strekkkodelesere, strekkodeprintere, EDB rådgivning
+DataPower Norge A/S, BB-26
+Datanet AS, BB-24, Elektronisk post/gruppvare, kommunikasjonsprogrammer, konsulenttjenester, utviklingsverktøy, kommunikasjonskort, emulator, internet, ISDN, fjerntrafikk (ISDN)
+Datatjenester AS, CA-11, Beslutningsstøttesystemer, utviklingsverktøy, drift og vedlikehold
+Datatjenester AS, CA-11
+Deko A/S, BA-11
+Digipass S.A., GA-06
+Digital Equipment Corp. A/S, CB-10
+EDS Unigraphics, CA-23
+EUnet Norge, BA-08
+Easy Data A/S, BA-15, Opplæring/undervisning, interaktive presentasjoner/opplæring, CD-ROM titler, bøker, EDB kurs
+Economica AS, GA-06
+Ergo-Line AS, BA-33
+Ergo-Teknikk A/S, CA-08
+Ergosoft A/S, BB-15, Betalingsformidling, fakturering, innkjøpssystemer, konsulenttjenester, kurs og opplæring, lagerstyring, læreprogrammer, lønn- og personaladm., ordrestyring/-regnskap, økonomi & regnskap
+Esi Techtrans Norge AS, CA-14
+Ess Data AS, GA-10
+Esselte Dymo A/S, GA-12
+Euro-Tec A/S, BB-19, Elektronisk post/gruppevare, fakturering, konsulenttjenester, kurs og opplæring, operativsystemer, personlig økonomi, planlegging, prosjektstyring, publishing (DTP), regneark, salgstøtte/-styring, grafikk-kort, lydkort, CD-ROM titler, 386, 486, pentium, desktop PC/Mac, bærbar PC/Mac, PC-servere, unix arbeidsstasjoner, multimediamaskiner, hovedkort, hukommelseskort, SCSI-kort, tastatur/mus, strømforsyning/batteri, rekvisita, docking station/port replikator, diskettstasjoner, nettverksoperativsystemer, nettverksadministrasjon og overvåking, modem, telefax, nettverkskort, kommunikasjonskort, lokalnett, kablingssystemer, monitorer, LCD-skjermer, matriseskrivere, laserskrivere, blekkskrivere, harddisker, båndstasjoner, optiske stasjoner, CD-ROM spillere, backup-systemer, virussystemer, UPS-systemer, fysisk sikring, skjermfilter, disketter
+France Telecom Network Services AS, CA-34
+Frontend, BB-19, Kommunikasjonsprogrammer, lagerstyring, material- og produksjonsstyringssystemer, MA/MPS, 486, pentium, desktop PC/Mac, bærbar PC/Mac, docking station/port replikator, mobiltelefon-tilleggsutstyr, drift og vedlikehold
+GG Data AS, CB-06, Elektronisk post/gruppevare, fakturering, innkjøpssystemer, innkjøpssystemer, kommunikasjonsprogrammer, konsulenttjenester, kurs og opplæring, lagerstyring, lønn- og personaladm., markedsanalyse, ordrestyring/-regnskap, prosjektstyring, salgsstøtte/-styring, statistikk, suiter, økonomi & regnskap, telefax program, emulatorer, internet, engros-handel
+Genius Scandinavia AB, BB-11
+Grøner Data AS, BB-11
+Graphitech AS, BA-32
+Gregersen Tegneutstyr A.S, BA-26, Digitaliseringsbord, scannere, plottere/printere, tastatur/mus, rekvisita, monitorer, laserskrivere, blekkskrivere, termiske skrivere, plottere, scannere, datamøbler, skjermfilter, disketter
+Gupta Norge as, CB-17
+Hewlett Packard Norge AS, BA-14, Databaser, dokumentbehandling, kommunikasjonsprogrammer, konsulenttjenester, lagerstyring, lønn- og personaladm., ordrestyring/-regnskap, operativsystemer, planlegging, prosjektstyring, økonomi & regskap, tegne-og konstruksjonssystemer, material- og produksjonsstyringssystemer, MA/MPS, scannere, plottere/printere, 486, pentium, desktop PC/Mac, bærbar PC/Mac, PC-servere, unix arbeidsstasjoner, unix servere, minimaskiner, stormaskiner, multimediamaskiner, hukommelseskort, tastatur/mus, strømforsyning/batteri, rekvisita, docking station/port replikator, diskettstasjoner, nettverksoperativsystemer, Rutere, Hub'er, Broer, ATM,ISDN, Frame Relay, svitsjer, netverksadministrasjon, nettverkskort, databasetjenester, lokalnett, internet, monitorer, laserskrivere, blekkskrivere, plottere, scannere, harddisker, båndstasjoner, optiske stasjoner, CD-ROM spillere, backup-systemer, UPS-systemer, drift og vedlikehold, engros-handel, forsikring, ingeniører, institusjoner og offentlig virksomhet, produksjon, transport/lager
+Hult & Lillevik, BB-21
+IBM A/S, BA-02
+Intergraph Norge AS, BB-04
+International Thomson Publishing, GB-07
+IsoSoft, GA-06
+KTB Engineering, BB-11
+Kapital Data/PC Magazine, BA-24
+Kunnskapsforlaget A/S, CB-21
+LT Kontorsystemer AS, BB-06, Skjermfilter, disketter, BASF produkter
+MSC Nordic, BB-18, Systemer for beregning og kalkulasjon
+Maconomy Norge as, GA-09
+Malmstolen AB, BA-33
+Mandata A/S, CA-13
+Microsoft Norge, BA-18, Databaser, elektronisk post/gruppevare, grafikk/tegn/male/skisse/presentasjon, operativsystemer, planlegging, prosjektstyring, publishing (DTP), regneark, suiter, systemprogramvare, tekstbehandling, utviklingsverktøy, lydkort, CD-ROM titler, tastatur/mus, nettverksoperativsystemer, 
+Microsoft Norge, BA-18
+Moderne Produksjon A/S, CA-30
+Multimedia Presentation as, GB-10
+NEMKO, GB-03
+Nestor, BB-11
+Newtech A/S/Newsoft AS, BB-10, Bildebehandling, databaser, dokumentbehandling, grafikk/tegn/male/skisse/presentasjon, tegne- og  konstruksjonssystemer, digitaliseringsbord, scannere, plottere/printere, opplæring/undervisning, porduksjon/distribusjon, bilder/bildebehandling, interaktive presentasjoner/opplæring, animasjon/film/video, lyd/musikk-utstyr, CD-ROM brennere, grafikk-kort, videokort, lydkort, SCSI-kort, rekvisita, monitorer, laserskrivere, blekkskriver, termiske skrivere, plottere, scannere, harddisker, båndstasjoner, optiske stasjoner, CD-ROM spillere, backup-systemer, arkitekter, bygg og anlegg, drift og vedlikehold, eiendomsadministrasjon, grafisk bransje, ingeniører, reklame/salg/markedsføring, disketter
+Nocom Norge AS, BA-09
+NorConnect Internet Services AS, GB-11
+NorMedia, BA-31
+Nordak AS, BB-11
+Nordcomp Norway A/S, GA-11
+Norex AS, CB-33, Kabelavhengig overføringsteknikk og kabelsystemer, bygg og anlegg, institusjoner og offentlig virksomhet, transport/lager
+Norman Data Defens Systems AS, GA-02, Adgangskontroll, virussystemer, firewall
+Norsk ESD-Kontroll AS, BA-33
+Novell Norge, BA-12
+Office AS, BB-21
+Olivetti Norge A/S, CA-29
+Oslonett AS, GB-15
+PC Lan Produkter AS, BB-25
+PC World Norge, CA-32, Tidsskrifter
+PC-Systemer Norge A/S, BB-21, Økonomi & regnskap
+PSI A/S, BA-13, Tastatur, rekvisita, termiske skrivere, scannere, strekkodelesere, strekkodeskrivere, bibliotek, bygg og anlegg, drift og vedlikehold, detaljhandel, engros-handel, grafisk bransje, produksjon, helsesektoren, transport/lager
+Panasonic Norge A/S, BB-05
+Philips Konsumentelektronikk AB, BB-11
+Piramide Automatisering BV, CA-11
+Platinum Technology, GB-05
+Polyteknisk Revy, GA-05
+Postbanken, CB-04
+Powerteam, CA-11, Dokumentbehandling, kommunikasjonsprogrammer
+Powertech Information Systems A/S, CB-11, Operativsystemer, PC-servere, unix arbeidsstasjoner, unix severe, Rutere, ATM, ISDN, Frame Relay, svitsjer, internet, tale-, data- og billedkommunikasjon, ISDN, fjerntrafikknett (ISDN), verdiøkende nett-tjenester, EDB kurs
+Powertech Information Systems A/S, CB-11
+Pre-Data AS, CA-19, Opplæring/undervisning, bærbar PC/Mac, monitorer, LCD-skjermer, LCD projectorer, datamøbler
+Prentice Hall, GA-19
+ProMed, GA-06
+Programutvikling, CA-16, Databaser, dokumentbehandling, fakturering, grafikk/tegn/male/skisse/presentasjoner, konsulenttjenester, operativsystemer, planlegging, salgsstøtte/-styring, konsulenttjenester, 486, pentium, desktop PC/Mac, bærbar PC/Mac, PC-servere, minimaskiner, hovedkort, hukommelseskort, SCSI-kort, tastatur/mus, strømforsyning/batteri, docking station/port replikator, diskettstasjoner, monitorer, reklame/salg/markedsføring, EDB rådgivning, EDB management
+Programvareforlaget AS, GA-06
+Protect Data Norge AS, BB-36, Adgangskontroll, virussystemer, finans
+Renico AS, CA-20
+Respons Business Partner AS, BB-38
+Ricoh Norge A/S, BB-29
+Rittal A/S, BB-31
+Roland Scandinavia, Norge, BB-35
+Rosengrens Norge AS, E.A., CB-19
+Scanhold Norge AS, BA-33
+Scanord Invest AS, Megafect, CB-29
+Screenguard Miljøprodukter AB, BA-33
+Setterberg, Kalin Data A/S, BA-29
+Silicon Graphics A/S, BA-08
+Software Contractor A/S, GA-06
+Statens Datasentral AS, GB-06
+Static A/S, BA-19
+Summit Systems AS, BA-01
+SuperOffice a.s, CA-25
+SuprAVision AS, CB-20
+Sybase Norge, CB-26
+Tørrkopi Civit A/S, BB-11
+Tørrkopi Civit A/S, CA-26
+TV2, Bergen, BA-08
+Tallgrass Technologies AS, BB-17
+Team Data A/S, BB-22
+Techno Cad, BB-04
+Teknisk Ukeblad, GB-12
+Tektronix Norge A/S, GA-04
+Tele-Teknikk AS, CB-37
+TelePost Communication A.S, GB-12
+Telefax Schandinavia Norge AS, GA-13
+Telefonselskapet A.S., CB-37
+Telenor Dialog AS, CB-01
+Telia Norge AS, CA-15
+Time Recorder A/S, CA-24
+Total Consept AS, GA-15
+UBI A/S, CA-03
+UMI A.S, CA-29
+Unicus Data AS, GA-03
+Unisoft as, CB-30
+Vega Software AS, CA-09
+Vero Electronics Ltd., CA-01
+Vestfold Industridata A/S, BB-16
+Vidamic A/S, CB-02
+kontor-teknisk, CB-09
+mips a.s, CA-30

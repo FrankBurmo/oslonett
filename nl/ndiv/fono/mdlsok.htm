@@ -1,0 +1,106 @@
+<html>
+<head>
+ <title>FONO: Søkegrensesnitt til medlemsregister</title>
+ <link rev=made href="mailto:webmaster@sn.no">
+</head>
+<body bgcolor="#ffffff" background="/fono/img/back.gif">
+<table><tr><td valign=top width=25%><a href=/fono/><img alt="[FONO-logo]" align=left SRC=img/logo.gif border=0></a><br><pre>               </pre><td valign=top> <h1>Foreningen Norske Plateselskaper<br><a href="img/menu.map"><IMG SRC="img/medl_menu.gif" border=0 ismap></a></h1>
+</table>
+<br clear=all>
+
+<h1>FONO: Søkegrensesnitt til medlemsregister</h1>
+
+<form method="POST" action="finnmdl.cgi">
+
+
+<blockquote>
+<hr noshade size=1>
+<font size=+1>
+ Dette skjemaet brukes til å søke i FONOs medlemsbase på
+ SN Horisont (TM). Man kan ta ut  lister etter ulike kriterier og i ulike
+ formater. 
+</font>
+<hr noshade size=1>
+</blockquote>
+
+
+Dersom  feltet nedenfor ikke fylles ut, returneres en <a
+href="finnmdl.cgi?format=html">liste
+over alle medlemmer</a>. Det er mulig å angi bruddstykker av
+navn, og alle som matcher vil da bli vist.
+
+
+<p>
+
+<pre>
+<hr noshade size=1>
+
+<input type="submit" value="Start søk">
+
+
+Navn på medlem:  <input name="Firma" type="text" size=50>
+</pre>
+
+
+<hr noshade size=1>
+
+
+<h2>Ønsket format</h2>
+
+Oppgi ønsket format for dokumentet som returneres:
+
+<blockquote>
+<input type="radio" name="format" value="html" checked>
+HTML-dokument<br>
+<input type="radio" name="format" value="htmlfull">
+HTML-dokument med all informasjon listet, velegnet til print<br>
+<!-- <input type="radio" name="format" value="psskjerm">PostScript-dokument for visning på skjerm<br> -->
+
+<!-- <input type="radio" name="format" value="psfil">PostScript-dokument for lagring til fil<br> -->
+
+</blockquote>
+
+<h2>Ønskede felter i liste</h2>
+
+Nedenfor velges hvilke felter som skal med i listen i tillegg til
+firmanavn og kundenummer. (Pass selv på å ikke velge for mange linjer
+slik at det ikke blir plass på arket/skjermen.) Hvis full utskrift
+alt er valgt over, har ingen av disse valgene noen betydning.
+
+<blockquote>
+<input type="checkbox" name="felt.kontakt" > Kontaktperson <br>
+<input type="checkbox" name="felt.tel" > Telefon <br>
+<input type="checkbox" name="felt.adr" > Adresse <br>
+
+</blockquote>
+<h2>Sorteringsalgoritme</h2>
+Dersom søket gir to eller flere treff i databasen skal listen sorteres...
+
+<blockquote>
+<input type="radio" name="sortering" value="alfabetisk" checked>
+alfabetisk<br>
+
+<input type="radio" name="sortering" value="dato">
+etter registreringsdato, siste registrering først
+</blockquote>
+
+<input type="submit" value="Start søk">
+<input type="reset" value="Resett skjema">
+</form>
+<address>
+<hr noshade size=1 width=30% align=left>
+   <a href="http://www.sn.no/fono/">
+   <img src="/fono/img/icon.gif"
+        alt="[FONO-Hjemmeside]"
+     valign=middle align=left
+     border="0"></a>
+
+   <a href="http://www.sn.no">
+   <img src="http://www.sn.no/img/horisont.gif"
+        alt="[SN Horisont]"
+     valign=middle align=right
+     border="0"></a>
+</address>
+
+</body>
+</html>

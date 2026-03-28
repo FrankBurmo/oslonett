@@ -1,0 +1,1616 @@
+aksje: s= FOK , 9:46, bid:0, ask:0, price:0, vol:1000
+aksje: s= NHY , 9:46, bid:0, ask:0, price:0, vol:4800
+aksje: s= ACS , 9:45, bid:0, ask:0, price:0, vol:21
+aksje: s= SFJ , 9:46, bid:0, ask:0, price:0, vol:40
+aksje: s= IVH , 9:46, bid:0, ask:0, price:0, vol:40
+aksje: s= MET , 9:46, bid:0, ask:0, price:0, vol:40
+aksje: s= SPT , 9:46, bid:0, ask:0, price:0, vol:8000
+aksje: s= EIRG, 9:46, bid:0, ask:0, price:0, vol:260
+aksje: s= SADG, 9:46, bid:0, ask:0, price:0, vol:50
+aksje: s= KB11, 9:56, bid:103.21, ask:103.27, price:0, vol:0
+aksje: s= KB12, 9:56, bid:98.12, ask:98.25, price:0, vol:0
+aksje: s= KB13, 9:56, bid:95.55, ask:95.75, price:0, vol:10000000
+aksje: s= KB10, 9:56, bid:112.4, ask:112.55, price:0, vol:0
+aksje: s= HL13, 9:56, bid:106.96, ask:107.05, price:0, vol:0
+aksje: s= HL18, 9:56, bid:97.55, ask:97.75, price:0, vol:0
+aksje: s= HE70, 9:56, bid:102.93, ask:103.07, price:0, vol:0
+aksje: s= HE72, 9:56, bid:112.55, ask:112.75, price:0, vol:0
+aksje: s= HE75, 9:56, bid:100.6, ask:100.75, price:0, vol:0
+aksje: s= TF60, 9:56, bid:102.63, ask:102.7, price:102.68, vol:10000000
+aksje: s= TG62, 9:46, bid:96.77, ask:96.87, price:0, vol:0
+aksje: s= KM93, 9:46, bid:119.61, ask:119.8, price:0, vol:25000000
+aksje: s= KM94, 9:46, bid:100.45, ask:100.53, price:0, vol:0
+aksje: s= KM95, 9:46, bid:103.31, ask:103.45, price:0, vol:0
+aksje: s= KM97, 9:46, bid:100.1, ask:100.2, price:0, vol:5000000
+aksje: s= KM98, 9:46, bid:92.35, ask:92.6, price:0, vol:0
+aksje: s= S459, 9:56, bid:101.25, ask:101.29, price:0, vol:30000000
+aksje: s= S462, 9:56, bid:109.22, ask:109.27, price:0, vol:78000000
+aksje: s= S463, 9:56, bid:116.47, ask:116.53, price:116.53, vol:898000000
+aksje: s= S465, 9:56, bid:93.49, ask:93.55, price:93.45, vol:707000000
+aksje: s= KW11, 9:46, bid:103.1, ask:103.2, price:0, vol:0
+aksje: s= KW16, 9:46, bid:100.75, ask:100.9, price:0, vol:0
+aksje: s= KW19, 9:46, bid:112.4, ask:112.55, price:0, vol:0
+aksje: s= KX40, 9:46, bid:100.15, ask:100.18, price:0, vol:0
+aksje: s= KX41, 9:46, bid:99.75, ask:99.85, price:0, vol:0
+index: Bank, 9:46, Value: 60.99, change : 0, trade: 32
+index: Forsikring, 9:46, Value: 315.12, change : 0, trade: 0
+index: Industri, 9:46, Value: 1218, change : 0, trade: 1218
+index: Skip, 9:46, Value: 582.08, change : 0, trade: 22
+index: Total, 9:46, Value: 705.19, change : 0, trade: 1272
+index: OBX, 9:46, Value: 394.07, change : 0, trade: 0
+index: BRIX, 9:46, Value: 1948, change : 1.42, trade: 2307616
+aksje: s= SOL , 10:6, bid:13, ask:0, price:0, vol:0
+aksje: s= SPA , 10:6, bid:14, ask:15, price:0, vol:0
+aksje: s= STO , 10:6, bid:98, ask:0, price:0, vol:0
+aksje: s= STOB, 10:6, bid:90, ask:110, price:0, vol:0
+aksje: s= TOD , 10:6, bid:94, ask:98, price:0, vol:20
+aksje: s= WBS , 10:6, bid:27, ask:31.5, price:0, vol:0
+aksje: s= WWI , 10:6, bid:110, ask:0, price:0, vol:0
+aksje: s= ADE , 10:6, bid:600, ask:0, price:0, vol:0
+aksje: s= ADEB, 10:6, bid:600, ask:700, price:0, vol:0
+aksje: s= ACL , 10:6, bid:72, ask:0, price:0, vol:0
+aksje: s= BNR , 10:6, bid:0, ask:85, price:0, vol:0
+aksje: s= KB11, 10:6, bid:103.21, ask:103.27, price:103.23, vol:50000000
+aksje: s= KB10, 10:6, bid:112.45, ask:112.55, price:0, vol:0
+aksje: s= HL18, 10:6, bid:97.55, ask:97.8, price:0, vol:0
+aksje: s= TF60, 10:6, bid:102.63, ask:102.7, price:102.68, vol:20000000
+aksje: s= TG62, 10:5, bid:96.8, ask:96.9, price:96.85, vol:5000000
+aksje: s= S462, 10:6, bid:109.24, ask:109.27, price:109.26, vol:198000000
+aksje: s= S463, 10:6, bid:116.48, ask:116.54, price:116.5, vol:1024000000
+aksje: s= S465, 10:6, bid:93.5, ask:93.55, price:93.45, vol:707000000
+aksje: s= KX37, 10:5, bid:106.1, ask:106.18, price:106.1, vol:20000000
+aksje: s= BSK , 10:6, bid:48, ask:48.5, price:0, vol:0
+aksje: s= BNB , 10:6, bid:152.5, ask:0, price:0, vol:0
+aksje: s= CKR , 10:6, bid:13.8, ask:14, price:0, vol:5251
+aksje: s= DNB , 10:6, bid:16.3, ask:17, price:0, vol:3500
+aksje: s= FOK , 10:6, bid:32, ask:32.4, price:0, vol:1000
+aksje: s= ISB , 10:6, bid:0, ask:17.5, price:0, vol:0
+aksje: s= NBK , 10:6, bid:0, ask:105, price:0, vol:0
+aksje: s= PRF , 10:6, bid:0, ask:145, price:0, vol:0
+aksje: s= UNS , 10:6, bid:0, ask:31.7, price:0, vol:1133
+aksje: s= UNP , 10:6, bid:11.4, ask:11.5, price:0, vol:0
+aksje: s= AAV , 10:6, bid:0, ask:230, price:0, vol:0
+aksje: s= AKE , 10:6, bid:0, ask:80, price:0, vol:125
+aksje: s= AKEB, 10:6, bid:74, ask:82, price:0, vol:0
+aksje: s= AFK , 10:6, bid:0, ask:515, price:0, vol:0
+aksje: s= AVA , 10:6, bid:37, ask:40, price:0, vol:0
+aksje: s= BJF , 10:6, bid:80, ask:0, price:0, vol:0
+aksje: s= BLO , 10:6, bid:90, ask:92, price:0, vol:27500
+aksje: s= BRA , 10:6, bid:330, ask:0, price:0, vol:0
+aksje: s= CTG , 10:6, bid:0, ask:105, price:0, vol:0
+aksje: s= CBJ , 10:6, bid:0, ask:85, price:0, vol:0
+aksje: s= DNO , 10:6, bid:0, ask:3.3, price:0, vol:0
+aksje: s= DYN , 10:6, bid:0, ask:140, price:0, vol:0
+aksje: s= EKO , 10:6, bid:66.5, ask:0, price:0, vol:0
+aksje: s= ELK , 10:6, bid:67, ask:69, price:0, vol:450
+aksje: s= EKJ , 10:6, bid:153, ask:157, price:0, vol:0
+aksje: s= FSL , 10:6, bid:60.5, ask:62, price:0, vol:0
+aksje: s= FIB , 10:6, bid:2.5, ask:2.6, price:0, vol:0
+aksje: s= GOD , 10:6, bid:0, ask:0, price:0, vol:10000
+aksje: s= GRE , 10:6, bid:102, ask:0, price:0, vol:0
+aksje: s= HNA , 10:6, bid:0, ask:182.5, price:0, vol:150
+aksje: s= HNB , 10:6, bid:0, ask:182, price:0, vol:0
+aksje: s= HES , 10:6, bid:71.5, ask:72.5, price:0, vol:0
+aksje: s= HUN , 10:6, bid:0, ask:58.5, price:0, vol:0
+aksje: s= IIR , 10:6, bid:0, ask:17, price:0, vol:0
+aksje: s= KOG , 10:6, bid:158, ask:160, price:0, vol:1600
+aksje: s= KVE , 10:6, bid:0, ask:112, price:0, vol:0
+aksje: s= KVI , 10:6, bid:218, ask:220, price:0, vol:202
+aksje: s= KVIB, 10:6, bid:201, ask:0, price:0, vol:0
+aksje: s= MAG , 10:6, bid:0, ask:88, price:0, vol:0
+aksje: s= MED , 10:6, bid:63, ask:64.5, price:0, vol:0
+aksje: s= MSG , 10:6, bid:0, ask:52, price:0, vol:0
+aksje: s= MOE , 10:6, bid:6.7, ask:6.8, price:0, vol:0
+aksje: s= NER , 10:6, bid:0, ask:225, price:0, vol:0
+aksje: s= NHY , 10:6, bid:252, ask:255, price:0, vol:4800
+aksje: s= NOV , 10:6, bid:101, ask:104, price:0, vol:0
+aksje: s= NSG , 10:6, bid:175, ask:177, price:0, vol:0
+aksje: s= NSGB, 10:6, bid:165, ask:0, price:0, vol:0
+aksje: s= NYD , 10:6, bid:0, ask:27, price:0, vol:0
+aksje: s= OLT , 10:6, bid:101, ask:105, price:0, vol:100
+aksje: s= ORK , 10:6, bid:320, ask:321, price:0, vol:73
+aksje: s= ORKB, 10:6, bid:300, ask:315, price:0, vol:0
+aksje: s= PGS , 10:6, bid:119.5, ask:124, price:0, vol:0
+aksje: s= PRO , 10:6, bid:120, ask:130, price:0, vol:0
+aksje: s= RAU , 10:6, bid:0, ask:115, price:0, vol:0
+aksje: s= REN , 10:6, bid:13.3, ask:14.2, price:0, vol:0
+aksje: s= RIE , 10:6, bid:135, ask:0, price:0, vol:0
+aksje: s= RIEB, 10:6, bid:0, ask:135, price:0, vol:0
+aksje: s= SAG , 10:6, bid:75, ask:77, price:0, vol:3
+aksje: s= SAGB, 10:6, bid:0, ask:72.5, price:0, vol:0
+aksje: s= SCH , 10:6, bid:73, ask:0, price:0, vol:100
+aksje: s= SEL , 10:6, bid:120, ask:124, price:0, vol:0
+aksje: s= SMD , 10:6, bid:0, ask:76, price:0, vol:0
+aksje: s= OPT , 10:6, bid:30, ask:0, price:0, vol:0
+aksje: s= SSI , 10:6, bid:92.5, ask:94, price:0, vol:0
+aksje: s= STE , 10:6, bid:0, ask:3, price:0, vol:0
+aksje: s= TAA , 10:6, bid:74, ask:76.5, price:0, vol:5000
+aksje: s= TAD , 10:6, bid:44, ask:50, price:0, vol:0
+aksje: s= TOM , 10:6, bid:0, ask:42, price:0, vol:619
+aksje: s= UTO , 10:6, bid:0, ask:80, price:0, vol:0
+aksje: s= VEI , 10:6, bid:0, ask:130, price:0, vol:0
+aksje: s= AWS , 10:6, bid:61.5, ask:63, price:0, vol:0
+aksje: s= AWSB, 10:6, bid:60, ask:61, price:0, vol:0
+aksje: s= BEL , 10:6, bid:0, ask:24.5, price:0, vol:0
+aksje: s= BET , 10:6, bid:0, ask:32, price:0, vol:0
+aksje: s= BEA , 10:6, bid:0, ask:140, price:0, vol:0
+aksje: s= BOR , 10:6, bid:0, ask:54, price:0, vol:0
+aksje: s= BORB, 10:6, bid:0, ask:53, price:0, vol:0
+aksje: s= COL , 10:6, bid:20, ask:22, price:0, vol:0
+aksje: s= SFJ , 10:6, bid:0, ask:79, price:0, vol:40
+aksje: s= DUA , 10:6, bid:37, ask:43, price:0, vol:0
+aksje: s= DUAB, 10:6, bid:37, ask:42, price:0, vol:0
+aksje: s= FAR , 10:6, bid:14.5, ask:15, price:0, vol:0
+aksje: s= FOT , 10:6, bid:41.5, ask:43.5, price:0, vol:0
+aksje: s= GRO , 10:6, bid:0, ask:139, price:0, vol:0
+aksje: s= HAV , 10:6, bid:16, ask:18, price:0, vol:0
+aksje: s= IMS , 10:6, bid:0, ask:4.3, price:0, vol:0
+aksje: s= LSL , 10:6, bid:0, ask:13.7, price:0, vol:0
+aksje: s= LHO , 10:6, bid:86, ask:0, price:0, vol:0
+aksje: s= SPT , 10:6, bid:1.8, ask:1.85, price:0, vol:8000
+aksje: s= SME , 10:6, bid:0, ask:110, price:0, vol:0
+aksje: s= SMT , 10:6, bid:47.5, ask:0, price:0, vol:0
+aksje: s= EAB , 10:6, bid:7.5, ask:0, price:0, vol:0
+aksje: s= FOU , 10:6, bid:0, ask:30, price:0, vol:0
+aksje: s= HAG , 10:6, bid:105, ask:107, price:0, vol:0
+aksje: s= IBY , 10:6, bid:0.11, ask:0, price:0, vol:0
+aksje: s= KEN , 10:6, bid:0, ask:6.5, price:0, vol:0
+aksje: s= RIC , 10:6, bid:0, ask:110, price:0, vol:0
+aksje: s= RIN , 10:6, bid:0, ask:97, price:0, vol:0
+aksje: s= SEN , 10:6, bid:0, ask:48, price:0, vol:0
+aksje: s= SKF , 10:6, bid:185, ask:300, price:0, vol:0
+aksje: s= SYS , 10:6, bid:0, ask:140, price:0, vol:0
+aksje: s= TTS , 10:6, bid:74, ask:0, price:0, vol:0
+aksje: s= TES , 10:6, bid:6.8, ask:6.9, price:0, vol:0
+aksje: s= SADG, 10:6, bid:116, ask:118, price:0, vol:50
+aksje: s= NONG, 10:6, bid:0, ask:135, price:0, vol:0
+aksje: s= SNOG, 10:6, bid:161, ask:0, price:0, vol:65
+aksje: s= ROGG, 10:6, bid:0, ask:0, price:0, vol:45
+aksje: s= SVEG, 10:6, bid:139, ask:141, price:0, vol:0
+aksje: s= MING, 10:6, bid:150, ask:152, price:0, vol:0
+index: Bank, 10:6, Value: 60.99, change : 0, trade: 163
+index: Forsikring, 10:6, Value: 315.12, change : 0, trade: 36
+index: Industri, 10:6, Value: 1217.9, change : -0.11, trade: 5454
+index: Skip, 10:6, Value: 582.08, change : 0, trade: 24
+index: Total, 10:6, Value: 705.14, change : -0.05, trade: 5677
+index: OBX, 10:6, Value: 394.04, change : -0.03, trade: 0
+index: BRIX, 10:6, Value: 1948.1, change : 1.53, trade: 2735977
+aksje: s= SYE , 10:14, bid:0, ask:0, price:0, vol:1000
+aksje: s= STOB, 10:15, bid:96, ask:110, price:0, vol:0
+aksje: s= ELK , 10:17, bid:67.5, ask:69, price:0, vol:450
+aksje: s= SNT , 10:19, bid:27, ask:0, price:0, vol:0
+aksje: s= CTG , 10:21, bid:95, ask:105, price:0, vol:0
+aksje: s= STE , 10:21, bid:0, ask:2.75, price:0, vol:0
+aksje: s= STEJ, 10:21, bid:0, ask:0.1, price:0, vol:0
+aksje: s= TAA , 10:21, bid:74.5, ask:76, price:0, vol:5000
+aksje: s= TAD , 10:21, bid:44, ask:45, price:0, vol:0
+aksje: s= TOM , 10:21, bid:40.7, ask:41.5, price:0, vol:619
+aksje: s= UTO , 10:21, bid:78, ask:80, price:0, vol:4000
+aksje: s= VEI , 10:21, bid:127, ask:130, price:0, vol:0
+aksje: s= ACS , 10:21, bid:145, ask:154, price:0, vol:21
+aksje: s= AWS , 10:21, bid:62, ask:63, price:0, vol:0
+aksje: s= BEL , 10:21, bid:24, ask:24.5, price:0, vol:0
+aksje: s= BET , 10:21, bid:28.5, ask:32, price:0, vol:0
+aksje: s= IMS , 10:21, bid:3.5, ask:3.85, price:0, vol:0
+aksje: s= IVH , 10:21, bid:10.5, ask:0, price:0, vol:40
+aksje: s= JIN , 10:21, bid:6.5, ask:7.5, price:0, vol:0
+aksje: s= LSL , 10:21, bid:0, ask:13.5, price:0, vol:0
+aksje: s= LHO , 10:21, bid:92, ask:93.5, price:0, vol:0
+aksje: s= LOI , 10:21, bid:0, ask:27.5, price:0, vol:0
+aksje: s= MET , 10:21, bid:47.5, ask:0, price:0, vol:40
+aksje: s= NOS , 10:21, bid:14, ask:14.7, price:0, vol:0
+aksje: s= NATT, 10:21, bid:0, ask:25, price:0, vol:0
+aksje: s= WBS , 10:21, bid:30, ask:31.5, price:0, vol:0
+aksje: s= WWIB, 10:21, bid:109, ask:115, price:0, vol:0
+aksje: s= ADEB, 10:21, bid:600, ask:650, price:0, vol:0
+aksje: s= ACL , 10:21, bid:80, ask:87, price:0, vol:0
+aksje: s= AXI , 10:21, bid:21.5, ask:22.5, price:22, vol:6500
+aksje: s= BNR , 10:21, bid:85, ask:0, price:0, vol:0
+aksje: s= BRO , 10:21, bid:0, ask:57, price:0, vol:0
+aksje: s= BOH , 10:21, bid:4.9, ask:5, price:0, vol:0
+aksje: s= FOS , 10:21, bid:135, ask:0, price:0, vol:0
+aksje: s= HSD , 10:21, bid:93, ask:0, price:0, vol:0
+aksje: s= IBYT, 10:21, bid:0.08, ask:0.15, price:0, vol:0
+aksje: s= JOT , 10:21, bid:37, ask:39, price:0, vol:0
+aksje: s= KEN , 10:21, bid:5.9, ask:6.1, price:6, vol:5000
+aksje: s= KOA , 10:21, bid:110, ask:0, price:0, vol:0
+aksje: s= LEG , 10:21, bid:38, ask:42, price:0, vol:0
+aksje: s= MUS , 10:21, bid:0, ask:150, price:0, vol:0
+aksje: s= NAM , 10:21, bid:112.5, ask:0, price:0, vol:0
+aksje: s= ORC , 10:21, bid:195, ask:205, price:0, vol:0
+aksje: s= RIN , 10:21, bid:0, ask:95, price:0, vol:0
+aksje: s= SNT , 10:21, bid:27, ask:27.4, price:0, vol:0
+aksje: s= STX , 10:21, bid:23.7, ask:24.5, price:0, vol:0
+aksje: s= SEN , 10:21, bid:40, ask:48, price:0, vol:0
+aksje: s= SKF , 10:21, bid:220, ask:300, price:0, vol:0
+aksje: s= SKR , 10:21, bid:91, ask:94, price:0, vol:1000
+aksje: s= SYS , 10:21, bid:130, ask:140, price:0, vol:0
+aksje: s= SYE , 10:21, bid:0, ask:122, price:0, vol:1000
+aksje: s= EIRG, 10:20, bid:0, ask:120, price:0, vol:260
+aksje: s= SASG, 10:20, bid:90, ask:95, price:0, vol:0
+aksje: s= SNOG, 10:20, bid:161, ask:163, price:0, vol:65
+aksje: s= ROGG, 10:20, bid:0, ask:145, price:0, vol:45
+aksje: s= SVEG, 10:20, bid:140, ask:140.5, price:0, vol:0
+aksje: s= KB12, 10:21, bid:98.15, ask:98.25, price:0, vol:0
+aksje: s= HL17, 10:21, bid:100.96, ask:101.1, price:0, vol:0
+aksje: s= HL18, 10:21, bid:97.57, ask:97.8, price:0, vol:0
+aksje: s= S462, 10:21, bid:109.24, ask:109.27, price:109.26, vol:438000000
+aksje: s= S463, 10:21, bid:116.48, ask:116.54, price:116.5, vol:1074000000
+aksje: s= S465, 10:21, bid:93.5, ask:93.55, price:93.45, vol:763000000
+aksje: s= BNB , 10:21, bid:152.5, ask:158, price:0, vol:0
+aksje: s= CKR , 10:21, bid:13.8, ask:13.9, price:13.9, vol:125000
+aksje: s= DNB , 10:21, bid:16.4, ask:17, price:0, vol:3500
+aksje: s= FOK , 10:21, bid:32.1, ask:32.3, price:0, vol:1000
+aksje: s= ISB , 10:21, bid:17, ask:17.5, price:0, vol:0
+aksje: s= NBK , 10:21, bid:0, ask:100, price:0, vol:0
+aksje: s= PRF , 10:21, bid:141, ask:145, price:0, vol:0
+aksje: s= AKE , 10:21, bid:78, ask:80, price:0, vol:125
+aksje: s= AKEB, 10:21, bid:74, ask:75, price:0, vol:0
+aksje: s= STK , 10:21, bid:0, ask:365, price:0, vol:0
+aksje: s= AVA , 10:21, bid:37, ask:39, price:0, vol:0
+aksje: s= BLO , 10:21, bid:90.5, ask:92, price:0, vol:28500
+aksje: s= BRA , 10:21, bid:330, ask:333, price:0, vol:0
+aksje: s= DYN , 10:21, bid:0, ask:138, price:0, vol:0
+aksje: s= EKO , 10:21, bid:66.5, ask:71, price:0, vol:0
+aksje: s= ELK , 10:21, bid:67, ask:68, price:67, vol:20600
+aksje: s= EKJ , 10:21, bid:153, ask:155, price:0, vol:0
+aksje: s= FSL , 10:21, bid:60.5, ask:61.5, price:61, vol:1000
+aksje: s= GOD , 10:21, bid:0, ask:94, price:0, vol:10000
+aksje: s= GHO , 10:21, bid:0, ask:0, price:120, vol:200
+aksje: s= GRE , 10:21, bid:102, ask:104, price:0, vol:0
+aksje: s= GYL , 10:21, bid:0, ask:360, price:0, vol:0
+aksje: s= HNA , 10:21, bid:181, ask:182, price:182, vol:350
+aksje: s= HNB , 10:21, bid:178, ask:180, price:0, vol:0
+aksje: s= HES , 10:21, bid:71.5, ask:72.5, price:72.5, vol:200
+aksje: s= HUN , 10:21, bid:0, ask:50, price:0, vol:0
+aksje: s= IIR , 10:21, bid:16, ask:17, price:0, vol:0
+aksje: s= KVE , 10:21, bid:111, ask:112, price:0, vol:0
+aksje: s= KVI , 10:21, bid:221, ask:225, price:220, vol:855
+aksje: s= KVIB, 10:21, bid:210, ask:0, price:0, vol:0
+aksje: s= MAG , 10:21, bid:81, ask:83, price:0, vol:0
+aksje: s= MED , 10:21, bid:63.5, ask:64, price:0, vol:0
+aksje: s= MSG , 10:21, bid:50, ask:52, price:0, vol:0
+aksje: s= NER , 10:21, bid:215, ask:225, price:0, vol:0
+aksje: s= NHY , 10:21, bid:253, ask:254, price:0, vol:4800
+aksje: s= NOV , 10:21, bid:102, ask:104, price:0, vol:0
+aksje: s= NYD , 10:21, bid:26.5, ask:27.5, price:27, vol:1000
+aksje: s= OLT , 10:21, bid:103, ask:105, price:105, vol:200
+aksje: s= ORKB, 10:21, bid:302, ask:315, price:0, vol:0
+aksje: s= PGS , 10:21, bid:118, ask:120, price:119, vol:400
+aksje: s= PRO , 10:21, bid:127.5, ask:130, price:130, vol:200
+aksje: s= REN , 10:21, bid:13.5, ask:14, price:0, vol:0
+aksje: s= SAGB, 10:21, bid:70, ask:72.5, price:0, vol:0
+aksje: s= SAT , 10:21, bid:21, ask:30, price:0, vol:0
+aksje: s= SCH , 10:21, bid:73.5, ask:74.5, price:74, vol:1100
+aksje: s= SMD , 10:21, bid:73, ask:76, price:0, vol:0
+aksje: s= SMDB, 10:21, bid:66, ask:0, price:0, vol:0
+aksje: s= OPT , 10:21, bid:35, ask:0, price:0, vol:0
+aksje: s= SKI , 10:21, bid:230, ask:0, price:0, vol:0
+aksje: s= SSI , 10:21, bid:92.5, ask:93, price:0, vol:0
+aksje: s= BEA , 10:21, bid:137.5, ask:139, price:0, vol:0
+aksje: s= BEB , 10:21, bid:136.5, ask:139, price:0, vol:0
+aksje: s= BSH , 10:21, bid:65, ask:68, price:0, vol:0
+aksje: s= BON , 10:21, bid:127, ask:0, price:0, vol:0
+aksje: s= COL , 10:21, bid:20, ask:21, price:0, vol:0
+aksje: s= NAL , 10:21, bid:10.2, ask:10.5, price:0, vol:0
+aksje: s= SFJ , 10:21, bid:75, ask:79, price:0, vol:40
+aksje: s= GRO , 10:21, bid:127, ask:134, price:0, vol:0
+aksje: s= HAV , 10:21, bid:17.5, ask:18, price:17.5, vol:3500
+index: Bank, 10:21, Value: 60.89, change : -0.1, trade: 1831
+index: Industri, 10:21, Value: 1217.1, change : -0.87, trade: 7686
+index: Skip, 10:21, Value: 582.08, change : 0, trade: 86
+index: Total, 10:21, Value: 704.77, change : -0.42, trade: 9638
+index: OBX, 10:21, Value: 393.79, change : -0.28, trade: 0
+index: BRIX, 10:21, Value: 1948.2, change : 1.59, trade: 3760658
+aksje: s= STK , 10:28, bid:350, ask:365, price:0, vol:0
+aksje: s= AVA , 10:30, bid:38, ask:39, price:0, vol:0
+aksje: s= BON , 10:36, bid:127, ask:130, price:0, vol:0
+aksje: s= NAL , 10:36, bid:10.2, ask:10.4, price:0, vol:0
+aksje: s= FAR , 10:36, bid:14.5, ask:14.7, price:0, vol:0
+aksje: s= HAV , 10:36, bid:17.5, ask:17.9, price:17.5, vol:8500
+aksje: s= IMS , 10:35, bid:3.5, ask:3.75, price:0, vol:0
+aksje: s= LOI , 10:35, bid:25, ask:27.5, price:0, vol:0
+aksje: s= MET , 10:35, bid:47.5, ask:0, price:47.5, vol:45
+aksje: s= NATT, 10:35, bid:22, ask:24, price:0, vol:0
+aksje: s= ORC , 10:35, bid:195, ask:200, price:0, vol:0
+aksje: s= SNT , 10:35, bid:27, ask:27.2, price:0, vol:0
+aksje: s= STA , 10:35, bid:430, ask:0, price:0, vol:0
+aksje: s= SYE , 10:35, bid:0, ask:120, price:0, vol:1000
+aksje: s= VVL , 10:36, bid:500, ask:0, price:0, vol:0
+aksje: s= EIRG, 10:36, bid:116, ask:119, price:0, vol:260
+aksje: s= SASG, 10:36, bid:90, ask:92, price:0, vol:0
+aksje: s= SANG, 10:36, bid:145, ask:150, price:0, vol:0
+aksje: s= MORG, 10:36, bid:135, ask:140, price:0, vol:0
+aksje: s= ROGG, 10:36, bid:138, ask:145, price:0, vol:45
+aksje: s= KM93, 10:35, bid:119.65, ask:119.8, price:0, vol:60000000
+aksje: s= KM95, 10:35, bid:103.35, ask:103.45, price:0, vol:0
+aksje: s= S462, 10:36, bid:109.25, ask:109.27, price:109.26, vol:577000000
+aksje: s= S463, 10:36, bid:116.48, ask:116.54, price:116.5, vol:1137000000
+aksje: s= S465, 10:36, bid:93.51, ask:93.55, price:93.51, vol:1552000000
+aksje: s= BNB , 10:36, bid:152.5, ask:154, price:0, vol:0
+aksje: s= CKR , 10:36, bid:13.8, ask:13.9, price:13.8, vol:200000
+aksje: s= DNB , 10:36, bid:16.3, ask:16.4, price:16.4, vol:8500
+aksje: s= FOK , 10:36, bid:32.2, ask:32.3, price:0, vol:1000
+aksje: s= NBK , 10:36, bid:97, ask:100, price:0, vol:0
+aksje: s= UNS , 10:36, bid:31.5, ask:31.7, price:0, vol:1133
+aksje: s= AAV , 10:36, bid:200, ask:230, price:0, vol:0
+aksje: s= BRA , 10:36, bid:330, ask:335, price:330, vol:9500
+aksje: s= DNL , 10:36, bid:285, ask:293, price:0, vol:0
+aksje: s= DYN , 10:36, bid:136, ask:138, price:0, vol:0
+aksje: s= EKO , 10:36, bid:66.5, ask:70, price:0, vol:0
+aksje: s= ELK , 10:36, bid:67, ask:68, price:67.5, vol:22100
+aksje: s= GOD , 10:36, bid:90, ask:94, price:0, vol:10000
+aksje: s= HNA , 10:36, bid:181.5, ask:182.5, price:182, vol:1050
+aksje: s= HNB , 10:36, bid:178, ask:180, price:180, vol:3600
+aksje: s= HES , 10:36, bid:71.5, ask:0, price:72.5, vol:1200
+aksje: s= HUN , 10:36, bid:0, ask:49, price:0, vol:0
+aksje: s= KVI , 10:36, bid:221, ask:223, price:220, vol:855
+aksje: s= KVIB, 10:36, bid:210, ask:214, price:0, vol:0
+aksje: s= MED , 10:36, bid:64, ask:65, price:65, vol:16000
+aksje: s= NSG , 10:36, bid:176, ask:177, price:0, vol:0
+aksje: s= NYD , 10:36, bid:26.5, ask:27, price:27, vol:1000
+aksje: s= ORK , 10:36, bid:319, ask:321, price:0, vol:73
+aksje: s= PGS , 10:36, bid:118, ask:119, price:119, vol:400
+aksje: s= RIE , 10:36, bid:135, ask:142, price:0, vol:0
+aksje: s= SAG , 10:36, bid:75.5, ask:77, price:0, vol:3
+aksje: s= SAGB, 10:36, bid:71.5, ask:72.5, price:0, vol:0
+aksje: s= SCH , 10:36, bid:73.5, ask:75, price:74.5, vol:1600
+aksje: s= TAA , 10:35, bid:75, ask:76, price:0, vol:5000
+aksje: s= TAD , 10:35, bid:44.5, ask:45, price:0, vol:0
+aksje: s= TOM , 10:35, bid:40.9, ask:41.3, price:0, vol:619
+aksje: s= UTO , 10:35, bid:78, ask:79, price:79, vol:9200
+aksje: s= SOL , 10:36, bid:13, ask:13.5, price:0, vol:0
+aksje: s= STO , 10:36, bid:99, ask:102, price:100, vol:21100
+aksje: s= STOB, 10:36, bid:96, ask:99, price:0, vol:0
+aksje: s= TOD , 10:36, bid:94, ask:95, price:0, vol:20
+aksje: s= WWI , 10:36, bid:110, ask:120, price:0, vol:0
+aksje: s= ADE , 10:36, bid:625, ask:750, price:0, vol:0
+aksje: s= AXI , 10:36, bid:21.5, ask:22, price:22, vol:6500
+aksje: s= BRO , 10:36, bid:56, ask:57, price:57, vol:8000
+aksje: s= HSD , 10:36, bid:95, ask:0, price:0, vol:0
+aksje: s= HIT , 10:36, bid:130, ask:0, price:0, vol:0
+aksje: s= MIF , 10:36, bid:67, ask:70, price:0, vol:0
+index: Bank, 10:36, Value: 60.78, change : -0.21, trade: 2948
+index: Industri, 10:36, Value: 1218.4, change : 0.38, trade: 13243
+index: Skip, 10:36, Value: 582.08, change : 0, trade: 2257
+index: Total, 10:36, Value: 705.21, change : 0.02, trade: 18484
+index: OBX, 10:36, Value: 393.92, change : -0.15, trade: 0
+index: BRIX, 10:36, Value: 1948.2, change : 1.62, trade: 4841648
+aksje: s= EAB , 10:43, bid:7.5, ask:8.8, price:0, vol:0
+aksje: s= ORK , 10:44, bid:319, ask:320, price:0, vol:73
+aksje: s= RAU , 10:46, bid:101, ask:115, price:0, vol:0
+aksje: s= BNB , 10:48, bid:152.5, ask:153, price:0, vol:0
+aksje: s= STK , 10:49, bid:350, ask:360, price:0, vol:0
+aksje: s= DNL , 10:49, bid:288, ask:293, price:0, vol:0
+aksje: s= EKO , 10:49, bid:66.5, ask:69, price:0, vol:0
+aksje: s= RAU , 10:50, bid:108, ask:115, price:0, vol:0
+aksje: s= REN , 10:50, bid:13.5, ask:13.7, price:0, vol:0
+aksje: s= RIE , 10:50, bid:135, ask:140, price:0, vol:0
+aksje: s= SAG , 10:50, bid:76, ask:77, price:76, vol:303
+aksje: s= SEL , 10:50, bid:120, ask:122, price:0, vol:0
+aksje: s= SMDB, 10:50, bid:66, ask:80, price:0, vol:0
+aksje: s= EAB , 10:50, bid:7.5, ask:8, price:0, vol:0
+aksje: s= HSD , 10:50, bid:95, ask:0, price:95, vol:105
+aksje: s= HIT , 10:50, bid:130, ask:140, price:0, vol:0
+aksje: s= IBYT, 10:50, bid:0.08, ask:0.09, price:0, vol:0
+aksje: s= JOT , 10:50, bid:37, ask:38, price:0, vol:0
+aksje: s= KEN , 10:50, bid:5.95, ask:6.1, price:6, vol:5000
+aksje: s= KOA , 10:50, bid:0, ask:0, price:115, vol:50
+aksje: s= STA , 10:50, bid:460, ask:0, price:0, vol:0
+aksje: s= SYS , 10:50, bid:135, ask:140, price:0, vol:1500
+aksje: s= TTS , 10:50, bid:74, ask:80, price:0, vol:0
+aksje: s= EIRG, 10:48, bid:116, ask:117, price:0, vol:260
+aksje: s= NONG, 10:48, bid:0, ask:134, price:0, vol:0
+aksje: s= KB13, 10:50, bid:95.55, ask:95.7, price:0, vol:10000000
+aksje: s= KB10, 10:50, bid:112.4, ask:112.55, price:0, vol:0
+aksje: s= HL17, 10:50, bid:100.96, ask:101.1, price:0, vol:25000000
+aksje: s= HE75, 10:50, bid:100.7, ask:100.8, price:0, vol:0
+aksje: s= KM95, 10:50, bid:103.35, ask:103.49, price:0, vol:0
+aksje: s= S459, 10:50, bid:101.25, ask:101.29, price:0, vol:30400000
+aksje: s= S462, 10:50, bid:109.24, ask:109.26, price:109.25, vol:587000000
+aksje: s= S463, 10:50, bid:116.48, ask:116.54, price:116.5, vol:1202000000
+aksje: s= S465, 10:50, bid:93.51, ask:93.55, price:93.51, vol:1554000000
+aksje: s= KX37, 10:50, bid:106.1, ask:106.18, price:106.1, vol:30000000
+aksje: s= BNB , 10:49, bid:147.5, ask:152.5, price:152.5, vol:500
+aksje: s= DNB , 10:49, bid:16.3, ask:16.4, price:16.4, vol:13500
+aksje: s= FOK , 10:49, bid:32.2, ask:32.3, price:32.2, vol:1500
+aksje: s= UNS , 10:49, bid:31.4, ask:31.7, price:31.5, vol:11100
+aksje: s= VIT , 10:49, bid:100, ask:0, price:0, vol:0
+aksje: s= CTG , 10:50, bid:96, ask:105, price:0, vol:0
+aksje: s= FSL , 10:49, bid:61, ask:61.5, price:61, vol:1000
+aksje: s= FIB , 10:49, bid:2.5, ask:2.6, price:0, vol:25000
+aksje: s= GOD , 10:49, bid:90, ask:93, price:0, vol:10000
+aksje: s= HUN , 10:49, bid:47.5, ask:49, price:0, vol:0
+aksje: s= KVI , 10:49, bid:219, ask:222, price:221, vol:5305
+aksje: s= KVIB, 10:50, bid:205, ask:210, price:210, vol:1200
+aksje: s= MED , 10:50, bid:65, ask:66, price:65, vol:40900
+aksje: s= NYD , 10:50, bid:26.6, ask:27.4, price:27, vol:16000
+aksje: s= ORK , 10:50, bid:319, ask:320, price:319, vol:523
+aksje: s= ORKB, 10:50, bid:302, ask:310, price:0, vol:0
+aksje: s= PGS , 10:50, bid:117, ask:119, price:118, vol:2400
+aksje: s= STE , 10:50, bid:2.5, ask:2.75, price:0, vol:0
+aksje: s= STEJ, 10:50, bid:0, ask:0.08, price:0, vol:0
+aksje: s= TAD , 10:50, bid:44.5, ask:45, price:44.5, vol:2600
+aksje: s= TOM , 10:50, bid:40.6, ask:41, price:40.7, vol:53100
+aksje: s= UTO , 10:50, bid:78, ask:79, price:78, vol:14200
+aksje: s= EID , 10:49, bid:15, ask:0, price:0, vol:0
+aksje: s= STO , 10:49, bid:99, ask:102, price:99, vol:21100
+aksje: s= TOD , 10:49, bid:94, ask:95.5, price:95, vol:1020
+aksje: s= ACL , 10:49, bid:80, ask:85, price:0, vol:0
+index: Bank, 10:50, Value: 60.71, change : -0.28, trade: 3122
+index: Forsikring, 10:50, Value: 313.79, change : -1.33, trade: 351
+index: Industri, 10:50, Value: 1217.9, change : -0.07, trade: 19628
+index: Skip, 10:50, Value: 582.92, change : 0.84, trade: 2356
+index: Total, 10:50, Value: 704.98, change : -0.21, trade: 25456
+index: OBX, 10:50, Value: 393.82, change : -0.25, trade: 0
+index: BRIX, 10:50, Value: 1948.2, change : 1.62, trade: 5001834
+aksje: s= MOE , 10:50, bid:6.5, ask:6.8, price:0, vol:0
+aksje: s= TOD , 10:57, bid:94.5, ask:95.5, price:95, vol:1020
+aksje: s= LHO , 10:59, bid:92, ask:93, price:0, vol:0
+aksje: s= HNA , 11:1, bid:181.5, ask:182, price:182, vol:1050
+aksje: s= SVEG, 11:3, bid:140, ask:140.5, price:140, vol:2000
+aksje: s= DNB , 11:4, bid:16.3, ask:16.4, price:16.4, vol:16500
+aksje: s= UNS , 11:4, bid:31.4, ask:31.6, price:31.4, vol:13100
+aksje: s= UNP , 11:4, bid:11.4, ask:11.5, price:11.5, vol:3000
+aksje: s= ELK , 11:4, bid:67.5, ask:68, price:67.5, vol:22100
+aksje: s= FSL , 11:4, bid:61.5, ask:62, price:61.5, vol:2200
+aksje: s= HNA , 11:4, bid:181, ask:182, price:181.5, vol:1550
+aksje: s= HNB , 11:4, bid:178.5, ask:179, price:180, vol:3600
+aksje: s= HES , 11:4, bid:72, ask:75, price:72.5, vol:1200
+aksje: s= KVI , 11:4, bid:222, ask:224, price:222, vol:6305
+aksje: s= KVIB, 11:4, bid:210, ask:212, price:210, vol:1800
+aksje: s= MED , 11:4, bid:65, ask:66, price:65, vol:43800
+aksje: s= NER , 11:4, bid:218, ask:224, price:0, vol:0
+aksje: s= NHY , 11:4, bid:253, ask:254, price:254, vol:5300
+aksje: s= NSG , 11:4, bid:175.5, ask:177, price:177, vol:500
+aksje: s= NYD , 11:4, bid:27, ask:27.4, price:27, vol:16000
+aksje: s= ORK , 11:4, bid:319, ask:320, price:319, vol:923
+aksje: s= ORKB, 11:4, bid:302.5, ask:310, price:0, vol:0
+aksje: s= PGS , 11:4, bid:117, ask:118, price:117, vol:2800
+aksje: s= SAG , 11:4, bid:76, ask:76.5, price:76, vol:403
+aksje: s= SCH , 11:4, bid:74, ask:75, price:74.5, vol:1600
+aksje: s= OPT , 11:4, bid:35, ask:45, price:0, vol:0
+aksje: s= TAD , 11:4, bid:44.5, ask:45, price:45, vol:3600
+aksje: s= TOM , 11:4, bid:40.6, ask:41, price:40.7, vol:62100
+aksje: s= BEB , 11:4, bid:137.5, ask:139, price:0, vol:6000
+aksje: s= NAL , 11:4, bid:10, ask:10.4, price:10.2, vol:1000
+aksje: s= HAV , 11:4, bid:17, ask:17.9, price:17.5, vol:8500
+aksje: s= JIN , 11:4, bid:6.5, ask:7, price:0, vol:0
+aksje: s= NAS , 11:4, bid:39, ask:41.5, price:0, vol:0
+aksje: s= SME , 11:4, bid:95, ask:110, price:0, vol:0
+aksje: s= STOB, 11:4, bid:98, ask:99, price:0, vol:0
+aksje: s= TOD , 11:4, bid:95, ask:96, price:95, vol:1020
+aksje: s= AXI , 11:4, bid:21.5, ask:22, price:22, vol:12500
+aksje: s= FOU , 11:4, bid:26, ask:30, price:0, vol:0
+aksje: s= IBY , 11:4, bid:0.13, ask:0.16, price:0, vol:0
+aksje: s= IBYT, 11:4, bid:0.09, ask:0.13, price:0.09, vol:250000
+aksje: s= KEN , 11:4, bid:5.95, ask:6, price:6, vol:15000
+aksje: s= KOA , 11:4, bid:110, ask:115, price:115, vol:50
+aksje: s= ORC , 11:4, bid:190, ask:200, price:195, vol:300
+aksje: s= RIN , 11:4, bid:85, ask:95, price:0, vol:0
+aksje: s= SNT , 11:4, bid:27, ask:27.1, price:0, vol:0
+aksje: s= STX , 11:4, bid:23.7, ask:24.4, price:0, vol:0
+aksje: s= KB11, 11:4, bid:103.22, ask:103.29, price:103.23, vol:50000000
+aksje: s= HE70, 11:4, bid:102.93, ask:103.07, price:0, vol:25000000
+aksje: s= S462, 11:4, bid:109.24, ask:109.26, price:109.25, vol:657000000
+aksje: s= S463, 11:4, bid:116.49, ask:116.53, price:116.5, vol:1202000000
+aksje: s= S465, 11:4, bid:93.51, ask:93.54, price:93.51, vol:1699000000
+index: Bank, 11:4, Value: 60.71, change : -0.28, trade: 3171
+index: Forsikring, 11:4, Value: 313.12, change : -2, trade: 448
+index: Industri, 11:4, Value: 1218.3, change : 0.33, trade: 21140
+index: Skip, 11:4, Value: 582.95, change : 0.87, trade: 3191
+index: Total, 11:4, Value: 705.06, change : -0.13, trade: 27950
+index: OBX, 11:4, Value: 393.93, change : -0.14, trade: 0
+index: BRIX, 11:4, Value: 1948.3, change : 1.66, trade: 5351276
+aksje: s= DYN , 11:4, bid:137, ask:138, price:0, vol:0
+aksje: s= KVI , 11:12, bid:221, ask:224, price:222, vol:6305
+aksje: s= KVIB, 11:15, bid:210, ask:212, price:211.5, vol:2800
+aksje: s= IBYT, 11:16, bid:0.09, ask:0.1, price:0.09, vol:250000
+aksje: s= ELK , 11:19, bid:67.5, ask:68, price:67.5, vol:25400
+aksje: s= EKJ , 11:19, bid:153, ask:154, price:0, vol:0
+aksje: s= FSL , 11:19, bid:62, ask:63, price:62, vol:8800
+aksje: s= GOD , 11:19, bid:90, ask:92, price:0, vol:10000
+aksje: s= GRE , 11:19, bid:102, ask:104, price:0, vol:26000
+aksje: s= HNA , 11:19, bid:182, ask:182.5, price:182, vol:6550
+aksje: s= HNB , 11:19, bid:179, ask:179.5, price:179, vol:4100
+aksje: s= HES , 11:19, bid:72.5, ask:74, price:72.5, vol:116000
+aksje: s= KVI , 11:19, bid:222, ask:224, price:222, vol:10600
+aksje: s= KVIB, 11:19, bid:210, ask:211.5, price:211.5, vol:2800
+aksje: s= NSGB, 11:19, bid:165.5, ask:0, price:0, vol:0
+aksje: s= ORK , 11:19, bid:318, ask:320, price:319, vol:1473
+aksje: s= PGS , 11:19, bid:117.5, ask:119, price:118, vol:7200
+aksje: s= SAG , 11:18, bid:76, ask:77, price:76, vol:403
+aksje: s= SMD , 11:18, bid:73, ask:75, price:0, vol:0
+aksje: s= BEB , 11:18, bid:136.5, ask:138.5, price:137.5, vol:7600
+aksje: s= BOR , 11:18, bid:48, ask:54, price:0, vol:0
+aksje: s= BORB, 11:18, bid:47.5, ask:53, price:0, vol:0
+aksje: s= GRO , 11:18, bid:127, ask:130, price:0, vol:0
+aksje: s= SME , 11:18, bid:95, ask:105, price:0, vol:0
+aksje: s= TOD , 11:19, bid:95, ask:95.5, price:95, vol:6720
+aksje: s= WWIB, 11:19, bid:110, ask:115, price:0, vol:0
+aksje: s= BNR , 11:19, bid:85, ask:98, price:0, vol:0
+aksje: s= HIT , 11:19, bid:130, ask:135, price:0, vol:0
+aksje: s= IBYT, 11:19, bid:0.09, ask:0.1, price:0.09, vol:266000
+aksje: s= KOA , 11:19, bid:110, ask:114, price:115, vol:50
+aksje: s= KDP , 11:19, bid:55, ask:0, price:0, vol:0
+aksje: s= NAM , 11:18, bid:135, ask:0, price:0, vol:0
+aksje: s= STX , 11:18, bid:23.7, ask:23.8, price:0, vol:0
+aksje: s= SKR , 11:18, bid:91, ask:93, price:91, vol:2000
+aksje: s= TTS , 11:18, bid:74, ask:78, price:0, vol:0
+aksje: s= VVL , 11:18, bid:500, ask:680, price:0, vol:0
+aksje: s= KB11, 11:19, bid:103.22, ask:103.29, price:103.23, vol:65000000
+aksje: s= S462, 11:19, bid:109.24, ask:109.27, price:109.25, vol:687000000
+aksje: s= S463, 11:19, bid:116.49, ask:116.53, price:116.5, vol:1222000000
+aksje: s= KX41, 11:18, bid:99.77, ask:99.85, price:0, vol:0
+index: Bank, 11:19, Value: 60.82, change : -0.17, trade: 3797
+index: Forsikring, 11:19, Value: 313.12, change : -2, trade: 668
+index: Industri, 11:19, Value: 1218.9, change : 0.86, trade: 37311
+index: Skip, 11:19, Value: 582.95, change : 0.87, trade: 3954
+index: Total, 11:19, Value: 705.34, change : 0.15, trade: 45729
+index: OBX, 11:19, Value: 394.27, change : 0.2, trade: 0
+index: BRIX, 11:19, Value: 1948.3, change : 1.69, trade: 5423037
+aksje: s= BNB , 11:19, bid:149, ask:152.5, price:152.5, vol:500
+aksje: s= CKR , 11:19, bid:13.8, ask:13.9, price:13.9, vol:245000
+aksje: s= UNS , 11:19, bid:31.4, ask:31.5, price:31.4, vol:20100
+aksje: s= AKE , 11:19, bid:79, ask:80, price:0, vol:125
+aksje: s= AKEB, 11:19, bid:74, ask:75, price:74, vol:2100
+aksje: s= DYN , 11:19, bid:137, ask:138, price:138, vol:300
+aksje: s= TOM , 11:18, bid:40.1, ask:40.5, price:40.5, vol:65100
+aksje: s= UTO , 11:18, bid:77.5, ask:79, price:78, vol:25200
+aksje: s= VEI , 11:18, bid:127, ask:129, price:0, vol:0
+aksje: s= ELK , 11:28, bid:67.5, ask:68, price:67.5, vol:26400
+aksje: s= SME , 11:32, bid:100, ask:105, price:0, vol:0
+aksje: s= CKR , 11:33, bid:13.9, ask:14, price:13.9, vol:262000
+aksje: s= FOK , 11:33, bid:32.2, ask:32.3, price:32.2, vol:4500
+aksje: s= UNP , 11:33, bid:11.4, ask:11.5, price:11.5, vol:28000
+aksje: s= AKE , 11:33, bid:79, ask:80, price:79, vol:1125
+aksje: s= BRA , 11:33, bid:330, ask:337, price:330, vol:9500
+aksje: s= DNO , 11:33, bid:2.8, ask:3.3, price:0, vol:0
+aksje: s= ELK , 11:33, bid:67.5, ask:68, price:68, vol:30600
+aksje: s= FIB , 11:33, bid:2.55, ask:2.6, price:0, vol:25000
+aksje: s= HNA , 11:33, bid:181.5, ask:182.5, price:182, vol:7150
+aksje: s= HNB , 11:33, bid:179, ask:179.5, price:179, vol:4600
+aksje: s= KVI , 11:33, bid:221, ask:224, price:222, vol:11400
+aksje: s= KVIB, 11:33, bid:210, ask:211.5, price:210, vol:3750
+aksje: s= MED , 11:33, bid:65, ask:65.5, price:65, vol:55600
+aksje: s= MOE , 11:33, bid:6.6, ask:6.8, price:6.8, vol:1000
+aksje: s= NHY , 11:33, bid:253.5, ask:254, price:254, vol:6300
+aksje: s= PGS , 11:33, bid:118, ask:119, price:118, vol:7200
+aksje: s= SAG , 11:33, bid:76, ask:76.5, price:76, vol:403
+aksje: s= SIN , 11:33, bid:2.4, ask:0, price:0, vol:0
+aksje: s= STE , 11:33, bid:2.55, ask:2.75, price:0, vol:0
+aksje: s= TAA , 11:33, bid:75, ask:75.5, price:76, vol:7076
+aksje: s= TOM , 11:33, bid:40.2, ask:40.5, price:40.4, vol:75600
+aksje: s= BEA , 11:33, bid:138, ask:139.5, price:0, vol:0
+aksje: s= BEB , 11:33, bid:137, ask:138.5, price:137.5, vol:7600
+aksje: s= NAL , 11:33, bid:10, ask:10.5, price:10, vol:48300
+aksje: s= TOD , 11:32, bid:95, ask:96, price:95.5, vol:8420
+aksje: s= ACL , 11:32, bid:81, ask:83, price:0, vol:0
+aksje: s= AXI , 11:32, bid:21.5, ask:22, price:22, vol:14500
+aksje: s= KEN , 11:33, bid:5.95, ask:6, price:6, vol:34000
+aksje: s= ORC , 11:33, bid:193, ask:200, price:194, vol:900
+aksje: s= SEN , 11:33, bid:45, ask:48, price:0, vol:0
+aksje: s= SYS , 11:33, bid:135, ask:139, price:0, vol:1500
+aksje: s= SNOG, 11:32, bid:161, ask:163, price:0, vol:10100
+aksje: s= KB11, 11:33, bid:103.22, ask:103.28, price:103.23, vol:65000000
+aksje: s= KB10, 11:33, bid:112.4, ask:112.55, price:0, vol:20000000
+aksje: s= TG62, 11:33, bid:96.8, ask:96.9, price:96.85, vol:10000000
+aksje: s= KM93, 11:33, bid:119.65, ask:119.8, price:0, vol:110000000
+aksje: s= KW19, 11:33, bid:112.4, ask:112.54, price:0, vol:0
+index: Bank, 11:33, Value: 60.82, change : -0.17, trade: 4129
+index: Forsikring, 11:33, Value: 313.12, change : -2, trade: 955
+index: Industri, 11:33, Value: 1218.9, change : 0.95, trade: 40118
+index: Skip, 11:33, Value: 583.11, change : 1.03, trade: 4589
+index: Total, 11:33, Value: 705.41, change : 0.22, trade: 49791
+index: OBX, 11:33, Value: 394.37, change : 0.3, trade: 0
+index: BRIX, 11:33, Value: 1948.3, change : 1.65, trade: 5535717
+aksje: s= KVI , 11:41, bid:221.5, ask:224, price:222, vol:11400
+aksje: s= ORC , 11:46, bid:193, ask:200, price:195, vol:1100
+aksje: s= ORC , 11:48, bid:193, ask:200, price:194, vol:3400
+aksje: s= RIC , 11:48, bid:102, ask:110, price:0, vol:0
+aksje: s= SNT , 11:48, bid:27, ask:27.1, price:27, vol:600
+aksje: s= STA , 11:48, bid:460, ask:600, price:0, vol:0
+aksje: s= KB11, 11:48, bid:103.22, ask:103.29, price:103.23, vol:70000000
+aksje: s= KB13, 11:48, bid:95.55, ask:95.74, price:0, vol:10000000
+aksje: s= HL17, 11:48, bid:100.96, ask:101.1, price:0, vol:60000000
+aksje: s= HE70, 11:48, bid:102.93, ask:103.07, price:0, vol:60000000
+aksje: s= S463, 11:48, bid:116.49, ask:116.55, price:116.53, vol:1232000000
+aksje: s= S465, 11:48, bid:93.51, ask:93.54, price:93.53, vol:1709000000
+aksje: s= BSK , 11:48, bid:48.5, ask:49, price:48.5, vol:4400
+aksje: s= CKR , 11:48, bid:13.9, ask:14, price:14, vol:302000
+aksje: s= FOK , 11:48, bid:32.1, ask:32.2, price:32.2, vol:9000
+aksje: s= NBK , 11:48, bid:97, ask:99, price:0, vol:0
+aksje: s= DYN , 11:48, bid:140, ask:141, price:140, vol:13800
+aksje: s= EKJ , 11:48, bid:153, ask:155, price:0, vol:100
+aksje: s= HNA , 11:48, bid:181, ask:182, price:181.5, vol:11200
+aksje: s= HNB , 11:48, bid:178, ask:179, price:179, vol:7600
+aksje: s= HES , 11:48, bid:72.5, ask:74, price:74, vol:117000
+aksje: s= KVE , 11:48, bid:111, ask:113, price:112, vol:5000
+aksje: s= KVI , 11:48, bid:221.5, ask:222, price:222, vol:11400
+aksje: s= MED , 11:48, bid:64, ask:65, price:65, vol:58200
+aksje: s= NER , 11:48, bid:220, ask:223, price:0, vol:0
+aksje: s= NSG , 11:48, bid:176, ask:177, price:177, vol:7100
+aksje: s= NSGB, 11:48, bid:165.5, ask:170, price:0, vol:0
+aksje: s= NYD , 11:48, bid:27, ask:27.3, price:27, vol:26000
+aksje: s= ORK , 11:48, bid:319, ask:320, price:320, vol:1573
+aksje: s= PGS , 11:48, bid:118, ask:119, price:118, vol:9400
+aksje: s= REN , 11:48, bid:13.3, ask:13.5, price:0, vol:5000
+aksje: s= SAG , 11:48, bid:76.5, ask:77, price:77, vol:7603
+aksje: s= SAGB, 11:48, bid:72, ask:72.5, price:72.5, vol:9200
+aksje: s= SCH , 11:48, bid:73.5, ask:75, price:74, vol:21600
+aksje: s= TAA , 11:48, bid:74, ask:75, price:74.5, vol:18300
+aksje: s= TOM , 11:48, bid:40.3, ask:40.5, price:40.4, vol:101000
+aksje: s= BEB , 11:48, bid:138, ask:139, price:139, vol:10900
+aksje: s= FOT , 11:48, bid:41.5, ask:42.5, price:0, vol:0
+aksje: s= HAV , 11:48, bid:17.5, ask:17.9, price:17.5, vol:8500
+aksje: s= SPA , 11:48, bid:14, ask:15, price:0, vol:50000
+aksje: s= TOD , 11:48, bid:95.5, ask:97, price:97, vol:14300
+aksje: s= WWI , 11:48, bid:111, ask:120, price:0, vol:0
+aksje: s= ADEB, 11:48, bid:600, ask:640, price:625, vol:2000
+aksje: s= AXI , 11:48, bid:21.5, ask:22, price:22, vol:19500
+aksje: s= TF61, 11:47, bid:100.39, ask:100.44, price:100.42, vol:100000000
+aksje: s= KM97, 11:47, bid:100.1, ask:100.19, price:0, vol:5000000
+index: Bank, 11:48, Value: 60.95, change : -0.04, trade: 5046
+index: Industri, 11:48, Value: 1220.2, change : 2.22, trade: 50415
+index: Skip, 11:48, Value: 585.71, change : 3.63, trade: 6493
+index: Total, 11:48, Value: 706.57, change : 1.38, trade: 62910
+index: OBX, 11:48, Value: 395.52, change : 1.45, trade: 0
+index: BRIX, 11:48, Value: 1948.3, change : 1.65, trade: 5738774
+aksje: s= BEA , 11:48, bid:139, ask:0, price:140, vol:1000
+aksje: s= RIEB, 11:56, bid:123, ask:135, price:0, vol:0
+aksje: s= MED , 11:59, bid:64, ask:65, price:65, vol:58800
+aksje: s= BEA , 12:0, bid:139, ask:141, price:140, vol:1000
+aksje: s= KM95, 12:2, bid:103.31, ask:103.49, price:0, vol:0
+aksje: s= KX41, 12:2, bid:99.77, ask:99.85, price:0, vol:30000000
+aksje: s= DNB , 12:3, bid:16.3, ask:16.4, price:16.4, vol:34000
+aksje: s= NBK , 12:3, bid:97, ask:98.5, price:0, vol:0
+aksje: s= UNS , 12:3, bid:31.4, ask:31.5, price:31.4, vol:23100
+aksje: s= AKE , 12:3, bid:79, ask:80, price:79.5, vol:3425
+aksje: s= DNL , 12:3, bid:288, ask:292, price:292, vol:100
+aksje: s= DYN , 12:3, bid:139, ask:140, price:140, vol:16800
+aksje: s= ELK , 12:3, bid:67.5, ask:68, price:68, vol:32600
+aksje: s= EKJ , 12:3, bid:153, ask:155, price:153, vol:130
+aksje: s= GYL , 12:3, bid:0, ask:355, price:0, vol:0
+aksje: s= HNA , 12:3, bid:181.5, ask:182, price:182, vol:12600
+aksje: s= KVI , 12:3, bid:223, ask:224.5, price:224, vol:19700
+aksje: s= KVIB, 12:3, bid:211, ask:212.5, price:211.5, vol:5100
+aksje: s= MED , 12:3, bid:64, ask:65, price:65, vol:61200
+aksje: s= MSG , 12:3, bid:50, ask:52, price:0, vol:40000
+aksje: s= NER , 12:3, bid:220, ask:222, price:220, vol:400
+aksje: s= NHY , 12:3, bid:253.5, ask:254, price:253.5, vol:7300
+aksje: s= NSG , 12:3, bid:176, ask:176.5, price:176, vol:8100
+aksje: s= ORK , 12:3, bid:320, ask:321, price:321, vol:3573
+aksje: s= ORKB, 12:3, bid:303, ask:305, price:304, vol:800
+aksje: s= PGS , 12:3, bid:118, ask:119, price:119, vol:11900
+aksje: s= REN , 12:2, bid:0, ask:13.5, price:0, vol:5000
+aksje: s= RIEB, 12:2, bid:126, ask:135, price:0, vol:0
+aksje: s= SAT , 12:2, bid:21, ask:28, price:0, vol:0
+aksje: s= SCH , 12:2, bid:73.5, ask:75, price:73.5, vol:22100
+aksje: s= SEL , 12:2, bid:120, ask:122, price:120, vol:500
+aksje: s= TAA , 12:3, bid:71, ask:74.5, price:74, vol:26900
+aksje: s= TAD , 12:3, bid:44.5, ask:45, price:45, vol:4600
+aksje: s= TOM , 12:3, bid:40.3, ask:40.5, price:40.4, vol:104000
+aksje: s= UTO , 12:3, bid:77.5, ask:79, price:79, vol:25700
+aksje: s= ACS , 12:3, bid:145, ask:154, price:0, vol:56
+aksje: s= BEL , 12:3, bid:24, ask:24.5, price:24, vol:7000
+aksje: s= BEA , 12:3, bid:140, ask:141, price:140, vol:1000
+aksje: s= BEB , 12:3, bid:139, ask:140, price:139.5, vol:12900
+aksje: s= BORB, 12:3, bid:47.5, ask:52, price:0, vol:0
+aksje: s= HAV , 12:3, bid:17.5, ask:18, price:17.7, vol:19000
+aksje: s= LSL , 12:3, bid:12, ask:13.5, price:0, vol:0
+aksje: s= NOS , 12:3, bid:14, ask:14.3, price:0, vol:0
+aksje: s= NAS , 12:3, bid:39, ask:39.5, price:0, vol:0
+aksje: s= SPA , 12:2, bid:14.6, ask:15, price:0, vol:50000
+aksje: s= STOB, 12:2, bid:96, ask:99, price:98, vol:2000
+aksje: s= WWIB, 12:2, bid:111, ask:115, price:0, vol:0
+aksje: s= AXI , 12:2, bid:21.5, ask:22, price:22, vol:20500
+aksje: s= BNR , 12:2, bid:87, ask:98, price:0, vol:0
+aksje: s= HSD , 12:3, bid:95, ask:100, price:95, vol:105
+aksje: s= IBYT, 12:3, bid:0.09, ask:0.1, price:0.09, vol:466000
+aksje: s= KEN , 12:3, bid:5.95, ask:6, price:6, vol:44000
+aksje: s= ORC , 12:3, bid:193, ask:195, price:194, vol:3400
+aksje: s= SNT , 12:3, bid:27, ask:27.1, price:27.1, vol:1200
+aksje: s= SKR , 12:3, bid:91, ask:93, price:91, vol:27000
+aksje: s= SYE , 12:3, bid:116, ask:120, price:0, vol:1000
+aksje: s= SADG, 12:3, bid:116, ask:118, price:116, vol:250
+aksje: s= KB12, 12:3, bid:98.14, ask:98.24, price:0, vol:0
+aksje: s= S462, 12:3, bid:109.24, ask:109.26, price:109.24, vol:757000000
+aksje: s= S463, 12:3, bid:116.49, ask:116.55, price:116.53, vol:1257000000
+aksje: s= S465, 12:3, bid:93.51, ask:93.54, price:93.52, vol:1749000000
+index: Bank, 12:3, Value: 60.95, change : -0.04, trade: 5333
+index: Forsikring, 12:3, Value: 313.12, change : -2, trade: 1049
+index: Industri, 12:3, Value: 1220.8, change : 2.79, trade: 58487
+index: Skip, 12:3, Value: 586.43, change : 4.35, trade: 7502
+index: Total, 12:3, Value: 706.96, change : 1.77, trade: 72371
+index: OBX, 12:3, Value: 395.93, change : 1.86, trade: 0
+index: BRIX, 12:3, Value: 1948.2, change : 1.6, trade: 5941806
+aksje: s= KVI , 12:12, bid:223.5, ask:224.5, price:224, vol:19700
+aksje: s= KVIB, 12:14, bid:211.5, ask:212.5, price:211.5, vol:5100
+aksje: s= DYN , 12:15, bid:138, ask:140, price:140, vol:16800
+aksje: s= KVIB, 12:17, bid:211, ask:212.5, price:212.5, vol:7600
+aksje: s= NHY , 12:17, bid:253, ask:253.5, price:253, vol:14300
+aksje: s= NYD , 12:17, bid:27, ask:27.4, price:27, vol:36000
+aksje: s= ORK , 12:17, bid:320, ask:321, price:320, vol:3873
+aksje: s= PGS , 12:17, bid:118, ask:119, price:118.5, vol:12500
+aksje: s= ORC , 12:17, bid:185, ask:190, price:190, vol:7650
+aksje: s= SEN , 12:17, bid:46, ask:48, price:0, vol:0
+aksje: s= KB11, 12:17, bid:103.22, ask:103.29, price:103.23, vol:80000000
+aksje: s= S462, 12:17, bid:109.23, ask:109.25, price:109.24, vol:757000000
+aksje: s= S463, 12:17, bid:116.49, ask:116.54, price:116.53, vol:1257000000
+aksje: s= S465, 12:17, bid:93.52, ask:93.54, price:93.52, vol:1749000000
+aksje: s= BSK , 12:17, bid:48.5, ask:49, price:48.5, vol:8400
+aksje: s= FOK , 12:17, bid:32.1, ask:32.2, price:32.1, vol:11900
+aksje: s= UNS , 12:17, bid:31.4, ask:31.5, price:31.4, vol:24100
+aksje: s= AKE , 12:17, bid:79, ask:80, price:79, vol:3625
+aksje: s= AKEB, 12:17, bid:74.5, ask:75, price:74, vol:2100
+aksje: s= BRA , 12:17, bid:330, ask:335, price:330, vol:9500
+aksje: s= DNL , 12:17, bid:288, ask:290, price:292, vol:100
+aksje: s= DYN , 12:17, bid:138, ask:139, price:140, vol:16800
+aksje: s= EKO , 12:17, bid:66.5, ask:68, price:0, vol:0
+aksje: s= FSL , 12:17, bid:62, ask:63, price:63, vol:9200
+aksje: s= FIB , 12:17, bid:2.55, ask:2.6, price:2.6, vol:27000
+aksje: s= HNA , 12:17, bid:181.5, ask:182, price:182, vol:12800
+aksje: s= HNB , 12:17, bid:178.5, ask:179, price:179, vol:7600
+aksje: s= HUN , 12:17, bid:48, ask:49, price:0, vol:0
+aksje: s= KVI , 12:17, bid:223.5, ask:225, price:224.5, vol:23500
+aksje: s= SIN , 12:17, bid:2.4, ask:3.5, price:0, vol:0
+aksje: s= SSI , 12:17, bid:92, ask:93, price:0, vol:0
+aksje: s= TAA , 12:17, bid:72, ask:74, price:74, vol:26900
+aksje: s= TAD , 12:17, bid:44.5, ask:45, price:45, vol:11000
+aksje: s= TOM , 12:17, bid:40.3, ask:40.5, price:40.4, vol:106000
+aksje: s= AWS , 12:17, bid:61.5, ask:63, price:62, vol:3000
+aksje: s= AWSB, 12:17, bid:59.5, ask:60, price:60, vol:4800
+aksje: s= BEA , 12:17, bid:139, ask:140, price:140, vol:1100
+aksje: s= BEB , 12:17, bid:138.5, ask:139, price:139, vol:14200
+aksje: s= BON , 12:17, bid:127.5, ask:130, price:127.5, vol:1300
+aksje: s= FOT , 12:17, bid:41.5, ask:42, price:0, vol:0
+aksje: s= GRO , 12:17, bid:127.5, ask:130, price:0, vol:0
+aksje: s= IMS , 12:17, bid:3.6, ask:3.75, price:0, vol:0
+aksje: s= STOB, 12:16, bid:97, ask:98, price:98, vol:2000
+aksje: s= TOD , 12:16, bid:95.5, ask:96.5, price:97, vol:14300
+aksje: s= WWI , 12:16, bid:112, ask:120, price:0, vol:0
+aksje: s= LEG , 12:16, bid:38, ask:42, price:0, vol:1000
+aksje: s= SNOG, 12:17, bid:161, ask:162, price:0, vol:10100
+index: Bank, 12:17, Value: 60.92, change : -0.07, trade: 5621
+index: Forsikring, 12:17, Value: 313.12, change : -2, trade: 1081
+index: Industri, 12:17, Value: 1219.7, change : 1.71, trade: 62530
+index: Skip, 12:17, Value: 585.42, change : 3.34, trade: 8336
+index: Total, 12:17, Value: 706.28, change : 1.09, trade: 77568
+index: OBX, 12:17, Value: 395.46, change : 1.39, trade: 0
+index: BRIX, 12:17, Value: 1948.2, change : 1.6, trade: 6019966
+aksje: s= FIB , 12:28, bid:2.5, ask:2.6, price:2.55, vol:33000
+aksje: s= TOD , 12:30, bid:95.5, ask:96.5, price:97, vol:16300
+aksje: s= KB11, 12:32, bid:103.22, ask:103.29, price:103.23, vol:85000000
+aksje: s= KB13, 12:32, bid:95.55, ask:95.73, price:0, vol:10000000
+aksje: s= S462, 12:32, bid:109.23, ask:109.25, price:109.24, vol:767000000
+aksje: s= S465, 12:32, bid:93.52, ask:93.54, price:93.52, vol:1799000000
+aksje: s= ELK , 12:32, bid:67.5, ask:68, price:67.5, vol:34100
+aksje: s= FSL , 12:32, bid:63, ask:65, price:63, vol:9800
+aksje: s= HNA , 12:32, bid:181, ask:182, price:181.5, vol:14800
+aksje: s= HNB , 12:32, bid:177, ask:179, price:178, vol:9100
+aksje: s= KVE , 12:32, bid:111, ask:112, price:112, vol:5000
+aksje: s= KVI , 12:32, bid:223, ask:224, price:224, vol:29000
+aksje: s= KVIB, 12:32, bid:211, ask:212, price:212.5, vol:7600
+aksje: s= MED , 12:32, bid:64, ask:64.5, price:65, vol:61200
+aksje: s= NHY , 12:32, bid:252.5, ask:253, price:253, vol:14800
+aksje: s= ORK , 12:32, bid:319, ask:321, price:320, vol:6673
+aksje: s= PGS , 12:32, bid:117.5, ask:118, price:118, vol:16800
+aksje: s= REN , 12:32, bid:13, ask:13.5, price:0, vol:5000
+aksje: s= SAG , 12:32, bid:76, ask:77, price:76.5, vol:14200
+aksje: s= SAGB, 12:32, bid:71.5, ask:72.5, price:71.5, vol:17600
+aksje: s= SAT , 12:32, bid:21, ask:27, price:0, vol:0
+aksje: s= SMDB, 12:32, bid:66, ask:70, price:0, vol:0
+aksje: s= TAD , 12:31, bid:44.5, ask:45, price:45, vol:12000
+aksje: s= TOM , 12:31, bid:40.2, ask:40.3, price:40.3, vol:116000
+aksje: s= STO , 12:32, bid:99, ask:100, price:99, vol:21100
+aksje: s= WWI , 12:32, bid:111.5, ask:120, price:0, vol:0
+aksje: s= WWIB, 12:32, bid:110, ask:112, price:0, vol:0
+aksje: s= ACL , 12:32, bid:81, ask:82, price:82, vol:47500
+aksje: s= EAB , 12:31, bid:7.6, ask:8, price:0, vol:0
+aksje: s= HIT , 12:31, bid:130, ask:135, price:132.5, vol:7500
+aksje: s= IBY , 12:31, bid:0.13, ask:0.15, price:0, vol:0
+aksje: s= SNT , 12:31, bid:27, ask:27.2, price:27.1, vol:1102000
+aksje: s= STX , 12:31, bid:23.8, ask:24, price:23.8, vol:4000
+aksje: s= SEN , 12:31, bid:46, ask:48, price:47, vol:21
+aksje: s= MORG, 12:31, bid:138, ask:140, price:0, vol:0
+aksje: s= KW18, 12:31, bid:104.6, ask:104.7, price:0, vol:0
+aksje: s= PRF , 12:31, bid:141, ask:145, price:0, vol:2000
+aksje: s= AVA , 12:31, bid:38.5, ask:39, price:38.5, vol:1000
+aksje: s= DYN , 12:31, bid:138, ask:139, price:139, vol:17800
+aksje: s= BEA , 12:32, bid:138.5, ask:139, price:139, vol:3100
+aksje: s= BEB , 12:32, bid:138, ask:139, price:138.5, vol:15200
+aksje: s= NOS , 12:31, bid:13.9, ask:14, price:14, vol:1000
+aksje: s= SME , 12:31, bid:100, ask:105, price:102, vol:40
+index: Forsikring, 12:32, Value: 313.12, change : -2, trade: 1371
+index: Industri, 12:32, Value: 1217.8, change : -0.18, trade: 67803
+index: Skip, 12:32, Value: 584.4, change : 2.32, trade: 8963
+index: Total, 12:32, Value: 705.28, change : 0.09, trade: 83757
+index: OBX, 12:32, Value: 394.75, change : 0.68, trade: 0
+index: BRIX, 12:32, Value: 1948.2, change : 1.6, trade: 6191488
+aksje: s= SNT , 12:41, bid:27, ask:27.2, price:27.1, vol:1112000
+aksje: s= ELK , 12:47, bid:67.5, ask:68, price:67.5, vol:39800
+aksje: s= GRE , 12:47, bid:102, ask:104, price:103, vol:28500
+aksje: s= HNA , 12:47, bid:180, ask:181, price:180, vol:22800
+aksje: s= HNB , 12:47, bid:177, ask:178.5, price:177.5, vol:10100
+aksje: s= KVIB, 12:47, bid:210, ask:212, price:210, vol:7611
+aksje: s= MED , 12:47, bid:64.5, ask:65, price:64.5, vol:63600
+aksje: s= MSG , 12:47, bid:50, ask:51, price:0, vol:40000
+aksje: s= NHY , 12:47, bid:252.5, ask:253, price:253, vol:17800
+aksje: s= NOV , 12:47, bid:102.5, ask:104, price:0, vol:0
+aksje: s= NSG , 12:47, bid:175.5, ask:176.5, price:175.5, vol:14100
+aksje: s= PGS , 12:47, bid:117.5, ask:118, price:118, vol:16900
+aksje: s= SAGB, 12:46, bid:71, ask:72.5, price:71.5, vol:17600
+aksje: s= WWI , 12:47, bid:111, ask:120, price:0, vol:0
+aksje: s= AXI , 12:47, bid:21.5, ask:22.5, price:22, vol:29400
+aksje: s= BOH , 12:47, bid:4.8, ask:4.9, price:4.9, vol:8000
+aksje: s= KDP , 12:47, bid:55, ask:90, price:0, vol:0
+aksje: s= KB11, 12:47, bid:103.22, ask:103.29, price:103.23, vol:90000000
+aksje: s= KB13, 12:47, bid:95.6, ask:95.73, price:0, vol:70000000
+aksje: s= KB07, 12:47, bid:100.45, ask:100.52, price:0, vol:10000000
+aksje: s= S462, 12:47, bid:109.23, ask:109.25, price:109.23, vol:787000000
+aksje: s= S463, 12:47, bid:116.5, ask:116.54, price:116.53, vol:1277000000
+aksje: s= FOK , 12:47, bid:32.1, ask:32.2, price:32.1, vol:12800
+aksje: s= NBK , 12:47, bid:97, ask:98.5, price:97, vol:320
+aksje: s= UNS , 12:47, bid:31.4, ask:31.5, price:31.4, vol:24900
+aksje: s= AKE , 12:47, bid:79, ask:79.5, price:79, vol:3625
+aksje: s= DYN , 12:47, bid:138, ask:140, price:139, vol:20100
+aksje: s= EKO , 12:47, bid:66.5, ask:68, price:67, vol:100
+aksje: s= TOM , 12:47, bid:40.3, ask:40.5, price:40.3, vol:116000
+aksje: s= AWSB, 12:47, bid:59.5, ask:60, price:60, vol:4835
+aksje: s= BEB , 12:47, bid:137.5, ask:138.5, price:138, vol:17200
+aksje: s= FAR , 12:47, bid:14.5, ask:14.6, price:0, vol:0
+aksje: s= HAV , 12:47, bid:17.5, ask:18, price:17.7, vol:22000
+aksje: s= IMS , 12:47, bid:3.6, ask:3.75, price:0, vol:2000
+aksje: s= LSL , 12:47, bid:12, ask:13, price:0, vol:0
+aksje: s= SPT , 12:47, bid:1.8, ask:1.82, price:0, vol:8000
+aksje: s= ORC , 12:47, bid:185, ask:190, price:190, vol:7670
+aksje: s= SEN , 12:47, bid:45, ask:48, price:45, vol:621
+index: Bank, 12:47, Value: 60.88, change : -0.11, trade: 5681
+index: Forsikring, 12:47, Value: 313.12, change : -2, trade: 1395
+index: Industri, 12:47, Value: 1216.8, change : -1.15, trade: 72398
+index: Skip, 12:47, Value: 584.27, change : 2.19, trade: 9301
+index: Total, 12:47, Value: 704.84, change : -0.35, trade: 88775
+index: OBX, 12:47, Value: 394.4, change : 0.33, trade: 0
+index: BRIX, 12:47, Value: 1948.3, change : 1.65, trade: 6578680
+aksje: s= BEB , 12:55, bid:138, ask:138.5, price:138, vol:17200
+aksje: s= FSL , 13:1, bid:63, ask:64, price:64, vol:10400
+aksje: s= HNA , 13:1, bid:180, ask:181.5, price:181, vol:27800
+aksje: s= HUN , 13:1, bid:47.5, ask:48.5, price:48, vol:5000
+aksje: s= KVI , 13:1, bid:223.5, ask:224, price:224, vol:29700
+aksje: s= KVIB, 13:1, bid:210, ask:212, price:212, vol:7711
+aksje: s= MED , 13:1, bid:64.5, ask:65, price:65, vol:64000
+aksje: s= MOE , 13:1, bid:6.6, ask:6.8, price:6.8, vol:11200
+aksje: s= NER , 13:1, bid:218, ask:220, price:220, vol:1000
+aksje: s= NHY , 13:1, bid:252, ask:253, price:252.5, vol:19500
+aksje: s= NOV , 13:1, bid:102.5, ask:104, price:104, vol:600
+aksje: s= NSG , 13:1, bid:176, ask:176.5, price:176.5, vol:19800
+aksje: s= NSGB, 13:1, bid:166, ask:170, price:0, vol:0
+aksje: s= RIEB, 13:1, bid:127, ask:130, price:127, vol:2705
+aksje: s= SAGB, 13:1, bid:71.5, ask:72.5, price:71.5, vol:17600
+aksje: s= BEA , 13:1, bid:138.5, ask:139, price:138.5, vol:6100
+aksje: s= BEB , 13:1, bid:137.5, ask:138, price:137.5, vol:19200
+aksje: s= HAV , 13:1, bid:17.5, ask:18, price:17.7, vol:24000
+aksje: s= LOI , 13:1, bid:25, ask:27, price:0, vol:0
+aksje: s= SME , 13:1, bid:100, ask:104, price:102, vol:40
+aksje: s= WWI , 13:1, bid:111, ask:116, price:0, vol:0
+aksje: s= AXI , 13:1, bid:22, ask:22.5, price:22, vol:34400
+aksje: s= EAB , 13:1, bid:7.6, ask:7.8, price:7.6, vol:2000
+aksje: s= LEG , 13:1, bid:38, ask:41, price:0, vol:1000
+aksje: s= ORC , 13:1, bid:175, ask:185, price:180, vol:8420
+aksje: s= STX , 13:1, bid:23.8, ask:23.9, price:23.8, vol:4000
+aksje: s= SEN , 13:1, bid:45, ask:47, price:45, vol:4621
+aksje: s= SADG, 13:1, bid:114, ask:118, price:116, vol:550
+aksje: s= SNOG, 13:1, bid:160, ask:161, price:161, vol:11100
+aksje: s= ROGG, 13:1, bid:140, ask:145, price:0, vol:45
+aksje: s= KM98, 13:1, bid:92.35, ask:92.6, price:0, vol:10000000
+aksje: s= S462, 13:1, bid:109.23, ask:109.25, price:109.25, vol:792000000
+aksje: s= S463, 13:1, bid:116.51, ask:116.55, price:116.54, vol:1312000000
+aksje: s= S465, 13:1, bid:93.53, ask:93.57, price:93.54, vol:1918000000
+index: Bank, 13:1, Value: 60.88, change : -0.11, trade: 8346
+index: Forsikring, 13:1, Value: 313.12, change : -2, trade: 1567
+index: Industri, 13:1, Value: 1217.5, change : -0.49, trade: 76082
+index: Skip, 13:1, Value: 583.75, change : 1.67, trade: 10027
+index: Total, 13:1, Value: 705, change : -0.19, trade: 96022
+index: OBX, 13:1, Value: 394.45, change : 0.38, trade: 0
+index: BRIX, 13:1, Value: 1948.3, change : 1.65, trade: 6792106
+aksje: s= DNB , 13:1, bid:16.3, ask:16.4, price:16.4, vol:57500
+aksje: s= FOK , 13:1, bid:32.1, ask:32.2, price:32.1, vol:85500
+aksje: s= UNS , 13:1, bid:31.2, ask:31.4, price:31.4, vol:30400
+aksje: s= AKE , 13:1, bid:79, ask:79.5, price:79.5, vol:3725
+aksje: s= AFK , 13:1, bid:500, ask:515, price:0, vol:0
+aksje: s= AVA , 13:1, bid:38, ask:39, price:39, vol:6600
+aksje: s= EEG , 13:1, bid:74, ask:0, price:0, vol:0
+aksje: s= TAA , 13:1, bid:72.5, ask:74, price:74, vol:27900
+aksje: s= TOM , 13:1, bid:40.3, ask:40.5, price:40.3, vol:117000
+index: Bank, 13:3, Value: 60.88, change : -0.11, trade: 8403
+index: Industri, 13:3, Value: 1217.6, change : -0.4, trade: 76144
+index: Total, 13:3, Value: 705.03, change : -0.16, trade: 96141
+aksje: s= KVIB, 13:17, bid:210, ask:212, price:211, vol:8311
+aksje: s= NHY , 13:17, bid:252.5, ask:253, price:252.5, vol:21100
+aksje: s= ORK , 13:17, bid:319, ask:320, price:320, vol:7023
+aksje: s= SADG, 13:16, bid:116, ask:118, price:116, vol:550
+aksje: s= MORG, 13:16, bid:138, ask:140, price:138.5, vol:2700
+aksje: s= SNOG, 13:16, bid:161, ask:162, price:161, vol:11200
+aksje: s= SVEG, 13:16, bid:140, ask:140.5, price:140, vol:4000
+aksje: s= MING, 13:16, bid:0, ask:152, price:0, vol:0
+aksje: s= KM93, 13:17, bid:119.65, ask:119.8, price:0, vol:172000000
+aksje: s= S462, 13:17, bid:109.23, ask:109.25, price:109.25, vol:907000000
+aksje: s= S463, 13:17, bid:116.51, ask:116.55, price:116.54, vol:1417000000
+aksje: s= S465, 13:17, bid:93.53, ask:93.57, price:93.54, vol:1933000000
+aksje: s= BNB , 13:16, bid:149, ask:151, price:152.5, vol:500
+aksje: s= DNB , 13:16, bid:16.3, ask:16.4, price:16.4, vol:80000
+aksje: s= FOK , 13:16, bid:32.1, ask:32.2, price:32.1, vol:90300
+aksje: s= UNS , 13:16, bid:31.1, ask:31.4, price:31.2, vol:55400
+aksje: s= BRA , 13:17, bid:330, ask:335, price:330, vol:34500
+aksje: s= DNL , 13:17, bid:285, ask:288, price:288, vol:600
+aksje: s= DYN , 13:17, bid:139, ask:140, price:139, vol:20100
+aksje: s= HNA , 13:17, bid:181, ask:181.5, price:181, vol:29800
+aksje: s= HNB , 13:17, bid:177, ask:177.5, price:177.5, vol:10100
+aksje: s= HUN , 13:17, bid:47.5, ask:48.5, price:47.5, vol:5200
+aksje: s= KOG , 13:17, bid:158, ask:160, price:158, vol:1800
+aksje: s= KVI , 13:17, bid:223.5, ask:224.5, price:224, vol:29700
+aksje: s= SAGB, 13:16, bid:71.5, ask:72.5, price:71.5, vol:18100
+aksje: s= SCH , 13:16, bid:73.5, ask:75, price:73.5, vol:22300
+aksje: s= SEL , 13:16, bid:122, ask:124, price:122, vol:1000
+aksje: s= SKI , 13:16, bid:230, ask:250, price:0, vol:0
+aksje: s= STE , 13:16, bid:2.6, ask:3, price:2.6, vol:3000
+aksje: s= TOM , 13:16, bid:40.4, ask:40.5, price:40.3, vol:117000
+aksje: s= BEL , 13:16, bid:24, ask:24.5, price:24.5, vol:8000
+aksje: s= BEB , 13:16, bid:137, ask:138, price:137.5, vol:25500
+aksje: s= FAR , 13:16, bid:14.5, ask:14.6, price:14.5, vol:7000
+aksje: s= HAV , 13:16, bid:17.7, ask:18.5, price:18, vol:29000
+aksje: s= SPT , 13:17, bid:1.8, ask:1.82, price:1.8, vol:9000
+aksje: s= STO , 13:16, bid:98, ask:100, price:99, vol:23000
+aksje: s= TOD , 13:16, bid:95.5, ask:96, price:97, vol:16300
+aksje: s= ACL , 13:16, bid:81, ask:82, price:82, vol:55000
+aksje: s= AXI , 13:16, bid:22, ask:22.5, price:22, vol:54400
+aksje: s= BOH , 13:17, bid:4.8, ask:4.9, price:4.9, vol:13000
+aksje: s= EAB , 13:17, bid:7.6, ask:7.8, price:7.6, vol:4000
+aksje: s= HIT , 13:17, bid:131, ask:135, price:132.5, vol:7500
+aksje: s= IBY , 13:17, bid:0.14, ask:0.15, price:0.13, vol:5000
+aksje: s= IBYT, 13:17, bid:0.09, ask:0.1, price:0.09, vol:471000
+aksje: s= LEG , 13:17, bid:38, ask:41, price:0, vol:2000
+aksje: s= STX , 13:16, bid:23.8, ask:23.9, price:23.9, vol:7000
+index: Bank, 13:17, Value: 60.79, change : -0.2, trade: 8926
+index: Forsikring, 13:17, Value: 311.79, change : -3.33, trade: 2347
+index: Industri, 13:17, Value: 1217.6, change : -0.38, trade: 85256
+index: Skip, 13:17, Value: 584.08, change : 2, trade: 11297
+index: Total, 13:17, Value: 704.87, change : -0.32, trade: 107827
+index: OBX, 13:17, Value: 394.23, change : 0.16, trade: 0
+index: BRIX, 13:17, Value: 1948.3, change : 1.65, trade: 7075878
+index: Industri, 13:19, Value: 1217.4, change : -0.57, trade: 85704
+index: Skip, 13:19, Value: 584.08, change : 2, trade: 11299
+index: Total, 13:19, Value: 704.79, change : -0.4, trade: 108276
+index: OBX, 13:19, Value: 394.17, change : 0.1, trade: 0
+index: BRIX, 13:19, Value: 1948.3, change : 1.65, trade: 7150061
+aksje: s= SKI , 13:25, bid:230, ask:0, price:0, vol:0
+aksje: s= KM93, 13:28, bid:119.65, ask:119.8, price:0, vol:234000000
+aksje: s= SKI , 13:29, bid:230, ask:0, price:0, vol:81
+aksje: s= DNL , 13:30, bid:0, ask:288, price:288, vol:600
+aksje: s= ORC , 13:31, bid:180, ask:187, price:185, vol:8920
+aksje: s= RIN , 13:31, bid:85, ask:95, price:0, vol:2000
+aksje: s= SNT , 13:31, bid:27, ask:27.1, price:27.1, vol:1112000
+aksje: s= SYE , 13:31, bid:117, ask:120, price:0, vol:1000
+aksje: s= NONG, 13:31, bid:0, ask:133, price:0, vol:0
+aksje: s= MORG, 13:31, bid:138, ask:139, price:138.5, vol:2700
+aksje: s= SNOG, 13:31, bid:160, ask:161, price:161, vol:11300
+aksje: s= AKE , 13:31, bid:79, ask:79.5, price:79.5, vol:3825
+aksje: s= DNL , 13:31, bid:285, ask:288, price:288, vol:600
+aksje: s= FIB , 13:32, bid:2.35, ask:2.5, price:2.5, vol:46000
+aksje: s= HNA , 13:32, bid:180.5, ask:181.5, price:181, vol:32800
+aksje: s= HNB , 13:32, bid:177, ask:177.5, price:177.5, vol:10200
+aksje: s= KVI , 13:32, bid:223, ask:224, price:224, vol:34000
+aksje: s= MED , 13:32, bid:64.5, ask:65, price:65, vol:68000
+aksje: s= NER , 13:32, bid:218, ask:220, price:220, vol:6000
+aksje: s= NHY , 13:32, bid:252.5, ask:253, price:253, vol:27600
+aksje: s= NSG , 13:32, bid:176.5, ask:177, price:176.5, vol:20600
+aksje: s= NSGB, 13:32, bid:166, ask:168, price:0, vol:0
+aksje: s= ORK , 13:32, bid:319, ask:321, price:320, vol:7123
+aksje: s= PGS , 13:32, bid:117.5, ask:118, price:118, vol:17900
+aksje: s= SAG , 13:31, bid:76.5, ask:77, price:77, vol:14700
+aksje: s= SCH , 13:31, bid:73.5, ask:74, price:73.5, vol:22300
+aksje: s= TOM , 13:31, bid:40.4, ask:40.5, price:40.4, vol:119000
+aksje: s= UTO , 13:31, bid:77.5, ask:79, price:79, vol:70200
+aksje: s= BEA , 13:31, bid:138, ask:138.5, price:138.5, vol:6200
+aksje: s= BEB , 13:31, bid:137, ask:138, price:137.5, vol:26500
+aksje: s= HAV , 13:31, bid:18, ask:18.5, price:18, vol:29000
+aksje: s= MET , 13:32, bid:47.5, ask:60, price:47.5, vol:45
+aksje: s= SME , 13:32, bid:102, ask:104, price:102, vol:40
+aksje: s= AXI , 13:31, bid:21.5, ask:22.5, price:22, vol:61400
+aksje: s= FOU , 13:31, bid:27, ask:30, price:0, vol:0
+aksje: s= KB07, 13:32, bid:100.45, ask:100.47, price:0, vol:10000000
+aksje: s= S459, 13:32, bid:101.25, ask:101.29, price:0, vol:40400000
+aksje: s= S462, 13:32, bid:109.23, ask:109.25, price:109.25, vol:927000000
+aksje: s= S463, 13:32, bid:116.51, ask:116.56, price:116.53, vol:1472000000
+aksje: s= S465, 13:32, bid:93.53, ask:93.59, price:93.55, vol:1948000000
+aksje: s= KW18, 13:31, bid:104.59, ask:104.7, price:0, vol:0
+index: Bank, 13:32, Value: 60.79, change : -0.2, trade: 8942
+index: Industri, 13:32, Value: 1218.3, change : 0.32, trade: 94212
+index: Skip, 13:32, Value: 584.08, change : 2, trade: 11451
+index: Total, 13:32, Value: 705.16, change : -0.03, trade: 116952
+index: OBX, 13:32, Value: 394.46, change : 0.39, trade: 0
+index: BRIX, 13:32, Value: 1948.3, change : 1.65, trade: 7339469
+aksje: s= FOK , 13:31, bid:32.1, ask:32.2, price:32.1, vol:90800
+aksje: s= AWS , 13:45, bid:62, ask:63, price:62, vol:3000
+aksje: s= AWSB, 13:45, bid:59.5, ask:60, price:60, vol:5835
+aksje: s= AKE , 13:47, bid:79, ask:79.5, price:79.5, vol:5825
+aksje: s= AVA , 13:47, bid:38, ask:38.5, price:38.5, vol:6800
+aksje: s= DNO , 13:47, bid:3, ask:3.3, price:0, vol:1000
+aksje: s= EKO , 13:47, bid:66.5, ask:67.5, price:67, vol:100
+aksje: s= ELK , 13:47, bid:67.5, ask:68, price:67.5, vol:39900
+aksje: s= EKJ , 13:47, bid:154, ask:155, price:155, vol:230
+aksje: s= FIB , 13:47, bid:2.5, ask:2.6, price:2.5, vol:52000
+aksje: s= HNA , 13:47, bid:180.5, ask:181, price:181, vol:32800
+aksje: s= KOG , 13:47, bid:158, ask:160, price:158, vol:11800
+aksje: s= KVI , 13:47, bid:223, ask:224, price:224, vol:34200
+aksje: s= KVIB, 13:47, bid:211, ask:212, price:211, vol:8311
+aksje: s= MED , 13:47, bid:64.5, ask:65, price:64.5, vol:75200
+aksje: s= NER , 13:47, bid:215, ask:219, price:220, vol:6000
+aksje: s= NHY , 13:47, bid:252.5, ask:253, price:253, vol:27800
+aksje: s= NSG , 13:47, bid:176.5, ask:177, price:176.5, vol:20700
+aksje: s= PGS , 13:47, bid:117.5, ask:118, price:118, vol:18900
+aksje: s= RIE , 13:47, bid:135, ask:142, price:140, vol:1700
+aksje: s= SAG , 13:47, bid:76, ask:77, price:77, vol:14700
+aksje: s= SAGB, 13:47, bid:71.5, ask:72.5, price:72, vol:18300
+aksje: s= SAT , 13:47, bid:21, ask:25, price:0, vol:0
+aksje: s= SCH , 13:47, bid:73.5, ask:75, price:74, vol:42300
+aksje: s= SEL , 13:47, bid:122, ask:124, price:122, vol:1400
+aksje: s= BEA , 13:47, bid:137.5, ask:138, price:138, vol:6300
+aksje: s= BEB , 13:47, bid:137, ask:137.5, price:137.5, vol:31500
+aksje: s= TOD , 13:46, bid:95.5, ask:96, price:95.5, vol:16500
+aksje: s= WWI , 13:46, bid:110, ask:116, price:0, vol:0
+aksje: s= WWIB, 13:46, bid:109, ask:111, price:110, vol:3000
+aksje: s= AXI , 13:46, bid:21.5, ask:22, price:22, vol:63400
+aksje: s= FOS , 13:47, bid:135, ask:180, price:0, vol:0
+aksje: s= HIT , 13:47, bid:132, ask:135, price:132.5, vol:7500
+aksje: s= IBYT, 13:47, bid:0.08, ask:0.1, price:0.08, vol:559000
+aksje: s= KOA , 13:47, bid:110, ask:114, price:115, vol:15100
+aksje: s= ORC , 13:47, bid:186, ask:189, price:186, vol:10800
+aksje: s= VVL , 13:47, bid:505, ask:680, price:0, vol:0
+aksje: s= SADG, 13:47, bid:116, ask:118, price:116, vol:650
+aksje: s= SVEG, 13:47, bid:140, ask:140.5, price:140.5, vol:5000
+aksje: s= MING, 13:47, bid:149, ask:152, price:0, vol:0
+aksje: s= HL17, 13:47, bid:100.96, ask:101.1, price:0, vol:62000000
+aksje: s= KM95, 13:47, bid:103.31, ask:103.45, price:0, vol:0
+aksje: s= S462, 13:47, bid:109.22, ask:109.26, price:109.24, vol:932000000
+aksje: s= S463, 13:47, bid:116.51, ask:116.6, price:116.53, vol:1472000000
+aksje: s= S465, 13:47, bid:93.54, ask:93.57, price:93.55, vol:1958000000
+aksje: s= KW11, 13:47, bid:103.1, ask:103.15, price:0, vol:0
+aksje: s= KW19, 13:47, bid:112.4, ask:112.54, price:0, vol:110000000
+index: Bank, 13:47, Value: 60.71, change : -0.28, trade: 9706
+index: Industri, 13:47, Value: 1218.9, change : 0.87, trade: 98527
+index: Skip, 13:47, Value: 583.2, change : 1.12, trade: 13158
+index: Total, 13:47, Value: 705.14, change : -0.05, trade: 123737
+index: OBX, 13:47, Value: 394.24, change : 0.17, trade: 0
+index: BRIX, 13:47, Value: 1948.2, change : 1.62, trade: 7600962
+aksje: s= CKR , 13:46, bid:13.9, ask:14, price:13.9, vol:352000
+aksje: s= FOK , 13:46, bid:32.1, ask:32.2, price:32.1, vol:92300
+aksje: s= NBK , 13:46, bid:97, ask:98.5, price:97.5, vol:524
+aksje: s= UNS , 13:46, bid:31.2, ask:31.4, price:31.2, vol:55400
+aksje: s= STEJ, 13:47, bid:0.02, ask:0.05, price:0, vol:0
+aksje: s= TAA , 13:47, bid:71.5, ask:74, price:73, vol:28300
+aksje: s= UTO , 13:47, bid:77.5, ask:79, price:79, vol:70500
+aksje: s= AWS , 13:47, bid:61.5, ask:62, price:62, vol:4800
+aksje: s= AWSB, 13:47, bid:60, ask:61, price:60, vol:13800
+aksje: s= SNT , 13:57, bid:27, ask:27.1, price:27, vol:1113000
+aksje: s= AXI , 13:59, bid:21.5, ask:22, price:22, vol:73400
+aksje: s= ORC , 14:1, bid:191, ask:195, price:192, vol:14900
+aksje: s= RIN , 14:1, bid:90, ask:95, price:95, vol:27000
+aksje: s= STX , 14:1, bid:23.8, ask:23.9, price:23.8, vol:18200
+aksje: s= SEN , 14:1, bid:45, ask:47, price:45.5, vol:4921
+aksje: s= SYE , 14:1, bid:118, ask:120, price:0, vol:1000
+aksje: s= KB12, 14:2, bid:98.15, ask:98.25, price:0, vol:0
+aksje: s= KB13, 14:2, bid:95.6, ask:95.75, price:0, vol:70000000
+aksje: s= HE75, 14:2, bid:100.7, ask:100.8, price:0, vol:5000000
+aksje: s= KM95, 14:0, bid:103.31, ask:103.49, price:0, vol:0
+aksje: s= S462, 14:2, bid:109.24, ask:109.26, price:109.24, vol:972000000
+aksje: s= S463, 14:2, bid:116.52, ask:116.6, price:116.53, vol:1532000000
+aksje: s= S465, 14:2, bid:93.55, ask:93.6, price:93.57, vol:1965000000
+aksje: s= KX41, 14:0, bid:99.77, ask:99.85, price:99.82, vol:45000000
+aksje: s= CKR , 14:1, bid:13.9, ask:14, price:13.9, vol:439000
+aksje: s= FOK , 14:1, bid:32.1, ask:32.2, price:32.1, vol:95300
+aksje: s= UNS , 14:1, bid:31.3, ask:31.4, price:31.2, vol:94500
+aksje: s= AVA , 14:1, bid:38, ask:39, price:38.5, vol:7000
+aksje: s= DYN , 14:1, bid:139, ask:140, price:140, vol:22900
+aksje: s= EKO , 14:1, bid:66.5, ask:67, price:67, vol:100
+aksje: s= ELK , 14:1, bid:67, ask:68, price:67.5, vol:50300
+aksje: s= GOD , 14:1, bid:91, ask:92, price:0, vol:10000
+aksje: s= HNA , 14:1, bid:180.5, ask:181.5, price:181, vol:34000
+aksje: s= HNB , 14:1, bid:177, ask:177.5, price:177, vol:13700
+aksje: s= KOG , 14:1, bid:158, ask:160, price:158, vol:12000
+aksje: s= KVI , 14:1, bid:223.5, ask:224, price:224, vol:34200
+aksje: s= KVIB, 14:2, bid:211, ask:212, price:212, vol:8511
+aksje: s= MAG , 14:2, bid:81, ask:83, price:83, vol:2000
+aksje: s= MED , 14:2, bid:64.5, ask:66, price:65, vol:83600
+aksje: s= NER , 14:2, bid:215, ask:218, price:220, vol:6000
+aksje: s= NHY , 14:2, bid:252.5, ask:253, price:252.5, vol:29300
+aksje: s= NSG , 14:2, bid:177, ask:178, price:177, vol:22200
+aksje: s= ORK , 14:2, bid:320, ask:321, price:320, vol:7123
+aksje: s= PGS , 14:2, bid:118, ask:119, price:119, vol:29700
+aksje: s= SAGB, 14:1, bid:72, ask:72.5, price:72, vol:18300
+aksje: s= SKI , 14:1, bid:230, ask:0, price:230, vol:331
+aksje: s= TAA , 14:1, bid:71.5, ask:73.5, price:73, vol:28300
+aksje: s= TAD , 14:1, bid:44.5, ask:45, price:44.5, vol:14000
+aksje: s= TOM , 14:1, bid:40.5, ask:40.8, price:40.4, vol:129000
+aksje: s= AWSB, 14:1, bid:59.5, ask:60, price:60, vol:13800
+aksje: s= FAR , 14:1, bid:14.5, ask:14.6, price:14.6, vol:8000
+aksje: s= SME , 14:2, bid:103, ask:104, price:102, vol:40
+aksje: s= SPA , 14:1, bid:14.6, ask:14.8, price:0, vol:50000
+aksje: s= TOD , 14:1, bid:96, ask:97, price:96, vol:19300
+aksje: s= EAB , 14:2, bid:8, ask:8.8, price:7.6, vol:6000
+index: Bank, 14:2, Value: 60.71, change : -0.28, trade: 11011
+index: Forsikring, 14:2, Value: 312.46, change : -2.66, trade: 3571
+index: Industri, 14:2, Value: 1219, change : 0.99, trade: 103720
+index: Skip, 14:2, Value: 583.82, change : 1.74, trade: 13441
+index: Total, 14:2, Value: 705.42, change : 0.23, trade: 131742
+index: OBX, 14:2, Value: 394.38, change : 0.31, trade: 0
+index: BRIX, 14:2, Value: 1948.3, change : 1.67, trade: 7714069
+index: Industri, 14:3, Value: 1218.9, change : 0.88, trade: 103720
+index: Total, 14:3, Value: 705.37, change : 0.18, trade: 131742
+index: BRIX, 14:3, Value: 1948.3, change : 1.7, trade: 7745082
+aksje: s= IBY , 14:14, bid:0.14, ask:0.15, price:0.13, vol:131000
+aksje: s= SAG , 14:15, bid:76.5, ask:77, price:77, vol:14700
+aksje: s= IMS , 14:17, bid:3.6, ask:3.7, price:3.65, vol:15000
+aksje: s= LHO , 14:17, bid:92, ask:93, price:0, vol:100000
+aksje: s= MET , 14:17, bid:47.5, ask:52, price:47.5, vol:45
+aksje: s= SOL , 14:17, bid:0, ask:13, price:13, vol:4000
+aksje: s= TOD , 14:17, bid:96, ask:97, price:96, vol:20300
+aksje: s= WWIB, 14:17, bid:109, ask:112, price:110, vol:4000
+aksje: s= EAB , 14:16, bid:8, ask:8.5, price:7.6, vol:6000
+aksje: s= ORC , 14:17, bid:191, ask:195, price:192, vol:16300
+aksje: s= RIN , 14:17, bid:90, ask:95, price:90, vol:27500
+aksje: s= SKR , 14:17, bid:91, ask:93, price:91, vol:32000
+aksje: s= KB11, 14:17, bid:103.22, ask:103.28, price:103.23, vol:95000000
+aksje: s= KB13, 14:17, bid:95.65, ask:95.78, price:95.74, vol:75000000
+aksje: s= KB07, 14:17, bid:100.45, ask:100.52, price:0, vol:10000000
+aksje: s= HL18, 14:17, bid:97.61, ask:97.8, price:0, vol:0
+aksje: s= HE72, 14:17, bid:112.55, ask:112.8, price:0, vol:0
+aksje: s= TG62, 14:17, bid:96.85, ask:96.95, price:96.85, vol:10000000
+aksje: s= KM93, 14:17, bid:119.71, ask:119.85, price:0, vol:234000000
+aksje: s= KM97, 14:17, bid:100.09, ask:100.19, price:0, vol:5000000
+aksje: s= KM98, 14:17, bid:92.41, ask:92.65, price:0, vol:10000000
+aksje: s= S462, 14:17, bid:109.24, ask:109.26, price:109.26, vol:997000000
+aksje: s= S463, 14:17, bid:116.54, ask:116.61, price:116.65, vol:1627000000
+aksje: s= S465, 14:17, bid:93.57, ask:93.64, price:93.64, vol:1980000000
+aksje: s= KW19, 14:17, bid:112.42, ask:112.5, price:0, vol:110000000
+aksje: s= CKR , 14:17, bid:13.8, ask:14, price:13.9, vol:463000
+aksje: s= UNS , 14:17, bid:31.3, ask:31.4, price:31.3, vol:115000
+aksje: s= AKE , 14:17, bid:79, ask:79.5, price:79.5, vol:9825
+aksje: s= AKEB, 14:17, bid:74, ask:75, price:74.5, vol:6100
+aksje: s= DYN , 14:17, bid:139, ask:139.5, price:140, vol:22900
+aksje: s= ELK , 14:17, bid:67, ask:68, price:67.5, vol:52500
+aksje: s= FSL , 14:17, bid:63, ask:63.5, price:64, vol:10400
+aksje: s= FIB , 14:17, bid:2.5, ask:2.6, price:2.5, vol:53000
+aksje: s= HNA , 14:17, bid:181, ask:181.5, price:181, vol:34000
+aksje: s= KVI , 14:17, bid:223.5, ask:224, price:224, vol:37200
+aksje: s= NER , 14:17, bid:215, ask:217.5, price:220, vol:6000
+aksje: s= NHY , 14:17, bid:252.5, ask:253, price:253, vol:29500
+aksje: s= ORK , 14:17, bid:319.5, ask:320, price:320, vol:7573
+aksje: s= SAG , 14:17, bid:76, ask:76.5, price:76.5, vol:18100
+aksje: s= SAGB, 14:17, bid:72, ask:72.5, price:72.5, vol:29400
+aksje: s= SCH , 14:17, bid:73.5, ask:74, price:74, vol:42300
+aksje: s= STEJ, 14:17, bid:0.02, ask:0.04, price:0, vol:0
+aksje: s= TAA , 14:17, bid:72.5, ask:73, price:73, vol:28300
+aksje: s= TOM , 14:17, bid:40.6, ask:41, price:40.8, vol:134000
+aksje: s= BEA , 14:17, bid:137.5, ask:138, price:137.5, vol:10300
+index: Bank, 14:17, Value: 60.71, change : -0.28, trade: 11346
+index: Forsikring, 14:17, Value: 312.46, change : -2.66, trade: 4198
+index: Industri, 14:17, Value: 1219, change : 0.98, trade: 106608
+index: Skip, 14:17, Value: 583.33, change : 1.25, trade: 23596
+index: Total, 14:17, Value: 705.3, change : 0.11, trade: 145749
+index: OBX, 14:17, Value: 394.35, change : 0.28, trade: 0
+index: BRIX, 14:17, Value: 1948.5, change : 1.87, trade: 7952687
+aksje: s= S463, 14:30, bid:116.53, ask:116.61, price:116.65, vol:1627000000
+aksje: s= KB12, 14:32, bid:98.15, ask:98.28, price:0, vol:0
+aksje: s= KB13, 14:32, bid:95.7, ask:95.9, price:95.75, vol:85000000
+aksje: s= HE72, 14:32, bid:112.6, ask:112.8, price:0, vol:0
+aksje: s= HE75, 14:32, bid:100.7, ask:100.85, price:0, vol:5000000
+aksje: s= TF61, 14:31, bid:100.39, ask:100.44, price:100.42, vol:103000000
+aksje: s= KM93, 14:31, bid:119.75, ask:119.9, price:0, vol:234000000
+aksje: s= KM98, 14:31, bid:92.6, ask:92.74, price:0, vol:10000000
+aksje: s= S459, 14:32, bid:101.26, ask:101.29, price:0, vol:40400000
+aksje: s= S463, 14:32, bid:116.55, ask:116.63, price:116.6, vol:1637000000
+aksje: s= S465, 14:32, bid:93.58, ask:93.64, price:93.64, vol:1980000000
+aksje: s= KW11, 14:31, bid:103.1, ask:103.14, price:0, vol:0
+aksje: s= KW19, 14:31, bid:112.4, ask:112.55, price:0, vol:110000000
+aksje: s= BLO , 14:32, bid:91, ask:92, price:0, vol:28500
+aksje: s= DNL , 14:32, bid:282, ask:287, price:285, vol:1100
+aksje: s= DNO , 14:32, bid:3, ask:3.2, price:0, vol:1000
+aksje: s= DYN , 14:32, bid:139, ask:139.5, price:139, vol:23600
+aksje: s= FSL , 14:31, bid:62, ask:63, price:63, vol:14800
+aksje: s= GRE , 14:31, bid:103, ask:104, price:103, vol:28500
+aksje: s= HNA , 14:31, bid:180.5, ask:181, price:181, vol:34100
+aksje: s= KVI , 14:31, bid:223.5, ask:224, price:224, vol:37500
+aksje: s= KVIB, 14:32, bid:211, ask:212, price:212, vol:8811
+aksje: s= MED , 14:32, bid:65, ask:66, price:65, vol:83600
+aksje: s= MOE , 14:32, bid:6.6, ask:6.7, price:6.8, vol:11200
+aksje: s= NER , 14:32, bid:215, ask:217, price:220, vol:6000
+aksje: s= NHY , 14:32, bid:252.5, ask:253, price:253, vol:29600
+aksje: s= NSG , 14:32, bid:177, ask:178, price:177, vol:22300
+aksje: s= ORK , 14:32, bid:319.5, ask:320, price:319.5, vol:7923
+aksje: s= ORKB, 14:32, bid:303, ask:305, price:304, vol:850
+aksje: s= SEL , 14:31, bid:122, ask:124, price:122, vol:1600
+aksje: s= SMDB, 14:31, bid:66, ask:70, price:69, vol:2000
+aksje: s= TAA , 14:31, bid:73, ask:74, price:73.5, vol:33500
+aksje: s= TOM , 14:31, bid:40.6, ask:40.8, price:40.8, vol:134000
+aksje: s= BEB , 14:32, bid:137, ask:137.5, price:137.5, vol:36500
+aksje: s= MET , 14:31, bid:47.5, ask:52, price:47.5, vol:95
+aksje: s= SPA , 14:32, bid:14.5, ask:14.8, price:14.6, vol:55000
+aksje: s= STO , 14:32, bid:98, ask:100, price:99, vol:23100
+aksje: s= TOD , 14:32, bid:96.5, ask:97, price:96, vol:20300
+aksje: s= ORC , 14:32, bid:195, ask:199, price:197, vol:17600
+aksje: s= RIC , 14:32, bid:102, ask:105, price:0, vol:0
+aksje: s= SNT , 14:32, bid:27, ask:27.1, price:27, vol:1134000
+aksje: s= SYE , 14:32, bid:117, ask:120, price:118, vol:11000
+aksje: s= MORG, 14:32, bid:138, ask:138.5, price:138.5, vol:2700
+aksje: s= SNOG, 14:32, bid:160, ask:161, price:161, vol:11600
+index: Bank, 14:32, Value: 60.71, change : -0.28, trade: 11512
+index: Industri, 14:32, Value: 1218.5, change : 0.46, trade: 107993
+index: Skip, 14:32, Value: 583.75, change : 1.67, trade: 24375
+index: Total, 14:32, Value: 705.18, change : -0.01, trade: 148079
+index: OBX, 14:32, Value: 394.29, change : 0.22, trade: 0
+index: BRIX, 14:32, Value: 1948.6, change : 1.99, trade: 7991627
+aksje: s= BNB , 14:32, bid:150, ask:151, price:152.5, vol:500
+aksje: s= CKR , 14:32, bid:13.9, ask:14, price:13.9, vol:474000
+aksje: s= DNB , 14:32, bid:16.3, ask:16.4, price:16.4, vol:80100
+aksje: s= FOK , 14:32, bid:32.1, ask:32.2, price:32.1, vol:95700
+aksje: s= FOK , 14:42, bid:32.1, ask:32.2, price:32.1, vol:101000
+aksje: s= KB12, 14:43, bid:98.15, ask:98.3, price:0, vol:0
+aksje: s= STE , 14:44, bid:2.6, ask:2.8, price:2.6, vol:3000
+aksje: s= TOM , 14:45, bid:40.6, ask:41, price:40.8, vol:134000
+aksje: s= SPA , 14:47, bid:14.5, ask:0, price:14.6, vol:55000
+aksje: s= WBS , 14:47, bid:30, ask:31, price:0, vol:0
+aksje: s= WWIB, 14:47, bid:110, ask:112, price:110, vol:4000
+aksje: s= ACL , 14:47, bid:81, ask:82, price:82, vol:57500
+aksje: s= EIRG, 14:46, bid:116, ask:117, price:116, vol:1260
+aksje: s= KB12, 14:47, bid:98.15, ask:98.24, price:0, vol:0
+aksje: s= KB10, 14:47, bid:112.4, ask:112.6, price:0, vol:20000000
+aksje: s= HE72, 14:47, bid:112.65, ask:112.8, price:0, vol:0
+aksje: s= KM93, 14:47, bid:119.75, ask:119.85, price:0, vol:234000000
+aksje: s= KM95, 14:47, bid:103.31, ask:103.49, price:0, vol:10000000
+aksje: s= KM98, 14:47, bid:92.61, ask:92.8, price:0, vol:20000000
+aksje: s= S462, 14:47, bid:109.25, ask:109.27, price:109.25, vol:1029000000
+aksje: s= S463, 14:47, bid:116.54, ask:116.62, price:116.6, vol:1702000000
+aksje: s= S465, 14:47, bid:93.55, ask:93.63, price:93.58, vol:2020000000
+aksje: s= KW19, 14:47, bid:112.45, ask:112.59, price:0, vol:145000000
+aksje: s= BSK , 14:47, bid:48.5, ask:49, price:49, vol:9000
+aksje: s= BNB , 14:47, bid:151, ask:152.5, price:151, vol:1200
+aksje: s= FOK , 14:47, bid:32.1, ask:32.2, price:32.1, vol:103000
+aksje: s= ISB , 14:47, bid:17, ask:17.5, price:0, vol:77600
+aksje: s= NBK , 14:47, bid:97, ask:98.5, price:97.5, vol:5524
+aksje: s= AKE , 14:47, bid:79, ask:79.5, price:79.5, vol:10100
+aksje: s= AVA , 14:47, bid:38.5, ask:39, price:38.5, vol:7000
+aksje: s= ELK , 14:47, bid:67, ask:67.5, price:67.5, vol:52500
+aksje: s= EKJ , 14:47, bid:155, ask:156, price:155, vol:2230
+aksje: s= FSL , 14:47, bid:63, ask:63.5, price:63, vol:22400
+aksje: s= HNA , 14:47, bid:180, ask:181, price:180.5, vol:34600
+aksje: s= KVI , 14:47, bid:224, ask:224.5, price:224, vol:49300
+aksje: s= KVIB, 14:47, bid:210, ask:212, price:212, vol:10300
+aksje: s= MAG , 14:47, bid:81, ask:82, price:83, vol:2000
+aksje: s= NHY , 14:47, bid:252.5, ask:253, price:253, vol:34400
+aksje: s= NSG , 14:47, bid:177, ask:177.5, price:177, vol:22300
+aksje: s= REN , 14:47, bid:13, ask:13.5, price:0, vol:9000
+aksje: s= SAGB, 14:47, bid:72, ask:72.5, price:72.5, vol:29500
+aksje: s= BEA , 14:46, bid:138, ask:139, price:138, vol:13900
+aksje: s= HAV , 14:46, bid:17.8, ask:18.5, price:18, vol:59000
+aksje: s= IMS , 14:46, bid:3.65, ask:3.75, price:3.65, vol:29000
+aksje: s= NOS , 14:46, bid:13.9, ask:14, price:13.9, vol:21000
+aksje: s= BOH , 14:47, bid:4.8, ask:4.9, price:4.8, vol:16000
+aksje: s= EAB , 14:47, bid:8, ask:8.5, price:7.6, vol:8000
+aksje: s= KEN , 14:47, bid:5.8, ask:5.95, price:5.95, vol:52000
+aksje: s= KOA , 14:47, bid:110, ask:114, price:115, vol:30100
+aksje: s= ORC , 14:46, bid:197, ask:203, price:201, vol:19700
+index: Bank, 14:47, Value: 60.73, change : -0.26, trade: 13712
+index: Industri, 14:47, Value: 1218.1, change : 0.15, trade: 113278
+index: Skip, 14:47, Value: 583.94, change : 1.86, trade: 25741
+index: Total, 14:47, Value: 705.11, change : -0.08, trade: 156929
+index: OBX, 14:47, Value: 394.26, change : 0.19, trade: 0
+index: BRIX, 14:47, Value: 1948.7, change : 2.09, trade: 8252062
+aksje: s= GOD , 14:47, bid:88, ask:92, price:0, vol:10000
+aksje: s= ELK , 14:56, bid:67, ask:67.5, price:67.5, vol:56500
+aksje: s= HNA , 14:57, bid:180.5, ask:181, price:180.5, vol:34600
+aksje: s= ELK , 15:1, bid:67, ask:67.5, price:67.5, vol:57500
+aksje: s= FSL , 15:1, bid:62.5, ask:63.5, price:63, vol:30000
+aksje: s= GOD , 15:1, bid:88, ask:92, price:92, vol:10200
+aksje: s= HNA , 15:1, bid:180, ask:180.5, price:180, vol:42100
+aksje: s= HNB , 15:1, bid:177, ask:177.5, price:177, vol:15300
+aksje: s= HUN , 15:1, bid:47.5, ask:48, price:47.5, vol:5200
+aksje: s= KVI , 15:1, bid:223.5, ask:224, price:223.5, vol:50200
+aksje: s= MSG , 15:2, bid:50, ask:50.5, price:0, vol:40000
+aksje: s= NER , 15:2, bid:215, ask:217, price:215, vol:6500
+aksje: s= NHY , 15:2, bid:252.5, ask:253, price:252.5, vol:35000
+aksje: s= NSG , 15:2, bid:177, ask:178, price:177.5, vol:22500
+aksje: s= NSGB, 15:2, bid:166, ask:168, price:168, vol:50
+aksje: s= PGS , 15:2, bid:118, ask:119, price:119, vol:30700
+aksje: s= SAG , 15:1, bid:75.5, ask:76, price:76, vol:19300
+aksje: s= SAGB, 15:1, bid:71.5, ask:72.5, price:72, vol:29600
+aksje: s= SEL , 15:1, bid:122, ask:123, price:122, vol:1800
+aksje: s= SSI , 15:1, bid:92, ask:93, price:92, vol:17300
+aksje: s= SPA , 15:2, bid:14.6, ask:15, price:14.6, vol:56000
+aksje: s= STO , 15:2, bid:98, ask:99.5, price:99, vol:23100
+aksje: s= STOB, 15:2, bid:97, ask:98, price:98, vol:5000
+aksje: s= TOD , 15:2, bid:96.5, ask:97, price:96.5, vol:21300
+aksje: s= WWI , 15:2, bid:111, ask:116, price:0, vol:0
+aksje: s= ORC , 15:2, bid:199, ask:202, price:203, vol:20100
+aksje: s= SEN , 15:2, bid:45.5, ask:47, price:45.5, vol:5921
+aksje: s= KB13, 15:1, bid:95.7, ask:95.85, price:95.75, vol:85000000
+aksje: s= HL13, 15:1, bid:106.97, ask:107.05, price:0, vol:0
+aksje: s= KM93, 15:1, bid:119.75, ask:119.8, price:0, vol:234000000
+aksje: s= KM94, 15:1, bid:100.45, ask:100.53, price:0, vol:10000000
+aksje: s= KM95, 15:1, bid:103.31, ask:103.45, price:0, vol:10000000
+aksje: s= KM98, 15:1, bid:92.6, ask:92.8, price:0, vol:20000000
+aksje: s= S462, 15:1, bid:109.24, ask:109.27, price:109.25, vol:1039000000
+aksje: s= S463, 15:1, bid:116.53, ask:116.55, price:116.53, vol:1852000000
+aksje: s= S465, 15:1, bid:93.55, ask:93.6, price:93.58, vol:2100000000
+aksje: s= KW11, 15:1, bid:103.1, ask:103.2, price:0, vol:0
+aksje: s= KW19, 15:1, bid:112.45, ask:112.5, price:0, vol:145000000
+aksje: s= KX37, 15:1, bid:106.1, ask:106.18, price:106.1, vol:35000000
+aksje: s= KX41, 15:1, bid:99.78, ask:99.85, price:99.82, vol:50000000
+aksje: s= CKR , 15:2, bid:13.9, ask:14, price:13.9, vol:494000
+aksje: s= DNB , 15:2, bid:16.3, ask:16.4, price:16.3, vol:117000
+aksje: s= FOK , 15:2, bid:32.1, ask:32.2, price:32.1, vol:105000
+aksje: s= NBK , 15:2, bid:97, ask:97.5, price:97.5, vol:5524
+aksje: s= PRF , 15:2, bid:141, ask:143, price:0, vol:2000
+aksje: s= UNS , 15:2, bid:31.1, ask:31.3, price:31.2, vol:132000
+aksje: s= BLO , 15:1, bid:90.5, ask:92, price:91, vol:33500
+aksje: s= DYN , 15:1, bid:139, ask:140, price:139.5, vol:28800
+index: Bank, 15:2, Value: 60.63, change : -0.36, trade: 14660
+index: Forsikring, 15:2, Value: 311.68, change : -3.44, trade: 4730
+index: Industri, 15:2, Value: 1216.6, change : -1.44, trade: 119230
+index: Skip, 15:2, Value: 583.94, change : 1.86, trade: 26146
+index: Total, 15:2, Value: 704.29, change : -0.9, trade: 164766
+index: OBX, 15:2, Value: 393.62, change : -0.45, trade: 0
+index: BRIX, 15:2, Value: 1948.6, change : 2.03, trade: 8614603
+aksje: s= NER , 15:13, bid:213, ask:217, price:215, vol:6600
+aksje: s= STO , 15:15, bid:98, ask:99.5, price:99.5, vol:23400
+aksje: s= CTG , 15:17, bid:96, ask:105, price:0, vol:60
+aksje: s= DNL , 15:17, bid:283, ask:285, price:285, vol:1100
+aksje: s= DNO , 15:17, bid:3, ask:3.2, price:3, vol:1226
+aksje: s= DYN , 15:17, bid:139.5, ask:140, price:139.5, vol:29800
+aksje: s= EKJ , 15:17, bid:154, ask:155, price:155, vol:4230
+aksje: s= FSL , 15:17, bid:62.5, ask:63, price:63, vol:30000
+aksje: s= GOD , 15:17, bid:90, ask:92, price:92, vol:10200
+aksje: s= HES , 15:17, bid:73, ask:74, price:74, vol:117000
+aksje: s= KVI , 15:17, bid:223.5, ask:224, price:224, vol:53200
+aksje: s= MED , 15:16, bid:64.5, ask:65, price:65, vol:88600
+aksje: s= NER , 15:16, bid:213, ask:218, price:215, vol:28000
+aksje: s= NSG , 15:16, bid:177, ask:178, price:177.5, vol:24500
+aksje: s= PGS , 15:16, bid:118, ask:119, price:119, vol:35700
+aksje: s= STEJ, 15:17, bid:0.04, ask:0.05, price:0.04, vol:5000
+aksje: s= TAA , 15:17, bid:72, ask:74, price:73, vol:38900
+aksje: s= TOM , 15:17, bid:40.6, ask:41, price:41, vol:138000
+aksje: s= UTO , 15:17, bid:77.5, ask:79, price:77.5, vol:70600
+aksje: s= BEA , 15:17, bid:139, ask:140, price:139, vol:14000
+aksje: s= BEB , 15:17, bid:137, ask:138, price:137.5, vol:40700
+aksje: s= NAL , 15:17, bid:10, ask:10.5, price:10, vol:54400
+aksje: s= HAV , 15:17, bid:18, ask:18.5, price:18, vol:59000
+aksje: s= LHO , 15:16, bid:92, ask:93, price:93, vol:104000
+aksje: s= SPT , 15:16, bid:1.8, ask:1.82, price:1.8, vol:51000
+aksje: s= SME , 15:16, bid:100, ask:104, price:103, vol:140
+aksje: s= SOL , 15:17, bid:12, ask:13, price:13, vol:4000
+aksje: s= TOD , 15:17, bid:96.5, ask:97, price:96.5, vol:30300
+aksje: s= WBS , 15:17, bid:30, ask:31.5, price:30, vol:1000
+aksje: s= AXI , 15:17, bid:21.5, ask:22, price:22, vol:86400
+aksje: s= IBY , 15:17, bid:0.13, ask:0.15, price:0.15, vol:236000
+aksje: s= IBYT, 15:17, bid:0.09, ask:0.1, price:0.08, vol:559000
+aksje: s= KDP , 15:17, bid:60, ask:70, price:0, vol:0
+aksje: s= LEG , 15:17, bid:38, ask:40, price:0, vol:2000
+aksje: s= ORC , 15:17, bid:199, ask:202, price:199, vol:20600
+aksje: s= SNT , 15:17, bid:27.1, ask:27.2, price:27.1, vol:1135000
+aksje: s= STX , 15:17, bid:23.8, ask:23.9, price:23.8, vol:19400
+aksje: s= MORG, 15:16, bid:138, ask:139, price:138, vol:4500
+aksje: s= ROGG, 15:16, bid:141, ask:145, price:0, vol:45
+index: Bank, 15:17, Value: 60.63, change : -0.36, trade: 17088
+index: Industri, 15:17, Value: 1216.4, change : -1.57, trade: 126663
+index: Skip, 15:17, Value: 584.47, change : 2.39, trade: 27658
+index: Total, 15:17, Value: 704.36, change : -0.83, trade: 176140
+index: OBX, 15:17, Value: 393.69, change : -0.38, trade: 0
+aksje: s= BNB , 15:17, bid:151, ask:152, price:151, vol:1200
+aksje: s= CKR , 15:17, bid:13.9, ask:14, price:13.9, vol:664000
+aksje: s= FOK , 15:17, bid:32.1, ask:32.2, price:32.1, vol:107000
+aksje: s= UNS , 15:17, bid:31.1, ask:31.2, price:31.2, vol:132000
+index: Industri, 15:18, Value: 1216.5, change : -1.51, trade: 126704
+index: Skip, 15:18, Value: 584.47, change : 2.39, trade: 28208
+index: Total, 15:18, Value: 704.38, change : -0.81, trade: 176731
+aksje: s= TOM , 15:25, bid:40.6, ask:41.2, price:41, vol:138000
+aksje: s= KVE , 15:29, bid:111, ask:112, price:112, vol:5500
+aksje: s= CKR , 15:31, bid:13.9, ask:14, price:14, vol:759000
+aksje: s= ELK , 15:32, bid:66.5, ask:67, price:67, vol:89000
+aksje: s= FSL , 15:32, bid:62.5, ask:63.5, price:63, vol:30000
+aksje: s= HNA , 15:32, bid:180.5, ask:181, price:180.5, vol:60900
+aksje: s= HES , 15:32, bid:72.5, ask:73.5, price:73, vol:123000
+aksje: s= KVI , 15:32, bid:223.5, ask:224, price:224, vol:57200
+aksje: s= RIEB, 15:32, bid:126, ask:128, price:127, vol:3005
+aksje: s= SAG , 15:32, bid:75.5, ask:76.5, price:76, vol:20800
+aksje: s= SAGB, 15:32, bid:72, ask:72.5, price:72, vol:29600
+aksje: s= SEL , 15:32, bid:122, ask:123, price:122, vol:5800
+aksje: s= TOM , 15:31, bid:40.6, ask:41.2, price:41, vol:193000
+aksje: s= BEA , 15:32, bid:138, ask:139, price:139, vol:14100
+aksje: s= BEB , 15:32, bid:137.5, ask:138, price:137.5, vol:40700
+aksje: s= GRO , 15:32, bid:128, ask:130, price:0, vol:0
+aksje: s= HAV , 15:32, bid:18, ask:18.5, price:18, vol:64000
+aksje: s= SPA , 15:32, bid:14.6, ask:14.8, price:14.6, vol:56000
+aksje: s= STO , 15:32, bid:98, ask:99.5, price:99.5, vol:23500
+aksje: s= TOD , 15:32, bid:97, ask:98, price:97, vol:34300
+aksje: s= AXI , 15:32, bid:21.5, ask:22, price:21.5, vol:92900
+aksje: s= HIT , 15:32, bid:132, ask:134, price:132.5, vol:7500
+aksje: s= IBY , 15:32, bid:0.13, ask:0.14, price:0.15, vol:256000
+aksje: s= IBYT, 15:32, bid:0.08, ask:0.1, price:0.1, vol:564000
+aksje: s= ORC , 15:32, bid:199, ask:200, price:199, vol:20700
+aksje: s= STX , 15:32, bid:23.8, ask:23.9, price:23.8, vol:28200
+aksje: s= TES , 15:32, bid:6.8, ask:6.9, price:6.8, vol:118000
+aksje: s= SNOG, 15:31, bid:161, ask:162, price:161, vol:12200
+aksje: s= BNB , 15:32, bid:151.5, ask:152, price:151, vol:1200
+aksje: s= CKR , 15:32, bid:13.9, ask:14, price:14, vol:785000
+aksje: s= FOK , 15:32, bid:32, ask:32.1, price:32.1, vol:130000
+aksje: s= UNS , 15:32, bid:31.1, ask:31.2, price:31.2, vol:135000
+aksje: s= AKE , 15:32, bid:79, ask:79.5, price:79.5, vol:13600
+aksje: s= BLO , 15:32, bid:90.5, ask:91, price:91, vol:33500
+aksje: s= DNL , 15:32, bid:282, ask:285, price:285, vol:1550
+aksje: s= KVIB, 15:32, bid:210, ask:212, price:210, vol:12800
+aksje: s= MED , 15:32, bid:64.5, ask:65, price:65, vol:90600
+aksje: s= NHY , 15:32, bid:253, ask:253.5, price:253, vol:71000
+aksje: s= NYD , 15:32, bid:27, ask:27.4, price:27, vol:38000
+aksje: s= ORK , 15:32, bid:319.5, ask:320, price:320, vol:9323
+aksje: s= PGS , 15:32, bid:117.5, ask:118.5, price:118, vol:45500
+aksje: s= IMS , 15:32, bid:3.6, ask:3.65, price:3.65, vol:35000
+aksje: s= NATT, 15:32, bid:22, ask:23, price:0, vol:0
+index: Bank, 15:32, Value: 60.76, change : -0.23, trade: 19520
+index: Forsikring, 15:32, Value: 311.68, change : -3.44, trade: 4824
+index: Industri, 15:32, Value: 1216.6, change : -1.37, trade: 148302
+index: Skip, 15:32, Value: 584.89, change : 2.81, trade: 28723
+index: Total, 15:32, Value: 704.61, change : -0.58, trade: 201369
+index: OBX, 15:32, Value: 393.96, change : -0.11, trade: 0
+aksje: s= STOB, 15:41, bid:97, ask:98, price:98, vol:5010
+aksje: s= AXI , 15:43, bid:21.5, ask:22, price:21.5, vol:93900
+aksje: s= AXI , 15:44, bid:21, ask:22, price:21.5, vol:93900
+aksje: s= KVIB, 15:47, bid:210, ask:212, price:211, vol:15800
+aksje: s= MAG , 15:47, bid:81, ask:83, price:81, vol:3500
+aksje: s= MSG , 15:47, bid:50, ask:51, price:50, vol:40200
+aksje: s= NHY , 15:47, bid:252.5, ask:253.5, price:253, vol:76000
+aksje: s= NSG , 15:47, bid:177, ask:178, price:178, vol:24900
+aksje: s= NYD , 15:47, bid:27, ask:27.4, price:27, vol:40000
+aksje: s= ORK , 15:47, bid:319.5, ask:320, price:320, vol:9423
+aksje: s= ORKB, 15:47, bid:303, ask:304, price:304, vol:850
+aksje: s= PGS , 15:47, bid:115.5, ask:116, price:116, vol:51600
+aksje: s= STEJ, 15:47, bid:0.05, ask:0.08, price:0.05, vol:126000
+aksje: s= TAA , 15:47, bid:72.5, ask:74, price:74, vol:39100
+aksje: s= TAD , 15:47, bid:44, ask:44.5, price:44.5, vol:15600
+aksje: s= TOM , 15:47, bid:40.8, ask:41.1, price:41, vol:193000
+aksje: s= IMS , 15:47, bid:3.65, ask:3.75, price:3.65, vol:39000
+aksje: s= SPT , 15:47, bid:1.8, ask:1.82, price:1.8, vol:71000
+aksje: s= SOL , 15:47, bid:12.5, ask:13, price:13, vol:4000
+aksje: s= STO , 15:47, bid:98.5, ask:99.5, price:99.5, vol:31000
+aksje: s= STOB, 15:47, bid:97, ask:98, price:97, vol:8010
+aksje: s= TOD , 15:47, bid:97.5, ask:98, price:98, vol:36400
+aksje: s= AXI , 15:47, bid:21, ask:21.5, price:21.5, vol:94900
+aksje: s= FOU , 15:47, bid:26, ask:30, price:27, vol:3000
+aksje: s= KEN , 15:47, bid:5.7, ask:5.85, price:5.95, vol:52000
+aksje: s= KOA , 15:47, bid:110, ask:115, price:110, vol:31300
+aksje: s= ORC , 15:47, bid:195, ask:198, price:198, vol:20800
+aksje: s= SNT , 15:47, bid:27.1, ask:27.2, price:27.2, vol:1138000
+aksje: s= STX , 15:47, bid:23.7, ask:23.9, price:23.9, vol:40200
+aksje: s= TES , 15:47, bid:6.8, ask:6.9, price:6.9, vol:120000
+aksje: s= ROGG, 15:46, bid:142, ask:145, price:0, vol:45
+aksje: s= BNB , 15:47, bid:151.5, ask:152, price:151.5, vol:1700
+aksje: s= UNS , 15:47, bid:31.1, ask:31.2, price:31.1, vol:145000
+aksje: s= AAV , 15:46, bid:200, ask:220, price:0, vol:0
+aksje: s= AKE , 15:46, bid:79, ask:79.5, price:79.5, vol:15600
+aksje: s= DNL , 15:46, bid:282, ask:284, price:285, vol:2000
+aksje: s= ELK , 15:47, bid:66.5, ask:67, price:66.5, vol:102000
+aksje: s= FSL , 15:47, bid:63, ask:63.5, price:62.5, vol:30600
+aksje: s= HNA , 15:47, bid:180.5, ask:181.5, price:181, vol:66900
+aksje: s= HNB , 15:47, bid:178, ask:178.5, price:178, vol:17300
+aksje: s= KVI , 15:47, bid:223, ask:223.5, price:223.5, vol:60400
+aksje: s= SSI , 15:47, bid:91, ask:92, price:92, vol:18100
+aksje: s= BEA , 15:47, bid:137.5, ask:139, price:139, vol:14100
+aksje: s= BEB , 15:47, bid:137, ask:138, price:137.5, vol:44200
+aksje: s= FAR , 15:47, bid:14.5, ask:14.6, price:14.6, vol:10000
+aksje: s= HAV , 15:47, bid:18.1, ask:18.5, price:18, vol:64000
+index: Bank, 15:47, Value: 60.76, change : -0.23, trade: 19596
+index: Forsikring, 15:47, Value: 311.01, change : -4.11, trade: 5151
+index: Industri, 15:47, Value: 1216.5, change : -1.51, trade: 154718
+index: Skip, 15:47, Value: 585.9, change : 3.82, trade: 30519
+index: Total, 15:47, Value: 704.69, change : -0.5, trade: 209983
+index: OBX, 15:47, Value: 394, change : -0.07, trade: 0
+aksje: s= TOM , 15:55, bid:40.8, ask:41, price:41, vol:193000
+aksje: s= STE , 16:3, bid:2.5, ask:2.8, price:2.8, vol:10000
+aksje: s= STEJ, 16:3, bid:0.02, ask:0.05, price:0.05, vol:151000
+aksje: s= TAA , 16:3, bid:73, ask:74, price:73, vol:49100
+aksje: s= TOM , 16:3, bid:40.7, ask:41, price:40.7, vol:207000
+aksje: s= UTO , 16:3, bid:77.5, ask:78.5, price:77.5, vol:70600
+aksje: s= AWSB, 16:3, bid:59.5, ask:60.5, price:60, vol:13800
+aksje: s= SOL , 16:3, bid:13, ask:13.5, price:13, vol:7000
+aksje: s= SPA , 16:3, bid:14.6, ask:14.8, price:14.8, vol:61000
+aksje: s= STO , 16:3, bid:99, ask:100, price:98.5, vol:31700
+aksje: s= TOD , 16:3, bid:98, ask:100, price:98, vol:43400
+aksje: s= ACL , 16:3, bid:81, ask:82, price:82, vol:57900
+aksje: s= AXI , 16:3, bid:21.5, ask:22, price:21.5, vol:96900
+aksje: s= HIT , 16:3, bid:133, ask:137.5, price:135, vol:18500
+aksje: s= KOA , 16:3, bid:111, ask:115, price:115, vol:31300
+aksje: s= ORC , 16:3, bid:194, ask:194.5, price:194, vol:21000
+aksje: s= SNT , 16:3, bid:27, ask:27.1, price:27, vol:1154000
+aksje: s= SEN , 16:3, bid:45.5, ask:46.5, price:46, vol:12900
+aksje: s= SKR , 16:3, bid:90.5, ask:92, price:91, vol:38000
+aksje: s= BNB , 16:3, bid:151, ask:152, price:152, vol:6200
+aksje: s= DNB , 16:3, bid:16.3, ask:16.4, price:16.3, vol:122000
+aksje: s= FOK , 16:3, bid:32.2, ask:32.4, price:32.2, vol:137000
+aksje: s= ISB , 16:3, bid:17, ask:17.3, price:0, vol:77600
+aksje: s= NBK , 16:3, bid:97, ask:97.5, price:97.5, vol:40200
+aksje: s= UNS , 16:3, bid:31.1, ask:31.2, price:31.2, vol:168000
+aksje: s= AKE , 16:3, bid:78.5, ask:79, price:79, vol:27500
+aksje: s= AKEB, 16:3, bid:74, ask:74.5, price:74, vol:6340
+aksje: s= BLO , 16:3, bid:90, ask:91, price:90.5, vol:34500
+aksje: s= DNL , 16:3, bid:282, ask:284, price:282, vol:8050
+aksje: s= DYN , 16:3, bid:139.5, ask:140, price:140, vol:55800
+aksje: s= EKO , 16:3, bid:66.5, ask:67, price:66.5, vol:1600
+aksje: s= ELK , 16:3, bid:66.5, ask:67, price:66.5, vol:108000
+aksje: s= EKJ , 16:3, bid:154, ask:155, price:154, vol:4430
+aksje: s= HNA , 16:3, bid:181, ask:181.5, price:181, vol:77700
+aksje: s= HNB , 16:3, bid:178, ask:179, price:178.5, vol:19800
+aksje: s= HUN , 16:3, bid:47.5, ask:48, price:48, vol:5400
+aksje: s= KVI , 16:3, bid:222, ask:222.5, price:222.5, vol:61400
+aksje: s= KVIB, 16:3, bid:209, ask:210, price:210, vol:20000
+aksje: s= MED , 16:3, bid:65, ask:66, price:65, vol:93600
+aksje: s= MOE , 16:3, bid:6.6, ask:6.7, price:6.7, vol:26200
+aksje: s= NER , 16:3, bid:213, ask:218, price:215, vol:33000
+aksje: s= NHY , 16:3, bid:252.5, ask:253, price:252.5, vol:79000
+aksje: s= NSG , 16:3, bid:178, ask:179, price:178, vol:37500
+aksje: s= NSGB, 16:3, bid:167, ask:170, price:168, vol:2300
+aksje: s= ORK , 16:3, bid:320, ask:321, price:320, vol:10400
+aksje: s= ORKB, 16:3, bid:304, ask:305, price:304, vol:6400
+aksje: s= PGS , 16:3, bid:115.5, ask:116, price:116, vol:52400
+aksje: s= REN , 16:3, bid:13, ask:13.4, price:0, vol:9000
+aksje: s= SAG , 16:3, bid:75.5, ask:76.5, price:76.5, vol:20900
+aksje: s= SAGB, 16:3, bid:72, ask:72.5, price:72.5, vol:31100
+aksje: s= SAT , 16:3, bid:21, ask:25, price:0, vol:12200
+aksje: s= SCH , 16:3, bid:73.5, ask:74, price:74, vol:45500
+aksje: s= SSI , 16:3, bid:91, ask:92, price:92, vol:19200
+aksje: s= BEA , 16:2, bid:137.5, ask:138.5, price:138.5, vol:14200
+aksje: s= BEB , 16:2, bid:136.5, ask:137, price:137, vol:48700
+aksje: s= FAR , 16:2, bid:14.5, ask:14.6, price:14.6, vol:20000
+aksje: s= GRO , 16:2, bid:127.5, ask:130, price:130, vol:1000
+aksje: s= HAV , 16:2, bid:18.2, ask:18.5, price:18, vol:64000
+aksje: s= IMS , 16:3, bid:3.65, ask:3.75, price:3.65, vol:43000
+aksje: s= LHO , 16:3, bid:92, ask:93, price:93, vol:109000
+aksje: s= MET , 16:3, bid:47.5, ask:60, price:47.5, vol:1195
+aksje: s= NOS , 16:3, bid:13.9, ask:14.3, price:13.9, vol:23000
+aksje: s= NATT, 16:3, bid:22, ask:25, price:0, vol:1400
+aksje: s= SPT , 16:3, bid:1.8, ask:1.82, price:1.82, vol:78000
+aksje: s= SME , 16:3, bid:102, ask:104, price:103, vol:140
+aksje: s= EIRG, 16:3, bid:116, ask:117, price:116.5, vol:1760
+aksje: s= SNOG, 16:3, bid:161, ask:162, price:161, vol:39800
+index: Bank, 16:3, Value: 60.83, change : -0.16, trade: 23930
+index: Forsikring, 16:3, Value: 311.68, change : -3.44, trade: 5877
+index: Industri, 16:3, Value: 1215.9, change : -2.12, trade: 174102
+index: Skip, 16:3, Value: 585.66, change : 3.58, trade: 32895
+index: Total, 16:3, Value: 704.51, change : -0.68, trade: 236805
+index: OBX, 16:3, Value: 393.86, change : -0.21, trade: 0
+aksje: s= CKR , 16:11, bid:13.9, ask:14, price:14, vol:1785000
+aksje: s= SEN , 16:14, bid:45.5, ask:46.5, price:46, vol:13600
+aksje: s= TES , 16:16, bid:6.8, ask:6.9, price:6.9, vol:220000
+aksje: s= NOS , 16:16, bid:13.9, ask:14.3, price:14.3, vol:24000
+aksje: s= SME , 16:16, bid:102, ask:104, price:103, vol:150
+aksje: s= CKR , 16:16, bid:13.9, ask:14, price:14, vol:1845000
+aksje: s= UNP , 16:16, bid:11.4, ask:11.5, price:11.5, vol:47500
+aksje: s= AKE , 16:16, bid:78.5, ask:79, price:78.5, vol:29300
+aksje: s= AKEB, 16:16, bid:74, ask:74.5, price:74, vol:11100
+aksje: s= AVA , 16:16, bid:38.5, ask:39, price:38.5, vol:8000
+aksje: s= ELK , 16:16, bid:66.5, ask:67, price:66.5, vol:110000
+aksje: s= FIB , 16:16, bid:2.5, ask:2.6, price:2.5, vol:53200
+aksje: s= MSG , 16:16, bid:50, ask:51, price:50, vol:40300
+aksje: s= NSGB, 16:16, bid:167, ask:170, price:168, vol:2320
+aksje: s= ORKB, 16:16, bid:304, ask:305, price:304, vol:6402
+aksje: s= PGS , 16:16, bid:115.5, ask:116, price:116, vol:55600
+aksje: s= RIEB, 16:16, bid:126, ask:128, price:127, vol:3505
+aksje: s= SAGB, 16:16, bid:72, ask:72.5, price:72.5, vol:31200
+aksje: s= SCH , 16:16, bid:73.5, ask:74, price:74, vol:50200
+aksje: s= TAA , 16:16, bid:73, ask:74, price:73, vol:53500
+aksje: s= AWSB, 16:16, bid:59.5, ask:60.5, price:60, vol:13900
+aksje: s= WWIB, 16:16, bid:110, ask:112, price:112, vol:4300
+aksje: s= HIT , 16:16, bid:133, ask:137.5, price:135, vol:32900
+index: Bank, 16:17, Value: 60.83, change : -0.16, trade: 38769
+index: Forsikring, 16:17, Value: 311.68, change : -3.44, trade: 6101
+index: Industri, 16:17, Value: 1215.9, change : -2.12, trade: 175927
+index: Skip, 16:17, Value: 585.87, change : 3.79, trade: 32950
+index: Total, 16:17, Value: 704.55, change : -0.64, trade: 253747
