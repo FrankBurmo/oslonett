@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title>JA! Jeg vil ha BNkonto</title>
+</head>
+<body background="/bnbank/gifs/bnmnste.gif" text="#000000">
+<center>
+    <a href="/bnbank/innskudd.html">
+        <img alt="Innskudd" src="/bnbank/gifs/BNinnskudd.gif" border=0></a>
+    <a href="/bnbank/boliglaan.html">
+        <img alt="Boliglån" src="/bnbank/gifs/BNboliglaan.gif" border=0></a>
+    <a href="/bnbank/pantelaan.html">
+        <img alt="Næringslån" src="/bnbank/gifs/BNnaeringslaan.gif" border=0></a>
+    <a href="/bnbank/info.html">
+        <img alt="Informasjon" src="/bnbank/gifs/BNinformasjon.gif" border=0></a>
+    
+        
+    <p>
+    <img alt="BNbank" src="/bnbank/gifs/header-logo.gif">
+</center>
+<p>
+
+ 
+ <center><h1>JA! Jeg vil ha BNkonto</h1></center>
+
+<form method="POST" action="/cgi-bin/mailit">
+<input type="hidden" name="mailto" value="bnbank@sn.no">
+<input type="hidden" name="reply-to" value="bnbank@sn.no">
+<input type="hidden" name="bodyattr" value="background=/bnbank/gifs/bnmnste.gif">
+<input type="hidden" name="imgattr" value="src=/bnbank/gifs/header-logo.gif">
+<input type="hidden" name="subject" value="Ja, jeg vil ha BNkonto">
+
+<b>
+ Hvis du av sikkerhetshensyn ikke ønsker å sende ditt fødsels-/foretaksnr. på
+ e-mail, kan du la feltet være blankt. Vi sender deg nødvendige papirer.
+<p>
+
+<center>
+<table border="5" cellpadding="10" cellspacing="10">
+<tr>
+<td colspan="2">
+<h2>Fyll inn navn og adresse og send til BNbank:</h2>
+<pre><b>
+ Fødsels-/foretaksnr :  <input name="Fødsels-/foretaksnr." type="text" size=30>
+ Navn                :  <input name="Navn" type="text" size=50>
+ Adresse             :  <input name="Adresse" type="text" size=50>
+ Postnr./sted        :  <input name="Postnr og sted"type="text" size=50>
+ Tlf.nr. (dagtid)    :  <input name="Tlf.nr" type="text" size=30>
+ Email               :  <input name="Email" size="50">
+</pre>
+</b>
+<tr>
+<td colspan="2"><h2>Annen informasjon fra deg:</h2>
+<center><textarea name="Diverse" rows=6 cols=70></textarea></center></td>
+</tr>
+<p>
+<tr>
+<td colspan="2">
+
+<b>Jeg vil helst bli kontaktet pr. <select name="Kontakt meg pr."></b>
+<option selected>Post
+<option>Telefax
+<option>Email
+<option>Telefon
+</select><br>
+
+<!-- Hack: ønsker avsnittskift her i Mosaic...> <p> <!-- -->
+
+<!-- Denne FORM'en har to mulige mottaker-adresser (Trondheim og Oslo).        -->
+<!-- NB! 1) SUBMIT-feltene må ha NAME="Send til" (hardkodet i CGI-scriptet)    -->
+<!--     2) Tag'ene med NAME="BNbank i Oslo" og "BNbank i Trondheim" brukes    -->
+<!--        for oppslag fra klartekst til mail-adresse og må samsvare med      -->
+<!--        VALUE for de to SUBMIT-feltene.                                    -->
+<!--     3) Siste INPUT-tag angir default mail-adresse dersom kravene 1)       -->
+<!--        eller 2) ovenfor ikke er tilfredsstilt.                            -->
+
+<tr>
+<td colspan="2"><b>Send skjema til... 
+<input type="submit" name="Send dette videre til" value="BNbank i Oslo"> eller
+<input type="submit" name="Send dette videre til" value="BNbank i Trondheim"></td>
+</tr>
+
+<input type="hidden" name="BNbank i Trondheim" value="BNbank.Trondheim@sn.no">
+<input type="hidden" name="BNbank i Oslo" value="BNbank.Oslo@sn.no">
+
+</td></b>
+</tr>
+
+</table>
+</form>
+</center>
+</font>
+
+ </pre>
+</b> 
+ <p>
+ 
+
+<p>
+<center>
+<h2><em>Bedre betingelser på innskudd og utlån</em></h2>
+</center>
+<hr noshade size=1>
+<center>
+<a href="/">
+    <img border=0 alt="[Oslonett Home]" src="/gifs/on/oslonett-i.gif"></a>
+
+    
+<a href="/bnbank/">
+    <img border=0 alt="[BNbanks hjemmeside]" src="/bnbank/gifs/footer-logo.gif"></a>
+</center>
+</body>
+</html>
