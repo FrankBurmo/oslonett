@@ -1,8 +1,0 @@
-title: Gave
-passwd: q3W3utE2mLBOs
-from: K4??? (@port-17.ppp.powertech.no)
-ref: art00038.txt
-host: port-17.ppp.powertech.no/194.19.5.17
-date: 22. februar 96 17:23:15
-body: Kan jeg f&aring; en n&aring;l?<br>Jeg skal gi den til en jeg liker!
-published: yes

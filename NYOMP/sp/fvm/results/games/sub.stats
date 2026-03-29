@@ -1,8 +1,0 @@
-#!/opt/internet/bin/perl -i bak
-
-while(<>) {
-        s/<li><a href=\/wc94\/teams\/> Team Statistics<\/a>//;
-
-	# >> DON'T accidentally delete this print statement!
-	print;
-	}

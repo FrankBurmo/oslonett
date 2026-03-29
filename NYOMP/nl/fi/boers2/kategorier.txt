@@ -1,3 +1,0 @@
-BANK+BSK ,Bergens Skillingsbk. ,300250+BNB ,BNbank ,513940+CKR ,Chr. Bank og Kred. ,302553+DNB ,Den norske Bank ,300200+FOK ,Fokus Bank ,302560+ISB ,Ind. & Skipsbanken ,300500+NBK ,Nordlandsbanken ,301400+NOK ,Norgeskreditt P ,302800+
-DETALJHANDEL+CTG ,C. Tybring-Gjedde ,572440+EKJ ,Elkjøp ,392105+GRE ,Gresvig ,304640+
-

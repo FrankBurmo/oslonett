@@ -1,1 +1,0 @@
-linkadm.cgi

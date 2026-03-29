@@ -1,5 +1,0 @@
-default http://www.aftenposten.no/uriks/index.htm
-rect http://www.aftenposten.no/innhold/index.htm 0,0 69,16
-rect http://www.aftenposten.no/info/index.htm 70,0 140,16
-rect http://www.aftenposten.no/index.htm 141,0 308,16
-rect http://www.aftenposten.no/uriks/index.htm 309,0 453,16

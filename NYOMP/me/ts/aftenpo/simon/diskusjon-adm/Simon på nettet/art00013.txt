@@ -1,7 +1,0 @@
-title: kviser
-passwd: y6GfF9tPxVTCI
-from: Joachim (@os16.ftns.no)
-host: os16.ftns.no/194.52.173.16
-date: 22. februar 96 13:15:10
-body: Hvorfor fÿr man kviser?avogtil sÿ vÿkner jeg om morgenen<br>og ser at jeg har en kvise.det er sÿ irriterende.<br>har du noen gode tips for ÿ forebygge kviser?<br>Det hadde vÿrt kjempefint,Simon!!<br>Kuuult med spalten pÿ internett,fortsett med det,fordi<br>jeg aldri leser avisen.<br><br>Hilsen J
-published: yes

@@ -1,9 +1,0 @@
-overskrift: bra site
-kommentar: Kolla in: http://www.ccs.neu.edu/home/ratinox/crippled.html Den borde vara en tankeställare till många!
-publiseres: nei
-besvart: ja
-regdato: 21.9.95 13:52:08
-revdato: 1.10.95 15:35:48
-intern: nei
-anonym: nei
-file: /local/www/div/oi/fd95/respons/intern/fd95reg00008.txt

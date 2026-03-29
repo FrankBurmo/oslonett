@@ -1,6 +1,0 @@
-title: y
-passwd: ba3mXqBQA1YPw
-from: x (@stovner.oslonett.no)
-host: stovner.oslonett.no/194.143.10.10
-date: 22. november 95 20:20:37
-body: z

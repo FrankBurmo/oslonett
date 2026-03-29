@@ -1,7 +1,0 @@
-sf.cityview1.gif
-sf.cityview2.gif
-sf.conserv.gif
-sf.ggbridge.gif
-sf.ggpark.gif
-sf.victorians.gif
-sf.wharf.gif

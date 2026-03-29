@@ -1,6 +1,0 @@
-default http://www.aftenposten.no/nyaften/vaer/vaer_ho.htm
-rect http://www.aftenposten.no/nyaften/hjemme/innhold.htm 0,48 61,64
-rect http://www.aftenposten.no/nyaften/hjemme/sok_def.htm 62,48 101,64
-rect http://www.aftenposten.no/nyaften/index.htm 102,48 292,64
-rect http://www.aftenposten.no/nyaften/hjemme/post.htm 293,48 372,64
-rect http://www.aftenposten.no/nyaften/hjemme/hjelp.htm 373,48 453,64
