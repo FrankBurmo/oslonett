@@ -1,9 +1,0 @@
-#!/bin/sh
-
-# 
-LIB=/home/stovner/a/kgn/cw/lib
-
-PATH=/usr/bin:/bin:/local/bin:/usr/ucb
-
-cat $LIB/header - $LIB/footer
-

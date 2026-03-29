@@ -1,9 +1,0 @@
-overskrift: Re: leserbrev-eksempel: smtp
-leserbrev: Denne diskusjonen bærer galt av sted.
-navn: joshua
-publiseres: ja,mail
-navn: joshua
-regdato: 29.9.95 18:34:02
-revdato: 29.9.95 18:35:24
-file: /home/frogner/www/me/ts/goal/leserbrev/intern/brev00043.txt
-ref: /home/frogner/www/me/ts/goal/leserbrev/intern/brev00039.txt

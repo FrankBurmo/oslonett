@@ -1,9 +1,0 @@
-NB! Man kan svitsje mellom 500 piksel og 600 piksel headere
-    vha.
-
-         % ./svitsj 500 # 500
-         % ./svitsj 600 # 600
-
-NB2! Husk at et evt. imagemap blir annerledes!
-
--steinar

@@ -1,7 +1,0 @@
-title: HJELP!
-passwd: Dmf9DwZpKEJsQ
-from: Ola nordmann. (et eller annet @@@@ nett.no)
-host: port-5.ppp.powertech.no/194.19.5.5
-date: 22. februar 96 17:43:20
-body: Moren min g&aring;r<br>alltid rundt og lover<br>at jeg skal f&aring; bli med<br>p&aring; jobb eller at vi skal p&aring; kino osv. osv.<br><br>Men n&aring;r dagen kommer s&aring; sier hun f.eks.:<br>Du kan bli med p&aring; jobben en annen gang.<br>Jada! Jada! Jeg lover &aring; ringe og bestille i morgen!<br><br>JEG ER LEI!!!!<br><br><br><br>HJELP!!!
-published: yes

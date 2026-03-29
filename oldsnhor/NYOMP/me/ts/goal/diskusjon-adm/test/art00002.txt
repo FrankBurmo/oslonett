@@ -1,6 +1,0 @@
-title: ny test
-passwd: ACjfBRqc8Edlc
-from: kg (kgn@stovner.oslonett.no)
-host: stovner.oslonett.no/194.143.10.10
-date: 22. november 95 19:13:47
-body: hvor blir det av alle innleggene?

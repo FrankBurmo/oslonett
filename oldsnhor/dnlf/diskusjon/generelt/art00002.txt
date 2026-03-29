@@ -1,6 +1,0 @@
-title: b
-passwd: uUye4vaL8JXJY
-from: a (@skogen.oslonett.no)
-host: skogen.oslonett.no/194.143.10.44
-date: 16. oktober 95 16:50:36
-body: c

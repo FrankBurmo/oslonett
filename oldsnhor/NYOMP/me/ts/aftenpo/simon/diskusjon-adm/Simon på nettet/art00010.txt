@@ -1,7 +1,0 @@
-title: En liten hilsen
-passwd: gI6qaFqLLoD6A
-from: Irlinn Mortensen (sveinh@karlsoy.gs.tr.no)
-host: troms1.or.uninett.no/158.39.68.33
-date: 22. februar 96 13:10:00
-body: Kj&aelig;re Simon!<br>Vi er en liten skole med 8 elever.&Oslash;ya vi bor p&aring; ligger <br>n&oslash;yaktig 70 grader nord og det bor ca.<br>60-70 mennesker h&aelig;r. P&aring; skolen har vi 3 datamaskiner og <br>de blir brukt ganske mye. I dag har<br>vi bes&oslash;k av en journalist fra avisa Nordlys som skal <br>intervjue oss om Internett.<br>Hilsen Irlinn p&aring; Karls&oslash;y skole.<br>
-published: yes

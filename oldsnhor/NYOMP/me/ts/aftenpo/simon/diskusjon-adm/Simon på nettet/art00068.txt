@@ -1,7 +1,0 @@
-title: Eu-debatt med shahine@powertech.no
-passwd: Aqzn7mjDUVutw
-from: Shahin E. (@port-17.ppp.powertech.no)
-host: port-17.ppp.powertech.no/194.19.5.17
-date: 22. februar 96 17:11:25
-body: Jeg liker en jente i klassen v&aring;r,<br>men hun vet ikke det.<br>Hvordan skal man fortelle det?????<br><br>JEG ER DESPERAT ETTER STORE OG SM&Aring; R&Aring;D!!!!
-published: yes

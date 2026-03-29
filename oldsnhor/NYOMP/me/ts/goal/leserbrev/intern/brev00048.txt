@@ -1,9 +1,0 @@
-overskrift: Lillestrøm
-leserbrev: Hvorfor er det ingen som skriver om Lillestøm!! <br> <br> 
-navn: Arne Petter Omholt
-svar: Vi skriver ikke om lag med så dårlige trenere.
-signatur: APO
-publiseres: ja,mail
-regdato: 3.10.95 10:45:22
-revdato: 3.10.95 10:47:08
-file: /home/frogner/www/me/ts/goal/leserbrev/intern/brev00048.txt

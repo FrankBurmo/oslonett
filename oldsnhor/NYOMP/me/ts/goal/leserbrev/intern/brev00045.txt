@@ -1,9 +1,0 @@
-overskrift: Re: England er bånn!
-leserbrev: "Visca El Barca" skriver (26.9.95 14:41:33): <br> <br> &gt; Først vil jeg takke for et kjempebra blad. Endelig fins det et blad som <br> &gt; skriver om skikkelig fotball på en skikkelig måte! <br> &gt; <br> &gt; Jeg er stor fan <br> &gt; av spansk fotball og selvfølgelig Barceolona. Jeg har sett meg lei av <br> &gt; side opp og side ned om engelsk bakgårdsfotball. Mens vi bare får høre <br> &gt; om spansk fotball f.eks. hvis Romario tar seg en lengre ferie eller får <br> &gt; en ølboks i ansiktet. ENdelig tar noen affære. Takk! Jeg har selv opplevd <br> &gt; Nou Camp Stadion med 110.000 tilskuere og det er noe helt annet enn <br> &gt; 20-30.000 på et "treningsfelt" i England. Fins det i det heletatt en <br> &gt; spiller i hele England som kunne ha vært god nok for Barcelona? <br> <br> "red." svarer (26.9.95 17:33:04): <br> <br> red&gt; Joda, debatten går videre. Skal vi tro at et par England-fans tar pennen <br> red&gt; fatt med noen reaksjoner på denne innsenderen, som forståelig nok ikke <br> red&gt; ønsket sitt navn offentliggjort... <br> <br> Test: sitat både av leserbrev og svaret fra redaksjonen
-navn: kgn
-publiseres: ja,mail
-navn: kgn
-regdato: 29.9.95 19:28:37
-revdato: 29.9.95 19:29:05
-file: /home/frogner/www/me/ts/goal/leserbrev/intern/brev00045.txt
-ref: /home/frogner/www/me/ts/goal/leserbrev/intern/brev00001.txt

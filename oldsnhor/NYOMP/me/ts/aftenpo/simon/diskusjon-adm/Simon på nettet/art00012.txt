@@ -1,7 +1,0 @@
-title: Takk!
-passwd: mOQcl1TP7Yq.M
-from: Knut (knut-iva@ifi.uio.no)
-host: delling.ifi.uio.no/129.240.100.4
-date: 22. februar 96 13:14:56
-body: <br>Hei Simon!<br><br>Jeg er en gutt p&aring; 22 &aring;r, som har et bra liv.<br>Jeg studerer, jobber ved siden av, og har en kjempekoselig<br>kj&aelig;reste som jeg trives med.<br>P&aring; tross av dette er jeg veldig opptatt av de som ikke har det s&aring; bra<br>og ikke minst HVORFOR de ikke har det bra.<br>Derfor er jeg kjempetakknemlig at du er tilgjengelig for alle<br>som vil, og som har noe p&aring; hjertet.<br>Du fyller en glemt, men utrolig viktig rolle i det norske<br>samfunnet i dag, Simon.<br>Lykke til videre.<br><br>Hilsen en 'vellykket' 22-&aring;ring.
-published: yes

@@ -1,6 +1,0 @@
-default http://www.oslonett.no/html/adv/ON/www/index.html
-## Info siden for WWW
-circle http://www.oslonett.no/html/adv/ON/www/info.html 63,68 78,81 
-## Oslonetts animasjon
-circle http://www.oslonett.no/html/adv/ON/anim.mpg 123,45 151,69 
-

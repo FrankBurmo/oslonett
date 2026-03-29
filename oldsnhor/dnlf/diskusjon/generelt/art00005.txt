@@ -1,7 +1,0 @@
-title: Re: b
-passwd: YURrInXXRldbQ
-from: kg (@skogen.oslonett.no)
-ref: art00002.txt
-host: skogen.oslonett.no/194.143.10.44
-date: 16. oktober 95 17:29:03
-body: foo<br><br>bar

@@ -1,7 +1,0 @@
-title: Brownies
-passwd: QXqzaFDrbc1nU
-from: Bergljot Baklien (bergljot.baklien@nibr.no)
-host: baklien.nibr.no/193.156.29.96
-date: 22. februar 96 13:01:41
-body: Dette er ikke noe innlegg om familie, men en hilsen til deg<br>Simon med utgangspunkt i noe du skrev om hvor man fikk gode<br>Brownies. Hvis du skulle komme p&aring; de kanter noen gang, vil <br>jeg anbefale "Mike's breakfest" i Katmandu. Mike er s&aring; vidt<br>jeg vet en overvintret hippi fra gamle dager, og hans <br>brownies er akkurat slik du beskrev at de skulle v&aelig;re. De<br>selges foresten med og uten iskrem ved siden. En stor <br>brownie med to iskrem-kuler ved siden av, er ikke en<br>men et m&aring;ltid!<br>Hilsen Bergljot (50)
-published: yes

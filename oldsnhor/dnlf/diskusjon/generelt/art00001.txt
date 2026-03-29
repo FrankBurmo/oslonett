@@ -1,6 +1,0 @@
-title: testoverskrift
-passwd: ErJZVcTc80M0k
-from: K&aring;re Gunnar (@skogen.oslonett.no)
-host: skogen.oslonett.no/194.143.10.44
-date: 16. oktober 95 16:46:35
-body: testinnhold

@@ -1,1 +1,0 @@
-/home/hasle/a/hph/www_docs/ix/lix.cgi

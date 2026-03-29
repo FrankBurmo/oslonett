@@ -1,7 +1,0 @@
-title: Re: Test av ny diskusjonsgruppe
-passwd: dSsNQ6IPwjH3o
-from: K&aring;re Gunnar (kaaren@ifi.uio.no)
-ref: art00003.txt
-host: maud.ifi.uio.no/129.240.74.2
-date: 11. desember 95 13:10:04
-body: K&aring;re Gunnar Nesheim (kaaren@ifi.uio.no) skriver (11. desember 95 13:08:43):<br><br>> Kun en test av den nye diskusjonsgruppen.<br><br>OK - alt klart<br><br>KG

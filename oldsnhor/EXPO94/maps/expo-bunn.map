@@ -1,7 +1,0 @@
-default /EXPO94/default.html
-rect /EXPO94/index.html                     1,1 74,37
-rect /EXPO94/lev/index.html		            74,1 172,37
-rect /EXPO94/konferansekatalog/konferanseprogram.html 173,1 321,37
-rect /EXPO94/In/index.html      	    322,1 423,37
-rect http://www.oslonett.no/cgi-bin/EXPOwais.pl	      	    424,1 488,37
-rect /EXPO94/hjelp.html  		    489,1 565,37 

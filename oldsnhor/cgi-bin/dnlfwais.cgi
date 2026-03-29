@@ -1,1 +1,0 @@
-/local/www/dnlf/dnlfwais.cgi

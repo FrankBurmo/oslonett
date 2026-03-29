@@ -1,6 +1,0 @@
-# Definer oslonett rektangel
-rect http://www.oslonett.no/ 60,61 341,238
-# Definer uninett rektangel
-rect http://www.uninett.no/ 189,252 513,397
-# Default
-default http://www.uit.no

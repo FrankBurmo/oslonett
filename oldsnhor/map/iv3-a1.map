@@ -1,8 +1,0 @@
-# Universitetet i OSLO
-circle http://www.uio.no  103,83 111,5
-# Oslonett
-rect http://www.oslonett.no 121,207 304,299
-# Ibm webserver
-rect http://www.ibm.com 224,17 429,151
-# default
-default feil3.html

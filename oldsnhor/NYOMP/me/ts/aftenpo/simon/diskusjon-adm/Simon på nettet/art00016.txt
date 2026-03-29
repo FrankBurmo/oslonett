@@ -1,7 +1,0 @@
-title: Hei Simon!
-passwd: Z6HwFG1Crc.qY
-from: Tine 22 (@pcstheh43.uio.no)
-host: pcstheh43.uio.no/129.240.185.52
-date: 22. februar 96 13:26:30
-body: Hei Simon!<br><br>Jeg er ei jente p&aring; 22 &aring;r som f&oslash;lger spalten din hver uke med stor interesse. <br>Spalten er veldig god, og jeg synes jeg l&aelig;rer noe nytt om andre mennesker hver gang jeg leser den.<br>St&aring; p&aring;!<br>Hilsen t22
-published: yes

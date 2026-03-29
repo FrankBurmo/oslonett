@@ -1,8 +1,0 @@
-default http://www.oslonett.no/sh/is/index.html
-
-rect http://www.sn.no/sh/is/info.html 0,0 110,60 
-rect http://www.sn.no/sh/is/hjelp.html 110,0 205,60
-rect http://www.sn.no/sh/is/komment.html 206,0 325,60
-rect http://www.sn.no/kurv/vis.cgi 326,0 428,60
-
-

@@ -1,6 +1,0 @@
-title: &Aring;rets m&aring;l 1995.
-passwd: X0OJg4PC5VV7Y
-from: Kjetil Faye Lund (kflund@telepost.no)
-host: oslo814.telepost.no/193.214.0.156
-date: 28. desember 95 00:06:04
-body: Hvem nettet &aring;rets m&aring;l? 

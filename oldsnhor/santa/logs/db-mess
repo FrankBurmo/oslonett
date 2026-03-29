@@ -1,3 +1,0 @@
-Mon Oct 30 10:59:15 1995 #247 1 16 Arithmetic overflow during implicit conversion of VARCHAR value '1234' to a SMALLDATETIME field .
-Mon Oct 30 12:11:08 1995 #247 1 16 Arithmetic overflow during implicit conversion of VARCHAR value '1234' to a SMALLDATETIME field .
-Mon Oct 30 13:15:21 1995 #247 1 16 Arithmetic overflow during implicit conversion of VARCHAR value '1234' to a SMALLDATETIME field .

@@ -1,7 +1,0 @@
-#!/opt/internet/bin/perl -i bak
-
-while (<>){
-
-s/World Cup \'94 Schedule\<\/a\> \| \<a href\=\/wc94\/images\/elimination.gif\>Path to the World Cup \'94\<\/a\> \| \<a href\=\/wc94\/results\/index.html\#standings\>World Cup \'94 Standings/World Cup Schedule\<\/a\> \| \<a href\=\/wc94\/images\/elimination.gif\>Path to the World Cup\<\/a\> \| \<a href\=\/wc94\/results\/index.html\#standings\>World Cup Standings/g;
-     print;
-}

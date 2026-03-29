@@ -1,6 +1,0 @@
-passwd: a0w0hR6tm13SA
-title: internett sensur passord
-body: har mistet det
-host: mp-217-198-220.daxnet.no/193.217.198.220
-date: 30. april 102 12:46:11
-from: asbj&oslash;rn nilsen (asb.nilsen@c2i.net)

@@ -1,9 +1,0 @@
-AuthUserFile /public/www/OT/httpd_1.1/auth/.htpasswd
-AuthGroupFile /public/www/OT/httpd_1.1/auth/.htgroup
-AuthName Oslonett Aksess
-AuthType Basic
-
-<Limit GET>
-order deny,allow
-allow from .ifi.uio.no
-</Limit>

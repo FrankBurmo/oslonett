@@ -1,8 +1,0 @@
-#!/opt/internet/bin/perl -i bak
- 
-while (<>){
-
-
-s/elimination5.gif/elimination7.gif/;
-     print;
-}

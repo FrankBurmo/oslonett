@@ -1,5 +1,0 @@
-#!/bin/sh
-
-echo "Location: http://www.eunet.no/"
-echo
-

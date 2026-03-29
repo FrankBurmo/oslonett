@@ -1,9 +1,0 @@
-default http://www.nlh.no
-#Matforsk
-circle http://www.nlh.no/Matforsk/homepage.htm 196,170 228,168 
-#Itas
-poly http://www.nlh.no/Itas/html_doc/homepage.html 382,116 417,99 424,111 392,129 
-#Jordforsk
-poly http://www.nlh.no/Jordforsk/html_doc/homepage.html 414,91 430,80 439,89 460,77 471,88 439,121 
-#uio
-circle http://www.uio.no 83,64 117,69 

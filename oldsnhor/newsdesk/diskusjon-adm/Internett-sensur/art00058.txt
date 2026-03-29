@@ -1,7 +1,0 @@
-passwd: nRU05zfdazCXQ
-title: Re: Ikke sensur!
-body: Anders S. Oefsdahl (and_oefs@hig.no) skriver (9. februar 96 14:33:08):<br><br>> Jeg mener at det ikke skal vaere noen form for sensur paa internet. <br>> Har du ikke lyst til aa se paa groteske bilder saa trenger man ikke<br>> trykke paa linken. Det er opp til hver enkelt aa velge selv hva man<br>> vil se paa. Og hvis man er redd for at barnet sitt skal se paa noe <br>> ekkelt kan man heller sitte aa passe paa mens de surfer. Jeg tror <br>> ikke at det blir gjennomfoerbart aa forhindre spredning av porno paa <br>> nettet, de har ikke klart det med pirat programvare saa hvordan skal <br>> dem klare det med porno? <br>>                 <br>
-host: isdn8.oslo.infostream.no/195.225.8.137
-date: 5. november 101 00:41:23
-from: Bare en test (steinar@infostream.no)
-ref: art00009.txt

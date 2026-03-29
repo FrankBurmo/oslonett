@@ -1,6 +1,0 @@
-#define pussy1 rectangle
-rect http://www.oslonett.no/ 15,70 163,456
-#define pussy2 rectangle
-rect http://www.uit.no/ 167,263 302,456
-#define default 
-default http://www.uit.no/cc/

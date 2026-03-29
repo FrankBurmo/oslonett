@@ -1,9 +1,0 @@
-default /schibsted/default.html
-#3. kvartal, norsk
-rect /schibsted/kv3/ 1,301 97,317 
-#3. kvartal, engelsk
-rect /schibsted/kv3/eng/ 2,319 102,334
-#Pressemelding, norsk
-rect /schibsted/press/ 101,301 196,317 
-#Pressemelding, engelsk
-rect /schibsted/press/eng/ 105,318 200,339 

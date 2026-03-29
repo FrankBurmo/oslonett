@@ -1,7 +1,0 @@
-#Dette er en test
-#def oslonett
-rect http://www.oslonett.no/ 44,288,183,195
-#def uit
-rect http://www.uit.no/  116,160,254,66
-#def def
-default http://www.novell.de
