@@ -1,7 +1,0 @@
-title: Hurra for deg!
-passwd: 1NPbG.qTzSS0c
-from: trine, 33 &aring;r i morgen (@pce3.ffi.no)
-host: pce3.ffi.no/193.156.31.62
-date: 22. februar 96 13:55:24
-body: Hei p&aring; deg, Simon!<br><br>Det er godt det finnes mennesker som deg som gir et lys og et h&aring;p<br>i hverdagen for barn og ungdom. Boken din om skilsmisseproblematikken<br>burde v&aelig;re "pensum" n&aring;r man g&aring;r inn i et forhold og f&aring;r barn.<br>Takk igjen, Simon - og st&aring; p&aring;! Samfunnet trenger s&aring;nne som deg.<br><br>Hilsen og klem fra Trine<br><br>Sjefen min hilser ogs&aring;. Han heter Terje.57 &aring;r. Men enn&aring; ikke<br>helt voksen.
-published: yes

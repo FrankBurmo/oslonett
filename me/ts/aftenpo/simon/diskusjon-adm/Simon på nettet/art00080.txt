@@ -1,8 +1,0 @@
-title: Lenger enn 17.00!!!
-passwd: 9JhavaKyLeJuE
-from: Shahin E. (@port-5.ppp.powertech.no)
-ref: art00078.txt
-host: port-5.ppp.powertech.no/194.19.5.5
-date: 22. februar 96 17:55:23
-body: Jeg er enig med det at internettsiden din burde<br>v&aelig;re &aring;pen lenger! Du kunne f&aring;tt deg en sekret&aelig;r <br>som leste opp v&aring;re brev og skrev ned svarene dine til oss.<br>Da ville du ikke blitt sliten!<br><br>3 timer ekstra f.eks.!
-published: yes

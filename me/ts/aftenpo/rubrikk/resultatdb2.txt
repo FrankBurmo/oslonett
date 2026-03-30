@@ -1,4 +1,0 @@
-owner=AFTENPOSTEN<br>
-date=23.11.95
-
-<end_of_file><total_nbr_ads=001912>

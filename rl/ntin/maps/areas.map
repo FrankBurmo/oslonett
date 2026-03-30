@@ -1,9 +1,0 @@
-default http://www.oslonett.no/NTIN/maps/default.html
-rect    http://www.oslonett.no/NTIN/Areas/Svalbard/Svalbard.html 14,11 187,235
-rect    http://www.oslonett.no/NTIN/Areas/North/North.html 370,212 569,252
-rect    http://www.oslonett.no/NTIN/Areas/Mid/Mid.html 370,265 569,306
-rect    http://www.oslonett.no/NTIN/Areas/Troll/Troll.html 370,319 569,359
-rect    http://www.oslonett.no/NTIN/Areas/West/West.html 370,371 569,412
-rect    http://www.oslonett.no/NTIN/Areas/South/South.html 370,426 569,466
-rect    http://www.oslonett.no/NTIN/Towns/Oslo/Oslo.html 370,479 569,518
-

@@ -1,9 +1,0 @@
-overskrift: Oläsliga sidor
-kommentar: Hej! Jag har börjat irritera mig på att många verkar tro att informationen blir bättre om man utnyttjar mest möjligt av grafiska finesser. På era sidor är tex. en stor del av texten oläslig (p.g.a att gul text på vit eller ljus bakgrund inte syns speciellt bra). Visst kan jag se texten om jag tex. går in i preferences och bestämmer färgerna själv men, det ska man inte kräva av "kunden". Första intrycket är ofta att "badet i grafik och finesser" är kult men, jag tror de flesta av oss mycket snart uppskattar mer om informationen presenteras snabbt och tydligt. I övrigt tycker jag ni har gjort ett bra jobb! 
-publiseres: nei
-besvart: ja
-regdato: 20.9.95 10:03:57
-revdato: 1.10.95 15:35:00
-intern: nei
-anonym: ja
-file: /local/www/div/oi/fd95/respons/intern/fd95reg00006.txt

@@ -1,6 +1,0 @@
-default http://www.aftenposten.no/nyaften/index.htm
-rect http://www.aftenposten.no/nyaften/rubrikk/rubr_ho.htm 0,0 61,16
-rect http://www.aftenposten.no/nyaften/abo_serv/abo_ho.htm 62,0 204,16
-rect http://www.aftenposten.no/nyaften/annonser/ano_ho.htm 205,0 300,16
-rect http://www.aftenposten.no/nyaften/atekst/atek_ho.htm 301,0 360,16
-rect http://www.aftenposten.no/nyaften/hjemme/omtjen.htm 361,0 453,16

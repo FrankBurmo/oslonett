@@ -1,5 +1,0 @@
-default		http://www.oslonett.no/on/www/index.html
-circle		http://www.oslonett.no/on/www/info.html 65,68,64,50
-# circle  	http://www.oslonett.no/anim.mpeg 	124,44,124,6
-rect	 	http://www.oslonett.no/on/index.html	162,62,287,74
-

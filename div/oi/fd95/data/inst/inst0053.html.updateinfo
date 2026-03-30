@@ -1,11 +1,0 @@
-<!-- Linjene nedenfor er automatisk generert av /home/frogner/www/forskdag95/adm/reg-inst.cgi og brukes dersom  -->
-<!-- det skal gjøres oppdateringer. LINJENE SKAL IKKE ENDRES MANUELT -->
-
-<!-- replace `(name\s*=\s*"?Nummer"?)` with `` value="53"` -->
-<!-- replace `(name\s*=\s*"?Institusjon"?)` with `` value="VITENSKAPSMUSEET (VM)"` -->
-<!-- replace `(name\s*=\s*"?LogoURL"?)` with `` value=""` -->
-<!-- replace `(name\s*=\s*"?ServerURL"?)` with `` value=""` -->
-<!-- replace `(name\s*=\s*"?Altkategori"?)` with `` value=""` -->
-<!-- replace `(name\s*=\s*"?Beskrivelse"?\s*[^>]*>)` with ``Universitetsmuseene er flaggskipene i norsk museumsvesen. De utgjør den vitenskapelige ryggraden i museumsvesenet. I Norge har vi bare fire slike museer. Vitenskapsmuseet, som er UNITs universitetsmuseum, har som særlig oppgave å bygge opp og drive vitenskapelige samlinger, forskning samt bred formidling av forskningsresultater gjennom utstillinger og på annen måte. Vitenskapsmuseet består av to fakultet, Fakultet for naturhistorie og Fakultet for arkeologi og kulturhistorie, samt en Seksjon for formidling. Museet driver grunnforskning og anvendt forskning innen arkeologi, numismatikk, botanikk, zoologi og marinbiologi. Forskning på miljøendringer har høy prioritet. I de biologiske fag prioriteres forskning knyttet til biodiversitet (biologisk mangfold) og forskning som baserer seg på vitenskapelige samlinger av objekter, miljødata og langtidserier av data. I arkeologi prioriteres forskning med utgangspunkt i museets geografiske arbeidsområde (MidtNorge), teoretisk arkeologi og maritim arkeologi. ` -->
-<!-- replace `(name\s*=\s*"?Deltagelse"?\s*[^>]*>)` with ``VM stiller med egen bod under fellesarrangement på Nordre. Se under arrangement i Trondheim for mer info.` -->
-<!-- replace `<option(.*Museum)` with `<option selected`` -->
