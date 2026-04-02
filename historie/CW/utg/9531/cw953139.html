@@ -16,225 +16,225 @@
 
 <blockquote><h4>
 <hr>
-Ifølge Gartner Group må mer enn 50 prosent av alle C/S-prosjekter
-karakteriseres som mislykkede. Skal IT-industrien kunne gjøre noe med dette
-betinger det en langt større fokusering på hva som er spesielt for utvikling i
-C/S-miljø. Denne artikkelen ser på hvordan C/S-utvikleren kan tilfredsstille
+IfÃ¸lge Gartner Group mÃ¥ mer enn 50 prosent av alle C/S-prosjekter
+karakteriseres som mislykkede. Skal IT-industrien kunne gjÃ¸re noe med dette
+betinger det en langt stÃ¸rre fokusering pÃ¥ hva som er spesielt for utvikling i
+C/S-miljÃ¸. Denne artikkelen ser pÃ¥ hvordan C/S-utvikleren kan tilfredsstille
 ytelses-krav.<hr>
 </h4></blockquote>
-Ytelsesoptimalisering, kalt tuning, er noe man oftest planlegger å gjøre mot
+Ytelsesoptimalisering, kalt tuning, er noe man oftest planlegger Ã¥ gjÃ¸re mot
 slutten i et prosjekt. Men har man ikke tatt hensyn til dette helt fra analyse
-og design-fasen, vil man uungåelig komme ut for store problemer i testfasen.
-Det er relativt vanlig at store deler av en C/S-applikasjon må skrives helt på
+og design-fasen, vil man uungÃ¥elig komme ut for store problemer i testfasen.
+Det er relativt vanlig at store deler av en C/S-applikasjon mÃ¥ skrives helt pÃ¥
 nytt der tuning/ytelse ikke har blitt vektlagt fra starten.<p>
-	Før enhver ny applikasjon bør man sette opp ytelses-krav før man går igang.
-Hvis kravet ikke er opplagt må man analysere behovet nøyere. Et vanlig krav kan
-være : "Ingen transaksjoner skal ta lengre tid enn ett sekund." Før man skriver
-under på dette må man finne ut hvilke konsekvenser dette har. Hva er en
-transaksjon? Spør bruker. Det han vil kalle en transaksjon vil for deg ofte
-være stort antall. <p>
-	I praksis er det ikke mulig å sette opp overordnede ytelses-krav for større
-applikasjoner. Man må binde ytelses-kravene mot delapplikasjoner eller
-enkelt-moduler. Når du tror du har ytelses-kravene klare, sjekk hva de medfører
-også for store datamengder. Summerer tid til on-line, batch-jobber og backup.
-Det er mange store prosjekter som har glemt å ta hensyn til at døgnet bare har
+	FÃ¸r enhver ny applikasjon bÃ¸r man sette opp ytelses-krav fÃ¸r man gÃ¥r igang.
+Hvis kravet ikke er opplagt mÃ¥ man analysere behovet nÃ¸yere. Et vanlig krav kan
+vÃ¦re : "Ingen transaksjoner skal ta lengre tid enn ett sekund." FÃ¸r man skriver
+under pÃ¥ dette mÃ¥ man finne ut hvilke konsekvenser dette har. Hva er en
+transaksjon? SpÃ¸r bruker. Det han vil kalle en transaksjon vil for deg ofte
+vÃ¦re stort antall. <p>
+	I praksis er det ikke mulig Ã¥ sette opp overordnede ytelses-krav for stÃ¸rre
+applikasjoner. Man mÃ¥ binde ytelses-kravene mot delapplikasjoner eller
+enkelt-moduler. NÃ¥r du tror du har ytelses-kravene klare, sjekk hva de medfÃ¸rer
+ogsÃ¥ for store datamengder. Summerer tid til on-line, batch-jobber og backup.
+Det er mange store prosjekter som har glemt Ã¥ ta hensyn til at dÃ¸gnet bare har
 24 timer....<p>
-	Hvordan skal man kunne måle faktisk ytelse?. Egenproduserte testdata har kun
-verdi i små mengder. Snarest mulig må man over på reelle data, for å få
-tilstrekkelig databredde, og i reelle mengder, for å få reell erfaring for
+	Hvordan skal man kunne mÃ¥le faktisk ytelse?. Egenproduserte testdata har kun
+verdi i smÃ¥ mengder. Snarest mulig mÃ¥ man over pÃ¥ reelle data, for Ã¥ fÃ¥
+tilstrekkelig databredde, og i reelle mengder, for Ã¥ fÃ¥ reell erfaring for
 responstider.<p>
-	Ofte har man på forhånd en id&eacute; om hvor de største flaskehalsene vil
+	Ofte har man pÃ¥ forhÃ¥nd en id&eacute; om hvor de stÃ¸rste flaskehalsene vil
 komme, men ved C/S-utvikling vil det dukke opp mange nye, design- og
-verktøyspesifike, som man vil få problemer med å lokalisere nøyaktig. Derfor må
-man fra første dag ha tilgjengelig verktøy for å kunne analysere applikasjonen
-i bruk. Å legge inn "tidsstempler" etter at man har oppdaget en flaskehals er
+verktÃ¸yspesifike, som man vil fÃ¥ problemer med Ã¥ lokalisere nÃ¸yaktig. Derfor mÃ¥
+man fra fÃ¸rste dag ha tilgjengelig verktÃ¸y for Ã¥ kunne analysere applikasjonen
+i bruk. Ã… legge inn "tidsstempler" etter at man har oppdaget en flaskehals er
 en omfattende og tidkrevende operasjon. Legg det derfor inn som standard i alle
 nye moduler. <p>
-	Definisjonen kan variere. La oss definere den som summen av tiden du må vente
-pluss tiden det tar for å eksekvere det du har bedt om. Ofte glemmes
-eksekveringstiden. Den bør optimaliseres slik at andre brukere nettopp får
-kortest mulig ventetid. Lås derfor ikke tabeller i utide og hold deg til
-databaser som tillater radlåsing. Det må ikke være mulig at en enkelt brukers
-spørring skal kunne låse all annen aktivitet for alle andre brukere mot samme
-base. Benytt timeout og maks størrelse på oppslag online.<p>
-	En første betingelse for optimal ytelse er at man forstår hvilken kategori
-applikasjonen man skal lage tilhører. Er det et online transaksjonssystem
-(f.eks. plassreservering for flyseter) - OLTP, et beslutningsstøtte system
-(f.eks. børsdata til en bank) - DSS, tekstbehandling - DTP, etc. ? I tillegg
-kan det være grader av applikasjonskompleksitet, fra enkel logikk til høy
-kompleks logikk. Store C/S-applikasjoner vil nesten aldri tilhøre bare en
-kategori applikasjoner. Det vil være "øyer" av andre kategorier med den følge
-at det vil være ulike verktøy som er best egnet til de ulike deler av
-applikasjonen. Velger man å innskrenke antallet verktøy for applikasjonen
+	Definisjonen kan variere. La oss definere den som summen av tiden du mÃ¥ vente
+pluss tiden det tar for Ã¥ eksekvere det du har bedt om. Ofte glemmes
+eksekveringstiden. Den bÃ¸r optimaliseres slik at andre brukere nettopp fÃ¥r
+kortest mulig ventetid. LÃ¥s derfor ikke tabeller i utide og hold deg til
+databaser som tillater radlÃ¥sing. Det mÃ¥ ikke vÃ¦re mulig at en enkelt brukers
+spÃ¸rring skal kunne lÃ¥se all annen aktivitet for alle andre brukere mot samme
+base. Benytt timeout og maks stÃ¸rrelse pÃ¥ oppslag online.<p>
+	En fÃ¸rste betingelse for optimal ytelse er at man forstÃ¥r hvilken kategori
+applikasjonen man skal lage tilhÃ¸rer. Er det et online transaksjonssystem
+(f.eks. plassreservering for flyseter) - OLTP, et beslutningsstÃ¸tte system
+(f.eks. bÃ¸rsdata til en bank) - DSS, tekstbehandling - DTP, etc. ? I tillegg
+kan det vÃ¦re grader av applikasjonskompleksitet, fra enkel logikk til hÃ¸y
+kompleks logikk. Store C/S-applikasjoner vil nesten aldri tilhÃ¸re bare en
+kategori applikasjoner. Det vil vÃ¦re "Ã¸yer" av andre kategorier med den fÃ¸lge
+at det vil vÃ¦re ulike verktÃ¸y som er best egnet til de ulike deler av
+applikasjonen. Velger man Ã¥ innskrenke antallet verktÃ¸y for applikasjonen
 fratar man seg selv muligheten for optimalisering av ytelse i de ulike delene
 av applikasjonen.<p>
 	Andre betingelse er at man skaffer seg oversikt over hva som er det optimale
-verktøy for de ulike deler av applikasjonen. Det er svært mange C/S-verktøy å
-velge mellom. Altfor ofte "tynes" lette verktøy til tyngre oppgaver en de er
-egnet for, eller man gjør "overkill" med uhensiktmessig tunge/dyre verktøy.
-Ytelsmessig får dette et tvilsomt resultat. <p>
-	Begrens 4GL til online-moduler, 3GL til batch, bruk egne rapportverktøy til
-rapporter, database-3GL til lagrede pakker/prosedyrer, egne load-verktøy til
-innlesning av data fra filer, script til systemprogrammering, DTP-verktøy til
-tekstbehandling etc. Får du behov for moduler av svært generell type, f.eks.
-til mail, kommunikasjon eller GUI, så finnes modulene garantert å få kjøpt som
-ferdige verktøy eller klassebibliotek. Du klarer ikke å programmere "hyllevare"
+verktÃ¸y for de ulike deler av applikasjonen. Det er svÃ¦rt mange C/S-verktÃ¸y Ã¥
+velge mellom. Altfor ofte "tynes" lette verktÃ¸y til tyngre oppgaver en de er
+egnet for, eller man gjÃ¸r "overkill" med uhensiktmessig tunge/dyre verktÃ¸y.
+Ytelsmessig fÃ¥r dette et tvilsomt resultat. <p>
+	Begrens 4GL til online-moduler, 3GL til batch, bruk egne rapportverktÃ¸y til
+rapporter, database-3GL til lagrede pakker/prosedyrer, egne load-verktÃ¸y til
+innlesning av data fra filer, script til systemprogrammering, DTP-verktÃ¸y til
+tekstbehandling etc. FÃ¥r du behov for moduler av svÃ¦rt generell type, f.eks.
+til mail, kommunikasjon eller GUI, sÃ¥ finnes modulene garantert Ã¥ fÃ¥ kjÃ¸pt som
+ferdige verktÃ¸y eller klassebibliotek. Du klarer ikke Ã¥ programmere "hyllevare"
 bedre innenfor ditt budsjett.<p>
-<b><i>	</i></b>Minimalisere prosesserings-last alle steder du kan. Det lønner
-seg ikke bare å se på hva en del-applikasjon skal gjøre, men også på hvorfor,
-når og hvor ofte før man prioriterer optimaliseringen. Det kan lønne seg å
-tenke igjennom om brukeren har en mindre optimal arbeidsgang. Brukerens ønsker
-kan være fiksert på dagens løsning og begrenset av gammel teknologi. Kanskje du
-kan også kan foreslå en forbedring her?<p>
-	Antar vi at alle SQL-kall er riktige/optimale gjenstår det aktiviteter som
+<b><i>	</i></b>Minimalisere prosesserings-last alle steder du kan. Det lÃ¸nner
+seg ikke bare Ã¥ se pÃ¥ hva en del-applikasjon skal gjÃ¸re, men ogsÃ¥ pÃ¥ hvorfor,
+nÃ¥r og hvor ofte fÃ¸r man prioriterer optimaliseringen. Det kan lÃ¸nne seg Ã¥
+tenke igjennom om brukeren har en mindre optimal arbeidsgang. Brukerens Ã¸nsker
+kan vÃ¦re fiksert pÃ¥ dagens lÃ¸sning og begrenset av gammel teknologi. Kanskje du
+kan ogsÃ¥ kan foreslÃ¥ en forbedring her?<p>
+	Antar vi at alle SQL-kall er riktige/optimale gjenstÃ¥r det aktiviteter som
 begrenser kall over nettet. Prosedyrer kan legges i databasen som "lagrede
-prosedyrer" som kun kalles med parametre. Prosedyrene vil da bli prosessert på
+prosedyrer" som kun kalles med parametre. Prosedyrene vil da bli prosessert pÃ¥
 serveren. Sybase og SQLServer kan returnere multiple rader. Oracle7 kan bare
-returnere en rad, men støtter til gjengjeld bruk av cursors. DB2/2 lar deg
+returnere en rad, men stÃ¸tter til gjengjeld bruk av cursors. DB2/2 lar deg
 skrive lagrede prosedyrer i et standard 3GL, mens Oracle7 forutsetter bruk av
 et eget PL/SQL. <p>
-Dessverre er ikke debuggmuligheten gode når størrelsen øker. I tillegg er det
-en tendens at programmereren mister oversikten når lagrede prosedyrer slås
+Dessverre er ikke debuggmuligheten gode nÃ¥r stÃ¸rrelsen Ã¸ker. I tillegg er det
+en tendens at programmereren mister oversikten nÃ¥r lagrede prosedyrer slÃ¥s
 sammen.<p>
 <b><i>	</i></b>Egne TP-monitorer for administrasjon av lagrede prosedyrer og
-forvaltning av gjennbrukbare prosesser er velkjent i stormaskinmiljø, men lite
-brukt i C/S-miljø. Med store databaser vil bruk ev egne TP-monitorer gi
+forvaltning av gjennbrukbare prosesser er velkjent i stormaskinmiljÃ¸, men lite
+brukt i C/S-miljÃ¸. Med store databaser vil bruk ev egne TP-monitorer gi
 betydelige ytelsesforbedringer. <p>
-	På Unix finnes allerede Tuxedo, Encina og CICS/6000. På <a href="http://www.cs.uit.no/OS2/">OS&#47;2</a> finnes CICS og
-Encina. C/S-verktøyet Bachman/Ellipse har allerede en embedded TP-Monitor. Det
-er ikke mulig å lage forretningskritiske C/S-applikasjoner uten å benytte en
-TP-monitor. Ingen av de store databaseleverandørene har som mål å lage egne
-TP-monitorer og det er derfor ikke noe å håpe på i neste versjon av
-databaseverktøyet. <p>
-	I et C/S-miljø vil det alltid være store forskjeller mellom
-prosesserings-kraften til klientene. Det er ikke alle verktøy som utnytter
-dette og det er mang en Pentium som går for "kvart maskin". Eksempelvis kan
+	PÃ¥ Unix finnes allerede Tuxedo, Encina og CICS/6000. PÃ¥ <a href="http://www.cs.uit.no/OS2/">OS&#47;2</a> finnes CICS og
+Encina. C/S-verktÃ¸yet Bachman/Ellipse har allerede en embedded TP-Monitor. Det
+er ikke mulig Ã¥ lage forretningskritiske C/S-applikasjoner uten Ã¥ benytte en
+TP-monitor. Ingen av de store databaseleverandÃ¸rene har som mÃ¥l Ã¥ lage egne
+TP-monitorer og det er derfor ikke noe Ã¥ hÃ¥pe pÃ¥ i neste versjon av
+databaseverktÃ¸yet. <p>
+	I et C/S-miljÃ¸ vil det alltid vÃ¦re store forskjeller mellom
+prosesserings-kraften til klientene. Det er ikke alle verktÃ¸y som utnytter
+dette og det er mang en Pentium som gÃ¥r for "kvart maskin". Eksempelvis kan
 Delphi 1.0, Forte og Oracle*Forms 4.5 kompilere spesielt tilpasset klientenes
 prosesseringskraft. Dvs. de kraftigste klientene foretar mer prosessering selv,
-mens de minste overlater mer til serveren. I et lite C/S-miljø er denne
-muligheten velkommen, mens den i et stort miljø kan skape astronomiske
+mens de minste overlater mer til serveren. I et lite C/S-miljÃ¸ er denne
+muligheten velkommen, mens den i et stort miljÃ¸ kan skape astronomiske
 utfordringer for ansvarlig for konfigurasjonsstyringen.<p>
-<b><i>	</i></b>Toleransen for god og dårlig ytelse varierer avhengig av hvor
-brukeren er i sin arbeidsgang. Ved oppstart av en del-applikasjon vil det være
-akseptabelt med lengre responstid. Det er da ideelt å planlegge
+<b><i>	</i></b>Toleransen for god og dÃ¥rlig ytelse varierer avhengig av hvor
+brukeren er i sin arbeidsgang. Ved oppstart av en del-applikasjon vil det vÃ¦re
+akseptabelt med lengre responstid. Det er da ideelt Ã¥ planlegge
 del-applikasjonen slik at den henter inn alle data som vil ligge relativt
-faste. Eksekveringstidspunket for en spørring eller lagring er et særdeles
-kritisk tidspunkt for å hente inn store mengder kontrolldata.<p>
+faste. Eksekveringstidspunket for en spÃ¸rring eller lagring er et sÃ¦rdeles
+kritisk tidspunkt for Ã¥ hente inn store mengder kontrolldata.<p>
 	Distribuering av data skaper store administrasjons-problemer for
 databaseansvarlig. Men det kan gi stor ytelsesforbedring. Data kan hentes
-regelmessig til en klient-database, eller data kan legges på ulike servere
-avhengig av hvor de "geografisk" hører hjemme.. Etter en tids kjøring/testing
+regelmessig til en klient-database, eller data kan legges pÃ¥ ulike servere
+avhengig av hvor de "geografisk" hÃ¸rer hjemme.. Etter en tids kjÃ¸ring/testing
 vil en analyse av oppslag mellom baser (affinitetsanalyse) avdekke om
 distribueringen er optimal. <p>
 	Avhengig av applikasjonskategori vil klient-delen av applikasjonen kunne ha
-nytte av reorganiserte data eller prekompilerte datautsnitt for å begrense
+nytte av reorganiserte data eller prekompilerte datautsnitt for Ã¥ begrense
 antallet sql-kall over nettet. Typisk er et skjermbilde hvor hver post som
-hentes inn starter en tilhørende "look-up". Reduksjonen i antall SQL-kall over
-nettet kan være så god som 10 til 1.<p>
-	I miljøer med svært store databaser er datareplikering velkjent. I C/S-miljøer
-er replikering mindre brukt. Her er det ytelsesforbedringer å hente. Data som
+hentes inn starter en tilhÃ¸rende "look-up". Reduksjonen i antall SQL-kall over
+nettet kan vÃ¦re sÃ¥ god som 10 til 1.<p>
+	I miljÃ¸er med svÃ¦rt store databaser er datareplikering velkjent. I C/S-miljÃ¸er
+er replikering mindre brukt. Her er det ytelsesforbedringer Ã¥ hente. Data som
 er lite utsatt for endringer kan kopieres ut til alle interesserte servere i
 nettet. Dette begrenser antallet oppslag mot server som har ansvaret for
-orginal-data. En evt. oppdatering kjøres rutinemessig når belastningen er
-liten. Hva som kan være kandidater for replikering kan ofte være uklart i
+orginal-data. En evt. oppdatering kjÃ¸res rutinemessig nÃ¥r belastningen er
+liten. Hva som kan vÃ¦re kandidater for replikering kan ofte vÃ¦re uklart i
 starten -- her er databaseansvarlig avhengig av innspill fra utviklerne.<p>
-	Mange problemer med C/S-applikasjoner tilskrives utviklingsverktøyenes
+	Mange problemer med C/S-applikasjoner tilskrives utviklingsverktÃ¸yenes
 manglende egnethet for skalering av applikasjonen. Men hva er skalering?
-Horisontal skalering kaller vi det når flere servere henges på nettet vårt,
-vertikal skalering når en server får mer prosesseringskraft. Lite fokusert av
-verktøyleverandører, men erfaringsmessig langt viktigere er skalering på
-antallet brukere. Økning i antallet brukere betyr uunngåelig en mer kompleks
-applikasjon og en høyere feilrate fordi bruken blir hyppigere og mer variert.<p>
-	De fleste C/S-verktøyene kommer fra PC-miljø og har lyktes der. C/S-verktøyene
-har langt på vei lyktes i lokale nettverk med lavkomplekse applikasjoner. Når
-C/S-applikasjoner så ofte får problemer ved skalering på brukere skyldes det at
+Horisontal skalering kaller vi det nÃ¥r flere servere henges pÃ¥ nettet vÃ¥rt,
+vertikal skalering nÃ¥r en server fÃ¥r mer prosesseringskraft. Lite fokusert av
+verktÃ¸yleverandÃ¸rer, men erfaringsmessig langt viktigere er skalering pÃ¥
+antallet brukere. Ã˜kning i antallet brukere betyr uunngÃ¥elig en mer kompleks
+applikasjon og en hÃ¸yere feilrate fordi bruken blir hyppigere og mer variert.<p>
+	De fleste C/S-verktÃ¸yene kommer fra PC-miljÃ¸ og har lyktes der. C/S-verktÃ¸yene
+har langt pÃ¥ vei lyktes i lokale nettverk med lavkomplekse applikasjoner. NÃ¥r
+C/S-applikasjoner sÃ¥ ofte fÃ¥r problemer ved skalering pÃ¥ brukere skyldes det at
 teknologien for administrasjon (management) er utilstrekkelig. Jo flere
 elementer, delapplikasjoner, brukere, databaser, servere etc. som knyttes
-sammen jo flere interne grensesnitt får vi. Antar vi at hvert element har sin
-lokale lave feilrate, vil den totalte feilraten statistisk bli høyere jo flere
-ulike elementer vi knytter sammen og gjør avhengige av hverandre.
-Utilstrekkelig managment-verktøy kan få store negative konsekvenser for
+sammen jo flere interne grensesnitt fÃ¥r vi. Antar vi at hvert element har sin
+lokale lave feilrate, vil den totalte feilraten statistisk bli hÃ¸yere jo flere
+ulike elementer vi knytter sammen og gjÃ¸r avhengige av hverandre.
+Utilstrekkelig managment-verktÃ¸y kan fÃ¥ store negative konsekvenser for
 ytelsen. C/S-programmererens beslutninger om modularisering, valg av ulike
-verktøy etc. medfører derfor ansvar for å vurdere/foreslå management-strategi
+verktÃ¸y etc. medfÃ¸rer derfor ansvar for Ã¥ vurdere/foreslÃ¥ management-strategi
 for "sin" del av applikasjonen. <p>
 	I et lokalt nettverk er en vanlig responstid mellom 0,2 til 0,8 sekunder for
-en spørring. Hvis C/S-applikasjonen skal ut på et WAN blir dette fort 10 til
-100 ganger mer. Det blir et kostnadsspørsmål hvilken kvalitet på forbindelsen
+en spÃ¸rring. Hvis C/S-applikasjonen skal ut pÃ¥ et WAN blir dette fort 10 til
+100 ganger mer. Det blir et kostnadsspÃ¸rsmÃ¥l hvilken kvalitet pÃ¥ forbindelsen
 man skal ha, oppringt eller faste linjer. Uansett kan ikke en C/S-applikasjon
-beregnet for et LAN benyttes uten å bygge om bruken av venting på svar før
-brukeren kan gå videre i applikasjonen, til mer batch-rettede oppgaver med
-bestillinger og senere sjekk av status. Dette kan medføre en betydelig
+beregnet for et LAN benyttes uten Ã¥ bygge om bruken av venting pÃ¥ svar fÃ¸r
+brukeren kan gÃ¥ videre i applikasjonen, til mer batch-rettede oppgaver med
+bestillinger og senere sjekk av status. Dette kan medfÃ¸re en betydelig
 omskrivning av applikasjonen. <p>
-	Rett nok har endel verktøy mulighet for prioritering av oppgaver. Det skilles
-mellom det som må skje akkurat nå og det som skal skje senere. Men sender man
-et SQL-kall over nettet går det like raskt som alle andre meldinger og man har
-ikke en god måte til å skille mellom ulike prioriteter. Først når man tar i
+	Rett nok har endel verktÃ¸y mulighet for prioritering av oppgaver. Det skilles
+mellom det som mÃ¥ skje akkurat nÃ¥ og det som skal skje senere. Men sender man
+et SQL-kall over nettet gÃ¥r det like raskt som alle andre meldinger og man har
+ikke en god mÃ¥te til Ã¥ skille mellom ulike prioriteter. FÃ¸rst nÃ¥r man tar i
 bruk <a href=http://www.atmforum.com/>ATM</a> vil skille mellom LAN og WAN kunne viskes ut. ATMs
-høyhastighetsprotokoller tillater blanding av ulik trafikk som data, lyd og
-video. Båndbredden er skalerbar, dvs. at hver node kan aksessere data med en
+hÃ¸yhastighetsprotokoller tillater blanding av ulik trafikk som data, lyd og
+video. BÃ¥ndbredden er skalerbar, dvs. at hver node kan aksessere data med en
 hastighet bestemt av applikasjonen selv. <p>
-	Beveger du deg ut i et WAN med applikasjonen øker sannsynligheten for at du
-trenger å lage prosesser på server. Mens client-delen er laget i 4GL, må
-tilleggsprosessene på server oftest benytte 3GL. På Unix og OS/2 er dette
-greit, men har du satset på NovelNetware, BanyanVINES eller NTServer er det
-enten umulig eller svært plundrete. Skulle du hatt prosesser på server, men
-ikke får mulighet til det og må flytte prosesseringen over på klienten, kan det
+	Beveger du deg ut i et WAN med applikasjonen Ã¸ker sannsynligheten for at du
+trenger Ã¥ lage prosesser pÃ¥ server. Mens client-delen er laget i 4GL, mÃ¥
+tilleggsprosessene pÃ¥ server oftest benytte 3GL. PÃ¥ Unix og OS/2 er dette
+greit, men har du satset pÃ¥ NovelNetware, BanyanVINES eller NTServer er det
+enten umulig eller svÃ¦rt plundrete. Skulle du hatt prosesser pÃ¥ server, men
+ikke fÃ¥r mulighet til det og mÃ¥ flytte prosesseringen over pÃ¥ klienten, kan det
 gi store ytelsesproblemer. <p>
-	Både Oracle7, Sybase , SQLServer, Ingres og Informix har nå mulighet til å
-legge inn kode som utføres (databasetriggere) i bestemte situasjoner. F.eks.
-kan oppdateringer av et bestemt felt medføre at andre felter får endret sin
+	BÃ¥de Oracle7, Sybase , SQLServer, Ingres og Informix har nÃ¥ mulighet til Ã¥
+legge inn kode som utfÃ¸res (databasetriggere) i bestemte situasjoner. F.eks.
+kan oppdateringer av et bestemt felt medfÃ¸re at andre felter fÃ¥r endret sin
 verdi. Dette er interessant for programmering av online-delen. Det som er en
 forenkling for online ved behandling av en og en rekord, kan gi betydelig
 ytelsesforverring i batch ved behandling av store antall rekorder samtidig. <p>
-	Årsaken er at triggere som avfyres automatisk forhindrer automatisk
+	Ã…rsaken er at triggere som avfyres automatisk forhindrer automatisk
 optimalisering . <p>
-	Ved bruk av databasetriggere må det foretaes en avveining mellom fordeler for
+	Ved bruk av databasetriggere mÃ¥ det foretaes en avveining mellom fordeler for
 online og ulemper for batch. <b></b><p>
 <b></b>	Det er fint om man kan bruke samme modul flere steder i en applikasjon.
-Faren ved gjenbruk er at kopleksitetsgraden på modulen kan øke. Etter en tid
+Faren ved gjenbruk er at kopleksitetsgraden pÃ¥ modulen kan Ã¸ke. Etter en tid
 vil man miste oversikten over hvor man trengte ulike deler i modulen og
-fellesmodulen begynner å "leve sitt eget liv". Mer kode medfører mer feil og
-dårligere ytelse. Identifiser heller brukergrupper med ulike bruksmønstre og gi
-dem egne moduler. Øk heller antallet moduler enn kompleksiteten.<p>
-	Mange verktøy introduserer kompliserende elementer som minsker programmererens
-oversikt/kontroll. Spesielt gjelder dette dersom man er nødt til å benytte et
-verktøy som ikke er ideelt for en spesiell type oppgave.<p>
+fellesmodulen begynner Ã¥ "leve sitt eget liv". Mer kode medfÃ¸rer mer feil og
+dÃ¥rligere ytelse. Identifiser heller brukergrupper med ulike bruksmÃ¸nstre og gi
+dem egne moduler. Ã˜k heller antallet moduler enn kompleksiteten.<p>
+	Mange verktÃ¸y introduserer kompliserende elementer som minsker programmererens
+oversikt/kontroll. Spesielt gjelder dette dersom man er nÃ¸dt til Ã¥ benytte et
+verktÃ¸y som ikke er ideelt for en spesiell type oppgave.<p>
 	Mye tid kan spares ved bruk av kodegeneratorer til lavkomplekse applikasjoner.
-Ved mer komplekse applikasjoner er det forbundet med risiko å satse på
-generatorer. Velger du å benytte generatorer så sjekk alltid at du forstår hva
+Ved mer komplekse applikasjoner er det forbundet med risiko Ã¥ satse pÃ¥
+generatorer. Velger du Ã¥ benytte generatorer sÃ¥ sjekk alltid at du forstÃ¥r hva
 som blir generert av kode. <p>
-	Det er vanlig at det produseres svære mengder kode som er redundant eller som
-også ligger i database-triggere. I et C/S-miljø kan dette avgjøre om en
+	Det er vanlig at det produseres svÃ¦re mengder kode som er redundant eller som
+ogsÃ¥ ligger i database-triggere. I et C/S-miljÃ¸ kan dette avgjÃ¸re om en
 delapplikasjon tilfredstiller ytelseskravene. Bruk analysator og sjekk at kode
-som ikke trenger å bli utført heller ikke blir det. En slik analyse må utføres
-fortløpende, gjøres det i ettertid vil det bli en omfattende jobb. <p>
+som ikke trenger Ã¥ bli utfÃ¸rt heller ikke blir det. En slik analyse mÃ¥ utfÃ¸res
+fortlÃ¸pende, gjÃ¸res det i ettertid vil det bli en omfattende jobb. <p>
 	Databaser som tillater parallell prosessering av SQL-setninger er allerede
-her. Dvs. at enkelt-spørringer kan brytes opp og at hver del behandles
+her. Dvs. at enkelt-spÃ¸rringer kan brytes opp og at hver del behandles
 samtidig, hver for seg av separate prosesser. Dette kan gi en verdifull
-ytelsesforbedring for tunge spørringer. De bør derfor identifiseres og
-tilpasses parallell prosessering, men i tillegg må man verifisere med
-analyseverktøy at spørringene virkelig blir parallellprosessert. <p>
+ytelsesforbedring for tunge spÃ¸rringer. De bÃ¸r derfor identifiseres og
+tilpasses parallell prosessering, men i tillegg mÃ¥ man verifisere med
+analyseverktÃ¸y at spÃ¸rringene virkelig blir parallellprosessert. <p>
 	Etter hvert som C/S-applikasjoner skaleres opp vil flere deler av
-applikasjonen gå på servere plassert geografisk opptil flere hundre kilometer
-unna. Den tradisjonelle "log"-filen vil ikke være tilstrekkelig her.
-Managment-verktøy som HPOpenView, SunNet Manager, Tivoli og NetView/600 har
-standardisert lesning av SNMP-meldinger. 	Opprinnelig ble verktøyene benyttet
-for å overvåke nettverkene og alle tilhørende HW-komponenter. Det er imidlertid
-ingenting i veien for at applikasjoner og overktøy kan sende ut egne
+applikasjonen gÃ¥ pÃ¥ servere plassert geografisk opptil flere hundre kilometer
+unna. Den tradisjonelle "log"-filen vil ikke vÃ¦re tilstrekkelig her.
+Managment-verktÃ¸y som HPOpenView, SunNet Manager, Tivoli og NetView/600 har
+standardisert lesning av SNMP-meldinger. 	Opprinnelig ble verktÃ¸yene benyttet
+for Ã¥ overvÃ¥ke nettverkene og alle tilhÃ¸rende HW-komponenter. Det er imidlertid
+ingenting i veien for at applikasjoner og overktÃ¸y kan sende ut egne
 SNMP-meldinger. Oracle7 er allerede tilpasset bruk av SNMP. Skal
-administrasjonen av selve applikasjonen bli tilfredstillende bør C/S-utvikleren
-legge inn sending av statusmeldinger til et management-vektøy. Det er da
+administrasjonen av selve applikasjonen bli tilfredstillende bÃ¸r C/S-utvikleren
+legge inn sending av statusmeldinger til et management-vektÃ¸y. Det er da
 essensielt at meldingene gir informasjon som har nytteverdi for
-ytelsesforbedringer. Sending av slike meldinger må planlegges allerede under
+ytelsesforbedringer. Sending av slike meldinger mÃ¥ planlegges allerede under
 design.<p>
-	Betydningen av å ha på plass tidlig i prosjektet en prototype av
-applikasjonen, med alle relevante sluttbruker-verktøy, reelle datamengder i
-basen, overvåknings-verktøy og mål-HW kan ikke overdrives. <p>
-	All moderne risiko-analyse tilsier at man må skaffe seg oversikt tidligst
+	Betydningen av Ã¥ ha pÃ¥ plass tidlig i prosjektet en prototype av
+applikasjonen, med alle relevante sluttbruker-verktÃ¸y, reelle datamengder i
+basen, overvÃ¥knings-verktÃ¸y og mÃ¥l-HW kan ikke overdrives. <p>
+	All moderne risiko-analyse tilsier at man mÃ¥ skaffe seg oversikt tidligst
 mulig over de elementer som man vet minst om. Alle C/S-prosjekter har elementer
-av ny og uprøvd teknologi. Fordi utviklingen i de fleste IT-prosjekter fortsatt
+av ny og uprÃ¸vd teknologi. Fordi utviklingen i de fleste IT-prosjekter fortsatt
 skjer etter fossefall-prinsippet utsetter man dessverre integrasjon og tuning
-til det mest kritiske tidspunktet for applikasjonen -- like før levering. <p>
+til det mest kritiske tidspunktet for applikasjonen -- like fÃ¸r levering. <p>
 
 Per-Helge Aurdal <p>
 IDC Integrert Data Consult

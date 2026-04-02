@@ -15,13 +15,13 @@
 <h1>Er alt klient/tjener-arkitektur?</h1>
 <blockquote><h4>
 <hr>
-Det nye moteordet er klient/tjener-arkitektur. I både presse og seminarer blir
-hodene våre proppet fullt med at man må gå over til klient/tjener-arkitektur.
+Det nye moteordet er klient/tjener-arkitektur. I bÃ¥de presse og seminarer blir
+hodene vÃ¥re proppet fullt med at man mÃ¥ gÃ¥ over til klient/tjener-arkitektur.
 Det rare er imidlertid at de fleste norske bedrifter allerede bruker en eller
 flere av Gartner Group sine klient/tjener-modeller. <hr>
 </h4></blockquote>
 DAVID ELBOTH<p>
-Tidligere  tradisjonelle løsninger bestod av en sentral vertsmaskin og
+Tidligere  tradisjonelle lÃ¸sninger bestod av en sentral vertsmaskin og
 tilknyttede terminaler og skrivere. All prosessering forgikk i vertsmaskinen og
 de tradisjonelle terminalene hadde ikke muligheten til lokal lagring. I dag
 finner vi mange steder at terminalene er erstattet med PC'er. Hvordan vi
@@ -30,61 +30,61 @@ klient/tjener-modell vi bruker. Fra Gartner Group finner vi 5 forskjellige
 klient/tjener-modeller: distribuert presentasjon, remote presentasjon,
 distribuert funksjon, remote data og distribuert data. <p>
 	Felles for alle klient/tjener-modellene er at de har tjenermaskiner med
-tilhørende operativsystem og tjenermodul, klientmaskiner med tilhørende
-operativsystem og klientmodul og nettverksoperativsystem med tilhørende
+tilhÃ¸rende operativsystem og tjenermodul, klientmaskiner med tilhÃ¸rende
+operativsystem og klientmodul og nettverksoperativsystem med tilhÃ¸rende
 nettverksprotokoller.
 <h1>
 Terminalemulator</h1>
-<i>Distribuert presentasjon</i> er den enkleste løsningen. På klienten vår (som
-regel en PC) kjører vi som oftest en terminalemulator. Terminalsesjonen kan gå
-over nettet eller over en asynkron utgang på klienten f.eks. via serieportene.
+<i>Distribuert presentasjon</i> er den enkleste lÃ¸sningen. PÃ¥ klienten vÃ¥r (som
+regel en PC) kjÃ¸rer vi som oftest en terminalemulator. Terminalsesjonen kan gÃ¥
+over nettet eller over en asynkron utgang pÃ¥ klienten f.eks. via serieportene.
 <p>
-	Det opprinnelige tegn-baserte brukergrensesnittet kan også byttes til et
-grafisk f.eks Microsoft Windows 3.1. Klienten trenger ikke nødvendigvis være en
-DOS/Windows-klient men kan f.eks være en Unix-, Mac- eller
+	Det opprinnelige tegn-baserte brukergrensesnittet kan ogsÃ¥ byttes til et
+grafisk f.eks Microsoft Windows 3.1. Klienten trenger ikke nÃ¸dvendigvis vÃ¦re en
+DOS/Windows-klient men kan f.eks vÃ¦re en Unix-, Mac- eller
 OS/2-arbeidsstasjon.<b><i><p>
 X-terminaler</i></b><p>
 Har vi <i>remote presentasjon</i> genereres all presentasjon lokalt men all
-annen prosessering utenom brukergrensesnittet foregår sentralt. Her har vi
-større muligheter til å integrere alt i et felles brukergrensesnitt. <p>
-	Eksempler på løsninger med remote presentasjon er X Windows (X11R6) som brukes
-i Unix-verden. PC'er eller X-terminaler som går som X-servere (i X-verden
+annen prosessering utenom brukergrensesnittet foregÃ¥r sentralt. Her har vi
+stÃ¸rre muligheter til Ã¥ integrere alt i et felles brukergrensesnitt. <p>
+	Eksempler pÃ¥ lÃ¸sninger med remote presentasjon er X Windows (X11R6) som brukes
+i Unix-verden. PC'er eller X-terminaler som gÃ¥r som X-servere (i X-verden
 kalles de servere) mottar XLIB-pakker fra tjener. Disse XLIB-pakkene pakkes ut
 og skjermbildet generes lokalt.<b><i><p>
 Funksjoner</i></b><p>
-Ved <i>distribuert funksjon</i> har både klient og tjener muligheten til å
+Ved <i>distribuert funksjon</i> har bÃ¥de klient og tjener muligheten til Ã¥
 fordele funksjoner. Mellom klient og tjener brukes et felles meldningsformat.
-Dette meldningsformatet gjør at vi slipper med å sende SQL-kommandoer over
-nettet. Vi får en løsere kobling mellom klient og tjener. <p>
-	Meldinger som sendes fra klient til tjener kan også sendes videre mot andre
-databaser (DBMS=DataBase Management System). Eksempel på programvareprodukter
-som bruker denne teknologien er Andersens programvareløsning "Foundation For
-Cooperative Processing" og Uniface Corporation sin løsning Uniface. En av de
-største kundene i Norge på Andersens programvareløsning er Posten. Kværner er
-en av de største kundene på Uniface.  Politiets operative systemløsning er bygd
-på distribuerte funksjoner selv med databasemotoren Ingres.<b><i><p>
+Dette meldningsformatet gjÃ¸r at vi slipper med Ã¥ sende SQL-kommandoer over
+nettet. Vi fÃ¥r en lÃ¸sere kobling mellom klient og tjener. <p>
+	Meldinger som sendes fra klient til tjener kan ogsÃ¥ sendes videre mot andre
+databaser (DBMS=DataBase Management System). Eksempel pÃ¥ programvareprodukter
+som bruker denne teknologien er Andersens programvarelÃ¸sning "Foundation For
+Cooperative Processing" og Uniface Corporation sin lÃ¸sning Uniface. En av de
+stÃ¸rste kundene i Norge pÃ¥ Andersens programvarelÃ¸sning er Posten. KvÃ¦rner er
+en av de stÃ¸rste kundene pÃ¥ Uniface.  Politiets operative systemlÃ¸sning er bygd
+pÃ¥ distribuerte funksjoner selv med databasemotoren Ingres.<b><i><p>
 Databasetjenere</i></b><p>
-Med <i>remote data</i> ligger hele applikasjonen på klientmaskinen og dataene
-kan være spredt på forskjellige databasetjenere. <p>
-	Dette kan være en høyeffektive løsning hvis kommunikasjonen (båndbredden)
-mellom klienter og tjenere er høy. Vi kan under slike løsninger risikere mange
+Med <i>remote data</i> ligger hele applikasjonen pÃ¥ klientmaskinen og dataene
+kan vÃ¦re spredt pÃ¥ forskjellige databasetjenere. <p>
+	Dette kan vÃ¦re en hÃ¸yeffektive lÃ¸sning hvis kommunikasjonen (bÃ¥ndbredden)
+mellom klienter og tjenere er hÃ¸y. Vi kan under slike lÃ¸sninger risikere mange
 databasekall over nettet. Vi finner idag mange norske selskaper som bruker
-denne teknologien. Vi kan blant annet nevne Saga, Norsk Hydro, Bærum Kommune
-etc. De fleste databaseløsningene kan i dag bruke denne teknologien (remote
+denne teknologien. Vi kan blant annet nevne Saga, Norsk Hydro, BÃ¦rum Kommune
+etc. De fleste databaselÃ¸sningene kan i dag bruke denne teknologien (remote
 data).<b><i><p>
 Fremtiden </i></b><p>
-Siste nivå er <i>distribuerte data</i> og her bruker vi distribuerte databaser.
+Siste nivÃ¥ er <i>distribuerte data</i> og her bruker vi distribuerte databaser.
 Databasesystemet er delt mellom en lokal og sentral  del. Applikasjonen trenger
 ikke forholde seg til hvor dataene ligger. I denne siste modellen kan
-synkronisering av databaseoppdateringer være et problem. Distribuert data har
-sammen ulempen  som remote data med at det kreves en stor båndbredde på nettet.
+synkronisering av databaseoppdateringer vÃ¦re et problem. Distribuert data har
+sammen ulempen  som remote data med at det kreves en stor bÃ¥ndbredde pÃ¥ nettet.
 <p>
 		Fra de forskjellige klient/tjener-modellene ser vi  at de fleste
-dataløsningene vil kunne gå under en av de ovenfor nevnte modellene.  De fleste
-har idag byttet ut sine terminaler  med  PC'er. Det er derfor ikke vanskelig å
-se at de fleste kjører minimum distribuert presentasjon. Dette er også lettest
-å implementere, men vi finner idag stadig flere og flere som kjører remote
-data. Distribuert database er fortsatt en teknologi som må modnes. <p>
+datalÃ¸sningene vil kunne gÃ¥ under en av de ovenfor nevnte modellene.  De fleste
+har idag byttet ut sine terminaler  med  PC'er. Det er derfor ikke vanskelig Ã¥
+se at de fleste kjÃ¸rer minimum distribuert presentasjon. Dette er ogsÃ¥ lettest
+Ã¥ implementere, men vi finner idag stadig flere og flere som kjÃ¸rer remote
+data. Distribuert database er fortsatt en teknologi som mÃ¥ modnes. <p>
 <A href="cw9430191.gif">Click here for Picture </A><p>
 <p>
 Figur 1: Gartner Group har 5 forskjellige klient/tjener-arkitekturer.<p>

@@ -18,85 +18,85 @@
 
 <blockquote><h4>
 <hr>
-Alle som har forsøkt å ringe opp en annen maskin gjennom et modem vet at det
-ofte er ensbetydende med trøbbel. Gjennom TAPI, som følger med Windows 95, har
-<a href=http://www.microsoft.com>Microsoft</a> forsøkt å gjøre noe med det.<hr>
+Alle som har forsÃ¸kt Ã¥ ringe opp en annen maskin gjennom et modem vet at det
+ofte er ensbetydende med trÃ¸bbel. Gjennom TAPI, som fÃ¸lger med Windows 95, har
+<a href=http://www.microsoft.com>Microsoft</a> forsÃ¸kt Ã¥ gjÃ¸re noe med det.<hr>
 </h4></blockquote>
-<i>Anders Løvøy</i><p>Modem-kommunikasjon er sterkt forbundet med Murphys lov.
-Kjøper du et faks-program kan du være sikker på at ditt modem ikke er på listen
-over støttede modem. Og prøver du å ringe leverandøren av modemet, får du
-ganske sikkert beskjed om at ditt kommunikasjonsprogram ikke støttes.<p>
-	Hvis du mot formodning skulle få opp faks-programmet kan du være sikker på at
-maskinen kræsjer senere, fordi et annet program gjør noe mot den samme
-kommunikasjonsporten. Det føles som om problemene står i kø, og det er en grunn
+<i>Anders LÃ¸vÃ¸y</i><p>Modem-kommunikasjon er sterkt forbundet med Murphys lov.
+KjÃ¸per du et faks-program kan du vÃ¦re sikker pÃ¥ at ditt modem ikke er pÃ¥ listen
+over stÃ¸ttede modem. Og prÃ¸ver du Ã¥ ringe leverandÃ¸ren av modemet, fÃ¥r du
+ganske sikkert beskjed om at ditt kommunikasjonsprogram ikke stÃ¸ttes.<p>
+	Hvis du mot formodning skulle fÃ¥ opp faks-programmet kan du vÃ¦re sikker pÃ¥ at
+maskinen krÃ¦sjer senere, fordi et annet program gjÃ¸r noe mot den samme
+kommunikasjonsporten. Det fÃ¸les som om problemene stÃ¥r i kÃ¸, og det er en grunn
 til elendigheten.
 <h3>
 Anarki</h3>
-Det er lite programmerere kan gjøre med slike problemer under DOS /Windows 3.x.
-Alle programmene må aksessere kommunikasjonsporten på egen hånd, og det finnes
-ingen standard for å se at en annen programvare kjører. <p>
-	Det betyr også at alle kommunikasjonsprogrammene har egne måter å ringe på, de
-har egen konfigurasjon og de har egne oppsettsfiler. I et slikt anarki må hver
-produsent av et kommunikasjonsprogram selv sørge for å få laget oppsett for
+Det er lite programmerere kan gjÃ¸re med slike problemer under DOS /Windows 3.x.
+Alle programmene mÃ¥ aksessere kommunikasjonsporten pÃ¥ egen hÃ¥nd, og det finnes
+ingen standard for Ã¥ se at en annen programvare kjÃ¸rer. <p>
+	Det betyr ogsÃ¥ at alle kommunikasjonsprogrammene har egne mÃ¥ter Ã¥ ringe pÃ¥, de
+har egen konfigurasjon og de har egne oppsettsfiler. I et slikt anarki mÃ¥ hver
+produsent av et kommunikasjonsprogram selv sÃ¸rge for Ã¥ fÃ¥ laget oppsett for
 modemene. <p>
-<b>	I praksis betyr det at hvis du kjøper siste skrik i modem, kan du være
-temmelig sikker på at det ikke støttes direkte i ditt
+<b>	I praksis betyr det at hvis du kjÃ¸per siste skrik i modem, kan du vÃ¦re
+temmelig sikker pÃ¥ at det ikke stÃ¸ttes direkte i ditt
 kommunikasjonsprogram.</b><p>
-<b></b>	Problemene har vært kjent lenge, men det er først med Windows 95 en
-skikkelig løsning på problemet kommer. I Windows 95 (og Windows NT) leveres
+<b></b>	Problemene har vÃ¦rt kjent lenge, men det er fÃ¸rst med Windows 95 en
+skikkelig lÃ¸sning pÃ¥ problemet kommer. I Windows 95 (og Windows NT) leveres
 TAPI med gratis.
 <h3>
 TAPI</h3>
 Telephony Apllication Programming Interface (TAPI) er et grensesnitt som lager
-system i kaoset. TAPI vil selv holde orden på oppsett og bruk av
+system i kaoset. TAPI vil selv holde orden pÃ¥ oppsett og bruk av
 kommunikasjonsporten.<p>
-	Dersom to programmer prøver å aksessere samme kommunikasjonsport gjennom TAPI,
-vil derfor bare det første slippe fram. Det andre programmet vil få en beskjed
+	Dersom to programmer prÃ¸ver Ã¥ aksessere samme kommunikasjonsport gjennom TAPI,
+vil derfor bare det fÃ¸rste slippe fram. Det andre programmet vil fÃ¥ en beskjed
 om at porten er opptatt gjennom returkoder.<p>
-	Det er også støtte for at et program kan vente på innkommende kall, og
-allikevel låne porten bort til et annet program for en utgående samtale. Dette
-er praktisk dersom du for eksempel kjører et faks-program og ønsker å ringe en
+	Det er ogsÃ¥ stÃ¸tte for at et program kan vente pÃ¥ innkommende kall, og
+allikevel lÃ¥ne porten bort til et annet program for en utgÃ¥ende samtale. Dette
+er praktisk dersom du for eksempel kjÃ¸rer et faks-program og Ã¸nsker Ã¥ ringe en
 BBS.<p>
-	En vel så stor gevinst finnes imidlertid på oppsett- og konfigurasjonssiden.
+	En vel sÃ¥ stor gevinst finnes imidlertid pÃ¥ oppsett- og konfigurasjonssiden.
 Det er nemlig TAPI som foretar selve oppringingen, og store deler av
-konfigurasjonen blir sentralisert. Det eneste som må konfigureres fra
+konfigurasjonen blir sentralisert. Det eneste som mÃ¥ konfigureres fra
 programmet er telefonnummeret som skal ringes, og hvilken modem-type som skal
 benyttes.<p>
 <b>	Dermed kan modem-produsentene lage &eacute;n TAPI-konfigurasjon i stedet
-for at alle programvareleverandørene må ha egne oppsett. Med nye modem vil
+for at alle programvareleverandÃ¸rene mÃ¥ ha egne oppsett. Med nye modem vil
 normalt en diskett med et TAPI-oppsett ligge ved. Denne disketten installeres i
-TAPI, og alle kommunikasjonsprogrammene støtter modemet automatisk.</b><p>
+TAPI, og alle kommunikasjonsprogrammene stÃ¸tter modemet automatisk.</b><p>
 <b></b>	En anne fordel er at selve oppringingen blir uniform. I og med at alle
 programmene bruker samme modul for oppringing, vil feil bli behandlet likt
 overalt, og feilkoder bli standardisert.
 <h3>
 <a href=http://www.novell.com>Novell</a> </h3>
-TAPI er ikke et resultat av årelangt standardiseringsarbeid i åpne
-organisasjoner. Det er bare det grensesnittet Microsoft har valgt å bruke. Og
+TAPI er ikke et resultat av Ã¥relangt standardiseringsarbeid i Ã¥pne
+organisasjoner. Det er bare det grensesnittet Microsoft har valgt Ã¥ bruke. Og
 det er andre som har tenkt i samme baner og lansert lignende standarder.<p>
 	Erkefienden Novell har et grensesnitt med lignende funksjonalitet, TSAPI
-(Telephony Service Application Programming Interface), men mye tyder på at TAPI
-vil bli det toneangivende grensesnittet. Det er få selskaper som har forpliktet
-seg til å levere i henhold til Novells standard, mens et utall selskaper har
-forpliktet seg til å levere TAPI.<p>
+(Telephony Service Application Programming Interface), men mye tyder pÃ¥ at TAPI
+vil bli det toneangivende grensesnittet. Det er fÃ¥ selskaper som har forpliktet
+seg til Ã¥ levere i henhold til Novells standard, mens et utall selskaper har
+forpliktet seg til Ã¥ levere TAPI.<p>
 	Atter en gang viser Microsoft og Bill Gates muskler -- de setter en standard
-gjennom å levere et grensesnitt.
+gjennom Ã¥ levere et grensesnitt.
 <pre><hr><b>                    TAPI</b><hr></pre>
 <b><i>Telephony Application Programming Interface (TAPI), er en standard for
-modem-kommunikasjon som følger med Windows 95 og Windows NT.</i></b>
+modem-kommunikasjon som fÃ¸lger med Windows 95 og Windows NT.</i></b>
 Under TAPI vil en konfigurasjon av et modem kunne benyttes av alle
 kommunikasjonsprogrammene. TAPI foretar selve oppringingen.<p>
-	Foreløpig er det ikke mange programmer som støtter standarden, men de fleste
+	ForelÃ¸pig er det ikke mange programmer som stÃ¸tter standarden, men de fleste
 har forpliktet seg til den, og sannsynligvis kommer flere produsenter med
 TAPI-produkter snart.<p>
 	Novell har en rivaliserende standard, TSAPI (Telephony Serrvice Application
-Programming Interface), men alt tyder på at Microsofts standard vil bli
+Programming Interface), men alt tyder pÃ¥ at Microsofts standard vil bli
 toneangivende i sluttbrukermarkedet.<p>
-	Se etter TAPI-støtte dersom du kjøper kommunikasjonsprogramvare som skal
+	Se etter TAPI-stÃ¸tte dersom du kjÃ¸per kommunikasjonsprogramvare som skal
 brukes under Windows 95 eller Windows NT.
-<p><i>KONFIGURASJON: Her konfigurerer du et nytt modem i TAPI. Når det er
+<p><i>KONFIGURASJON: Her konfigurerer du et nytt modem i TAPI. NÃ¥r det er
 konfigurert kan modemet brukes av alle kommunikasjonsprogrammene.<p>
-TIDLIG: QmodemPro er en den første kommunikasjonspakken som er en ren Windows
+TIDLIG: QmodemPro er en den fÃ¸rste kommunikasjonspakken som er en ren Windows
 <p>
 <a href=cw953225.html><img align=middle alt="[Forrige artikkel]" src=/CW/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/CW/gifs/up.gif></a> <a href=cw953227.html><img alt="[Neste artikkel]" align=middle src=/CW/gifs/next.gif></a> 
 

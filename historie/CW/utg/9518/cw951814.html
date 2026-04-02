@@ -18,274 +18,274 @@
 
 <blockquote><h4>
 <hr>
-Mens Unix lenge har vært en favoritt i vitenskaps- og ingeniørmiljøer, har Unix
-operativsystemer nylig vunnet terreng og oppnådd anerkjennelse også i
-forretningsmiljøet. Alle de største systemleverandørene tilbyr nå enten
+Mens Unix lenge har vÃ¦rt en favoritt i vitenskaps- og ingeniÃ¸rmiljÃ¸er, har Unix
+operativsystemer nylig vunnet terreng og oppnÃ¥dd anerkjennelse ogsÃ¥ i
+forretningsmiljÃ¸et. Alle de stÃ¸rste systemleverandÃ¸rene tilbyr nÃ¥ enten
 Unix-versjoner med "industrikraft" eller har under utvikling Unix-lignende
-systemer for kommersielle klient/tjener-miljøer med distribuert
+systemer for kommersielle klient/tjener-miljÃ¸er med distribuert
 databehandling.<hr>
 </h4></blockquote>
-	 IBM annonserte nylig at selskapet i tillegg til å tilby Aix Unix-varianten,
-nå konverterer sitt MVS operativsystem for stormaskiner til Unix OS. Dette
+	 IBM annonserte nylig at selskapet i tillegg til Ã¥ tilby Aix Unix-varianten,
+nÃ¥ konverterer sitt MVS operativsystem for stormaskiner til Unix OS. Dette
 burde sette strek for debatten om hvor egnet Unix er for den alminnelige bruk
 av datamaskiner i forretningslivet.<p>
-	Likevel er systemkjøpere vant til å måtte velge mellom kun &eacute;n eller to
+	Likevel er systemkjÃ¸pere vant til Ã¥ mÃ¥tte velge mellom kun &eacute;n eller to
 versjoner av for eksempel OS <a href=http://www.microsoft.com>Microsoft</a> Windows for PC eller MVS for
-stormaskiner. At ulike leverandører utvikler til tider vidt forskjellige og
-inkompatible Unix-varianter, skaper derfor stadig forvirring på markedet.<p>
-	Forvirringens tid burde nå være forbi. Mens de tidligere, entusiastisk eller
-mer motvillig, lot seg lede av markedskreftene, særlig i form av konkurranse
-fra Redmond, har de største Unix OS-leverandørene nå samlet seg bak en gruppe
-standarder som er bedre definert og lettere å forstå, både i teori og praksis.
-De fire største Unix RISC-leverandørene, Sun, HP, IBM, og Digital, har samlet
-sine OS-tilbud slik at de i hovedsak tilsvarer hverandre, og også bedret
-kvaliteten på produktene radikalt.<p>
-	Mangfoldet, som er selve krydderet i åpne systemer, er heldigvis intakt takket
-være at Unix-leverandørene hver for seg forsøker å gjøre tilbudene mer
+stormaskiner. At ulike leverandÃ¸rer utvikler til tider vidt forskjellige og
+inkompatible Unix-varianter, skaper derfor stadig forvirring pÃ¥ markedet.<p>
+	Forvirringens tid burde nÃ¥ vÃ¦re forbi. Mens de tidligere, entusiastisk eller
+mer motvillig, lot seg lede av markedskreftene, sÃ¦rlig i form av konkurranse
+fra Redmond, har de stÃ¸rste Unix OS-leverandÃ¸rene nÃ¥ samlet seg bak en gruppe
+standarder som er bedre definert og lettere Ã¥ forstÃ¥, bÃ¥de i teori og praksis.
+De fire stÃ¸rste Unix RISC-leverandÃ¸rene, Sun, HP, IBM, og Digital, har samlet
+sine OS-tilbud slik at de i hovedsak tilsvarer hverandre, og ogsÃ¥ bedret
+kvaliteten pÃ¥ produktene radikalt.<p>
+	Mangfoldet, som er selve krydderet i Ã¥pne systemer, er heldigvis intakt takket
+vÃ¦re at Unix-leverandÃ¸rene hver for seg forsÃ¸ker Ã¥ gjÃ¸re tilbudene mer
 interessante og differensierte. Differensieringsambisjonene gjelder ikke lenger
-bare Unix-kjernen, men omfatter nå også større oppgaver som
+bare Unix-kjernen, men omfatter nÃ¥ ogsÃ¥ stÃ¸rre oppgaver som
 systemadministrasjon og stor tilgjengelighet. I denne artikkelen vil vi se
-nærmere på de mange Unix-variantene fra de største systemleverandørene, for å
-prøve å underbygge vår påstand om at OS-et er stabilt og nå fortjener et
-kommersielt gjennombrudd. Vi vil også avdekke hvilke funksjoner leverandørene
+nÃ¦rmere pÃ¥ de mange Unix-variantene fra de stÃ¸rste systemleverandÃ¸rene, for Ã¥
+prÃ¸ve Ã¥ underbygge vÃ¥r pÃ¥stand om at OS-et er stabilt og nÃ¥ fortjener et
+kommersielt gjennombrudd. Vi vil ogsÃ¥ avdekke hvilke funksjoner leverandÃ¸rene
 fremholder som sine "differensieringstrumfkort" i en standardisert verden.
 <h3>
 Ut av kaoset</h3>
-Det ligger i sakens natur at det å peke ut det beste OS-systemet for et miljø,
+Det ligger i sakens natur at det Ã¥ peke ut det beste OS-systemet for et miljÃ¸,
 en applikasjon eller en bruker ikke er problemfritt. Noen ganger overser vi
-nemlig de objektive opplysningene, og støtter oss i stedet til preferanser og
-tidligere erfaringer. Dette gjelder særlig på Unix-markedet, der alle de fire
-største leverandørene sliter med spøkelser fra fortiden som holdes i live av
+nemlig de objektive opplysningene, og stÃ¸tter oss i stedet til preferanser og
+tidligere erfaringer. Dette gjelder sÃ¦rlig pÃ¥ Unix-markedet, der alle de fire
+stÃ¸rste leverandÃ¸rene sliter med spÃ¸kelser fra fortiden som holdes i live av
 gamle Usenet-brukere.<p>
-	De første utgavene av IBMs Aix var for eksempel svært ustabile. HP-UX gikk
-også harde dager, særlig da HP for første gang forsøkte å implementere OS-et i
+	De fÃ¸rste utgavene av IBMs Aix var for eksempel svÃ¦rt ustabile. HP-UX gikk
+ogsÃ¥ harde dager, sÃ¦rlig da HP for fÃ¸rste gang forsÃ¸kte Ã¥ implementere OS-et i
 Apollos PA-RISC-arkitektur. Digitals korte romanse med Unix (noen som husker
-Ultrix?), kombinert med markedsnedgangen før Alpha, ga mange mismodige, for
-ikke å si mistroiske, potensielle kunder. <p>
-	Og nylig ga Sunsoft mye av sitt kundegrunnlag heller bedrøvelige utsikter da
-selskapet rykket sitt operativsystem opp fra røttene i Berkeley (BSD), og
-plantet det på ny i det mer fruktbare markedet for SVR4-basert Unix. Først
+Ultrix?), kombinert med markedsnedgangen fÃ¸r Alpha, ga mange mismodige, for
+ikke Ã¥ si mistroiske, potensielle kunder. <p>
+	Og nylig ga Sunsoft mye av sitt kundegrunnlag heller bedrÃ¸velige utsikter da
+selskapet rykket sitt operativsystem opp fra rÃ¸ttene i Berkeley (BSD), og
+plantet det pÃ¥ ny i det mer fruktbare markedet for SVR4-basert Unix. FÃ¸rst
 etter flere revisjoner kunne Sunsoft tilby en SVR4-versjon (Solaris 2.3) med
-samme pålitelighet og hastighet som dens forgjenger, velrenommerte SunOS 4.1.3.
-Denne fanebæreren ble så sent som i fjor forbigått av den etterlengtede Solaris
+samme pÃ¥litelighet og hastighet som dens forgjenger, velrenommerte SunOS 4.1.3.
+Denne fanebÃ¦reren ble sÃ¥ sent som i fjor forbigÃ¥tt av den etterlengtede Solaris
 2.4, som kom i oktober.<p>
-	I dag kan alle de fire RISC-leverandørene tilby gode og stabile Unix
+	I dag kan alle de fire RISC-leverandÃ¸rene tilby gode og stabile Unix
 OS-alternativer med stort sett de samme funksjonene. Digitals OSF/1-versjon 3
-(omdøpt til Digital Unix 3.2 i mars), IBMs Aix 4.1 og Sunsofts Solaris 2.4 ble
-alle sluppet på markedet i siste halvdel av 1994. I 1995 starter HP overgangen
-til HP-UX 10.0, som vil foregå i to hovedfaser -- New Business Release, som
-lanseres i disse dager, og General Business Release, som er ventet til høsten.
+(omdÃ¸pt til Digital Unix 3.2 i mars), IBMs Aix 4.1 og Sunsofts Solaris 2.4 ble
+alle sluppet pÃ¥ markedet i siste halvdel av 1994. I 1995 starter HP overgangen
+til HP-UX 10.0, som vil foregÃ¥ i to hovedfaser -- New Business Release, som
+lanseres i disse dager, og General Business Release, som er ventet til hÃ¸sten.
 <p>
 	Solaris er konstruert ut fra en ekte SVR4 kodebase. HP-UX og Aix lisensierte i
 utgangspunktet System V, med kodesettet for versjon 3.x, men ga ikke senere
-lisens for SVR4. HP og IBM har imidlertid gjort investeringer for å gi sine
+lisens for SVR4. HP og IBM har imidlertid gjort investeringer for Ã¥ gi sine
 Unix-kjerner mer omfattende kompatibilitet med SVR4. Digital er den eneste av
 grunnleggerne av Open Software Foundation (OSF) som fremdeles, og med glede,
 benytter OSFs operativsystem.<p>
-	Alle de fire leverandørene har langt på vei implementert X/Open's Single Unix
+	Alle de fire leverandÃ¸rene har langt pÃ¥ vei implementert X/Open's Single Unix
 Specification, tidligere kalt SPEC 1170 fordi det angir 1.170 API-er og
-grensesnitt. Alle fire støtter nå Posix-shell og -programspesifikasjon
+grensesnitt. Alle fire stÃ¸tter nÃ¥ Posix-shell og -programspesifikasjon
 (1003.2), sanntid for kjerneutvidelser (1003.1b) og fjerde revisjon av X/Open
 Portability Guide (XPG4) for Posix, som er sammensatt av POSIX-spesifikasjoner.
-IBMs Aix 4.1 er kompatibel med grunnivåene i tredje revisjon av System V
-Interface Definition (SVID 3), men når ikke opp på alle nivåene, og støtter
+IBMs Aix 4.1 er kompatibel med grunnivÃ¥ene i tredje revisjon av System V
+Interface Definition (SVID 3), men nÃ¥r ikke opp pÃ¥ alle nivÃ¥ene, og stÃ¸tter
 heller ikke teknisk hele SVID 3. <p>
-	Til dags dato er Sunsoft den eneste av de fire hovedleverandørene som har
-videreført en OS-strategi med multiarkitektur. Solaris 2.4 har forent
+	Til dags dato er Sunsoft den eneste av de fire hovedleverandÃ¸rene som har
+viderefÃ¸rt en OS-strategi med multiarkitektur. Solaris 2.4 har forent
 kildekodene fra sine SPARC- og Intel-versjoner av OS-et, og en PowerPC-version
-av Solaris foreligger snart, i påvente av på den offisielle lanseringen av IBMs
-Power Personal-systemer. Leverandører av SPARC-kompatibel maskinvare, som
+av Solaris foreligger snart, i pÃ¥vente av pÃ¥ den offisielle lanseringen av IBMs
+Power Personal-systemer. LeverandÃ¸rer av SPARC-kompatibel maskinvare, som
 Tatung og Axil Computer, tilbyr Solaris-brukere flere plattformvalg. Man kan
 derfor ikke si at OS-et befinner seg i et vakuum fordi det bare er &eacute;n
-maskinvare-infrastruktur som støtter det.<u></u><p>
-<u></u>	Digital Unix skiller seg ut fra andre Unix-versjoner ved å være et
+maskinvare-infrastruktur som stÃ¸tter det.<u></u><p>
+<u></u>	Digital Unix skiller seg ut fra andre Unix-versjoner ved Ã¥ vÃ¦re et
 64-bits, og ikke 32-bits system, slik at operativesystemet dermed kan da fordel
 av 64-bits Alpha-arkitektur. 64-bits chip og operativsystem gir vesentlige
 fordeler for XintegerX/flytende komma-ytelse og ved behandling av store filer.
-Sun og HP banet vei for 64-bits CPU-er, men Digital har nå overtatt ledelsen
+Sun og HP banet vei for 64-bits CPU-er, men Digital har nÃ¥ overtatt ledelsen
 alene.
 <h3>
 Multiprosessor</h3>
-Da Aix 4.1 med stor hjelp fra Groupe Bull ble sluppet på markedet, gikk IBM
-sammen med Sun, HP, og Digital om å levere OS-programmer for symmetrisk
-multiprosessering (SMP), en flertrådskjerne og brukernivåtråder for å gjøre det
-mulig for utviklere å optimere applikasjoner for SMP-miljøer.<p>
-	Det er med SMP og tråd-implementasjoner som vin -- de blir en god del bedre
+Da Aix 4.1 med stor hjelp fra Groupe Bull ble sluppet pÃ¥ markedet, gikk IBM
+sammen med Sun, HP, og Digital om Ã¥ levere OS-programmer for symmetrisk
+multiprosessering (SMP), en flertrÃ¥dskjerne og brukernivÃ¥trÃ¥der for Ã¥ gjÃ¸re det
+mulig for utviklere Ã¥ optimere applikasjoner for SMP-miljÃ¸er.<p>
+	Det er med SMP og trÃ¥d-implementasjoner som vin -- de blir en god del bedre
 med tiden. Sunsoft skrev mesteparten av SVR4s basis-multiprosessingskode, og
-har brukt år på å skape flertrådede biblioteker. Også HP har arbeidet med SMP
-og tråder siden 1991. Digital hevder at en av hovedgrunnene for å bruke OSF/1,
-er at systemets modulære kjernedesign gjør det lettere å innkorporere nye
-komponenter, og at SMP-kapasitet i den forbindelse stod øverst på listen.<p>
-	Alle de fire leverandørene vil hevde at deres OS-undersystemer er flertrådede,
-men det er stor forskjell på hvordan de ulike bibliotekene og undersystemene
-utnytter flertrådsfunksjoner. Det finnes både fine og grove tråder. Fine tråder
-gir høyere ytelse både for SMP og uniprosessorsystemer, ved at applikasjonene
+har brukt Ã¥r pÃ¥ Ã¥ skape flertrÃ¥dede biblioteker. OgsÃ¥ HP har arbeidet med SMP
+og trÃ¥der siden 1991. Digital hevder at en av hovedgrunnene for Ã¥ bruke OSF/1,
+er at systemets modulÃ¦re kjernedesign gjÃ¸r det lettere Ã¥ innkorporere nye
+komponenter, og at SMP-kapasitet i den forbindelse stod Ã¸verst pÃ¥ listen.<p>
+	Alle de fire leverandÃ¸rene vil hevde at deres OS-undersystemer er flertrÃ¥dede,
+men det er stor forskjell pÃ¥ hvordan de ulike bibliotekene og undersystemene
+utnytter flertrÃ¥dsfunksjoner. Det finnes bÃ¥de fine og grove trÃ¥der. Fine trÃ¥der
+gir hÃ¸yere ytelse bÃ¥de for SMP og uniprosessorsystemer, ved at applikasjonene
 lettere kan styre I/O-funksjonene slik at hovedprosessoren ikke belastes i like
-stor grad ved en disk-  eller  nettverksoverføring eller mellomstor
+stor grad ved en disk-  eller  nettverksoverfÃ¸ring eller mellomstor
 minne-aksess. <p>
-	De fire forhandlerne støtter også CPU-clustering for stor tilgjengelighet, og
-også i varierende grad for ytelse. På dette området blir Sun og HP forbigått av
-IBM, som har det mange mener er de mest utviklede clusteringløsningene, nemlig
-systemene HACMP og SP. Digital følger hakk i hæl. HP og Sun er relativt ferske
-på dette området.<p>
-	Støtte for clustering spenner over alt fra operativsystemer til maskinvare.
-Selv om alle de fire leverandørene nylig har introdusert ny eller forbedret
-støtte for clustering, bør det bemerkes at de alle er spesialiserte
+	De fire forhandlerne stÃ¸tter ogsÃ¥ CPU-clustering for stor tilgjengelighet, og
+ogsÃ¥ i varierende grad for ytelse. PÃ¥ dette omrÃ¥det blir Sun og HP forbigÃ¥tt av
+IBM, som har det mange mener er de mest utviklede clusteringlÃ¸sningene, nemlig
+systemene HACMP og SP. Digital fÃ¸lger hakk i hÃ¦l. HP og Sun er relativt ferske
+pÃ¥ dette omrÃ¥det.<p>
+	StÃ¸tte for clustering spenner over alt fra operativsystemer til maskinvare.
+Selv om alle de fire leverandÃ¸rene nylig har introdusert ny eller forbedret
+stÃ¸tte for clustering, bÃ¸r det bemerkes at de alle er spesialiserte
 applikasjoner fra selskapets Unix-OS. I et OS-spesifikt clusteringsnotat hevder
-Digital at selskapet skal overføre sin VMS-administrator for clusterlåsing, som
+Digital at selskapet skal overfÃ¸re sin VMS-administrator for clusterlÃ¥sing, som
 er en viktig funksjon for databaseytelse og integritet, til Digital Unix. 
 <h3>
 Administrasjon</h3>
-Unix-leverandørene er fremdeles svært uenige når det gjelder system- og
-nettverksadministrasjon. Aix fortjener ros for tidlig å ha tatt i bruk enkelt
-verktøy for administrasjon av kjernesystemer. Dette minner om Aix verktøy for
+Unix-leverandÃ¸rene er fremdeles svÃ¦rt uenige nÃ¥r det gjelder system- og
+nettverksadministrasjon. Aix fortjener ros for tidlig Ã¥ ha tatt i bruk enkelt
+verktÃ¸y for administrasjon av kjernesystemer. Dette minner om Aix verktÃ¸y for
 stormaskiner, som gjerne administreres av ikke-eksperter. Nyvinninger innen
-administrasjon av Unix-systemer og nettverk er på trappene, og ingen av
-Unix-leverandørene ligger langt etter i denne gruppen, selv om produkter fra
+administrasjon av Unix-systemer og nettverk er pÃ¥ trappene, og ingen av
+Unix-leverandÃ¸rene ligger langt etter i denne gruppen, selv om produkter fra
 tredjeparter ligger i tet.<p>
-	Når det gjelder systemadministrasjon, har alle operativsystemene nå grafiske
-"pek-og-klikk"-grensesnitt samt muligheter for å installere programvare fra en
+	NÃ¥r det gjelder systemadministrasjon, har alle operativsystemene nÃ¥ grafiske
+"pek-og-klikk"-grensesnitt samt muligheter for Ã¥ installere programvare fra en
 sentral nettverkslokalitet. I begynnelsen av januar tok Sun et stort skritt
 fremover med sin Solstice veiviser for administrasjonsarkitektur, som slippes
-på markedet i disse tider. Suns Encompass-plattform for
-nettverksadministrasjon, som er en del av Solstice, sprenger nye grenser ved å
+pÃ¥ markedet i disse tider. Suns Encompass-plattform for
+nettverksadministrasjon, som er en del av Solstice, sprenger nye grenser ved Ã¥
 tilby en distribuert, objektbasert plattform for nettverksadministrasjon. <p>
-	I rene tall er Suns SunNet Manager størst på nettverksadministrasjon, mens HPs
-Openview raskt langt på vei er blitt den mest anerkjente plattformen for
+	I rene tall er Suns SunNet Manager stÃ¸rst pÃ¥ nettverksadministrasjon, mens HPs
+Openview raskt langt pÃ¥ vei er blitt den mest anerkjente plattformen for
 nettverksadministrasjon. Netview/6000 fra IBM brukte i begynnelsen en
-lisensiert Openview-kode, men har siden vært gjenstand for store forandringer.
+lisensiert Openview-kode, men har siden vÃ¦rt gjenstand for store forandringer.
 Digitals Polycenter er en OEM-versjon av IBMs Netview/6000. 
 <h3>
 Objekter</h3>
-Objektorienterte OS-lag er fremdeles på grensen av hva de fleste brukere
-behersker. Denne løsningen blir fulgt nøye, mens få har tatt den i bruk fullt
-ut. Alle de fire leverandørene distribuerer nå objekt plumping og objekt
+Objektorienterte OS-lag er fremdeles pÃ¥ grensen av hva de fleste brukere
+behersker. Denne lÃ¸sningen blir fulgt nÃ¸ye, mens fÃ¥ har tatt den i bruk fullt
+ut. Alle de fire leverandÃ¸rene distribuerer nÃ¥ objekt plumping og objekt
 request brokers (ORBs) for sine systemer. Dette er "middel ware"-komponeter for
-objektdistribuering, basert på Common Object Request Broker (CORBA), versjon 1,
-fra Object Management Group. De fire største leverandørene har alle forpliktet
-seg til å følge versjon 2 når den ligger klar om ikke alt for lenge. Det som
-imidlertid skiller leverandørene, er hva som skal kjøres "oppå" de resepktive
+objektdistribuering, basert pÃ¥ Common Object Request Broker (CORBA), versjon 1,
+fra Object Management Group. De fire stÃ¸rste leverandÃ¸rene har alle forpliktet
+seg til Ã¥ fÃ¸lge versjon 2 nÃ¥r den ligger klar om ikke alt for lenge. Det som
+imidlertid skiller leverandÃ¸rene, er hva som skal kjÃ¸res "oppÃ¥" de resepktive
 ORB-ene. <p>
-	IBM og HP støtter begge (økonomisk) Taligent, som er blitt medias yndling
-takket være nyvinningene innen planorientert objektteknologi. Taligent avvek
-nylig fra den opprinnelige  målsettingen, å skape et objektbasert
-operativsystem, men fokuserer fremdeles på omfattende objekt-rammeverk,
-utvikling og brukermiljø. Objektrammeverket skal lanseres senere i år.<p>
+	IBM og HP stÃ¸tter begge (Ã¸konomisk) Taligent, som er blitt medias yndling
+takket vÃ¦re nyvinningene innen planorientert objektteknologi. Taligent avvek
+nylig fra den opprinnelige  mÃ¥lsettingen, Ã¥ skape et objektbasert
+operativsystem, men fokuserer fremdeles pÃ¥ omfattende objekt-rammeverk,
+utvikling og brukermiljÃ¸. Objektrammeverket skal lanseres senere i Ã¥r.<p>
 	Sun har sprengt nye grenser i samarbeid med Next Computer, og Digital har
-nylig sagt seg villig til å støtte object-API-ene Openstep, som kom ut av dette
+nylig sagt seg villig til Ã¥ stÃ¸tte object-API-ene Openstep, som kom ut av dette
 samarbeidet. Openstep er en samling programmeringsgrensesnitt hentet ut av
-operativsystemet Nextstep, og som dermed er godt utprøvd. Sun og Digital er
-ventet å lansere Openstep sammen med et verktøy for objektutvikling til
+operativsystemet Nextstep, og som dermed er godt utprÃ¸vd. Sun og Digital er
+ventet Ã¥ lansere Openstep sammen med et verktÃ¸y for objektutvikling til
 sommeren.<p>
 	Markedet for Unix operativsystemer har endret seg. De mange grunnleggende
-forskjellene i implementering er borte. Nå er det heller nettverks- og
-systemadministrasjon og objekter som utgjør stridens eple. Dessuten fortsetter
-hver av de største leverandørene med å holde nøye oppsyn med konkurrentene og
-være klar til å lisensiere, kopiere og være først ute med nye ideer.<p>
-	For brukere som mener at deres behov ikke dekkes av tilbudene fra leverandører
-av kjernemaskinvare/-programvare, disker uavhengige Unix OS-leverandører opp
+forskjellene i implementering er borte. NÃ¥ er det heller nettverks- og
+systemadministrasjon og objekter som utgjÃ¸r stridens eple. Dessuten fortsetter
+hver av de stÃ¸rste leverandÃ¸rene med Ã¥ holde nÃ¸ye oppsyn med konkurrentene og
+vÃ¦re klar til Ã¥ lisensiere, kopiere og vÃ¦re fÃ¸rst ute med nye ideer.<p>
+	For brukere som mener at deres behov ikke dekkes av tilbudene fra leverandÃ¸rer
+av kjernemaskinvare/-programvare, disker uavhengige Unix OS-leverandÃ¸rer opp
 med en variert meny. SCO, som fremdeles topper salgstallene blant de uavhengige
-OS-leverandørene, utvider fokus på sitt vertssystem for flere brukere.
-Selskapet kjører nå en Windows-vennlig strategi med sikte på å stryke sin rolle
+OS-leverandÃ¸rene, utvider fokus pÃ¥ sitt vertssystem for flere brukere.
+Selskapet kjÃ¸rer nÃ¥ en Windows-vennlig strategi med sikte pÃ¥ Ã¥ stryke sin rolle
 som tjenesteyter for brukere av <a href="http://www.microsoft.com/pages/peropsys/win_news/chicago/wwwhtml/home/w95.htm">Windows 95</a>-PCer. Av andre muligheter kan nevnes
 Next Computers Nextstep for objekt-entusiaster, Novells Unixware for dem som er
 mest opptatt av Netware PCer, og Berkeley Systems Designs BSD/OS.
 <h3>
  Tilbyr noe mer</h3>
-Det finnes mange Unix- og Unix-lignende operativsystemer å velge mellom.
+Det finnes mange Unix- og Unix-lignende operativsystemer Ã¥ velge mellom.
 Nextstep fra Next Computer, Unixware fra Novells Unix Systems Group og BSD/OS
 fra Berkeley Systems Design er alle systemer med egenartede kvaliteter. <p>
-	Nextstep er et viktig operativsystem for Unix-utviklere som ser frem til å
-arbeide i objektbaserte applikasjonsmiljøer, fordi de her kan starte med et
+	Nextstep er et viktig operativsystem for Unix-utviklere som ser frem til Ã¥
+arbeide i objektbaserte applikasjonsmiljÃ¸er, fordi de her kan starte med et
 spekter av maskinvarearkitekturer. Nextstep er et objektsystem som er godt
-utprøvet, særlig når det gjelder utvikingsverktøy. Nextsteps klassebaserte
-API-er -- Openstep -- vil snart inngå i Suns og Digitals Unix operativsystemer.
-Det opprinnelige Nextstep kjøres i dag i Intel-kompatible systemer, i HPs
+utprÃ¸vet, sÃ¦rlig nÃ¥r det gjelder utvikingsverktÃ¸y. Nextsteps klassebaserte
+API-er -- Openstep -- vil snart inngÃ¥ i Suns og Digitals Unix operativsystemer.
+Det opprinnelige Nextstep kjÃ¸res i dag i Intel-kompatible systemer, i HPs
 PA-RISC arbeidsstasjoner og nyere Sun SPARC arbeidsstasjoner.<p>
-	Utviklerne må imidlertid nøye seg med Nexts proprietære object request broker
+	Utviklerne mÃ¥ imidlertid nÃ¸ye seg med Nexts proprietÃ¦re object request broker
 (ORB), kalt PDO, og Nexts sterke preferanser for Objective C, noe som gjelder
-C++ og Smalltalk i langt mindre grad. Next har påtatt seg å implementere CORBA
-2.0-kompatibel ORB når denne spesifikasjonen er klar. Nexts strategi for
-multiplattformer tilsier at de også vil tilby verktøy for oversetting mellom
-Objective C og andre utviklingsspråk.<p>
-	Unixware 2.0 fra <a href=http://www.novell.com>Novell</a> er en SVR4-implementering basert på Intel-prosessor og
-med mange utvidelser. Dette gjør at den kan fungere sammen med Netware-klienter
-og -tjenere. Den kjører også mange applikasjonsbinærer skrevet for Open Server
-og Open Desktop fra SCO samt SVR4-binærer som ikke er avhengige av
-leverandørspesifikke biblioteker.<p>
-	Unixware er et flertrådet SMP-operativsystem. Det har et journalførende
-filsystem med støtte for speiling, striping and dynamisk restrukturering av
-filsystemet. Utvidelser som støtter CPU clustering er ventet i løpet av 1995.
-Unixware operativsystem byr påp mange fordeler for Netware-miljøene, blant
+C++ og Smalltalk i langt mindre grad. Next har pÃ¥tatt seg Ã¥ implementere CORBA
+2.0-kompatibel ORB nÃ¥r denne spesifikasjonen er klar. Nexts strategi for
+multiplattformer tilsier at de ogsÃ¥ vil tilby verktÃ¸y for oversetting mellom
+Objective C og andre utviklingssprÃ¥k.<p>
+	Unixware 2.0 fra <a href=http://www.novell.com>Novell</a> er en SVR4-implementering basert pÃ¥ Intel-prosessor og
+med mange utvidelser. Dette gjÃ¸r at den kan fungere sammen med Netware-klienter
+og -tjenere. Den kjÃ¸rer ogsÃ¥ mange applikasjonsbinÃ¦rer skrevet for Open Server
+og Open Desktop fra SCO samt SVR4-binÃ¦rer som ikke er avhengige av
+leverandÃ¸rspesifikke biblioteker.<p>
+	Unixware er et flertrÃ¥det SMP-operativsystem. Det har et journalfÃ¸rende
+filsystem med stÃ¸tte for speiling, striping and dynamisk restrukturering av
+filsystemet. Utvidelser som stÃ¸tter CPU clustering er ventet i lÃ¸pet av 1995.
+Unixware operativsystem byr pÃ¥p mange fordeler for Netware-miljÃ¸ene, blant
 annet kompatible fil/utskriftsfunksjoner og Netwares uortodokse
-postbehandlingssystem. Full støtte til Netware katalogintegrering er også lovet
-for neste lansering (versjon 2.1). Unixware støtter også alle standard
+postbehandlingssystem. Full stÃ¸tte til Netware katalogintegrering er ogsÃ¥ lovet
+for neste lansering (versjon 2.1). Unixware stÃ¸tter ogsÃ¥ alle standard
 nettverks- og kommunikasjonsfunksjoner for Unix, herunder NFS, NIS, SNMP, og
-standard Unix postfunksjoner. Unixware støtter ikke ennå NIS+. <p>
-	Til trøst for utviklere og brukere som tror at overgangen fra Berkeley-basert
+standard Unix postfunksjoner. Unixware stÃ¸tter ikke ennÃ¥ NIS+. <p>
+	Til trÃ¸st for utviklere og brukere som tror at overgangen fra Berkeley-basert
 Unix til SVR4 blir smertefull, har Berkeley Systems Design laget BSD/OS.
-Systemet har løsninger både for Intel og SPARC. Den SPARC-baserte løsningen er
-binært kompatibel med SunOS 4.1.3, noe som kanskje spiller størst rolle for den
+Systemet har lÃ¸sninger bÃ¥de for Intel og SPARC. Den SPARC-baserte lÃ¸sningen er
+binÃ¦rt kompatibel med SunOS 4.1.3, noe som kanskje spiller stÃ¸rst rolle for den
 alminnelige bruker av arbeidsstasjoner. Brukere av Sun Microsystems som ikke
-har muligheten til å gå over til Solaris, vil dermed for fremtiden ha tilgang
-på OS-forbedringer.
+har muligheten til Ã¥ gÃ¥ over til Solaris, vil dermed for fremtiden ha tilgang
+pÃ¥ OS-forbedringer.
 <h3>
 Windows NT</h3>
-Selv om det ikke er et Unix-system, ei heller (ennå) en sterk kandidat i
-klassen for operativsystemer med "industrikraft", ville det være dumt ikke å
-anerkjenne Windows NT, om ikke annet så for dets Unix-lignende funksjoner.
-Windows NT er selvfølgelig ingen match for Unix-utviklere, og har ikke
-potensiale til å erstatte Unix. NT er kompatibelt med POSIX 1003.1, og delvis
+Selv om det ikke er et Unix-system, ei heller (ennÃ¥) en sterk kandidat i
+klassen for operativsystemer med "industrikraft", ville det vÃ¦re dumt ikke Ã¥
+anerkjenne Windows NT, om ikke annet sÃ¥ for dets Unix-lignende funksjoner.
+Windows NT er selvfÃ¸lgelig ingen match for Unix-utviklere, og har ikke
+potensiale til Ã¥ erstatte Unix. NT er kompatibelt med POSIX 1003.1, og delvis
 med versjon 3 av X/Open Portability Guide (XPG 3), men dette gir ikke full
-kompatibilitet. Av andre positive Unix-lignende trekk ved NT kan nevnes støtten
-for DCEs RPC og verktøyene for TCP/IP-nettverksklienter, som ftp, telnet, rsh,
-and rexec. NT støtter også TCP/IP og Novells SPX/IPX. <p>
-	Tredjeparter utvikler også pakker med Unix-verktøy til bruk sammen med Windows
-NT, men disse vil stort sett være til hjelp for tekniske brukere, og ikke gjøre
-overføringen av Unix-applikasjoner til NT vesentlig enklere. Problemene med
-overføring gjelder blant annet de store ulikhetene mellom socket-bibliotekene
-under RPC-mekanismen og mangel på naturlig støtte for Windows, Motif, eller
+kompatibilitet. Av andre positive Unix-lignende trekk ved NT kan nevnes stÃ¸tten
+for DCEs RPC og verktÃ¸yene for TCP/IP-nettverksklienter, som ftp, telnet, rsh,
+and rexec. NT stÃ¸tter ogsÃ¥ TCP/IP og Novells SPX/IPX. <p>
+	Tredjeparter utvikler ogsÃ¥ pakker med Unix-verktÃ¸y til bruk sammen med Windows
+NT, men disse vil stort sett vÃ¦re til hjelp for tekniske brukere, og ikke gjÃ¸re
+overfÃ¸ringen av Unix-applikasjoner til NT vesentlig enklere. Problemene med
+overfÃ¸ring gjelder blant annet de store ulikhetene mellom socket-bibliotekene
+under RPC-mekanismen og mangel pÃ¥ naturlig stÃ¸tte for Windows, Motif, eller
 Common Desktop Environment.<p>
-	Brukerne vil oppdage at NT er et forhåndsdefinert miljø for
-fleroppgavekjøring. Mange applikasjoner vil dermed lettere kunne kjøres i et
+	Brukerne vil oppdage at NT er et forhÃ¥ndsdefinert miljÃ¸ for
+fleroppgavekjÃ¸ring. Mange applikasjoner vil dermed lettere kunne kjÃ¸res i et
 Windows grensesnitt enn i Windows 3.x. Unix-brukere kan imidlertid la seg
-frustrere av mangelen på an automount-system i NT, noe som gjør innhenting av
-ressurser i et nettverk til en langt mer manuell operasjon. NT ventes å kjøre
-sin egen linje, mens utviklingen innen distribuert objektteknologi går videre.
-<a href=http://www.microsoft.com>Microsoft</a> har til nå ikke vist seg villig til å ta i bruk CORBA eller til å
-uttrykke ønske om en distribuert versjon av OLE (Object Linking and Embedding).
-Dette er helt nødvendige faktorer for å sikre flyttbarhet og interoperative
+frustrere av mangelen pÃ¥ an automount-system i NT, noe som gjÃ¸r innhenting av
+ressurser i et nettverk til en langt mer manuell operasjon. NT ventes Ã¥ kjÃ¸re
+sin egen linje, mens utviklingen innen distribuert objektteknologi gÃ¥r videre.
+<a href=http://www.microsoft.com>Microsoft</a> har til nÃ¥ ikke vist seg villig til Ã¥ ta i bruk CORBA eller til Ã¥
+uttrykke Ã¸nske om en distribuert versjon av OLE (Object Linking and Embedding).
+Dette er helt nÃ¸dvendige faktorer for Ã¥ sikre flyttbarhet og interoperative
 muligheter for objekter. 
 <h3>
 SCO og Windows </h3>
 Santa Cruz Operations SCO Open Server operativsystem topper salget blant
-uavhengige leverandører av Unix OS. Open Server ble utviklet ut fra System V,
-versjon 3.2 kodebase, men er oppdatert slik at det støtter SVID 3 og relevante
-POSIX-spesifikasjoner som er kompatible med XPG 3 og 4. SCO er også på vei til
-å støtte SPEC 1170. Open Server følger trenden blant Unix-leverandører, og har
-implementert et journalførende filsystem som gjør det mulig for brukerne å
-gjøre filsystemet større, men ikke mindre. SCO arbeider også med å implementere
-både Andrew File System (AFS), som et alternativ til NFS, og CORBA, selv om
-selskapet ikke ennå har røpet hvilket utvilklingsmiljø det planlegger for
+uavhengige leverandÃ¸rer av Unix OS. Open Server ble utviklet ut fra System V,
+versjon 3.2 kodebase, men er oppdatert slik at det stÃ¸tter SVID 3 og relevante
+POSIX-spesifikasjoner som er kompatible med XPG 3 og 4. SCO er ogsÃ¥ pÃ¥ vei til
+Ã¥ stÃ¸tte SPEC 1170. Open Server fÃ¸lger trenden blant Unix-leverandÃ¸rer, og har
+implementert et journalfÃ¸rende filsystem som gjÃ¸r det mulig for brukerne Ã¥
+gjÃ¸re filsystemet stÃ¸rre, men ikke mindre. SCO arbeider ogsÃ¥ med Ã¥ implementere
+bÃ¥de Andrew File System (AFS), som et alternativ til NFS, og CORBA, selv om
+selskapet ikke ennÃ¥ har rÃ¸pet hvilket utvilklingsmiljÃ¸ det planlegger for
 CORBA-baserte applikasjoner.<p>
-	Open Server tas ofte ikke med når man snakker om Unix-systemer med
-"industrikraft", fordi det kjøres i ikke-RISC (Intel prosessor)-systemer, og
-fordi SCOs virksomhet først og fremst har vært rett mot vertssystemer for flere
-brukere. Selskapet har imidlertid stadig tilføyd nye komponenter og funksjoner
-som gjør det mulig for OPEN Server å tilby filer, skrivetjenester og
+	Open Server tas ofte ikke med nÃ¥r man snakker om Unix-systemer med
+"industrikraft", fordi det kjÃ¸res i ikke-RISC (Intel prosessor)-systemer, og
+fordi SCOs virksomhet fÃ¸rst og fremst har vÃ¦rt rett mot vertssystemer for flere
+brukere. Selskapet har imidlertid stadig tilfÃ¸yd nye komponenter og funksjoner
+som gjÃ¸r det mulig for OPEN Server Ã¥ tilby filer, skrivetjenester og
 operativsystemfunksjoner til Windows-brukere med PC.<p>
-	I 1993 kjøpte SCO opp IXI, selskapet som skapte det populære  desktop-miljøet
+	I 1993 kjÃ¸pte SCO opp IXI, selskapet som skapte det populÃ¦re  desktop-miljÃ¸et
 X samt det mindre kjente Wintif, som er en klientapplikasjon for
-Windows-brukere, og som oversetter Motif applikasjonsgrensesnitt som kjøres på
-Open Server slik at de fremstår som Windows-grensesnitt på kilentenens PCer. I
-1994 kjøpte SCO opp alle PCX-serverne og SQL Retriever-produktene fra selskapet
-Visionware. SCO har også lisensiert Microsofts og AT&Ts sofistikerte
-server-teknologi, som gjør at Open Server kan støtte LAN Manager-miljøer
-direkte, også Windows NT-kunder. <p>
-	Nå som Sunsoft har oppgradert sin Solaris-versjon for Intel-prosessorer til
-2.4, får SCO i 1995 endelig solid konkurranse fra en erfaren Unix-aktør som
-både har en moderne Unix OS-implementering og de viktigste Unix-funksjonene.
-Det blir interessant å følge med i utviklingen gjennom året.<p>
+Windows-brukere, og som oversetter Motif applikasjonsgrensesnitt som kjÃ¸res pÃ¥
+Open Server slik at de fremstÃ¥r som Windows-grensesnitt pÃ¥ kilentenens PCer. I
+1994 kjÃ¸pte SCO opp alle PCX-serverne og SQL Retriever-produktene fra selskapet
+Visionware. SCO har ogsÃ¥ lisensiert Microsofts og AT&Ts sofistikerte
+server-teknologi, som gjÃ¸r at Open Server kan stÃ¸tte LAN Manager-miljÃ¸er
+direkte, ogsÃ¥ Windows NT-kunder. <p>
+	NÃ¥ som Sunsoft har oppgradert sin Solaris-versjon for Intel-prosessorer til
+2.4, fÃ¥r SCO i 1995 endelig solid konkurranse fra en erfaren Unix-aktÃ¸r som
+bÃ¥de har en moderne Unix OS-implementering og de viktigste Unix-funksjonene.
+Det blir interessant Ã¥ fÃ¸lge med i utviklingen gjennom Ã¥ret.<p>
 
 <p>
 <a href=cw951813.html><img align=middle alt="[Forrige artikkel]" src=../../gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=../../gifs/up.gif></a> <a href=cw951815.html><img alt="[Neste artikkel]" align=middle src=../../gifs/next.gif></a> 

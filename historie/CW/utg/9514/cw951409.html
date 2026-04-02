@@ -16,137 +16,137 @@
 
 <blockquote><h4>
 <hr>
-En ny generasjon PC-servere truer RISC-leverandører som Sun, HP og Digital. Med
-to eller flere Pentium-brikker gir PC-serverne de nødvendige hestekreftene, men
-ikke i alle situasjoner. Fallgruvene er mange og leverandørene trimmer sine
-tester for å oppnå best mulig tall.<hr>
+En ny generasjon PC-servere truer RISC-leverandÃ¸rer som Sun, HP og Digital. Med
+to eller flere Pentium-brikker gir PC-serverne de nÃ¸dvendige hestekreftene, men
+ikke i alle situasjoner. Fallgruvene er mange og leverandÃ¸rene trimmer sine
+tester for Ã¥ oppnÃ¥ best mulig tall.<hr>
 </h4></blockquote>
 <i>OVERSATT OG BEARBEIDET  AV MORTEN SOLLI</i><p>Dersom svakelig
-enkelt-prosessors ytelse får deg til å gå på veggene, er det på tide å
+enkelt-prosessors ytelse fÃ¥r deg til Ã¥ gÃ¥ pÃ¥ veggene, er det pÃ¥ tide Ã¥
 oppskalere til et av systemene for symmetrisk multiprosessering (SMP). Disse
-Pentium-baserte maskinene er endelig i ferd med å nærme seg de RISC-baserte
+Pentium-baserte maskinene er endelig i ferd med Ã¥ nÃ¦rme seg de RISC-baserte
 systemenes kapasitet for skalerbarhet og ytelse. Og med hjelp fra
 multiprosesserende nettverksoperativsystemer som Microsofts Windows NT 3.5 og
-Novells kommende Netware MP, er det mulig å dra fordel av denne nye
-prosesseringskraften uten å måtte bytte til Unix.<p>
+Novells kommende Netware MP, er det mulig Ã¥ dra fordel av denne nye
+prosesseringskraften uten Ã¥ mÃ¥tte bytte til Unix.<p>
 	Med symmetrisk multiprosessering kan flere CPU-er dele en severs minne,
 interrupter og enheter ved hjelp av en "run-time"-algoritme. Hvor mye dette
-øker ytelsen er avhengig av applikasjonen, men en viss forbedring over hele
+Ã¸ker ytelsen er avhengig av applikasjonen, men en viss forbedring over hele
 rekken er sannsynlig. SMP-systemene er de som antageligvis appellerer mest til
-to brukergrupper -- de som skal krympe stormaskin-applikasjoner for å tilpasse
-dem til klient/tjener-systemer og de som har behov for å øke kapasiteten til en
-allerede tungt belastet server. Ifølge en undersøkelse gjort blant 1.000
+to brukergrupper -- de som skal krympe stormaskin-applikasjoner for Ã¥ tilpasse
+dem til klient/tjener-systemer og de som har behov for Ã¥ Ã¸ke kapasiteten til en
+allerede tungt belastet server. IfÃ¸lge en undersÃ¸kelse gjort blant 1.000
 Infoworld-lesere, bruker over 80 prosent av dem som anvender SMP-systemer disse
 sammen med en database-motor som Microsofts SQL Server eller Oracles Oracle7.
 <p>
-	Vi brukte Windows NT 3.5 som NOS for å måle hvor mye skalerbarhet de fem
-Pentium-baserte SMP-serverne i denne testen kunne by på. Først testet vi dem
+	Vi brukte Windows NT 3.5 som NOS for Ã¥ mÃ¥le hvor mye skalerbarhet de fem
+Pentium-baserte SMP-serverne i denne testen kunne by pÃ¥. FÃ¸rst testet vi dem
 med &eacute;n prosessor, deretter to. Den gode nyheten er at dersom ditt
 nettverk stort sett arbeider med CPU-bundne applikasjoner, for eksempel on-line
-transaksjonsprosessering (OLTP), gir disse serverne langt på vei en løsning på
+transaksjonsprosessering (OLTP), gir disse serverne langt pÃ¥ vei en lÃ¸sning pÃ¥
 problemene med ytelse. Compaqs Proliant 2000 5/90 var den soleklart mest
-skalerbare serveren, og den arbeidet nesten dobbelt så raskt med to prosessorer
+skalerbare serveren, og den arbeidet nesten dobbelt sÃ¥ raskt med to prosessorer
 som med &eacute;n.<p>
 	Vi valgte Windows NT 3.5 som multiprosesserings-NOS for standard
-ytelse-testene på grunn av dennes fokusering på skalerbarhet. Flere enn
-halvparten av våre lesere som bruker SMP-servere, bruker to prosessorer, mens
-de på sikt kunne se for seg så mange som seks prosesorer per server. <p>
-	Ettersom NT 3.5 støtter hele fire prosessorer rett ut av boksen, er den godt
-tilpasset lesernes behov. Hvis du trenger å utnytte kraften fra flere
-prosessorer, kan du kjøpe NT fra en leverandør som Sequent Computer Systems,
-som tilbyr NT-støtte for så mange som åtte prosessorer. I denne testen er det
+ytelse-testene pÃ¥ grunn av dennes fokusering pÃ¥ skalerbarhet. Flere enn
+halvparten av vÃ¥re lesere som bruker SMP-servere, bruker to prosessorer, mens
+de pÃ¥ sikt kunne se for seg sÃ¥ mange som seks prosesorer per server. <p>
+	Ettersom NT 3.5 stÃ¸tter hele fire prosessorer rett ut av boksen, er den godt
+tilpasset lesernes behov. Hvis du trenger Ã¥ utnytte kraften fra flere
+prosessorer, kan du kjÃ¸pe NT fra en leverandÃ¸r som Sequent Computer Systems,
+som tilbyr NT-stÃ¸tte for sÃ¥ mange som Ã¥tte prosessorer. I denne testen er det
 bare Proliant som har kapasitet for bruk av flere enn to prosessorer, hele fire
 90-MHz Pentium. 
 <h3>
 Skalerbarhet</h3>
-Perfekt skalerbarhet innebærer en 100 prosents økning i ytelsen fra en til to
-prosessorer. Dersom en server med perfekt skalerbarhet kjører 50 transaksjoner
-med en enkelt prosessor på en time, skal det altså ta 30 minutter å gjennomføre
+Perfekt skalerbarhet innebÃ¦rer en 100 prosents Ã¸kning i ytelsen fra en til to
+prosessorer. Dersom en server med perfekt skalerbarhet kjÃ¸rer 50 transaksjoner
+med en enkelt prosessor pÃ¥ en time, skal det altsÃ¥ ta 30 minutter Ã¥ gjennomfÃ¸re
 den samme transaksjonen med to prosessorer.<p>
 	Ingen av de serverne vi testet hadde helt perfekt skalering, men Proliant
-gjorde det ganske bra, med en økning i hastigheten på 97 prosent.<p>
+gjorde det ganske bra, med en Ã¸kning i hastigheten pÃ¥ 97 prosent.<p>
 	Men selv med slike hastigheter arbeidet disse serverne rundt 25 prosent
 saktere enn en MIPS-basert maskin med Windows NT 3.5 som vi brukte som
-sammenligningsgrunnlag (NEC Technologies' RISC server 2200 var ennå ikke
-sluppet på testtidspunktet). Men for første gang nærmer Intel-baserte systemer
+sammenligningsgrunnlag (NEC Technologies' RISC server 2200 var ennÃ¥ ikke
+sluppet pÃ¥ testtidspunktet). Men for fÃ¸rste gang nÃ¦rmer Intel-baserte systemer
 seg RISC, og det er ingen liten nyhet. Det betyr at IT-sjefer rundt omkring
-iallfall en stund til kan takle større prosesseringsbehov ved simpelthen å
+iallfall en stund til kan takle stÃ¸rre prosesseringsbehov ved simpelthen Ã¥
 flytte sine applikasjoner til Intel.-maskiner med flere prosessorer. Den
-dårlige nyheten er at hvis du er helt avhengig av å ha de gjenstående 25
-prosentene hastighetsøkning, må du porte til en MIPS-maskin. Og selv om den
-kjører NT, må du porte alle dine data, og i tillegg kjøpe nye versjoner av
+dÃ¥rlige nyheten er at hvis du er helt avhengig av Ã¥ ha de gjenstÃ¥ende 25
+prosentene hastighetsÃ¸kning, mÃ¥ du porte til en MIPS-maskin. Og selv om den
+kjÃ¸rer NT, mÃ¥ du porte alle dine data, og i tillegg kjÃ¸pe nye versjoner av
 applikasjonene dine.
 <h3>
 Ingen vidunderkur</h3>
 Dersom du arbeider med I/O-bundne applikasjoner -- som utskriving,
-filoverføring og i mindre grad beslutningsstøtte-systemer, er en ekstra
+filoverfÃ¸ring og i mindre grad beslutningsstÃ¸tte-systemer, er en ekstra
 prosessor til liten nytte. Med slike applikasjoner ble forbedringene langt
 mindre merkbare, jevnt over rundt 15 prosent.<p>
-	Produsentene er helt tydelig klar over dette. Derfor foretrekker de å kjøre
-standard ytelse-testene for sine multiprosesserings-systemer på CPU-intensive
-aktiviteter som database-transaksjoner, og ikke på fil/utskrift-tjenester som
+	Produsentene er helt tydelig klar over dette. Derfor foretrekker de Ã¥ kjÃ¸re
+standard ytelse-testene for sine multiprosesserings-systemer pÃ¥ CPU-intensive
+aktiviteter som database-transaksjoner, og ikke pÃ¥ fil/utskrift-tjenester som
 er mer knyttet til I/O.<p>
-	Våre lesere var mer opptatt av overføringshastighet enn av mer I/O-relaterte
+	VÃ¥re lesere var mer opptatt av overfÃ¸ringshastighet enn av mer I/O-relaterte
 transaksjoner, og dette er gjenspeilet i testen. Som ventet skalerte serverne
 ytelsen langt bedre i OLTP-testen, som ble gjort CPU-intensiv.<p>
-	Mens vi grublet over mangelen på skalerbarhet i decision-support-operasjoner,
-oppdaget vi store avvik i ytelsen på hver serverdisks I/O-subsystemer. Det er
-dette som til syvende og sist er avgjørende for serverens ytelse.<p>
-	Selv om ingen av poengsummene er basert utelukkende på disse disk
-I/O-resultatene, kan det være verdt å kikke nærmere på dem dersom dine
-database-servere jevnlig utfører operasjoner både med OLTP og
-beslutning-støtte-spørsmål. 
+	Mens vi grublet over mangelen pÃ¥ skalerbarhet i decision-support-operasjoner,
+oppdaget vi store avvik i ytelsen pÃ¥ hver serverdisks I/O-subsystemer. Det er
+dette som til syvende og sist er avgjÃ¸rende for serverens ytelse.<p>
+	Selv om ingen av poengsummene er basert utelukkende pÃ¥ disse disk
+I/O-resultatene, kan det vÃ¦re verdt Ã¥ kikke nÃ¦rmere pÃ¥ dem dersom dine
+database-servere jevnlig utfÃ¸rer operasjoner bÃ¥de med OLTP og
+beslutning-stÃ¸tte-spÃ¸rsmÃ¥l. 
 <h3>
 SQL Server 4.21a</h3>
-Testen gav også enkelte andre interessante resultater. Etter å ha fullført
-testingen for to prosessorer, hadde vi tenkt å kjøre i gang med et par ekstra
-prosessorer for å se om det gav noe utslag. Vi brukte SQL Server 4.21a og
-Windows NT 3.5 på <a href=http://www.compaq.com/>Compaq</a> Proliant 4000 5/66 for å teste først tre, og deretter
-fire prosessorer. Til vår forbauselse gav tre prosessorer nesten nøyaktig samme
+Testen gav ogsÃ¥ enkelte andre interessante resultater. Etter Ã¥ ha fullfÃ¸rt
+testingen for to prosessorer, hadde vi tenkt Ã¥ kjÃ¸re i gang med et par ekstra
+prosessorer for Ã¥ se om det gav noe utslag. Vi brukte SQL Server 4.21a og
+Windows NT 3.5 pÃ¥ <a href=http://www.compaq.com/>Compaq</a> Proliant 4000 5/66 for Ã¥ teste fÃ¸rst tre, og deretter
+fire prosessorer. Til vÃ¥r forbauselse gav tre prosessorer nesten nÃ¸yaktig samme
 ytelse som to, mens fire prosessorer gav samme hastighet som vi hadde forventet
 med tre.<p>
 	Vi ringte <a href=http://www.microsoft.com>Microsoft</a>. Det viser seg at dersom du bruker SQL Server 4.21a's
 SMPStat parameter, noe <a href=http://www.microsoft.com>Microsoft</a> ikke anbefaler, vrir du et internt parameter i
-programvaren, som i sin tur ber programvaren om å bruke alle tilgjengelige
+programvaren, som i sin tur ber programvaren om Ã¥ bruke alle tilgjengelige
 prosessorer. Hvis ikke vil SQL-serveren behandle et 3-prosessors system som et
 2-prosessors og 4-prosessors system som et med bare tre. Vi fikk ingen
-problemer i vår forholdsvis korte test, men <a href=http://www.microsoft.com>Microsoft</a> advarer med at bruk av
-SMPStat kan få nokså kjedelige følger og føre til at databsen låses. <a href=http://www.microsoft.com>Microsoft</a>
-gir derfor ingen støtte ved bruk av SMPStat, og hjelper deg ikke med eventuelle
+problemer i vÃ¥r forholdsvis korte test, men <a href=http://www.microsoft.com>Microsoft</a> advarer med at bruk av
+SMPStat kan fÃ¥ noksÃ¥ kjedelige fÃ¸lger og fÃ¸re til at databsen lÃ¥ses. <a href=http://www.microsoft.com>Microsoft</a>
+gir derfor ingen stÃ¸tte ved bruk av SMPStat, og hjelper deg ikke med eventuelle
 problemer i den forbindelse. I den kommende versjon 6.0 av SQL Server er dette
 plunderet eliminert, i og med at SMPStat her brukes som standard.<p>
-	Vi hadde planlagt å ta med en Intel-basert SMP-server fra <a href=/html/adv/DEC/DEC.html>Digital Equipment</a>
+	Vi hadde planlagt Ã¥ ta med en Intel-basert SMP-server fra <a href=/html/adv/DEC/DEC.html>Digital Equipment</a>
 (som selskapet selger i tillegg til sin egen Alpha-chip), men Digital var ikke
-i stand til å levere en slik maskin grunnet konflikter knyttet til
+i stand til Ã¥ levere en slik maskin grunnet konflikter knyttet til
 produksjonsplanen.<p>
 	Andre potensielle deltakere i denne kappstriden rundt SMP-servere, er
 multiprosesseringssystemer basert PowerPC-chipen. Kilder hevder at det innen
 juni skal foreligge versjoner Windows NT og <a href="http://www.austin.ibm.com/pspinfo/warp.html">OS/2</a> for PowerPC maskinvare, og at
-begge operativsystemene vil støtte SMP rett ut av boksen. Denne måneden har
+begge operativsystemene vil stÃ¸tte SMP rett ut av boksen. Denne mÃ¥neden har
 <a href=http://www.microsoft.com>Microsoft</a> formelt sluppet beta-versjonen av Windows NT for PowerPC, som
-innledningsvis kjører på et Motorola-system. Uansett hvilket operativsystem som
-blir det mest utbredte, vil Intel utvilsomt føle pusten i ryggen fra PowerPC.
-PowerPC-serverne vil bli omtalt når de er lanseringsklare. 
+innledningsvis kjÃ¸rer pÃ¥ et Motorola-system. Uansett hvilket operativsystem som
+blir det mest utbredte, vil Intel utvilsomt fÃ¸le pusten i ryggen fra PowerPC.
+PowerPC-serverne vil bli omtalt nÃ¥r de er lanseringsklare. 
 <h3>
 Slik testet vi</h3>
-For å prøve ut de tre serverne for symmetrisk multiprosessering (SMP) i denne
-testen, utarbeidet vi standard ytelse-tester der vekten ble lagt på servernes
-hovedstyrke -- å håndtere CPU-intensivt arbeid. Vi visste fra tidligere tester
-at SMP-servere kunne forsinke ytelsen på nettverk som hovedsakelig befatter seg
+For Ã¥ prÃ¸ve ut de tre serverne for symmetrisk multiprosessering (SMP) i denne
+testen, utarbeidet vi standard ytelse-tester der vekten ble lagt pÃ¥ servernes
+hovedstyrke -- Ã¥ hÃ¥ndtere CPU-intensivt arbeid. Vi visste fra tidligere tester
+at SMP-servere kunne forsinke ytelsen pÃ¥ nettverk som hovedsakelig befatter seg
 med fil/utskrift-jobber. Videre analyser med utgangspunkt i samtaler med
-leverandører og resultatene av vår leserundersøkelser, bekreftet at disse
-SMP-ene er mest effektive nå de arbeider med CPU-intensive
+leverandÃ¸rer og resultatene av vÃ¥r leserundersÃ¸kelser, bekreftet at disse
+SMP-ene er mest effektive nÃ¥ de arbeider med CPU-intensive
 prosesseringsoppgaver som transaksjoner, CAD eller CAM samt statistisk
 analyse.<p>
-	Vi prøvde ut SMP-ene med en finjustert versjon av datasettet som ble brukt i
-en hastighetstest for transaksjonsprosessering på database-servere i november
-1994. For å gjøre dataene så skalerbare og CPU-intensive som mulig, blåste vi
-opp antallet oppslag og kalkuleringer. For eksempel økte vi antallet
-understreng-søk i våre transaksjoner, samt antall linjer per ordre, slik at
-database-serveren ikke bare måtte innhente, men også sammenlikne og manipulere
-records. Alle disse oppgavene er svært avhengige av CPU-ytelsen. Vi eliminerte
+	Vi prÃ¸vde ut SMP-ene med en finjustert versjon av datasettet som ble brukt i
+en hastighetstest for transaksjonsprosessering pÃ¥ database-servere i november
+1994. For Ã¥ gjÃ¸re dataene sÃ¥ skalerbare og CPU-intensive som mulig, blÃ¥ste vi
+opp antallet oppslag og kalkuleringer. For eksempel Ã¸kte vi antallet
+understreng-sÃ¸k i vÃ¥re transaksjoner, samt antall linjer per ordre, slik at
+database-serveren ikke bare mÃ¥tte innhente, men ogsÃ¥ sammenlikne og manipulere
+records. Alle disse oppgavene er svÃ¦rt avhengige av CPU-ytelsen. Vi eliminerte
 tenkepausene, som svarer til et par sekunder mellom hver transaksjon og er
-plassert i skriptet for å simulere brukernes tenkepauser.<p>
+plassert i skriptet for Ã¥ simulere brukernes tenkepauser.<p>
 
 
 <h1>TABELL</h1>
@@ -162,11 +162,11 @@ Transaksjonsprosessering       (200) Tilfredsstillende 100<p>
 28.88 TPM (transaksjoner pr. minutt) plasserte Manhattan sist av de tre
 serverne.<p>
 <p>
-Beslutningsstøtte      (125) Tilfredsstillende 63 <p>
-Her var Manhattan nest dårligst med 2.19.09. <p>
+BeslutningsstÃ¸tte      (125) Tilfredsstillende 63 <p>
+Her var Manhattan nest dÃ¥rligst med 2.19.09. <p>
 <p>
 Konfigurering og bruksvennlighet       (100) Veldig bra 75 <p>
-AST forhåndskonfigurerer ikke systemet, men gir denne muligheten til
+AST forhÃ¥ndskonfigurerer ikke systemet, men gir denne muligheten til
 forhandlerne. Programmet for diskkonfigurering er GUI-basert og krever en mus,
 den gjeldende konfigurasjonen vises i et godt diagram. Manhattans
 konfigureringsprogram er ikke integrert. Systemet kunne ikke startes opp fra
@@ -177,29 +177,29 @@ Manhattan er utstyrt med minst to 90-MHz Pentium-prosessorer. Det er det eneste
 systemet som tilbyr bare 256 KB cache RAM, og ikke 512 KB. Det har kapasitet
 for 256 MB 32-bits system-minne og 512 KB videominne. Systemet har seks EISA-
 og to PCI-spor (et av sporene deles), men et PCI-spor brukes av RAID-kontroller
-som leveres som standard. Serveren støtter så mye som 32 GB lagring
+som leveres som standard. Serveren stÃ¸tter sÃ¥ mye som 32 GB lagring
 (hot-swappable). <p>
 <p>
 Systemdesign      (75) Bra 47 <p>
-Manhattans design er på det jevne, med delt cache og en enkel låsbar dør som er
-noe vrien å åpne og lukke. De første 16 MB minne inneholder en feilkorrigerende
+Manhattans design er pÃ¥ det jevne, med delt cache og en enkel lÃ¥sbar dÃ¸r som er
+noe vrien Ã¥ Ã¥pne og lukke. De fÃ¸rste 16 MB minne inneholder en feilkorrigerende
 kode (Error Correcting Code- ECC); AST har lagt inn feilkorreksjon i andre
-komponenter i systemet, også kablingen. Når den enkle døra lukkes og låses,
-begrenses tilgangen til skruene på sidepanelet. System har 300 watts
+komponenter i systemet, ogsÃ¥ kablingen. NÃ¥r den enkle dÃ¸ra lukkes og lÃ¥ses,
+begrenses tilgangen til skruene pÃ¥ sidepanelet. System har 300 watts
 kraftforsyning med egen vifte. Hver CPU er utstyrt med en beskyttelseskappe med
-vifte. Det finnes også en sentralkjølevifte.<p>
+vifte. Det finnes ogsÃ¥ en sentralkjÃ¸levifte.<p>
 <p>
-Støtte og pris: <p>
+StÃ¸tte og pris: <p>
 Dokumentasjon      (50) Perfekt 50<p>
 ASTs dokumentasjon er lettlest og velstrukturert. Den inneholder en omfattende
-del om problemsøk med en liste over feilkoder, samt en del som omhandler
+del om problemsÃ¸k med en liste over feilkoder, samt en del som omhandler
 demontering av systemet.<p>
 <p>
-Støtte  (50) Perfekt 50 <p>
-Teknisk støtte  (50) Bra 31 <p>
+StÃ¸tte  (50) Perfekt 50 <p>
+Teknisk stÃ¸tte  (50) Bra 31 <p>
 <p>
 Pris            (100) Bra 63 <p>
-Prisen på et basissystem med en 90-MHz CPU, 256 KB cache, 16MB RAM og to 1GBs
+Prisen pÃ¥ et basissystem med en 90-MHz CPU, 256 KB cache, 16MB RAM og to 1GBs
 stasjoner, RAID-kontroller koster 65.950, en Pentium-prosessor koster 5.000
 kroner.<p>
 Poengsum            6.3 <p>
@@ -211,48 +211,48 @@ Ytelse: Skalerbarhet       (150) Perfekt 150<p>
  97.34 prosent var best i testen. <p>
 <p>
 Transaksjonsprosessering       (200) Tilfredsstillende 100<p>
- 32.80 TPM gav Proliant en ny førsteplass. <p>
+ 32.80 TPM gav Proliant en ny fÃ¸rsteplass. <p>
 <p>
-Beslutningsstøtte    (125) Tilfredsstillende 63 <p>
- Med 2:15:05 havnet Proliant øverst på pallen også her. <p>
+BeslutningsstÃ¸tte    (125) Tilfredsstillende 63 <p>
+ Med 2:15:05 havnet Proliant Ã¸verst pÃ¥ pallen ogsÃ¥ her. <p>
 <p>
 Konfigurering og bruksvennlighet       (100) Veldig bra 75<p>
 Det CD-ROM-baserte SmartStart-programmet for systemkonfigurering er fullt
-integrert, selv om det ikke leveres forhåndsinstallert. SmartStart omfatter
-alle operativsystemer som støttes, og inneholder koder for lisensaktivering for
-dem som er innkjøpt. Proliant-systemet kan startes opp fra CD-ROM-platen, og
-installerer det forhåndskonfigurerte operativsystemet etter Compaqs
+integrert, selv om det ikke leveres forhÃ¥ndsinstallert. SmartStart omfatter
+alle operativsystemer som stÃ¸ttes, og inneholder koder for lisensaktivering for
+dem som er innkjÃ¸pt. Proliant-systemet kan startes opp fra CD-ROM-platen, og
+installerer det forhÃ¥ndskonfigurerte operativsystemet etter Compaqs
 anvisninger.<p>
 <p>
 Utvidelsesmuligheter      (100) Veldig bra 75<p>
-Proliant kan ta fire 90-MHz Pentium-prosessorer. Vil man gå fra to til fire
-CPU-er, blir det imidlertid nødvendig å flytte RAID-kontrollerne som ble brukt
+Proliant kan ta fire 90-MHz Pentium-prosessorer. Vil man gÃ¥ fra to til fire
+CPU-er, blir det imidlertid nÃ¸dvendig Ã¥ flytte RAID-kontrollerne som ble brukt
 i denne konfigurasjonen til Proliants valgfrie lagringssystem. The Proliant har
 kapasitet for hele 512 MB 32-bits system-minne og 1MB videominne. Systemet har
-åtte EISA-spor, men ingen PCI-spor. Serverens støtte er begrenset til 10GB
+Ã¥tte EISA-spor, men ingen PCI-spor. Serverens stÃ¸tte er begrenset til 10GB
 disklagringsplass.<p>
  <p>
 Systemdesign      (75) Bra 47 <p>
 Proliant-serveren var det eneste systemet med en dedikert cache for hver enkelt
-CPU. De første 32 MB systemminne inneholder også ECC. Den låsbare frontdøra kan
-åpnes og tas bort fra systemet. Kassen er utformet slik at strømforsyningen
-ikke kan være på  samtidig som frontdøra er åpen. Sidepanelet kan trekkes ut
-for å gi tilgang til prosessorene og sporene. Systemet har &eacute;n
-strømforsyning, fire kjølevifter og beskyttelseskapper på prosessorene. Det er
-ganske lett å få tilgang til stasjonene, og de glir glatt inn og ut av rammene.
-Det er heller ikke vanskelig å finne bus-sporene eller SIMM-bankene.<p>
+CPU. De fÃ¸rste 32 MB systemminne inneholder ogsÃ¥ ECC. Den lÃ¥sbare frontdÃ¸ra kan
+Ã¥pnes og tas bort fra systemet. Kassen er utformet slik at strÃ¸mforsyningen
+ikke kan vÃ¦re pÃ¥  samtidig som frontdÃ¸ra er Ã¥pen. Sidepanelet kan trekkes ut
+for Ã¥ gi tilgang til prosessorene og sporene. Systemet har &eacute;n
+strÃ¸mforsyning, fire kjÃ¸levifter og beskyttelseskapper pÃ¥ prosessorene. Det er
+ganske lett Ã¥ fÃ¥ tilgang til stasjonene, og de glir glatt inn og ut av rammene.
+Det er heller ikke vanskelig Ã¥ finne bus-sporene eller SIMM-bankene.<p>
 <p>
-Støtte og pris: Dokumentasjon      (50) Veldig bra 38 <p>
-Compaqs håndbok er perfekt. Den inneholder ikke illustrasjoner,
+StÃ¸tte og pris: Dokumentasjon      (50) Veldig bra 38 <p>
+Compaqs hÃ¥ndbok er perfekt. Den inneholder ikke illustrasjoner,
 "skritt-for-skritt"-instruksjoner eller diagrammer, men online-biblioteket er
 meget bra.<p>
 <p>
-Støtte  (50) Perfekt 50<p>
+StÃ¸tte  (50) Perfekt 50<p>
 <p>
-Teknisk støtte  (50) Tilfredsstillende 25<p>
+Teknisk stÃ¸tte  (50) Tilfredsstillende 25<p>
 <p>
 Pris            (100) Tilfredsstillende 50.00 <p>
-Basiskonfigurasjonen på Proliant 2000 5/90 inneholder en 90 Mhz Pentium, 32 MB
+Basiskonfigurasjonen pÃ¥ Proliant 2000 5/90 inneholder en 90 Mhz Pentium, 32 MB
 RAM, nettverkskort, ingen disker koster 85.000 kroner. Et nytt prosessorkort
 koster 35.000 kroner.<p>
 <p>
@@ -270,18 +270,18 @@ Poengsum            6.7<p>
 <p>
 Ytelse:<p>
 Skalerbarhet       (150) Bra 94<p>
-80.7 prosent var dårligst av de tre.<p>
+80.7 prosent var dÃ¥rligst av de tre.<p>
  <p>
 Transaksjonsprosessering       (200) Tilfredsstillende 100<p>
-30.50 TPM var såvidt bedre enn Manhattan.<p>
+30.50 TPM var sÃ¥vidt bedre enn Manhattan.<p>
 <p>
-Beslutningsstøtte  (125) Dårlig 31 <p>
+BeslutningsstÃ¸tte  (125) DÃ¥rlig 31 <p>
 Svake 3.04.41 i denne testen gav Poweredge en klar sisteplass.<p>
 <p>
 Konfigurering og bruksvennlighet       (100) Bra 63<p>
-Poweredge leveres ukonfigurert, men kan forhåndskonfigureres av forhandleren
-hvis du er villig til å betale for det. Bryterinnstillingene er forholdsvis
-lett tilgjengelige. Vi måtte kjøre hvert konfigureringsprogram separat fra
+Poweredge leveres ukonfigurert, men kan forhÃ¥ndskonfigureres av forhandleren
+hvis du er villig til Ã¥ betale for det. Bryterinnstillingene er forholdsvis
+lett tilgjengelige. Vi mÃ¥tte kjÃ¸re hvert konfigureringsprogram separat fra
 kommandolinjen. RAID-konfig.programmet er ikke integrert med EISA og
 systemkonfigurasjonen. Systemet kunne ikke startes opp fra
 konfigureringsdisken.<p>
@@ -289,29 +289,29 @@ konfigureringsdisken.<p>
 Utvidelsesmuligheter      (100) Bra 63<p>
 <a href=http://www.dell.com/>Dell</a> kan ta imot to 100-MHz Pentium-prosessorer, med 512 MB 64-bits
 system-minne og 2 MB videominne. Serveren har kapasitet for hele 24 GB
-lagringsplass. Den har åtte EISA-spor og to PCI-spor, men de to busene deler
+lagringsplass. Den har Ã¥tte EISA-spor og to PCI-spor, men de to busene deler
 plassen som ikke kan romme mer enn ett kort.<p>
 <p>
 Systemdesign      (75) Veldig bra 56<p>
 Kun Poweredges bus-spor er helt tilgjengelige fra toppen av maskinen, noe som
-kompenserer for delt cache og mangelen på ECC-minne (som er valgfritt).
-Poweredge mangler lokk eller deksel for strømbryteren. Når kassen er tatt av,
+kompenserer for delt cache og mangelen pÃ¥ ECC-minne (som er valgfritt).
+Poweredge mangler lokk eller deksel for strÃ¸mbryteren. NÃ¥r kassen er tatt av,
 er bus-sporene tilgjengelige fra toppen av maskinen, or stasjonene glir lett
 inn og ut av rammene. Minnet er tilgjengelig bare dersom du skrur av bakplaten
-(fire skruer). Maskinen har to strømforsyninger som ligger ved siden av
+(fire skruer). Maskinen har to strÃ¸mforsyninger som ligger ved siden av
 hverandre, og fire vifter. Beskyttelseskappene over CPU-ene mangler vifter, men
 kontrollerer temperaturen.<p>
 <p>
-Støtte og pris: <p>
+StÃ¸tte og pris: <p>
 Dokumentasjon      (50) Veldig bra 38 <p>
-Håndbøkene for Poweredge er fulle av "skritt-for-skritt"-instruksjoner,
+HÃ¥ndbÃ¸kene for Poweredge er fulle av "skritt-for-skritt"-instruksjoner,
 flytdiagrammer og diagrammer, og er velskrevne. Enkelte enheter, som programmet
 for diskkonfigurering, er dessverre ikke omtalt.<p>
 <p>
-Støtte  (50) Perfekt 50<p>
-Teknisk støtte  (50) Veldig bra 38<p>
+StÃ¸tte  (50) Perfekt 50<p>
+Teknisk stÃ¸tte  (50) Veldig bra 38<p>
 Pris            (100) Tilfredsstillende 50<p>
-Basis-konfigurasjonen på Poweredge XE 590-2 har en 90-MHz CPU, 16 MB RAM og en
+Basis-konfigurasjonen pÃ¥ Poweredge XE 590-2 har en 90-MHz CPU, 16 MB RAM og en
 1 GB harddisk koster 50.000 kroner, en Pentium-prosessor koster 8.400 kr.<p>
 Poengsum            5.8 <p>
 <p>

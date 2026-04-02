@@ -16,168 +16,168 @@
 
 <blockquote><h4>
 <hr>
-Utvikling og vedlikehold av applikasjoner i heterogene miljøer er komplisert og
-risikofylt. Denne kronikken ser på viktige sider i en optimal strategi for
+Utvikling og vedlikehold av applikasjoner i heterogene miljÃ¸er er komplisert og
+risikofylt. Denne kronikken ser pÃ¥ viktige sider i en optimal strategi for
 konfigurasjonsstyring.<hr>
 </h4></blockquote>
 Brukere av IT krever stadig mer komplekse applikasjoner. Skrevet i fundamentalt
-ulike verktøy, skal de kunne utveksle data. Nye verktøy, med angivelige mye
+ulike verktÃ¸y, skal de kunne utveksle data. Nye verktÃ¸y, med angivelige mye
 bedre egenskaper, introduseres hyppig. Framskritt i plattform-teknologi og
-endrede forretningskrav gjør det påkrevd å kunne flytte applikasjoner til nye
-maskintyper og operativsystem. Samtidig ser vi at det er svært vanskelig å
-estimere riktig ressursbehov for å implementere nye moduler eller endringer.<p>
-	For bedre å kunne håndtere høykomplekse applikasjoner finnes i dag mange gode
-hjelpemidler. Analyse-/design-metoder og verktøy gjør det langt lettere å holde
-høy kvalitet på applikasjoner, hvis vi har vett nok til å benytte oss av dem.
-Bruk av strukturerte test-metodikker og automatiserte test-verktøy gjør at vi
-kan vite mer om kvaliteten på del-applikasjoner vi slipper fra oss. Men mye av
-dette vil være bortkastet uten at vi samtidig lager en plan for hvordan vi vil
-styre konfigurasjonen(samlingen) av moduler. Velger vi i tillegg å benytte oss
-av moderne verktøy for konfigurasjon av programvare (SCM-verktøy), som f.eks.
+endrede forretningskrav gjÃ¸r det pÃ¥krevd Ã¥ kunne flytte applikasjoner til nye
+maskintyper og operativsystem. Samtidig ser vi at det er svÃ¦rt vanskelig Ã¥
+estimere riktig ressursbehov for Ã¥ implementere nye moduler eller endringer.<p>
+	For bedre Ã¥ kunne hÃ¥ndtere hÃ¸ykomplekse applikasjoner finnes i dag mange gode
+hjelpemidler. Analyse-/design-metoder og verktÃ¸y gjÃ¸r det langt lettere Ã¥ holde
+hÃ¸y kvalitet pÃ¥ applikasjoner, hvis vi har vett nok til Ã¥ benytte oss av dem.
+Bruk av strukturerte test-metodikker og automatiserte test-verktÃ¸y gjÃ¸r at vi
+kan vite mer om kvaliteten pÃ¥ del-applikasjoner vi slipper fra oss. Men mye av
+dette vil vÃ¦re bortkastet uten at vi samtidig lager en plan for hvordan vi vil
+styre konfigurasjonen(samlingen) av moduler. Velger vi i tillegg Ã¥ benytte oss
+av moderne verktÃ¸y for konfigurasjon av programvare (SCM-verktÃ¸y), som f.eks.
 CCC/Harvest, PVCS, ClearCase, SourceCodeManager,<b><i> </i></b>Endevor,  etc.
-vil mye av administrative oppgaver kunne forenkles og kvaliteten på de
-applikasjoner vi slipper ut til brukerne, vil øke. <p>
-	Beslutningen om å ta inn et moderne SCM-verktøy i en organisasjon er ofte
-overmoden når den kommer. F.eks. i typiske Unix-miljø har man gjerne benyttet
-verktøy for ren versjonshåndtering av filer som RCS eller SCCS. Dette har
+vil mye av administrative oppgaver kunne forenkles og kvaliteten pÃ¥ de
+applikasjoner vi slipper ut til brukerne, vil Ã¸ke. <p>
+	Beslutningen om Ã¥ ta inn et moderne SCM-verktÃ¸y i en organisasjon er ofte
+overmoden nÃ¥r den kommer. F.eks. i typiske Unix-miljÃ¸ har man gjerne benyttet
+verktÃ¸y for ren versjonshÃ¥ndtering av filer som RCS eller SCCS. Dette har
 fungert bra for mindre applikasjoner, mens applikasjoner som har vokst over tid
-gjerne har fått driftsansvarlige til gradvis å bygge opp svært komplekse skript
-for håndtering av versjoner i tillegg til omfattende manuelle rutiner for
-håndtering av endringer og kvalitetssikring. <p>
-	Lokalt produserte verktøy har lenge vært nødvendig fordi det ikke er så lenge
-siden gode SCM-verktøy kom på markedet.  Mange av disse lokale hjelpeverktøyene
-har representert konfigurasjonsstyring på svært avansert nivå, uten at man
-alltid har vært bevisst at man egentlig satt og utviklet et verktøy som lå
+gjerne har fÃ¥tt driftsansvarlige til gradvis Ã¥ bygge opp svÃ¦rt komplekse skript
+for hÃ¥ndtering av versjoner i tillegg til omfattende manuelle rutiner for
+hÃ¥ndtering av endringer og kvalitetssikring. <p>
+	Lokalt produserte verktÃ¸y har lenge vÃ¦rt nÃ¸dvendig fordi det ikke er sÃ¥ lenge
+siden gode SCM-verktÃ¸y kom pÃ¥ markedet.  Mange av disse lokale hjelpeverktÃ¸yene
+har representert konfigurasjonsstyring pÃ¥ svÃ¦rt avansert nivÃ¥, uten at man
+alltid har vÃ¦rt bevisst at man egentlig satt og utviklet et verktÃ¸y som lÃ¥
 utenfor den applikasjonen man skulle lage.<p>
 	I enkelte organisasjoner kan bevisstheten om betydningen av
-konfigurasjonsstyring og SCM-verktøy være svak. Det er viktig å forstå at
-konfigurasjonsstyring i dag ikke er en aktivitet på siden av en
+konfigurasjonsstyring og SCM-verktÃ¸y vÃ¦re svak. Det er viktig Ã¥ forstÃ¥ at
+konfigurasjonsstyring i dag ikke er en aktivitet pÃ¥ siden av en
 utviklingsavdelings hovedoppgaver, men en kjerneaktivitet i all profesjonell
 systemutvikling.<p>
-Skal man kunne bedrive konfigurasjonsstyring på profesjonelt vis, er det viktig
-å forstå hvilke elementer som inngår, dvs. styring av komponenter,
-applikasjoner, miljødata, alle endringer, prosessene som skal gjennomløpes for
+Skal man kunne bedrive konfigurasjonsstyring pÃ¥ profesjonelt vis, er det viktig
+Ã¥ forstÃ¥ hvilke elementer som inngÃ¥r, dvs. styring av komponenter,
+applikasjoner, miljÃ¸data, alle endringer, prosessene som skal gjennomlÃ¸pes for
 komponentene i ulike faser, og ikke minst innvirkningen dette skal ha for
 prosjektstyringen.<p>
-	La oss gå dypere inn på hvert av elementene i konfigurasjonstyring. Med
-komponenter mener vi alle filer og logiske deler som inngår i enn applikasjon.
-Dvs. både dokumentasjon, kildekode, biblioteker og ulike binærfiler. Styring av
-komponenter er først og fremst håndtering av versjoner av filer. Ideelt bør man
+	La oss gÃ¥ dypere inn pÃ¥ hvert av elementene i konfigurasjonstyring. Med
+komponenter mener vi alle filer og logiske deler som inngÃ¥r i enn applikasjon.
+Dvs. bÃ¥de dokumentasjon, kildekode, biblioteker og ulike binÃ¦rfiler. Styring av
+komponenter er fÃ¸rst og fremst hÃ¥ndtering av versjoner av filer. Ideelt bÃ¸r man
 ta kopi av alle versjoner som kan ha nytteverdi, men dette vil raskt gi
-astronomiske diskbehov. 	Derfor må det finnes en form for "delta"-teknologi som
-i alle fall tar vare på forskjellene. Dessuten må man ta vare på historikk-data
-som forteller hvem som har utført endringen, hva som er gjort, når og hvorfor.
-Gårsdagens versjonshåndterings-verktøy merker gjerne filene ved at disse
-dataene legges inn i selve kildefilene. Dette fungerer fint når vi holder oss
+astronomiske diskbehov. 	Derfor mÃ¥ det finnes en form for "delta"-teknologi som
+i alle fall tar vare pÃ¥ forskjellene. Dessuten mÃ¥ man ta vare pÃ¥ historikk-data
+som forteller hvem som har utfÃ¸rt endringen, hva som er gjort, nÃ¥r og hvorfor.
+GÃ¥rsdagens versjonshÃ¥ndterings-verktÃ¸y merker gjerne filene ved at disse
+dataene legges inn i selve kildefilene. Dette fungerer fint nÃ¥r vi holder oss
 til kode-/tekst-filer. <p>
-	I dag trenger man å kunne versjonshåndtere også binærfiler som objekt-kode,
-ikoner, bilder etc. Informasjon som gjelder versjonshåndteringen må derfor
+	I dag trenger man Ã¥ kunne versjonshÃ¥ndtere ogsÃ¥ binÃ¦rfiler som objekt-kode,
+ikoner, bilder etc. Informasjon som gjelder versjonshÃ¥ndteringen mÃ¥ derfor
 plasseres andre steder. <p>
-	Å vite hvilken versjon man jobber med har liten verdi dersom man ikke er
-sikret mot at andre kan overskrive din modul. Alle SCM-verktøy har derfor mer
-eller mindre avanserte check in-/out-mekanismer. Skal man versjonshåndtere en
-applikasjon er det nødvendig at alle komponenter kan håndteres som filer. Det
-er ikke mulig med alle utviklingsverktøy og man må da ofte lage egne programmer
-for å kunne ta komponenter ut på filer og tilbake til opprinnelsesstedet ved
-behov. Dette er unødig heft og spørsmålet er om man heller ikke konsekvent bør
-holde seg unna utviklingsverktøy som ikke tillater versjonshåndtering av alle
+	Ã… vite hvilken versjon man jobber med har liten verdi dersom man ikke er
+sikret mot at andre kan overskrive din modul. Alle SCM-verktÃ¸y har derfor mer
+eller mindre avanserte check in-/out-mekanismer. Skal man versjonshÃ¥ndtere en
+applikasjon er det nÃ¸dvendig at alle komponenter kan hÃ¥ndteres som filer. Det
+er ikke mulig med alle utviklingsverktÃ¸y og man mÃ¥ da ofte lage egne programmer
+for Ã¥ kunne ta komponenter ut pÃ¥ filer og tilbake til opprinnelsesstedet ved
+behov. Dette er unÃ¸dig heft og spÃ¸rsmÃ¥let er om man heller ikke konsekvent bÃ¸r
+holde seg unna utviklingsverktÃ¸y som ikke tillater versjonshÃ¥ndtering av alle
 objekter direkte.<p>
-	Med applikasjon mener vi alt som inngår som en del av en applikasjon. Dvs.
+	Med applikasjon mener vi alt som inngÃ¥r som en del av en applikasjon. Dvs.
 analyse og design-dokumentasjon, biblioteker, objektfiler, testresultat,
-ikoner, eksekverbare moduler, bilder etc. Hver unike sammensetting må kunne
-tildeles sitt unike versjonsnummer. Det må være mulig å kunne gjenskape en
-tidligere versjon av en applikasjon så lenge man bare har det nøyaktige
+ikoner, eksekverbare moduler, bilder etc. Hver unike sammensetting mÃ¥ kunne
+tildeles sitt unike versjonsnummer. Det mÃ¥ vÃ¦re mulig Ã¥ kunne gjenskape en
+tidligere versjon av en applikasjon sÃ¥ lenge man bare har det nÃ¸yaktige
 versjonsnummeret. Men det hjelper fint lite om det er teoretisk mulig, hvis det
-er forbundet med mye tid og arbeid å få fram en tidligere versjon. Et
-ufravikelig krav for moderne SCM-verktøy er derfor at de må kunne gjenskape
+er forbundet med mye tid og arbeid Ã¥ fÃ¥ fram en tidligere versjon. Et
+ufravikelig krav for moderne SCM-verktÃ¸y er derfor at de mÃ¥ kunne gjenskape
 tidligere versjoner raskt.<p>
-	Endringsstyring har mange navn:  Problemhåndtering, feilhåndtering etc.
-Viktig her er å ha en strukturert og planlagt saksgang for å håndtere alle
-ønsker om endringer i applikasjoner. Det betyr at man må kunne håndtere også
-endringer i kravspesifikasjoner på en ryddig måte. Framgangsmåten for å avklare
-hva som ønskes, om det skal gjøres og hvordan det skal gjøres, fastlegges.
-Videre må det også være en klar måte å håndtere evalueringer av om det ønskede
-resultat er oppnådd og melding om endringen. <p>
-	Ofte er det forbundet med høy risiko å endre i en modul. Det betyr at det må
-finnes måter å foreta konsekvensanalyser på. Slurv ved oppdateringer av analyse
-og design-dokumentasjon kan få kostbare følger. Endres det i en modul må det
-ofte skje noe i flere andre. Dette betyr at endringsstyringen må håndtere
-"pakker" av endringer. Disse pakkene kan ha egne livsløps-sykluser som er ulike
+	Endringsstyring har mange navn:  ProblemhÃ¥ndtering, feilhÃ¥ndtering etc.
+Viktig her er Ã¥ ha en strukturert og planlagt saksgang for Ã¥ hÃ¥ndtere alle
+Ã¸nsker om endringer i applikasjoner. Det betyr at man mÃ¥ kunne hÃ¥ndtere ogsÃ¥
+endringer i kravspesifikasjoner pÃ¥ en ryddig mÃ¥te. FramgangsmÃ¥ten for Ã¥ avklare
+hva som Ã¸nskes, om det skal gjÃ¸res og hvordan det skal gjÃ¸res, fastlegges.
+Videre mÃ¥ det ogsÃ¥ vÃ¦re en klar mÃ¥te Ã¥ hÃ¥ndtere evalueringer av om det Ã¸nskede
+resultat er oppnÃ¥dd og melding om endringen. <p>
+	Ofte er det forbundet med hÃ¸y risiko Ã¥ endre i en modul. Det betyr at det mÃ¥
+finnes mÃ¥ter Ã¥ foreta konsekvensanalyser pÃ¥. Slurv ved oppdateringer av analyse
+og design-dokumentasjon kan fÃ¥ kostbare fÃ¸lger. Endres det i en modul mÃ¥ det
+ofte skje noe i flere andre. Dette betyr at endringsstyringen mÃ¥ hÃ¥ndtere
+"pakker" av endringer. Disse pakkene kan ha egne livslÃ¸ps-sykluser som er ulike
 de som gjelder for enkeltmoduler.<p>
-	Generelt håndteres en endring etter tre dimensjoner: Den første beskriver type
-endring, ønske, krav, feil etc. Den andre dimensjonen beskriver produksjonen av
+	Generelt hÃ¥ndteres en endring etter tre dimensjoner: Den fÃ¸rste beskriver type
+endring, Ã¸nske, krav, feil etc. Den andre dimensjonen beskriver produksjonen av
 arbeidsordre: Problem beskrevet, vurdering gjort, konklusjon klar, etc. Den
-tredje dimensjonen beskriver utførelsen av arbeidsordren, ikke klar, kan
-påbegynnes, klar for test, utført og klar for test, og til slutt godkjent.
-Mange miljøer har utviklet sine egne prosesser for endringshåndtering før det
-første SCM-verktøy så dagens lys. Skal de ta i bruk et SCM-verktøy må
-betingelsen være at allerede innarbeidete prosesser kan implementeres i
-verktøyet.<p>
-	En applikasjon gjennomløper ulike prosesser på vei fra en fase til en annen.
-Ofte vil også en applikasjons ulike deler måtte ha egne utviklings-prosesser.
+tredje dimensjonen beskriver utfÃ¸relsen av arbeidsordren, ikke klar, kan
+pÃ¥begynnes, klar for test, utfÃ¸rt og klar for test, og til slutt godkjent.
+Mange miljÃ¸er har utviklet sine egne prosesser for endringshÃ¥ndtering fÃ¸r det
+fÃ¸rste SCM-verktÃ¸y sÃ¥ dagens lys. Skal de ta i bruk et SCM-verktÃ¸y mÃ¥
+betingelsen vÃ¦re at allerede innarbeidete prosesser kan implementeres i
+verktÃ¸yet.<p>
+	En applikasjon gjennomlÃ¸per ulike prosesser pÃ¥ vei fra en fase til en annen.
+Ofte vil ogsÃ¥ en applikasjons ulike deler mÃ¥tte ha egne utviklings-prosesser.
 Eksempelvis vil programmoduler som gjelder sikkerhet ha helt andre
 evalueringskriterier enn f.eks. et som gjelder bildebehandling. Et moderne
-SCM-verktøy må sikre prosess styring som tilbyr enkel tilpasning til ulike
-bruker/utvikler grupper. Prosess-styringen må gjenspeile organisasjonens måte å
-gjøre tingene på, som de er i dag. Samtidig må verktøyet være så smidig at
+SCM-verktÃ¸y mÃ¥ sikre prosess styring som tilbyr enkel tilpasning til ulike
+bruker/utvikler grupper. Prosess-styringen mÃ¥ gjenspeile organisasjonens mÃ¥te Ã¥
+gjÃ¸re tingene pÃ¥, som de er i dag. Samtidig mÃ¥ verktÃ¸yet vÃ¦re sÃ¥ smidig at
 konfigurasjonsstyringen ikke blir en flaskehals ved endringer i organisasjonens
-håndtering av applikasjoner. Det er nettopp dette som ofte blir problemet ved
-egenutviklede SCM-verktøy. <p>
-	Et moderne SCM-verktøy skal altså både muliggjøre at en organisasjon kan
-benytte den prosessgangen man har innarbeidet i dag, og muliggjøre endringer
-uten omfattende tilpasninger. I dagens verden, hvor åpenhet er kravet, er det
-også nødvendig at et SCM-verktøy kan tilpasses endringer både i applikasjonens
+hÃ¥ndtering av applikasjoner. Det er nettopp dette som ofte blir problemet ved
+egenutviklede SCM-verktÃ¸y. <p>
+	Et moderne SCM-verktÃ¸y skal altsÃ¥ bÃ¥de muliggjÃ¸re at en organisasjon kan
+benytte den prosessgangen man har innarbeidet i dag, og muliggjÃ¸re endringer
+uten omfattende tilpasninger. I dagens verden, hvor Ã¥penhet er kravet, er det
+ogsÃ¥ nÃ¸dvendig at et SCM-verktÃ¸y kan tilpasses endringer bÃ¥de i applikasjonens
 arkitektur samt endringer i plattform-arkitektur.<p>
-	Lite fokusert av leverandørene av SCM-verktøy, men svært viktig, er den nytte
-en prosjektleder kan ha av et SCM-verktøy som et styringsverktøy. En
-nøkkelfaktor for at en prosjektleder skal lykkes i å bringe et prosjekt i havn
-er at han/hun forstår å benytte seg av SW-metrikker. Dette er måledata som
+	Lite fokusert av leverandÃ¸rene av SCM-verktÃ¸y, men svÃ¦rt viktig, er den nytte
+en prosjektleder kan ha av et SCM-verktÃ¸y som et styringsverktÃ¸y. En
+nÃ¸kkelfaktor for at en prosjektleder skal lykkes i Ã¥ bringe et prosjekt i havn
+er at han/hun forstÃ¥r Ã¥ benytte seg av SW-metrikker. Dette er mÃ¥ledata som
 forteller reell tilstand til applikasjonen.  I ettertid kan man ofte se i
-problem-prosjekter at informasjon som har vært tilgjengelig i
-utviklingsmiljøet, ikke har blitt benyttet av prosjektledelsen. Årsaken til
-dette er at kunnskapen om SW-metrikker og hva de betyr, og ikke minst bør bety,
-er lite utbredt. 	Et moderne SCM-verktøy har mange ulike rapporter, og ofte vil
-man ha nytte av å legge til sine egne. Disse kan så benyttes til å identifisere
-problemområder i applikasjonen. Eksempelvis kan man identifisere del-områder
-med "påfallende" lite feil, eller med "påfallende" mye feil. Dvs. at testing
-ikke er gjennomført godt nok, eller at det er nødvendig med redesign av
+problem-prosjekter at informasjon som har vÃ¦rt tilgjengelig i
+utviklingsmiljÃ¸et, ikke har blitt benyttet av prosjektledelsen. Ã…rsaken til
+dette er at kunnskapen om SW-metrikker og hva de betyr, og ikke minst bÃ¸r bety,
+er lite utbredt. 	Et moderne SCM-verktÃ¸y har mange ulike rapporter, og ofte vil
+man ha nytte av Ã¥ legge til sine egne. Disse kan sÃ¥ benyttes til Ã¥ identifisere
+problemomrÃ¥der i applikasjonen. Eksempelvis kan man identifisere del-omrÃ¥der
+med "pÃ¥fallende" lite feil, eller med "pÃ¥fallende" mye feil. Dvs. at testing
+ikke er gjennomfÃ¸rt godt nok, eller at det er nÃ¸dvendig med redesign av
 del-applikasjonen.  Antallet moduler som det arbeides med er en god indikator
-på framdrift. Var 90 prosent av alle moduler ute til retting i forrige uke er
-applikasjonen neppe 90 prosent ferdig selv om planen sier det. Man kan også se
-på hvordan programmerere jobber. Enkelte programmerere kan arbeide med svært
+pÃ¥ framdrift. Var 90 prosent av alle moduler ute til retting i forrige uke er
+applikasjonen neppe 90 prosent ferdig selv om planen sier det. Man kan ogsÃ¥ se
+pÃ¥ hvordan programmerere jobber. Enkelte programmerere kan arbeide med svÃ¦rt
 mange moduler samtidig, mens andre sitter lang tid med en eneste. Dette betyr
-gjerne behov for redesign eller fordeling av oppgavene på flere. Store
-variasjoner i størrelsen på moduler indikerer problemer på samme måte som
-moduler med ekstremt mange endringsønsker/feil.  Det er SW-metrikkene som er
-fakta, ikke utsagn som gir uttrykk for håp.<p>
-	Hvis man finner at man må skaffe seg et helt nytt SCM-verktøy bør man se litt
-framover. Verktøyet må basere seg på et nøytral GUI. Det må kunne integreres
+gjerne behov for redesign eller fordeling av oppgavene pÃ¥ flere. Store
+variasjoner i stÃ¸rrelsen pÃ¥ moduler indikerer problemer pÃ¥ samme mÃ¥te som
+moduler med ekstremt mange endringsÃ¸nsker/feil.  Det er SW-metrikkene som er
+fakta, ikke utsagn som gir uttrykk for hÃ¥p.<p>
+	Hvis man finner at man mÃ¥ skaffe seg et helt nytt SCM-verktÃ¸y bÃ¸r man se litt
+framover. VerktÃ¸yet mÃ¥ basere seg pÃ¥ et nÃ¸ytral GUI. Det mÃ¥ kunne integreres
 med alle plattformer du har i dag, og alle ledende plattformer i markedet.
-Verktøyet må kunne integreres med det verktøyet du benytter for
-systemadministrasjon i dag, eller med de som er aktuelle å anskaffe. Verktøyet
-må ha lav startterskel og ha lagt vekt på brukervennlighet. Det bør benytte
+VerktÃ¸yet mÃ¥ kunne integreres med det verktÃ¸yet du benytter for
+systemadministrasjon i dag, eller med de som er aktuelle Ã¥ anskaffe. VerktÃ¸yet
+mÃ¥ ha lav startterskel og ha lagt vekt pÃ¥ brukervennlighet. Det bÃ¸r benytte
 almen terminologi og ha minst mulig terminologi som er spesifikk for
-verktøyleverandøren. Verktøyet kunne benyttes selv om bare deler av en
+verktÃ¸yleverandÃ¸ren. VerktÃ¸yet kunne benyttes selv om bare deler av en
 applikasjon er tatt inn under konfigurasjonsstyring.<p>
-	Ved utviklingen av store applikasjoner er det ofte ikke til å unngå at man får
-behov for å gjøre endringer i "tidligere" versjoner. Dette samtidig med at man
+	Ved utviklingen av store applikasjoner er det ofte ikke til Ã¥ unngÃ¥ at man fÃ¥r
+behov for Ã¥ gjÃ¸re endringer i "tidligere" versjoner. Dette samtidig med at man
 arbeider med nyere versjoner. Fenomenet kalles gjerne parallell utvikling. Skal
-dette bli vellykket må SCM-verktøyet ha innbygget flettemekanismer for
-samkjøring i en framtidig versjon. <p>
-	Introduksjonen av et SCM-verktøy i et høykomplekst miljø kan være krevende.
-Essensielt her er at man har valgt et verktøy som dekker de elementene i
-konfugurasjonstyring man trenger. Mens noen SCM-verktøy ikke er annet en vanlig
-filversjonering, har andre avanserte mekanismer for håndtering prosesstyring.
-God leverandørstøtte fra verktøyleverandøren er en forutsetning for miljøer med
+dette bli vellykket mÃ¥ SCM-verktÃ¸yet ha innbygget flettemekanismer for
+samkjÃ¸ring i en framtidig versjon. <p>
+	Introduksjonen av et SCM-verktÃ¸y i et hÃ¸ykomplekst miljÃ¸ kan vÃ¦re krevende.
+Essensielt her er at man har valgt et verktÃ¸y som dekker de elementene i
+konfugurasjonstyring man trenger. Mens noen SCM-verktÃ¸y ikke er annet en vanlig
+filversjonering, har andre avanserte mekanismer for hÃ¥ndtering prosesstyring.
+God leverandÃ¸rstÃ¸tte fra verktÃ¸yleverandÃ¸ren er en forutsetning for miljÃ¸er med
 virksomhetskritiske applikasjoner. <p>
-	Et godt SCM-verktøy som rammeverk for alle aktiviteter som inngår i
-systemutvikling og vedlikehold er helt nødvendig i dagens stadig mer heterogene
+	Et godt SCM-verktÃ¸y som rammeverk for alle aktiviteter som inngÃ¥r i
+systemutvikling og vedlikehold er helt nÃ¸dvendig i dagens stadig mer heterogene
 IT-verden. <p>
 <p>
 Senior konsulent Per-Helge Aurdal<p>
 IDC Integrert Data Consult
-<p><i>Et godt SCM-verktøy som rammeverk for alle aktiviteter som inngår i
-systemutvikling og vedlikehold er helt nødvendig i dagens stadig mer heterogene
+<p><i>Et godt SCM-verktÃ¸y som rammeverk for alle aktiviteter som inngÃ¥r i
+systemutvikling og vedlikehold er helt nÃ¸dvendig i dagens stadig mer heterogene
 IT-verden, skriver Per-Helge Aurdal. </i>
 <p>
 <a href=cw954111.html><img align=middle alt="[Forrige artikkel]" src=/CW/gifs/prev.gif></a> <a href=art-index.html><img align=middle alt="[Indeks]" src=/CW/gifs/up.gif></a> <a href=cw954113.html><img alt="[Neste artikkel]" align=middle src=/CW/gifs/next.gif></a> 
