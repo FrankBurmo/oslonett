@@ -1,0 +1,46 @@
+let fuse;
+let data = [];
+
+async function initSearch() {
+  const res = await fetch("/search-index.json");
+  data = await res.json();
+
+  fuse = new Fuse(data, {
+    keys: [
+      { name: "title", weight: 0.5 },
+      { name: "headings", weight: 0.3 },
+      { name: "content", weight: 0.2 }
+    ],
+    threshold: 0.3
+  });
+}
+
+function search(query) {
+  if (!query) return [];
+
+  return fuse.search(query, { limit: 20 });
+}
+
+function renderResults(results) {
+  const container = document.getElementById("results");
+  container.innerHTML = "";
+
+  results.forEach(r => {
+    const item = r.item;
+
+    const div = document.createElement("div");
+    div.innerHTML = `
+      <a href="${item.url}"><strong>${item.title || item.url}</strong></a>
+      <p>${item.content.substring(0, 150)}...</p>
+    `;
+
+    container.appendChild(div);
+  });
+}
+
+document.getElementById("searchBox").addEventListener("input", e => {
+  const results = search(e.target.value);
+  renderResults(results);
+});
+
+initSearch();
