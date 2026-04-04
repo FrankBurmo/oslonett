@@ -16,21 +16,21 @@
 <BR> <HR> <P>
 <H3><A NAME=SECTION00051200000000000000>3.1.2 Oversendelse av data i CGI</A></H3>
 <P>
-I klientenden er det tre måter å sende fra seg data på:
+I klientenden er det tre mÃ¥ter Ã¥ sende fra seg data pÃ¥:
 <P>
 <UL> <LI> <i>Via FORMS (se <A HREF="node29.html#Forms">5</A>)</i>
 <P>
- Dette er den mest fleksible måten. Den drøftes senere i dette 
+ Dette er den mest fleksible mÃ¥ten. Den drÃ¸ftes senere i dette 
  kompendiet.
 <P>
  <LI> <i>Som ekstra path komponenter etter skriptnavnet</i>
 <P>
- Dette kan også testes vha. det samme testskriptet som over.
+ Dette kan ogsÃ¥ testes vha. det samme testskriptet som over.
 <P>
- <LI> <i>Vha. ISINDEX eller den såkalte ``query'' mekanismen knyttet til URLer</i>
+ <LI> <i>Vha. ISINDEX eller den sÃ¥kalte ``query'' mekanismen knyttet til URLer</i>
 <P>
-  Dette foregår på den måten at man skriver et spørsmålstegn bak siste
-  komponent i URLen og så det man skal sende over av data, men kodet
+  Dette foregÃ¥r pÃ¥ den mÃ¥ten at man skriver et spÃ¸rsmÃ¥lstegn bak siste
+  komponent i URLen og sÃ¥ det man skal sende over av data, men kodet
   ihht. konvensjonen over. 
 </UL>
 <P>
@@ -51,13 +51,13 @@ De viktige forskjellene ligger ellers i flg:
  <LI> <b>POST</b>
 <P>
   Data mottas via standard input, og environment variablen
-  <b>$CONTENT_LENGTH</b> angir lengden på datastrømmen. Datastrømmen er ikke
+  <b>$CONTENT_LENGTH</b> angir lengden pÃ¥ datastrÃ¸mmen. DatastrÃ¸mmen er ikke
   terminert med end-of-file merke. I hvert fall kan man ikke forvente
-  det, og utpakkingsskriptene må lages deretter.
+  det, og utpakkingsskriptene mÃ¥ lages deretter.
 <P>
  <LI> <b>ISINDEX eller URL?query mekanismen</b>
 <P>
-  Disse to tingene er helt ekvivalente sett fra serveren og derfor også
+  Disse to tingene er helt ekvivalente sett fra serveren og derfor ogsÃ¥
   sett fra skriptet. Data sendes fortsatt via  <b>$QUERY_STRING</b>, men
   i tillegg vil data presenteres skriptet i form av kommandolinje argumenter,
   men da er data ferdig utpakket, ikke kodet!
@@ -66,11 +66,11 @@ De viktige forskjellene ligger ellers i flg:
 En full beskrivelse av environment variablene som
 CGI benytter <A HREF="http://hoohoo.ncsa.uiuc.edu/cgi/env.html">ligger her</A>.
 <P>
-Alt rundt koding og datatransport demonstreres best ved å 
-<A HREF="http://www.oslonett.no/home/steinar/cgitest.html">prøve skriptet</A>.
+Alt rundt koding og datatransport demonstreres best ved Ã¥ 
+<A HREF="http://www.oslonett.no/home/steinar/cgitest.html">prÃ¸ve skriptet</A>.
 <P>
 <BR> <HR>
 <P><ADDRESS>
-© Oslonett AS og Intervett AS, 03/05-95, 23:04:38
+Â© Oslonett AS og Intervett AS, 03/05-95, 23:04:38
 </ADDRESS>
 </BODY>

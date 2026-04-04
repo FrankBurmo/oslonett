@@ -17,12 +17,12 @@
 <H1><A NAME=SECTION00080000000000000000>6 CGI - Common Gateway Interface</A></H1>
  <A NAME=CGI>&#160;</A>
 <P>
-CGI er en mekanisme som kan benyttes for å knytte vilkårlige
-tredje parts applikasjoner til World Wide Web. Dette må gjøres
-ved at det skrives en gateway, et såkalt CGI skript, som
+CGI er en mekanisme som kan benyttes for Ã¥ knytte vilkÃ¥rlige
+tredje parts applikasjoner til World Wide Web. Dette mÃ¥ gjÃ¸res
+ved at det skrives en gateway, et sÃ¥kalt CGI skript, som
 fungerer som en dataskyfler mellom applikasjonen og 
-WWW klienten. Dvs. - oftest er det HTTP tjeneren som først
-tar i mot returdata fra skriptet og så på vegne av skriptet
+WWW klienten. Dvs. - oftest er det HTTP tjeneren som fÃ¸rst
+tar i mot returdata fra skriptet og sÃ¥ pÃ¥ vegne av skriptet
 sender det til klienten.
 <P>
 <i>CGI definerer
@@ -36,30 +36,30 @@ tredje parts applikasjonen og skriptet!</i>
 Figur <A HREF="node26.html#CGIfig">5</A> viser skjematisk hvordan et HTTP server skript kan virke:
 <P>
 <OL>   <LI>  Kommunikasjonen starter med at Web klienten, f.eks. Mosaic eller Netscape, aktiverer en
-      link som skal kalle opp et server skript. Dette kan foregå vha. en <b>GET</b>
+      link som skal kalle opp et server skript. Dette kan foregÃ¥ vha. en <b>GET</b>
       eller <b>POST</b> HTTP melding.
 <P>
-   <LI> Denne beskjeden går til HTTP serveren som så står for selve oppstarten av
+   <LI> Denne beskjeden gÃ¥r til HTTP serveren som sÃ¥ stÃ¥r for selve oppstarten av
       skriptet. Det kan hende brukeren har sendt med data fra Web klienten som skal til
-      skriptet. Dette vil serveren ta hånd om ihht. til CGI specen. Denne
+      skriptet. Dette vil serveren ta hÃ¥nd om ihht. til CGI specen. Denne
       beskriver hvordan
       skriptet skal motta data fra serveren samt hvordan skriptet skal sende 
       data tilbake til serveren.
 <P>
-   <LI> Når skriptet blir kalt opp og får tilsendt data (dette kan skje i en
+   <LI> NÃ¥r skriptet blir kalt opp og fÃ¥r tilsendt data (dette kan skje i en
       kombinasjon av kommandolinje-argumenter, environment variable og
       standard input, <A HREF="http://hoohoo.ncsa.uiuc.edu/cgi/intro.html">se CGI specen</A>), kan det hende en tredje applikasjon skal
-      involveres, slik figuren antyder. Det er i så fall skriptets oppgave å ta hånd
+      involveres, slik figuren antyder. Det er i sÃ¥ fall skriptets oppgave Ã¥ ta hÃ¥nd
       om all denne kommunikasjonen (kanskje med et databasesystem el.). Til
-      slutt må imidlertid skriptet sende data tilbake til HTTP serveren ihht. CGI
-      specen. Figuren antyder også at skriptet kan sende data direkte tilbake til
-      Mosaic - denne muligheten skal vi foreløpig glemme.
+      slutt mÃ¥ imidlertid skriptet sende data tilbake til HTTP serveren ihht. CGI
+      specen. Figuren antyder ogsÃ¥ at skriptet kan sende data direkte tilbake til
+      Mosaic - denne muligheten skal vi forelÃ¸pig glemme.
 <P>
-   <LI> Når HTTP serveren får data tilbake fra skriptet, går dette automatisk videre
-      til Web klienten på en måte som er forståelig for denne. 
+   <LI> NÃ¥r HTTP serveren fÃ¥r data tilbake fra skriptet, gÃ¥r dette automatisk videre
+      til Web klienten pÃ¥ en mÃ¥te som er forstÃ¥elig for denne. 
 </OL>
 <P>
-Figuren finnes også <A HREF="/historie/IV/kurs/WWW1/gifs/CGI.gif">i full størrelse her</A>.
+Figuren finnes ogsÃ¥ <A HREF="/historie/IV/kurs/WWW1/gifs/CGI.gif">i full stÃ¸rrelse her</A>.
 <BR> <HR>
 <UL> 
 <LI> <A NAME=tex2html447 HREF="node27.html#SECTION00081000000000000000">6.1 Et CGI skript</A>
@@ -73,6 +73,6 @@ Figuren finnes også <A HREF="/historie/IV/kurs/WWW1/gifs/CGI.gif">i full størrel
 <BR> <HR> <P>
 <BR> <HR>
 <P><ADDRESS>
-© Oslonett AS  15/05-95, 11:16:50
+Â© Oslonett AS  15/05-95, 11:16:50
 </ADDRESS>
 </BODY>

@@ -16,65 +16,65 @@
 <BR> <HR> <P>
 <H3><A NAME=SECTION00042300000000000000>2.2.3 Strukturelle tager</A></H3>
 <P>
-Dette er tager som benyttes for å angi <i> strukturer</i> innen et dokument.
-Dette kan være alt fra ulike typer nivåer og overskrifter paragrafer
+Dette er tager som benyttes for Ã¥ angi <i> strukturer</i> innen et dokument.
+Dette kan vÃ¦re alt fra ulike typer nivÃ¥er og overskrifter paragrafer
 og tekstblokker.
 <P>
 <DL >  <tt> &lt;h1&gt;</tt>
  ... <tt> &lt;/h1&gt;</tt>
 
-Angir ytterste seksjonseringsnivå i et dokument. Bør alltid være med, og brukes
-ofte for å angi dokumentets tittel, identisk med <tt> &lt;title&gt;</tt>
+Angir ytterste seksjonseringsnivÃ¥ i et dokument. BÃ¸r alltid vÃ¦re med, og brukes
+ofte for Ã¥ angi dokumentets tittel, identisk med <tt> &lt;title&gt;</tt>
  tagen.h1
 <P>
   <tt> &lt;h?&gt;</tt>
  ... <tt> &lt;/h?&gt;</tt>
 
-HTML støtter inntil 6 undernivåer i et dokument, angitt ved tagene
+HTML stÃ¸tter inntil 6 undernivÃ¥er i et dokument, angitt ved tagene
 <tt> &lt;h2&gt;</tt>
  til <tt> &lt;h6&gt;</tt>
-. Bruk disse for å angi undernivåer og 
-deloverskrifter, men ikke ``hopp over'' et eller flere nivåer når
-et undernivå brukes.
+. Bruk disse for Ã¥ angi undernivÃ¥er og 
+deloverskrifter, men ikke ``hopp over'' et eller flere nivÃ¥er nÃ¥r
+et undernivÃ¥ brukes.
 <P>
 WWW browsere vil vise tekst innenfor disse tagene i forskjellige
-fonstørrelser og fonttyper, men det er helt opp til det enkelte
-program hvordan dette gjøres. Ikke fall for fristelsen til å bruke
-slike tager bare for å tvinge fram en spesiell type layout!h2
+fonstÃ¸rrelser og fonttyper, men det er helt opp til det enkelte
+program hvordan dette gjÃ¸res. Ikke fall for fristelsen til Ã¥ bruke
+slike tager bare for Ã¥ tvinge fram en spesiell type layout!h2
 <A NAME=457>&#160;</A> <A NAME=458>&#160;</A> <A NAME=459>&#160;</A>
 <A NAME=460>&#160;</A>
 <P>
   <tt> &lt;blockquote&gt;</tt>
  ... <tt> &lt;/blockquote&gt;</tt>
 
-Brukes for å skille ut en del av en tekst, f.eks. et sitat el. De 
+Brukes for Ã¥ skille ut en del av en tekst, f.eks. et sitat el. De 
 fleste Web browsere vil lage litt luft foran og bak denne tagen
-og sette teksten med innrykket høyre- og venstre marg, men dette er
-selvsagt ikke noe man kan anta sånn uten videre. Denne blokktekst
-tagen brukes ofte til å sette ingresser ol.blockquote
+og sette teksten med innrykket hÃ¸yre- og venstre marg, men dette er
+selvsagt ikke noe man kan anta sÃ¥nn uten videre. Denne blokktekst
+tagen brukes ofte til Ã¥ sette ingresser ol.blockquote
 <P>
   <tt> &lt;pre&gt;</tt>
  ... <tt> &lt;/pre&gt;</tt>
 
 Brukes for preformattert tekst. Tekst som settes innenfor denne
 tagen vil beholde alle blanke tegn, tabulatorer og linjeskift.
-Siden HTML 2.0 ikke har støtte for tabeller, brukes ofte denne
-tagen for å sette tabeller og annen tekst der man ønsker
+Siden HTML 2.0 ikke har stÃ¸tte for tabeller, brukes ofte denne
+tagen for Ã¥ sette tabeller og annen tekst der man Ã¸nsker
 aligning av kolonner. En forutsetning for at dette skal bli
-pent, er at teksten settes med en fastbredde font, og det gjøres
+pent, er at teksten settes med en fastbredde font, og det gjÃ¸res
 automatisk av Web browseren.
 <P>
-Det er mulig å benytte opsjonen <tt> width=&quot;..&quot;</tt>
- for å gi et
+Det er mulig Ã¥ benytte opsjonen <tt> width=&quot;..&quot;</tt>
+ for Ã¥ gi et
 hint til browseren om bredde.
 <P>
 <tt> &lt;pre&gt;</tt>
- bør ikke inneholde høyere ordens strukturtager.pre
+ bÃ¸r ikke inneholde hÃ¸yere ordens strukturtager.pre
 <P>
   <tt> &lt;hr&gt;</tt>
 
-Horisontal rule -- altså en vannrett strek. Noen browsere vil lage
-et linjeskift før og etter denne, andre ikke. Foreslåtte opsjoner til
+Horisontal rule -- altsÃ¥ en vannrett strek. Noen browsere vil lage
+et linjeskift fÃ¸r og etter denne, andre ikke. ForeslÃ¥tte opsjoner til
 <tt> &lt;hr&gt;</tt>
 , er bla <tt> size=..</tt>
  og <tt> width=..</tt>
@@ -83,17 +83,17 @@ ennu ikke en offisiell del av HTML.hr
 <P>
   <tt> &lt;br&gt;</tt>
 
-Break -- tvungen linjeskift. Brukes der man ønsker å ha kontroll med
-linjeskift uten at man må være innenfor <tt> &lt;pre&gt;</tt>
+Break -- tvungen linjeskift. Brukes der man Ã¸nsker Ã¥ ha kontroll med
+linjeskift uten at man mÃ¥ vÃ¦re innenfor <tt> &lt;pre&gt;</tt>
  .. <tt> &lt;/pre&gt;</tt>
 .br
 <P>
   <tt> &lt;p&gt;</tt>
 
 Paragraph -- linjeskift pluss en blank linje, men det er opp til hver
-enkelt browser hvor mye ``luft'' som benyttes. Det er foreslått opsjonen
+enkelt browser hvor mye ``luft'' som benyttes. Det er foreslÃ¥tt opsjonen
 <tt> align=..</tt>
- der verdiene kan være &quot;center&quot;, &quot;right&quot; og &quot;left&quot;, men
+ der verdiene kan vÃ¦re &quot;center&quot;, &quot;right&quot; og &quot;left&quot;, men
 dette er ennu ingen offisiell del av HTML 2.0.p
 <P>
  </DL><BR> <HR><A NAME=tex2html368 HREF="node12.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/graphics/l2h/next_motif.gif"></A>   <A NAME=tex2html366 HREF="node8.html"><IMG ALIGN=BOTTOM ALT="up" SRC="/graphics/l2h/up_motif.gif"></A>   <A NAME=tex2html360 HREF="node10.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="/graphics/l2h/previous_motif.gif"></A>   <A NAME=tex2html370 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="/graphics/l2h/contents_motif.gif"></A>   <A NAME=tex2html371 HREF="node43.html"><IMG ALIGN=BOTTOM ALT="index" SRC="/graphics/l2h/index_motif.gif"></A>   <BR>
@@ -103,6 +103,6 @@ dette er ennu ingen offisiell del av HTML 2.0.p
 <BR> <HR> <P>
 <BR> <HR>
 <P><ADDRESS>
-© Oslonett AS / Intervett, 20/09-95, 19:53:00
+Â© Oslonett AS / Intervett, 20/09-95, 19:53:00
 </ADDRESS>
 </BODY>

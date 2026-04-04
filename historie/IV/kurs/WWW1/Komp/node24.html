@@ -12,50 +12,50 @@
  <BR> <HR><A NAME=tex2html421 HREF="node25.html"><IMG ALIGN=BOTTOM ALT="next" SRC="/graphics/l2h/next.gif"></A> <A NAME=tex2html419 HREF="node22.html"><IMG ALIGN=BOTTOM ALT="up" SRC="/graphics/l2h/up.gif"></A> <A NAME=tex2html415 HREF="node23.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="/graphics/l2h/previous.gif"></A> <A NAME=tex2html423 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="/graphics/l2h/contents_motif.gif"></A> <A NAME=tex2html424 HREF="node37.html"><IMG ALIGN=BOTTOM ALT="index" SRC="/graphics/l2h/index_motif.gif"></A> <BR>
 <B> Neste:</B> <A NAME=tex2html422 HREF="node25.html">5.3 Ekstern informasjon om </A>
 <B>Opp:</B> <A NAME=tex2html420 HREF="node22.html">5.2 Linker</A>
-<B> Forrige:</B> <A NAME=tex2html416 HREF="node23.html"> Eksempler på linker </A>
+<B> Forrige:</B> <A NAME=tex2html416 HREF="node23.html"> Eksempler pÃ¥ linker </A>
 <BR> <HR> <P>
 <H3><A NAME=SECTION00072200000000000000>5.2.2 Relative URLer</A></H3>
 <P>
-Relative URLer er greie å bruke når man fra et HTML dokument 
+Relative URLer er greie Ã¥ bruke nÃ¥r man fra et HTML dokument 
 skal referere andre filer som ligger innenfor samme filomgivelse
 som HTML dokumentet selv.
 <P>
 I en relativ link mangler protokollspesifikasjon, maskinnavn og evt. 
-portnummer i URLen, og URLen begynner altså med en eller annen path
+portnummer i URLen, og URLen begynner altsÃ¥ med en eller annen path
 spesifikasjon. Alle disse komponentene ``arves'' fra originaldokumentet.
 Hvis URLen begynner med en slash ('/'), angir man en full filspesifikasjon
 innenfor filsystemet til den aktuelle tjenesten (f.eks. HTTP filsystemet
 eller FTP filsystemet).
 <P>
 Begynner pathkomponenten derimot uten en innledende slash, tolkes
-angivelsen relativt til det filområdet orignaldokumentet lå på.
+angivelsen relativt til det filomrÃ¥det orignaldokumentet lÃ¥ pÃ¥.
 Noen eksempler vil klarlegge dette. Anta at vi har et HTML dokument dok1.html
-liggende på et filområde i en Web tjener. I dette området ligger
-også dokumentene dok2.html og dok3.html og underkatalogene dir1 og dir2.
-På underkatalogen dir1 ligger dokumentet dok1-1.html og på området dir2
+liggende pÃ¥ et filomrÃ¥de i en Web tjener. I dette omrÃ¥det ligger
+ogsÃ¥ dokumentene dok2.html og dok3.html og underkatalogene dir1 og dir2.
+PÃ¥ underkatalogen dir1 ligger dokumentet dok1-1.html og pÃ¥ omrÃ¥det dir2
 ligger dok2-2.html.
 <P>
-I originaldokumentet kan vi nå benytte flg. relative linker/URLer for å linke til
+I originaldokumentet kan vi nÃ¥ benytte flg. relative linker/URLer for Ã¥ linke til
 disse dokumentene:
 <P>
 <DL ><DT><DD> <b>&lt;a href=&quot;dok1.html&quot;&gt;</b> <BR>Dokumentet dok1.html&lt;/a&gt;
 <P>
 <DT><DD> <b>&lt;a href=&quot;dir1/dok1-1.html&quot;&gt;</b><BR>Dokumentet dok1-1.html i underkatalogen dir1&lt;/a&gt;
 <P>
-<DT><DD> <b>&lt;a href=&quot;/cgi-bin/test&quot;&gt;</b><BR>Programmet test i området /cgi-bin&lt;/a&gt; (se <A HREF="node26.html#CGI">6</A>)
+<DT><DD> <b>&lt;a href=&quot;/cgi-bin/test&quot;&gt;</b><BR>Programmet test i omrÃ¥det /cgi-bin&lt;/a&gt; (se <A HREF="node26.html#CGI">6</A>)
 <P>
-<DT><DD> <b>&lt;a href=&quot;dir2/&quot;&gt;</b><BR>En directorylisting av underområdet dir2&lt;/a&gt;<BR>(noen HTTP servere kan være konfigurert slik at det ikke er
-       mulig å få sendt tilbake directory listinger)
+<DT><DD> <b>&lt;a href=&quot;dir2/&quot;&gt;</b><BR>En directorylisting av underomrÃ¥det dir2&lt;/a&gt;<BR>(noen HTTP servere kan vÃ¦re konfigurert slik at det ikke er
+       mulig Ã¥ fÃ¥ sendt tilbake directory listinger)
 <P>
  </DL>
 <P>
-I tillegg til å spare noen bytes i overførsel over nettet, gjør konsekvent
-bruk av relative linker at det er enkelt å flytte et helt hierarki av
-filer fra et sted til et annet i filsystemet - og også til andre
-protokollservere (HTTP, FTP, ..) på andre maskiner på Internettet,
+I tillegg til Ã¥ spare noen bytes i overfÃ¸rsel over nettet, gjÃ¸r konsekvent
+bruk av relative linker at det er enkelt Ã¥ flytte et helt hierarki av
+filer fra et sted til et annet i filsystemet - og ogsÃ¥ til andre
+protokollservere (HTTP, FTP, ..) pÃ¥ andre maskiner pÃ¥ Internettet,
 <P>
 <BR> <HR>
 <P><ADDRESS>
-© Oslonett AS  15/05-95, 11:16:50
+Â© Oslonett AS  15/05-95, 11:16:50
 </ADDRESS>
 </BODY>
