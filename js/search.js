@@ -7,8 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultsContainer = document.getElementById("searchResults");
   const closeBtn = document.getElementById("searchClose");
 
+
+
   searchBox.disabled = true;
-  resultsContainer.innerHTML = "<p>Loading search...</p>";
+  searchBox.placeholder = "Laster søkeindeks...";
+  
+  resultsContainer.innerHTML = "<p>Laster søkeindeks...</p>";
 
   initSearch();
 
@@ -37,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (!idx) {
-        resultsContainer.innerHTML = "<p>Search not ready</p>";
+        resultsContainer.innerHTML = "<p>Ikke klart for søk</p>";
         modal.style.display = "block";
         return;
       }
@@ -66,11 +70,14 @@ async function initSearch() {
     idx = lunr.Index.load(idxJson);
 
     searchBox.disabled = false;
-    resultsContainer.innerHTML = "<p>Search ready.</p>";
+    searchBox.placeholder = "Søk ..";
+
+    resultsContainer.innerHTML = "<p>Søk klart</p>";
+
 
   } catch (err) {
     console.error(err);
-    resultsContainer.innerHTML = "<p>Failed to load search</p>";
+    resultsContainer.innerHTML = "<p>Klarte ikke å laste søkeindeks</p>";
   }
 }
 
