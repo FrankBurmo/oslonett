@@ -5,7 +5,7 @@
 </HEAD>
 <BODY BACKGROUND="/gifs/on/onbg.gif">
 <P>
-Aksess-sidene kjøres nå på en egen server: <A HREF="http://aksess-www.oslonett.no/">http://aksess-www.oslonett.no</A>.
+Aksess-sidene kjÃ¸res nÃ¥ pÃ¥ en egen server: <A HREF="http://aksess-www.oslonett.no/">http://aksess-www.oslonett.no</A>.
 Disse sidene vil ikke lenger bli oppdatert, og de vil etter hvert forsvinne. 
 </P>
 <A HREF="aksess.map"><IMG ALT="Oslonett Akess" ALIGN=MIDDLE SRC="http://www.oslonett.no/gifs/on/aksess-h.gif" BORDER=0 ISMAP></A>
@@ -14,96 +14,96 @@ Disse sidene vil ikke lenger bli oppdatert, og de vil etter hvert forsvinne.
 <HR SIZE=3>
 
 <OL>
-  <LI><A HREF="#1">Når jeg skriver logout får jeg bare meldingen "There are
+  <LI><A HREF="#1">NÃ¥r jeg skriver logout fÃ¥r jeg bare meldingen "There are
 	stopped jobs".  Hva skyldes det?</A>
-  <LI><A HREF="#2">Når jeg forsøker å logge ut (logout) skjer dette:
+  <LI><A HREF="#2">NÃ¥r jeg forsÃ¸ker Ã¥ logge ut (logout) skjer dette:
          <PRE>
 oslonett.no% logout
 Not login shell.
 </PRE>      
       Hvordan kommer jeg meg ut?</A>
-  <LI><A HREF="#3">Det står core dumped på skjermen. Etter det virker ingen ting,
-      og jeg må slå av modemet for å komme ut.</A>
-  <LI><A HREF="#4">Hvordan får jeg satt slettetasten slik at den virker
-      slik som den gjør på IBM-PC kompatible maskiner?</A>
-  <LI><A HREF="#5">Hvordan kan jeg gjøre utvalgte filer tilgjengelig for
-      (noen få) andre Oslonett-brukere?</A>
+  <LI><A HREF="#3">Det stÃ¥r core dumped pÃ¥ skjermen. Etter det virker ingen ting,
+      og jeg mÃ¥ slÃ¥ av modemet for Ã¥ komme ut.</A>
+  <LI><A HREF="#4">Hvordan fÃ¥r jeg satt slettetasten slik at den virker
+      slik som den gjÃ¸r pÃ¥ IBM-PC kompatible maskiner?</A>
+  <LI><A HREF="#5">Hvordan kan jeg gjÃ¸re utvalgte filer tilgjengelig for
+      (noen fÃ¥) andre Oslonett-brukere?</A>
 </OL>
   
 <HR>
 
 <OL>
-  <A NAME="1"><H3><LI>Når jeg skriver logout får jeg bare meldingen "There
+  <A NAME="1"><H3><LI>NÃ¥r jeg skriver logout fÃ¥r jeg bare meldingen "There
       are stopped jobs".  Hva skyldes det?</H3></A>
     <P>
-      Årsaken til at du får denne advarselen er at du har startet en
+      Ã…rsaken til at du fÃ¥r denne advarselen er at du har startet en
       del prosesser som ikke har terminert. Den vanligste grunnen til
-      at en prosess ikke terminerer er at den venter på at du skal gi
+      at en prosess ikke terminerer er at den venter pÃ¥ at du skal gi
       den inndata fra tastaturet.<P>
     <P>
-      Det er to måter å håndtere slike prosesser på. Den brutale måten
-      er å skrive logout en gang til. UNIX går da ut fra at du
+      Det er to mÃ¥ter Ã¥ hÃ¥ndtere slike prosesser pÃ¥. Den brutale mÃ¥ten
+      er Ã¥ skrive logout en gang til. UNIX gÃ¥r da ut fra at du
       virkelig vil logge av, ikke gi flere advarsler og i stedet drepe
       alle jobber som ligger stoppet i bakgrunnen (dersom disse har
-      åpne buffere vil da alle data i disse bli kastet). En
-      hyggeligere måte å gjøre det på er å skrive fg (en forkortelse
+      Ã¥pne buffere vil da alle data i disse bli kastet). En
+      hyggeligere mÃ¥te Ã¥ gjÃ¸re det pÃ¥ er Ã¥ skrive fg (en forkortelse
       for foreground). Da vil den stoppede jobben igjen komme i
       "forgrunnen", dvs. at den vil igjen motta kommandoer fra
-      tastaturet.  Det du bør gjøre er da å gi de riktige kommandoene
-      for å lagre data, og så kommandoen for å avslutte.  Dersom du
-      har flere stoppede jobber må du fortsette å skrive fg til du har
-      terminert samtlige før du igjen skriver logout.</P>
+      tastaturet.  Det du bÃ¸r gjÃ¸re er da Ã¥ gi de riktige kommandoene
+      for Ã¥ lagre data, og sÃ¥ kommandoen for Ã¥ avslutte.  Dersom du
+      har flere stoppede jobber mÃ¥ du fortsette Ã¥ skrive fg til du har
+      terminert samtlige fÃ¸r du igjen skriver logout.</P>
 
 <HR>
 
-  <A NAME="2"><H3><LI>Når jeg forsøker å logge ut (logout) skjer dette:
+  <A NAME="2"><H3><LI>NÃ¥r jeg forsÃ¸ker Ã¥ logge ut (logout) skjer dette:
       <PRE>
          oslonett.no% logout
          Not login shell.
       </PRE>
       Hvordan kommer jeg meg ut?</H3></A>
     <P>
-      Denne meldingen kommer når du har startet et subshell mens du
-      allerede er pålogget.  For å komme ut av et subshell bruker du
+      Denne meldingen kommer nÃ¥r du har startet et subshell mens du
+      allerede er pÃ¥logget.  For Ã¥ komme ut av et subshell bruker du
       kommandoen "exit" i stedet for "logout".  Avhengig av hvor dypt
-      du har nøstet deg inn i subshell kan det være nødvendig å skrive
+      du har nÃ¸stet deg inn i subshell kan det vÃ¦re nÃ¸dvendig Ã¥ skrive
       "exit" flere ganger. Dersom du skriver "exit" til et login-shell
       vil du bli logget ut.</P>
 
   <HR>
 
-  <A NAME="3"><H3><LI>Det står core dumped på skjermen. Etter det virker ingen ting,
-      og jeg må slå av modemet for å komme ut.?</H3></A>
+  <A NAME="3"><H3><LI>Det stÃ¥r core dumped pÃ¥ skjermen. Etter det virker ingen ting,
+      og jeg mÃ¥ slÃ¥ av modemet for Ã¥ komme ut.?</H3></A>
     <P>
-      Du har opplevd en systemfeil. Isteden for å slå av modemet kan
-      du forsøke å taste følgende "magiske" sekvens: (^J står for
-      "control-J" altså at du trykker ned Ctrl-tasten og J-tasten
+      Du har opplevd en systemfeil. Isteden for Ã¥ slÃ¥ av modemet kan
+      du forsÃ¸ke Ã¥ taste fÃ¸lgende "magiske" sekvens: (^J stÃ¥r for
+      "control-J" altsÃ¥ at du trykker ned Ctrl-tasten og J-tasten
       samtidig):
       <PRE>^Jreset ; stty sane^J</PRE></P>
     <P>
-      <STRONG>NB:</STRONG> Du får ikke noe ekko på skjermen, så du får
-      ikke se hva du taster før du får du skriver den siste ^J, men da
+      <STRONG>NB:</STRONG> Du fÃ¥r ikke noe ekko pÃ¥ skjermen, sÃ¥ du fÃ¥r
+      ikke se hva du taster fÃ¸r du fÃ¥r du skriver den siste ^J, men da
       er det gode muligheter til at tingene er normale igjen.</P>
 
   <HR>
 
-  <A NAME="4"><H3><LI>Hvordan får jeg satt slettetasten slik at den virker
-      slik som den gjør på IBM-PC kompatible maskiner?</H3></A>
+  <A NAME="4"><H3><LI>Hvordan fÃ¥r jeg satt slettetasten slik at den virker
+      slik som den gjÃ¸r pÃ¥ IBM-PC kompatible maskiner?</H3></A>
     <P>
-      Dersom du vil bruke IBMs "backspace" (CTRL-H) til å slette bakover,
-      så finnes det to måter å gjøre dette på.
+      Dersom du vil bruke IBMs "backspace" (CTRL-H) til Ã¥ slette bakover,
+      sÃ¥ finnes det to mÃ¥ter Ã¥ gjÃ¸re dette pÃ¥.
 
       <OL><BR>
-      <LI>Skift kommandotolker (shell) fra csh til tcsh. Dette gjør du
-         med å gi kommandoen
+      <LI>Skift kommandotolker (shell) fra csh til tcsh. Dette gjÃ¸r du
+         med Ã¥ gi kommandoen
 
         <PRE>oslonett.no% chsh</PRE>
 
-        Du blir først spurt om passord. Deretter skal du skrive "tcsh"
-        når du blir spurt om nytt shell.
+        Du blir fÃ¸rst spurt om passord. Deretter skal du skrive "tcsh"
+        nÃ¥r du blir spurt om nytt shell.
 
-        tcsh behandler både &lt;DEL&gt; og &lt;BS&gt; som slettetast.  Mange liker
-        tcsh fordi det også gir MS-DOS-aktig kommandolinjeeditor hvor
+        tcsh behandler bÃ¥de &lt;DEL&gt; og &lt;BS&gt; som slettetast.  Mange liker
+        tcsh fordi det ogsÃ¥ gir MS-DOS-aktig kommandolinjeeditor hvor
         man kan bruke piltastene m.m.
 
       <LI>Alternativt (dersom du vil fortette med csh) -- legg linjen:
@@ -116,10 +116,10 @@ Not login shell.
 
   <HR>
 
-  <A NAME="5"><H3><LI>Hvordan kan jeg gjøre utvalgte filer tilgjengelig for
-      (noen få) andre Oslonett-brukere?</H3></A>
+  <A NAME="5"><H3><LI>Hvordan kan jeg gjÃ¸re utvalgte filer tilgjengelig for
+      (noen fÃ¥) andre Oslonett-brukere?</H3></A>
     <P>
-      Krypter filen med programmet zip.  Det følgende lager en kryptert
+      Krypter filen med programmet zip.  Det fÃ¸lgende lager en kryptert
       fil (felles.zip) som inneholder filen som heter filen min med
       passord "foobar", og endre beskyttelsen slik at "alle" har
       adgang til den (men bare de som kjenner passordet kan lese
@@ -133,12 +133,12 @@ oslonett.no% chmod a+r felles.zip
 
       Fortell passordet og filnavnet til de som skal ha adgang til
       filen.  La oss si at du har brukernavn kari og at filen ligger
-      på ditt hjemmeområde.  De som kjenner passordet kan nå pakke ut
-      filen med følgende kommando:
+      pÃ¥ ditt hjemmeomrÃ¥de.  De som kjenner passordet kan nÃ¥ pakke ut
+      filen med fÃ¸lgende kommando:
 
       <PRE>oslonett.no% unzip ~kari/felles.zip</PRE>
 
-      Og de kan skrive den på skjermen ned følgende komamndo:
+      Og de kan skrive den pÃ¥ skjermen ned fÃ¸lgende komamndo:
 
       <PRE>oslonett.no% unzip -c ~kari/felles.zip</PRE></P>
 
@@ -148,7 +148,7 @@ oslonett.no% chmod a+r felles.zip
 
 <A HREF="http://www.oslonett.no/"><IMG ALT="[Oslonett]" SRC="http://www.oslonett.no/gifs/on/home.gif" BORDER=0></A>
 <A HREF="index.html"><IMG ALT="[Opp]" SRC="http://www.oslonett.no/gifs/on/opp.gif" BORDER=0></A>
-<A HREF="http://www.oslonett.no/search.html"><IMG ALT="[Søk]" SRC="http://www.oslonett.no/gifs/on/sok.gif" BORDER=0></A>
+<A HREF="http://www.oslonett.no/search.html"><IMG ALT="[SÃ¸k]" SRC="http://www.oslonett.no/gifs/on/sok.gif" BORDER=0></A>
 <A HREF="http://www.oslonett.no/help.html"><IMG ALT="[Hjelp]" SRC="http://www.oslonett.no/gifs/on/hjelp.gif" BORDER=0></A>
 
 <H5>Oppdatert, 22. mai 1995, <A HREF="http://www.oslonett.no/html/CommentForm.html">webmaster@oslonett.no</A></H5>
