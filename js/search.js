@@ -94,7 +94,8 @@ async function initSearch() {
       ],
       threshold: 0.3,
       ignoreLocation: true,
-      minMatchCharLength: 2
+      useExtendedSearch: true,
+      minMatchCharLength: 3
     });
 
     searchBox.disabled = false;
