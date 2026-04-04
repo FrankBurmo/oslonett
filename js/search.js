@@ -4,37 +4,71 @@ let data = [];
 document.addEventListener("DOMContentLoaded", () => {
   const searchBox = document.getElementById("searchBox");
   const resultsContainer = document.getElementById("results");
+  const modal = document.getElementById("searchModal");
+  const closeBtn = document.getElementById("searchClose");
 
-  if (!searchBox || !resultsContainer) {
-    console.error("Search elements not found in DOM");
+  if (!searchBox || !resultsContainer || !modal || !closeBtn) {
+    console.error("Search UI elements not found in DOM");
     return;
   }
 
+  // Disable input until ready
   searchBox.disabled = true;
   resultsContainer.innerHTML = "<p>Loading search index...</p>";
 
   initSearch();
 
-  // Debounce to avoid firing on every keystroke instantly
+  // --- Modal controls ---
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Close on ESC
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      modal.style.display = "none";
+    }
+  });
+
+  // Close if clicking outside modal content
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  // --- Search input (debounced) ---
+
   let debounceTimer;
+
   searchBox.addEventListener("input", (e) => {
     clearTimeout(debounceTimer);
 
     debounceTimer = setTimeout(() => {
       const query = e.target.value.trim();
 
+      // Empty query → clear + close modal
       if (!query) {
         resultsContainer.innerHTML = "";
+        modal.style.display = "none";
         return;
       }
 
+      // Not ready yet
       if (!fuse) {
         resultsContainer.innerHTML = "<p>Search not ready yet...</p>";
+        modal.style.display = "block";
         return;
       }
 
       const results = fuse.search(query, { limit: 20 });
+
       renderResults(results);
+
+      // Show modal when results exist
+      modal.style.display = "block";
+
     }, 200);
   });
 });
@@ -76,10 +110,15 @@ function renderResults(results) {
   const container = document.getElementById("results");
   container.innerHTML = "";
 
-  if (results.length === 0) {
+  if (!results || results.length === 0) {
     container.innerHTML = "<p>No results found.</p>";
     return;
   }
+
+  // Show result count
+  const count = document.createElement("p");
+  count.textContent = `${results.length} result(s) found`;
+  container.appendChild(count);
 
   results.forEach(r => {
     const item = r.item;
@@ -88,7 +127,9 @@ function renderResults(results) {
     div.style.marginBottom = "1em";
 
     div.innerHTML = `
-      <a href="${item.url}"><strong>${item.title || item.url}</strong></a>
+      <a href="${item.url}" target="_self">
+        <strong>${item.title || item.url}</strong>
+      </a>
       <p>${(item.content || "").substring(0, 150)}...</p>
     `;
 

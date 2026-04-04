@@ -11,6 +11,42 @@
   <title>Historisk informasjon i anledning Oslonetts 10 års jubileum 12.12.2001</title>
 
   <link type="text/css" rel="stylesheet" href="/css/oslonett.css" />
+<style>
+.search-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.search-modal-content {
+  background: white;
+  margin: 5% auto;
+  padding: 20px;
+  width: 70%;
+  max-height: 80%;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+.search-close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.search-modal a {
+  text-decoration: none;
+}
+
+.search-modal a:hover {
+  text-decoration: underline;
+}
+</style>
 </head>
 
 <body class="main">
@@ -203,5 +239,13 @@
       </td>
     </tr><!-- end address_main -->
   </table>
+  <!-- Search Modal -->
+  <div id="searchModal" class="search-modal">
+  <div class="search-modal-content">
+    <span id="searchClose" class="search-close">&times;</span>
+    <h2>Søkeresultater</h2>
+    <div id="results"></div>
+  </div>
+</div>
 </body>
 </html>
