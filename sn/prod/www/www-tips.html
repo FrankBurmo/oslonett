@@ -8,54 +8,54 @@
 <hr noshade size="-1">
 <font size=+1>
 
-Våre Web-tjenere tilbyr annonsører en infrastruktur og funksjonalitet
-som få andre Web tilbydere i Norge har maken til. Dette dokumentet
-inneholder en del tips til annonsører om hvordan HTML filene bør
-tilrettelegges for at man skal få mest mulig glede av denne
+VÃ¥re Web-tjenere tilbyr annonsÃ¸rer en infrastruktur og funksjonalitet
+som fÃ¥ andre Web tilbydere i Norge har maken til. Dette dokumentet
+inneholder en del tips til annonsÃ¸rer om hvordan HTML filene bÃ¸r
+tilrettelegges for at man skal fÃ¥ mest mulig glede av denne
 funksjonaliteten.
 <p>
 Tipsene dreier seg stort sett om strukturelle kodekonvensjoner og
-navngivingsstandarder. Selv annonsører utenfor våre Web-tjenere
-vil ha stor glede av å følge disse konvensjonene eller innføre
+navngivingsstandarder. Selv annonsÃ¸rer utenfor vÃ¥re Web-tjenere
+vil ha stor glede av Ã¥ fÃ¸lge disse konvensjonene eller innfÃ¸re
 liknende konvensjoner selv.
 </font>
 <hr noshade size=1>
 
 <h2>Bruk av &lt;title&gt;</h2>
 
-Ethvert dokument <em>skal</em> ha en tittel, og tittelen bør velges
-med omhu og være mest mulig kontekstuavhengig. Dokumenttitler vises
-ofte fram av søkesystemer og lagres unna av Web roboter.
+Ethvert dokument <em>skal</em> ha en tittel, og tittelen bÃ¸r velges
+med omhu og vÃ¦re mest mulig kontekstuavhengig. Dokumenttitler vises
+ofte fram av sÃ¸kesystemer og lagres unna av Web roboter.
 <p>
-Innenfor våre Web tjenere, brukes dessuten dokumenttitlen i automatisk
+Innenfor vÃ¥re Web tjenere, brukes dessuten dokumenttitlen i automatisk
 genererte hyperlinkete innholdsfortegnelser for forskjellige hierarkier
-av weben. Se f.eks. på
+av weben. Se f.eks. pÃ¥
 <a href="/cgi-bin/htmltree.cgi?files=\.html&dir=on/www&icons=1">innholdsfortegnelsen</a>
-for det undernivået som beskriver våre World Wide Web tjenester.
+for det undernivÃ¥et som beskriver vÃ¥re World Wide Web tjenester.
 
-<h2>Strukturering av data i underområder</h2>
+<h2>Strukturering av data i underomrÃ¥der</h2>
 
 La din <em>logiske</em> strukturering av dine data bli <em>fysisk</em>
 avspeilet gjennom filsystemet der du legger ut data. Dette betyr at
-der du tenker logiske underområder, så legger du ut data i fysiske
+der du tenker logiske underomrÃ¥der, sÃ¥ legger du ut data i fysiske
 underkataloger i filsystemet!
 <p>
 Denne en-til-en forbindelsen mellom Web struktur og filstruktur er
-meget nyttig, siden det da er mulig å bruke filsystemsemantikk for
+meget nyttig, siden det da er mulig Ã¥ bruke filsystemsemantikk for
 ulike former for datamanipulasjon.
 
-<h2>Bruk av index.htm eller index.html filer for hvert undernivå</h2>
+<h2>Bruk av index.htm eller index.html filer for hvert undernivÃ¥</h2>
 
-La ethvert fysisk undernivå ha en indeks som forteller hva som ligger
-i dette underområdet. Denne indeksfilen skal hete <b>index.htm</b>
+La ethvert fysisk undernivÃ¥ ha en indeks som forteller hva som ligger
+i dette underomrÃ¥det. Denne indeksfilen skal hete <b>index.htm</b>
 eller <b>index.html</b> etter som du selv velger.
 <p>
 Denne navngivingen har blitt en slags de-facto konvensjon innenfor
-flere Web tjenere, og vi har strammet ytterligere inn på
+flere Web tjenere, og vi har strammet ytterligere inn pÃ¥
 dette.
 <p>
-Følger man konvensjonen og er annonsør hos oss, betyr det at
-en hyperlink til en slik fil ikke behøver å navngi filen
+FÃ¸lger man konvensjonen og er annonsÃ¸r hos oss, betyr det at
+en hyperlink til en slik fil ikke behÃ¸ver Ã¥ navngi filen
 eksplisitt. F.eks. er <a href="http://www.oslonett.no/">http://www.oslonett.no/</a>
 egentlig en link til <a href="http://www.oslonett.no/index.html">http://www.oslonett.no/index.html</a>.
 <p>
@@ -64,18 +64,18 @@ lete etter slike filer i Web filsystemet, og plukke opp &lt;title&gt; feltet
 i disse filene og linke inn i innholdsfortegnelsen.
 <h2>Bruk av sk. IMAGEMAP</h2>
 
-Vi kjører kun Netsite Web tjenere fra Netscape Communications. Slike
-Web tjenere har meget kraftig funksjonalitet, og en svært praktisk ting
-er at det er mulig å legge de såkalte IMAGEMAP konfigurasjonsfilene
+Vi kjÃ¸rer kun Netsite Web tjenere fra Netscape Communications. Slike
+Web tjenere har meget kraftig funksjonalitet, og en svÃ¦rt praktisk ting
+er at det er mulig Ã¥ legge de sÃ¥kalte IMAGEMAP konfigurasjonsfilene
 hvor som helst innenfor Web hierarkiet og linke rett til disse filene,
-forutsatt at man bruker filendelsen <b>.map</b> på disse filene.
+forutsatt at man bruker filendelsen <b>.map</b> pÃ¥ disse filene.
 <p>
-Vår anbefaling er da at filene legges i det directoriet de logisk hører
-hjemme eller samles i et dertil egnet directory lokalt til annonsørens
+VÃ¥r anbefaling er da at filene legges i det directoriet de logisk hÃ¸rer
+hjemme eller samles i et dertil egnet directory lokalt til annonsÃ¸rens
 hierarki.
 <h3>Eksempel</h3>
 Hvis vi hadde hatt et GIF bilde med navn <tt>bilde.gif</tt> i dette
-området og ønsket å bruke dette som et IMAGEMAP, kunne vi da skrevet
+omrÃ¥det og Ã¸nsket Ã¥ bruke dette som et IMAGEMAP, kunne vi da skrevet
 en konfigurasjonsfil for bildet, f.eks. kalt den <tt>bilde.map</tt>
 og brukt den slik:
 <p>
@@ -83,16 +83,16 @@ og brukt den slik:
 
 <h2>Bruk av FORMs</h2>
 
-Bruk av sk. FORMs  (HTML skjemaer) er enkelt for alle annonsører og
-privatkunder hos oss. Vi har ferdige skript for å ta i mot data
+Bruk av sk. FORMs  (HTML skjemaer) er enkelt for alle annonsÃ¸rer og
+privatkunder hos oss. Vi har ferdige skript for Ã¥ ta i mot data
 fra slike skjema, les f.eks. <a href="/html/demo/skjema.html">denne beskrivelsen</a>.
 <p>
-Ønsker man mere tilpassete skript, bistår vi selvsagt med det.
+Ã˜nsker man mere tilpassete skript, bistÃ¥r vi selvsagt med det.
 
 <h2>Bruk av CGI skript</h2>
 
-Ønsker man å bruke CGI skript for å gjøre andre ting enn det vi tilbyr av
-ferdige funksjoner, må skriptene lages av oss på oppdrag fra kunden
+Ã˜nsker man Ã¥ bruke CGI skript for Ã¥ gjÃ¸re andre ting enn det vi tilbyr av
+ferdige funksjoner, mÃ¥ skriptene lages av oss pÃ¥ oppdrag fra kunden
 og til normal timepris. Av hensyn til stabilitet og sikkerhet,
  tillater vi ikke bruk av egenutviklete skript.
 
@@ -100,7 +100,7 @@ og til normal timepris. Av hensyn til stabilitet og sikkerhet,
 <a href="/help.html">
   <img border="0" alt="[Hjelp]" SRC="/gifs/on/hjelp.gif"></a>
 <a href="/search.html">
-  <img border="0" alt="[Søk]" SRC="/gifs/on/sok.gif"></a>
+  <img border="0" alt="[SÃ¸k]" SRC="/gifs/on/sok.gif"></a>
 
 <address>
  <hr size=1 noshade width=100% align=left>
