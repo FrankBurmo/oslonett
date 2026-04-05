@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  // Disable input + loading state
+  // Disable input + loading animation
   searchBox.disabled = true;
   startLoadingAnimation(searchBox);
 
@@ -75,13 +75,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // ==========================
-// 🔍 SEARCH (Lunr)
+// 🔍 SEARCH (clean Lunr query)
 // ==========================
 
 function search(query) {
+  if (!query || !idx) return [];
+
   try {
-    const q = `${query}* ${query}~1`;
-    const results = idx.search(q);
+    // Split into words and apply prefix matching
+    const terms = query.split(/\s+/).map(term => {
+      if (term.length < 3) return term;
+      return `${term}*`;
+    });
+
+    const lunrQuery = terms.join(" ");
+    const results = idx.search(lunrQuery);
 
     return results.map(r => {
       const doc = documents.find(d => d.id === r.ref);
@@ -125,7 +133,7 @@ async function initSearch() {
 
 
 // ==========================
-// 🎨 RENDER RESULTS
+// 🎨 RENDER RESULTS (no grouping)
 // ==========================
 
 function renderResults(results, query) {
@@ -133,13 +141,13 @@ function renderResults(results, query) {
   container.innerHTML = "";
 
   if (!results.length) {
-    container.innerHTML = "<p>0 results</p><p>No results found.</p>";
+    container.innerHTML = "<p><strong>0</strong> results</p><p>No results found.</p>";
     return;
   }
 
-  // Show number of matches
+  // Result count
   const count = document.createElement("p");
-  count.innerHTML = `<strong>${results.length} result(s)</strong>`;
+  count.innerHTML = `<strong>${results.length}</strong> results`;
   container.appendChild(count);
 
   results.forEach(r => {
@@ -161,7 +169,7 @@ function renderResults(results, query) {
 
 
 // ==========================
-// 🔦 HIGHLIGHT MATCHES
+// 🔦 HIGHLIGHT
 // ==========================
 
 function highlight(text, query) {
