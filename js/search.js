@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const results = search(query);
-      renderResults(results);
+      renderResults(results, query);
 
       modal.style.display = "block";
     }, 200);
@@ -60,14 +60,12 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.style.display = "none";
   });
 
-  // ESC closes modal
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       modal.style.display = "none";
     }
   });
 
-  // Click outside closes modal
   window.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.style.display = "none";
@@ -130,45 +128,34 @@ async function initSearch() {
 // 🎨 RENDER RESULTS
 // ==========================
 
-function renderResults(results) {
+function renderResults(results, query) {
   const container = document.getElementById("searchResults");
-  const query = document.getElementById("searchBox").value;
-
   container.innerHTML = "";
 
   if (!results.length) {
-    container.innerHTML = "<p>No results found.</p>";
+    container.innerHTML = "<p>0 results</p><p>No results found.</p>";
     return;
   }
 
-  const groups = {};
+  // Show number of matches
+  const count = document.createElement("p");
+  count.innerHTML = `<strong>${results.length} result(s)</strong>`;
+  container.appendChild(count);
 
-  // Group by folder
   results.forEach(r => {
     const item = r.item;
-    const folder = item.url.split("/")[1] || "root";
 
-    if (!groups[folder]) groups[folder] = [];
-    groups[folder].push(item);
-  });
+    const div = document.createElement("div");
+    div.style.marginBottom = "1em";
 
-  Object.keys(groups).forEach(folder => {
-    const header = document.createElement("h3");
-    header.textContent = folder;
-    container.appendChild(header);
+    div.innerHTML = `
+      <a href="${item.url}">
+        <strong>${highlight(item.title || item.url, query)}</strong>
+      </a>
+      <p>${highlight((item.content || "").substring(0, 150), query)}...</p>
+    `;
 
-    groups[folder].forEach(item => {
-      const div = document.createElement("div");
-
-      div.innerHTML = `
-        <a href="${item.url}">
-          <strong>${highlight(item.title || item.url, query)}</strong>
-        </a>
-        <p>${highlight((item.content || "").substring(0, 120), query)}...</p>
-      `;
-
-      container.appendChild(div);
-    });
+    container.appendChild(div);
   });
 }
 
