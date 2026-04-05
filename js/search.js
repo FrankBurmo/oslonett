@@ -1,57 +1,42 @@
 let idx = null;
 let documents = [];
-let selectedIndex = -1;
-let loadingInterval = null;
+let debounceTimer = null;
+
+// ==========================
+// 🚀 INIT
+// ==========================
 
 document.addEventListener("DOMContentLoaded", () => {
   const searchBox = document.getElementById("searchBox");
   const modal = document.getElementById("searchModal");
   const resultsContainer = document.getElementById("searchResults");
+  const closeBtn = document.getElementById("searchClose");
 
-  if (!searchBox || !modal || !resultsContainer) {
+  if (!searchBox || !modal || !resultsContainer || !closeBtn) {
     console.error("Search UI elements missing");
     return;
   }
 
-  // --- Loading animation ---
-  startLoadingAnimation(searchBox);
+  // Disable input + loading state
   searchBox.disabled = true;
+  startLoadingAnimation(searchBox);
 
   initSearch();
 
-  // --- Keyboard shortcuts ---
-  document.addEventListener("keydown", (e) => {
-    // Open search with "/" (not inside input)
-    if (e.key === "/" && !["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) {
-      e.preventDefault();
-      openSearchModal();
-    }
+  // ==========================
+  // 🔍 INPUT HANDLER
+  // ==========================
 
-    // Ctrl+K / Cmd+K
-    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
-      e.preventDefault();
-      openSearchModal();
-    }
-
-    // ESC closes
-    if (e.key === "Escape") {
-      modal.style.display = "none";
-    }
-
-    handleKeyboardNavigation(e);
-  });
-
-  // --- Typing ---
-  let debounce;
   searchBox.addEventListener("input", (e) => {
-    clearTimeout(debounce);
+    clearTimeout(debounceTimer);
 
-    debounce = setTimeout(() => {
+    debounceTimer = setTimeout(() => {
       const query = e.target.value.trim();
 
-      if (!query) {
+      // Require at least 3 characters
+      if (query.length < 3) {
+        modal.style.display = "none";
         resultsContainer.innerHTML = "";
-        selectedIndex = -1;
         return;
       }
 
@@ -63,23 +48,42 @@ document.addEventListener("DOMContentLoaded", () => {
       const results = search(query);
       renderResults(results);
 
+      modal.style.display = "block";
     }, 200);
+  });
+
+  // ==========================
+  // ❌ CLOSE MODAL
+  // ==========================
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // ESC closes modal
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      modal.style.display = "none";
+    }
+  });
+
+  // Click outside closes modal
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
   });
 });
 
 
 // ==========================
-// 🔍 SEARCH
+// 🔍 SEARCH (Lunr)
 // ==========================
 
 function search(query) {
-  if (!query || !idx) return [];
-
   try {
-    // Wildcard + fuzzy fix
-    const lunrQuery = `${query}* ${query}~1`;
-
-    const results = idx.search(lunrQuery);
+    const q = `${query}* ${query}~1`;
+    const results = idx.search(q);
 
     return results.map(r => {
       const doc = documents.find(d => d.id === r.ref);
@@ -93,12 +97,11 @@ function search(query) {
 
 
 // ==========================
-// 🧱 INIT
+// 📦 LOAD INDEX
 // ==========================
 
 async function initSearch() {
   const searchBox = document.getElementById("searchBox");
-  const resultsContainer = document.getElementById("searchResults");
 
   try {
     const [idxRes, dataRes] = await Promise.all([
@@ -113,8 +116,7 @@ async function initSearch() {
 
     stopLoadingAnimation(searchBox);
     searchBox.disabled = false;
-
-    resultsContainer.innerHTML = "<p>Search ready.</p>";
+    searchBox.placeholder = "Search...";
 
   } catch (err) {
     console.error(err);
@@ -125,36 +127,20 @@ async function initSearch() {
 
 
 // ==========================
-// 🪟 MODAL
-// ==========================
-
-function openSearchModal() {
-  const modal = document.getElementById("searchModal");
-  const searchBox = document.getElementById("searchBox");
-
-  modal.style.display = "block";
-
-  setTimeout(() => {
-    searchBox.focus();
-  }, 50);
-}
-
-
-// ==========================
-// 🎨 RENDER
+// 🎨 RENDER RESULTS
 // ==========================
 
 function renderResults(results) {
   const container = document.getElementById("searchResults");
+  const query = document.getElementById("searchBox").value;
+
   container.innerHTML = "";
-  selectedIndex = -1;
 
   if (!results.length) {
     container.innerHTML = "<p>No results found.</p>";
     return;
   }
 
-  const query = document.getElementById("searchBox").value;
   const groups = {};
 
   // Group by folder
@@ -188,56 +174,24 @@ function renderResults(results) {
 
 
 // ==========================
-// 🔦 HIGHLIGHT
+// 🔦 HIGHLIGHT MATCHES
 // ==========================
 
 function highlight(text, query) {
   if (!text) return "";
 
-  const safeQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const regex = new RegExp(`(${safeQuery})`, "gi");
+  const safe = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const regex = new RegExp(`(${safe})`, "gi");
 
   return text.replace(regex, "<mark>$1</mark>");
 }
 
 
 // ==========================
-// ⌨️ KEYBOARD NAVIGATION
-// ==========================
-
-function handleKeyboardNavigation(e) {
-  const items = document.querySelectorAll("#searchResults div");
-
-  if (!items.length) return;
-
-  if (e.key === "ArrowDown") {
-    e.preventDefault();
-    selectedIndex = (selectedIndex + 1) % items.length;
-    updateSelection(items);
-  }
-
-  if (e.key === "ArrowUp") {
-    e.preventDefault();
-    selectedIndex = (selectedIndex - 1 + items.length) % items.length;
-    updateSelection(items);
-  }
-
-  if (e.key === "Enter" && selectedIndex >= 0) {
-    const link = items[selectedIndex].querySelector("a");
-    if (link) window.location.href = link.href;
-  }
-}
-
-function updateSelection(items) {
-  items.forEach((el, i) => {
-    el.style.background = i === selectedIndex ? "#e0e0e0" : "";
-  });
-}
-
-
-// ==========================
 // ⏳ LOADING ANIMATION
 // ==========================
+
+let loadingInterval;
 
 function startLoadingAnimation(input) {
   const states = [
@@ -255,10 +209,5 @@ function startLoadingAnimation(input) {
 }
 
 function stopLoadingAnimation(input) {
-  if (loadingInterval) {
-    clearInterval(loadingInterval);
-    loadingInterval = null;
-  }
-
-  input.placeholder = "Search...";
+  clearInterval(loadingInterval);
 }
