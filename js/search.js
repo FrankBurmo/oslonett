@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (!idx) {
-        resultsContainer.innerHTML = "<p>Search not ready</p>";
+        resultsContainer.innerHTML = "<p>Søk ikke klart..</p>";
         return;
       }
 
@@ -118,12 +118,12 @@ async function initSearch() {
 
     stopLoadingAnimation(searchBox);
     searchBox.disabled = false;
-    searchBox.placeholder = "Search...";
+    searchBox.placeholder = "Søk...";
 
   } catch (err) {
     console.error(err);
     stopLoadingAnimation(searchBox);
-    searchBox.placeholder = "Search unavailable";
+    searchBox.placeholder = "Søk ikke tilgjengelig";
   }
 }
 
@@ -164,7 +164,7 @@ function renderResults(results, query) {
   container.innerHTML = "";
 
   if (!results.length) {
-    container.innerHTML = "<p><strong>0</strong> results</p><p>No results found.</p>";
+    container.innerHTML = "<p><strong>0</strong> results</p><p>Ingen resultater funnet.</p>";
     return;
   }
 
