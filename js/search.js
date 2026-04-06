@@ -1,5 +1,6 @@
 let idx = null;
 let documents = [];
+let docMap = {};
 let debounceTimer = null;
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -9,16 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeBtn = document.getElementById("searchClose");
 
   if (!searchBox || !modal || !resultsContainer || !closeBtn) {
-    console.error("Search UI elements missing");
+    console.error("Search UI missing");
     return;
   }
 
   searchBox.disabled = true;
-  startLoadingAnimation(searchBox);
+  searchBox.placeholder = "Search index loading...";
 
   initSearch();
 
-  // 🔍 INPUT HANDLER
   searchBox.addEventListener("input", (e) => {
     clearTimeout(debounceTimer);
 
@@ -26,146 +26,57 @@ document.addEventListener("DOMContentLoaded", () => {
       const query = e.target.value.trim();
 
       if (query.length < 3) {
-        modal.style.display = "none";
-        resultsContainer.innerHTML = "";
+        modal.classList.remove("open");
         return;
       }
 
-      if (!idx) {
-        console.warn("Søkeindeks ikke klar ennå!");
-        return;
-      }
+      if (!idx) return;
 
-      const results = search(query);
-
-//      console.log("Query:", query, "Results:", results.length);
+      const results = idx.search(query + "*");
 
       renderResults(results, query);
-
-      // ✅ ALWAYS open modal if query is valid
-      modal.style.display = "block";
+      modal.classList.add("open");
 
     }, 200);
   });
 
-  // ❌ CLOSE BUTTON
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-
-  // ESC CLOSE
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      modal.style.display = "none";
-    }
-  });
-
-  // CLICK OUTSIDE CLOSE
-  window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.style.display = "none";
-    }
-  });
+  closeBtn.onclick = () => modal.classList.remove("open");
 });
 
 
 // ==========================
-// 📦 LOAD CHUNKS IN PARALLEL
-// ==========================
-
-async function loadAllDocuments() {
-  const res = await fetch("/js/index/manifest.json");
-
-  if (!res.ok) {
-    throw new Error("Failed to load manifest.json");
-  }
-
-  const meta = await res.json();
-  console.log("Chunks:", meta.chunks);
-
-  const promises = [];
-
-  for (let i = 0; i < meta.chunks; i++) {
-    promises.push(
-      fetch(`/js/index/data-${i}.json`)
-        .then(r => {
-          if (!r.ok) throw new Error(`Chunk ${i} failed`);
-          return r.json();
-        })
-    );
-  }
-
-  const chunks = await Promise.all(promises);
-  const allDocs = chunks.flat();
-
-//  console.log("Documents loaded:", allDocs.length);
-
-  return allDocs;
-}
-
-
-// ==========================
-// 🚀 INIT SEARCH
+// 🚀 INIT
 // ==========================
 
 async function initSearch() {
-  const searchBox = document.getElementById("searchBox");
-
   try {
-    documents = await loadAllDocuments();
+    const [idxRes, docsRes] = await Promise.all([
+      fetch("/js/search-index.json"),
+      fetch("/js/search-docs.json")
+    ]);
 
-    idx = lunr(function () {
-      this.ref("id");
+    const idxData = await idxRes.json();
+    documents = await docsRes.json();
 
-      this.field("title", { boost: 10 });
-      this.field("headings", { boost: 5 });
-      this.field("content");
+    idx = lunr.Index.load(idxData);
 
-      documents.forEach(doc => this.add(doc));
-    });
+    // Build lookup map
+    documents.forEach(d => docMap[d.id] = d);
 
-  //  console.log("Index ready");
-
-    stopLoadingAnimation(searchBox);
+    const searchBox = document.getElementById("searchBox");
     searchBox.disabled = false;
-    searchBox.placeholder = "Søk ...";
+    searchBox.placeholder = "Search...";
 
-  } catch (err) {
-    console.error("INIT FAILED:", err);
-    stopLoadingAnimation(searchBox);
-    searchBox.placeholder = "Søk feilet";
-  }
-}
-
-
-// ==========================
-// 🔍 SEARCH
-// ==========================
-
-function search(query) {
-  try {
-    const terms = query.split(/\s+/).map(term => {
-      if (term.length < 3) return term;
-      return `${term}*`;
-    });
-
-    const q = terms.join(" ");
-    const results = idx.search(q);
-
-    return results.map(r => {
-      const doc = documents.find(d => d.id === r.ref);
-      return { item: doc };
-    });
+    console.log("Search ready");
 
   } catch (e) {
-    console.error("Search error:", e);
-    return [];
+    console.error("Search init failed:", e);
   }
 }
 
 
 // ==========================
-// 🎨 RENDER RESULTS
+// 🎨 RENDER
 // ==========================
 
 function renderResults(results, query) {
@@ -176,24 +87,15 @@ function renderResults(results, query) {
   count.innerHTML = `<strong>${results.length}</strong> results`;
   container.appendChild(count);
 
-  if (!results.length) {
-    const p = document.createElement("p");
-    p.textContent = "Ingen resultater funnet.";
-    container.appendChild(p);
-    return;
-  }
-
-  results.forEach(r => {
-    const item = r.item;
+  results.slice(0, 50).forEach(r => {
+    const d = docMap[r.ref];
 
     const div = document.createElement("div");
-    div.style.marginBottom = "1em";
-
     div.innerHTML = `
-      <a href="${item.url}">
-        <strong>${highlight(item.title || item.url, query)}</strong>
+      <a href="${d.url}">
+        <strong>${highlight(d.title || d.url, query)}</strong>
       </a>
-      <p>${highlight((item.content || "").substring(0, 150), query)}...</p>
+      <p>${highlight(d.content.substring(0,150), query)}...</p>
     `;
 
     container.appendChild(div);
@@ -206,36 +108,6 @@ function renderResults(results, query) {
 // ==========================
 
 function highlight(text, query) {
-  if (!text) return "";
-
   const safe = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const regex = new RegExp(`(${safe})`, "gi");
-
-  return text.replace(regex, "<mark>$1</mark>");
-}
-
-
-// ==========================
-// ⏳ LOADING ANIMATION
-// ==========================
-
-let loadingInterval;
-
-function startLoadingAnimation(input) {
-  const states = [
-      "Laster søkeindeks .",
-      "Laster søkeindeks ..",
-      "Laster søkeindeks ..."
-  ];
-
-  let i = 0;
-
-  loadingInterval = setInterval(() => {
-    input.placeholder = states[i % states.length];
-    i++;
-  }, 400);
-}
-
-function stopLoadingAnimation(input) {
-  clearInterval(loadingInterval);
+  return text.replace(new RegExp(`(${safe})`, "gi"), "<mark>$1</mark>");
 }
