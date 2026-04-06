@@ -32,13 +32,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (!idx) {
-        console.warn("Index not ready yet");
+        console.warn("Søkeindeks ikke klar ennå!");
         return;
       }
 
       const results = search(query);
 
-      console.log("Query:", query, "Results:", results.length);
+//      console.log("Query:", query, "Results:", results.length);
 
       renderResults(results, query);
 
@@ -98,7 +98,7 @@ async function loadAllDocuments() {
   const chunks = await Promise.all(promises);
   const allDocs = chunks.flat();
 
-  console.log("Documents loaded:", allDocs.length);
+//  console.log("Documents loaded:", allDocs.length);
 
   return allDocs;
 }
@@ -124,16 +124,16 @@ async function initSearch() {
       documents.forEach(doc => this.add(doc));
     });
 
-    console.log("Index ready");
+  //  console.log("Index ready");
 
     stopLoadingAnimation(searchBox);
     searchBox.disabled = false;
-    searchBox.placeholder = "Search...";
+    searchBox.placeholder = "Søk ...";
 
   } catch (err) {
     console.error("INIT FAILED:", err);
     stopLoadingAnimation(searchBox);
-    searchBox.placeholder = "Search failed";
+    searchBox.placeholder = "Søk feilet";
   }
 }
 
@@ -178,7 +178,7 @@ function renderResults(results, query) {
 
   if (!results.length) {
     const p = document.createElement("p");
-    p.textContent = "No results found.";
+    p.textContent = "Ingen resultater funnet.";
     container.appendChild(p);
     return;
   }
@@ -223,9 +223,9 @@ let loadingInterval;
 
 function startLoadingAnimation(input) {
   const states = [
-    "Search index loading.",
-    "Search index loading..",
-    "Search index loading..."
+      "Laster søkeindeks .",
+      "Laster søkeindeks ..",
+      "Laster søkeindeks ..."
   ];
 
   let i = 0;
