@@ -364,5 +364,10 @@ a:hover,a.main:hover, a.left:hover {
 }
 
 .search-modal a:hover {
+    text-decoration: none;
+}
+
+.search-modal a {
     text-decoration: underline;
+    color: blue;
 }
