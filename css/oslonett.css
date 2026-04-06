@@ -343,9 +343,15 @@ a:hover,a.main:hover, a.left:hover {
   background-color: rgba(0,0,0,0.5);
 }
 
+.search-modal.open {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .search-modal-content {
   background: white;
-  margin: 5% auto;
+  margin: 80px auto;
   padding: 20px;
   width: 70%;
   max-height: 80%;
