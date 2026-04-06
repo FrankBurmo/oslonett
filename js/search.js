@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
     debounceTimer = setTimeout(() => {
       const query = e.target.value.trim();
 
-      // Require at least 3 characters
       if (query.length < 3) {
         modal.style.display = "none";
         resultsContainer.innerHTML = "";
@@ -75,14 +74,68 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // ==========================
-// 🔍 SEARCH (clean Lunr query)
+// 📦 LOAD ALL CHUNKS IN PARALLEL
+// ==========================
+
+async function loadAllDocuments() {
+  const res = await fetch("/js/index/manifest.json");
+  const meta = await res.json();
+
+  const promises = [];
+
+  for (let i = 0; i < meta.chunks; i++) {
+    promises.push(
+      fetch(`/js/index/data-${i}.json`).then(r => r.json())
+    );
+  }
+
+  const chunks = await Promise.all(promises);
+
+  return chunks.flat();
+}
+
+
+// ==========================
+// 📦 INIT SEARCH
+// ==========================
+
+async function initSearch() {
+  const searchBox = document.getElementById("searchBox");
+
+  try {
+    documents = await loadAllDocuments();
+
+    // Build Lunr index
+    idx = lunr(function () {
+      this.ref("id");
+
+      this.field("title", { boost: 10 });
+      this.field("headings", { boost: 5 });
+      this.field("content");
+
+      documents.forEach(doc => this.add(doc));
+    });
+
+    stopLoadingAnimation(searchBox);
+    searchBox.disabled = false;
+    searchBox.placeholder = "Search...";
+
+  } catch (err) {
+    console.error(err);
+    stopLoadingAnimation(searchBox);
+    searchBox.placeholder = "Search unavailable";
+  }
+}
+
+
+// ==========================
+// 🔍 SEARCH
 // ==========================
 
 function search(query) {
   if (!query || !idx) return [];
 
   try {
-    // Split into words and apply prefix matching
     const terms = query.split(/\s+/).map(term => {
       if (term.length < 3) return term;
       return `${term}*`;
@@ -103,37 +156,7 @@ function search(query) {
 
 
 // ==========================
-// 📦 LOAD INDEX
-// ==========================
-
-async function initSearch() {
-  const searchBox = document.getElementById("searchBox");
-
-  try {
-    const [idxRes, dataRes] = await Promise.all([
-      fetch("/js/search-index.json"),
-      fetch("/js/search-data.json")
-    ]);
-
-    const idxJson = await idxRes.json();
-    documents = await dataRes.json();
-
-    idx = lunr.Index.load(idxJson);
-
-    stopLoadingAnimation(searchBox);
-    searchBox.disabled = false;
-    searchBox.placeholder = "Search...";
-
-  } catch (err) {
-    console.error(err);
-    stopLoadingAnimation(searchBox);
-    searchBox.placeholder = "Search unavailable";
-  }
-}
-
-
-// ==========================
-// 🎨 RENDER RESULTS (no grouping)
+// 🎨 RENDER RESULTS
 // ==========================
 
 function renderResults(results, query) {
