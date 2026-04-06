@@ -155,7 +155,7 @@ function renderResults(results, query) {
   container.innerHTML = "";
 
   const count = document.createElement("p");
-  count.innerHTML = `<strong>${results.length}</strong> results`;
+  count.innerHTML = `<strong>${results.length}</strong> søketreff.`;
   container.appendChild(count);
 
   if (!results.length) {
