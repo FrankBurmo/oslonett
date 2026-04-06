@@ -38,7 +38,7 @@ function initSearchUI() {
     return;
   }
 
-  searchBox.placeholder = "Search index loading...";
+  searchBox.placeholder = "Laster søkeindeks ...";
   searchBox.disabled = true;
 
   initSearch();
@@ -115,14 +115,14 @@ async function initSearch() {
 
     const searchBox = document.getElementById("searchBox");
     searchBox.disabled = false;
-    searchBox.placeholder = "Search...";
+    searchBox.placeholder = "Søk ...";
 
   } catch (err) {
-    console.error("Search init failed:", err);
+    console.error("Søk initiering feilet:", err);
 
     const searchBox = document.getElementById("searchBox");
     if (searchBox) {
-      searchBox.placeholder = "Search failed";
+      searchBox.placeholder = "Søk feilet";
     }
   }
 }
@@ -160,7 +160,7 @@ function renderResults(results, query) {
 
   if (!results.length) {
     const p = document.createElement("p");
-    p.textContent = "No results found.";
+    p.textContent = "Ingen resultater funnet.";
     container.appendChild(p);
     return;
   }
