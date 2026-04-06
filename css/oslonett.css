@@ -330,7 +330,7 @@ a:hover,a.main:hover, a.left:hover {
  color: #123456;
 }
 
-// Nye ting i 2026 for å støtte søk
+/* Nye ting i 2026 for å støtte søk */
 
 .search-modal {
   display: none;
