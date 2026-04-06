@@ -2,10 +2,6 @@ let idx = null;
 let documents = [];
 let debounceTimer = null;
 
-// ==========================
-// 🚀 INIT
-// ==========================
-
 document.addEventListener("DOMContentLoaded", () => {
   const searchBox = document.getElementById("searchBox");
   const modal = document.getElementById("searchModal");
@@ -17,16 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  // Disable input + loading animation
   searchBox.disabled = true;
   startLoadingAnimation(searchBox);
 
   initSearch();
 
-  // ==========================
   // 🔍 INPUT HANDLER
-  // ==========================
-
   searchBox.addEventListener("input", (e) => {
     clearTimeout(debounceTimer);
 
@@ -40,31 +32,35 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (!idx) {
-        resultsContainer.innerHTML = "<p>Søk ikke klart..</p>";
+        console.warn("Index not ready yet");
         return;
       }
 
       const results = search(query);
+
+      console.log("Query:", query, "Results:", results.length);
+
       renderResults(results, query);
 
+      // ✅ ALWAYS open modal if query is valid
       modal.style.display = "block";
+
     }, 200);
   });
 
-  // ==========================
-  // ❌ CLOSE MODAL
-  // ==========================
-
+  // ❌ CLOSE BUTTON
   closeBtn.addEventListener("click", () => {
     modal.style.display = "none";
   });
 
+  // ESC CLOSE
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       modal.style.display = "none";
     }
   });
 
+  // CLICK OUTSIDE CLOSE
   window.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.style.display = "none";
@@ -74,29 +70,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // ==========================
-// 📦 LOAD ALL CHUNKS IN PARALLEL
+// 📦 LOAD CHUNKS IN PARALLEL
 // ==========================
 
 async function loadAllDocuments() {
   const res = await fetch("/js/index/manifest.json");
+
+  if (!res.ok) {
+    throw new Error("Failed to load manifest.json");
+  }
+
   const meta = await res.json();
+  console.log("Chunks:", meta.chunks);
 
   const promises = [];
 
   for (let i = 0; i < meta.chunks; i++) {
     promises.push(
-      fetch(`/js/index/data-${i}.json`).then(r => r.json())
+      fetch(`/js/index/data-${i}.json`)
+        .then(r => {
+          if (!r.ok) throw new Error(`Chunk ${i} failed`);
+          return r.json();
+        })
     );
   }
 
   const chunks = await Promise.all(promises);
+  const allDocs = chunks.flat();
 
-  return chunks.flat();
+  console.log("Documents loaded:", allDocs.length);
+
+  return allDocs;
 }
 
 
 // ==========================
-// 📦 INIT SEARCH
+// 🚀 INIT SEARCH
 // ==========================
 
 async function initSearch() {
@@ -105,7 +114,6 @@ async function initSearch() {
   try {
     documents = await loadAllDocuments();
 
-    // Build Lunr index
     idx = lunr(function () {
       this.ref("id");
 
@@ -116,14 +124,16 @@ async function initSearch() {
       documents.forEach(doc => this.add(doc));
     });
 
+    console.log("Index ready");
+
     stopLoadingAnimation(searchBox);
     searchBox.disabled = false;
-    searchBox.placeholder = "Søk...";
+    searchBox.placeholder = "Search...";
 
   } catch (err) {
-    console.error(err);
+    console.error("INIT FAILED:", err);
     stopLoadingAnimation(searchBox);
-    searchBox.placeholder = "Søk ikke tilgjengelig";
+    searchBox.placeholder = "Search failed";
   }
 }
 
@@ -133,16 +143,14 @@ async function initSearch() {
 // ==========================
 
 function search(query) {
-  if (!query || !idx) return [];
-
   try {
     const terms = query.split(/\s+/).map(term => {
       if (term.length < 3) return term;
       return `${term}*`;
     });
 
-    const lunrQuery = terms.join(" ");
-    const results = idx.search(lunrQuery);
+    const q = terms.join(" ");
+    const results = idx.search(q);
 
     return results.map(r => {
       const doc = documents.find(d => d.id === r.ref);
@@ -150,6 +158,7 @@ function search(query) {
     });
 
   } catch (e) {
+    console.error("Search error:", e);
     return [];
   }
 }
@@ -163,15 +172,16 @@ function renderResults(results, query) {
   const container = document.getElementById("searchResults");
   container.innerHTML = "";
 
-  if (!results.length) {
-    container.innerHTML = "<p><strong>0</strong> results</p><p>Ingen resultater funnet.</p>";
-    return;
-  }
-
-  // Result count
   const count = document.createElement("p");
   count.innerHTML = `<strong>${results.length}</strong> results`;
   container.appendChild(count);
+
+  if (!results.length) {
+    const p = document.createElement("p");
+    p.textContent = "No results found.";
+    container.appendChild(p);
+    return;
+  }
 
   results.forEach(r => {
     const item = r.item;
@@ -198,7 +208,7 @@ function renderResults(results, query) {
 function highlight(text, query) {
   if (!text) return "";
 
-  const safe = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const safe = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const regex = new RegExp(`(${safe})`, "gi");
 
   return text.replace(regex, "<mark>$1</mark>");
