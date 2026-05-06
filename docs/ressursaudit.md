@@ -17,7 +17,7 @@
 | Brutte interne referanser funnet | **12 310** |
 | Ubrukte ressurser funnet | **7 517** |
 
-**Viktig tolkning:** Tallene er store, men svært mye av dette er systemisk og lar seg forklare med noen få rotårsaker. Tre manglende CW-filer alene forklarer ~11 361 av 12 310 brutte referanser (92 %).
+**Viktig tolkning:** Tallene er store, men svært mye av dette er systemisk og lar seg forklare med noen få rotårsaker. Auditskriptet rapporterte opprinnelig ~11 361 CW-relaterte brutte referanser (92 %), men en etterfølgende manuell sjekk viser at repoet allerede inneholder en git-symlink `CW → historie/CW` (mode 120000, tilstede på `main`). Dette betyr at 7 574 av disse referansene *ikke er reelt brutte* på GitHub Pages — to av tre CW-ressurser løses automatisk via symlinken. Kun én manglende fil (`maphelp.html`) utgjør et reelt gjenstående problem (~3 787 refs).
 
 ---
 
@@ -27,7 +27,7 @@
 
 | # | Kategori | Antall refs | Antall unike filer berørt |
 |---|----------|-------------|--------------------------|
-| 1 | CW-filer med feil sti-prefix | 11 361 | ~3 787 |
+| 1 | CW: `maphelp.html` mangler (sti-prefix-refs løst via symlink) | 3 787 *(var 11 361 — se §1.2)* | ~3 787 |
 | 2 | Manglende innholdskategorier | 208 | ~30 |
 | 3 | CGI-skript (ikke tilgjengelig på GitHub Pages) | 139 | ~20 |
 | 4 | Morgenbladet bakgrunnsbilde feil sti | 111 | 111 |
@@ -47,22 +47,22 @@
 
 ---
 
-### 1.2 Kategori 1 — CW-filer med feil sti-prefix *(11 361 brutte refs)*
+### 1.2 Kategori 1 — CW-filer og sti-prefix *(revidert: 3 787 gjenstående brutte refs)*
 
-**Rotårsak:** Alle ~3 787 ComputerWorld-artikler i `/historie/CW/utg/*/` lenker til tre nøkkelressurser med rot-relativ sti `/CW/...` — men CW-innholdet ble plassert i `/historie/CW/` ved migrasjon til GitHub Pages. Resultatet er at tre manglende filer genererer tre brutte referanser i *hver eneste CW-artikkel*.
+**Oppdatert status (6. mai 2026):** Auditskriptet rapporterte opprinnelig 11 361 brutte CW-referanser fordelt på tre ressurser. En manuell sjekk av git-treet viser imidlertid at repoet **allerede inneholder en git-symlink** `CW → historie/CW` (git object mode `120000`, tilstede på `main`-branchen). På GitHub Pages, som kjører på Linux og respekterer git-symlinker for statiske sider (`.nojekyll`), betyr dette at stier under `/CW/` løses korrekt.
 
-| Manglende sti (som artikler peker til) | Faktisk plassering i repoet | Berørte refs |
-|----------------------------------------|----------------------------|-------------|
-| `/CW/gifs/artmap.gif` | `/historie/CW/gifs/artmap.gif` ✓ (finnes!) | 3 787 |
-| `/CW/Hjelp.html` | `/historie/CW/Hjelp.html` ✓ (finnes!) | 3 787 |
-| `/historie/CW/maphelp.html` | Eksisterer ikke i repoet | 3 787 |
+| Sti (som artikler peker til) | Status | Berørte refs |
+|------------------------------|--------|--------------|
+| `/CW/gifs/artmap.gif` | ✅ Løst via symlink `CW → historie/CW` — filen finnes på `/historie/CW/gifs/artmap.gif` | 3 787 |
+| `/CW/Hjelp.html` | ✅ Løst via symlink `CW → historie/CW` — filen finnes på `/historie/CW/Hjelp.html` | 3 787 |
+| `/historie/CW/maphelp.html` | ❌ Eksisterer ikke i repoet — ingen symlink kan hjelpe | 3 787 |
 
-**Konsekvens:** 
-- Alle CW-artikler viser brutt bilde (artmap.gif — imagemap-navigasjon)
-- Alle CW-artikler har brutt hjelpe-lenke
-- Imagemap-navigasjonen i CW er fullstendig ikke-funksjonell
+**Gjenstående konsekvens:**
+- `artmap.gif` og `Hjelp.html` fungerer sannsynligvis korrekt på live-nettstedet via symlinken
+- Imagemap-navigasjonen er trolig funksjonell
+- `maphelp.html` er ikke-funksjonell (hjelp-lenke) — dette er det eneste gjenværende CW-problemet
 
-**Enkel fiks:** To av tre er rette-og-slett feil sti-prefix: å opprette `/CW/` som en redirect eller symlink til `/historie/CW/` ville fikse 7 574 av 11 361 brutte referanser. `maphelp.html` må enten gjenopprettes fra backup eller opprettes på nytt.
+**Gjenstående fiks:** `maphelp.html` må enten gjenopprettes fra backup eller opprettes på nytt for å fikse de resterende 3 787 brutte referansene.
 
 ---
 
@@ -356,7 +356,7 @@ ComputerWorld-artiklene er lagret i `historie/CW/utg/YYUU/` (år+uke-format, f.e
 
 | # | Problem | Berørte filer | Kompleksitet | Gevinst |
 |---|---------|--------------|--------------|---------|
-| A | Feil sti-prefix på CW-filer (`/CW/` → `/historie/CW/`) | 3 787 CW-artikler | Lav (redirect/symlink) | Fikser 7 574 brutte refs |
+| A | ~~Feil sti-prefix på CW-filer (`/CW/` → `/historie/CW/`)~~ | ~~3 787 CW-artikler~~ | ✅ **Allerede løst** — git-symlink `CW → historie/CW` finnes på `main` | Fikser 7 574 refs (allerede gjort) |
 | B | `maphelp.html` eksisterer ikke | 3 787 CW-artikler | Middels (gjenopprette fil) | Fikser 3 787 brutte refs |
 | C | Morgenbladet bakgrunnsbilde feil sti | 111 MB-filer | Lav (skript-søk/erstatning) | Fikser 111 brutte refs |
 | D | OL/meldinger-filer ikke lenket | 1 129 HTML-filer | Middels (statisk indeks) | Gjør 1 129 filer tilgjengelige |
