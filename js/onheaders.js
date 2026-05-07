@@ -23,7 +23,6 @@ function setHeaderImage() {
 
   const postfix = getCurrentPostfix();
   imgElement.src = `${baseName}${postfix}${fileExt}`;
-   console.log(imgElement.src);
 }
 
 function scheduleNextUpdate() {
