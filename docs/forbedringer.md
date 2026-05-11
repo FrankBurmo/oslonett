@@ -151,22 +151,30 @@ Legg til `<meta charset="utf-8">` i `<head>` på alle sider. Kan gjøres med et 
 
 ---
 
-### 🟠 P6 — Generer og vedlikehold en `sitemap.xml`
+### ✅ P6 — Generer og vedlikehold en `sitemap.xml`
 
 **Kategori:** Oppdagbarhet / SEO / Bevaring  
-**Innsats:** Lav (1–2 timer)
+**Innsats:** Lav (1–2 timer)  
+**Status:** Gjennomført 11. mai 2026
 
 **Problem:**  
-Det finnes ingen `sitemap.xml` eller `robots.txt`. Dette gjør det vanskeligere for søkemotorer, nettarkiver (Wayback Machine, Nasjonalbiblioteket) og forskere å indeksere innholdet systematisk.
+Det fantes ingen `sitemap.xml` eller `robots.txt`. Dette gjør det vanskeligere for søkemotorer, nettarkiver (Wayback Machine, Nasjonalbiblioteket) og forskere å indeksere innholdet systematisk.
 
-**Løsning:**  
-1. Generer `sitemap.xml` med alle `.html`-filer via et enkelt Python-skript eller statisk site-generator.
-2. Legg til `robots.txt` som eksplisitt tillater og guider crawler:
+**Gjennomført:**  
+1. Opprettet `docs/generate_sitemap.py` — Python-skript som traverserer alle `.html`-filer og genererer en gyldig `sitemap.xml` (XML Sitemap Protocol 0.9). Mapper uten offentlig innhold (`docs/`, `cgi/`, `gifs/`, `graphics/`, `img/`, `css/`, `js/`) er ekskludert.
+2. Generert `sitemap.xml` i rotkatalogen — inneholder 8 531 URLer med `lastmod` per fil.
+3. Opprettet `robots.txt` i rotkatalogen som eksplisitt tillater alle crawlere og peker på sitemapen:
 
 ```
 User-agent: *
 Allow: /
 Sitemap: https://www.oslo.net/sitemap.xml
+```
+
+**Vedlikehold:**  
+Kjør skriptet på nytt etter endringer i HTML-filene:
+```
+python docs/generate_sitemap.py
 ```
 
 **Gevinst:** Bedre arkivering i Wayback Machine og andre digitale bevaringsinitiativ. Viktig for et UNESCO-anerkjent kulturarvsdokument.
@@ -393,7 +401,7 @@ Bruk en statisk site-generator (f.eks. **Eleventy/11ty**, Hugo eller Jekyll) med
 | 🔴 Kritisk | P3 | Legg til Content Security Policy | Sikkerhet | Lav |
 | 🟠 Høy | P4 | Sanitering av søkeresultater mot XSS | Sikkerhet | Lav–middels |
 | 🟠 Høy | P5 | Legg til `<meta charset>` der det mangler | Korrekthet | Lav |
-| 🟠 Høy | P6 | Generer `sitemap.xml` og `robots.txt` | Bevaring/SEO | Lav |
+| ✅ Gjennomført | P6 | Generer `sitemap.xml` og `robots.txt` | Bevaring/SEO | Lav |
 | 🟠 Høy | P7 | Strukturer søkeindeks som byggeprosess | Vedlikehold | Middels |
 | 🟡 Middels | P8 | Legg til `<meta name="viewport">` | Tilgjengelighet | Lav |
 | 🟡 Middels | P9 | SRI-sjekk på CDN-script | Sikkerhet | Lav |
